@@ -1,0 +1,45 @@
+---
+description: 'null '
+seo-description: 'null '
+seo-title: Search&amp;Promote 15.3.1 Versionshinweise (24.03.2015)
+solution: Target
+title: Search&amp;Promote 15.3.1 Versionshinweise (24.03.2015)
+topic: Release Notes,Site search and merchandising
+uuid: f02da5a4-2207-4603-aa05-5cff7be16dd5
+translation-type: tm+mt
+source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+
+---
+
+
+# Search&amp;Promote 15.3.1 Release Notes (03/24/2015){#search-promote-release-notes}
+
+## Neue Funktionen und Verbesserungen {#section_2A10EF6B40FC4F2CB2381FFA9FFA64BD}
+
+* Suche nach Produktmodellnummern - Es wurde eine neue Linguistik-Einstellung hinzugefügt, mit der Sie optional Token bei alphabetisch-numerischen Übergängen teilen können. Diese Funktion ermöglicht flexiblere Freitextübereinstimmungen auf Teil- oder Produktstil-Token.
+
+   Siehe **[!UICONTROL Partial Alphanumeric Matching]** [Konfigurieren der Übereinstimmung von Suchbegriffen mit Ihrem Webinhalt...](../c-about-linguistics-menu/c-about-words-and-language.md#task_351A9144A51F4B41923BDBACDEF3B616).
+
+* Die Möglichkeit zum Exportieren von Datenansichtsergebnissen wurde hinzugefügt.
+
+   Siehe [Datenansichten](../c-about-reports-menu/c-about-data-views.md#concept_DCA897D074464BC1861AA47B40CC86C3).
+
+* Dynamisch generierte Bereiche für Attribute im Bereich, automatische Facetten-Wert-Sicherungsfunktionen.
+
+   Adobe Systems erfordert derzeit, dass Sie zu diesem Zweck Inhalte bereitstellen, die Bereichswerte identifizieren. Erstellen Sie beispielsweise für einen Preis von 10 eine Bereichszeichenfolge &quot;Zwischen 10 und 20 USD&quot;). Adobe Systems erfordert auch die Verwendung von skriptgesteuerten Filtern. Neue Attribute zu einer Metadatenfelddefinition hinzugefügt, nur für `Type=Number` Felder. Die neuen Optionen verknüpfen das numerische Feld mit einem `Type=Text` Feld und geben Konfigurationsinformationen an, die beschreiben, wie die Bereichsbeschreibung aufgebaut ist.
+
+   Siehe [Hinzufügen eines neuen Meta-Tag-Felds](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5).
+
+## Fehlerkorrekturen {#section_22D1AFC99F394D569898828A0D3C419D}
+
+* Das Dialogfeld zum Bearbeiten der Facet-Leiste sollte gestaffelte Facetten enthalten.
+* Leere Kernsuchergebnisse für &quot;eingebetteten&quot;Suchmodus, für eine Suche mit japanischen Zeichen.
+* Die Tika-Konvertierung von Word .docx-Dateien füllt jetzt das `title` Attribut.
+* Fehlerhafte &quot;duplizierte Bannermeldungen&quot;im **[!UICONTROL Banner]** Manager wurden korrigiert.
+* Dynamische Media Classic-Banner sind jetzt protokollagnostisch.
+* Das **[!UICONTROL Table Name]** Feldattribut wurde manchmal ausgeblendet, wenn benutzerdefinierte Felder in der Benutzeroberfläche &quot;Metadaten&quot;bearbeitet wurden, selbst wenn es für das Konto aktiviert **[!UICONTROL Dynamic Facets]** wurde.
+* **[!UICONTROL Recent Searches]** nicht mehr mehrfache Kodierungen von Nicht-ASCII-Zeichen.
+* MDI-Felder können ausgefüllt werden, ohne auf die skriptgesteuerte Filterung zurückzugreifen.
+* Falsche Kodierung in Vorschlägen.
+* Der Auslöser &quot;andere Facette ausgewählt&quot;funktioniert jetzt korrekt mit komplexen Geschäftsregeln.
+
