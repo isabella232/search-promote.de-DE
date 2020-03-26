@@ -7,7 +7,7 @@ title: Geschäftsregeln
 topic: Rules,Site search and merchandising
 uuid: f2186f54-7a39-4f46-bb29-5115d5a17f07
 translation-type: tm+mt
-source-git-commit: 2dd205d3034e8397d88007a1618a121f0b6087a8
+source-git-commit: fc1f0b15a15a9d0308494fc23c5b4258442c8aab
 
 ---
 
@@ -22,11 +22,11 @@ Sie können beispielsweise konfigurieren, wann Banner angezeigt werden, welche E
 
 Jede Geschäftsregel besteht aus Auslösern und Aktionen.
 
-Der Auslöser definiert, wann die Regel ausgeführt wird. Beispiel: Wenn der Abfragebegriff &quot;Männer&quot;ist oder wenn die Ergebnisse überwiegend &quot;Hüte&quot;sind. Der Auslöser besteht aus mehreren Bedingungen, die entweder alle sein müssen oder die wahr sein müssen, damit der gesamte Auslöser wahr ist. Sie können die Priorität angeben, indem Sie den Auslöser-Operator ändern.
+Der Auslöser definiert, wann die Regel ausgeführt wird. Wenn der Begriff &quot;Abfrage&quot;beispielsweise &quot;Männer&quot;lautet oder die Ergebnisse überwiegend &quot;Hüte&quot;sind. Der Auslöser besteht aus mehreren Bedingungen, die entweder alle sein müssen oder die wahr sein müssen, damit der gesamte Auslöser wahr ist. Sie können die Priorität angeben, indem Sie den Auslöser-Operator ändern.
 
 Die Aktion definiert, was passiert, wenn die Auslöserbedingung erfüllt ist. Sie können beispielsweise festlegen, dass das Banner ein bestimmtes Ergebnis an Position 1 anzeigt oder verschiebt. Die Regeltabelle enthält zusammenfassende Informationen zur Regel. Sie können auf einen Regelnamen klicken, um ihn zu öffnen und weitere Informationen anzuzeigen.
 
-Die Regeltabelle enthält eine Liste aller Geschäftsregeln. Die Tabelle zeigt standardmäßig die letzten zehn hinzugefügten Regeln in absteigender Reihenfolge an. Sie können auf die Spaltenüberschriften in der Tabelle klicken, um die Regeln in auf- oder absteigender Reihenfolge zu sortieren.
+Die Regeltabelle zeigt eine Liste aller Geschäftsregeln. Die Tabelle zeigt standardmäßig die letzten zehn hinzugefügten Regeln in absteigender Reihenfolge an. Sie können auf die Spaltenüberschriften in der Tabelle klicken, um die Regeln in auf- oder absteigender Reihenfolge zu sortieren.
 
 Geschäftsregeln können aus drei Staaten bestehen: Genehmigt, Ausgesetzt oder WIP (laufende Arbeit)
 
@@ -40,15 +40,15 @@ Geschäftsregeln können aus drei Staaten bestehen: Genehmigt, Ausgesetzt oder W
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Genehmigt </p> </td> 
-   <td colname="col2"> <p>Zugelassene Geschäftsregeln werden in Ihrer Live-Umgebung und in der Staged-Umgebung ausgeführt. Sie genehmigen eine Geschäftsregel im erweiterten Regelaufbau. </p> </td> 
+   <td colname="col2"> <p>Genehmigte Geschäftsregeln werden in Ihrer Live-Umgebung und in Ihrer gestaffelten Umgebung ausgeführt. Sie genehmigen eine Geschäftsregel im erweiterten Regelaufbau. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Zeitweilig eingestellt </p> </td> 
-   <td colname="col2"> <p>Ausgesetzte Geschäftsregeln werden nie in Ihrer Staged-Umgebung oder in Ihrer Live-Umgebung ausgeführt. </p> </td> 
+   <td colname="col2"> <p>Ausgesetzte Geschäftsregeln werden nie in Ihrer gestaffelten Umgebung oder in Ihrer Live-Umgebung ausgeführt. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>WIP </p> </td> 
-   <td colname="col2"> <p>WIP (Work In Progress) sind Geschäftsregeln, die weder genehmigt noch ausgesetzt werden. Das heißt, Sie arbeiten vielleicht noch daran, oder Sie möchten sie vielleicht erst testen, bevor Sie sie genehmigen. Geschäftsregeln in einem WIP-Status werden nur in der Staged-Umgebung ausgeführt. </p> </td> 
+   <td colname="col2"> <p>WIP (Work In Progress) sind Geschäftsregeln, die weder genehmigt noch ausgesetzt werden. Das heißt, Sie arbeiten vielleicht noch daran, oder Sie möchten sie vielleicht erst testen, bevor Sie sie genehmigen. Geschäftsregeln in einem WIP-Status werden nur in Ihrer gestaffelten Umgebung ausgeführt. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -84,10 +84,10 @@ Bei den folgenden Schritten wird davon ausgegangen, dass Sie den Visual Rule Bui
 
    Verwenden Sie auf der [!DNL Business Rules] Seite die **[!UICONTROL Filter by tag]** Funktion, um nach Regeln zu filtern, die einer angegebenen Bezeichnung entsprechen. 1. Legen Sie auf der [!DNL Business Rule Builder] Seite die Auslöser und Aktionen fest, die Sie verwenden möchten.
 
-       **Auslöseroptionen**
-     
-     Auslöser sind die Bedingungen, die erfüllt sein müssen, damit eine Geschäftsregel ausgeführt werden kann. Wenn eine Geschäftsregel über mehrere Auslöser verfügt, können Sie konfigurieren, wie Auslöser mit einer der folgenden drei Methoden reagieren:
-   
+   **Auslöseroptionen**
+
+   Auslöser sind die Bedingungen, die erfüllt sein müssen, damit eine Geschäftsregel ausgeführt werden kann. Wenn eine Geschäftsregel über mehrere Auslöser verfügt, können Sie konfigurieren, wie Auslöser mit einer der folgenden drei Methoden reagieren:
+
    * Eine Antwort, bei der alle Auslöser wie im folgenden Beispiel true (Standardeinstellung) sein müssen:
 
       `if a AND b AND c then ...`
@@ -120,7 +120,7 @@ Bei den folgenden Schritten wird davon ausgegangen, dass Sie den Visual Rule Bui
       <td colname="col2"> <p>Der Auslöser ist "true", wenn der Suchbegriff mit dem angegebenen, in der Groß- und Kleinschreibung unterschieden Suchbegriff übereinstimmt. Der Auslöser gilt sowohl für den Suchbegriff als auch für alle seine Synonyme, wie im Linguistik-Wörterbuch definiert. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p> Abfrageübereinstimmungen </p> </td> 
+      <td colname="col1"> <p> Abfrage stimmt überein </p> </td> 
       <td colname="col2"> <p> Auslöser ist "true", wenn alle Suchparameter übereinstimmen. </p> </td> 
       </tr> 
       <tr> 
@@ -143,7 +143,7 @@ Bei den folgenden Schritten wird davon ausgegangen, dass Sie den Visual Rule Bui
 
    Wenn die Auslöser einer Geschäftsregel erfüllt sind, werden die mit der Regel verknüpften Aktionen ausgeführt. Während Sie mit dem visuellen Regelaufbau die folgenden Aktionen erstellen können, können Sie mit dem erweiterten Regelaufbau weitere Aktionstypen erstellen.
 
-   Die Aktionen &quot;Facet-Element entfernen&quot;, &quot;Facet-Element einblenden&quot;, &quot;Facette einblenden&quot;, &quot;Facette entfernen&quot;, &quot;Facet-Element pushen&quot;in der folgenden Tabelle erfordern eine Facette. Die Oberfläche zur Auswahl einer Facette hängt von der Konfiguration Ihres Kontos ab. Ein normales Konto verwendet beispielsweise eine Dropdownliste zur Auswahl von Facetten. Wenn Ihr Konto jedoch Facetten mit Zuschnitten aufweist, wird ein Textfeld mit automatischer Vervollständigung angezeigt, in das Sie den Namen einer beliebigen Facette eingeben können. Die automatische Vervollständigung schlägt Facetten in einer Dropdown-Liste vor, während Sie den Namen der Facette eingeben. Die Vorschläge enthalten derzeit definierte Facetten. Wenn Ihr Konto über eine Steckplatzzuordnung verfügt, werden auch formatierte Facetten vorgeschlagen.
+   Die Aktionen &quot;Facet-Element entfernen&quot;, &quot;Facet-Element einblenden&quot;, &quot;Facette einblenden&quot;, &quot;Facette entfernen&quot;, &quot;Facet-Element pushen&quot;in der folgenden Tabelle erfordern eine Facette. Die Oberfläche zur Auswahl einer Facette hängt von der Konfiguration Ihres Kontos ab. Ein Normalkonto verwendet beispielsweise eine Dropdown-Liste zur Auswahl von Facetten. Wenn Ihr Konto jedoch Facetten mit Zuschnitten aufweist, wird ein Textfeld mit automatischer Vervollständigung angezeigt, in das Sie den Namen einer beliebigen Facette eingeben können. Die automatische Vervollständigung schlägt Facetten in einer Dropdown-Liste vor, während Sie den Namen der Facette eingeben. Die Vorschläge enthalten derzeit definierte Facetten. Wenn Ihr Konto über eine Steckplatzzuordnung verfügt, werden auch formatierte Facetten vorgeschlagen.
 
    <table> 
     <thead> 
@@ -158,8 +158,8 @@ Bei den folgenden Schritten wird davon ausgegangen, dass Sie den Visual Rule Bui
       <td colname="col2"> <p> Verschiebt die Gruppe der Suchergebnisse, wie sie durch die angegebenen Suchkriterien definiert wurde, an eine bestimmte Position. </p> <p>Durch das Übermitteln einer Gruppe von Suchergebnissen wird die Gruppe nicht implizit hinzugefügt. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Gruppe hinzufügen </p> </td> 
-      <td colname="col2"> <p> Fügen Sie die Gruppe der Suchergebnisse hinzu, die durch die angegebenen Suchkriterien definiert wurde. </p> </td> 
+      <td colname="col1"> <p>Hinzufügen </p> </td> 
+      <td colname="col2"> <p> Hinzufügen die Gruppe von Suchergebnissen, die durch die angegebenen Suchkriterien definiert ist. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Gruppe entfernen </p> </td> 
@@ -170,7 +170,7 @@ Bei den folgenden Schritten wird davon ausgegangen, dass Sie den Visual Rule Bui
       <td colname="col2"> <p> Verschiebt das Suchergebnis an die ausgewählte Position. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Single hinzufügen </p> </td> 
+      <td colname="col1"> <p>Hinzufügen </p> </td> 
       <td colname="col2"> <p> Fügt der ausgewählten Position ein Suchergebnis hinzu. </p> </td> 
       </tr> 
       <tr> 
@@ -187,7 +187,7 @@ Bei den folgenden Schritten wird davon ausgegangen, dass Sie den Visual Rule Bui
       <td colname="col2"> <p> Ändert das Banner im ausgewählten Bannerbereich. </p> <p>Diese Option ist verfügbar, wenn Sie mit der rechten Maustaste auf ein Banner im Anzeigebereich der Webseite klicken. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Banner-Befehle hinzufügen </p> </td> 
+      <td colname="col1"> <p>Hinzufügen Banner-Befehle </p> </td> 
       <td colname="col2"> <p>Gilt nur für Adobe Dynamic Media Classic-Vorlagen. </p> <p>Ermöglicht die Änderung der Standardparameter, die in der Bannervorlage verwendet werden. </p> <p>Eine Tabelle mit Optionen finden Sie unter Hinzufügen eines Banners mit Adobe Dynamic Media Classic <a scope="local" href="../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3" type="reference" format="dita"> . </a> </p> <p>Siehe auch <a href="../c-about-design-menu/c-about-banners.md#task_C3E782477FBF428ABEA220751781ACA9" type="task" format="dita" scope="local"> Bearbeiten eines Banners mit Adobe Dynamic Media Classic </a>. </p> </td> 
       </tr> 
       <tr> 
@@ -255,7 +255,7 @@ Bei den folgenden Schritten wird davon ausgegangen, dass Sie den Visual Rule Bui
 1. (Optional) Führen Sie im **[!UICONTROL Schedule]** Bedienfeld einen der folgenden Schritte aus:
 
    * Klicken Sie auf **[!UICONTROL Run Indefinitely]** , damit die Regel ausgeführt wird, wenn die zugehörigen Auslöser erfüllt sind. Diese Option ist die Standardeinstellung.
-   * Klicken Sie auf **[!UICONTROL Fixed Schedule]** und geben Sie dann das Startdatum und die Uhrzeit sowie das Enddatum und die Uhrzeit für die Ausführung der Regel an, wenn der zugehörige Auslöser erfüllt ist.
+   * Klicken Sie auf **[!UICONTROL Fixed Schedule]** und geben Sie dann das Datum und die Uhrzeit des Beginns sowie das Enddatum und die Uhrzeit für die Ausführung der Regel an, wenn der zugehörige Auslöser erfüllt ist.
 
 1. Klicken **[!UICONTROL Save Rule]**.
 1. (Optional) Führen Sie auf der [!DNL Business Rules] Seite einen der folgenden Schritte aus:
@@ -285,7 +285,7 @@ Sie können den Visual Rule Builder oder den erweiterten Regelaufbau verwenden, 
 
       Die Geschäftsregel wird in der Standardschnittstelle geöffnet, die unter **[!UICONTROL Settings]** > **[!UICONTROL My Profile]** > **[!UICONTROL My Preferences]**.
 
-   * Klicken Sie in der Dropdownliste neben dem Namen der Geschäftsregel, den Sie bearbeiten möchten, auf **[!UICONTROL Edit in advanced mode]** oder **[!UICONTROL Edit in visual mode]**.
+   * Klicken Sie in der Dropdown-Liste neben dem Geschäftsregelnamen, den Sie bearbeiten möchten, auf **[!UICONTROL Edit in advanced mode]** oder **[!UICONTROL Edit in visual mode]**.
 
 1. Geben Sie in das [!DNL Name] Textfeld den neuen Namen der Geschäftsregel ein.
 
@@ -313,7 +313,7 @@ Sie können den Visual Rule Builder oder den erweiterten Regelaufbau verwenden, 
 1. (Optional) Führen Sie im [!DNL Schedule] Bedienfeld einen der folgenden Schritte aus:
 
    * Klicken Sie auf **[!UICONTROL Run Indefinitely]** , damit die Regel ausgeführt wird, wenn die zugehörigen Auslöser erfüllt sind. Diese Option ist die Standardeinstellung.
-   * Klicken Sie auf **[!UICONTROL Fixed Schedule]** und geben Sie dann das Startdatum und die Uhrzeit sowie das Enddatum und die Uhrzeit für die Ausführung der Regel an, wenn der zugehörige Auslöser erfüllt wird.
+   * Klicken Sie auf **[!UICONTROL Fixed Schedule]** und geben Sie dann das Datum und die Uhrzeit des Beginns sowie das Enddatum und die Uhrzeit für die Ausführung der Regel an, wenn der zugehörige Auslöser erfüllt wird.
 
 1. Klicken **[!UICONTROL Save Rule]**.
 
@@ -338,7 +338,7 @@ Sie können eine vorhandene Geschäftsregel kopieren, um sie als Grundlage für 
 **So kopieren Sie eine Geschäftsregel**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Rules]** > **[!UICONTROL Business Rules]**.
-1. Klicken Sie auf der **[!UICONTROL Business Rules]** Seite in der Dropdownliste neben dem Namen der Geschäftsregel, den Sie kopieren möchten, auf **[!UICONTROL Copy rule]**.
+1. Klicken Sie auf der **[!UICONTROL Business Rules]** Seite in der Dropdown-Liste neben dem Geschäftsregelnamen, den Sie kopieren möchten, auf **[!UICONTROL Copy rule]**.
 1. Bearbeiten Sie die kopierte Geschäftsregel wie gewohnt.
 
    See [Editing a business rule](../c-about-rules-menu/c-about-business-rules.md#task_375CFA75D1D94D9E92A35DE1228E5087).
@@ -462,7 +462,7 @@ Sie können Geschäftsregeln, deren Status WIP, ausgesetzt oder genehmigt ist, �
    * Verwenden Sie die Spaltenüberschrift des Kontrollkästchens, um alle Regeln zu überprüfen, die aktuell auf der Seite angezeigt werden.
    * Markieren Sie nur die Geschäftsregeln, die Sie löschen möchten, basierend auf dem Status in der Spalte Status der Tabelle.
 
-1. Klicken Sie in der [!DNL Bulk Actions] Dropdownliste auf **[!UICONTROL Delete]**.
+1. Klicken Sie in der [!DNL Bulk Actions] Dropdown-Liste auf **[!UICONTROL Delete]**.
 1. Klicken Sie im [!DNL Confirm Action] Dialogfeld auf **[!UICONTROL OK]**.
 1. (Optional) Führen Sie einen der folgenden Schritte aus:
 
