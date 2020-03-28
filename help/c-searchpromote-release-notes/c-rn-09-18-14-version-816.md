@@ -7,7 +7,7 @@ title: Search&amp;Promote 8.16.0 - Versionshinweise (18.09.2014)
 topic: Release Notes,Site search and merchandising
 uuid: 0a59858b-213b-40d6-aea1-d085c4d6d2fa
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
 
 ---
 
@@ -50,5 +50,5 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 * The Index Connector **[!UICONTROL Strip HTML]** setting was always displaying as checked.
 * Inconsistent search results were experienced with the **[!UICONTROL Common Phrases]** feature.
 * Die Anzeige von Attributnamen war in den Zusammenfassungen der Regelliste abgeschnitten.
-* Beim Aufschalten einer individuellen Geschäftsregel werden alle Geschäftsregeln aufgeschaltet.
+* Eine einzelne Geschäftsregel zu aktivieren, hat alle Geschäftsregeln live gedrängt.
 
