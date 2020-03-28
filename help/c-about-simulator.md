@@ -7,7 +7,7 @@ title: Info zum Simulator
 topic: Simulator,Site search and merchandising
 uuid: 7ec8f5b9-3ab3-4b9a-bf8a-65d0ca1dfddb
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: 91ddead9f73b73ea1a20e26582998966f801d6ff
 
 ---
 
@@ -33,7 +33,7 @@ Siehe [Hinzufügen einer neuen Geschäftsregel](c-about-rules-menu/c-about-busin
 **So verwenden Sie den Simulator**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Simulator]**.
-1. Wählen Sie in der **[!UICONTROL Options]** Dropdownliste die Option aus, die Sie ausführen möchten.
+1. Wählen Sie in der **[!UICONTROL Options]** Dropdown-Liste die auszuführende Option aus.
 
    <!-- 
    
@@ -41,7 +41,7 @@ Siehe [Hinzufügen einer neuen Geschäftsregel](c-about-rules-menu/c-about-busin
    
    -->
 
-   (Optional) Verwenden Sie die Kontrollkästchen-Spalte in der Tabelle auf der Seite &quot;Simulator&quot;, um eine bestimmte Regel in der Simulation zu aktivieren oder zu deaktivieren.
+   (Optional) Verwenden Sie das Kontrollkästchen in der Tabelle auf der Seite &quot;Simulator&quot;, um eine bestimmte Regel in der Simulation zu aktivieren oder zu deaktivieren.
 
    <table> 
     <thead> 
@@ -52,28 +52,28 @@ Siehe [Hinzufügen einer neuen Geschäftsregel](c-about-rules-menu/c-about-busin
     </thead>
     <tbody> 
       <tr> 
-      <td colname="col1"> <p>Stage simulieren/Live simulieren </p> </td> 
+      <td colname="col1"> <p><span class="uicontrol">Stage simulieren/Live simulieren</span> </p> </td> 
       <td colname="col2"> <p>Alternative zur Simulation der Live-Umgebung oder der Stage-Umgebung </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Verarbeitungsregeln ein-/ausblenden </p> </td> 
+      <td colname="col1"> <p><span class="uicontrol">Verarbeitungsregeln ein-/ausblenden</span> </p> </td> 
       <td colname="col2"> <p>Zeigt alle Verarbeitungsregeln an oder blendet sie aus, die statt nur der Geschäftsregeln ausgelöst wurden. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Ändern des Simulationsdatums </p> </td> 
+      <td colname="col1"> <p><span class="uicontrol">Datum der Simulation ändern</span> </p> </td> 
       <td colname="col2"> <p>Simulieren Sie die Suchergebnisse für ein bestimmtes Datum. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Auf PC simulieren </p> </td> 
+      <td colname="col1"> <p><span class="uicontrol">Auf PC simulieren</span> </p> </td> 
       <td colname="col2"> <p>Simulieren Sie die Suchergebnisse, als würden Sie einen PC verwenden. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Auf Mobilgerät simulieren </p> </td> 
+      <td colname="col1"> <p><span class="uicontrol">Auf Mobilgerät simulieren</span> </p> </td> 
       <td colname="col2"> <p>Simulieren Sie die Suchergebnisse, als würden Sie ein Mobiltelefon oder ein Tablet verwenden. </p> <p>Wenn Sie diese Option auswählen, können Sie aus den folgenden Optionen wählen: </p> 
         <ul id="ul_2A9901418212486A8EE67A78CB99CBE4"> 
-        <li id="li_B210E954DF0D44C397718112C72C2103"> <b>Gerät</b> <p>Simulieren Sie die Suchergebnisse auf einem Mobiltelefon oder Tablet. </p> </li> 
-        <li id="li_90B64EAA0B57446A90CE22172E703594"> <b>Auflösung</b> <p>Je nach ausgewähltem Gerät können Sie die entsprechende Auflösung wählen. </p> </li> 
-        <li id="li_042AF9FA3FA846EDB48F7296DB361515"> <b>Horizontale Ansicht</b> <p>Zeigen Sie an, wie die simulierten Suchergebnisse horizontal auf dem ausgewählten Gerät angezeigt werden. </p> </li> 
+        <li id="li_B210E954DF0D44C397718112C72C2103"> <b><span class="uicontrol">Gerät</span></b> <p>Simulieren Sie die Suchergebnisse auf einem Mobiltelefon oder Tablet. </p> </li> 
+        <li id="li_90B64EAA0B57446A90CE22172E703594"> <b><span class="uicontrol">Auflösung</span></b> <p>Je nach ausgewähltem Gerät können Sie die entsprechende Auflösung wählen. </p> </li> 
+        <li id="li_042AF9FA3FA846EDB48F7296DB361515"> <b><span class="uicontrol">Horizontale Ansicht</span></b> <p>Ansicht, wie die simulierten Suchergebnisse horizontal auf dem ausgewählten Gerät angezeigt werden. </p> </li> 
         </ul> </td> 
       </tr> 
     </tbody> 
