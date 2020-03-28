@@ -8,7 +8,7 @@ title: Dynamische Facets
 topic: Design,Site search and merchandising
 uuid: 1ea91c22-dcc2-4173-aa50-ce618ad0a99c
 translation-type: tm+mt
-source-git-commit: 4270ea66ba645ad0f71c9c8b5c2a1fcc6eb02ad2
+source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
 
 ---
 
@@ -96,16 +96,16 @@ Siehe auch
 1. Klicken Sie im blauen Feld auf Ihren **Staged Site-Index** neu generieren, um Ihren Staged Website-Index schnell neu zu erstellen.
 
    Siehe auch [Wiederherstellen des Indexes einer Live- oder Staged-Website](../c-about-index-menu/c-about-regenerate-index.md#task_B28DE40C0E9A475ABCBCBC4FF993AACD).
-1. Legen Sie die Anzahl der dynamischen Facetten fest, die für eine bestimmte Suche ausgewählt werden sollen. Führen Sie dazu einen der folgenden Schritte aus:
+1. Legen Sie die Anzahl der dynamischen Facetten fest, die für eine bestimmte Suche ausgewählt werden sollen. Sie führen diese Aufgabe durch einen der folgenden Schritte aus:
 
-   * Erstellen Sie eine Abfragebereinigungsregel mit den gewünschten Bedingungen, die die Aktion ausführt `set`, `backend parameter`um `sp_sfvl_df_count` den Wert `X`, wobei `X` die gewünschte Anzahl dynamischer Facetten zum Zeitpunkt der Suche anzufordern ist, und klicken Sie dann auf **[!UICONTROL Add]**.
+   * Erstellen Sie eine Abfrage-Reinigungsregel mit den gewünschten Bedingungen, die die Aktion `set`, `backend parameter`zu wertende Aktion ausführt, `sp_sfvl_df_count` wobei `X`die gewünschte Anzahl dynamischer Facetten zum Zeitpunkt der Suche anzufordern ist, und klicken Sie dann auf `X` **[!UICONTROL Add]**.
    ![](assets/querycleaningrule_dynamicfacets.png)
 
-   Siehe [Hinzufügen einer Abfragebereinigungsregel](../c-about-rules-menu/c-about-query-cleaning-rules.md#task_47F43988D3D9485F8AE1DFDA7E00BF54).
+   Siehe [Hinzufügen einer Abfrage-Reinigungsregel](../c-about-rules-menu/c-about-query-cleaning-rules.md#task_47F43988D3D9485F8AE1DFDA7E00BF54).
 
    Siehe auch [Backend-Suche CGI-Parameter](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8), Zeile 40 in der Tabelle für weitere Erläuterungen `sp_sfvl_df_count`.
 
-   * Fügen Sie eine Suche hinzu, legen Sie den `sp_sfvl_df_count` Parameter &quot;custom&quot;auf den gewünschten Wert fest und klicken Sie auf **[!UICONTROL Add]**.
+   * Hinzufügen Sie eine Suche, stellen Sie den `sp_sfvl_df_count` Parameter &quot;custom&quot;auf den gewünschten Wert ein und klicken Sie auf **[!UICONTROL Add]**.
    ![](assets/gs_addsearch_dynamic_facets.png)
 
    Siehe [Hinzufügen einer neuen Suchdefinition](../c-about-settings-menu/c-about-searching-menu.md#task_98D3A168AB5D4F30A1ADB6E0D48AB648).
@@ -169,7 +169,7 @@ Siehe auch
 
    Stellen Sie sicher, dass Sie `__dynamic_facets` für die `gsname` im `guided-facet-rail` -Tag angeben. Dieses Tag ist eine vordefinierte Facettenleiste, die für die Ausgabe dynamischer Facetten reserviert ist, die für eine bestimmte Suche zurückgegeben werden.
 
-   Sie können diese spezielle Facettenleiste optional auch über Regeln > Geschäftsregeln und den erweiterten Regelaufbau wie unten dargestellt bearbeiten.
+   Optional können Sie diese spezielle Facettenleiste auch über **[!UICONTROL Rules > Business Rules]** den unten stehenden Abschnitt bearbeiten **[!UICONTROL Advanced Rule Builder]** .
 
    ![](assets/dynamicfacetrail_businessrule.png)
 
