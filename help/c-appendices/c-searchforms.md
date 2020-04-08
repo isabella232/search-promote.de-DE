@@ -7,7 +7,7 @@ title: Suchformulare
 topic: Appendices,Site search and merchandising
 uuid: 91153e3a-c437-47f3-8c2a-d9ac02965b8c
 translation-type: tm+mt
-source-git-commit: 55f48748f8c0a2f739dfbe30e8d42b73c8106b81
+source-git-commit: 4542702e1d2ba04c70d9f6b24bfa32e1f1c6acb5
 
 ---
 
@@ -151,7 +151,7 @@ Das Konfigurieren von Framesets erfolgt wie folgt:
   <tr> 
    <td colname="col1"> <p>5 </p> </td> 
    <td colname="col02"> <p>Testen Sie das Suchformular. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="../c-appendices/c-searchforms.md#section_43D8D4A7BF524DC480DFE5442F6A2E3C" type="section" format="dita"> Testen des Suchformulars </a> </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_43D8D4A7BF524DC480DFE5442F6A2E3C" type="section" format="dita"> Testen des Suchformulars </a> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -286,7 +286,7 @@ Mithilfe des folgenden Beispiels für die erweiterte Suche wird im restlichen Ve
 
 Sie können den gesamten HTML-Code für das erweiterte Suchformular des obigen Beispiels Ansicht haben.
 
-Siehe HTML-Code [für erweiterte Suchformulare](../c-appendices/c-searchforms.md#reference_9AAD4A46B68D4D48865508982CB86DB9).
+Siehe HTML-Code [für erweiterte Suchformulare](#reference_9AAD4A46B68D4D48865508982CB86DB9).
 
 Siehe [Konfigurieren der automatischen Vervollständigung von CSS](../c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96).
 
@@ -435,7 +435,7 @@ Siehe [Kopieren des HTML-Codes des Suchformulars in die...](../c-about-auto-comp
 
 Der HTML-Formularcode, mit dem das erweiterte Suchformular erstellt wird, das oben im Thema Beispiel für das erweiterte Suchformular angezeigt wird.
 
-Siehe [Beispiel für ein erweitertes Suchformular](../c-appendices/c-searchforms.md#reference_82E1051918744EBA88A01E9E6AE42C4A).
+Siehe [Beispiel für ein erweitertes Suchformular](#reference_82E1051918744EBA88A01E9E6AE42C4A).
 
 Wenn Sie diesen Code verwenden, denken Sie daran, den `sp_a` Wert von durch Ihre tatsächliche Kontonummer zu ersetzen `sp99999999` .
 
