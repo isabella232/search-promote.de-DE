@@ -7,18 +7,16 @@ title: Suchformulare
 topic: Appendices,Site search and merchandising
 uuid: 91153e3a-c437-47f3-8c2a-d9ac02965b8c
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: 55f48748f8c0a2f739dfbe30e8d42b73c8106b81
 
 ---
 
 
 # Suchformulare{#search-forms}
 
-## Suchformulare {#concept_915FFF20FF644830B7B3C6E00F416BCB}
-
 ## Verwenden von Sammlungen in Suchformularen {#reference_5A079AEEEFB84457892EF0870D0605C3}
 
-Mit Sammlungen können Ihre Kunden bestimmte Bereiche Ihrer Website durchsuchen. Je nachdem, ob Sie eine Dropdown-Liste oder eine Liste von Kontrollkästchen implementieren, können Sie Ihren Kunden die Suche nach einer oder mehreren Sammlungen ermöglichen.
+Mit Sammlungen können Ihre Kunden bestimmte Bereiche Ihrer Website durchsuchen. Je nachdem, ob Sie eine Dropdown-Liste oder eine Liste von Kontrollkästchen implementieren, können Sie Ihren Kunden das Durchsuchen einer oder mehrerer Sammlungen ermöglichen.
 
 Siehe auch [Informationen zu Sammlungen](../c-about-settings-menu/c-about-searching-menu.md#concept_62E42ACE53D54EEE9273433B86259127).
 
@@ -72,7 +70,7 @@ Das Dropdown-Suchformular wird mit dem folgenden HTML-Code generiert:
 </select>
 ```
 
-Alternativ können Sie auch eine Gruppe von Kontrollkästchen in Ihrem Suchformular verwenden, sodass Besucher mehrere Sammlungen auswählen können:
+Alternativ können Sie auch eine Gruppe von Kontrollkästchen in Ihrem Suchformular verwenden, damit Besucher mehrere Sammlungen auswählen können:
 
 ![](assets/checkboxes.png)
 
@@ -88,7 +86,7 @@ Das Kontrollkästchen-Suchformular wird mit dem folgenden HTML-Code generiert:
 
 ## Search results {#section_BBDD5B44E2B349BC88D937F44583D350}
 
-Das Tag der Suchvorlage `<search-input-collections>` generiert das Sammlungslistenfeld-HTML in den Suchergebnissen und wählt automatisch die Sammlung aus, die in der Suche angegeben ist. Wenn Sie stattdessen Kontrollkästchen generieren möchten, verwenden Sie das `<search-input>` -Tag anstelle des `<input>` -Tags wie folgt:
+Das Tag der Suchvorlage `<search-input-collections>` generiert das Feld &quot;Liste&quot;HTML in den Suchergebnissen und wählt automatisch die Sammlung aus, die in der Suche angegeben ist. Wenn Sie stattdessen Kontrollkästchen generieren möchten, verwenden Sie das `<search-input>` -Tag anstelle des `<input>` -Tags wie folgt:
 
 ```
 <search-input type="checkbox" name="sp_k" value="">All of Adobe<br> 
@@ -108,14 +106,14 @@ Weitere Informationen zu HTML-Frames und dem HTML-Frameset-Element finden Sie in
 
 [https://www.w3schools.com/html/html_frames.asp](https://www.w3schools.com/html/html_frames.asp)
 
-Wenn Ihre Site Frames verwendet, können Sie einen Zielrahmen für Links zu Suchergebnissen angeben. Das Standardziel ist &quot;_self&quot;, das Links im aktuellen Frame oder Browserfenster öffnet. Sie können stattdessen site- oder browserspezifische Ziele angeben:
+Wenn Ihre Site Frames verwendet, können Sie einen Zielgruppe-Frame für Suchergebnislinks angeben. Die standardmäßige Zielgruppe lautet _self, mit der Links im aktuellen Frame oder Browserfenster geöffnet werden. Sie können stattdessen site- oder browserbezogene Zielgruppen angeben:
 
 * _top (browser-reserviert) wird im aktuellen Browserfenster geöffnet und ersetzt alle aktuellen Frames.
 * _blank (browser-reserviert) Ergebnisse werden in einem neuen Browserfenster geöffnet.
 * _parent (browser-reserviert) wird im übergeordneten Frame des aktuellen Frames geöffnet.
 * frame2 (site-spezifisch) Ergebnisse werden in einem Frame mit dem Namen &quot;frame2&quot;geöffnet. Sie können den Namen eines beliebigen Rahmens als Wert angeben (z. B. Haupt- oder Inhaltsname).
 
-Wenn Ihre Site keine Frames verwendet, sollten Sie den Standardzielnamen wahrscheinlich nicht ändern.
+Wenn Ihre Site keine Frames verwendet, sollten Sie den Standardnamen der Zielgruppe wahrscheinlich nicht ändern.
 
 Wenn Sie eine Vorlage für benutzerdefinierte Suchergebnisse für Ihre Website erstellen, können Sie die angegebene Einstellung mithilfe des `target` Attributs des `<search-link>` Tags überschreiben.
 
@@ -132,23 +130,23 @@ Das Konfigurieren von Framesets erfolgt wie folgt:
  <tbody> 
   <tr> 
    <td colname="col1"> <p>1 </p> </td> 
-   <td colname="col02"> <p>Fügen Sie das Formular zum gewünschten Rahmen auf Ihrer Webseite hinzu. </p> </td> 
-   <td colname="col2"> <p> <a href="../c-appendices/c-searchforms.md#section_BAA8A502BB2243F8B5FF9783CDF2BFFD" type="section" format="dita" scope="local"> Hinzufügen des Suchformularcodes zu einem Rahmen in Ihrer... </a> </p> </td> 
+   <td colname="col02"> <p>Hinzufügen Sie das Formular in den gewünschten Rahmen auf Ihrer Webseite. </p> </td> 
+   <td colname="col2"> <p> <a href="#section_BAA8A502BB2243F8B5FF9783CDF2BFFD" type="section" format="dita" scope="local"> Hinzufügen des Suchformularcodes zu einem Rahmen in Ihrer... </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>2 </p> </td> 
-   <td colname="col02"> <p>Legen Sie den Zielrahmen für die Suchergebnisseite fest. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="../c-appendices/c-searchforms.md#section_532CACB90888467093D95EACB64FDFA1" type="section" format="dita"> Festlegen des Zielrahmens für die Suchergebnisseite </a> </p> </td> 
+   <td colname="col02"> <p>Legen Sie die Zielgruppe für die Suchergebnisseite fest. </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_532CACB90888467093D95EACB64FDFA1" type="section" format="dita"> Einstellen der Zielgruppe für die Suchergebnisseite </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>3 </p> </td> 
-   <td colname="col02"> <p>Legen Sie das Ziel für Links fest, die über die Suchergebnisseite erstellt werden. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="../c-appendices/c-searchforms.md#section_523248C5AC424D878321C21A23A5CD66" type="section" format="dita"> Festlegen des Ziels für Links, die aus den Suchergebnissen erstellt wurden... </a> </p> </td> 
+   <td colname="col02"> <p>Legen Sie die Zielgruppe für Links fest, die über die Suchergebnisseite erstellt werden. </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_523248C5AC424D878321C21A23A5CD66" type="section" format="dita"> Zielgruppe für Links aus den Suchergebnissen festlegen... </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>4 </p> </td> 
    <td colname="col02"> <p>Bearbeiten Sie die Navigationsrahmenseiten, um zu verhindern, dass sie indiziert werden. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="../c-appendices/c-searchforms.md#section_C62E5F0EE1294D5EBD97E123E54433FC" type="section" format="dita"> Bearbeiten der Navigationsrahmenseiten, um zu verhindern, dass sie... </a> </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_C62E5F0EE1294D5EBD97E123E54433FC" type="section" format="dita"> Bearbeiten der Navigationsrahmenseiten, um zu verhindern, dass sie... </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>5 </p> </td> 
@@ -180,13 +178,13 @@ Das Konfigurieren von Framesets erfolgt wie folgt:
 
    ![](assets/frames1.gif)
 
-## Festlegen des Zielrahmens für die Suchergebnisseite {#section_532CACB90888467093D95EACB64FDFA1}
+## Einstellen der Zielgruppe für die Suchergebnisseite {#section_532CACB90888467093D95EACB64FDFA1}
 
-Wenn Sie Ihren Suchformularcode wie oben in den vertikalen Navigationsrahmen platziert haben, können Sie die Suchergebnisse im größeren Hauptframe anzeigen. In diesem Beispiel rufen Sie den Hauptframe &quot;body&quot;auf und legen ihn als Zielrahmen fest.
+Wenn Sie Ihren Suchformularcode wie oben in den vertikalen Navigationsrahmen platziert haben, können Sie die Suchergebnisse im größeren Hauptframe anzeigen. In diesem Beispiel rufen Sie das Hauptbild &quot;body&quot;auf und legen es als Zielgruppe-Frame fest.
 
 ![](assets/frames2.gif)
 
-1. Um den Zielrahmen für die Ergebnisseite festzulegen, fügen Sie dem Formular ein Ziel und einen Wert hinzu, indem Sie die folgende Zeile im Suchformularcode wie folgt ändern:
+1. Um den Zielgruppen-Rahmen für die Ergebnisseite festzulegen, fügen Sie dem Formular eine Zielgruppe und einen Wert hinzu, indem Sie die folgende Zeile im Suchformularcode wie folgt ändern:
 
    `<form method="get" action="https://search.atomz.com/search/">`
 
@@ -194,32 +192,32 @@ Wenn Sie Ihren Suchformularcode wie oben in den vertikalen Navigationsrahmen pla
 
    `<form target="body" method="get" action="https://search.atomz.com/search/">`
 
-   Stellen Sie sicher, dass Sie den Formularzielwert in Anführungszeichen setzen.
+   Stellen Sie sicher, dass Sie den Wert für die Zielgruppe des Formulars in Anführungszeichen setzen.
 
 Wenn ein Kunde eine Suche nach Ihrer Website durchführt, werden die Suchergebnisse im Textrahmen der Webseite angezeigt.
 
-## Festlegen des Ziels für Links auf der Suchergebnisseite {#section_523248C5AC424D878321C21A23A5CD66}
+## Zielgruppe für Links auf der Suchergebnisseite festlegen {#section_523248C5AC424D878321C21A23A5CD66}
 
 Sie können den Zielrahmen festlegen, indem Sie die Vorlage direkt bearbeiten.
 
-Wenn Ihre Suchergebnisse im Textrahmen erscheinen, sollten Sie die Links wahrscheinlich auch im Textrahmen öffnen. Da es sich hierbei um denselben Frame handelt, den Zielwert, `"_self"` der die Standardeinstellung ist, müssen Sie keine Änderungen vornehmen.
+Wenn Ihre Suchergebnisse im Textrahmen erscheinen, sollten Sie die Links wahrscheinlich auch im Textrahmen öffnen. Da es sich hierbei um denselben Frame handelt, d. h. um den Standardwert `"_self"` für die Zielgruppe, müssen Sie keine Änderungen vornehmen.
 
 Sie können auch den Zielrahmen für Ergebnislinks festlegen. Die folgenden Beispiele zeigen, was Sie tun können:
 
 * Geben Sie verschiedene Frames für die Suchergebnisse und deren Links an, damit die Suchergebnisse in ihrem eigenen Frame aktiv bleiben, während jedes angeklickte Ergebnis in einem separaten Frame geöffnet wird.
 * Geben Sie an, dass die Suchergebnisse in ein neues leeres Fenster geöffnet werden, sodass Ihr altes Fenster mit seinem ursprünglichen Inhalt aktiv bleibt, wodurch auch die Suchergebnisse erhalten bleiben.
 
-Der Zielname kann entweder der Name eines Rahmens sein, der in Ihrem HTML-Code angegeben ist, oder einer der folgenden HTML-Standardwerte sein:
+Der Name der Zielgruppe kann entweder der Name eines Rahmens sein, der in Ihrem HTML-Code angegeben ist, oder einer der folgenden HTML-Standardwerte sein:
 
 * `target="_blank"` Öffnen Sie Links in einem neuen, leeren, unbenannten Fenster.
 
-* `target="_self"` Standard. Öffnen Sie Links im selben Fenster, in dem sich die Suchergebnisse befinden. In diesem Fall das Fenster mit den ursprünglichen Suchergebnissen. Verwenden Sie diese Option, um ein global zugewiesenes Basisziel zu überschreiben.
+* `target="_self"` Standard. Öffnen Sie Links im selben Fenster, in dem sich die Suchergebnisse befinden. In diesem Fall das Fenster mit den ursprünglichen Suchergebnissen. Verwenden Sie diese Option, um eine global zugewiesene Basisversion zu überschreiben.
 
-* `target="_parent"` Öffnen Sie Links im übergeordneten Frameset der Link-Seite. Wenn das Dokument keine übergeordnete Datei enthält, funktioniert dies wie `"_self"` standardmäßig.
+* `target="_parent"` Öffnen Sie Links im übergeordneten Frameset der Link-Seite. Wenn das Dokument keine übergeordnete Komponente hat, funktioniert dies wie `"_self"` standardmäßig.
 
 * `target="_top"` Öffnen Sie die Links im vollständigen Fenster. Wenn sich das Dokument bereits oben befindet, funktioniert dies wie `"_self"` standardmäßig. Verwenden Sie diese Option, um aus einer willkürlich tiefen Rahmenverschachtelung auszubrechen.
 
-Um beispielsweise den `_blank` Zielrahmen festzulegen, können Sie die Vorlage wie folgt bearbeiten:
+Um beispielsweise den Zielrahmen für die `_blank` Zielgruppe festzulegen, können Sie die Vorlage wie folgt bearbeiten:
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Design]** > **[!UICONTROL Templates]**.
 
@@ -228,7 +226,7 @@ Um beispielsweise den `_blank` Zielrahmen festzulegen, können Sie die Vorlage w
 
    `<search-link><search-title length=100></search-link>`
 
-1. Fügen Sie das Rahmenziel dem `<search-link>` Tag hinzu. Geben Sie im obigen Beispiel `target="_blank"`ein. Stellen Sie sicher, dass Sie den Unterstrich und die Anführungszeichen um den Zielwert setzen.
+1. Hinzufügen die Zielgruppe &quot;frame&quot;an das `<search-link>` -Tag. Geben Sie im obigen Beispiel `target="_blank"`ein. Achten Sie darauf, den Unterstrich und die Anführungszeichen um den Wert der Zielgruppe einzufügen.
 
    Das `<search-link>` -Tag wird nun wie folgt angezeigt:
 
@@ -241,7 +239,7 @@ Wenn ein Site-Besucher einen Link zu den Suchergebnissen wählt, wird die verkn�
 Normalerweise sollten Sie Ihre Navigationsrahmen davon ausschließen, mit Ihren Suchergebnissen indiziert zu werden. Um diese Funktion zu nutzen, können Sie diesen Seiten ein `noindex` Meta-Tag hinzufügen.
 
 1. Öffnen Sie die HTML-Seitenquelle für Ihren Navigationsrahmen.
-1. Fügen Sie den folgenden Meta-Tag im `<head>` Abschnitt Ihres HTML-Codes hinzu:
+1. Hinzufügen Sie das folgende Meta-Tag im `<head>` Abschnitt Ihres HTML-Codes:
 
    `<meta name="robots" content="noindex">`
 
@@ -263,8 +261,8 @@ Normalerweise sollten Sie Ihre Navigationsrahmen davon ausschließen, mit Ihren 
 
    Folgendes trifft zu:
 
-   * Die Suchergebnisseite wird im angegebenen Zielrahmen angezeigt.
-   * Links aus Ihren Suchergebnissen befinden sich im angegebenen Zielrahmen.
+   * Die Suchergebnisseite wird in der angegebenen Zielgruppe angezeigt.
+   * Die Links aus den Suchergebnissen befinden sich im Rahmen der angegebenen Zielgruppe.
    * Ergebnisse von Navigationsrahmen werden nicht angezeigt.
    Wenn nach dem Testen des Suchformulars Probleme mit Frames auftreten, wenden Sie sich an den Kundensupport.
 
@@ -272,7 +270,7 @@ Normalerweise sollten Sie Ihre Navigationsrahmen davon ausschließen, mit Ihren 
 
 Sie können den erweiterten Formularcode an Ihre Design- und Inhaltsanforderungen anpassen oder zusätzliche Suchparameter hinzufügen oder entfernen.
 
-Ihre Homepage ist ein guter Ort, um ein erweitertes Suchformular einzufügen, da viele Kunden dort Suchfunktionen erwarten. Sie können auch eine HTML-Seite erstellen, die das Suchformular und andere hilfreiche Informationen enthält, und dann auf der gesamten Website eine Verknüpfung zu dieser Seite herstellen.
+Ihre Startseite eignet sich gut zum Einfügen eines erweiterten Suchformulars, da viele Kunden dort Suchfunktionen erwarten. Sie können auch eine HTML-Seite erstellen, die das Suchformular und andere hilfreiche Informationen enthält, und dann auf der gesamten Website eine Verknüpfung zu dieser Seite herstellen.
 
 Wenn Sie geschützten Inhalt indizieren, können Sie die Suchergebnisse von sicheren Search Web-Servern bereitstellen lassen. Ändern Sie die URL im Aktionsattribut des Suchformulars in: action=&quot;https://search.atomz.com/search/&quot; verwenden.
 
@@ -280,13 +278,13 @@ Wenn Sie geschützten Inhalt indizieren, können Sie die Suchergebnisse von sich
 >
 >Einige HTML-Editoren haben Probleme beim Einfügen von HTML-Code aus anderen Anwendungen. Wenn der HTML-Code als Text auf Ihrer Webseite angezeigt wird, kopieren Sie den Suchcode in einen einfachen Texteditor, z. B. Notepad unter Windows oder Simple Text unter Mac, und kopieren Sie ihn dann erneut in Ihren HTML-Editor.
 
-Suchparameter werden im Code des erweiterten Suchformulars verwendet, um Optionsfelder, Kontrollkästchen und Listenfelder zu erstellen, die Kunden zur Anpassung einzelner Suchvorgänge verwenden können. Kunden können beispielsweise die Anzahl der angezeigten Suchergebnisse oder einen Datumsbereich angeben oder ob Zusammenfassungen mit den Suchergebnissen angezeigt werden, die alle in den erweiterten Suchformularen angezeigt werden.
+Suchparameter werden im Code des erweiterten Suchformulars verwendet, um Optionsfelder, Kontrollkästchen und Listen zu erstellen, die Kunden zur individuellen Suche verwenden können. Kunden können beispielsweise die Anzahl der angezeigten Suchergebnisse oder einen Datumsbereich angeben oder ob Zusammenfassungen mit den Suchergebnissen angezeigt werden, die alle in den erweiterten Suchformularen angezeigt werden.
 
 Mithilfe des folgenden Beispiels für die erweiterte Suche wird im restlichen Verlauf dieses Themas gezeigt, wie jede Option im Formular mithilfe von Suchparametern erstellt wird.
 
 ![](assets/advancedsearchform.png)
 
-Sie können den gesamten HTML-Code für das erweiterte Suchformular des obigen Beispiels anzeigen.
+Sie können den gesamten HTML-Code für das erweiterte Suchformular des obigen Beispiels Ansicht haben.
 
 Siehe HTML-Code [für erweiterte Suchformulare](../c-appendices/c-searchforms.md#reference_9AAD4A46B68D4D48865508982CB86DB9).
 
@@ -308,7 +306,7 @@ Siehe [Kopieren des HTML-Codes des Suchformulars in die...](../c-about-auto-comp
    <td colname="col2"> <p>Optionen für erweiterte Suchformulare aktivieren (ausgeblendetes Feld) </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> sp_advanced </span> </p> </td> 
    <td colname="col3"> <p> <span class="syntax html codeph"> &lt;input type=hidden name="sp_advanced" value=1&gt; </span> </p> </td> 
-   <td colname="col4"> <p>Erweiterte Suchoptionen aktivieren oder deaktivieren. Sie können beispielsweise ein Standardsuchformular mit einem Link zu einer zweiten Seite mit einem erweiterten Formular auf Ihre Homepage setzen. In diesem Fall würden Sie eine Kopie Ihres Standardformulars in <span class="codeph"> &lt;search-if-not-advanced&gt; einfügen...&lt;/search-if-not-advanced&gt;- </span> Vorlagen-Tags. </p> <p>Ein Kunde, der eine Suche über das Standardformular durchführt, sieht ein Standardsuchformular, wenn die Suchergebnisse angezeigt werden. Im Bildschirm für das erweiterte Suchformular fügen Sie das Tag <span class="codeph"> &lt;input type=hidden name="sp_advanced" value=1&gt; mit den anderen erweiterten Formularoptionen ein </span> . </p> <p>Sie fügen auch eine Kopie des erweiterten Suchformulars in der Datei "&lt;search-if-advanced&gt;"ein... &lt;/search-if-advanced&gt;-Vorlagen-Tags. Ein Kunde, der über das erweiterte Suchformular eine Suche durchführt, sieht ein erweitertes Suchformular, wenn die Suchergebnisse angezeigt werden. </p> </td> 
+   <td colname="col4"> <p>Erweiterte Suchoptionen aktivieren oder deaktivieren. Sie können beispielsweise ein Standardsuchformular auf Ihre Startseite mit einem Link zu einer zweiten Seite mit einem erweiterten Formular einfügen. In diesem Fall würden Sie eine Kopie Ihres Standardformulars in <span class="codeph"> &lt;search-if-not-advanced&gt; einfügen...&lt;/search-if-not-advanced&gt;- </span> Vorlagen-Tags. </p> <p>Ein Kunde, der eine Suche über das Standardformular durchführt, sieht ein Standardsuchformular, wenn die Suchergebnisse angezeigt werden. Im Bildschirm für das erweiterte Suchformular fügen Sie das Tag <span class="codeph"> &lt;input type=hidden name="sp_advanced" value=1&gt; mit den anderen erweiterten Formularoptionen ein </span> . </p> <p>Sie fügen auch eine Kopie des erweiterten Suchformulars in der Datei "&lt;search-if-advanced&gt;"ein... &lt;/search-if-advanced&gt;-Vorlagen-Tags. Ein Kunde, der über das erweiterte Suchformular eine Suche durchführt, sieht ein erweitertes Suchformular, wenn die Suchergebnisse angezeigt werden. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p> Übereinstimmung mit allen, allen oder Wortgruppen </p> </td> 
@@ -317,7 +315,7 @@ Siehe [Kopieren des HTML-Codes des Suchformulars in die...](../c-about-auto-comp
       &lt;input&nbsp;type=radio&nbsp;name="sp_p"&nbsp;value="any"&gt;Any&nbsp;word 
       &lt;input&nbsp;type=radio&nbsp;name="sp_p"&nbsp;value="all"&nbsp;checked&gt;All&nbsp;words 
       &lt;input&nbsp;type=radio&nbsp;name="sp_p"&nbsp;value="phrase"&gt;Exact&nbsp;phrase </code> </p> </td> 
-   <td colname="col4"> <p>Erlauben Sie Ihrem Kunden, anzugeben, dass "beliebiges Wort", "alle Wörter"oder "der genaue Wortlaut"vorhanden sein muss, damit ein Dokument übereinstimmt. Wenn der <span class="codeph"> sp_p- </span> Parameter angegeben ist, müssen Kunden weder "+"noch "-"oder beides in der Suchabfrage verwenden. </p> <p> Wenn der <span class="codeph"> sp_p- </span> Parameter weggelassen wird oder auf ""oder "any"festgelegt ist, können Kunden weiterhin die "+"- und "-"-Spezifikatoren verwenden. Wenn der <span class="codeph"> sp_p- </span> Parameter auf "all"oder "Satz"festgelegt ist, werden die angegebenen "+"und "-"ignoriert. </p> <p>Sie können mehr über die Verwendung von "+"und "-"in einer Suche erfahren. </p> <p>Siehe <a href="../c-about-settings-menu/c-about-searching-menu.md#concept_207105CF26B1448F8A3D223787C56AB8" type="concept" format="dita" scope="local">Info zu Suchen</a> </p> </td> 
+   <td colname="col4"> <p>Erlauben Sie Ihrem Kunden, anzugeben, dass "beliebiges Wort", "alle Wörter"oder "der genaue Wortlaut"vorhanden sein muss, damit ein Dokument übereinstimmt. Wenn der <span class="codeph"> sp_p- </span> Parameter angegeben ist, müssen Kunden weder "+"noch "-"oder beides in der Abfrage der Suche verwenden. </p> <p> Wenn der <span class="codeph"> sp_p- </span> Parameter weggelassen wird oder auf ""oder "any"festgelegt ist, können Kunden weiterhin die "+"- und "-"-Spezifikatoren verwenden. Wenn der <span class="codeph"> sp_p- </span> Parameter auf "all"oder "Satz"festgelegt ist, werden die angegebenen "+"und "-"ignoriert. </p> <p>Sie können mehr über die Verwendung von "+"und "-"in einer Suche erfahren. </p> <p>Siehe <a href="../c-about-settings-menu/c-about-searching-menu.md#concept_207105CF26B1448F8A3D223787C56AB8" type="concept" format="dita" scope="local">Info zu Suchen</a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p> Klanggleiche Übereinstimmung </p> </td> 
@@ -325,7 +323,7 @@ Siehe [Kopieren des HTML-Codes des Suchformulars in die...](../c-about-auto-comp
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--&nbsp;Checkbox&nbsp;enables&nbsp;sound-alike&nbsp;matching&nbsp;--&gt; 
       &lt;input&nbsp;type=hidden&nbsp;name="sp_w_control"&nbsp;value=1&gt; 
       &lt;input&nbsp;type=checkbox&nbsp;name="sp_w"&nbsp;value="alike"&gt;&nbsp;Sound-alike&nbsp;matching </code> </p> </td> 
-   <td colname="col4"> <p>Ermöglicht Kunden die Aktivierung oder Deaktivierung der Klangabstimmung. Durch eine akustische Übereinstimmung können falsch geschriebene Suchabfragen mit Wörtern übereinstimmen, die in Ihren Dokumenten "ähnlich"klingen. </p> <p>Wenn der <span class="codeph"> Parameter </span> sp_w_control auf 1 gesetzt und der <span class="codeph"> Parameter </span> sp_w auf "alike"gesetzt ist, wird das generierte Kontrollkästchen aktiviert, sodass standardmäßig eine Klangübereinstimmung möglich ist. </p> <p>Wenn der Parameter <span class="codeph"> sp_w auf "" </span> gesetzt ist, wird das Kontrollkästchen nicht aktiviert. </p> <p>Wenn Sie während des letzten Indexierungsvorgangs keine Klangalibrierung aktiviert haben, ist eine Klangalike-Übereinstimmung nicht möglich und der Parameter <span class="codeph"> sp_w </span> wird ignoriert. Um die Klangübereinstimmung zu aktivieren, klicken Sie im Produktmenü auf <span class="uicontrol"> Linguistik </span> &gt; <span class="uicontrol"> Wörter und Sprache </span> &gt; <span class="uicontrol"> Klangähnliche Übereinstimmung </span>. </p> <p>Sie können die Parameter <span class="codeph"> sp_w </span> und <span class="codeph"> sp_w_control auch wie folgt </span> zuweisen: </p> <p> <code class="syntax html"> &lt;!--&nbsp;Checkbox&nbsp;disables&nbsp;sound-alike&nbsp;matching&nbsp;--&gt; 
+   <td colname="col4"> <p>Ermöglicht Kunden die Aktivierung oder Deaktivierung der Klangabstimmung. Geräuschgleiche Übereinstimmungen ermöglichen es falsch geschriebenen Suchbegriffen, Abfragen zu entsprechen, die in Ihren Dokumenten "ähnlich"klingen. </p> <p>Wenn der <span class="codeph"> Parameter </span> sp_w_control auf 1 gesetzt und der <span class="codeph"> Parameter </span> sp_w auf "alike"gesetzt ist, wird das generierte Kontrollkästchen aktiviert, sodass standardmäßig eine Klangübereinstimmung möglich ist. </p> <p>Wenn der Parameter <span class="codeph"> sp_w auf "" </span> gesetzt ist, wird das Kontrollkästchen nicht aktiviert. </p> <p>Wenn Sie während des letzten Indexierungsvorgangs keine Klangalibrierung aktiviert haben, ist eine Klangalike-Übereinstimmung nicht möglich und der Parameter <span class="codeph"> sp_w </span> wird ignoriert. Um die Klangübereinstimmung zu aktivieren, klicken Sie im Produktmenü auf <span class="uicontrol"> Linguistik </span> &gt; <span class="uicontrol"> Wörter und Sprache </span> &gt; <span class="uicontrol"> Klangähnliche Übereinstimmung </span>. </p> <p>Sie können die Parameter <span class="codeph"> sp_w </span> und <span class="codeph"> sp_w_control auch wie folgt </span> zuweisen: </p> <p> <code class="syntax html"> &lt;!--&nbsp;Checkbox&nbsp;disables&nbsp;sound-alike&nbsp;matching&nbsp;--&gt; 
       &lt;input&nbsp;type=hidden&nbsp;name="sp_w_control"&nbsp;value=0&gt; 
       &lt;input&nbsp;type=checkbox&nbsp;name="sp_w"&nbsp;value="exact"&gt; 
       No&nbsp;sound-alike&nbsp;matching </code> </p> <p>Wenn in diesem Fall der <span class="codeph"> Parameter </span> sp_w_control auf 0 gesetzt und der Parameter <span class="codeph"> </span> sp_w auf "exakt"festgelegt ist, ist die Übereinstimmung mit Sound standardmäßig deaktiviert. Wenn der Parameter <span class="codeph"> "sp_w"auf "" </span> gesetzt ist, wird die Klangübereinstimmung aktiviert. </p> </td> 
@@ -336,7 +334,7 @@ Siehe [Kopieren des HTML-Codes des Suchformulars in die...](../c-about-auto-comp
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--Specifies&nbsp;type&nbsp;of&nbsp;date&nbsp;range&nbsp;searching&nbsp;to&nbsp;perform.--&gt; 
       &lt;input&nbsp;type=radio&nbsp;name="sp_d"&nbsp;value="custom"&nbsp;checked&gt; 
       &lt;input&nbsp;type=radio&nbsp;name="sp_d"&nbsp;value="specific"&gt; </code> </p> </td> 
-   <td colname="col4"> <p>Der <span class="codeph"> sp_d- </span> Parameter gibt einen benutzerspezifischen Datenbereich an, der für die Ausführung oder für die Übereinstimmung eines bestimmten Datumsbereichs geeignet ist. </p> <p>Im standardmäßigen erweiterten Suchformular wird diese Option als Optionsfeldgruppe mit einer Dropdown-Liste mit "benutzerspezifischen"Datumsbereichen angezeigt, die mit einem <span class="codeph"> sp_date_range- </span> Parameter generiert wurden. Es enthält außerdem eine Gruppe von "spezifischen"Start- und Enddaten, die mit den Parametern <span class="codeph"> sp_start_day, </span>sp_start_month <span class="codeph"> , </span>sp_start_year, <span class="codeph"> sp_end_day </span>, <span class="codeph"> sp_end_month </span><span class="codeph"> </span><span class="codeph"> </span> und_end_year generiert werden. </p> <p>Ein "benutzerdefinierter"Datumsbereich ist ein benannter Datumsbereich, der durchsucht werden soll. Zum Beispiel "Jederzeit", "Heute", "Im letzten Jahr"usw. </p> <p>Ein "spezifischer"Datumsbereich besteht aus einem Start- und einem Enddatum. Beispiel: vom 8. September 2009 bis zum 18. Oktober 2011. </p> </td> 
+   <td colname="col4"> <p>Der <span class="codeph"> sp_d- </span> Parameter gibt einen benutzerspezifischen Datenbereich an, der für die Ausführung oder für die Übereinstimmung eines bestimmten Datumsbereichs geeignet ist. </p> <p>Im standardmäßigen erweiterten Suchformular wird diese Option als Optionsfeldgruppe mit einer Dropdown-Liste von "benutzerspezifischen"Datumsbereichen angezeigt, die mit einem <span class="codeph"> sp_date_range- </span> Parameter generiert wurde. Es enthält außerdem eine Gruppe von "spezifischen"Beginn- und Enddaten, die mit den Parametern <span class="codeph"> sp_Beginn_day, </span>sp_Beginn_month <span class="codeph"> , </span>sp_Beginn_year, <span class="codeph"> sp_end_day </span>, <span class="codeph"> sp_end_month </span><span class="codeph"> </span><span class="codeph"> </span> und sp_end_year generiert werden. </p> <p>Ein "benutzerdefinierter"Datumsbereich ist ein benannter Datumsbereich, der durchsucht werden soll. Zum Beispiel "Jederzeit", "Heute", "Im letzten Jahr"usw. </p> <p>Ein "spezifischer"Datumsbereich besteht aus einem Beginn- und einem Enddatum. Beispiel: vom 8. September 2009 bis zum 18. Oktober 2011. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>Datumsbereich-Übereinstimmung: benutzerdefinierter Datumsbereich </p> </td> 
@@ -365,16 +363,16 @@ Siehe [Kopieren des HTML-Codes des Suchformulars in die...](../c-about-auto-comp
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col2"> <p>Datumsbereich-Übereinstimmung: Startdaten </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_start_day, sp_start_month, sp_start_year </span> </p> <p> </p> </td> 
+   <td colname="col2"> <p>Datumsbereich-Übereinstimmung: Beginn </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_Beginn_day, sp_Beginn_month, sp_Beginn_year </span> </p> <p> </p> </td> 
    <td colname="col3"> </td> 
-   <td colname="col4"> <p>Dieses Triplet mit numerischen Werten gibt das Startdatum eines bestimmten zu suchenden Datumsbereichs an. Stellen Sie sicher, dass Sie alle drei Werte angeben, da ein teilweise angegebenes Datum ignoriert wird. </p> <p>Es ist zulässig, nur das Startdatum, nur das Enddatum oder sowohl das Start- als auch das Enddatum anzugeben. Wenn nur das Startdatum angegeben ist, enthält die Suche übereinstimmende Dokumente, die am oder nach dem Startdatum datiert sind. Wenn nur das Enddatum angegeben ist, enthält die Suche passende Dokumente am oder vor dem Enddatum. Wenn sowohl das Start- als auch das Enddatum angegeben sind, enthält die Suche passende Dokumente vom Startdatum bis zum Enddatum. </p> <p>Alle Datumsangaben werden relativ zur Greenwich Mean Time durchsucht. </p> </td> 
+   <td colname="col4"> <p>Dieses Dreieck mit numerischen Werten gibt das Datum des Beginns eines bestimmten zu suchenden Datumsbereichs an. Stellen Sie sicher, dass Sie alle drei Werte angeben, da ein teilweise angegebenes Datum ignoriert wird. </p> <p>Es ist zulässig, nur das Datum des Beginns, nur das Enddatum oder sowohl das Datum des Beginns als auch das Enddatum anzugeben. Wenn nur das Datum des Beginns angegeben ist, enthält die Suche passende Dokumente, die am oder nach dem Datum des Beginns datiert sind. Wenn nur das Enddatum angegeben ist, enthält die Suche passende Dokumente am oder vor dem Enddatum. Wenn sowohl das Beginns- als auch das Enddatum angegeben sind, enthält die Suche passende Dokumente vom Beginn bis zum Enddatum. </p> <p>Alle Datumsangaben werden relativ zur Greenwich Mean Time durchsucht. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p> Datumsbereich-Übereinstimmung: Enddaten </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> sp_end_day, sp_end_month, sp_end_year </span> </p> <p> </p> </td> 
    <td colname="col3"> </td> 
-   <td colname="col4"> <p>Dieses Dreieck aus numerischen Werten gibt das Enddatum des zu suchenden Datumsbereichs an. Stellen Sie sicher, dass Sie alle drei Werte angeben, da ein teilweise angegebenes Datum ignoriert wird. </p> <p>Es ist zulässig, nur das Startdatum, nur das Enddatum oder sowohl das Start- als auch das Enddatum anzugeben. Wenn nur das Startdatum angegeben ist, enthält die Suche übereinstimmende Dokumente, die am oder nach dem Startdatum datiert sind. Wenn nur das Enddatum angegeben ist, enthält die Suche passende Dokumente am oder vor dem Enddatum. Wenn sowohl das Start- als auch das Enddatum angegeben sind, enthält die Suche passende Dokumente vom Startdatum bis zum Enddatum. </p> <p>Alle Datumsangaben werden relativ zur Greenwich Mean Time durchsucht. </p> </td> 
+   <td colname="col4"> <p>Dieses Dreieck aus numerischen Werten gibt das Enddatum des zu suchenden Datumsbereichs an. Stellen Sie sicher, dass Sie alle drei Werte angeben, da ein teilweise angegebenes Datum ignoriert wird. </p> <p>Es ist zulässig, nur das Beginn-, das Enddatum oder sowohl das Beginns- als auch das Enddatum anzugeben. Wenn nur das Datum des Beginns angegeben ist, enthält die Suche passende Dokumente, die am oder nach dem Datum des Beginns datiert sind. Wenn nur das Enddatum angegeben ist, enthält die Suche passende Dokumente am oder vor dem Enddatum. Wenn sowohl der Beginn als auch das Enddatum angegeben sind, enthält die Suche passende Dokumente vom Beginn bis zum Enddatum. </p> <p>Alle Datumsangaben werden relativ zur Greenwich Mean Time durchsucht. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>Innerhalb des Suchfelds </p> </td> 
@@ -391,7 +389,7 @@ Siehe [Kopieren des HTML-Codes des Suchformulars in die...](../c-about-auto-comp
       &lt;option&nbsp;value="target"&gt;Target&lt;/option&gt; 
       &lt;option&nbsp;value="date"&gt;Date&lt;/option&gt;* 
       &lt;/select&gt; </code> </p> </td> 
-   <td colname="col4"> <p>Mit dem <span class="codeph"> </span> Listenfeld sp_x können Ihre Kunden das Feld angeben, in dem nach den Abfragezeichenfolgen gesucht werden soll. </p> <p>Kunden können entweder alle Felder, den Titel, die Dokumentbeschreibung, die Dokumentsuchbegriffe, den Haupttext, den alternativen Text, die URL, das Datum oder die Zielsuchbegriffe des Dokuments auswählen. </p> <p>Wenn der <span class="codeph"> sp_x- </span> Parameter verwendet wird, müssen Kunden nicht "title:", "desc:", "keys:", "body:", "alt:", "url:"und "target:"in Suchabfragezeichenfolgen angeben. </p> <p>Wenn der <span class="codeph"> sp_x- </span> Parameter weggelassen wird oder auf ""oder "any"festgelegt ist, können Kunden weiterhin die Feldspezifikatorzeichenfolgen verwenden. Wenn der <span class="codeph"> sp_x- </span> Parameter auf ein bestimmtes Feld eingestellt ist, werden alle anderen Feldkennzeichenfolgen ignoriert. </p> <p>Siehe <a href="../c-about-settings-menu/c-about-searching-menu.md#concept_207105CF26B1448F8A3D223787C56AB8" type="concept" format="dita" scope="local">Info zu Suchen</a> </p> </td> 
+   <td colname="col4"> <p>Im Feld <span class="codeph"> sp_x- </span> Liste können Ihre Kunden das Feld angeben, in dem nach den Abfragen-Zeichenfolgen gesucht werden soll. </p> <p>Die Kunden können entweder alle Felder, den Titel, die Beschreibung des Dokuments, die Schlüsselwörter des Dokuments, den Haupttext, den Alternativtext, die URL, das Datum oder die Zielgruppe des Dokuments auswählen. </p> <p>Wenn der <span class="codeph"> sp_x- </span> Parameter verwendet wird, müssen Kunden in den Zeichenfolgen für die Abfrage der Suche nicht "title:", "desc:", "keys:", "body:", "alt:", "url:"und "Zielgruppe:"angeben. </p> <p>Wenn der <span class="codeph"> sp_x- </span> Parameter weggelassen wird oder auf ""oder "any"festgelegt ist, können Kunden weiterhin die Feldspezifikatorzeichenfolgen verwenden. Wenn der <span class="codeph"> sp_x- </span> Parameter auf ein bestimmtes Feld eingestellt ist, werden alle anderen Feldkennzeichenfolgen ignoriert. </p> <p>Siehe <a href="../c-about-settings-menu/c-about-searching-menu.md#concept_207105CF26B1448F8A3D223787C56AB8" type="concept" format="dita" scope="local">Info zu Suchen</a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>Ergebnisanzahl anzeigen </p> </td> 
@@ -426,7 +424,7 @@ Siehe [Kopieren des HTML-Codes des Suchformulars in die...](../c-about-auto-comp
       &lt;option&nbsp;value=0&nbsp;selected&gt;relevance&lt;/option&gt; 
       &lt;option&nbsp;value=1&gt;date&lt;/option&gt; 
       &lt;/select&gt; </code> </p> </td> 
-   <td colname="col4"> <p>Ermöglicht Kunden die Auswahl, ob die Ergebnisse in der Reihenfolge ihrer Relevanz oder ihres Datums aufgeführt werden. </p> <p>Wenn der Wert auf 1 gesetzt ist, werden die Ergebnisse aus dem zuletzt geänderten Dokument in das am wenigsten geänderte Dokument aufgelistet. Wenn der Wert auf 0 gesetzt ist, werden die Ergebnisse aus der Liste der relevantesten bis zum am wenigsten relevanten aufgeführt. Sie können diesen Parameter auch mit Optionsfeldern wie im folgenden Beispiel verwenden: </p> <p> <code class="syntax html"> &lt;!--&nbsp;Sort&nbsp;results&nbsp;by&nbsp;relevance&nbsp;or&nbsp;by&nbsp;date&nbsp;--&gt; 
+   <td colname="col4"> <p>Ermöglicht Kunden die Auswahl, ob die Ergebnisse in der Reihenfolge ihrer Relevanz oder ihres Datums aufgeführt werden. </p> <p>Wenn der Wert auf 1 gesetzt ist, werden die Ergebnisse vom zuletzt geänderten Dokument zum am wenigsten geänderten Dokument aufgelistet. Wenn der Wert auf 0 gesetzt ist, werden die Ergebnisse aus der Liste der relevantesten bis zum am wenigsten relevanten aufgeführt. Sie können diesen Parameter auch mit Optionsfeldern wie im folgenden Beispiel verwenden: </p> <p> <code class="syntax html"> &lt;!--&nbsp;Sort&nbsp;results&nbsp;by&nbsp;relevance&nbsp;or&nbsp;by&nbsp;date&nbsp;--&gt; 
       &lt;input&nbsp;type=radio&nbsp;name="sp_s"&nbsp;value=0&nbsp;selected&gt;Sort&nbsp;by&nbsp;relevance 
       &lt;input&nbsp;type=radio&nbsp;name="sp_s"&nbsp;value=1&gt;Sort&nbsp;by&nbsp;date </code> </p> </td> 
   </tr> 
