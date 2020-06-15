@@ -8,7 +8,10 @@ title: Menü "Crawling"
 topic: Settings,Site search and merchandising
 uuid: a58c03bf-90f7-4b5b-91ff-988b95c246b0
 translation-type: tm+mt
-source-git-commit: 77a4e88c7bf47b637030e3935a39dfdf4f175e80
+source-git-commit: e080a61e24a3809beff7c212ff3d088b2a8ad3b6
+workflow-type: tm+mt
+source-wordcount: '11115'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ Verwenden Sie das Menü &quot;Crawling&quot;(Crawling-Menü) mit Datums- und URL
 
 ## Informationen zu URL-Einstiegspunkten {#concept_5D857E3B5C124E85BC0B5AE77A509573}
 
-Die meisten Websites verfügen über einen primären Einstiegspunkt oder eine Homepage, die/die ein Kunde ursprünglich besucht. Dieser Haupteinstiegspunkt ist die URL-Adresse, von der aus der Suchroboter Indexcrawling beginnt. Wenn Ihre Website jedoch über mehrere Domänen oder Subdomänen verfügt oder Teile Ihrer Site nicht vom primären Einstiegspunkt aus verknüpft sind, können Sie mit URL-Einstiegspunkten weitere Einstiegspunkte hinzufügen.
+Die meisten Websites verfügen über einen primären Einstiegspunkt oder eine Startseite, die/die ein Kunde ursprünglich besucht. Dieser Haupteinstiegspunkt ist die URL-Adresse, von der aus der Suchroboter Indexcrawling beginnt. Wenn Ihre Website jedoch über mehrere Domänen oder Subdomänen verfügt oder Teile Ihrer Site nicht vom primären Einstiegspunkt aus verknüpft sind, können Sie mit URL-Einstiegspunkten weitere Einstiegspunkte hinzufügen.
 
 Alle Webseiten unter jedem angegebenen URL-Einstiegspunkt werden indiziert. Sie können URL-Einstiegspunkte mit Masken kombinieren, um genau zu steuern, welche Teile einer Website Sie indizieren möchten. Sie müssen Ihren Website-Index neu erstellen, bevor die Auswirkungen der URL-Entrypoints-Einstellungen für Kunden sichtbar sind.
 
@@ -108,9 +111,9 @@ Siehe [Konfigurieren der Kontoeinstellungen](../c-about-settings-menu/c-about-ac
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Entrypoints]**.
 1. Geben Sie auf der [!DNL URL Entrypoints] Seite im [!DNL Entrypoints] Feld eine URL-Adresse pro Zeile ein.
-1. (Optional) Wählen Sie in der **[!UICONTROL Add Index Connector Configurations]** Dropdownliste einen Indexanschluss aus, den Sie als Einstiegspunkt für die Indexierung hinzufügen möchten.
+1. (Optional) Wählen Sie in der **[!UICONTROL Add Index Connector Configurations]** Dropdown-Liste einen Indexanschluss aus, den Sie als Einstiegspunkt für die Indexierung hinzufügen möchten.
 
-   Die Dropdownliste ist nur verfügbar, wenn Sie zuvor eine oder mehrere Indexschnittstellendefinitionen hinzugefügt haben.
+   Die Dropdown-Liste ist nur verfügbar, wenn Sie zuvor eine oder mehrere Indexschnittstellendefinitionen hinzugefügt haben.
 
    ![](assets/url_entrypoints_index_connector.png)
 
@@ -132,7 +135,7 @@ Siehe [Konfigurieren der Kontoeinstellungen](../c-about-settings-menu/c-about-ac
 
 ## URL-Masken {#concept_8039DFC53FF3410AA494D602F71BA164}
 
-URL-Masken sind Muster, die bestimmen, welche Ihrer Websites die Suchroboterindizes oder nicht Indizes dokumentieren.
+URL-Masken sind Muster, mit denen bestimmt wird, welche Dokumente auf Ihrer Website von den Suchrobotern indiziert werden oder nicht.
 
 Stellen Sie sicher, dass Sie Ihren Site-Index neu erstellen, damit die Ergebnisse Ihrer URL-Masken für Ihre Kunden sichtbar sind.
 
@@ -143,13 +146,13 @@ Im Folgenden sind zwei Arten von URL-Masken aufgeführt, die Sie verwenden könn
 * URL-Masken einschließen
 * URL-Masken ausschließen
 
-&quot;URL-Masken einschließen&quot;weist den Suchroboter an, alle Dokumente zu indizieren, die dem Muster der Maske entsprechen.
+&quot;URL-Masken einschließen&quot;weist den Suchroboter an, alle Dokumente zu indizieren, die dem Maskenmuster entsprechen.
 
-URL-Masken ausschließen weist den Suchroboter an, die passenden Dokumente zu indizieren.
+URL-Masken ausschließen weist den Suchroboter an, passende Dokumente zu indizieren.
 
 Während der Suchroboter von einem Link zum Link durch Ihre Website reist, findet er URLs und sucht nach Masken, die mit diesen URLs übereinstimmen. Die erste Übereinstimmung bestimmt, ob diese URL in den Index aufgenommen oder ausgeschlossen werden soll. Entspricht keine Maske einer gefundenen URL, wird diese URL aus dem Index verworfen.
 
-URL-Masken für Einstiegs-URLs einschließen werden automatisch generiert. Dadurch wird sichergestellt, dass alle auf Ihrer Website angetroffenen Dokumente indiziert sind. Es entfernt auch bequem mit Links, die Ihre Website &quot;verlassen&quot;. Wenn beispielsweise eine indizierte Seite mit https://www.yahoo.com verknüpft ist, wird diese URL nicht vom Suchroboter indiziert, da sie nicht mit der automatisch von der Einstiegs-URL generierten Einschlussmaske übereinstimmt.
+URL-Masken für Einstiegs-URLs einschließen werden automatisch generiert. Dadurch wird sichergestellt, dass alle auf Ihrer Website aufgetretenen Dokumente indiziert sind. Es entfernt auch bequem mit Links, die Ihre Website &quot;verlassen&quot;. Wenn beispielsweise eine indizierte Seite mit https://www.yahoo.com verknüpft ist, wird diese URL nicht vom Suchroboter indiziert, da sie nicht mit der automatisch von der Einstiegs-URL generierten Einschlussmaske übereinstimmt.
 
 Jede URL-Maske, die Sie angeben, muss sich in einer separaten Zeile befinden.
 
@@ -186,7 +189,7 @@ Eine einfache URL-Maske zum Einschließen lautet wie folgt:
 include https://www.mydomain.com/news/
 ```
 
-Es werden nur Dokumente indiziert, die über eine Reihe von Links von einem URL-Einstiegspunkt aus verknüpft sind oder die selbst als URL-Einstiegspunkt verwendet werden. Wenn die URL eines Dokuments nur als URL-Maske zum Einschließen aufgelistet wird, wird kein nicht verknüpftes Dokument indiziert. Um Ihrem Index nicht verknüpfte Dokumente hinzuzufügen, können Sie die Funktion &quot;URL-Einstiegspunkte&quot;verwenden.
+Es werden nur Dokumente indiziert, die über eine Reihe von Links von einem URL-Einstiegspunkt aus verknüpft sind oder die selbst als URL-Einstiegspunkt verwendet werden. Die bloße Auflistung der URL eines Dokuments als URL-Maske zum Einschließen von Elementen indiziert kein nicht verknüpftes Dokument. Um Ihrem Index nicht verknüpfte Dokumente hinzuzufügen, können Sie die Funktion &quot;URL-Einstiegspunkte&quot;verwenden.
 
 Siehe [Informationen zu URL-Einträgen](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573).
 
@@ -196,7 +199,7 @@ Masken einschließen und Masken ausschließen können zusammen funktionieren. Si
 https://www.mydomain.com/photos/
 ```
 
-Der Suchroboter durchsucht und indiziert alle Seiten unter `/photos/summer/`und `/photos/spring/` (vorausgesetzt, dass es Links zu mindestens einer Seite in jedem Verzeichnis aus dem `/photos/fall/` `photos` Ordner gibt). Dieses Verhalten liegt daran, dass die Verknüpfungspfade es dem Suchroboter ermöglichen, die Dokumente in den Ordnern `/summer/`, `/spring/`und `/fall/`zu finden, und die Ordner-URLs mit der Include-Maske übereinstimmen, die automatisch von der Einstiegspunkt-URL generiert wird.
+Der Suchroboter durchsucht und indiziert alle Seiten unter `/photos/summer/`und `/photos/spring/` (vorausgesetzt, dass es Links zu mindestens einer Seite in jedem Verzeichnis aus dem `/photos/fall/` `photos` Ordner gibt). Dieses Verhalten tritt auf, weil die Verknüpfungspfade es dem Suchroboter ermöglichen, die Dokumente im Ordner `/summer/`, `/spring/`und `/fall/`Ordner und die Ordner-URLs zu finden, die mit der Include-Maske übereinstimmen, die automatisch von der Einstiegs-URL generiert wird.
 
 Sie können alle Seiten im `/fall/` Ordner mit einer URL-Maske ausschließen, wie im folgenden Beispiel dargestellt:
 
@@ -286,13 +289,13 @@ Ein Komma ist nicht als Trennzeichen zwischen der Maske und dem Schlüsselwort g
    <td colname="col2"> <p>Dient zum Einschließen und Ausschließen von Masken. </p> <p>Jede URL-Maske, der 
      <userinput>
        regexp 
-     </userinput> wird als regulärer Ausdruck behandelt. Wenn der Suchroboter auf Dokumente trifft, die mit einer URL-Maske für reguläre Ausdrücke übereinstimmen, werden diese Dokumente nicht indiziert. Wenn der Suchroboter auf Dokumente trifft, die mit einer URL-Maske für reguläre Ausdrücke übereinstimmen, werden diese Dokumente indiziert. Angenommen, Sie haben die folgende URL-Maske: </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*/products/.*\.html$ </code> </p> <p>Der Suchroboter schließt übereinstimmende Dateien wie 
+     </userinput> wird wie ein regulärer Ausdruck behandelt. Wenn der Suchroboter auf Dokumente trifft, die mit einer URL-Maske für reguläre Ausdruck übereinstimmen, werden diese Dokumente nicht indiziert. Wenn der Suchroboter auf Dokumente trifft, die mit einer URL-Maske für reguläre Ausdruck übereinstimmen, werden diese Dokumente indiziert. Angenommen, Sie haben die folgende URL-Maske: </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*/products/.*\.html$ </code> </p> <p>Der Suchroboter schließt übereinstimmende Dateien wie 
      <userinput>
        https://www.mydomain.com/products/page1.html 
      </userinput> </p> <p>Wenn Sie die folgende URL-Maske für regulären Ausdruck ausschließen hatten: </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*\?..*$ </code> </p> <p>Der Suchroboter enthält keine URL, die einen CGI-Parameter wie 
      <userinput>
        https://www.mydomain.com/cgi/prog/?arg1=val1&amp;arg2=val2 
-     </userinput>. </p> <p>Wenn Sie die folgende URL-Maske für reguläre Ausdrücke haben: </p> <p> <code> include&amp;nbsp;regexp&amp;nbsp;^.*\.swf$&amp;nbsp;noindex </code> </p> <p>Der Suchroboter folgt allen Links von Dateien mit der Erweiterung ".swf". Die  
+     </userinput>. </p> <p>Wenn Sie die folgende URL-Maske für regulären Ausdruck hatten: </p> <p> <code> include&amp;nbsp;regexp&amp;nbsp;^.*\.swf$&amp;nbsp;noindex </code> </p> <p>Der Suchroboter folgt allen Links von Dateien mit der Erweiterung ".swf". Die  
      <userinput>
        noindex 
      </userinput> gibt auch an, dass der Text der übereinstimmenden Dateien nicht indiziert ist. </p> <p>Siehe <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguläre Ausdrücke </a>. </p> </td> 
@@ -392,7 +395,7 @@ Im Folgenden finden Sie ein einfaches Beispiel für eine Ausschluss-Datumsmaske:
 exclude-days 90 https://www.mydomain.com/docs/archive
 ```
 
-Da es sich hierbei um eine Ausschlussdatumsmaske handelt, wird jede Datei, die dem Muster entspricht, nicht indiziert und ist mindestens 90 Tage alt. Wenn Sie ein Dokument ausschließen, wird kein Text indiziert und aus dieser Datei werden keine Links gefolgt. Die Datei wird effektiv ignoriert. In diesem Beispiel stimmen Dateien und Ordner möglicherweise mit dem angegebenen URL-Muster überein. Beachten Sie, dass sowohl `https://www.mydomain.com/docs/archive.html` als auch `https://www.mydomain.com/docs/archive/index.html` dem Muster entsprechen und nicht indiziert sind, wenn sie 90 Tage alt oder älter sind. Um nur Dateien im `/docs/archive/` Ordner zuzuordnen, muss die Datumsmaske einen nachfolgenden Schrägstrich wie folgt enthalten:
+Da es sich hierbei um eine Ausschlussdatumsmaske handelt, wird jede Datei, die dem Muster entspricht, nicht indiziert und ist mindestens 90 Tage alt. Wenn Sie ein Dokument ausschließen, wird kein Text indiziert und es werden keine Links aus dieser Datei gefolgt. Die Datei wird effektiv ignoriert. In diesem Beispiel stimmen Dateien und Ordner möglicherweise mit dem angegebenen URL-Muster überein. Beachten Sie, dass sowohl `https://www.mydomain.com/docs/archive.html` als auch `https://www.mydomain.com/docs/archive/index.html` dem Muster entsprechen und nicht indiziert sind, wenn sie 90 Tage alt oder älter sind. Um nur Dateien im `/docs/archive/` Ordner zuzuordnen, muss die Datumsmaske einen nachfolgenden Schrägstrich wie folgt enthalten:
 
 ```
 exclude-days 90 https://www.mydomain.com/docs/archive/
@@ -434,7 +437,7 @@ Sie können nur `/archive/fall/index.html` (unabhängig davon, wie alt sie ist -
 include-days 0 https://www.mydomain.com/archive/fall/index.html
 ```
 
-Damit die beiden oben genannten Maskenbeispiele wie gewünscht funktionieren, müssen Sie die Maske zum Einschließen wie folgt auflisten:
+Damit die beiden oben genannten Maskenbeispiele wie gewünscht funktionieren, müssen Sie die Einschlussmaske wie folgt zuerst Liste haben:
 
 ```
 include-days 0 https://www.mydomain.com/archive/fall/index.html 
@@ -493,13 +496,13 @@ Ein Komma ist nicht als Trennzeichen zwischen der Maske und dem Schlüsselwort g
   </tr> 
   <tr> 
    <td colname="col1"> <p>server-date </p> </td> 
-   <td colname="col2"> <p>Dient zum Einschließen und Ausschließen von Masken. </p> <p>Der Suchroboter lädt im Allgemeinen jede Datei herunter und analysiert sie, bevor er die Datumsmasken überprüft. Dieses Verhalten tritt auf, da einige Dateitypen ein Datum in der Datei selbst angeben können. Ein HTML-Dokument kann beispielsweise Meta-Tags enthalten, mit denen das Datum der Datei festgelegt wird. </p> <p>Wenn Sie viele Dateien je nach Datum ausschließen und keine unnötige Belastung Ihrer Server verursachen möchten, können Sie 
+   <td colname="col2"> <p>Dient zum Einschließen und Ausschließen von Masken. </p> <p>Der Suchroboter lädt im Allgemeinen jede Datei herunter und analysiert sie, bevor er die Datumsmasken überprüft. Dieses Verhalten tritt auf, da einige Dateitypen ein Datum in der Datei selbst angeben können. Ein HTML-Dokument kann beispielsweise Meta-Tags enthalten, mit denen das Dateidatum festgelegt wird. </p> <p>Wenn Sie viele Dateien je nach Datum ausschließen und keine unnötige Belastung Ihrer Server verursachen möchten, können Sie 
      <userinput>
        server-date 
-     </userinput> nach der URL in der Datumsmaske. </p> <p>Dieser Suchbegriff weist den Suchroboter an, dem Datum der Datei, die von Ihrem Server zurückgegeben wird, zu vertrauen, anstatt jede Datei zu analysieren. Bei der folgenden Datumsmaske zum Ausschließen werden beispielsweise Seiten ignoriert, die mit der URL übereinstimmen, wenn die Dokumente 90 Tage oder älter sind, und zwar entsprechend dem Datum, das vom Server in den HTTP-Kopfzeilen zurückgegeben wird: </p> <p> <code> exclude-days&amp;nbsp;90&amp;nbsp;https://www.mydomain.com/docs/archive&amp;nbsp;server-date </code> </p> <p> Wenn das vom Server zurückgegebene Datum 90 Tage oder länger zurückliegt, 
+     </userinput> nach der URL in der Datumsmaske. </p> <p>Dieser Suchbegriff weist den Suchroboter an, dem Datum der Datei, die von Ihrem Server zurückgegeben wird, zu vertrauen, anstatt jede Datei zu analysieren. Bei der folgenden Datumsmaske zum Ausschließen werden z. B. Seiten ignoriert, die mit der URL übereinstimmen, wenn die Dokumente 90 Tage oder älter sind, und zwar entsprechend dem vom Server in den HTTP-Kopfzeilen zurückgegebenen Datum: </p> <p> <code> exclude-days&amp;nbsp;90&amp;nbsp;https://www.mydomain.com/docs/archive&amp;nbsp;server-date </code> </p> <p> Wenn das vom Server zurückgegebene Datum 90 Tage oder länger zurückliegt, 
      <userinput>
        server-date 
-     </userinput> gibt an, dass die ausgeschlossenen Dokumente nicht von Ihrem Server heruntergeladen werden. Dadurch wird die Indexierungszeit für Ihre Dokumente verkürzt und die Belastung Ihrer Server verringert. Wenn   
+     </userinput> gibt an, dass die ausgeschlossenen Dokumente nicht von Ihrem Server heruntergeladen werden. Dies bedeutet eine schnellere Indexierung Ihrer Dokumente und eine geringere Belastung Ihrer Server. Wenn   
      <userinput>
        server-date 
      </userinput> nicht angegeben ist, ignoriert der Suchroboter das Datum, das vom Server in den HTTP-Headern zurückgegeben wird. Stattdessen wird jede Datei heruntergeladen und überprüft, um zu sehen, ob das Datum angegeben ist. Wenn in der Datei kein Datum angegeben ist, verwendet der Suchroboter das vom Server zurückgegebene Datum. </p> <p>Sie sollten 
@@ -512,7 +515,7 @@ Ein Komma ist nicht als Trennzeichen zwischen der Maske und dem Schlüsselwort g
    <td colname="col2"> <p> Verwenden Sie diese sowohl für ein- als auch für ausgeschlossene Masken. </p> <p>Jede Datumsmaske, der 
      <userinput>
        regexp 
-     </userinput> wird als regulärer Ausdruck behandelt. </p> <p>Wenn der Suchroboter auf Dateien trifft, die mit einer Datumsmaske für reguläre Ausdrücke übereinstimmen, werden diese Dateien nicht indiziert. </p> <p>Wenn der Suchroboter auf Dateien trifft, die mit einer Datumsmaske für reguläre Ausdrücke übereinstimmen, werden diese Dokumente indiziert. </p> <p>Angenommen, Sie haben die folgende Datumsmaske: </p> <p> <code> exclude-days&amp;nbsp;180&amp;nbsp;regexp&amp;nbsp;.*archive.* </code> </p> <p>Die Maske weist den Suchroboter an, passende Dateien, die 180 Tage oder älter sind, auszuschließen. Das heißt, Dateien, die das Wort "Archiv"in ihrer URL enthalten. </p> <p>Siehe <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguläre Ausdrücke </a>. </p> </td> 
+     </userinput> wird wie ein regulärer Ausdruck behandelt. </p> <p>Wenn der Suchroboter auf Dateien trifft, die mit der Datumsmaske "Regulärer Ausdruck ausschließen"übereinstimmen, werden diese nicht indiziert. </p> <p>Wenn der Suchroboter auf Dateien trifft, die mit einer Datumsmaske mit regulärem Ausdruck übereinstimmen, werden diese Dokumente indiziert. </p> <p>Angenommen, Sie haben die folgende Datumsmaske: </p> <p> <code> exclude-days&amp;nbsp;180&amp;nbsp;regexp&amp;nbsp;.*archive.* </code> </p> <p>Die Maske weist den Suchroboter an, passende Dateien, die 180 Tage oder älter sind, auszuschließen. Das heißt, Dateien, die das Wort "Archiv"in ihrer URL enthalten. </p> <p>Siehe <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguläre Ausdrücke </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -583,7 +586,7 @@ Realm2 name2 password2
 Realm3 name3 password3
 ```
 
-Sie können Kennwörter, die URLs oder Realms enthalten, miteinander kombinieren, sodass Ihre Kennwortliste wie folgt aussehen kann:
+Sie können Kennwörter, die URLs oder Realms enthalten, miteinander kombinieren, sodass die Liste des Kennworts wie folgt aussehen kann:
 
 ```
 Realm1 name1 password1 
@@ -594,7 +597,7 @@ https://www.mysite.com/path1/path5 name5 password5
 https://www.mysite.com/path6 name6 password6
 ```
 
-In der oben stehenden Liste wird das erste Kennwort verwendet, das einen Bereich oder eine URL enthält, der/die mit der Authentifizierungsanforderung des Servers übereinstimmt. Auch wenn die Datei unter `https://www.mysite.com/path1/path2/index.html` ist in `Realm3`, zum Beispiel `name2` `password2` und verwendet werden, weil das Kennwort, das mit der URL definiert ist, über dem mit dem Bereich definiert wird.
+In der obigen Liste wird das erste Kennwort verwendet, das einen Bereich oder eine URL enthält, der bzw. die der Authentifizierungsanforderung des Servers entspricht. Auch wenn die Datei unter `https://www.mysite.com/path1/path2/index.html` ist in `Realm3`, zum Beispiel `name2` `password2` und verwendet werden, weil das Kennwort, das mit der URL definiert ist, über dem mit dem Bereich definiert wird.
 
 ## Hinzufügen von Kennwörtern für den Zugriff auf Bereiche Ihrer Website, für die eine Authentifizierung erforderlich ist {#task_DED19D476FF04B48BB6456D5ECB8628A}
 
@@ -636,7 +639,7 @@ Siehe [Konfigurieren eines inkrementellen Indexes einer gestaffelten Website](..
 
 Sie können festlegen, welche Dateitypen für dieses Konto durchsucht und indexiert werden [!DNL Content Types] sollen.
 
-Zu den Inhaltstypen, die Sie durchsuchen und indizieren können, gehören PDF-Dokumente, Textdokumente, Adobe Flash-Filme, Dateien aus Microsoft Office-Anwendungen wie Word, Excel und Powerpoint sowie Text in MP3-Dateien. Der in den ausgewählten Inhaltstypen gefundene Text wird zusammen mit dem gesamten anderen Text auf Ihrer Website durchsucht.
+Zu den Inhaltstypen, die Sie durchsuchen und indizieren können, zählen PDF-Dokumente, Textzeichen, Adobe Flash-Dokumente, Dateien aus Microsoft Office-Anwendungen wie Word, Excel und Powerpoint sowie Text in MP3-Dateien. Der in den ausgewählten Inhaltstypen gefundene Text wird zusammen mit dem gesamten anderen Text auf Ihrer Website durchsucht.
 
 Bevor die Auswirkungen der Einstellungen für Inhaltstypen für Kunden sichtbar sind, müssen Sie Ihren Site-Index neu erstellen.
 
@@ -671,7 +674,7 @@ Wenn Sie nur die Indizierung bestimmter MP3-Dateien auf Ihrer Website verhindern
 
 * Umschließen Sie die Anker-Tags, die mit den MP3-Dateien mit `<nofollow>` und `</nofollow>` -Tags verknüpft sind. Der Suchroboter folgt nicht den Verknüpfungen zwischen diesen Tags.
 
-* Fügen Sie die URLs der MP3-Dateien als Ausschlussmasken hinzu.
+* Hinzufügen die URLs der MP3-Dateien als Ausschlussmasken.
 
    Siehe [URL-Masken](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164).
 
@@ -679,7 +682,7 @@ Wenn Sie nur die Indizierung bestimmter MP3-Dateien auf Ihrer Website verhindern
 
 Sie können festlegen, welche Dateitypen für dieses Konto durchsucht und indexiert werden [!DNL Content Types] sollen.
 
-Zu den Inhaltstypen, die Sie durchsuchen und indizieren können, gehören PDF-Dokumente, Textdokumente, Adobe Flash-Filme, Dateien aus Microsoft Office-Anwendungen wie Word, Excel und Powerpoint sowie Text in MP3-Dateien. Der in den ausgewählten Inhaltstypen gefundene Text wird zusammen mit dem gesamten anderen Text auf Ihrer Website durchsucht.
+Zu den Inhaltstypen, die Sie durchsuchen und indizieren können, zählen PDF-Dokumente, Textzeichen, Adobe Flash-Dokumente, Dateien aus Microsoft Office-Anwendungen wie Word, Excel und Powerpoint sowie Text in MP3-Dateien. Der in den ausgewählten Inhaltstypen gefundene Text wird zusammen mit dem gesamten anderen Text auf Ihrer Website durchsucht.
 
 Bevor die Auswirkungen der Einstellungen für Inhaltstypen für Kunden sichtbar sind, müssen Sie Ihren Site-Index neu erstellen.
 
@@ -789,7 +792,7 @@ Siehe [Konfigurieren eines inkrementellen Indexes einer gestaffelten Website](..
       <td colname="col2"> <p>Identifiziert das Aktionsattribut des 
       <userinput>
         &lt;form&gt; 
-      </userinput> Tag Deklarationen folgen. </p> <p>Wie die Seiten-URL-Maske kann die Aktion-URL-Maske in Form einer einzelnen URL, einer URL mit Platzhaltern oder eines regulären Ausdrucks erfolgen. </p> <p>Bei der URL-Maske kann es sich um eine der folgenden Optionen handeln: 
+      </userinput> Tag Deklarationen folgen. </p> <p>Wie bei der URL-Maske der Seite kann die Maske der AktionsURL in Form einer einzelnen URL, einer URL mit Platzhaltern oder eines regulären Ausdrucks dargestellt werden. </p> <p>Bei der URL-Maske kann es sich um eine der folgenden Optionen handeln: 
       <ul id="ul_EDFE7688D3DD4C0BBACCE5D4648D8E44"> 
       <li id="li_77550A448D954EF29FF33EE5E8B5E0F5"> Ein vollständiger Pfad, wie im Folgenden gezeigt: <code> https://www.mydomain.com/products.html </code> </li> 
       <li id="li_F84E25553BBA41419BE153DC0709E011"> Ein partieller Pfad wie im Folgenden: <code> https://www.mydomain.com/products </code> </li> 
@@ -814,7 +817,7 @@ Siehe [Konfigurieren eines inkrementellen Indexes einer gestaffelten Website](..
       </userinput>), einen Namen mit einem Platzhalter ( 
       <userinput>
         form* 
-      </userinput>) oder einen regulären Ausdruck ( 
+      </userinput>) oder einem regulären Ausdruck ( 
       <userinput>
         regexp ^.*autorisieren.*$ 
       </userinput>). </p> <p>Normalerweise können Sie dieses Feld leer lassen, da Formulare in der Regel kein Namensattribut aufweisen. </p> </td> 
@@ -830,7 +833,7 @@ Siehe [Konfigurieren eines inkrementellen Indexes einer gestaffelten Website](..
       </userinput>), einen Namen mit einem Platzhalter ( 
       <userinput>
         form* 
-      </userinput>) oder einen regulären Ausdruck ( 
+      </userinput>) oder einem regulären Ausdruck ( 
       <userinput>
         regexp ^.*autorisieren.*$ 
       </userinput>). </p> <p>Normalerweise können Sie dieses Feld leer lassen, da Formulare in der Regel kein Namensattribut aufweisen. </p> </td> 
@@ -845,11 +848,11 @@ Siehe [Konfigurieren eines inkrementellen Indexes einer gestaffelten Website](..
       </tr> 
       <tr> 
       <td colname="col1"> <p>URL der Aktion überschreiben </p> </td> 
-      <td colname="col2"> <p>Geben Sie an, wann das Ziel der Formularübermittlung von dem im Aktionsattribut des Formulars angegebenen abweicht. </p> <p>Sie können diese Option beispielsweise verwenden, wenn das Formular über eine JavaScript-Funktion gesendet wird, die einen URL-Wert erstellt, der sich von dem im Formular enthaltenen Wert unterscheidet. </p> </td> 
+      <td colname="col2"> <p>Geben Sie an, wann die Zielgruppe der Formularübermittlung von der im Aktionsattribut des Formulars angegebenen abweicht. </p> <p>Sie können diese Option beispielsweise verwenden, wenn das Formular über eine JavaScript-Funktion gesendet wird, die einen URL-Wert erstellt, der sich von dem im Formular enthaltenen Wert unterscheidet. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Methode überschreiben </p> </td> 
-      <td colname="col2"> <p>Geben Sie an, wann das Ziel der Formularübermittlung von dem im Aktionsattribut des Formulars verwendeten abweicht und wann das sendende JavaScript die Methode geändert hat. </p> <p>Die Standardwerte für alle Formularparameter ( 
+      <td colname="col2"> <p>Geben Sie an, ob sich die Zielgruppe der Formularübermittlung von der im Aktionsattribut des Formulars verwendeten unterscheidet und wann das Senden-JavaScript die Methode geändert hat. </p> <p>Die Standardwerte für alle Formularparameter ( 
       <userinput>
         &lt;input&gt; 
       </userinput> Tags, einschließlich ausgeblendeter Felder), die Standardeinstellung 
@@ -969,9 +972,9 @@ Siehe [Konfigurieren eines inkrementellen Indexes einer gestaffelten Website](..
 
 Verwenden Sie [!DNL Index Connector] zum Definieren zusätzlicher Eingabequellen für die Indizierung von XML-Seiten oder beliebigen Feeds.
 
-Sie können eine Data Feed-Eingabequelle verwenden, um auf Inhalte zuzugreifen, die in einem Formular gespeichert sind, das sich von dem unterscheidet, was normalerweise auf einer Website mithilfe einer der verfügbaren Crawl-Methoden entdeckt wird. Jedes Dokument, das durchsucht und indiziert wird, entspricht einer Inhaltsseite auf Ihrer Website. Ein Datenfeed stammt jedoch entweder aus einem XML-Dokument oder aus einer durch Kommas oder Tabulatoren getrennten Textdatei und enthält die zu indexierenden Inhaltsinformationen.
+Sie können eine Data Feed-Eingabequelle verwenden, um auf Inhalte zuzugreifen, die in einem Formular gespeichert sind, das sich von dem unterscheidet, was normalerweise auf einer Website mithilfe einer der verfügbaren Crawl-Methoden entdeckt wird. Jedes durchgekrackte und indizierte Dokument entspricht einer Inhaltsseite auf Ihrer Website. Ein Datenfeed stammt jedoch entweder aus einem XML-Dokument oder aus einer kommagetrennten oder tabulatorgetrennten Textdatei und enthält die zu indexierenden Inhaltsinformationen.
 
-Eine XML-Datenquelle besteht aus XML-Stanza oder -Datensätzen, die Informationen enthalten, die einzelnen Dokumenten entsprechen. Diese einzelnen Dokumente werden dem Index hinzugefügt. Ein Textdaten-Feed enthält einzelne, durch Zeilenumbrüche getrennte Datensätze, die einzelnen Dokumenten entsprechen. Diese einzelnen Dokumente werden auch dem Index hinzugefügt. In beiden Fällen beschreibt eine Indexverbindungskonfiguration die Interpretation des Feeds. Jede Konfiguration beschreibt, wo sich die Datei befindet und wie die Server darauf zugreifen. Die Konfiguration beschreibt auch &quot;Zuordnungsinformationen&quot;. Das heißt, wie die Elemente der einzelnen Datensätze zum Füllen der Metadatenfelder im resultierenden Index verwendet werden.
+Eine XML-Datenquelle besteht aus XML-Stanza oder -Datensätzen, die Informationen enthalten, die den einzelnen Dokumenten entsprechen. Diese Dokumente werden dem Index hinzugefügt. Ein Textdaten-Feed enthält einzelne, durch Zeilenumbrüche getrennte Datensätze, die den einzelnen Dokumenten entsprechen. Diese einzelnen Dokumente werden ebenfalls dem Index hinzugefügt. In beiden Fällen beschreibt eine Indexverbindungskonfiguration die Interpretation des Feeds. Jede Konfiguration beschreibt, wo sich die Datei befindet und wie die Server darauf zugreifen. Die Konfiguration beschreibt auch &quot;Zuordnungsinformationen&quot;. Das heißt, wie die Elemente der einzelnen Datensätze zum Füllen der Metadatenfelder im resultierenden Index verwendet werden.
 
 Nachdem Sie der [!DNL Staged Index Connector Definitions] Seite eine Index-Connector-Definition hinzugefügt haben, können Sie alle Konfigurationseinstellungen ändern, *mit Ausnahme* der Werte für Name oder Typ.
 
@@ -982,7 +985,7 @@ Die [!DNL Index Connector] Seite enthält folgende Informationen:
 
    * **Text** : Einfache &quot;flache&quot;Dateien, kommagetrennte, tabulatorgetrennte oder andere konsistent getrennte Formate.
    * **Feed** - XML-Feeds.
-   * **XML** - Sammlungen von XML-Dokumenten.
+   * **XML** - Sammlungen von XML-Dokumenten
 
 * Ob der Connector für das nächste Crawl und Indizierung aktiviert ist oder nicht.
 * Die Adresse der Datenquelle.
@@ -1008,25 +1011,25 @@ Siehe auch [Info zu Index Connector](../c-about-settings-menu/c-about-crawling-m
   <tr> 
    <td colname="col1"> <p>2 </p> </td> 
    <td colname="col2"> <p>Unterteilen Sie die heruntergeladene Datenquelle in einzelne Pseudo-Dokumente. </p> </td> 
-   <td colname="col3"> <p>Bei <span class="uicontrol"> Text </span>entspricht jede durch Zeilenumbrüche getrennte Textzeile einem einzelnen Dokument und wird mit dem angegebenen Trennzeichen wie einem Komma oder einer Registerkarte analysiert. </p> <p>Für <span class="uicontrol"> Feed </span>werden die Daten jedes Dokuments mithilfe eines Musters für reguläre Ausdrücke in folgendem Formular extrahiert: </p> <p> <code> &lt;${Itemtag}&gt;(.*?)&lt;/${Itemtag}&gt; </code> </p> <p>Erstellen Sie mithilfe der <span class="uicontrol"> Zuordnung </span> auf der Seite " <span class="wintitle"> </span> Index-Connector-Hinzufügen"eine zwischengespeicherte Kopie der Daten und erstellen Sie dann eine Liste der Links für den Crawler. Die Daten werden in einem lokalen Cache gespeichert und mit den konfigurierten Feldern gefüllt. </p> <p>Die analysierten Daten werden in den lokalen Cache geschrieben. </p> <p>Dieser Cache wird später gelesen, um die einfachen HTML-Dokumente zu erstellen, die der Crawler benötigt. Beispiel: </p> <p> <code> &lt;html&gt;&lt;head&gt; 
+   <td colname="col3"> <p>Bei <span class="uicontrol"> Text </span>entspricht jede durch Zeilenumbrüche getrennte Textzeile einem einzelnen Dokument und wird mit dem angegebenen Trennzeichen wie einem Komma oder einer Registerkarte analysiert. </p> <p>Bei <span class="uicontrol"> Feed </span>werden die Daten jedes Dokuments mithilfe eines regulären Ausdrucks in der folgenden Form extrahiert: </p> <p> <code> &lt;${Itemtag}&gt;(.*?)&lt;/${Itemtag}&gt; </code> </p> <p>Erstellen Sie mithilfe der <span class="uicontrol"> Zuordnung </span> auf der <span class="wintitle"> Index Connector-Hinzufügen- </span> Seite eine zwischengespeicherte Kopie der Daten und erstellen Sie dann eine Liste der Links für den Crawler. Die Daten werden in einem lokalen Cache gespeichert und mit den konfigurierten Feldern gefüllt. </p> <p>Die analysierten Daten werden in den lokalen Cache geschrieben. </p> <p>Dieser Cache wird später gelesen, um die einfachen HTML-Dokumente zu erstellen, die der Crawler benötigt. Beispiel: </p> <p> <code> &lt;html&gt;&lt;head&gt; 
       &lt;title&gt;{title}&lt;/title&gt; 
       &lt;meta&nbsp;name="{field}"&nbsp;content="{data}"&nbsp;/&gt; 
       ... 
       &lt;/head&gt;&lt;body&gt; 
       {body} 
-      &lt;/body&gt;&lt;/html&gt; </code> </p> <p>Das <span class="codeph"> &lt;title&gt;- </span> Element wird nur generiert, wenn eine Zuordnung zum Metadatenfeld "Titel"vorhanden ist. Gleichermaßen wird das <span class="codeph"> &lt;body&gt;- </span> Element nur generiert, wenn eine Zuordnung zum Metadatenfeld "Textkörper"vorhanden ist. </p> <p> <b>Wichtig</b>: Die Zuweisung von Werten zum vordefinierten URL-Meta-Tag wird nicht unterstützt. </p> <p>Bei allen anderen Zuordnungen werden für jedes Feld, das Daten im Originaldokument enthält, <span class="codeph"> &lt;meta&gt;- </span> Tags generiert. </p> <p>Die Felder für jedes Dokument werden dem Cache hinzugefügt. Für jedes Dokument, das in den Cache geschrieben wird, wird auch ein Link wie in den folgenden Beispielen generiert: </p> <p> <code> &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
+      &lt;/body&gt;&lt;/html&gt; </code> </p> <p>Das <span class="codeph"> &lt;title&gt;- </span> Element wird nur generiert, wenn eine Zuordnung zum Metadatenfeld "Titel"vorhanden ist. Gleichermaßen wird das <span class="codeph"> &lt;body&gt;- </span> Element nur generiert, wenn eine Zuordnung zum Metadatenfeld "Textkörper"vorhanden ist. </p> <p> <b>Wichtig</b>: Die Zuweisung von Werten zum vordefinierten URL-Meta-Tag wird nicht unterstützt. </p> <p>Bei allen anderen Zuordnungen werden für jedes Feld, das Daten im ursprünglichen Dokument enthält, <span class="codeph"> &lt;meta&gt;- </span> Tags generiert. </p> <p>Die Felder für jedes Dokument werden dem Cache hinzugefügt. Für jedes Dokument, das in den Cache geschrieben wird, wird auch ein Link wie in den folgenden Beispielen generiert: </p> <p> <code> &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
       &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
-      .... </code> </p> <p>Bei der Zuordnung der Konfiguration muss ein Feld als Primärschlüssel identifiziert werden. Diese Zuordnung bildet den Schlüssel, der verwendet wird, wenn Daten aus dem Cache abgerufen werden. </p> <p>Der Crawler erkennt den URL- <span class="codeph"> Index: </span> Schemapräfix, das dann auf die lokal zwischengespeicherten Daten zugreifen kann. </p> </td> 
+      .... </code> </p> <p>Bei der Zuordnung der Konfiguration muss ein Feld als Primär-Schlüssel identifiziert werden. Diese Zuordnung bildet den Schlüssel, der verwendet wird, wenn Daten aus dem Cache abgerufen werden. </p> <p>Der Crawler erkennt den URL- <span class="codeph"> Index: </span> Schemapräfix, das dann auf die lokal zwischengespeicherten Daten zugreifen kann. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>3 </p> </td> 
-   <td colname="col2"> <p>Durchsuchen Sie den zwischengespeicherten Dokumentsatz. </p> </td> 
-   <td colname="col3"> <p>Der <span class="codeph"> Index: Die </span> Links werden der Liste der ausstehenden Crawler hinzugefügt und in der normalen Crawl-Sequenz verarbeitet. </p> </td> 
+   <td colname="col2"> <p>Crawl Sie das zwischengespeicherte Dokument-Set. </p> </td> 
+   <td colname="col3"> <p>Der <span class="codeph"> Index: </span> Links werden der ausstehenden Liste des Crawlers hinzugefügt und in der normalen Crawl-Sequenz verarbeitet. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>4 </p> </td> 
    <td colname="col2"> <p>Verarbeiten Sie jedes Dokument. </p> </td> 
-   <td colname="col3"> <p>Der Schlüsselwert jedes Links entspricht einem Eintrag im Cache, sodass beim Durchsuchen der einzelnen Links die Daten des Dokuments aus dem Cache abgerufen werden. Es wird dann zu einem HTML-Bild "zusammengestellt", das verarbeitet und dem Index hinzugefügt wird. </p> </td> 
+   <td colname="col3"> <p>Der Schlüsselwert jedes Links entspricht einem Eintrag im Cache, sodass beim Durchsuchen der einzelnen Links die Daten dieses Dokuments aus dem Cache abgerufen werden. Es wird dann zu einem HTML-Bild "zusammengestellt", das verarbeitet und dem Index hinzugefügt wird. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1052,7 +1055,7 @@ In der obigen Tabelle gilt Schritt 3 nicht und Schritt 4 wird zum Zeitpunkt des 
 
 Alternativ können Sie Ihre XML-Dokumente mit anderen Dokumenten kombinieren, die beim Crawl-Prozess auf natürliche Weise entdeckt wurden. In solchen Fällen können Sie die URLs der XML-Dokumente mit Umschreibungsregeln ( **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl List Retrieve URL Rules]**) ändern, um sie an den Index Connector zu leiten.
 
-Siehe [Grundlagen zu URL-Regeln](../c-about-settings-menu/c-about-rewrite-rules-menu.md#concept_EC8E2E48B99A458D8567B526C9827CBA)zum Abrufen der Crawl-Liste.
+Siehe [Informationen zu URL-Regeln](../c-about-settings-menu/c-about-rewrite-rules-menu.md#concept_EC8E2E48B99A458D8567B526C9827CBA)für Crawl-Listen abrufen.
 
 Angenommen, Sie haben die folgende Regel zum Umschreiben:
 
@@ -1060,15 +1063,15 @@ Angenommen, Sie haben die folgende Regel zum Umschreiben:
 RewriteRule (^http.*[.]xml$) index:Adobe?key=$1
 ```
 
-Diese Regel übersetzt alle URLs, die mit einem Index-Connector-Link enden, `.xml` in einen Index-Connector-Link. Der Crawler erkennt und schreibt das `index:` URL-Schema neu. Der Download-Prozess wird über den Index Connector Apache-Server auf dem Master umgeleitet. Jedes heruntergeladene Dokument wird mit demselben Muster für reguläre Ausdrücke wie Feeds geprüft. In diesem Fall wird das erstellte HTML-Dokument jedoch nicht im Cache gespeichert. Stattdessen wird sie direkt an den Crawler zur Indexverarbeitung übergeben.
+Diese Regel übersetzt alle URLs, die mit einem Index-Connector-Link enden, `.xml` in einen Index-Connector-Link. Der Crawler erkennt und schreibt das `index:` URL-Schema neu. Der Download-Prozess wird über den Index Connector Apache-Server auf dem primären Server weitergeleitet. Jedes heruntergeladene Dokument wird mit demselben regulären Ausdruck geprüft, das mit Feeds verwendet wird. In diesem Fall wird das erstellte HTML-Dokument jedoch nicht im Cache gespeichert. Stattdessen wird sie direkt an den Crawler zur Indexverarbeitung übergeben.
 
 ## Konfigurieren mehrerer Index Connectors {#section_C2B14C0F06354A57AEF6238FF3814E5D}
 
-Sie können mehrere Index Connector-Konfigurationen für ein beliebiges Konto definieren. Die Konfigurationen werden automatisch zur Dropdown-Liste unter **[!UICONTROL Settings]** > **[!UICONTROL Crawl]** > **[!UICONTROL URL Entrypoints]** , wie in der folgenden Abbildung gezeigt, hinzugefügt:
+Sie können mehrere Index Connector-Konfigurationen für ein beliebiges Konto definieren. Die Konfigurationen werden automatisch zur Dropdown-Liste unter **[!UICONTROL Settings]** > **[!UICONTROL Crawl]** > hinzugefügt **[!UICONTROL URL Entrypoints]** , wie in der folgenden Abbildung dargestellt:
 
 ![](assets/url_entrypoints_index_connector.png)
 
-Wenn Sie eine Konfiguration aus der Dropdownliste auswählen, wird der Wert am Ende der Liste der URL-Einstiegspunkte hinzugefügt.
+Wenn Sie eine Konfiguration aus der Dropdown-Liste auswählen, wird der Wert am Ende der Liste der URL-Einstiegspunkte addiert.
 
 >[!NOTE]
 >
@@ -1082,7 +1085,7 @@ index:<indexconnector_configuration_name>
 
 Der Crawler verarbeitet jeden hinzugefügten Eintrag, wenn er auf der Seite Index Connectors gefunden und aktiviert ist.
 
-Hinweis: Da die URL jedes Dokuments unter Verwendung des Index Connector-Konfigurationsnamens und des primären Schlüssels des Dokuments erstellt wird, sollten Sie beim Durchführen inkrementeller Aktualisierungen unbedingt denselben Index Connector-Konfigurationsnamen verwenden! Auf diese Weise können zuvor indizierte Dokumente korrekt aktualisiert [!DNL Adobe Search&Promote] werden.
+Hinweis: Da die URL jedes Dokuments mit dem Index Connector-Konfigurationsnamen und dem primären Schlüssel des Dokuments erstellt wird, sollten Sie beim Durchführen inkrementeller Aktualisierungen unbedingt denselben Index Connector-Konfigurationsnamen verwenden! Auf diese Weise können zuvor indizierte Dokumente korrekt aktualisiert [!DNL Adobe Search&Promote] werden.
 
 Siehe auch URL- [Einstiegspunkte](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573).
 
@@ -1108,20 +1111,20 @@ Wenn Sie einen Index Connector hinzufügen, können Sie optional mit dieser Funk
   </tr> 
   <tr> 
    <td colname="col1"> <p>XML </p> </td> 
-   <td colname="col2"> <p>Lädt die URL eines repräsentativen Dokuments und nicht die Liste der Master-Links herunter. Dieses einzelne Dokument wird mit demselben Mechanismus analysiert, der mit Feeds verwendet wird, und die Ergebnisse werden angezeigt. </p> <p>Bevor Sie zum Speichern der Konfiguration auf <span class="uicontrol"> </span> Hinzufügen klicken, vergewissern Sie sich, dass Sie die URL wieder in das Dokument für die Master-Link-Liste ändern. </p> </td> 
+   <td colname="col2"> <p>Lädt die URL eines repräsentativen Dokuments herunter, nicht die primäre Link-Liste. Dieses einzelne Dokument wird mit demselben Mechanismus analysiert, der mit Feeds verwendet wird, und die Ergebnisse werden angezeigt. </p> <p>Bevor Sie auf <span class="uicontrol"> Hinzufügen klicken, </span> um die Konfiguration zu speichern, stellen Sie sicher, dass Sie die URL wieder zum Dokument für die primäre Link-Liste wechseln. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-**Wichtig**: Die Funktion &quot;Einstellungskarten&quot;funktioniert möglicherweise nicht für große XML-Datensätze, da der Dateiparser versucht, die gesamte Datei in den Speicher zu lesen. Daher kann es zu einer Speicherüberschreitung kommen. Wird dasselbe Dokument jedoch zum Zeitpunkt der Indizierung verarbeitet, wird es nicht in den Speicher gelesen. Stattdessen werden große Dokumente &quot;unterwegs&quot;verarbeitet und erst nicht vollständig in den Speicher gelesen.
+**Wichtig**: Die Funktion &quot;Einstellungskarten&quot;funktioniert möglicherweise nicht für große XML-Datensätze, da der Dateiparser versucht, die gesamte Datei in den Speicher zu lesen. Daher kann es zu einer Speicherüberschreitung kommen. Wird dasselbe Dokument jedoch zum Zeitpunkt der Indexierung verarbeitet, wird es nicht in den Speicher gelesen. Stattdessen werden große Dokumente &quot;unterwegs&quot;verarbeitet und erst nicht vollständig in den Speicher gelesen.
 
-**Die Verwendung der Vorschau beim Hinzufügen eines Index Connector**
+**Die Verwendung von Vorschau beim Hinzufügen eines Index Connector-Connectors**
 
 Beim Hinzufügen eines Index-Connectors können Sie optional die Funktion verwenden, **[!UICONTROL Preview]** um die Daten zu validieren, als ob Sie sie gespeichert hätten. Es führt einen Test für die Konfiguration aus, ohne die Konfiguration im Konto zu speichern. Der Test greift auf die konfigurierte Datenquelle zu. Der Download-Cache wird jedoch an einen temporären Speicherort geschrieben. Es steht nicht im Konflikt mit dem Hauptcache-Ordner, den der Indexcrawler verwendet.
 
-&quot;Vorschau&quot;verarbeitet nur die Standardwerte von fünf Dokumenten, die von &quot;Acct:IndexConnector-Preview-Max-Documents&quot;gesteuert werden. Die in der Vorschau angezeigten Dokumente werden im Quellformular angezeigt, da sie dem Indexierungs-Crawler präsentiert werden. Die Anzeige ähnelt der Funktion &quot;Quelle anzeigen&quot;in einem Webbrowser. Sie können mithilfe von standardmäßigen Navigationslinks durch die Dokumente im Vorschausatz navigieren.
+Vorschau verarbeitet nur einen Standardwert von fünf Dokumenten, wie von Acct:IndexConnector-Vorschau-Max-Dokumenten gesteuert. Die in der Vorschau angezeigten Dokumente werden im Quellformular angezeigt, da sie dem Indexierungs-Crawler präsentiert werden. Die Anzeige ähnelt der Funktion &quot;Ansicht-Quelle&quot;in einem Webbrowser. Sie können mithilfe von standardmäßigen Navigationslinks durch die Dokumente in der Vorschau navigieren.
 
-Die Vorschau unterstützt keine XML-Konfigurationen, da diese Dokumente direkt verarbeitet und nicht in den Cache heruntergeladen werden.
+XML-Konfigurationen werden von Vorschau nicht unterstützt, da diese Dokumente direkt verarbeitet und nicht in den Cache heruntergeladen werden.
 
 ## Hinzufügen einer Index Connector-Definition {#task_96779B651A654E1F871F55D6DBBC8886}
 
@@ -1149,14 +1152,14 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       </tr> 
       <tr> 
       <td colname="col1"> <p>Typ  </p> </td> 
-      <td colname="col2"> <p>Die Quelle Ihrer Daten. Der ausgewählte Datenquellentyp wirkt sich auf die auf der Seite " <span class="wintitle"> Index-Connector-Hinzufügen"verfügbaren Optionen </span> aus. Sie können aus den folgenden Optionen wählen: </p> <p> 
+      <td colname="col2"> <p>Die Quelle Ihrer Daten. Der ausgewählte Datenquellentyp wirkt sich auf die auf der <span class="wintitle"> Index Connector-Hinzufügen- </span> Seite verfügbaren Optionen aus. Sie können aus den folgenden Optionen wählen: </p> <p> 
       <ul id="ul_1ADC3DFBC929467385F7465BE8E13635"> 
       <li id="li_64FCD749F55442BAB316BD474128D4F9"> <span class="uicontrol"> Text </span> <p>Einfache Dateien mit flachem Text, kommagetrennte, tabulatorgetrennte oder andere konsistent getrennte Formate. Jede durch Zeilenumbrüche getrennte Textzeile entspricht einem einzelnen Dokument und wird mit dem angegebenen Trennzeichen analysiert. </p> <p>Sie können jeden Wert oder jede Spalte einem Metadatenfeld zuordnen, auf das die Spaltennummer verweist, beginnend mit 1 (1). </p> </li> 
-      <li id="li_2A4F16CE6DCE4114B7F8E4FE156252BB"> <span class="uicontrol"> Feed </span> <p>Lädt ein XML-Masterdokument herunter, das mehrere "Zeilen"mit Informationen enthält. </p> </li> 
-      <li id="li_5A61C53522D74D4C9A5F65989604BDEF"> <span class="uicontrol"> XML </span> <p>Lädt ein XML-Masterdokument herunter, das Links enthält ( 
+      <li id="li_2A4F16CE6DCE4114B7F8E4FE156252BB"> <span class="uicontrol"> Feed </span> <p>Lädt ein primäres XML-Dokument herunter, das mehrere "Zeilen"mit Informationen enthält. </p> </li> 
+      <li id="li_5A61C53522D74D4C9A5F65989604BDEF"> <span class="uicontrol"> XML </span> <p>Lädt ein primäres XML-Dokument herunter, das Links enthält ( 
       <userinput>
         &lt;a&gt; 
-      </userinput>) in einzelne XML-Dokumente. </p> </li> 
+      </userinput>) zu einzelnen XML-Dokumenten. </p> </li> 
       </ul> </p> </td> 
       </tr> 
       <tr> 
@@ -1165,11 +1168,11 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       </tr> 
       <tr> 
       <td colname="col1"> <p>Aktiviert </p> </td> 
-      <td colname="col2"> <p>Aktiviert die Konfiguration zu Crawl und Index. Oder Sie können die Konfiguration deaktivieren, um Crawling und Indizierung zu verhindern. </p> <p> <b>Hinweis</b>: Deaktivierte Index Connector-Konfigurationen werden ignoriert, wenn sie in einer Einstiegsliste vorhanden sind. </p> </td> 
+      <td colname="col2"> <p>Aktiviert die Konfiguration zu Crawl und Index. Oder Sie können die Konfiguration deaktivieren, um Crawling und Indizierung zu verhindern. </p> <p> <b>Hinweis</b>: Deaktivierte Index Connector-Konfigurationen werden ignoriert, wenn sie in einer Einstiegspunkt-Liste vorhanden sind. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Host-Adresse </p> </td> 
-      <td colname="col2"> <p>Gibt die Adresse des Serverhosts an, auf dem sich Ihre Daten befinden. </p> <p>Bei Bedarf können Sie einen vollständigen URI (Uniform Resource Identifier)-Pfad zum Datenquellendokument angeben, wie in den folgenden Beispielen dargestellt: </p> <p> <code> https://www.somewhere.com/some_path/some_file.xml </code> </p> <p>oder </p> <p> <code> ftp://user:password@ftpserver.somewhere.com/some_path/some_file.xml </code> </p> <p>Der URI wird in die entsprechenden Einträge für die Felder Host-Adresse, Dateipfad, Protokoll und optional Benutzername und Kennwort unterteilt. </p> <p>Gibt die IP-Adresse oder die URL-Adresse des Hostsystems an, in dem die Datenquellendatei gefunden wird. </p> </td> 
+      <td colname="col2"> <p>Gibt die Adresse des Serverhosts an, auf dem sich Ihre Daten befinden. </p> <p>Bei Bedarf können Sie einen vollständigen URI (Uniform Resource Identifier)-Pfad zum Datenquellen-Dokument angeben, wie in den folgenden Beispielen dargestellt: </p> <p> <code> https://www.somewhere.com/some_path/some_file.xml </code> </p> <p>oder </p> <p> <code> ftp://user:password@ftpserver.somewhere.com/some_path/some_file.xml </code> </p> <p>Der URI wird in die entsprechenden Einträge für die Felder Host-Adresse, Dateipfad, Protokoll und optional Benutzername und Kennwort unterteilt. </p> <p>Gibt die IP-Adresse oder die URL-Adresse des Hostsystems an, in dem die Datenquellendatei gefunden wird. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Dateipfad </p> </td> 
@@ -1185,7 +1188,7 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       </tr> 
       <tr> 
       <td colname="col1"> <p>Löscht Dateipfad </p> </td> 
-      <td colname="col2"> <p>Gibt den Pfad zur einfachen Textdatei mit einem einzelnen Dokumentkennungswert pro Zeile an. </p> <p>Der Pfad ist relativ zum Stammverzeichnis der Hostadresse. </p> <p>Diese Datei wird, sofern angegeben, während Inkrementeller Indexvorgänge heruntergeladen und verarbeitet. Die in dieser Datei gefundenen Werte werden verwendet, um Anforderungen zum Löschen von zuvor indizierten Dokumenten zu erstellen. Die Werte in dieser Datei müssen mit den Werten übereinstimmen, die in den Dateien "Vollständiger oder inkrementeller Dateipfad"in der Spalte " <span class="uicontrol"> Primärschlüssel"gefunden wurden </span>. </p> <p> <b>Hinweis</b>: Diese Funktion ist standardmäßig nicht aktiviert. Wenden Sie sich an den technischen Support, um die Funktion für Ihre Verwendung zu aktivieren. </p> </td> 
+      <td colname="col2"> <p>Gibt den Pfad zur einfachen Textdatei mit einem einzelnen Dokument-ID-Wert pro Zeile an. </p> <p>Der Pfad ist relativ zum Stammverzeichnis der Hostadresse. </p> <p>Diese Datei wird, sofern angegeben, während Inkrementeller Indexvorgänge heruntergeladen und verarbeitet. Die in dieser Datei enthaltenen Werte werden verwendet, um "Löschanforderungen"zu erstellen, um zuvor indizierte Dokumente zu entfernen. Die Werte in dieser Datei müssen mit den Werten übereinstimmen, die in den Dateien "Vollständiger oder inkrementeller Dateipfad"in der Spalte " <span class="uicontrol"> Primär-Schlüssel"gefunden wurden </span>. </p> <p> <b>Hinweis</b>: Diese Funktion ist standardmäßig nicht aktiviert. Wenden Sie sich an den technischen Support, um die Funktion für Ihre Verwendung zu aktivieren. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Protokoll </p> </td> 
@@ -1204,7 +1207,7 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       </tr> 
       <tr> 
       <td colname="col1"> <p>Weitere Zustellversuche </p> </td> 
-      <td colname="col2"> <p>Gibt die maximale Anzahl von Wiederholungen für fehlgeschlagene FTP-, SFTP-, HTTP- oder HTTPS-Verbindungen an. Dieser Wert muss zwischen 0 und 10 liegen. </p> <p>Der Wert Null (0) verhindert Wiederholungsversuche. </p> </td> 
+      <td colname="col2"> <p>Gibt die maximale Anzahl von weiteren Zustellversuchen für fehlgeschlagene FTP-, SFTP-, HTTP- oder HTTPS-Verbindungen an. Dieser Wert muss zwischen 0 und 10 liegen. </p> <p>Der Wert Null (0) verhindert Wiederholungsversuche. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Kodierung </p> </td> 
@@ -1228,8 +1231,8 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       <ul id="ul_981AE2C6D30443BDBFC6575D413732A2"> 
       <li id="li_A42CB9DFFF8C45A7BAC2D471FE96CEBE"> <span class="uicontrol"> Spalte </span> <p> Gibt eine Spaltennummer an, wobei die erste Spalte 1 (1) ist. Um neue Zuordnungszeilen für jede Spalte hinzuzufügen, klicken Sie unter <span class="wintitle"> Aktion </span>auf <span class="uicontrol"> + </span>. </p> <p>Sie müssen nicht auf jede Spalte in der Datenquelle verweisen. Stattdessen können Sie Werte überspringen. </p> </li> 
       <li id="li_26E8C9554A5D4BC5A5073D6385E3626F"> <span class="uicontrol"> Feld </span> <p>Definiert den Wert des Namensattributs, der für jedes generierte &lt;meta&gt;-Tag verwendet wird. </p> </li> 
-      <li id="li_5DFA514B7F9549B98D6CBC095A66033C"> <span class="uicontrol"> Metadaten? </span> <p>Das <span class="uicontrol"> Feld wird </span> zu einer Dropdownliste, aus der Sie definierte Metadatenfelder für das aktuelle Konto auswählen können. </p> <p>Der <span class="uicontrol"> Feldwert </span> kann ein nicht definiertes Metadatenfeld sein, falls gewünscht. Ein nicht definiertes Metadatenfeld ist manchmal hilfreich, um Inhalte zu erstellen, die vom <span class="wintitle"> Filtern des Skripts verwendet werden </span>. </p> <p>Siehe <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Grundlagen zum Filtern von Skripten </a>. </p> <p>Wenn Index Connector XML-Dokumente mit mehreren Treffern in einem beliebigen Zuordnungsfeld verarbeitet, werden die Werte in einem Dokument, das im Cache gespeichert wird, zu einem einzigen Wert verkettet. Standardmäßig werden diese Werte mit einem Komma-Trennzeichen kombiniert. Angenommen, der entsprechende <span class="wintitle"> Feldwert </span> ist ein definiertes Metadatenfeld. Darüber hinaus ist für dieses Feld das <span class="wintitle"> Attribut Listen zulassen </span> festgelegt. In diesem Fall wird der Wert "Listentrennzeichen"des Felds, das erste definierte Trennzeichen, in der Verkettung verwendet. </p> </li> 
-      <li id="li_80DB205525094CE1AA6762BFC7892C95"> <span class="uicontrol"> Primärschlüssel? </span> <p>Nur eine Kartendefinition wird als Primärschlüssel identifiziert. Dieses Feld wird zur eindeutigen Referenz, die angezeigt wird, wenn dieses Dokument zum Index hinzugefügt wird. Dieser Wert wird in der URL des Dokuments im Index verwendet. </p> <p>Die <span class="uicontrol"> primären </span> Schlüsselwerte müssen in allen Dokumenten, die von der Index Connector-Konfiguration dargestellt werden, eindeutig sein. Alle angefallenen Duplikate werden ignoriert. Wenn Ihre Quelldokumente keinen eindeutigen Wert für die Verwendung als <span class="uicontrol"> Primärschlüssel enthalten </span>, aber zwei oder mehr Felder zusammen einen eindeutigen Bezeichner bilden <i>können</i> , können Sie den <span class="uicontrol"> Primärschlüssel definieren, </span> indem Sie mehrere <span class="uicontrol"> </span> Spaltenwerte mit einem vertikalen Balken ("|"), der die Werte trennt, kombinieren. </p> </li> 
+      <li id="li_5DFA514B7F9549B98D6CBC095A66033C"> <span class="uicontrol"> Metadaten? </span> <p>Das <span class="uicontrol"> Feld wird </span> zu einer Dropdown-Liste, aus der Sie definierte Metadatenfelder für das aktuelle Konto auswählen können. </p> <p>Der <span class="uicontrol"> Feldwert </span> kann ein nicht definiertes Metadatenfeld sein, falls gewünscht. Ein nicht definiertes Metadatenfeld ist manchmal hilfreich, um Inhalte zu erstellen, die vom <span class="wintitle"> Filtern des Skripts verwendet werden </span>. </p> <p>Siehe <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Grundlagen zum Filtern von Skripten </a>. </p> <p>Wenn Index Connector XML-Dokumente mit mehreren Treffern in einem beliebigen Zuordnungsfeld verarbeitet, werden die Werte in einem zwischengespeicherten Dokument zu einem einzigen Wert verkettet. Standardmäßig werden diese Werte mit einem Komma-Trennzeichen kombiniert. Angenommen, der entsprechende <span class="wintitle"> Feldwert </span> ist ein definiertes Metadatenfeld. Darüber hinaus ist für dieses Feld das <span class="wintitle"> Zulassungsliste </span> -Attribut festgelegt. In diesem Fall wird der Liste-Trennzeichen-Wert des Felds, das erste definierte Trennzeichen, in der Verkettung verwendet. </p> </li> 
+      <li id="li_80DB205525094CE1AA6762BFC7892C95"> <span class="uicontrol"> Primärschlüssel? </span> <p>Nur eine Kartendefinition wird als Primärschlüssel identifiziert. Dieses Feld wird zur eindeutigen Referenz, die angezeigt wird, wenn dieses Dokument zum Index hinzugefügt wird. Dieser Wert wird in der URL des Dokuments im Index verwendet. </p> <p>Die <span class="uicontrol"> Primär Key- </span> Werte müssen für alle Dokumente, die von der Index Connector-Konfiguration repräsentiert werden, eindeutig sein. Alle gefundenen Duplikat werden ignoriert. Wenn Ihre Quellwerte keinen eindeutigen Dokumente für die Verwendung als <span class="uicontrol"> Primär-Key enthalten </span>, aber zwei oder mehr zusammengeführte  <i>können</i> einen eindeutigen Bezeichner bilden, können Sie den <span class="uicontrol"> Primär-Schlüssel definieren, </span> indem Sie mehrere <span class="uicontrol"> </span> Spaltenwerte mit einem vertikalen Balken ("|"), der die Werte trennt, kombinieren. </p> </li> 
       <li id="li_80DB205525094CE1AA6762BFC7892D96"> <span class="uicontrol"> HTML entfernen? </span> <p>Wenn diese Option aktiviert ist, werden alle in den Daten dieses Felds gefundenen HTML-Tags entfernt. </p> </li> 
       <li id="li_359D2902859B4C5BADB0BA26F0BA4DC0"> <span class="uicontrol"> Aktion </span> <p>Hiermit können Sie Zeilen zur Map hinzufügen oder Zeilen aus der Map entfernen. Die Reihenfolge der Zeilen ist nicht wichtig. </p> </li> 
       </ul> </p> </td> 
@@ -1240,7 +1243,7 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       </tr> 
       <tr> 
       <td colname="col1"> <p>Aktiviert </p> </td> 
-      <td colname="col2"> <p>Aktiviert die Konfiguration zu Crawl und Index. Oder Sie können die Konfiguration deaktivieren, um Crawling und Indizierung zu verhindern. </p> <p> <b>Hinweis</b>: Deaktivierte Index Connector-Konfigurationen werden ignoriert, wenn sie in einer Einstiegsliste vorhanden sind. </p> </td> 
+      <td colname="col2"> <p>Aktiviert die Konfiguration zu Crawl und Index. Oder Sie können die Konfiguration deaktivieren, um Crawling und Indizierung zu verhindern. </p> <p> <b>Hinweis</b>: Deaktivierte Index Connector-Konfigurationen werden ignoriert, wenn sie in einer Einstiegspunkt-Liste vorhanden sind. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Host-Adresse </p> </td> 
@@ -1248,7 +1251,7 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       </tr> 
       <tr> 
       <td colname="col1"> <p>Dateipfad </p> </td> 
-      <td colname="col2"> <p>Gibt den Pfad zum Master-XML-Dokument an, das mehrere "Zeilen"mit Informationen enthält. </p> <p>Der Pfad ist relativ zum Stammverzeichnis der Hostadresse. </p> </td> 
+      <td colname="col2"> <p>Gibt den Pfad zum primären XML-Dokument an, das mehrere "Zeilen"mit Informationen enthält. </p> <p>Der Pfad ist relativ zum Stammverzeichnis der Hostadresse. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Inkrementeller Dateipfad </p> </td> 
@@ -1256,11 +1259,11 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       </tr> 
       <tr> 
       <td colname="col1"> <p>Vertikaler Dateipfad </p> </td> 
-      <td colname="col2"> <p>Gibt den Pfad zum XML-Dokument an, der mehrere wenige "Zeilen"mit Informationen enthält, die bei einer vertikalen Aktualisierung verwendet werden sollen. </p> <p>Der Pfad ist relativ zum Stammverzeichnis der Hostadresse. </p> <p>Diese Datei wird, sofern angegeben, während des Vorgangs Vertikale Aktualisierung heruntergeladen und verarbeitet. </p> <p> <b>Hinweis</b>: Diese Funktion ist standardmäßig nicht aktiviert. Wenden Sie sich an den technischen Support, um die Funktion für Ihre Verwendung zu aktivieren. </p> </td> 
+      <td colname="col2"> <p>Gibt den Pfad zum XML-Dokument an, das mehrere wenige "Zeilen"mit Informationen enthält, die bei einer vertikalen Aktualisierung verwendet werden sollen. </p> <p>Der Pfad ist relativ zum Stammverzeichnis der Hostadresse. </p> <p>Diese Datei wird, sofern angegeben, während des Vorgangs Vertikale Aktualisierung heruntergeladen und verarbeitet. </p> <p> <b>Hinweis</b>: Diese Funktion ist standardmäßig nicht aktiviert. Wenden Sie sich an den technischen Support, um die Funktion für Ihre Verwendung zu aktivieren. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Löscht Dateipfad </p> </td> 
-      <td colname="col2"> <p>Gibt den Pfad zur einfachen Textdatei mit einem einzelnen Dokumentkennungswert pro Zeile an. </p> <p>Der Pfad ist relativ zum Stammverzeichnis der Hostadresse. </p> <p>Diese Datei wird, sofern angegeben, während Inkrementeller Indexvorgänge heruntergeladen und verarbeitet. Die in dieser Datei gefundenen Werte werden verwendet, um Anforderungen zum Löschen von zuvor indizierten Dokumenten zu erstellen. Die Werte in dieser Datei müssen mit den Werten übereinstimmen, die in den Dateien "Vollständiger oder inkrementeller Dateipfad"in der Spalte " <span class="uicontrol"> Primärschlüssel"gefunden wurden </span>. </p> <p> <b>Hinweis</b>: Diese Funktion ist standardmäßig nicht aktiviert. Wenden Sie sich an den technischen Support, um die Funktion für Ihre Verwendung zu aktivieren. </p> </td> 
+      <td colname="col2"> <p>Gibt den Pfad zur einfachen Textdatei mit einem einzelnen Dokument-ID-Wert pro Zeile an. </p> <p>Der Pfad ist relativ zum Stammverzeichnis der Hostadresse. </p> <p>Diese Datei wird, sofern angegeben, während Inkrementeller Indexvorgänge heruntergeladen und verarbeitet. Die in dieser Datei enthaltenen Werte werden verwendet, um "Löschanforderungen"zu erstellen, um zuvor indizierte Dokumente zu entfernen. Die Werte in dieser Datei müssen mit den Werten übereinstimmen, die in den Dateien "Vollständiger oder inkrementeller Dateipfad"in der Spalte " <span class="uicontrol"> Primär-Schlüssel"gefunden wurden </span>. </p> <p> <b>Hinweis</b>: Diese Funktion ist standardmäßig nicht aktiviert. Wenden Sie sich an den technischen Support, um die Funktion für Ihre Verwendung zu aktivieren. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Protokoll </p> </td> 
@@ -1316,7 +1319,7 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       <td colname="col1"> <p>Landkarte </p> </td> 
       <td colname="col2"> <p>Ermöglicht die Angabe von Zuordnungen von XML-Elementen zu Metadaten mithilfe von XPath-Ausdrücken. </p> <p> 
       <ul id="ul_604108C0277C4892AE8A40CA39889ABD"> 
-      <li id="li_0AF92270AE9F4BA8B2C7EE41FABC0F34"> <span class="uicontrol"> Tag </span> <p>Gibt eine XPath-Darstellung der analysierten XML-Daten an. Anhand des obigen Adobe XML-Beispieldokuments unter der Option "item-Tag"könnte es mit der folgenden Syntax zugeordnet werden: </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
+      <li id="li_0AF92270AE9F4BA8B2C7EE41FABC0F34"> <span class="uicontrol"> Tag </span> <p>Gibt eine XPath-Darstellung der analysierten XML-Daten an. Anhand des obigen Adobe XML-Dokuments unter der Option "itemTag"könnte es mit der folgenden Syntax zugeordnet werden: </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
       /record/metadata/meta[@name='title']/@content&nbsp;-&gt;&nbsp;title 
       /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;desc 
       /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;body </code> </p> <p>Die obige Syntax übersetzt sich wie folgt: </p> <p> 
@@ -1327,10 +1330,10 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       <li id="li_E35EAE3D284D46D485D9064D7BB6AB13"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>Das <span class="codeph"> content- </span> Attribut eines <span class="codeph"> meta- </span> Elements, das in einem <span class="codeph"> metadata- </span> Element enthalten ist, das im record- <span class="codeph"> Element enthalten ist, dessen name-Attribut </span> <span class="codeph"> </span><span class="codeph"> </span>description ist, wird dem MetadatenfeldTextkörper zugeordnet. </p> </li> 
       </ul> </p> <p>XPath ist eine relativ komplizierte Notation. Weitere Informationen finden Sie unter: </p> <p>Siehe <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_8147075D7ACD4811A7ED335F23FE62A6"> <span class="uicontrol"> Feld </span> <p>Definiert den Wert des Namensattributs, der für jedes generierte <span class="codeph"> &lt;meta&gt;- </span> Tag verwendet wird. </p> </li> 
-      <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadaten? </span> <p>Das <span class="uicontrol"> Feld wird </span> zu einer Dropdownliste, aus der Sie definierte Metadatenfelder für das aktuelle Konto auswählen können. </p> <p>Der <span class="uicontrol"> Feldwert </span> kann ein nicht definiertes Metadatenfeld sein, falls gewünscht. Ein nicht definiertes Metadatenfeld ist manchmal hilfreich, um Inhalte zu erstellen, die vom <span class="wintitle"> Filtern des Skripts verwendet werden </span>. </p> <p>Siehe <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Grundlagen zum Filtern von Skripten </a>. </p> <p>Wenn Index Connector XML-Dokumente mit mehreren Treffern in einem beliebigen Zuordnungsfeld verarbeitet, werden die Werte in einem Dokument, das im Cache gespeichert wird, zu einem einzigen Wert verkettet. Standardmäßig werden diese Werte mit einem Komma-Trennzeichen kombiniert. Angenommen, der entsprechende <span class="wintitle"> Feldwert </span> ist ein definiertes Metadatenfeld. Darüber hinaus ist für dieses Feld das <span class="wintitle"> Attribut Listen zulassen </span> festgelegt. In diesem Fall wird der Wert "Listentrennzeichen"des Felds, das erste definierte Trennzeichen, in der Verkettung verwendet. </p> </li> 
-      <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> Primärschlüssel? </span> <p>Nur eine Kartendefinition wird als Primärschlüssel identifiziert. Dieses Feld wird zur eindeutigen Referenz, die angezeigt wird, wenn dieses Dokument zum Index hinzugefügt wird. Dieser Wert wird in der URL des Dokuments im Index verwendet. </p> <p>Die <span class="uicontrol"> primären </span> Schlüsselwerte müssen in allen Dokumenten, die von der Index Connector-Konfiguration dargestellt werden, eindeutig sein. Alle angefallenen Duplikate werden ignoriert. Wenn Ihre Quelldokumente keinen eindeutigen Wert für die Verwendung als <span class="uicontrol"> Primärschlüssel enthalten </span>, aber zwei oder mehr Felder zusammen einen eindeutigen Bezeichner bilden <i>können</i> , können Sie den <span class="uicontrol"> Primärschlüssel definieren, </span> indem Sie mehrere <span class="uicontrol"> Tag- </span> Definitionen mit einem vertikalen Balken ("|"), der die Werte trennt, kombinieren. </p> </li> 
+      <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadaten? </span> <p>Das <span class="uicontrol"> Feld wird </span> zu einer Dropdown-Liste, aus der Sie definierte Metadatenfelder für das aktuelle Konto auswählen können. </p> <p>Der <span class="uicontrol"> Feldwert </span> kann ein nicht definiertes Metadatenfeld sein, falls gewünscht. Ein nicht definiertes Metadatenfeld ist manchmal hilfreich, um Inhalte zu erstellen, die vom <span class="wintitle"> Filtern des Skripts verwendet werden </span>. </p> <p>Siehe <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Grundlagen zum Filtern von Skripten </a>. </p> <p>Wenn Index Connector XML-Dokumente mit mehreren Treffern in einem beliebigen Zuordnungsfeld verarbeitet, werden die Werte in einem zwischengespeicherten Dokument zu einem einzigen Wert verkettet. Standardmäßig werden diese Werte mit einem Komma-Trennzeichen kombiniert. Angenommen, der entsprechende <span class="wintitle"> Feldwert </span> ist ein definiertes Metadatenfeld. Darüber hinaus ist für dieses Feld das <span class="wintitle"> Zulassungsliste </span> -Attribut festgelegt. In diesem Fall wird der Liste-Trennzeichen-Wert des Felds, das erste definierte Trennzeichen, in der Verkettung verwendet. </p> </li> 
+      <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> Primärschlüssel? </span> <p>Nur eine Kartendefinition wird als Primärschlüssel identifiziert. Dieses Feld wird zur eindeutigen Referenz, die angezeigt wird, wenn dieses Dokument zum Index hinzugefügt wird. Dieser Wert wird in der URL des Dokuments im Index verwendet. </p> <p>Die <span class="uicontrol"> Primär Key- </span> Werte müssen für alle Dokumente, die von der Index Connector-Konfiguration repräsentiert werden, eindeutig sein. Alle gefundenen Duplikat werden ignoriert. Wenn Ihre Quellwerte keinen eindeutigen Dokumente für die Verwendung als <span class="uicontrol"> Primär-Key enthalten </span>, aber zwei oder mehr zusammengeführte  <i>können</i> einen eindeutigen Bezeichner bilden, können Sie den <span class="uicontrol"> Primär-Schlüssel definieren, </span> indem Sie mehrere <span class="uicontrol"> Tag- </span> Definitionen mit einem vertikalen Balken ("|"), der die Werte trennt, kombinieren. </p> </li> 
       <li id="li_DEA24003E97E406DA2510C43CCFDC81F"> <span class="uicontrol"> HTML entfernen? </span> <p>Wenn diese Option aktiviert ist, werden alle in den Daten dieses Felds gefundenen HTML-Tags entfernt. </p> </li> 
-      <li id="li_5E829D1D0DBD4BB7AAB5DB983053D248"> <span class="uicontrol"> Für Löschen verwenden? </span> <p>Wird nur bei Inkrementellen Indexvorgängen verwendet. Datensätze, die diesem XPath-Muster entsprechen, identifizieren Elemente zum Löschen. Der <span class="uicontrol"> Primärschlüssel- </span> Wert für jeden dieser Datensätze wird verwendet, um "Löschanforderungen"zu erstellen, wie bei "Dateipfad löschen". </p> <p> <b>Hinweis</b>: Diese Funktion ist standardmäßig nicht aktiviert. Wenden Sie sich an den technischen Support, um die Funktion für Ihre Verwendung zu aktivieren. </p> </li> 
+      <li id="li_5E829D1D0DBD4BB7AAB5DB983053D248"> <span class="uicontrol"> Für Löschen verwenden? </span> <p>Wird nur bei Inkrementellen Indexvorgängen verwendet. Datensätze, die diesem XPath-Muster entsprechen, identifizieren Elemente zum Löschen. Der <span class="uicontrol"> Primär Key- </span> Wert für jeden dieser Datensätze wird verwendet, um "delete"-Anforderungen zu erstellen, wie beim Löschen des Dateipfads. </p> <p> <b>Hinweis</b>: Diese Funktion ist standardmäßig nicht aktiviert. Wenden Sie sich an den technischen Support, um die Funktion für Ihre Verwendung zu aktivieren. </p> </li> 
       <li id="li_D40E2F9AD8AD49FC9AC4B8C75BA31E28"> <span class="uicontrol"> Aktion </span> <p>Hiermit können Sie Zeilen zur Map hinzufügen oder Zeilen aus der Map entfernen. Die Reihenfolge der Zeilen ist nicht wichtig. </p> </li> 
       </ul> </p> </td> 
       </tr> 
@@ -1340,7 +1343,7 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       </tr> 
       <tr> 
       <td colname="col1"> <p>Aktiviert </p> </td> 
-      <td colname="col2"> <p>Aktiviert die Konfiguration zu Crawl und Index. Oder Sie können die Konfiguration deaktivieren, um Crawling und Indizierung zu verhindern. </p> <p> <b>Hinweis</b>: Deaktivierte Index Connector-Konfigurationen werden ignoriert, wenn sie in einer Einstiegsliste vorhanden sind. </p> </td> 
+      <td colname="col2"> <p>Aktiviert die Konfiguration zu Crawl und Index. Oder Sie können die Konfiguration deaktivieren, um Crawling und Indizierung zu verhindern. </p> <p> <b>Hinweis</b>: Deaktivierte Index Connector-Konfigurationen werden ignoriert, wenn sie in einer Einstiegspunkt-Liste vorhanden sind. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Host-Adresse </p> </td> 
@@ -1348,10 +1351,10 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       </tr> 
       <tr> 
       <td colname="col1"> <p>Dateipfad </p> </td> 
-      <td colname="col2"> <p>Gibt den Pfad zum Master-XML-Dokument an, das Links enthält ( 
+      <td colname="col2"> <p>Gibt den Pfad zum primären XML-Dokument an, das Links enthält ( 
       <userinput>
         &lt;a&gt; 
-      </userinput>) in einzelne XML-Dokumente. </p> <p>Der Pfad ist relativ zum Stammverzeichnis der Hostadresse. </p> </td> 
+      </userinput>) zu einzelnen XML-Dokumenten. </p> <p>Der Pfad ist relativ zum Stammverzeichnis der Hostadresse. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Protokoll </p> </td> 
@@ -1362,7 +1365,7 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       <li id="li_2F967B5675254C949B31EAB19910751C"> FTP <p>Für den Zugriff auf den FTP-Server müssen Sie entsprechende Authentifizierungsberechtigungen eingeben. </p> </li> 
       <li id="li_C24BE4C1DE79488AA64C7133D78CD3A6"> SFTP <p>Für den Zugriff auf den SFTP-Server müssen Sie entsprechende Authentifizierungsberechtigungen eingeben. </p> </li> 
       <li id="li_7581C21CFC104986A361F62BD7A370C1"> Datei </li> 
-      </ul> </p> <p> <b>Hinweis</b>: Die Einstellung "Protokoll"wird nur verwendet, wenn in den Feldern "Host-Adresse"und/oder "Dateipfad"Informationen angegeben sind. Einzelne XML-Dokumente werden gemäß den jeweiligen URL-Spezifikationen entweder über HTTP oder HTTPS heruntergeladen. </p> </td> 
+      </ul> </p> <p> <b>Hinweis</b>: Die Einstellung "Protokoll"wird nur verwendet, wenn in den Feldern "Host-Adresse"und/oder "Dateipfad"Informationen angegeben sind. Die einzelnen XML-Dokumente werden gemäß den jeweiligen URL-Spezifikationen entweder über HTTP oder HTTPS heruntergeladen. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>itemTag </p> </td> 
@@ -1372,7 +1375,7 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       <td colname="col1"> <p>Landkarte </p> </td> 
       <td colname="col2"> <p>Hiermit können Sie Zuordnungen von Spalten zu Metadaten mithilfe von Spaltennummern festlegen. </p> <p> 
       <ul id="ul_06F50CBA0AA64C7CB1AFAE076E629A64"> 
-      <li id="li_0FA2502869BA40DC93D790B79E15A9D2"> <span class="uicontrol"> Tag </span> <p>Gibt eine XPath-Darstellung der analysierten XML-Daten an. Mithilfe des obigen Beispieldokuments für Adobe XML können Sie es unter der Option ItemTag mit der folgenden Syntax zuordnen: </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
+      <li id="li_0FA2502869BA40DC93D790B79E15A9D2"> <span class="uicontrol"> Tag </span> <p>Gibt eine XPath-Darstellung der analysierten XML-Daten an. Mit dem obigen Beispiel-Adobe XML-Dokument unter der Option "item-Tag"können Sie es mit der folgenden Syntax zuordnen: </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
         /record/metadata/meta[@name='title']/@content&nbsp;-&gt;&nbsp;title 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;desc 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;body </code> </p> <p>Die obige Syntax übersetzt sich wie folgt: </p> <p> 
@@ -1383,8 +1386,8 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       <li id="li_7FA6A53DFD3D42A98B7BA17CC29DDB81"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>Das <span class="codeph"> content- </span> Attribut eines <span class="codeph"> meta- </span> Elements, das in einem <span class="codeph"> metadata- </span> Element enthalten ist, das im record- <span class="codeph"> Element enthalten ist, dessen name-Attribut </span> <span class="codeph"> </span><span class="codeph"> </span>description ist, wird dem MetadatenfeldTextkörper zugeordnet. </p> </li> 
       </ul> </p> <p>XPath ist eine relativ komplizierte Notation. Weitere Informationen finden Sie unter: </p> <p>Siehe <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_84999D07E0AE4265BC7928BBB49957B9"> <span class="uicontrol"> Feld </span> <p>Definiert den Wert des Namensattributs, der für jedes generierte &lt;meta&gt;-Tag verwendet wird. </p> </li> 
-      <li id="li_E125788D0F5242958BD790E26A675C20"> <span class="uicontrol"> Metadaten? </span> <p>Das <span class="uicontrol"> Feld wird </span> zu einer Dropdownliste, aus der Sie definierte Metadatenfelder für das aktuelle Konto auswählen können. </p> <p>Der <span class="uicontrol"> Feldwert </span> kann ein nicht definiertes Metadatenfeld sein, falls gewünscht. Ein nicht definiertes Metadatenfeld ist manchmal hilfreich, um Inhalte zu erstellen, die vom <span class="wintitle"> Filtern des Skripts verwendet werden </span>. </p> <p>Siehe <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Grundlagen zum Filtern von Skripten </a>. </p> <p>Wenn Index Connector XML-Dokumente mit mehreren Treffern in einem beliebigen Zuordnungsfeld verarbeitet, werden die Werte in einem Dokument, das im Cache gespeichert wird, zu einem einzigen Wert verkettet. Standardmäßig werden diese Werte mit einem Komma-Trennzeichen kombiniert. Angenommen, der entsprechende <span class="wintitle"> Feldwert </span> ist ein definiertes Metadatenfeld. Darüber hinaus ist für dieses Feld das <span class="wintitle"> Attribut Listen zulassen </span> festgelegt. In diesem Fall wird der Wert "Listentrennzeichen"des Felds, das erste definierte Trennzeichen, in der Verkettung verwendet. </p> </li> 
-      <li id="li_9F435EFB3EC74B409EC82A851824609F"> <span class="uicontrol"> Primärschlüssel? </span> <p>Nur eine Kartendefinition wird als Primärschlüssel identifiziert. Dieses Feld wird zur eindeutigen Referenz, die angezeigt wird, wenn dieses Dokument zum Index hinzugefügt wird. Dieser Wert wird in der URL des Dokuments im Index verwendet. </p> <p>Die <span class="uicontrol"> primären </span> Schlüsselwerte müssen in allen Dokumenten, die von der Index Connector-Konfiguration dargestellt werden, eindeutig sein. Alle angefallenen Duplikate werden ignoriert. Wenn Ihre Quelldokumente keinen eindeutigen Wert für die Verwendung als <span class="uicontrol"> Primärschlüssel enthalten </span>, aber zwei oder mehr Felder zusammen einen eindeutigen Bezeichner bilden <i>können</i> , können Sie den <span class="uicontrol"> Primärschlüssel definieren, </span> indem Sie mehrere <span class="uicontrol"> Tag- </span> Definitionen mit einem vertikalen Balken ("|"), der die Werte trennt, kombinieren. </p> </li> 
+      <li id="li_E125788D0F5242958BD790E26A675C20"> <span class="uicontrol"> Metadaten? </span> <p>Das <span class="uicontrol"> Feld wird </span> zu einer Dropdown-Liste, aus der Sie definierte Metadatenfelder für das aktuelle Konto auswählen können. </p> <p>Der <span class="uicontrol"> Feldwert </span> kann ein nicht definiertes Metadatenfeld sein, falls gewünscht. Ein nicht definiertes Metadatenfeld ist manchmal hilfreich, um Inhalte zu erstellen, die vom <span class="wintitle"> Filtern des Skripts verwendet werden </span>. </p> <p>Siehe <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Grundlagen zum Filtern von Skripten </a>. </p> <p>Wenn Index Connector XML-Dokumente mit mehreren Treffern in einem beliebigen Zuordnungsfeld verarbeitet, werden die Werte in einem zwischengespeicherten Dokument zu einem einzigen Wert verkettet. Standardmäßig werden diese Werte mit einem Komma-Trennzeichen kombiniert. Angenommen, der entsprechende <span class="wintitle"> Feldwert </span> ist ein definiertes Metadatenfeld. Darüber hinaus ist für dieses Feld das <span class="wintitle"> Zulassungsliste </span> -Attribut festgelegt. In diesem Fall wird der Liste-Trennzeichen-Wert des Felds, das erste definierte Trennzeichen, in der Verkettung verwendet. </p> </li> 
+      <li id="li_9F435EFB3EC74B409EC82A851824609F"> <span class="uicontrol"> Primärschlüssel? </span> <p>Nur eine Kartendefinition wird als Primärschlüssel identifiziert. Dieses Feld wird zur eindeutigen Referenz, die angezeigt wird, wenn dieses Dokument zum Index hinzugefügt wird. Dieser Wert wird in der URL des Dokuments im Index verwendet. </p> <p>Die <span class="uicontrol"> Primär Key- </span> Werte müssen für alle Dokumente, die von der Index Connector-Konfiguration repräsentiert werden, eindeutig sein. Alle gefundenen Duplikat werden ignoriert. Wenn Ihre Quellwerte keinen eindeutigen Dokumente für die Verwendung als <span class="uicontrol"> Primär-Key enthalten </span>, aber zwei oder mehr zusammengeführte  <i>können</i> einen eindeutigen Bezeichner bilden, können Sie den <span class="uicontrol"> Primär-Schlüssel definieren, </span> indem Sie mehrere <span class="uicontrol"> Tag- </span> Definitionen mit einem vertikalen Balken ("|"), der die Werte trennt, kombinieren. </p> </li> 
       <li id="li_9F435EFB3EC74B409EC82A851824610G"> <span class="uicontrol"> HTML entfernen? </span> <p>Wenn diese Option aktiviert ist, werden alle in den Daten dieses Felds gefundenen HTML-Tags entfernt. </p> </li> 
       <li id="li_6302D18971AD439FBECE27742649C56B"> <span class="uicontrol"> Aktion </span> <p>Hiermit können Sie Zeilen zur Map hinzufügen oder Zeilen aus der Map entfernen. Die Reihenfolge der Zeilen ist nicht wichtig. </p> </li> 
       </ul> </p> </td> 
@@ -1394,7 +1397,7 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
 
 1. (Optional) Klicken Sie auf **[!UICONTROL Setup Maps]** , um ein Beispiel Ihrer Datenquelle herunterzuladen. Die Daten werden zur Indizierung der Eignung geprüft. Diese Funktion ist nur für Text- und Feed-Typen verfügbar.
 1. (Optional) Klicken Sie **[!UICONTROL Preview]** auf , um die eigentliche Funktionsweise der Konfiguration zu testen. Diese Funktion ist nur für Text- und Feed-Typen verfügbar.
-1. Klicken Sie auf **[!UICONTROL Add]** , um die Konfiguration der [!DNL Index Connector Definitions] Seite und der [!DNL Index Connector Configurations] Dropdownliste auf der [!DNL URL Entrypoints] Seite hinzuzufügen.
+1. Klicken Sie auf , **[!UICONTROL Add]** um die Konfiguration der [!DNL Index Connector Definitions] Seite und der [!DNL Index Connector Configurations] Dropdown-Liste auf der [!DNL URL Entrypoints] Seite hinzuzufügen.
 
    Siehe [Informationen zu URL-Einträgen](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573).
 1. Klicken Sie auf der [!DNL Index Connector Definitions] Seite auf **[!UICONTROL rebuild your staged site index]**.
@@ -1418,7 +1421,7 @@ Sie können einen von Ihnen definierten Index Connector bearbeiten.
 
 >[!NOTE]
 >
->Es stehen nicht alle Optionen zur Verfügung, die Sie ändern können, z. B. den Index-Connector-Namen oder den Typ aus der [!DNL Type] Dropdownliste.
+>Es stehen nicht alle Optionen zur Verfügung, die Sie ändern können, z. B. den Index-Connector-Namen oder den Typ aus der [!DNL Type] Dropdown-Liste.
 
 **So bearbeiten Sie eine Index Connector-Definition**
 
@@ -1449,7 +1452,7 @@ Sie können die Konfigurationseinstellungen einer vorhandenen Indexverbindungsde
 
 Nachdem der Seite eine Index-Connector-Definition hinzugefügt wurde, können Sie deren Typeinstellung nicht mehr ändern. [!DNL Index Connector Definitions] Stattdessen müssen Sie die Definition löschen und dann eine neue hinzufügen.
 
-**So zeigen Sie die Einstellungen einer Index Connector-Definition an**
+**So Ansicht der Einstellungen einer Index Connector-Definition**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Index Connector]**.
 1. Klicken Sie auf der [!DNL Index Connector] Seite unter der [!DNL Actions] Spaltenüberschrift auf **[!UICONTROL Edit]** einen Index Connector-Definitionsnamen, dessen Einstellungen Sie überprüfen oder bearbeiten möchten.
@@ -1465,7 +1468,7 @@ Siehe [Bearbeiten einer Index Connector-Definition](../c-about-settings-menu/c-a
 **So kopieren Sie eine Index Connector-Definition**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Index Connector]**.
-1. Klicken Sie auf der [!DNL Index Connector] Seite unter der [!DNL Actions] Spaltenüberschrift auf **[!UICONTROL Copy]** einen Index Connector-Definitionsnamen, dessen Einstellungen Sie duplizieren möchten.
+1. Klicken Sie auf der [!DNL Index Connector] Seite unter der [!DNL Actions] Spaltenüberschrift auf **[!UICONTROL Copy]** einen Index Connector-Definitionsnamen, dessen Einstellungen Sie Duplikat haben möchten.
 1. Geben Sie auf der [!DNL Index Connector Copy] Seite den neuen Namen der Definition ein.
 1. Klicken **[!UICONTROL Copy]**.
 1. (Optional) Führen Sie auf der [!DNL Index Connector Definitions] Seite einen der folgenden Schritte aus:
