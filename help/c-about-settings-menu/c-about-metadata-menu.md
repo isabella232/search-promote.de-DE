@@ -8,7 +8,10 @@ title: Das Menü "Metadaten"
 topic: Settings,Site search and merchandising
 uuid: f12fc863-a140-45e8-b219-3dbfdef099cd
 translation-type: tm+mt
-source-git-commit: cf2707d124bd3f3a864610bcf41dda5e5670fc90
+source-git-commit: e080a61e24a3809beff7c212ff3d088b2a8ad3b6
+workflow-type: tm+mt
+source-wordcount: '8064'
+ht-degree: 1%
 
 ---
 
@@ -19,11 +22,11 @@ Verwenden Sie das Menü &quot;Metadaten&quot;, um Suchdefinitionen und Indexinje
 
 ## Definitionen {#concept_AE48035C210145169BE067D396975620}
 
-Sie können den Inhalt und die Relevanz der HTML- und Metadatenfelder anpassen, die berücksichtigt werden, wenn ein Kunde eine Suchanfrage sendet. [!DNL Definitions]
+Sie können den Inhalt und die Relevanz der HTML- und Metadatenfelder [!DNL Definitions] anpassen, die beim Senden einer Abfrage durch einen Kunden berücksichtigt werden.
 
 Sie können die bereits vordefinierten Felder bearbeiten. Sie können auch neue benutzerdefinierte Felder erstellen, die auf Metadaten-Tag-Inhalten basieren. Jede Definition wird auf einer einzelnen Zeile auf der [!DNL Staged Definitions] Seite angezeigt.
 
-Siehe auch [Datenansichten](../c-about-reports-menu/c-about-data-views.md#concept_DCA897D074464BC1861AA47B40CC86C3).
+Siehe auch Ansichten [zu Daten](../c-about-reports-menu/c-about-data-views.md#concept_DCA897D074464BC1861AA47B40CC86C3).
 
 ## Hinzufügen eines neuen Meta-Tag-Felds {#task_6DF188C0FC7F4831A4444CA9AFA615E5}
 
@@ -65,7 +68,7 @@ Bevor die Auswirkungen der neuen Meta-Tag-Definition für Kunden sichtbar sind, 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Meta-Tag-Name(n) </p> </td> 
-      <td colname="col2"> <p>Bestimmt den mit dem definierten Feld verknüpften Inhalt. </p> <p>Die Namensliste kann bis zu 255 Zeichen lang sein. Und der Name kann alle Zeichen enthalten, die im Namensattribut eines HTML-Meta-Tags zulässig sind. </p> <p>Sie können mehrere Meta-Tags in einer einzelnen Felddefinition angeben. </p> <p>Mehrere Werte müssen durch Kommas getrennt werden, und der Meta-Tag-Name ganz links, der auf einer bestimmten Webseite gefunden wird, hat Vorrang. </p> <p>Angenommen, Sie haben ein Feld mit dem Namen "auth"definiert. Der Feldname enthält die zugehörigen Meta-Tags "author, dc.author". In diesem Fall wird der Inhalt des Meta-Tags "author"indiziert und über dem "dc.author"gesucht, wenn beide Meta-Tags auf einer Webseite angezeigt werden. </p> <p>Benutzerdefinierte Felder müssen mindestens einen Meta-Tag-Namen in ihrer Definition enthalten. Vordefinierte Felder müssen kein Meta-Tag haben. Wenn jedoch ein oder mehrere Meta-Tags angegeben sind, setzt der Inhalt der Meta-Tags die aktuelle Datenquelle für jedes Tag außer Kraft. </p> <p>Wenn beispielsweise das Meta-Tag "dc.title"mit dem vordefinierten "title"-Feld verknüpft ist, wird der Inhalt des "dc.title"-Meta-Tags über den des 
+      <td colname="col2"> <p>Bestimmt den mit dem definierten Feld verknüpften Inhalt. </p> <p>Die Liste der Namen kann bis zu 255 Zeichen lang sein. Und der Name kann alle Zeichen enthalten, die im Namensattribut eines HTML-Meta-Tags zulässig sind. </p> <p>Sie können mehrere Meta-Tags in einer einzelnen Felddefinition angeben. </p> <p>Mehrere Werte müssen durch Kommas getrennt werden, und der Meta-Tag-Name ganz links, der auf einer bestimmten Webseite gefunden wird, hat Vorrang. </p> <p>Angenommen, Sie haben ein Feld mit dem Namen "auth"definiert. Der Feldname enthält die zugehörigen Meta-Tags "author, dc.author". In diesem Fall wird der Inhalt des Meta-Tags "author"indiziert und über dem "dc.author"gesucht, wenn beide Meta-Tags auf einer Webseite angezeigt werden. </p> <p>Benutzerdefinierte Felder müssen mindestens einen Meta-Tag-Namen in ihrer Definition enthalten. Vordefinierte Felder müssen kein Meta-Tag haben. Wenn jedoch ein oder mehrere Meta-Tags angegeben sind, setzt der Inhalt der Meta-Tags die aktuelle Datenquelle für jedes Tag außer Kraft. </p> <p>Wenn beispielsweise das Meta-Tag "dc.title"mit dem vordefinierten "title"-Feld verknüpft ist, wird der Inhalt des "dc.title"-Meta-Tags über den des 
       <userinput>
         &lt;Titel&gt; 
       </userinput> -Tags für ein bestimmtes Dokument. </p> <p>Als Einsatzmöglichkeiten bieten sich die folgenden Beispiele an: </p> <p> 
@@ -93,8 +96,8 @@ Bevor die Auswirkungen der neuen Meta-Tag-Definition für Kunden sichtbar sind, 
       </ul> </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Listen zulassen </p> </td> 
-      <td colname="col2"> <p>Nur verfügbar, wenn der Datentyp <span class="uicontrol"> "Text" </span>oder " <span class="uicontrol"> Zahl"ausgewählt </span> ist. </p> <p>Separat durch Indexierung getrennte Werte im Metadateninhalt dieses Felds. </p> <p>Der Inhalt "Rot, Gelb, Grün, Blau"wird beispielsweise als vier separate Werte statt als einer behandelt, wenn "Listen zulassen"ausgewählt ist. Diese Behandlung ist am nützlichsten bei der Bereichssuche (mithilfe von 
+      <td colname="col1"> <p>Zulassungsliste </p> </td> 
+      <td colname="col2"> <p>Nur verfügbar, wenn der Datentyp <span class="uicontrol"> "Text" </span>oder " <span class="uicontrol"> Zahl"ausgewählt </span> ist. </p> <p>Separat durch Indexierung getrennte Werte im Metadateninhalt dieses Felds. </p> <p>Der Inhalt "Rot, Gelb, Grün, Blau"wird beispielsweise als vier separate Werte statt als einer behandelt, wenn "Zulassungsliste"ausgewählt ist. Diese Behandlung ist am nützlichsten bei der Bereichssuche (mithilfe von 
       <userinput>
         sp_q_min 
       </userinput>, 
@@ -105,7 +108,7 @@ Bevor die Auswirkungen der neuen Meta-Tag-Definition für Kunden sichtbar sind, 
         sp_q_exact 
       </userinput>) und mit der 
       <userinput>
-        &lt;search-field-value-list&gt; 
+        &lt;search-field-value-Liste&gt; 
       </userinput>, 
       <userinput>
         &lt;search-field-values&gt; 
@@ -121,7 +124,7 @@ Bevor die Auswirkungen der neuen Meta-Tag-Definition für Kunden sichtbar sind, 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Deduplizierung zulassen </p> </td> 
-      <td colname="col2"> <p>Aktivieren Sie diese Option, um die Deduplizierung für dieses Feld zu aktivieren. Das heißt, Sie können dieses Feld zur Suchzeit angeben, indem Sie 
+      <td colname="col2"> <p>Aktivieren Sie diese Option, um Deduplizierung-Duplikate für dieses Feld zu aktivieren. Das heißt, Sie können dieses Feld zur Suchzeit angeben, indem Sie 
         <userinput>
           sp_dedupe_field 
         </userinput> CGI-Parameter suchen </p> <p>Siehe CGI-Parameter <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> suchen </a>. </p> </td> 
@@ -132,11 +135,11 @@ Bevor die Auswirkungen der neuen Meta-Tag-Definition für Kunden sichtbar sind, 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Listentrennzeichen </p> </td> 
-      <td colname="col2"> <p>Nur verfügbar, wenn <span class="uicontrol"> "Listen zulassen"ausgewählt </span> ist. </p> <p>Gibt an, welche Zeichen einzelne Listenwerte voneinander trennen. Sie können mehrere Zeichen angeben, von denen jedes als Werttrennzeichen behandelt wird. </p> </td> 
+      <td colname="col2"> <p>Nur verfügbar, wenn <span class="uicontrol"> Zulassungsliste </span> ausgewählt ist. </p> <p>Gibt an, welche Zeichen die einzelnen Listen voneinander trennen. Sie können mehrere Zeichen angeben, von denen jedes als Werttrennzeichen behandelt wird. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Suche standardmäßig </p> </td> 
-      <td colname="col2"> <p>Bei Auswahl dieser Option wird der Feldinhalt durchsucht, selbst wenn das Feld nicht explizit in einer bestimmten Suchabfrage angegeben ist. Wenn Sie diese Option deaktivieren, wird das Feld nur auf Anforderung durchsucht. </p> </td> 
+      <td colname="col2"> <p>Wenn diese Option aktiviert ist, wird der Feldinhalt durchsucht, selbst wenn das Feld nicht explizit in einer bestimmten Abfrage angegeben ist. Wenn Sie diese Option deaktivieren, wird das Feld nur auf Anforderung durchsucht. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Vertikales Aktualisierungsfeld </p> </td> 
@@ -144,7 +147,7 @@ Bevor die Auswirkungen der neuen Meta-Tag-Definition für Kunden sichtbar sind, 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Relevanz </p> </td> 
-      <td colname="col2"> <p>Sie können die Relevanz vordefinierter und benutzerdefinierter Felder bearbeiten. </p> <p>Die Relevanz wird auf einer Skala von 1 bis 10 angegeben. Eine Einstellung von 1 bedeutet, dass sie am wenigsten relevant ist und 10 am relevantesten sind. Diese Werte werden berücksichtigt, wenn die Software berücksichtigt, dass die Abfrage in jedem Feld übereinstimmt. </p> </td> 
+      <td colname="col2"> <p>Sie können die Relevanz vordefinierter und benutzerdefinierter Felder bearbeiten. </p> <p>Die Relevanz wird auf einer Skala von 1 bis 10 angegeben. Eine Einstellung von 1 bedeutet, dass sie am wenigsten relevant ist und 10 am relevantesten sind. Diese Werte werden berücksichtigt, wenn die Abfrage in den einzelnen Feldern übereinstimmt. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Sortieren </p> </td> 
@@ -155,11 +158,11 @@ Bevor die Auswirkungen der neuen Meta-Tag-Definition für Kunden sichtbar sind, 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Sprache  </p> </td> 
-      <td colname="col2"> <p>Nur verfügbar, wenn der Datentyp <span class="uicontrol"> Rang </span>, <span class="uicontrol"> Zahl </span>oder <span class="uicontrol"> Datum ausgewählt </span> ist. </p> <p>Steuert die Konventionen für Sprache und Gebietsschema, die bei der Indizierung der Werte für Datum, Nummer und Rang für dieses Feld angewendet werden. </p> <p>Sie können die Kontosprache (Linguistik &gt; Wörter und Sprachen) anwenden. Sie können auch die Sprache anwenden, die mit dem Dokument verknüpft ist, das jede Zahl, jeden Datumswert oder eine bestimmte Sprache enthält. </p> </td> 
+      <td colname="col2"> <p>Nur verfügbar, wenn der Datentyp <span class="uicontrol"> Rang </span>, <span class="uicontrol"> Zahl </span>oder <span class="uicontrol"> Datum ausgewählt </span> ist. </p> <p>Steuert die Konventionen für Sprache und Gebietsschema, die bei der Indizierung der Werte für Datum, Nummer und Rang für dieses Feld angewendet werden. </p> <p>Sie können die Kontosprache (Linguistik &gt; Wörter und Sprachen) anwenden. Sie können auch die Sprache anwenden, die mit dem Dokument verknüpft ist, das jede Nummer, jeden Datumswert oder eine bestimmte Sprache enthält. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Datumsformat(e) </p> </td> 
-      <td colname="col2"> <p>Nur verfügbar, wenn der Datentyp <span class="uicontrol"> "Datum"ausgewählt </span> ist. </p> <p>Steuert die Datumsformate, die beim Indizieren von Datumswerten für dieses Feld erkannt werden. </p> <p>Für jedes Datumsfeld wird eine Standardliste mit Datumsformat-Zeichenfolgen bereitgestellt. Sie können der Liste hinzufügen oder die Liste entsprechend den Anforderungen Ihrer eigenen Site bearbeiten. </p> <p>Siehe <a href="../c-appendices/r-date-formats.md#reference_4D1FC1F6B9F44857967188496D8D335B" type="reference" format="dita" scope="local"> Datumsformate </a>. </p> </td> 
+      <td colname="col2"> <p>Nur verfügbar, wenn der Datentyp <span class="uicontrol"> "Datum"ausgewählt </span> ist. </p> <p>Steuert die Datumsformate, die beim Indizieren von Datumswerten für dieses Feld erkannt werden. </p> <p>Für jedes Datumsfeld wird eine standardmäßige Liste von Datumsformat-Zeichenfolgen bereitgestellt. Sie können der Liste hinzufügen oder die Liste entsprechend den Anforderungen Ihrer eigenen Site bearbeiten. </p> <p>Siehe <a href="../c-appendices/r-date-formats.md#reference_4D1FC1F6B9F44857967188496D8D335B" type="reference" format="dita" scope="local"> Datumsformate </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Datumsformate testen </p> </td> 
@@ -171,7 +174,7 @@ Bevor die Auswirkungen der neuen Meta-Tag-Definition für Kunden sichtbar sind, 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Wenigster wichtiger Rangwert </p> </td> 
-      <td colname="col2"> <p>Nur verfügbar, wenn der Datentyp <span class="uicontrol"> Rank als Datentyp ausgewählt </span> ist. </p> <p>Steuert den Rangwert, der den Mindestrang eines Dokuments darstellt. </p> <p>Wenn die Dokumentrangliste zwischen 0 und 10 für den höchsten Rang liegt, legen Sie diesen Wert auf 0 fest. </p> <p>Wenn Ihr Dokument-Ranking zwischen 1 und 10 für den niedrigsten Rang liegt, legen Sie diesen Wert auf 10 fest. </p> </td> 
+      <td colname="col2"> <p>Nur verfügbar, wenn der Datentyp <span class="uicontrol"> Rank als Datentyp ausgewählt </span> ist. </p> <p>Steuert den Rangwert, der den Mindestrang eines Dokuments darstellt. </p> <p>Wenn Ihr Dokument von 0 für den niedrigsten Rang bis 10 für den höchsten Rang reicht, legen Sie diesen Wert auf 0 fest. </p> <p>Wenn Ihr Dokument von 1 für den höchsten Rang bis 10 für den niedrigsten Rang reicht, legen Sie diesen Wert auf 10 fest. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Standardwert für Rang </p> </td> 
@@ -179,7 +182,7 @@ Bevor die Auswirkungen der neuen Meta-Tag-Definition für Kunden sichtbar sind, 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Wichtigster Rangwert </p> </td> 
-      <td colname="col2"> <p>Nur verfügbar, wenn der Datentyp <span class="uicontrol"> Rank als Datentyp ausgewählt </span> ist. </p> <p>Steuert den Rangwert, der den maximalen Rang eines Dokuments darstellt. </p> <p>Wenn die Dokumentrangliste zwischen 0 und 10 für den höchsten Rang liegt, legen Sie diesen Wert auf 10 fest. </p> <p>Wenn Ihr Dokument-Ranking zwischen 1 und 10 für den niedrigsten Rang liegt, legen Sie diesen Wert auf 1 fest. </p> </td> 
+      <td colname="col2"> <p>Nur verfügbar, wenn der Datentyp <span class="uicontrol"> Rank als Datentyp ausgewählt </span> ist. </p> <p>Steuert den Rangwert, der den Maximalwert eines Dokuments darstellt. </p> <p>Wenn Ihr Dokument von 0 für den niedrigsten Rang bis 10 für den höchsten Rang reicht, legen Sie diesen Wert auf 10 fest. </p> <p>Wenn Ihr Dokument von 1 für den höchsten Rang bis 10 für den niedrigsten Rang reicht, legen Sie diesen Wert auf 1 fest. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Standardeinheiten </p> </td> 
@@ -200,11 +203,11 @@ Bevor die Auswirkungen der neuen Meta-Tag-Definition für Kunden sichtbar sind, 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Bereichsfeld </p> </td> 
-      <td colname="col2"> <p>Nur verfügbar, wenn <span class="uicontrol"> "Bereichsbeschreibung erstellen"aktiviert </span> ist. </p> <p>Das <span class="uicontrol"></span> Textfeld, das mit Bereichsbeschreibungen für das aktuelle Feld aktualisiert werden soll. Diese Liste enthält alle <span class="uicontrol"> Textfelder, die nicht bereits zusammen mit anderen Feldern zur Generierung von </span> Feldbereichen verwendet werden. </p> </td> 
+      <td colname="col2"> <p>Nur verfügbar, wenn <span class="uicontrol"> "Bereichsbeschreibung erstellen"aktiviert </span> ist. </p> <p>Das <span class="uicontrol"></span> Textfeld, das mit Bereichsbeschreibungen für das aktuelle Feld aktualisiert werden soll. Diese Liste enthält alle <span class="uicontrol"> Textfelder, </span> die noch nicht zusammen mit anderen Feldern zur Generierung von Feldbereichen verwendet werden. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Bereichswerte </p> </td> 
-      <td colname="col2"> <p>Nur verfügbar, wenn <span class="uicontrol"> "Bereichsbeschreibung erstellen"aktiviert </span> und ein <span class="uicontrol"> Bereichsfeld </span> ausgewählt ist. </p> <p>Eine mit Leerzeichen getrennte Liste von Datenpunkten, die beim Erstellen der Feldbereichsbeschreibungen verwendet werden. Beispiel: </p> <code> 10&amp;nbsp;20&amp;nbsp;50&amp;nbsp;100&amp;nbsp;1000 </code> <p>Sie können diese Werte in beliebiger Reihenfolge eingeben. Die Werte werden sortiert und Duplikate werden entfernt, bevor sie gespeichert werden. Sie können auch negative und nicht-ganzzahlige Werte angeben. </p> <p>Für jeden Wert dieses Felds: 
+      <td colname="col2"> <p>Nur verfügbar, wenn <span class="uicontrol"> "Bereichsbeschreibung erstellen"aktiviert </span> und ein <span class="uicontrol"> Bereichsfeld </span> ausgewählt ist. </p> <p>Eine durch Leerzeichen getrennte Liste von Datenpunkten, die beim Erstellen der Feldbereichsbeschreibungen verwendet werden soll. Beispiel: </p> <code> 10&amp;nbsp;20&amp;nbsp;50&amp;nbsp;100&amp;nbsp;1000 </code> <p>Sie können diese Werte in beliebiger Reihenfolge eingeben. Die Werte werden sortiert und Duplikat entfernt, bevor sie gespeichert werden. Sie können auch negative und nicht-ganzzahlige Werte angeben. </p> <p>Für jeden Wert dieses Felds: 
       <ul id="ul_C4B41AF5AADF4B84B9C489CE82FF7075"> 
       <li id="li_90736394A5AE4F5CA6B47687BCB627AA">Wenn der Wert kleiner als (&lt;) der kleinste Wert in <span class="uicontrol"> Bereichswerten ist </span>, wird das Format <span class="uicontrol"> "Kleiner als"verwendet </span> </li> 
       <li id="li_A5C272B2D26A468CA07EB2046B2EA8A7">Wenn der Wert größer oder gleich (&gt;=) dem größten Wert in <span class="uicontrol"> Bereichswerten ist </span>, wird das Format <span class="uicontrol"> "Größer als"verwendet </span> . </li> 
@@ -274,7 +277,7 @@ Bevor die Auswirkungen der neuen Meta-Tag-Definition für Kunden sichtbar sind, 
 
    Siehe auch [Hinzufügen eines neuen Meta-Tag-Felds](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5).
 1. Klicken **[!UICONTROL Add]**.
-1. (Optional) Erstellen Sie Ihren Staged Site-Index neu, wenn Sie eine Vorschau der Ergebnisse anzeigen möchten.
+1. (Optional) Erstellen Sie Ihren Stage-Site-Index neu, wenn Sie die Vorschauen durchführen möchten.
 
    Siehe [Konfigurieren eines inkrementellen Indexes einer gestaffelten Website](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
 1. (Optional) Führen Sie auf der [!DNL Definitions] Seite einen der folgenden Schritte aus:
@@ -308,7 +311,7 @@ Bevor die Auswirkungen Ihrer Meta-Tag-Änderungen für Kunden sichtbar sind, mü
 
    Siehe die Tabelle der Optionen unter [Hinzufügen eines neuen Meta-Tag-Felds](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5).
 1. Klicken **[!UICONTROL Save Changes]**.
-1. (Optional) Erstellen Sie Ihren Staged Site-Index neu, wenn Sie eine Vorschau der Ergebnisse anzeigen möchten.
+1. (Optional) Erstellen Sie Ihren Stage-Site-Index neu, wenn Sie die Vorschauen durchführen möchten.
 
    Siehe [Konfigurieren eines inkrementellen Indexes einer gestaffelten Website](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
 1. (Optional) Führen Sie auf der [!DNL Definitions] Seite einen der folgenden Schritte aus:
@@ -340,7 +343,7 @@ Bevor die Auswirkungen Ihres Meta-Tags zum Löschen für Kunden sichtbar sind, m
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Definitions]**.
 1. Klicken Sie auf der [!DNL Definitions] Seite im [!DNL User-defined fields] **[!UICONTROL Delete]** Abschnitt der Tabelle in der Zeile des Metadaten-Tag-Feldnamens, den Sie entfernen möchten.
 1. Klicken Sie im Bestätigungsdialogfeld auf **[!UICONTROL OK]**.
-1. (Optional) Erstellen Sie Ihren Staged Site-Index neu, wenn Sie eine Vorschau der Ergebnisse anzeigen möchten.
+1. (Optional) Erstellen Sie Ihren Stage-Site-Index neu, wenn Sie die Vorschauen durchführen möchten.
 
    Siehe [Konfigurieren eines inkrementellen Indexes einer gestaffelten Website](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
 1. (Optional) Führen Sie auf der [!DNL Definitions] Seite einen der folgenden Schritte aus:
@@ -361,7 +364,7 @@ Bevor die Auswirkungen Ihres Meta-Tags zum Löschen für Kunden sichtbar sind, m
 
 Sie können Inhalte [!DNL Injections] in Ihre Webseiten einfügen, ohne die Seiten selbst bearbeiten zu müssen.
 
-Sie können Inhalte an bestimmte indizierte Felder wie &quot;target&quot;oder &quot;body&quot;anhängen oder indizierte Inhalte durch neue Werte ersetzen. Wenn Sie beispielsweise neuen Inhalt in das Meta-Tag-Feld &quot;target&quot;eingefügt haben, werden diese Informationen genauso behandelt wie hartkodierte Seiteninhalte. Sie können den Inhalt jedes vordefinierten Meta-Tag-Felds bearbeiten, unabhängig davon, ob Ihre Siteseiten über entsprechenden Inhalt verfügen. Sie können beispielsweise den Inhalt der folgenden vordefinierten Meta-Tag-Feldnamen bearbeiten:
+Sie können Inhalte an bestimmte indexierte Felder wie &quot;Zielgruppe&quot;oder &quot;Textkörper&quot;anhängen oder indizierte Inhalte durch neue Werte ersetzen. Wenn Sie beispielsweise neuen Inhalt in das Meta-Tag-Feld &quot;Zielgruppe&quot;eingefügt haben, werden diese Informationen genauso behandelt wie hartkodierte Seiteninhalte. Sie können den Inhalt jedes vordefinierten Meta-Tag-Felds bearbeiten, unabhängig davon, ob Ihre Siteseiten über entsprechenden Inhalt verfügen. Sie können beispielsweise den Inhalt der folgenden vordefinierten Meta-Tag-Feldnamen bearbeiten:
 
 * ALT
 * body
@@ -376,7 +379,7 @@ Sie können Inhalte an bestimmte indizierte Felder wie &quot;target&quot;oder &q
 
 ## Arbeiten mit Testfeldinjektionen {#section_74939EA9E6EA4D2A92E8066B3B11CF92}
 
-Sie können optional **[!UICONTROL Test]** auf der [!DNL Staged Injections] Seite verwenden. Sie geben einen Testfeldnamen (z. B. &quot;title&quot;oder &quot;body&quot;), den ursprünglichen Feldwert (z. B. &quot;Homepage&quot;) und eine Test-URL von Ihrer Website ein. Der resultierende Wert wird als Referenz angezeigt. Die aktuellen Werte werden während des Tests nicht geändert.
+Sie können optional **[!UICONTROL Test]** auf der [!DNL Staged Injections] Seite verwenden. Sie geben einen Testfeldnamen (z. B. &quot;title&quot;oder &quot;body&quot;), den Originalfeldwert (z. B. &quot;Startseite&quot;) und eine Test-URL von Ihrer Website ein. Der resultierende Wert wird als Referenz angezeigt. Die aktuellen Werte werden während des Tests nicht geändert.
 
 ## Arbeiten mit Felddefinitionen {#section_C1BBF19DE8EF4A6F8CC3ED691F3953A9}
 
@@ -423,7 +426,7 @@ replace language https://www.yoursite.com/japanese/intro.txt ja_JP
       <li id="li_FD0B1CD9E6304B18B9D7F57E61015107"> <span class="codeph"> Zielgruppe </span> </li> 
       <li id="li_400D7E3F3E9B47EFB2FF5C0D278DB573"> <span class="codeph"> Titel </span> </li> 
       <li id="li_449BCBEE4F64424BB69F780C10F5956C"> <span class="codeph"> url </span> </li> 
-     </ul> </p> <p>Jeder Feldname entspricht Elementen auf Ihren Seiten. Wenn Sie beispielsweise den Feldnamen <span class="codeph"> desc angeben, können Sie </span> dem Feld, das der Beschreibung Meta-Tags auf Ihren Seiten entspricht, den Wert für die Injektionsdefinition hinzufügen. </p> <p>Wenn auf Ihren Seiten keine Beschreibung Meta-Tag vorhanden ist, erstellt der definierte Inhalt das Tag für Sie. Der in einer <span class="codeph"> desc- </span> Injektion angegebene Inhalt wird auf Ihrer Ergebnisseite genauso wie hartcodierte Meta-Beschreibungsinhalte angezeigt. </p> <p>Sie können auch mehrere Definitionen mit demselben Feldnamen erstellen. Angenommen, Sie haben die folgenden Injektionen: </p> <p> <code> replace&nbsp; <b>title</b>&nbsp;https://www.mysite.com/&nbsp;Welcome&nbsp;to&nbsp;My&nbsp;Site </code> </p> <p> <code> replace&nbsp; <b>title</b>&nbsp;https://www.mysite.com/company/*.html&nbsp;My&nbsp;Site:&nbsp;Contact </code> </p> <p>Alle Seiten der Site im obigen Beispiel erhalten einen injizierten Titel "Willkommen auf meiner Site". Seiten im Ordner "/company/"werden mit dem neuen Titel "Meine Site: Kontaktieren Sie uns", die das vorherige ersetzen. </p> <p>Beachten Sie, dass die Injektionen in der Reihenfolge angewendet werden, in der sie im Textfeld " <span class="wintitle"> Felddefinitionen"angezeigt </span> werden. Wenn dasselbe Feld ("title"in diesem Beispiel) für Seiten am selben Speicherort mehrmals definiert wird, hat die spätere Definition Vorrang. </p> <p> <span class="codeph"> [regexp] </span> - optional. Wenn Sie die <span class="codeph"> regexp- </span> Option verwenden, wird die definierte URL als regulärer Ausdruck behandelt. </p> <p>Siehe <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguläre Ausdrücke </a>. </p> <p>In der folgenden Definition: </p> <p> <code> replace&nbsp;target&nbsp; <b>regexp&amp;nbsp;^.*/products/.*\.html$</b>&nbsp;Important&nbsp;information </code> </p> <p> "Wichtige Informationen"wird in das Feld "Ziel"auf allen Seiten eingefügt, die mit dem regulären Ausdruck <span class="codeph"> ^ übereinstimmen.*/products/.*\.html$ </span>. </p> <p>Daher haben Sie folgende Möglichkeiten: </p> <p> <code> https://www.mydomain.com/products/page1.html 
+     </ul> </p> <p>Jeder Feldname entspricht Elementen auf Ihren Seiten. Wenn Sie beispielsweise den Feldnamen <span class="codeph"> desc angeben, können Sie </span> dem Feld, das der Beschreibung Meta-Tags auf Ihren Seiten entspricht, den Wert für die Injektionsdefinition hinzufügen. </p> <p>Wenn auf Ihren Seiten keine Beschreibung Meta-Tag vorhanden ist, erstellt der definierte Inhalt das Tag für Sie. Der in einer <span class="codeph"> desc- </span> Injektion angegebene Inhalt wird auf Ihrer Ergebnisseite genauso wie hartcodierte Meta-Beschreibungsinhalte angezeigt. </p> <p>Sie können auch mehrere Definitionen mit demselben Feldnamen erstellen. Angenommen, Sie haben die folgenden Injektionen: </p> <p> <code> replace&nbsp; <b>title</b>&nbsp;https://www.mysite.com/&nbsp;Welcome&nbsp;to&nbsp;My&nbsp;Site </code> </p> <p> <code> replace&nbsp; <b>title</b>&nbsp;https://www.mysite.com/company/*.html&nbsp;My&nbsp;Site:&nbsp;Contact </code> </p> <p>Alle Seiten der Site im obigen Beispiel erhalten einen injizierten Titel "Willkommen auf meiner Site". Die Seiten im Ordner "/Firma/"werden mit dem neuen Titel "Meine Site: Kontaktieren Sie uns", die das vorherige ersetzen. </p> <p>Beachten Sie, dass die Injektionen in der Reihenfolge angewendet werden, in der sie im Textfeld " <span class="wintitle"> Felddefinitionen"angezeigt </span> werden. Wenn dasselbe Feld ("title"in diesem Beispiel) für Seiten am selben Speicherort mehrmals definiert wird, hat die spätere Definition Vorrang. </p> <p> <span class="codeph"> [regexp] </span> - optional. Wenn Sie die <span class="codeph"> regexp- </span> Option verwenden, wird die definierte URL wie ein regulärer Ausdruck behandelt. </p> <p>Siehe <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguläre Ausdrücke </a>. </p> <p>In der folgenden Definition: </p> <p> <code> replace&nbsp;target&nbsp; <b>regexp&amp;nbsp;^.*/products/.*\.html$</b>&nbsp;Important&nbsp;information </code> </p> <p> "Wichtige Informationen"wird in das Feld "Zielgruppe"auf allen Seiten eingefügt, die mit dem regulären Ausdruck <span class="codeph"> ^ übereinstimmen.*/products/.*\.html$ </span>. </p> <p>Daher haben Sie folgende Möglichkeiten: </p> <p> <code> https://www.mydomain.com/products/page1.html 
       &nbsp;&nbsp;&nbsp;&nbsp;(Will&nbsp;receive&nbsp;"target"&nbsp;content) </code> </p> <p> <code> https://www.mydomain.com/product/oldstuff.html 
       &nbsp;&nbsp;&nbsp;&nbsp;(Will&nbsp;not&nbsp;receive&nbsp;"target"&nbsp;content) </code> </p> <p>Im folgenden Beispiel: </p> <p> <code> append&amp;nbsp;title&amp;nbsp;regexp&amp;nbsp;^.*\.pdf$&amp;nbsp;Millennium&amp;nbsp;Science </code> </p> <p>Die Injektion fügt "Millennium Science" an den "title"-Inhalt aller Seiten an, die mit einer ".pdf" Dateinamenerweiterung enden. </p> </td> 
   </tr> 
@@ -449,7 +452,7 @@ Siehe auch [Auswählen von Inhaltstypen zum Durchsuchen und Indexieren](../c-abo
 
 Sie können Inhalte [!DNL Injections] in Ihre Webseiten einfügen, ohne die Seiten selbst bearbeiten zu müssen.
 
-Sie können optional **[!UICONTROL Test]** auf der [!DNL Injections] Seite verwenden. Sie geben einen Testfeldnamen (z. B. &quot;title&quot;oder &quot;body&quot;), den ursprünglichen Feldwert (z. B. &quot;Homepage&quot;) und eine Test-URL von Ihrer Website ein. Der resultierende Wert wird als Referenz angezeigt. Die aktuellen Werte werden während des Tests nicht geändert.
+Sie können optional **[!UICONTROL Test]** auf der [!DNL Injections] Seite verwenden. Sie geben einen Testfeldnamen (z. B. &quot;title&quot;oder &quot;body&quot;), den Originalfeldwert (z. B. &quot;Startseite&quot;) und eine Test-URL von Ihrer Website ein. Der resultierende Wert wird als Referenz angezeigt. Die aktuellen Werte werden während des Tests nicht geändert.
 
 **So fügen Sie Definitionen für die Feldinjektion hinzu**
 
@@ -498,7 +501,7 @@ Siehe auch [Funktionsweise des Attributinjektionsprozesses für Text und Feed...
 
 Siehe auch [Konfigurieren mehrerer Attributlader.](../c-about-settings-menu/c-about-metadata-menu.md#section_4CC49C74EF294608A184E233F215ADFF)
 
-Siehe auch [Informationen zur Verwendung der Vorschau, wenn Sie ein Attribut hinzufügen...](../c-about-settings-menu/c-about-metadata-menu.md#section_E9CAB000A94C4D9189786C1EDB1CDB46)
+Siehe auch [Informationen zur Verwendung der Vorschau beim Hinzufügen eines Attributs...](../c-about-settings-menu/c-about-metadata-menu.md#section_E9CAB000A94C4D9189786C1EDB1CDB46)
 
 ## Funktionsweise der Attributinjektion für Text- und Feed-Konfigurationen in Attribute Loader {#section_E059A33D61EE4DB0972A37B8A35E9E16}
 
@@ -519,25 +522,25 @@ Siehe auch [Informationen zur Verwendung der Vorschau, wenn Sie ein Attribut hin
   <tr> 
    <td colname="col1"> <p>2 </p> </td> 
    <td colname="col2"> <p>Unterteilen Sie die heruntergeladene Datenquelle in einzelne Pseudo-Dokumente. </p> </td> 
-   <td colname="col3"> <p>Bei <span class="uicontrol"> Text </span>entspricht jede durch Zeilenumbrüche getrennte Textzeile einem einzelnen Dokument und wird mit dem angegebenen Trennzeichen wie einem Komma oder einer Registerkarte analysiert. </p> <p>Für <span class="uicontrol"> Feed </span>werden die Daten jedes Dokuments mithilfe eines Musters für reguläre Ausdrücke in folgendem Formular extrahiert: </p> <p> <code class="syntax js"> &lt;${Itemtag}&gt;(.*?)&lt;/${Itemtag}&gt; </code> </p> <p>Erstellen Sie mithilfe der <span class="uicontrol"> Zuordnung </span> auf der Seite " <span class="wintitle"> </span> Attributlader hinzufügen"eine zwischengespeicherte Kopie der Daten und erstellen Sie dann eine Liste der Links für den Crawler. Die Daten werden in einem lokalen Cache gespeichert und mit den konfigurierten Feldern gefüllt. </p> <p>Die analysierten Daten werden in den lokalen Cache geschrieben. </p> <p>Dieser Cache wird später gelesen, um die einfachen HTML-Dokumente zu erstellen, die vom Crawler benötigt werden. Beispiel: </p> <p> <code class="syntax html"> &lt;html&gt;&lt;head&gt; 
+   <td colname="col3"> <p>Bei <span class="uicontrol"> Text </span>entspricht jede durch Zeilenumbrüche getrennte Textzeile einem einzelnen Dokument und wird mit dem angegebenen Trennzeichen wie einem Komma oder einer Registerkarte analysiert. </p> <p>Bei <span class="uicontrol"> Feed </span>werden die Daten jedes Dokuments mithilfe eines regulären Ausdrucks in der folgenden Form extrahiert: </p> <p> <code class="syntax js"> &lt;${Itemtag}&gt;(.*?)&lt;/${Itemtag}&gt; </code> </p> <p>Erstellen Sie mithilfe der <span class="uicontrol"> Zuordnung </span> auf der <span class="wintitle"> </span> Seite "Attributlader"Hinzufügen eine zwischengespeicherte Kopie der Daten und erstellen Sie dann eine Liste der Links für den Crawler. Die Daten werden in einem lokalen Cache gespeichert und mit den konfigurierten Feldern gefüllt. </p> <p>Die analysierten Daten werden in den lokalen Cache geschrieben. </p> <p>Dieser Cache wird später gelesen, um die einfachen HTML-Dokumente zu erstellen, die vom Crawler benötigt werden. Beispiel: </p> <p> <code class="syntax html"> &lt;html&gt;&lt;head&gt; 
       &lt;title&gt;{title}&lt;/title&gt; 
       &lt;meta&nbsp;name="{field}"&nbsp;content="{data}"&nbsp;/&gt; 
       ... 
       &lt;/head&gt;&lt;body&gt; 
       {body} 
-      &lt;/body&gt;&lt;/html&gt; </code> </p> <p>Das <span class="codeph"> &lt;title&gt;- </span> Element wird nur generiert, wenn eine Zuordnung zum Metadatenfeld "Titel"vorhanden ist. Gleichermaßen wird das <span class="codeph"> &lt;body&gt;- </span> Element nur generiert, wenn eine Zuordnung zum Metadatenfeld "Textkörper"vorhanden ist. </p> <p> <b>Wichtig</b>: Die Zuweisung von Werten zum vordefinierten URL-Meta-Tag wird nicht unterstützt. </p> <p>Bei allen anderen Zuordnungen werden für jedes Feld, das Daten im Originaldokument enthält, <span class="codeph"> &lt;meta&gt;- </span> Tags generiert. </p> <p>Die Felder für jedes Dokument werden dem Cache hinzugefügt. Für jedes Dokument, das in den Cache geschrieben wird, wird auch ein Link wie in den folgenden Beispielen generiert: </p> <p> <code class="syntax html"> &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
+      &lt;/body&gt;&lt;/html&gt; </code> </p> <p>Das <span class="codeph"> &lt;title&gt;- </span> Element wird nur generiert, wenn eine Zuordnung zum Metadatenfeld "Titel"vorhanden ist. Gleichermaßen wird das <span class="codeph"> &lt;body&gt;- </span> Element nur generiert, wenn eine Zuordnung zum Metadatenfeld "Textkörper"vorhanden ist. </p> <p> <b>Wichtig</b>: Die Zuweisung von Werten zum vordefinierten URL-Meta-Tag wird nicht unterstützt. </p> <p>Bei allen anderen Zuordnungen werden für jedes Feld, das Daten im ursprünglichen Dokument enthält, <span class="codeph"> &lt;meta&gt;- </span> Tags generiert. </p> <p>Die Felder für jedes Dokument werden dem Cache hinzugefügt. Für jedes Dokument, das in den Cache geschrieben wird, wird auch ein Link wie in den folgenden Beispielen generiert: </p> <p> <code class="syntax html"> &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
       &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
-      .... </code> </p> <p>Bei der Zuordnung der Konfiguration muss ein Feld als Primärschlüssel identifiziert werden. Diese Zuordnung bildet den Schlüssel, der verwendet wird, wenn Daten aus dem Cache abgerufen werden. </p> <p>Der Crawler erkennt den URL- <span class="codeph"> Index: </span> Schemapräfix, das dann auf die lokal zwischengespeicherten Daten zugreifen kann. </p> </td> 
+      .... </code> </p> <p>Bei der Zuordnung der Konfiguration muss ein Feld als Primär-Schlüssel identifiziert werden. Diese Zuordnung bildet den Schlüssel, der verwendet wird, wenn Daten aus dem Cache abgerufen werden. </p> <p>Der Crawler erkennt den URL- <span class="codeph"> Index: </span> Schemapräfix, das dann auf die lokal zwischengespeicherten Daten zugreifen kann. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>3 </p> </td> 
-   <td colname="col2"> <p>Durchsuchen Sie den zwischengespeicherten Dokumentsatz. </p> </td> 
-   <td colname="col3"> <p>Der <span class="codeph"> Index: Die </span> Links werden der Liste der ausstehenden Crawler hinzugefügt und in der normalen Crawl-Sequenz verarbeitet. </p> </td> 
+   <td colname="col2"> <p>Crawl Sie das zwischengespeicherte Dokument-Set. </p> </td> 
+   <td colname="col3"> <p>Der <span class="codeph"> Index: </span> Links werden der ausstehenden Liste des Crawlers hinzugefügt und in der normalen Crawl-Sequenz verarbeitet. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>4 </p> </td> 
    <td colname="col2"> <p>Verarbeiten Sie jedes Dokument. </p> </td> 
-   <td colname="col3"> <p>Der Schlüsselwert jedes Links entspricht einem Eintrag im Cache, sodass beim Durchsuchen der einzelnen Links die Daten des Dokuments aus dem Cache abgerufen werden. Es wird dann zu einem HTML-Bild "zusammengestellt", das verarbeitet und dem Index hinzugefügt wird. </p> </td> 
+   <td colname="col3"> <p>Der Schlüsselwert jedes Links entspricht einem Eintrag im Cache, sodass beim Durchsuchen der einzelnen Links die Daten dieses Dokuments aus dem Cache abgerufen werden. Es wird dann zu einem HTML-Bild "zusammengestellt", das verarbeitet und dem Index hinzugefügt wird. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -569,17 +572,17 @@ Wenn Sie einen Attribute Loader hinzufügen, können Sie optional mit dieser Fun
 
 >[!NOTE]
 >
->Die Funktion &quot;Einstellungskarten&quot;funktioniert möglicherweise nicht für große XML-Datensätze, da der Dateiparser versucht, die gesamte Datei in den Speicher zu lesen. Daher kann es zu einer Speicherüberschreitung kommen. Wird dasselbe Dokument jedoch zum Zeitpunkt der Indizierung verarbeitet, wird es nicht in den Speicher gelesen. Stattdessen werden große Dokumente &quot;unterwegs&quot;verarbeitet und erst nicht vollständig in den Speicher gelesen.
+>Die Funktion &quot;Einstellungskarten&quot;funktioniert möglicherweise nicht für große XML-Datensätze, da der Dateiparser versucht, die gesamte Datei in den Speicher zu lesen. Daher kann es zu einer Speicherüberschreitung kommen. Wird dasselbe Dokument jedoch zum Zeitpunkt der Indexierung verarbeitet, wird es nicht in den Speicher gelesen. Stattdessen werden große Dokumente &quot;unterwegs&quot;verarbeitet und erst nicht vollständig in den Speicher gelesen.
 
-## Verwendung der Vorschau beim Hinzufügen eines Attributladers {#section_E9CAB000A94C4D9189786C1EDB1CDB46}
+## Informationen zur Verwendung von Vorschau beim Hinzufügen eines Attribute Loader {#section_E9CAB000A94C4D9189786C1EDB1CDB46}
 
 Attribute Loader-Daten werden vor einem Index-Vorgang geladen.
 
 Beim Hinzufügen eines Attribute Loaders können Sie optional die Funktion verwenden, **[!UICONTROL Preview]** um die Daten zu validieren, als ob Sie sie gespeichert hätten. Es führt einen Test für die Konfiguration aus, ohne die Konfiguration im Konto zu speichern. Der Test greift auf die konfigurierte Datenquelle zu. Der Download-Cache wird jedoch an einen temporären Speicherort geschrieben. Es steht nicht im Konflikt mit dem Hauptcache-Ordner, den der Indexcrawler verwendet.
 
-&quot;Vorschau&quot;verarbeitet nur die Standardwerte von fünf Dokumenten, die von **Acct:IndexConnector-Preview-Max-Documents** gesteuert werden. Die in der Vorschau angezeigten Dokumente werden im Quellformular angezeigt, da sie dem Indexierungs-Crawler präsentiert werden. Die Anzeige ähnelt der Funktion &quot;Quelle anzeigen&quot;in einem Webbrowser. Sie können mithilfe von standardmäßigen Navigationslinks durch die Dokumente im Vorschausatz navigieren.
+Vorschau verarbeitet nur einen Standardwert von fünf Dokumenten, wie von **Acct:IndexConnector-Vorschau-Max-Dokumenten** gesteuert. Die in der Vorschau angezeigten Dokumente werden im Quellformular angezeigt, da sie dem Indexierungs-Crawler präsentiert werden. Die Anzeige ähnelt der Funktion &quot;Ansicht-Quelle&quot;in einem Webbrowser. Sie können mithilfe von standardmäßigen Navigationslinks durch die Dokumente in der Vorschau navigieren.
 
-Die Vorschau unterstützt keine XML-Konfigurationen, da diese Dokumente direkt verarbeitet und nicht in den Cache heruntergeladen werden.
+XML-Konfigurationen werden von Vorschau nicht unterstützt, da diese Dokumente direkt verarbeitet und nicht in den Cache heruntergeladen werden.
 
 ## Hinzufügen einer Attribute Loader-Definition {#task_A735E5EF763343A9B675E1A3B09AFDBC}
 
@@ -611,10 +614,10 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       </tr> 
       <tr> 
       <td colname="col1"> <p>Typ  </p> </td> 
-      <td colname="col2"> <p>Die Quelle Ihrer Daten. Der ausgewählte Datenquellentyp wirkt sich auf die auf der Seite <span class="wintitle"> "Attributlader hinzufügen"verfügbaren Optionen aus </span> . Sie können aus den folgenden Optionen wählen: </p> <p> 
+      <td colname="col2"> <p>Die Quelle Ihrer Daten. Der ausgewählte Datenquellentyp wirkt sich auf die auf der <span class="wintitle"> Seite "Attributlader"verfügbaren Optionen Hinzufügen </span> aus. Sie können aus den folgenden Optionen wählen: </p> <p> 
       <ul id="ul_1ADC3DFBC929467385F7465BE8E13635"> 
       <li id="li_64FCD749F55442BAB316BD474128D4F9"> <span class="uicontrol"> Text </span> <p>Einfache Dateien mit flachem Text, kommagetrennte, tabulatorgetrennte oder andere konsistent getrennte Formate. Jede durch Zeilenumbrüche getrennte Textzeile entspricht einem einzelnen Dokument und wird mit dem angegebenen Trennzeichen analysiert. </p> <p>Sie können jeden Wert oder jede Spalte einem Metadatenfeld zuordnen, auf das die Spaltennummer verweist, beginnend mit 1 (1). </p> </li> 
-      <li id="li_2A4F16CE6DCE4114B7F8E4FE156252BB"> <span class="uicontrol"> Feed </span> <p>Lädt ein XML-Masterdokument herunter, das mehrere "Zeilen"mit Informationen enthält. </p> </li> 
+      <li id="li_2A4F16CE6DCE4114B7F8E4FE156252BB"> <span class="uicontrol"> Feed </span> <p>Lädt ein primäres XML-Dokument herunter, das mehrere "Zeilen"mit Informationen enthält. </p> </li> 
       </ul> </p> </td> 
       </tr> 
       <tr> 
@@ -627,7 +630,7 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       </tr> 
       <tr> 
       <td colname="col1"> <p>Host-Adresse </p> </td> 
-      <td colname="col2"> <p>Gibt die Adresse des Serverhosts an, auf dem sich Ihre Daten befinden. </p> <p>Bei Bedarf können Sie einen vollständigen URI (Uniform Resource Identifier)-Pfad zum Datenquellendokument angeben, wie in den folgenden Beispielen dargestellt: </p> <p> <code otherprops="syntax html"> https://www.somewhere.com/some_path/some_file.tsv </code> </p> <p>oder </p> <p> <code class="syntax html"> ftp://user:password@ftpserver.somewhere.com/some_path/some_file.csv </code> </p> <p>Der URI wird in die entsprechenden Einträge für die Felder Host-Adresse, Dateipfad, Protokoll und optional Benutzername und Kennwort unterteilt </p> </td> 
+      <td colname="col2"> <p>Gibt die Adresse des Serverhosts an, auf dem sich Ihre Daten befinden. </p> <p>Bei Bedarf können Sie einen vollständigen URI (Uniform Resource Identifier)-Pfad zum Datenquellen-Dokument angeben, wie in den folgenden Beispielen dargestellt: </p> <p> <code otherprops="syntax html"> https://www.somewhere.com/some_path/some_file.tsv </code> </p> <p>oder </p> <p> <code class="syntax html"> ftp://user:password@ftpserver.somewhere.com/some_path/some_file.csv </code> </p> <p>Der URI wird in die entsprechenden Einträge für die Felder Host-Adresse, Dateipfad, Protokoll und optional Benutzername und Kennwort unterteilt </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Dateipfad </p> </td> 
@@ -650,7 +653,7 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       </tr> 
       <tr> 
       <td colname="col1"> <p>Weitere Zustellversuche </p> </td> 
-      <td colname="col2"> <p>Gibt die maximale Anzahl von Wiederholungen für fehlgeschlagene FTP-, SFTP-, HTTP- oder HTTPS-Verbindungen an. Dieser Wert muss zwischen 0 und 10 liegen. </p> <p>Der Wert Null (0) verhindert Wiederholungsversuche. </p> </td> 
+      <td colname="col2"> <p>Gibt die maximale Anzahl von weiteren Zustellversuchen für fehlgeschlagene FTP-, SFTP-, HTTP- oder HTTPS-Verbindungen an. Dieser Wert muss zwischen 0 und 10 liegen. </p> <p>Der Wert Null (0) verhindert Wiederholungsversuche. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Kodierung </p> </td> 
@@ -674,7 +677,7 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       <ul id="ul_981AE2C6D30443BDBFC6575D413732A2"> 
       <li id="li_A42CB9DFFF8C45A7BAC2D471FE96CEBE"> <span class="uicontrol"> Spalte </span> <p> Gibt eine Spaltennummer an, wobei die erste Spalte 1 (1) ist. Um neue Zuordnungszeilen für jede Spalte hinzuzufügen, klicken Sie unter <span class="wintitle"> Aktion </span>auf <span class="uicontrol"> + </span>. </p> <p>Sie müssen nicht auf jede Spalte in der Datenquelle verweisen. Stattdessen können Sie Werte überspringen. </p> </li> 
       <li id="li_26E8C9554A5D4BC5A5073D6385E3626F"> <span class="uicontrol"> Feld </span> <p>Definiert den Wert des Namensattributs, der für jedes generierte &lt;meta&gt;-Tag verwendet wird. </p> </li> 
-      <li id="li_5DFA514B7F9549B98D6CBC095A66033C"> <span class="uicontrol"> Metadaten? </span> <p>Das <span class="uicontrol"> Feld wird </span> zu einer Dropdownliste, aus der Sie definierte Metadatenfelder für das aktuelle Konto auswählen können. </p> <p>Der <span class="uicontrol"> Feldwert </span> kann ein nicht definiertes Metadatenfeld sein, falls gewünscht. Ein nicht definiertes Metadatenfeld ist manchmal hilfreich, um Inhalte zu erstellen, die von einem <span class="wintitle"> Filterskript verwendet werden </span>. </p> <p>Siehe <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Grundlagen zum Filtern von Skripten </a>. </p> </li> 
+      <li id="li_5DFA514B7F9549B98D6CBC095A66033C"> <span class="uicontrol"> Metadaten? </span> <p>Das <span class="uicontrol"> Feld wird </span> zu einer Dropdown-Liste, aus der Sie definierte Metadatenfelder für das aktuelle Konto auswählen können. </p> <p>Der <span class="uicontrol"> Feldwert </span> kann ein nicht definiertes Metadatenfeld sein, falls gewünscht. Ein nicht definiertes Metadatenfeld ist manchmal hilfreich, um Inhalte zu erstellen, die von einem <span class="wintitle"> Filterskript verwendet werden </span>. </p> <p>Siehe <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Grundlagen zum Filtern von Skripten </a>. </p> </li> 
       <li id="li_80DB205525094CE1AA6762BFC7892C95"> <span class="uicontrol"> Primärschlüssel? </span> <p>Nur ein Feld wird als Primärschlüssel identifiziert. Dieses Feld wird als "Fremdschlüssel"verwendet, um die Attribute Loader-Daten mit dem entsprechenden Dokument im Index abzugleichen. </p> </li> 
       <li id="li_80DB205525094CE1AA6762BFC7892D96"> <span class="uicontrol"> HTML entfernen? </span> <p>Wenn diese Option aktiviert ist, werden alle in den Daten dieses Felds gefundenen HTML-Tags entfernt. </p> </li> 
       <li id="li_359D2902859B4C5BADB0BA26F0BA4DC0"> <span class="uicontrol"> Aktion </span> <p>Hiermit können Sie Zeilen zur Map hinzufügen oder Zeilen aus der Map entfernen. Die Reihenfolge der Zeilen ist nicht wichtig. </p> </li> 
@@ -690,11 +693,11 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       </tr> 
       <tr> 
       <td colname="col1"> <p>Host-Adresse </p> </td> 
-      <td colname="col2"> <p>Gibt die Adresse des Serverhosts an, auf dem sich Ihre Daten befinden. </p> <p>Bei Bedarf können Sie einen vollständigen URI (Uniform Resource Identifier)-Pfad zum Datenquellendokument angeben, wie in den folgenden Beispielen dargestellt: </p> <p> <code class="syntax html"> https://www.somewhere.com/some_path/some_file.tsv </code> </p> <p>oder </p> <p> <code class="syntax html"> ftp://user:password@ftpserver.somewhere.com/some_path/some_file.csv </code> </p> <p>Der URI wird in die entsprechenden Einträge für die Felder Host-Adresse, Dateipfad, Protokoll und optional Benutzername und Kennwort unterteilt. </p> </td> 
+      <td colname="col2"> <p>Gibt die Adresse des Serverhosts an, auf dem sich Ihre Daten befinden. </p> <p>Bei Bedarf können Sie einen vollständigen URI (Uniform Resource Identifier)-Pfad zum Datenquellen-Dokument angeben, wie in den folgenden Beispielen dargestellt: </p> <p> <code class="syntax html"> https://www.somewhere.com/some_path/some_file.tsv </code> </p> <p>oder </p> <p> <code class="syntax html"> ftp://user:password@ftpserver.somewhere.com/some_path/some_file.csv </code> </p> <p>Der URI wird in die entsprechenden Einträge für die Felder Host-Adresse, Dateipfad, Protokoll und optional Benutzername und Kennwort unterteilt. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Dateipfad </p> </td> 
-      <td colname="col2"> <p>Gibt den Pfad zum Master-XML-Dokument an, das mehrere "Zeilen"mit Informationen enthält. </p> <p>Der Pfad ist relativ zum Stammverzeichnis der Hostadresse. </p> </td> 
+      <td colname="col2"> <p>Gibt den Pfad zum primären XML-Dokument an, das mehrere "Zeilen"mit Informationen enthält. </p> <p>Der Pfad ist relativ zum Stammverzeichnis der Hostadresse. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Protokoll </p> </td> 
@@ -750,7 +753,7 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       </tr> 
       <tr> 
       <td colname="col1"> <p>Name des Querverweisfelds </p> </td> 
-      <td colname="col2"> <p>Gibt ein Metadatenfeld an, dessen Werte als Nachschlagschlüssel in die Daten der Attribute Loader-Konfiguration verwendet werden. Wenn kein Wert ausgewählt ist (<b>—None—</b>), stehen die Daten dieser Konfiguration nicht zur Verwendung in Rangberechnungen zur Verfügung (<b>Regeln</b> &gt; <b>Rangregeln</b> &gt; Regeln <b>bearbeiten</b>). Wenn Sie einen Wert auswählen, werden die Werte dieses Felds verwendet, um Dokumente zur Site-Suche/zum Merchandising mit den Daten dieser Konfiguration zu verknüpfen. </p> </td> 
+      <td colname="col2"> <p>Gibt ein Metadatenfeld an, dessen Werte als Nachschlagschlüssel in die Daten der Attribute Loader-Konfiguration verwendet werden. Wenn kein Wert ausgewählt ist (<b>—None—</b>), stehen die Daten dieser Konfiguration nicht zur Verwendung in Rangberechnungen zur Verfügung (<b>Regeln</b> &gt; <b>Rangregeln</b> &gt; Regeln <b>bearbeiten</b>). Wenn Sie einen Wert auswählen, werden die Werte dieses Felds verwendet, um Site-Suchen/Merchandising-Dokumente mit den Daten dieser Konfiguration zu vergleichen. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Statische Tage </p> </td> 
@@ -760,7 +763,7 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       <td colname="col1"> <p>Landkarte </p> </td> 
       <td colname="col2"> <p>Ermöglicht die Angabe von Zuordnungen von XML-Elementen zu Metadaten mithilfe von XPath-Ausdrücken. </p> <p> 
       <ul id="ul_604108C0277C4892AE8A40CA39889ABD"> 
-      <li id="li_0AF92270AE9F4BA8B2C7EE41FABC0F34"> <span class="uicontrol"> Tag </span> <p>Gibt eine XPath-Darstellung der analysierten XML-Daten an. Anhand des obigen Adobe XML-Beispieldokuments unter der Option "item-Tag"könnte es mit der folgenden Syntax zugeordnet werden: </p> <p> <code class="syntax xml"> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
+      <li id="li_0AF92270AE9F4BA8B2C7EE41FABC0F34"> <span class="uicontrol"> Tag </span> <p>Gibt eine XPath-Darstellung der analysierten XML-Daten an. Anhand des obigen Adobe XML-Dokuments unter der Option "itemTag"könnte es mit der folgenden Syntax zugeordnet werden: </p> <p> <code class="syntax xml"> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
         /record/metadata/meta[@name='title']/@content&nbsp;-&gt;&nbsp;title 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;desc 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;body </code> </p> <p>Die obige Syntax übersetzt sich wie folgt: </p> <p> 
@@ -771,7 +774,7 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
         <li id="li_E35EAE3D284D46D485D9064D7BB6AB13"> <code class="syntax xml"> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>Das <span class="codeph"> content- </span> Attribut eines <span class="codeph"> meta- </span> Elements, das in einem <span class="codeph"> metadata- </span> Element enthalten ist, das im record- <span class="codeph"> Element enthalten ist, dessen name-Attribut </span> <span class="codeph"> </span><span class="codeph"> </span>description ist, wird dem MetadatenfeldTextkörper zugeordnet. </p> </li> 
         </ul> </p> <p>XPath ist eine relativ komplizierte Notation. Weitere Informationen finden Sie unter: </p> <p>Siehe <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_8147075D7ACD4811A7ED335F23FE62A6"> <span class="uicontrol"> Feld </span> <p>Definiert den Wert des Namensattributs, der für jedes generierte <span class="codeph"> &lt;meta&gt;- </span> Tag verwendet wird. </p> </li> 
-      <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadaten? </span> <p>Das <span class="uicontrol"> Feld wird </span> zu einer Dropdownliste, aus der Sie definierte Metadatenfelder für das aktuelle Konto auswählen können. </p> <p>Der <span class="uicontrol"> Feldwert </span> kann ein nicht definiertes Metadatenfeld sein, falls gewünscht. Ein nicht definiertes Metadatenfeld ist manchmal hilfreich, um Inhalte zu erstellen, die vom <span class="wintitle"> Filtern des Skripts verwendet werden </span>. </p> <p>Siehe <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Grundlagen zum Filtern von Skripten </a>. </p> <p>Wenn Attribute Loader XML-Dokumente mit mehreren Treffern in einem beliebigen Zuordnungsfeld verarbeitet, werden die Werte in dem resultierenden zwischengespeicherten Dokument zu einem einzelnen Wert verkettet. Standardmäßig werden diese Werte mit einem Komma-Trennzeichen kombiniert. Angenommen, der entsprechende <span class="wintitle"> Feldwert </span> ist ein definiertes Metadatenfeld. Darüber hinaus ist für dieses Feld das <span class="wintitle"> Attribut Listen zulassen </span> festgelegt. In diesem Fall wird der Wert "Listentrennzeichen"des Felds, das erste definierte Trennzeichen, in der Verkettung verwendet. </p> </li> 
+      <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadaten? </span> <p>Das <span class="uicontrol"> Feld wird </span> zu einer Dropdown-Liste, aus der Sie definierte Metadatenfelder für das aktuelle Konto auswählen können. </p> <p>Der <span class="uicontrol"> Feldwert </span> kann ein nicht definiertes Metadatenfeld sein, falls gewünscht. Ein nicht definiertes Metadatenfeld ist manchmal hilfreich, um Inhalte zu erstellen, die vom <span class="wintitle"> Filtern des Skripts verwendet werden </span>. </p> <p>Siehe <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Grundlagen zum Filtern von Skripten </a>. </p> <p>Wenn Attribute Loader XML-Dokumente mit mehreren Treffern in einem beliebigen Zuordnungsfeld verarbeitet, werden die Werte in einem zwischengespeicherten Dokument zu einem einzigen Wert verkettet. Standardmäßig werden diese Werte mit einem Komma-Trennzeichen kombiniert. Angenommen, der entsprechende <span class="wintitle"> Feldwert </span> ist ein definiertes Metadatenfeld. Darüber hinaus ist für dieses Feld das <span class="wintitle"> Zulassungsliste </span> -Attribut festgelegt. In diesem Fall wird der Liste-Trennzeichen-Wert des Felds, das erste definierte Trennzeichen, in der Verkettung verwendet. </p> </li> 
       <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> Primärschlüssel? </span> <p>Nur ein Feld wird als Primärschlüssel identifiziert. Dieses Feld wird als "Fremdschlüssel"verwendet, um die Attribute Loader-Daten mit dem entsprechenden Dokument im Index abzugleichen. </p> </li> 
       <li id="li_80D6AF130FCE40AC972FE4B605B86BF6"> <span class="uicontrol"> HTML entfernen? </span> <p>Wenn diese Option aktiviert ist, werden alle in den Daten dieses Felds gefundenen HTML-Tags entfernt. </p> </li> 
       <li id="li_D40E2F9AD8AD49FC9AC4B8C75BA31E28"> <span class="uicontrol"> Aktion </span> <p>Hiermit können Sie Zeilen zur Map hinzufügen oder Zeilen aus der Map entfernen. Die Reihenfolge der Zeilen ist nicht wichtig. </p> </li> 
@@ -805,7 +808,7 @@ Sie können einen von Ihnen definierten Attributlader bearbeiten.
 >
 >Um Attribute Loader verwenden zu können, müssen Sie ihn möglicherweise in Ihrem Konto von Ihrem Adobe-Kundenbetreuer oder vom Adobe-Support aktivieren lassen.
 
-Es stehen nicht alle Optionen für den Attributlader zur Verfügung, die Sie ändern können, z. B. der Name des Attributladers oder der Typ aus der [!DNL Type] Dropdownliste.
+Es stehen nicht alle Optionen für Attributlader zur Verfügung, die Sie ändern können, z. B. Attributladername oder -typ aus der [!DNL Type] Dropdown-Liste.
 
 **So bearbeiten Sie eine Attribute Loader-Definition**
 
@@ -845,7 +848,7 @@ Siehe [Bearbeiten einer Attribute Loader-Definition](../c-about-settings-menu/c-
 **So kopieren Sie eine Attribute Loader-Definition**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]**.
-1. Klicken Sie auf der [!DNL Attribute Loader] Seite unter der [!DNL Actions] Spaltenüberschrift auf **[!UICONTROL Copy]** , um einen Attributlader-Definitionsnamen anzuzeigen, dessen Einstellungen Sie duplizieren möchten.
+1. Klicken Sie auf der [!DNL Attribute Loader] Seite unter der [!DNL Actions] Spaltenüberschrift auf **[!UICONTROL Copy]** , um einen Attributlader-Definitionsnamen anzuzeigen, dessen Einstellungen Sie Duplikat haben möchten.
 1. Geben Sie auf der [!DNL Attribute Loader Copy] Seite den neuen Namen der Definition ein.
 1. Klicken **[!UICONTROL Copy]**.
 1. (Optional) Führen Sie auf der [!DNL Attribute Loader Definitions] Seite einen der folgenden Schritte aus:
@@ -925,7 +928,7 @@ Auf der [!DNL Data Load] Seite werden die folgenden Informationen zum Status des
 1. Klicken Sie auf der [!DNL Attribute Loader Definitions] Seite auf **[!UICONTROL Load Attribute Loader Data]**.
 1. Führen Sie auf der **[!UICONTROL Attribute Loader Data Load]** Seite einen der folgenden Schritte aus:
 
-   * Klicken Sie auf **[!UICONTROL Start Load]** , um den Ladevorgang zu starten.
+   * Klicken Sie auf **[!UICONTROL Start Load]** , um den Ladevorgang Beginn.
 
       Während eines Datenladevorgangs stellt **die Zeile &quot;Fortschritt** &quot;Informationen zum Fortschritt bereit.
 
@@ -935,7 +938,7 @@ Auf der [!DNL Data Load] Seite werden die folgenden Informationen zum Status des
 
 ## Anzeigen einer Vorschau der Attribute Loader-Daten {#task_735CDCC1D8174B7B9F5B8E0AFA5F0CA0}
 
-Mit der Vorschau können Sie Ihre zuletzt geladenen Attribute Loader-Daten anzeigen.
+Sie können Vorschau verwenden, um die zuletzt geladenen Attribute Loader-Daten Ansicht.
 
 Die Spalte &quot;Zeile&quot;in der Tabelle zeigt die Zahl für jede Datenzeile an und gibt die ursprüngliche Reihenfolge an, in der die Attribute Loader-Werte geladen wurden.
 
@@ -945,11 +948,11 @@ Wenn die Tabelle leer ist, bedeutet dies, dass Sie noch keine Attribute Loader-D
 
 Siehe [Laden von Attributlader-Daten](../c-about-settings-menu/c-about-metadata-menu.md#task_2F3C55189B0A4049AB2113F2291CC181).
 
-**So zeigen Sie eine Vorschau der Attribute Loader-Daten an**
+**So Vorschau Attribute Loader-Daten**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]**.
-1. Klicken Sie auf der [!DNL Attribute Loader Definitions] Seite unter der [!DNL Actions] **[!UICONTROL Preview]** Spalte für die Konfiguration, deren heruntergeladene Daten Sie anzeigen möchten.
-1. Verwenden Sie auf der [!DNL Attribute Loader Data Preview] Seite die Navigations- und Anzeigeoptionen am oberen und unteren Rand der Seite, um die Daten anzuzeigen.
+1. Klicken Sie auf der [!DNL Attribute Loader Definitions] Seite unter der [!DNL Actions] Spalte auf **[!UICONTROL Preview]** die Konfiguration, deren heruntergeladene Daten Sie Ansicht haben möchten.
+1. Verwenden Sie auf der [!DNL Attribute Loader Data Preview] Seite die Navigations- und Anzeigeoptionen oben und unten auf der Seite, um die Daten Ansicht.
 
    Klicken Sie auf eine Spaltenüberschrift in der Tabelle, um die Daten in auf- oder absteigender Reihenfolge zu sortieren.
 1. Führen Sie einen der folgenden Schritte aus:
@@ -967,22 +970,22 @@ Nachdem der Seite eine Attribute Loader-Definition hinzugefügt wurde, können S
 >
 >Um Attribute Loader verwenden zu können, müssen Sie ihn möglicherweise in Ihrem Konto von Ihrem Adobe-Kundenbetreuer oder vom Adobe-Support aktivieren lassen.
 
-**So zeigen Sie die Einstellungen einer Attribute Loader-Definition an**
+**So Ansicht der Einstellungen einer Attribute Loader-Definition**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]**.
 1. Klicken Sie auf der [!DNL Attribute Loader] Seite unter der [!DNL Actions] Spaltenüberschrift auf **[!UICONTROL Edit]** , um einen Attributlader-Definitionsnamen anzuzeigen, dessen Einstellungen Sie überprüfen oder bearbeiten möchten.
 
 ## Anzeigen des Protokolls aus der letzten Attributlader-Datenladung {#task_9C7D6E34BB6C4A40B7CA3EE36ACB0837}
 
-Sie können [!DNL View Log] die Attributlader-Datenprotokolldatei des letzten Downloadprozesses überprüfen. Sie können die Protokollansicht auch verwenden, um einen laufenden Download zu überwachen.
+Sie können [!DNL View Log] die Attributlader-Datenprotokolldatei des letzten Downloadprozesses überprüfen. Sie können die Log-Ansicht auch verwenden, um einen laufenden Download zu überwachen.
 
 Siehe [Laden von Attributlader-Daten](../c-about-settings-menu/c-about-metadata-menu.md#task_2F3C55189B0A4049AB2113F2291CC181).
 
-**So zeigen Sie das Protokoll aus der letzten Attributlader-Datenladung an**
+**So Ansicht das Protokoll aus der letzten Attributladerdatenladung**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]**.
 1. Klicken Sie auf der [!DNL Attribute Loader Definitions] Seite auf **[!UICONTROL View Log]**. Protokollseite,
-1. Verwenden Sie auf der [!DNL Attribute Loader Data Log] Seite die Navigations- und Anzeigeoptionen am oberen und unteren Rand der Seite, um die Protokollinformationen anzuzeigen.
+1. Verwenden Sie auf der [!DNL Attribute Loader Data Log] Seite die Navigations- und Anzeigeoptionen oben und unten auf der Seite, um die Protokollinformationen Ansicht.
 1. Wenn Sie fertig sind, schließen Sie die Seite, um zur [!DNL Attribute Loader Definitions] Seite zurückzukehren.
 
 ## Löschen einer Attribute Loader-Definition {#task_E8980F66888B476E98C228C1D307EDF8}
