@@ -1,24 +1,27 @@
 ---
-description: Ein Auffrischungsbericht zur Syntax und den Regeln zum Erstellen von regulären Ausdrücken.
-seo-description: Ein Auffrischungsbericht zur Syntax und den Regeln zum Erstellen von regulären Ausdrücken.
+description: Ein Auffrischungsbericht zur Syntax und den Regeln für das Erstellen von regulären Ausdrücken.
+seo-description: Ein Auffrischungsbericht zur Syntax und den Regeln für das Erstellen von regulären Ausdrücken.
 seo-title: Reguläre Ausdrücke
 solution: Target
 title: Reguläre Ausdrücke
 topic: Appendices,Site search and merchandising
 uuid: 369b54f6-372a-41de-bb5d-3ae0bd640199
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: 7b883870bb16284d8070a21547cdb62cc79d7632
+workflow-type: tm+mt
+source-wordcount: '1058'
+ht-degree: 1%
 
 ---
 
 
 # Regular Expressions{#regular-expressions}
 
-Ein Auffrischungsbericht zur Syntax und den Regeln zum Erstellen von regulären Ausdrücken.
+Ein Auffrischungsbericht zur Syntax und den Regeln für das Erstellen von regulären Ausdrücken.
 
 Siehe auch [Konfigurieren eines inkrementellen Indexes einer gestaffelten Website](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
 
-**Syntax regulärer Ausdrücke**
+**Syntax regulärer Ausdruck**
 
 <table> 
  <tbody> 
@@ -80,7 +83,7 @@ Siehe auch [Konfigurieren eines inkrementellen Indexes einer gestaffelten Websit
   <tr> 
    <td colname="col1"> </td> 
    <td colname="col2"> <p> ^ </p> </td> 
-   <td colname="col3"> <p> Anfang des Zeilenankers. </p> </td> 
+   <td colname="col3"> <p> Beginn des Zeilenankers. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> </td> 
@@ -106,37 +109,37 @@ Siehe auch [Konfigurieren eines inkrementellen Indexes einer gestaffelten Websit
 * Ein umgekehrter Schrägstrich (\) gefolgt von einem Sonderzeichen ist ein regulärer Ausdruck mit einem Zeichen, der dem Sonderzeichen selbst entspricht. Sonderzeichen sind:
 
    * `.` (Punkt), `*` (Sternchen), `?` (Fragezeichen), `+` (Pluszeichen), `[` (eckige Klammer links), `|` (vertikale Linie) und `\` (umgekehrter Schrägstrich) sind immer Sonderzeichen, es sei denn, sie erscheinen in eckigen Klammern.
-   * `^` (Caret oder Zirkumflex) ist besonders am Anfang eines regulären Ausdrucks, oder wenn es unmittelbar folgt links von einem Paar eckiger Klammern.
-   * `$` (Dollarzeichen) ist ein Sonderzeichen am Ende eines regulären Ausdrucks.
-   * `.` (period) ist ein einstelliger regulärer Ausdruck, der mit jedem Zeichen übereinstimmt, einschließlich ergänzender Codesatzzeichen mit Ausnahme von new-line.
-   * Eine nicht leere Zeichenfolge aus Zeichen, die in `[ ]` (eckige Klammern links und rechts) eingeschlossen ist, ist ein regulärer Ausdruck mit einem Zeichen, einschließlich ergänzender Codesatzzeichen, in dieser Zeichenfolge.
+   * `^` (Caret oder Zirkumflex) ist besonders am Anfang eines regulären Ausdrucks, oder wenn es sofort folgt links von einem Paar eckiger Klammern.
+   * `$` (Dollarzeichen) ist am Ende eines regulären Ausdrucks etwas Besonderes.
+   * `.` (period) ist ein regulärer Ausdruck mit einem Zeichen, der mit jedem Zeichen übereinstimmt, einschließlich zusätzlicher Codesatzzeichen mit Ausnahme der neuen Zeile.
+   * Eine nicht leere Zeichenfolge in eckigen Klammern `[ ]` (linke und rechte) ist ein regulärer Ausdruck mit einem Zeichen, der mit einem Zeichen, einschließlich ergänzender Codesatzzeichen, in dieser Zeichenfolge übereinstimmt.
 
-      Wenn das erste Zeichen der Zeichenfolge jedoch ein `^` (Zirkumflex) ist, stimmt der reguläre Ausdruck mit einem Zeichen mit jedem beliebigen Zeichen überein, einschließlich ergänzender Codesatzzeichen, mit Ausnahme der neuen Zeile und der restlichen Zeichen in der Zeichenfolge.
+      Wenn das erste Zeichen der Zeichenfolge jedoch ein `^` (Zirkumflex) ist, stimmt der reguläre Ausdruck mit einem Zeichen, einschließlich zusätzlicher Codesatzzeichen, überein, mit Ausnahme der neuen Zeile und der übrigen Zeichen in der Zeichenfolge.
 
       Diese besondere Bedeutung `^` hat nur dann eine Bedeutung, wenn sie zuerst in der Zeichenfolge vorkommt. Sie können `-` (Minuszeichen) verwenden, um einen Bereich aufeinander folgender Zeichen anzugeben, einschließlich zusätzlicher Codesatzzeichen. Beispiel: [0-9] entspricht [0123456789].
 
-      Zeichen, die den Bereich angeben, müssen aus demselben Codesatz stammen. Wenn die Zeichen aus verschiedenen Codesätzen stammen, wird eines der Zeichen, die den Bereich angeben, zugeordnet. Diese besondere Bedeutung `-` verliert sie, wenn sie zuerst (nach einer Initial- `^`oder gegebenenfalls letzten) im String auftritt. Die `]` (rechte eckige Klammer) beendet eine solche Zeichenfolge nicht, wenn es sich um das erste Zeichen innerhalb der Zeichenfolge handelt, nach einer ersten `^`Angabe (sofern vorhanden). Beispielsweise entspricht []a-f entweder einer `]` (rechten eckigen Klammer) oder einem der ASCII-Buchstaben a bis f. Die vier oben als Sonderzeichen aufgelisteten Zeichen stehen für sich in einer solchen Zeichenfolge.
+      Zeichen, die den Bereich angeben, müssen aus demselben Codesatz stammen. Wenn die Zeichen aus verschiedenen Codesätzen stammen, wird eines der Zeichen, die den Bereich angeben, zugeordnet. Diese besondere Bedeutung `-` verliert sie, wenn sie zuerst (nach einer Initial- `^`oder gegebenenfalls letzten) im String auftritt. Die `]` (rechte eckige Klammer) beendet eine solche Zeichenfolge nicht, wenn es sich um das erste Zeichen innerhalb der Zeichenfolge handelt, nach einer ersten `^`Angabe (sofern vorhanden). Entspricht `[]a-f]` beispielsweise einer `]` (rechten eckigen Klammer) oder einem der ASCII-Buchstaben a bis f. Die vier oben als Sonderzeichen aufgelisteten Zeichen stehen für sich in einer solchen Zeichenfolge.
 
-**Regeln zum Erstellen regulärer Ausdrücke aus regulären Ausdrücken mit einem Zeichen**
+**Regeln zum Erstellen regulärer Ausdruck aus regulären Ausdrücken mit einem Zeichen**
 
-Sie können die folgenden Regeln verwenden, um reguläre Ausdrücke aus regulären Ausdrücken mit einem Zeichen zu erstellen:
+Sie können die folgenden Regeln verwenden, um reguläre Ausdruck aus regulären Ausdrücken mit einem Zeichen zu erstellen:
 
-* Ein regulärer Ausdruck mit einem Zeichen ist ein regulärer Ausdruck, der dem entspricht, was der reguläre Ausdruck mit einem Zeichen enthält.
-* Ein einstelliger regulärer Ausdruck gefolgt von einem `*` (Sternchen) ist ein regulärer Ausdruck, der null oder mehr Vorkommen des einstelligen regulären Ausdrucks entspricht, bei dem es sich möglicherweise um ein zusätzliches Codesatzzeichen handelt. Bei einer beliebigen Option wird die längste Zeichenfolge links gewählt, die eine Übereinstimmung zulässt.
-* Ein einstelliger regulärer Ausdruck gefolgt von einem `?` (Fragezeichen) ist ein regulärer Ausdruck, der null oder ein Vorkommen des einstelligen regulären Ausdrucks entspricht, bei dem es sich möglicherweise um ein zusätzliches Codesatzzeichen handeln kann. Bei einer beliebigen Option wird die längste Zeichenfolge links gewählt, die eine Übereinstimmung zulässt.
-* Ein einstelliger regulärer Ausdruck gefolgt von einem `+` (Pluszeichen) ist ein regulärer Ausdruck, der einem oder mehreren Vorkommen des einstelligen regulären Ausdrucks entspricht, bei dem es sich möglicherweise um ein zusätzliches Codesatzzeichen handelt. Bei einer beliebigen Option wird die längste Zeichenfolge links gewählt, die eine Übereinstimmung zulässt.
-* Ein regulärer Ausdruck mit einem Zeichen gefolgt von `{m}`, `{m,}`oder `{m,n}` ist ein regulärer Ausdruck, der einem Bereich von Vorkommen des regulären Ausdrucks mit einem Zeichen entspricht. Die Werte von m und n müssen nicht negative Ganzzahlen unter 256 sein. exakt `{m}` m-Vorkommen entspricht; mindestens m Vorkommen `{m,}` ; Entspricht einer beliebigen Anzahl von Vorfällen zwischen m und n einschließlich. `{m,n}` Wenn eine Auswahl vorhanden ist, stimmt der reguläre Ausdruck mit so vielen Vorkommen wie möglich überein.
-* Die Verkettung regulärer Ausdrücke ist ein regulärer Ausdruck, der mit der Verkettung der Zeichenfolgen übereinstimmt, die mit jeder Komponente des regulären Ausdrucks übereinstimmen.
-* Ein regulärer Ausdruck, der zwischen den Zeichensequenzen ( und ) eingeschlossen ist, ist ein regulärer Ausdruck, der mit dem Inhalt des nicht formatierten regulären Ausdrucks übereinstimmt.
-* Ein regulärer Ausdruck, gefolgt von einem `|` (senkrechten Strich), gefolgt von einem regulären Ausdruck ist ein regulärer Ausdruck, der entweder dem ersten regulären Ausdruck (vor dem vertikalen Strich) oder dem zweiten regulären Ausdruck (nach dem vertikalen Strich) entspricht.
+* Ein regulärer Ausdruck mit einem Zeichen ist ein regulärer Ausdruck, der mit dem regulären Ausdruck mit einem Zeichen übereinstimmt.
+* Ein regulärer einstelliger Ausdruck gefolgt von einem `*` (Sternchen) ist ein regulärer Ausdruck, der Null oder mehr Vorkommen des regulären einstelligen Ausdrucks entspricht, bei dem es sich möglicherweise um ein zusätzliches Codesatzzeichen handeln kann. Bei einer beliebigen Option wird die längste Zeichenfolge links gewählt, die eine Übereinstimmung zulässt.
+* Ein regulärer Ausdruck mit einem Zeichen gefolgt von einem `?` (Fragezeichen) ist ein regulärer Ausdruck, der Null oder einem Vorkommen des regulären einstelligen Ausdrucks entspricht, bei dem es sich möglicherweise um ein zusätzliches Codesatzzeichen handeln kann. Bei einer beliebigen Option wird die längste Zeichenfolge links gewählt, die eine Übereinstimmung zulässt.
+* Ein regulärer Ausdruck mit einem Zeichen gefolgt von einem `+` (Pluszeichen) ist ein regulärer Ausdruck, der einem oder mehreren Vorkommen des regulären einstelligen Ausdrucks entspricht, bei dem es sich möglicherweise um ein zusätzliches Codesatzzeichen handelt. Bei einer beliebigen Option wird die längste Zeichenfolge links gewählt, die eine Übereinstimmung zulässt.
+* Ein regulärer Ausdruck mit einem Zeichen gefolgt von `{m}`, `{m,}`oder `{m,n}` ist ein regulärer Ausdruck, der einem Bereich von Vorkommen des regulären Ausdrucks mit einem Zeichen entspricht. Die Werte von m und n müssen nicht negative Ganzzahlen unter 256 sein. `{m}` entspricht genau m Vorkommen; `{m,}` mindestens m Vorkommen entspricht; `{m,n}` entspricht einer beliebigen Anzahl von Vorkommen zwischen m und n einschließlich. Wenn eine Auswahl vorhanden ist, stimmt der reguläre Ausdruck mit so vielen Vorkommen wie möglich überein.
+* Die Verkettung von regulären Ausdrücken ist ein regulärer Ausdruck, der der Verkettung der Zeichenfolgen entspricht, die jeder Komponente des regulären Ausdrucks zugeordnet sind.
+* Ein regulärer Ausdruck, der zwischen den Zeichensequenzen ( und ) eingeschlossen ist, ist ein regulärer Ausdruck, der mit dem gleichnamigen regulären Ausdruck übereinstimmt.
+* Ein regulärer Ausdruck, gefolgt von einem `|` (senkrechten Rohr), gefolgt von einem regulären Ausdruck, ist ein regulärer Ausdruck, der entweder dem ersten regulären Ausdruck (vor dem senkrechten Rohr) oder dem zweiten regulären Ausdruck (nach dem senkrechten Rohr) entspricht.
 
 Sie können einen regulären Ausdruck auch so einschränken, dass er nur mit einem Anfangssegment oder finalen Segment einer Zeile oder mit beiden übereinstimmt.
 
-* Ein `^` (Zirkumflex) am Anfang eines regulären Ausdrucks schränkt diesen regulären Ausdruck so ein, dass er mit einem anfänglichen Segment einer Zeile übereinstimmt.
-* Ein `$` (Dollarzeichen) am Ende eines gesamten regulären Ausdrucks schränkt diesen regulären Ausdruck so ein, dass er mit dem endgültigen Segment einer Zeile übereinstimmt.
+* Ein `^` (Zirkumflex) am Anfang eines regulären Ausdrucks schränkt diesen regulären Ausdruck so ein, dass er mit einem Anfangssegment einer Zeile übereinstimmt.
+* Ein `$` (Dollarzeichen) am Ende eines gesamten regulären Ausdrucks schränkt diesen regulären Ausdruck ein, damit er mit einem Endsegment einer Zeile übereinstimmt.
 * Die Konstruktion &#39;^regulärer Ausdruck$&#39; beschränkt den regulären Ausdruck auf die Übereinstimmung mit der gesamten Zeile.
 
-Es gibt einige vordefinierte Zeichenklassennamen, die Sie anstelle komplexer, mit Klammern versehener regulärer Ausdrücke verwenden können. Eine Ziffer kann beispielsweise durch den einstelligen regulären Ausdruck [0-9] oder durch den einstelligen regulären Ausdruck [[:digit:]] der Zeichenklasse dargestellt werden.
+Es gibt einige vordefinierte Zeichenklassennamen, die Sie anstelle komplexer Ausdruck mit Klammern verwenden können. Eine Ziffer kann beispielsweise durch den einstelligen regulären Ausdruck [0-9] oder durch den regulären Ausdruck der Zeichenklasse mit einem Zeichen [[:digit:]] dargestellt werden.
 
 Die vordefinierten Zeichenklassen und ihre Bedeutung lauten wie folgt:
 
@@ -199,7 +202,7 @@ Die vordefinierten Zeichenklassen und ihre Bedeutung lauten wie folgt:
  </tbody> 
 </table>
 
-Zwei Klassennamen mit Sonderzeichen entsprechen dem Leerzeichen am Anfang und am Ende eines Wortes. Mit anderen Worten, sie stimmen nicht mit einem tatsächlichen Zeichen überein. Ein Wort gilt als eine beliebige Folge von Buchstaben, Ziffern oder Unterstrichen (_).
+Zwei Klassennamen mit Sonderzeichen entsprechen dem Leerzeichen am Beginn und am Wortende. Mit anderen Worten, sie stimmen nicht mit einem tatsächlichen Zeichen überein. Ein Wort gilt als eine beliebige Folge von Buchstaben, Ziffern oder Unterstrichen (_).
 
 <table> 
  <thead> 
@@ -211,7 +214,7 @@ Zwei Klassennamen mit Sonderzeichen entsprechen dem Leerzeichen am Anfang und am
  <tbody> 
   <tr> 
    <td colname="col1"> <p> [[:&lt;:]] </p> </td> 
-   <td colname="col2"> <p> Wortbeginn </p> </td> 
+   <td colname="col2"> <p> beginn eines Wortes </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> [[:&gt;:]] </p> </td> 
