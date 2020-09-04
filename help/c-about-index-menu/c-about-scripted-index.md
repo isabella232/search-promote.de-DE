@@ -8,7 +8,10 @@ title: Über skriptgesteuerten Index
 topic: Index,Site search and merchandising
 uuid: 51e726ad-414b-4cbd-8a68-fefc3cf9b565
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+workflow-type: tm+mt
+source-wordcount: '1761'
+ht-degree: 1%
 
 ---
 
@@ -45,7 +48,7 @@ Bei Verwendung des HTTP 1.1-Stils ist für alle Datumsangaben mit einer Länge u
  <tbody> 
   <tr> 
    <td colname="col1"> <p>date-command </p> </td> 
-   <td colname="col2"> <p>Die erste Zeile jedes Blocks beginnt mit einem von zwei Datumsbefehlen: </p> <p> 
+   <td colname="col2"> <p>Die erste Zeile jedes Beginns mit einem von zwei Datumsbefehlen: </p> <p> 
      <ul id="ul_9C1B229B7F1846C490B853FC34989E77"> 
       <li id="li_31FEF1A7163842BDBB0ABE779D07045A"> <span class="codeph"> date </span> <p>Verwenden Sie den Befehl "Datum", um anzugeben, dass die Datums-/Zeitangabe aus einem Tag, einem Datum, einer Uhrzeit und einer Zeitzone besteht. </p> </li> 
       <li id="li_0918D5B090014C1A852CB80BB7C2867C"> <span class="codeph"> Sekunden </span> <p>Verwenden Sie <span class="codeph"> Sekunden, </span> um anzugeben, dass der Datumsbezeichner aus einer Zeit in Sekunden besteht (z. B. 784111777). Stellen Sie bei Verwendung von <span class="codeph"> Sekunden sicher, </span>dass die Anzahl der Sekunden zwischen den Blöcken zunimmt. </p> </li> 
@@ -68,89 +71,77 @@ Bei Verwendung des HTTP 1.1-Stils ist für alle Datumsangaben mit einer Länge u
    <td colname="col2"> <p>Jeder Textblock kann beliebig viele Aktionsbefehle enthalten. Die folgenden Optionen für Aktionsbefehle entsprechen denen für die standardmäßige inkrementelle Indexierung: </p> <p> 
      <ul id="ul_8E1435350A0F416BB8F7826CD3886E74"> 
       <li id="li_22181666628C48A28A6A0BA1F7CA8E77"> 
-       <userinput>
-         hinzufügen 
-       </userinput> <p>Mit URL verwenden. Der Suchroboter indiziert nur die angegebenen URLs, die sich seit der letzten Indexierung geändert haben. Darüber hinaus folgt der Suchroboter Links, die in bestimmten Dokumenten und Indizes enthalten sind, nur den Dokumenten, die geändert wurden. </p> <p>Sie können der URL mit 
-        <userinput>
+       <code>
+         add 
+       </code> <p>Mit URL verwenden. Der Suchroboter indiziert nur die angegebenen URLs, die sich seit der letzten Indexierung geändert haben. Darüber hinaus folgt der Suchroboter Links, die in bestimmten Dokumenten enthalten sind, und indiziert nur die Dokumente, die sich geändert haben. </p> <p>Sie können der URL wie im folgenden Beispiel mit <code>
           nofollow 
-        </userinput> oder 
-        <userinput>
+        </code> oder <code>
           noindex 
-        </userinput> Schlüsselwörter wie im folgenden Beispiel: </p> <p> <code> add&amp;nbsp;https://www.mydomain.com/&amp;nbsp;noindex </code> </p> </li> 
+        </code> Suchbegriffen folgen: </p> <p> <code> add&amp;nbsp;https://www.mydomain.com/&amp;nbsp;noindex </code> </p> </li> 
       <li id="li_8E47BF07DB24417083883F5BF40D6B9E"> 
-       <userinput>
+       <code>
          update 
-       </userinput> <p>Mit URL-Maske verwenden. Der Suchroboter findet und aktualisiert alle Dokumente, die der angegebenen URL-Maske entsprechen. </p> <p>Sie können der URL mit 
-        <userinput>
+       </code> <p>Mit URL-Maske verwenden. Der Suchroboter findet und aktualisiert alle Dokumente, die der angegebenen URL-Maske entsprechen. </p> <p>Sie können der URL wie im folgenden Beispiel mit <code>
           nofollow 
-        </userinput> oder 
-        <userinput>
+        </code> oder <code>
           noindex 
-        </userinput> Schlüsselwörter wie im folgenden Beispiel: </p> <p> <code> update&amp;nbsp;https://www.mydomain.com/products/ </code> </p> </li> 
+        </code> Suchbegriffen folgen: </p> <p> <code> update&amp;nbsp;https://www.mydomain.com/products/ </code> </p> </li> 
       <li id="li_B3EC8B1670D54F66A1D8411A694EF7E4"> 
-       <userinput>
-         zählen 
-       </userinput> oder 
-       <userinput>
+       <code>
+         include 
+       </code> oder 
+       <code>
          exclude 
-       </userinput> <p>Mit URL-Maske verwenden. Der Suchroboter findet und indiziert Dokumente ("einschließen") oder ignoriert ("ausschließen") je nach Art der angegebenen Maske. </p> <p>Beispiel: </p> <p> <code> include&amp;nbsp;https://www.mydomain.com/products/household/lightbulbs*.html </code> </p> <p>oder </p> <p> <code> exclude&amp;nbsp;https://www.mydomain.com/archive/ </code> </p> </li> 
+       </code> <p>Mit URL-Maske verwenden. Der Suchroboter findet und indiziert ("einschließen") oder ignoriert ("ausschließen") Dokumente, die auf dem angegebenen Maskentyp basieren. </p> <p>Beispiel: </p> <p> <code> include&amp;nbsp;https://www.mydomain.com/products/household/lightbulbs*.html </code> </p> <p>oder </p> <p> <code> exclude&amp;nbsp;https://www.mydomain.com/archive/ </code> </p> </li> 
       <li id="li_050B54B735F0475E93806455FA6DC6A5"> 
-       <userinput>
+       <code>
          include-date 
-       </userinput> oder 
-       <userinput>
+       </code> oder 
+       <code>
          exclude-date 
-       </userinput> <p>Mit URL-Maske verwenden. Der Suchroboter findet und indiziert ("einschließen") oder ignoriert ("ausschließen") Dokumente, die auf der URL und dem Datum der Dokumente basieren. Die folgenden Masken stehen zur Verfügung: </p> <p> 
+       </code> <p>Mit URL-Maske verwenden. Der Suchroboter findet und indiziert ("einschließen") oder ignoriert ("ausschließen") Dokumente, die auf der URL und dem Datum der Dokumente basieren. Die folgenden Masken stehen zur Verfügung: </p> <p> 
         <ul id="ul_23A15CB492214B86BE84D8E6EA1820AE"> 
          <li id="li_0C7051AC3B5A4C57A3E477F7B6246611"> 
-          <userinput>
+          <code>
             include-days NNN 
-          </userinput> <p>Der Suchroboter indiziert alle Dokumente, die mit der angegebenen URL-Maske übereinstimmen und mindestens NNN Tage alt sind. </p> <p>Sie können der URL-Maske mit den Suchbegriffen folgen 
-           <userinput>
+          </code> <p>Der Suchroboter indiziert alle Dokumente, die mit der angegebenen URL-Maske übereinstimmen und mindestens NN Tage alt sind. </p> <p>Sie können der URL-Maske die Suchbegriffe <code>
              nofollow 
-           </userinput>, 
-           <userinput>
+           </code>, <code>
              noindex 
-           </userinput>und/oder 
-           <userinput>
+           </code>und/oder folgen <code>
              server-date 
-           </userinput>. </p> </li> 
+           </code>. </p> </li> 
          <li id="li_983A10E2ED5D434EA9031F32143F4EF4"> 
-          <userinput>
+          <code>
             include-date YYYY-MM-DD 
-          </userinput> <p> Der Suchroboter indiziert alle Dokumente, die mit der angegebenen URL-Maske übereinstimmen und älter sind als das Datum JJJJ-MM-TT, wobei "JJJ"das vierstellige Jahr, "MM"der ein- oder zweistellige Monat (1-12) und "TT"der ein- oder zweistellige Tag (1-31) ist. </p> <p>Sie können der URL-Maske mit den Suchbegriffen folgen 
-           <userinput>
+          </code> <p> Der Suchroboter indiziert alle Dokumente, die mit der angegebenen URL-Maske übereinstimmen und älter sind als das Datum JJJJ-MM-TT, wobei "JJJJ"das vierstellige Jahr, "MM"der ein- oder zweistellige Monat (1-12) und "TT"der ein- oder zweistellige Tag (1-31) ist. </p> <p>Sie können der URL-Maske die Suchbegriffe <code>
              nofollow 
-           </userinput>, 
-           <userinput>
+           </code>, <code>
              noindex 
-           </userinput>und/oder 
-           <userinput>
+           </code>und/oder folgen <code>
              server-date 
-           </userinput>. </p> </li> 
+           </code>. </p> </li> 
          <li id="li_733CE1B748024CECA7FBE00D7BC7B88A"> 
-          <userinput>
+          <code>
             exclude-days NNN 
-          </userinput> <p> Deaktiviert die Indexierung aller Dokumente, die mit der angegebenen URL-Maske übereinstimmen und NN-Tage oder älter sind. </p> <p>Sie können der URL-Maske mit dem Suchbegriff folgen 
-           <userinput>
+          </code> <p> Deaktiviert die Indizierung aller Dokumente, die der angegebenen URL-Maske entsprechen und mindestens NN Tage alt sind. </p> <p>Sie können der URL-Maske mit dem Suchbegriff folgen <code>
              server-date 
-           </userinput>. </p> </li> 
+           </code>. </p> </li> 
          <li id="li_90056A0B96CC4DA3854711860A15CE89"> 
-          <userinput>
+          <code>
             exclude-date YYYY-MM-DD 
-          </userinput> <p>Deaktiviert die Indexierung aller Dokumente, die der angegebenen URL-Maske entsprechen und älter als das Datum JJJ-MM-TT sind. </p> <p>Sie können der URL-Maske mit dem Suchbegriff folgen 
-           <userinput>
+          </code> <p>Deaktiviert die Indexierung aller Dokumente, die mit der angegebenen URL-Maske übereinstimmen und älter als das Datum JJJ-MM-TT sind. </p> <p>Sie können der URL-Maske mit dem Suchbegriff folgen <code>
              server-date 
-           </userinput>. </p> </li> 
+           </code>. </p> </li> 
         </ul> </p> </li> 
       <li id="li_AA78F22B60FE4535BE73BA87A8992C08"> 
-       <userinput>
+       <code>
          delete 
-       </userinput> <p>Geben Sie URLs an. Der Suchroboter entfernt Dokumente aus dem Index, die durch die URL identifiziert werden. </p> </li> 
+       </code> <p>Geben Sie URLs an. Der Suchroboter entfernt Dokumente aus dem Index, die durch die URL identifiziert werden. </p> </li> 
       <li id="li_9C63061568AA4D57A4FEBCF6DB9194EC"> 
-       <userinput>
+       <code>
          deletemask 
-       </userinput> <p>Der Suchroboter entfernt Dokumente aus dem Index, die der angegebenen URL-Maske entsprechen. </p> </li> 
+       </code> <p>Der Suchroboter entfernt Dokumente aus dem Index, die mit der angegebenen URL-Maske übereinstimmen. </p> </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
@@ -167,7 +158,7 @@ Im folgenden Beispielskript-Dateibeispiel verarbeitet der Suchroboter die Blöck
 
 * Schließen Sie beim Crawling URLs, die mit `housewares.htm` und `lightfixtures.htm`l übereinstimmen, aus dem Suchindex aus.
 
-* Schließen Sie alle anderen Ordner und Dokumente unter ein `www.mydomain.com`.
+* Schließen Sie alle anderen Ordner und Dokumente unter `www.mydomain.com`.
 * Aktualisieren Sie alle Dokumente innerhalb der Ordner `products` und `information` Ordner, indem Sie alle Links, die sich seit der letzten Indexierung geändert haben, durchsuchen und indizieren.
 
 * Schließen Sie beim Crawling URLs im `archive` Abschnitt der Website aus, wenn sie am oder vor dem 1. Januar 1999 datiert sind.
@@ -244,8 +235,8 @@ Der Index-Plan gilt nur für Ihren Live-Index. Sie können keine gestaffelten in
 **So legen Sie den Zeitplan für den inkrementellen Index für eine Live-Website fest**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Index]** > **[!UICONTROL Scripted Index]** > **[!UICONTROL Live Schedule]**.
-1. Wählen Sie auf der **[!UICONTROL Scripted Incremental Index Schedule]** Seite in der **[!UICONTROL Read the Scripted Incrementally Indexing File]** Dropdownliste die Häufigkeit, mit der die skriptbasierte inkrementelle Textdatei in Stunden oder Minuten ausgeführt werden soll.
-1. Wählen Sie in der **[!UICONTROL Base Time]** Dropdownliste die Startzeit aus, zu der Sie einen neuen skriptgesteuerten Inkrementalindex neu generieren möchten.
+1. Wählen Sie auf der **[!UICONTROL Scripted Incremental Index Schedule]** Seite in der **[!UICONTROL Read the Scripted Incrementally Indexing File]** Dropdown-Liste die Häufigkeit aus, mit der die skriptbasierte inkrementelle Textdatei in Stunden oder Minuten ausgeführt werden soll.
+1. Wählen Sie in der **[!UICONTROL Base Time]** Dropdown-Liste die Startzeit aus, zu der Sie einen neuen skriptgesteuerten Inkrementalindex neu generieren möchten.
 1. Klicken **[!UICONTROL Save Changes]**.
 
 ## Ausführen eines skriptbasierten inkrementellen Indexes einer Live- oder Staged-Website {#task_6E6FC76EE1E84A5FADB3B67AD7B1DACB}
@@ -264,15 +255,15 @@ Siehe [Konfigurieren eines skriptgesteuerten Inkrementalindex](../c-about-index-
    * Klicken Sie auf **[!UICONTROL Index]** > **[!UICONTROL Scripted Index]** > **[!UICONTROL Staged Index]**.
 
 1. Klicken **[!UICONTROL Scripted Index Now]**.
-1. (Optional) Wenn Indexierungsfehler aufgetreten sind, klicken Sie auf **[!UICONTROL View Errors]** , um das zugehörige Protokoll anzuzeigen.
+1. (Optional) Wenn Indizierungsfehler aufgetreten sind, klicken Sie auf **[!UICONTROL View Errors]** , um das zugehörige Protokoll Ansicht.
 
 ## Ansicht des skriptgesteuerten inkrementellen Indexprotokolls einer Live- oder Staged-Website {#task_CBFCE9B9A87B4DF7A2A35A6E83DE93D7}
 
-Wenn ein vollständiger, skriptfähiger Index oder ein gestaffelter vollständiger, skriptgebundener Index abgeschlossen ist, können Sie das zugehörige Protokoll anzeigen, um Fehler zu beheben, die aufgetreten sind.
+Wenn ein vollständiger Livestream-Index oder ein gestaffelter vollständiger, skriptgebundener Index abgeschlossen ist, können Sie das zugehörige Protokoll zur Fehlerbehebung bei auftretenden Fehlern Ansicht haben.
 
 Protokolle können weder exportiert noch gespeichert werden. Das Protokoll bleibt jedoch bis zum Auftreten des neuen Indexes zur Ansicht verfügbar.
 
-**So zeigen Sie das inkrementelle Indexprotokoll einer Live- oder Stage-Website an**
+**Zur Ansicht des inkrementellen Indexprotokolls einer Live- oder Stage-Website**
 
 1. Führen Sie im Produktmenü einen der folgenden Schritte aus:
 
