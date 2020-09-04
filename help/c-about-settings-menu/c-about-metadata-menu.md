@@ -8,9 +8,9 @@ title: Das Menü "Metadaten"
 topic: Settings,Site search and merchandising
 uuid: f12fc863-a140-45e8-b219-3dbfdef099cd
 translation-type: tm+mt
-source-git-commit: e080a61e24a3809beff7c212ff3d088b2a8ad3b6
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
 workflow-type: tm+mt
-source-wordcount: '8064'
+source-wordcount: '8039'
 ht-degree: 1%
 
 ---
@@ -68,10 +68,9 @@ Bevor die Auswirkungen der neuen Meta-Tag-Definition für Kunden sichtbar sind, 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Meta-Tag-Name(n) </p> </td> 
-      <td colname="col2"> <p>Bestimmt den mit dem definierten Feld verknüpften Inhalt. </p> <p>Die Liste der Namen kann bis zu 255 Zeichen lang sein. Und der Name kann alle Zeichen enthalten, die im Namensattribut eines HTML-Meta-Tags zulässig sind. </p> <p>Sie können mehrere Meta-Tags in einer einzelnen Felddefinition angeben. </p> <p>Mehrere Werte müssen durch Kommas getrennt werden, und der Meta-Tag-Name ganz links, der auf einer bestimmten Webseite gefunden wird, hat Vorrang. </p> <p>Angenommen, Sie haben ein Feld mit dem Namen "auth"definiert. Der Feldname enthält die zugehörigen Meta-Tags "author, dc.author". In diesem Fall wird der Inhalt des Meta-Tags "author"indiziert und über dem "dc.author"gesucht, wenn beide Meta-Tags auf einer Webseite angezeigt werden. </p> <p>Benutzerdefinierte Felder müssen mindestens einen Meta-Tag-Namen in ihrer Definition enthalten. Vordefinierte Felder müssen kein Meta-Tag haben. Wenn jedoch ein oder mehrere Meta-Tags angegeben sind, setzt der Inhalt der Meta-Tags die aktuelle Datenquelle für jedes Tag außer Kraft. </p> <p>Wenn beispielsweise das Meta-Tag "dc.title"mit dem vordefinierten "title"-Feld verknüpft ist, wird der Inhalt des "dc.title"-Meta-Tags über den des 
-      <userinput>
-        &lt;Titel&gt; 
-      </userinput> -Tags für ein bestimmtes Dokument. </p> <p>Als Einsatzmöglichkeiten bieten sich die folgenden Beispiele an: </p> <p> 
+      <td colname="col2"> <p>Bestimmt den mit dem definierten Feld verknüpften Inhalt. </p> <p>Die Liste der Namen kann bis zu 255 Zeichen lang sein. Und der Name kann alle Zeichen enthalten, die im Namensattribut eines HTML-Meta-Tags zulässig sind. </p> <p>Sie können mehrere Meta-Tags in einer einzelnen Felddefinition angeben. </p> <p>Mehrere Werte müssen durch Kommas getrennt werden, und der Meta-Tag-Name ganz links, der auf einer bestimmten Webseite gefunden wird, hat Vorrang. </p> <p>Angenommen, Sie haben ein Feld mit dem Namen "auth"definiert. Der Feldname enthält die zugehörigen Meta-Tags "author, dc.author". In diesem Fall wird der Inhalt des Meta-Tags "author"indiziert und über dem "dc.author"gesucht, wenn beide Meta-Tags auf einer Webseite angezeigt werden. </p> <p>Benutzerdefinierte Felder müssen mindestens einen Meta-Tag-Namen in ihrer Definition enthalten. Vordefinierte Felder müssen kein Meta-Tag haben. Wenn jedoch ein oder mehrere Meta-Tags angegeben sind, setzt der Inhalt der Meta-Tags die aktuelle Datenquelle für jedes Tag außer Kraft. </p> <p>Wenn beispielsweise das Meta-Tag "dc.title"mit dem vordefinierten "title"-Feld verknüpft ist, wird der Inhalt des "dc.title"-Meta-Tags über den des <code>
+        &lt;title&gt; 
+      </code> Tags für ein bestimmtes Dokument indiziert. </p> <p>Als Einsatzmöglichkeiten bieten sich die folgenden Beispiele an: </p> <p> 
       <ul id="ul_0132E15FC19E4C0CA13CD5A12EA3BBEC"> 
       <li id="li_ECD3B194FECB4C2090CAEC8449320D3F"> dc.date </li> 
       <li id="li_09C76BC7AC7348859D01989697212E31"> Beschreibung </li> 
@@ -96,38 +95,31 @@ Bevor die Auswirkungen der neuen Meta-Tag-Definition für Kunden sichtbar sind, 
       </ul> </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Zulassungsliste </p> </td> 
-      <td colname="col2"> <p>Nur verfügbar, wenn der Datentyp <span class="uicontrol"> "Text" </span>oder " <span class="uicontrol"> Zahl"ausgewählt </span> ist. </p> <p>Separat durch Indexierung getrennte Werte im Metadateninhalt dieses Felds. </p> <p>Der Inhalt "Rot, Gelb, Grün, Blau"wird beispielsweise als vier separate Werte statt als einer behandelt, wenn "Zulassungsliste"ausgewählt ist. Diese Behandlung ist am nützlichsten bei der Bereichssuche (mithilfe von 
-      <userinput>
+      <td colname="col1"> <p>Zulassungslisten </p> </td> 
+      <td colname="col2"> <p>Nur verfügbar, wenn der Datentyp <span class="uicontrol"> "Text" </span>oder " <span class="uicontrol"> Zahl"ausgewählt </span> ist. </p> <p>Separat durch Indexierung getrennte Werte im Metadateninhalt dieses Felds. </p> <p>Der Inhalt "Rot, Gelb, Grün, Blau"wird beispielsweise als vier separate Werte statt als einer behandelt, wenn "Zulassungslisten"ausgewählt ist. Diese Behandlung ist am nützlichsten bei der Bereichssuche (mit <code>
         sp_q_min 
-      </userinput>, 
-      <userinput>
+      </code>, <code>
         sp_q_max 
-      </userinput> oder 
-      <userinput>
+      </code>oder <code>
         sp_q_exact 
-      </userinput>) und mit der 
-      <userinput>
-        &lt;search-field-value-Liste&gt; 
-      </userinput>, 
-      <userinput>
+      </code>) sowie bei der <code>
+        &lt;search-field-value-list&gt; 
+      </code>, <code>
         &lt;search-field-values&gt; 
-      </userinput>, und 
-      <userinput>
+      </code>und <code>
         &lt;search-display-field-values&gt; 
-      </userinput>. </p> <p>Nicht verfügbar, wenn Version-Datentyp ausgewählt ist. </p> </td> 
+      </code>. </p> <p>Nicht verfügbar, wenn Version-Datentyp ausgewählt ist. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> Dynamische Facette </p> </td> 
       <td colname="col2"> <p> 
-        <!--NEW 2/2/2014--> <p>Hinweis: Diese Funktion ist standardmäßig nicht aktiviert. Wenden Sie sich an den technischen Support, um ihn für Ihre Verwendung zu aktivieren. Nach der Aktivierung wird es in der Benutzeroberfläche angezeigt. </p> </p> <p>Stellt die angegebene Facette als dynamisch ein. </p> <p>Facets basieren auf Meta-Tag-Feldern. Ein Meta-Tag-Feld ist eine einfache, zentrale Suchebene von Adobe Search&amp;Promote. Facets hingegen sind Teil von GS (Guided Search), der übergeordneten Präsentationsebene von Adobe Search&amp;Promote. Facets verfügen über eigene Meta-Tag-Felder. Meta-Tag-Felder wissen jedoch nichts über Facetten. </p> <p>Siehe <a href="../c-about-design-menu/c-about-dynamic-facets.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899" format="dita" scope="local"> Grundlagen zu dynamischen Facets </a>. </p> </td> 
+        <!--NEW 2/2/2014--> <p>Hinweis: Diese Funktion ist standardmäßig nicht aktiviert. Wenden Sie sich an den technischen Support, um ihn für Ihre Verwendung zu aktivieren. Nach der Aktivierung wird es in der Benutzeroberfläche angezeigt. </p> </p> <p>Stellt die angegebene Facette als dynamisch ein. </p> <p>Facets basieren auf Meta-Tag-Feldern. Ein Meta-Tag-Feld ist eine Suchebene der Adobe-Search&amp;Promote auf niedriger Ebene. Facets hingegen sind Teil von GS (Guided Search) - der übergeordneten Präsentationsebene der Search&amp;Promote der Adobe. Facets verfügen über eigene Meta-Tag-Felder. Meta-Tag-Felder wissen jedoch nichts über Facetten. </p> <p>Siehe <a href="../c-about-design-menu/c-about-dynamic-facets.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899" format="dita" scope="local"> Grundlagen zu dynamischen Facets </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Deduplizierung zulassen </p> </td> 
-      <td colname="col2"> <p>Aktivieren Sie diese Option, um Deduplizierung-Duplikate für dieses Feld zu aktivieren. Das heißt, Sie können dieses Feld zur Suchzeit angeben, indem Sie 
-        <userinput>
+      <td colname="col2"> <p>Aktivieren Sie diese Option, um Deduplizierung-Duplikate für dieses Feld zu aktivieren. Das heißt, lassen Sie zu, dass dieses Feld zur Suchzeit mithilfe des CGI-Parameters <code>
           sp_dedupe_field 
-        </userinput> CGI-Parameter suchen </p> <p>Siehe CGI-Parameter <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> suchen </a>. </p> </td> 
+        </code> suchen angegeben wird. </p> <p>Siehe CGI-Parameter <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> suchen </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Tabellenname </p> </td> 
@@ -135,7 +127,7 @@ Bevor die Auswirkungen der neuen Meta-Tag-Definition für Kunden sichtbar sind, 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Listentrennzeichen </p> </td> 
-      <td colname="col2"> <p>Nur verfügbar, wenn <span class="uicontrol"> Zulassungsliste </span> ausgewählt ist. </p> <p>Gibt an, welche Zeichen die einzelnen Listen voneinander trennen. Sie können mehrere Zeichen angeben, von denen jedes als Werttrennzeichen behandelt wird. </p> </td> 
+      <td colname="col2"> <p>Nur verfügbar, wenn <span class="uicontrol"> Zulassungslisten ausgewählt </span> sind. </p> <p>Gibt an, welche Zeichen die einzelnen Listen voneinander trennen. Sie können mehrere Zeichen angeben, von denen jedes als Werttrennzeichen behandelt wird. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Suche standardmäßig </p> </td> 
@@ -151,10 +143,9 @@ Bevor die Auswirkungen der neuen Meta-Tag-Definition für Kunden sichtbar sind, 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Sortieren </p> </td> 
-      <td colname="col2"> <p>Gibt an, wann die Ergebnisse nach dem benannten Feld sortiert werden. 
-        <userinput>
+      <td colname="col2"> <p>Gibt an, wann die Ergebnisse mithilfe des CGI-Parameters <code>
           sp_s 
-        </userinput> CGI-Parameter suchen </p> <p>Siehe CGI-Parameter <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> suchen </a>. </p> </td> 
+        </code> suchen nach dem benannten Feld sortiert werden. </p> <p>Siehe CGI-Parameter <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> suchen </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Sprache  </p> </td> 
@@ -186,16 +177,13 @@ Bevor die Auswirkungen der neuen Meta-Tag-Definition für Kunden sichtbar sind, 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Standardeinheiten </p> </td> 
-      <td colname="col2"> <p>Nur verfügbar, wenn der Datentyp <span class="uicontrol"> "Position"als Datentyp ausgewählt </span> ist. </p> <p>Steuert die Behandlung von Entfernungswerten für die Suche nach räumlicher Nähe. </p> <p>Wenn Sie die Standardeinheiten auf " <span class="uicontrol"> Meilen"einstellen </span>, werden alle Kriterien für die kleinste/maximale Entfernung, die auf dieses Feld angewendet werden (mithilfe der Variablen 
-      <userinput>
+      <td colname="col2"> <p>Nur verfügbar, wenn der Datentyp <span class="uicontrol"> "Position"als Datentyp ausgewählt </span> ist. </p> <p>Steuert die Behandlung von Entfernungswerten für die Suche nach räumlicher Nähe. </p> <p>Wenn Sie die Standardeinheiten auf <span class="uicontrol"> Meilen einstellen </span>, werden alle Kriterien für die kleinste/maximale Entfernung, die auf dieses Feld angewendet werden (über die CGI-Parameter <code>
         sp_q_min[_#] 
-      </userinput> oder 
-      <userinput>
+      </code> oder die <code>
         sp_q_max[_#] 
-      </userinput> Search CGI Parameter) wird wie Meilen behandelt, ansonsten wie Kilometer. </p> <p>Diese Option steuert auch die Standardabstandseinheiten, die auf die Ausgabe der 
-      <userinput>
+      </code> Suche), wie Meilen behandelt, ansonsten als Kilometer. </p> <p>Diese Option steuert auch die Standardeinheiten für Entfernungen, die auf die Ausgabe des Vorlagentags für <code>
         &lt;Search-Display-Field&gt; 
-      </userinput> Vorlagentag für Suchergebnisse, wenn es auf ein Ausgabefeld für die Suche in der Nähe angewendet wird. </p> <p>Siehe <a href="../c-appendices/r-about-proximity-search.md#reference_45AC6BB50609431ABD31DA46EE65360D" type="reference" format="dita" scope="local"> Info zur Näherungssuche </a>. </p> </td> 
+      </code> Suchergebnisse angewendet werden, wenn sie auf ein Ausgabefeld für die Suche nach der Nähe angewendet werden. </p> <p>Siehe <a href="../c-appendices/r-about-proximity-search.md#reference_45AC6BB50609431ABD31DA46EE65360D" type="reference" format="dita" scope="local"> Info zur Näherungssuche </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Bereichsbeschreibung erstellen? </p> </td> 
@@ -410,7 +398,7 @@ replace language https://www.yoursite.com/japanese/intro.txt ja_JP
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> append|replace </span> </p> </td> 
-   <td colname="col2"> <p>Wählen Sie "Anhängen", um den Wert der Injektionsdefinition ("Adobe: Kontaktieren Sie uns" oder "Jetzt verkaufen!" in den obigen Beispielen) zum Inhalt der vorhandenen Felder. Wählen Sie "Ersetzen", um vorhandenen Feldinhalt durch den definierten Wert zu überschreiben. Wenn ein Feld derzeit keinen Inhalt enthält, wird der definierte Wert automatisch hinzugefügt, unabhängig davon, welche Option (anhängen oder ersetzen) verwendet wird. </p> </td> 
+   <td colname="col2"> <p>Wählen Sie "anhängen", um den Wert der Injektionsdefinition ("Adobe: Kontaktieren Sie uns" oder "Jetzt verkaufen!" in den obigen Beispielen) zum Inhalt der vorhandenen Felder. Wählen Sie "Ersetzen", um vorhandenen Feldinhalt durch den definierten Wert zu überschreiben. Wenn ein Feld derzeit keinen Inhalt enthält, wird der definierte Wert automatisch hinzugefügt, unabhängig davon, welche Option (anhängen oder ersetzen) verwendet wird. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> angeben </span> </p> </td> 
@@ -480,7 +468,7 @@ Verwenden Sie [!DNL Attribute Loader] zum Definieren zusätzlicher Eingabequelle
 
 >[!NOTE]
 >
->Um Attribute Loader verwenden zu können, müssen Sie ihn möglicherweise in Ihrem Konto von Ihrem Adobe-Kundenbetreuer oder vom Adobe-Support aktivieren lassen.
+>Um Attribute Loader verwenden zu können, müssen Sie ihn möglicherweise in Ihrem Konto durch Ihren Kundenbetreuer oder durch Adobe Support aktivieren lassen.
 
 Sie können eine Data Feed-Eingabequelle verwenden, um auf Inhalte zuzugreifen, die in einem Formular gespeichert sind, das sich von dem unterscheidet, was normalerweise auf einer Website entdeckt wird. Dazu verwenden Sie eine der verfügbaren Crawl-Methoden. Daten aus diesen Quellen können dann in Daten aus durchgekrackten Inhalten eingefügt werden.
 
@@ -590,7 +578,7 @@ Jede Attribute Loader-Konfiguration definiert eine Datenquelle und Zuordnungen, 
 
 >[!NOTE]
 >
->Um Attribute Loader verwenden zu können, müssen Sie ihn möglicherweise in Ihrem Konto von Ihrem Adobe-Kundenbetreuer oder vom Adobe-Support aktivieren lassen.
+>Um Attribute Loader verwenden zu können, müssen Sie ihn möglicherweise in Ihrem Konto durch Ihren Kundenbetreuer oder durch Adobe Support aktivieren lassen.
 
 Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar sind, erstellen Sie Ihren Site-Index neu.
 
@@ -712,7 +700,7 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       </tr> 
       <tr> 
       <td colname="col1"> <p>itemTag </p> </td> 
-      <td colname="col2"> <p>Identifiziert das XML-Element, mit dem Sie einzelne XML-Zeilen in der angegebenen Datenquellendatei identifizieren können. </p> <p>Im folgenden Feed-Fragment eines Adobe XML-Dokuments lautet der itemTag-Wert beispielsweise <span class="codeph"> record </span>: </p> <p> <code class="syntax xml"> &lt;?xml&nbsp;version="1.0"&nbsp;encoding="utf-8"?&gt; 
+      <td colname="col2"> <p>Identifiziert das XML-Element, mit dem Sie einzelne XML-Zeilen in der angegebenen Datenquellendatei identifizieren können. </p> <p>Im folgenden Feed-Fragment eines XML-Dokuments der Adobe lautet der itemTag-Wert beispielsweise <span class="codeph"> record </span>: </p> <p> <code class="syntax xml"> &lt;?xml&nbsp;version="1.0"&nbsp;encoding="utf-8"?&gt; 
         &lt;!DOCTYPE&nbsp;gsafeed&nbsp;PUBLIC&nbsp;"-//Google//DTD&nbsp;GSA&nbsp;Feeds//EN"&nbsp;""&gt; 
         &lt;gsafeed&gt; 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;header&gt; 
@@ -753,7 +741,7 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       </tr> 
       <tr> 
       <td colname="col1"> <p>Name des Querverweisfelds </p> </td> 
-      <td colname="col2"> <p>Gibt ein Metadatenfeld an, dessen Werte als Nachschlagschlüssel in die Daten der Attribute Loader-Konfiguration verwendet werden. Wenn kein Wert ausgewählt ist (<b>—None—</b>), stehen die Daten dieser Konfiguration nicht zur Verwendung in Rangberechnungen zur Verfügung (<b>Regeln</b> &gt; <b>Rangregeln</b> &gt; Regeln <b>bearbeiten</b>). Wenn Sie einen Wert auswählen, werden die Werte dieses Felds verwendet, um Site-Suchen/Merchandising-Dokumente mit den Daten dieser Konfiguration zu vergleichen. </p> </td> 
+      <td colname="col2"> <p>Gibt ein Metadatenfeld an, dessen Werte als Nachschlagschlüssel in den Daten der Attribute Loader-Konfiguration verwendet werden. Wenn kein Wert ausgewählt ist (<b>—None—</b>), stehen die Daten dieser Konfiguration nicht zur Verwendung in Rangberechnungen zur Verfügung (<b>Regeln</b> &gt; <b>Rangregeln</b> &gt; Regeln <b>bearbeiten</b>). Wenn Sie einen Wert auswählen, werden die Werte dieses Felds verwendet, um Site-Suchen/Merchandising-Dokumente mit den Daten dieser Konfiguration zu vergleichen. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Statische Tage </p> </td> 
@@ -763,7 +751,7 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       <td colname="col1"> <p>Landkarte </p> </td> 
       <td colname="col2"> <p>Ermöglicht die Angabe von Zuordnungen von XML-Elementen zu Metadaten mithilfe von XPath-Ausdrücken. </p> <p> 
       <ul id="ul_604108C0277C4892AE8A40CA39889ABD"> 
-      <li id="li_0AF92270AE9F4BA8B2C7EE41FABC0F34"> <span class="uicontrol"> Tag </span> <p>Gibt eine XPath-Darstellung der analysierten XML-Daten an. Anhand des obigen Adobe XML-Dokuments unter der Option "itemTag"könnte es mit der folgenden Syntax zugeordnet werden: </p> <p> <code class="syntax xml"> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
+      <li id="li_0AF92270AE9F4BA8B2C7EE41FABC0F34"> <span class="uicontrol"> Tag </span> <p>Gibt eine XPath-Darstellung der analysierten XML-Daten an. Anhand des obigen XML-Dokuments für die Adobe könnte es unter der Option itemTag mithilfe der folgenden Syntax zugeordnet werden: </p> <p> <code class="syntax xml"> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
         /record/metadata/meta[@name='title']/@content&nbsp;-&gt;&nbsp;title 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;desc 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;body </code> </p> <p>Die obige Syntax übersetzt sich wie folgt: </p> <p> 
@@ -774,7 +762,7 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
         <li id="li_E35EAE3D284D46D485D9064D7BB6AB13"> <code class="syntax xml"> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>Das <span class="codeph"> content- </span> Attribut eines <span class="codeph"> meta- </span> Elements, das in einem <span class="codeph"> metadata- </span> Element enthalten ist, das im record- <span class="codeph"> Element enthalten ist, dessen name-Attribut </span> <span class="codeph"> </span><span class="codeph"> </span>description ist, wird dem MetadatenfeldTextkörper zugeordnet. </p> </li> 
         </ul> </p> <p>XPath ist eine relativ komplizierte Notation. Weitere Informationen finden Sie unter: </p> <p>Siehe <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_8147075D7ACD4811A7ED335F23FE62A6"> <span class="uicontrol"> Feld </span> <p>Definiert den Wert des Namensattributs, der für jedes generierte <span class="codeph"> &lt;meta&gt;- </span> Tag verwendet wird. </p> </li> 
-      <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadaten? </span> <p>Das <span class="uicontrol"> Feld wird </span> zu einer Dropdown-Liste, aus der Sie definierte Metadatenfelder für das aktuelle Konto auswählen können. </p> <p>Der <span class="uicontrol"> Feldwert </span> kann ein nicht definiertes Metadatenfeld sein, falls gewünscht. Ein nicht definiertes Metadatenfeld ist manchmal hilfreich, um Inhalte zu erstellen, die vom <span class="wintitle"> Filtern des Skripts verwendet werden </span>. </p> <p>Siehe <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Grundlagen zum Filtern von Skripten </a>. </p> <p>Wenn Attribute Loader XML-Dokumente mit mehreren Treffern in einem beliebigen Zuordnungsfeld verarbeitet, werden die Werte in einem zwischengespeicherten Dokument zu einem einzigen Wert verkettet. Standardmäßig werden diese Werte mit einem Komma-Trennzeichen kombiniert. Angenommen, der entsprechende <span class="wintitle"> Feldwert </span> ist ein definiertes Metadatenfeld. Darüber hinaus ist für dieses Feld das <span class="wintitle"> Zulassungsliste </span> -Attribut festgelegt. In diesem Fall wird der Liste-Trennzeichen-Wert des Felds, das erste definierte Trennzeichen, in der Verkettung verwendet. </p> </li> 
+      <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadaten? </span> <p>Das <span class="uicontrol"> Feld wird </span> zu einer Dropdown-Liste, aus der Sie definierte Metadatenfelder für das aktuelle Konto auswählen können. </p> <p>Der <span class="uicontrol"> Feldwert </span> kann ein nicht definiertes Metadatenfeld sein, falls gewünscht. Ein nicht definiertes Metadatenfeld ist manchmal hilfreich, um Inhalte zu erstellen, die vom <span class="wintitle"> Filtern des Skripts verwendet werden </span>. </p> <p>Siehe <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Grundlagen zum Filtern von Skripten </a>. </p> <p>Wenn Attribute Loader XML-Dokumente mit mehreren Treffern in einem beliebigen Zuordnungsfeld verarbeitet, werden die Werte in einem zwischengespeicherten Dokument zu einem einzigen Wert verkettet. Standardmäßig werden diese Werte mit einem Komma-Trennzeichen kombiniert. Angenommen, der entsprechende <span class="wintitle"> Feldwert </span> ist ein definiertes Metadatenfeld. Darüber hinaus ist für dieses Feld das <span class="wintitle"> Zulassungslisten- </span> Attribut festgelegt. In diesem Fall wird der Liste-Trennzeichen-Wert des Felds, das erste definierte Trennzeichen, in der Verkettung verwendet. </p> </li> 
       <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> Primärschlüssel? </span> <p>Nur ein Feld wird als Primärschlüssel identifiziert. Dieses Feld wird als "Fremdschlüssel"verwendet, um die Attribute Loader-Daten mit dem entsprechenden Dokument im Index abzugleichen. </p> </li> 
       <li id="li_80D6AF130FCE40AC972FE4B605B86BF6"> <span class="uicontrol"> HTML entfernen? </span> <p>Wenn diese Option aktiviert ist, werden alle in den Daten dieses Felds gefundenen HTML-Tags entfernt. </p> </li> 
       <li id="li_D40E2F9AD8AD49FC9AC4B8C75BA31E28"> <span class="uicontrol"> Aktion </span> <p>Hiermit können Sie Zeilen zur Map hinzufügen oder Zeilen aus der Map entfernen. Die Reihenfolge der Zeilen ist nicht wichtig. </p> </li> 
@@ -806,7 +794,7 @@ Sie können einen von Ihnen definierten Attributlader bearbeiten.
 
 >[!NOTE]
 >
->Um Attribute Loader verwenden zu können, müssen Sie ihn möglicherweise in Ihrem Konto von Ihrem Adobe-Kundenbetreuer oder vom Adobe-Support aktivieren lassen.
+>Um Attribute Loader verwenden zu können, müssen Sie ihn möglicherweise in Ihrem Konto durch Ihren Kundenbetreuer oder durch Adobe Support aktivieren lassen.
 
 Es stehen nicht alle Optionen für Attributlader zur Verfügung, die Sie ändern können, z. B. Attributladername oder -typ aus der [!DNL Type] Dropdown-Liste.
 
@@ -839,7 +827,7 @@ Sie können eine vorhandene Attribute Loader-Definition kopieren, um sie als Gru
 
 >[!NOTE]
 >
->Um Attribute Loader verwenden zu können, müssen Sie ihn möglicherweise in Ihrem Konto von Ihrem Adobe-Kundenbetreuer oder vom Adobe-Support aktivieren lassen.
+>Um Attribute Loader verwenden zu können, müssen Sie ihn möglicherweise in Ihrem Konto durch Ihren Kundenbetreuer oder durch Adobe Support aktivieren lassen.
 
 Beim Kopieren einer Attribute Loader-Definition ist die kopierte Definition standardmäßig deaktiviert. Um die Definition zu aktivieren oder zu aktivieren, müssen Sie sie auf der [!DNL Attribute Loader Edit] Seite bearbeiten und dann auswählen **[!UICONTROL Enable]**.
 
@@ -871,7 +859,7 @@ Sie können den Namen einer vorhandenen Attribute Loader-Definition ändern.
 
 >[!NOTE]
 >
->Um Attribute Loader verwenden zu können, müssen Sie ihn möglicherweise in Ihrem Konto von Ihrem Adobe-Kundenbetreuer oder vom Adobe-Support aktivieren lassen.
+>Um Attribute Loader verwenden zu können, müssen Sie ihn möglicherweise in Ihrem Konto durch Ihren Kundenbetreuer oder durch Adobe Support aktivieren lassen.
 
 **So benennen Sie eine Attribute Loader-Definition um**
 
@@ -968,7 +956,7 @@ Nachdem der Seite eine Attribute Loader-Definition hinzugefügt wurde, können S
 
 >[!NOTE]
 >
->Um Attribute Loader verwenden zu können, müssen Sie ihn möglicherweise in Ihrem Konto von Ihrem Adobe-Kundenbetreuer oder vom Adobe-Support aktivieren lassen.
+>Um Attribute Loader verwenden zu können, müssen Sie ihn möglicherweise in Ihrem Konto durch Ihren Kundenbetreuer oder durch Adobe Support aktivieren lassen.
 
 **So Ansicht der Einstellungen einer Attribute Loader-Definition**
 
@@ -994,7 +982,7 @@ Sie können eine vorhandene Attribute Loader-Definition löschen, die Sie nicht 
 
 >[!NOTE]
 >
->Um Attribute Loader verwenden zu können, müssen Sie ihn möglicherweise in Ihrem Konto von Ihrem Adobe-Kundenbetreuer oder vom Adobe-Support aktivieren lassen.
+>Um Attribute Loader verwenden zu können, müssen Sie ihn möglicherweise in Ihrem Konto durch Ihren Kundenbetreuer oder durch Adobe Support aktivieren lassen.
 
 **So löschen Sie eine Attribute Loader-Definition**
 
