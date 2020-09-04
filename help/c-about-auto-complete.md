@@ -8,7 +8,10 @@ title: Info zur automatischen Vervollständigung
 topic: Design,Site search and merchandising
 uuid: 3dfdd14d-2044-4f01-a5bc-fcb2eb0d5068
 translation-type: tm+mt
-source-git-commit: 439100ab96f4b597c55b1c1ae38a5778c208e896
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+workflow-type: tm+mt
+source-wordcount: '1530'
+ht-degree: 1%
 
 ---
 
@@ -31,11 +34,11 @@ t_configuring_auto-complete.xml
 
  -->
 
-Nachdem Sie die automatische Vervollständigung konfiguriert haben, können Sie die resultierende HTML-Quelle zur Überprüfung anzeigen. Die HTML-Quelle ist das, was Sie kopieren und in die Seiten Ihrer Website einfügen.
+Nachdem Sie die automatische Vervollständigung konfiguriert haben, können Sie die resultierende HTML-Quelle zur Überprüfung Ansicht haben. Die HTML-Quelle ist das, was Sie kopieren und in die Seiten Ihrer Website einfügen.
 
 Siehe [Anzeigen einer Vorschau des Suchformulars, wie es auf Ihrer...](c-about-auto-complete.md#task_437B35EFA5424603A08AF8E79E6B4714).
 
-Siehe [Konfigurieren der Liste](c-about-auto-complete.md#task_1F8E0F346263443383F8CFD2C7AB35D4)mit automatischem Ausfüllen.
+Siehe [Konfigurieren der Liste](c-about-auto-complete.md#task_1F8E0F346263443383F8CFD2C7AB35D4)zum automatischen Ausfüllen von Wörtern.
 
 Siehe [Konfigurieren der automatischen Vervollständigung von CSS](c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96).
 
@@ -68,7 +71,7 @@ Siehe [Konfigurieren der automatischen Vervollständigung von CSS](c-about-auto-
       </tr> 
       <tr> 
       <td colname="col1"> <p>Name des Formulars </p> </td> 
-      <td colname="col2"> <p>Gibt das Attribut "name"des "form"-Tags des für die automatische Vervollständigung aktivierten Suchformulars an. Beispiel: </p> <p> <span class="filepath"> &lt;form name="SiteSearch" method="get" action="https://sp1004337c.guided.t1.atomz.com" target="_blank"&gt; </span> </p> <p>wobei <span class="filepath"> SiteSearch </span> das Namensattribut des form-Tags ist. </p> </td> 
+      <td colname="col2"> <p>Gibt das Attribut "name"des "form"-Tags des für die automatische Vervollständigung aktivierten Suchformulars an. Beispiel: </p> <p> <span class="filepath"> &lt;form name="SiteSearch" method="get" action="https://sp1004337c.guided.t1.atomz.com" Zielgruppe="_blank"&gt; </span> </p> <p>wobei <span class="filepath"> SiteSearch </span> das Namensattribut des form-Tags ist. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Div-Tag-ID </p> </td> 
@@ -80,7 +83,7 @@ Siehe [Konfigurieren der automatischen Vervollständigung von CSS](c-about-auto-
       </tr> 
       <tr>
       <td colname="col1"> <p>Schatten anzeigen </p> </td>
-      <td colname="col2"> <p>Fügt der Liste der Vorschläge für die automatische Vervollständigung einen kosmetischen Schlagschatten hinzu. </p> </td>
+      <td colname="col2"> <p>Fügt der Liste für Vorschläge zur automatischen Vervollständigung einen kosmetischen Schlagschatten hinzu. </p> </td>
       </tr>
       <tr>
       <td colname="col1"> <p>Übereinstimmung nur am Anfang der Wortgruppe </p> </td>
@@ -108,9 +111,9 @@ Siehe [Konfigurieren der automatischen Vervollständigung von CSS](c-about-auto-
 
       Siehe [Pushing-Einstellungen](c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Konfigurieren der Liste für die automatische Vervollständigung von Wörtern {#task_1F8E0F346263443383F8CFD2C7AB35D4}
+## Konfigurieren der Liste zum automatischen Ausfüllen von Wörtern {#task_1F8E0F346263443383F8CFD2C7AB35D4}
 
-Konfigurieren Sie die Liste der Wörter und Ausdrücke, die ein automatisches Ausfüllen dem Kunden als Vorschläge angezeigt wird.
+Konfigurieren Sie die Liste von Wörtern und Wortgruppen, die beim automatischen Ausfüllen als Empfehlungen angezeigt werden.
 
 <!-- 
 
@@ -122,7 +125,7 @@ Siehe [Konfigurieren des automatischen Ausfüllens](c-about-auto-complete.md#tas
 
 Siehe [Konfigurieren der automatischen Vervollständigung von CSS](c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96).
 
-**So konfigurieren Sie die Liste der automatisch auszufüllenden Wörter**
+**So konfigurieren Sie die Liste zum automatischen Ausfüllen von Wörtern**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Auto-Complete Word List]**.
 1. Legen Sie auf der [!DNL Auto-Complete Word List] Seite die gewünschten Optionen fest.
@@ -143,7 +146,7 @@ Siehe [Konfigurieren der automatischen Vervollständigung von CSS](c-about-auto-
       </tr> 
       <tr> 
       <td colname="col1"> <p> Maximale Suchanzahl </p> </td> 
-      <td colname="col2"> <p>Steuert die maximale Anzahl von gesuchten Wörtern und Ausdrücken, die in die Liste der automatisch ausgefüllten Wörter aufgenommen werden sollen. Die wichtigsten Wörter und Ausdrücke, die auch am beliebtesten sind, sind eingeschlossen. </p> </td> 
+      <td colname="col2"> <p>Steuert die maximale Anzahl von gesuchten Wörtern und Ausdrücken, die in die Liste der automatischen Wortvervollständigung aufgenommen werden sollen. Die wichtigsten Wörter und Ausdrücke, die auch am beliebtesten sind, sind eingeschlossen. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Feldname </p> </td> 
@@ -154,29 +157,24 @@ Siehe [Konfigurieren der automatischen Vervollständigung von CSS](c-about-auto-
       <td colname="col2"> <p>Definiert die maximale Anzahl von Feldwerten, die für den ausgewählten Feldnamen zulässig sind. Die obersten Werte, die auch am häufigsten referenziert werden, werden einbezogen. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Fügen Sie diese Wörter und Ausdrücke hinzu </p> </td> 
-      <td colname="col2"> <p> Die Liste mit den Wörtern und Ausdrücken, die in diesem Bereich aufgeführt sind, wird automatisch ausgefüllt. </p> <p> Klicken Sie auf <span class="uicontrol"> Bearbeiten, </span> um die Liste anzuzeigen oder der Liste Wörter und Wortgruppen hinzuzufügen. Wenn Sie fertig sind, klicken Sie auf <span class="uicontrol"> Änderungen speichern </span>. </p> </td> 
+      <td colname="col1"> <p>hinzufügen diese Wörter und Ausdrücke </p> </td> 
+      <td colname="col2"> <p> Die Liste des automatisch ausgefüllten Wortes wird mit den in diesem Bereich aufgelisteten Wörtern und Ausdrücken gefüllt. </p> <p> Klicken Sie auf <span class="uicontrol"> Bearbeiten, </span> um die Liste anzuzeigen oder der Liste Wörter und Wortgruppen hinzuzufügen. Wenn Sie fertig sind, klicken Sie auf <span class="uicontrol"> Änderungen speichern </span>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Entfernen Sie diese Wörter und Ausdrücke </p> </td> 
-      <td colname="col2"> <p> Einträge in diesem Bereich werden nicht in der Liste der automatisch ausgefüllten Wörter angezeigt. </p> <p> Klicken Sie auf <span class="uicontrol"> Bearbeiten, </span> um die Liste anzuzeigen oder der Liste Wörter und Wortgruppen hinzuzufügen. Wenn Sie fertig sind, klicken Sie auf <span class="uicontrol"> Änderungen speichern </span>. </p> <p> Reguläre Ausdrücke sind in dieser Liste zulässig. Um einen regulären Ausdruck in dieser Liste anzugeben, starten Sie die Zeile mit 
-        <userinput>
-          regexp 
-        </userinput> gefolgt von einem Leerzeichen, gefolgt vom regulären Ausdruck. Alle Zeilen in der Wortliste, die mit dem regulären Ausdruck übereinstimmen, werden entfernt. </p> <p> <b>Wichtig</b>: Sie sollten reguläre Ausdrücke nur dann verwenden, wenn Sie zuvor mit ihnen in anderen Anwendungen gearbeitet haben. </p> <p>Siehe <a href="c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguläre Ausdrücke </a>. </p> </td> 
+      <td colname="col2"> <p> Einträge in diesem Bereich werden nicht in der Liste der automatisch vervollständigten Wörter angezeigt. </p> <p> Klicken Sie auf <span class="uicontrol"> Bearbeiten, </span> um die Liste anzuzeigen oder der Liste Wörter und Wortgruppen hinzuzufügen. Wenn Sie fertig sind, klicken Sie auf <span class="uicontrol"> Änderungen speichern </span>. </p> <p> Reguläre Ausdruck sind in dieser Liste zulässig. Um einen regulären Ausdruck in dieser Liste festzulegen, geben Sie die Zeile mit <code>regexp</code> gefolgt von einem Leerzeichen und dem regulären Ausdruck ein. Alle Zeilen im Wort Liste, die mit dem regulären Ausdruck übereinstimmen, werden entfernt. </p> <p> <b>Wichtig</b>: Sie sollten reguläre Ausdruck nur dann verwenden, wenn Sie zuvor mit ihnen in anderen Anwendungen gearbeitet haben. </p> <p>Siehe <a href="c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguläre Ausdrücke </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Groß-/Kleinschreibung ignorieren </p> </td> 
-      <td colname="col2"> <p>Doppelte Einträge in der Liste der automatisch ausgefüllten Wörter, die sich nur in alphabetischer Groß-/Kleinschreibung unterscheiden, werden entfernt. Alle Einträge in der Wortliste werden in Kleinbuchstaben umgewandelt. </p> <p>Wenn die Vorschläge zum automatischen Ausfüllen als "erster Buchstabe mit Großbuchstaben"oder "Großbuchstaben"angezeigt werden sollen, fügen Sie die 
-        <userinput>
-          text-transform : kapitalisieren; 
-        </userinput> oder 
-        <userinput>
-          text-transform : Großbuchstabe; 
-        </userinput> CSS-Texteigenschaften auf den CSS-Inhalt automatisch ausfüllen, unter "/* Stile für Ergebniselement */". </p> <p>Siehe <a href="c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96" type="task" format="dita" scope="local"> Konfigurieren der automatischen Vervollständigung von CSS </a>. </p> </td> 
+      <td colname="col2"> <p>Duplikat-Einträge in der Liste für die automatische Vervollständigung von Wörtern, die sich nur in alphabetischer Groß-/Kleinschreibung unterscheiden, werden entfernt. Alle Einträge in der Liste werden in Kleinbuchstaben umgewandelt. </p> <p>Wenn die Vorschläge zum automatischen Ausfüllen als "erster Buchstabe mit Großbuchstaben"oder "Großbuchstaben"angezeigt werden sollen, fügen Sie die <code>
+          text-transform : capitalize; 
+        </code> oder <code>
+          text-transform : uppercase; 
+        </code> CSS-Texteigenschaften zum CSS-Inhalt mit automatischem Ausfüllen unter "/* Stile für das Ergebniselement */"hinzu. </p> <p>Siehe <a href="c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96" type="task" format="dita" scope="local"> Konfigurieren der automatischen Vervollständigung von CSS </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Aktualisierung auf Neuindex </p> </td> 
-      <td colname="col2"> <p>Die Wörterliste für die automatische Vervollständigung wird nach jeder erfolgreichen Kontoneuindizierung automatisch neu generiert. </p> </td> 
+      <td colname="col2"> <p>Die Liste des automatisch ausgefüllten Wortes wird nach jeder erfolgreichen Kontoneuindizierung automatisch neu generiert. </p> </td> 
       </tr> 
     </tbody> 
    </table>
@@ -185,7 +183,7 @@ Siehe [Konfigurieren der automatischen Vervollständigung von CSS](c-about-auto-
 1. (Optional) Führen Sie einen der folgenden Schritte aus:
 
    * Klicken Sie auf **[!UICONTROL History]** , um alle vorgenommenen Änderungen wiederherzustellen.
-   * Klicken Sie **[!UICONTROL Preview Word List]** auf , um alle von Ihnen vorgenommenen Änderungen zu speichern, und öffnen Sie dann die [!DNL Auto-Complete Word List Preview] Seite, auf der Sie die Liste der Vorschläge zur automatischen Vervollständigung überprüfen können. Verwenden Sie die Navigationsoptionen am oberen Rand der Seite, um die angezeigte Liste zu überprüfen und zu verfeinern. Wenn Sie fertig sind, klicken Sie auf **[!UICONTROL Close]** , um zur [!DNL Auto-Complete Word List] Seite zurückzukehren.
+   * Klicken Sie **[!UICONTROL Preview Word List]** auf , um alle vorgenommenen Änderungen zu speichern, und öffnen Sie dann die [!DNL Auto-Complete Word List Preview] Seite, auf der Sie die Liste der Vorschläge zur automatischen Vervollständigung lesen können. Verwenden Sie die Navigationsoptionen oben auf der Seite, um die angezeigte Liste zu überprüfen und zu verfeinern. Wenn Sie fertig sind, klicken Sie auf **[!UICONTROL Close]** , um zur [!DNL Auto-Complete Word List] Seite zurückzukehren.
 
       Siehe [Verwenden der Option](t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Verlauf.
 
@@ -207,15 +205,15 @@ t_configuring_auto-complete_css.xml
 
  -->
 
-Automatisches Ausfüllen von CSS steuert den Inhalt von [!DNL autocomplete_styles.css], der als Teil des für die automatische Vervollständigung aktivierten Suchformulars enthalten ist. Das hier angegebene CSS steuert die visuelle Darstellung der Liste mit Empfehlungen für die automatische Vervollständigung. Ein Beispiel für mögliche visuelle Darstellungskonzepte finden Sie hier:
+Automatisches Ausfüllen von CSS steuert den Inhalt von [!DNL autocomplete_styles.css], der als Teil des für die automatische Vervollständigung aktivierten Suchformulars enthalten ist. Das hier angegebene CSS steuert die visuelle Darstellung der Liste zur automatischen Vervollständigung. Ein Beispiel für mögliche visuelle Darstellungskonzepte finden Sie hier:
 
 [https://developer.yahoo.com/yui/examples/autocomplete/ac_skinning.html](https://developer.yahoo.com/yui/examples/autocomplete/ac_skinning.html).
 
-[Konfigurieren der Liste](c-about-auto-complete.md#task_1F8E0F346263443383F8CFD2C7AB35D4)für die automatische Vervollständigung von Wörtern.
+[Konfigurieren der Liste](c-about-auto-complete.md#task_1F8E0F346263443383F8CFD2C7AB35D4)zum automatischen Ausfüllen von Wörtern
 
 [Konfigurieren der automatischen Vervollständigung](c-about-auto-complete.md#task_F491F2BFC4D24A61BBDC48B9059C11BB).
 
-Wenn Sie mit der Konfiguration von CSS zum automatischen Ausfüllen fertig sind, können Sie eine Vorschau des Suchformulars anzeigen, um zu sehen, ob die von Ihnen angegebene CSS in Erscheinungsbild und Layout akzeptabel ist.
+Wenn Sie mit der Konfiguration der automatischen Vervollständigung von CSS fertig sind, können Sie das Suchformular Vorschau haben, um festzustellen, ob die von Ihnen angegebene CSS in Erscheinungsbild und Layout akzeptabel ist.
 
 Siehe [Anzeigen einer Vorschau des Suchformulars, wie es auf Ihrer...](c-about-auto-complete.md#task_437B35EFA5424603A08AF8E79E6B4714).
 
@@ -244,7 +242,7 @@ Siehe [Kopieren des HTML-Codes des Suchformulars in die...](c-about-auto-complet
 
 ## Anzeigen einer Vorschau des Suchformulars, wie es auf Ihrer Website angezeigt wird {#task_437B35EFA5424603A08AF8E79E6B4714}
 
-Je nach Konfiguration der CSS zum automatischen Ausfüllen und automatischen Ausfüllen können Sie eine Vorschau des Suchformulars anzeigen, wenn Sie den HTML-Code zu Ihrer Website hinzufügen möchten.
+Je nach Konfiguration der CSS zum automatischen Ausfüllen und automatischen Ausfüllen können Sie Vorschauen darüber vornehmen, wie das Suchformular angezeigt wird, wenn Sie den HTML-Code zu Ihrer Website hinzufügen möchten.
 
 <!-- 
 
@@ -268,14 +266,14 @@ Siehe HTML-Code [für erweiterte Suchformulare](c-appendices/c-searchforms.md#re
 
 Siehe [Erweiterter Vorlagencode](c-appendices/c-searchforms.md#reference_D762C22E754E462DBEECD88D2C3FA579)für Suchformulare.
 
-**So zeigen Sie eine Vorschau des Suchformulars an, wie es auf Ihrer Website angezeigt wird**
+**So erstellen Sie eine Vorschau des Suchformulars, wie es auf Ihrer Website angezeigt wird**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Search Form]**.
 1. (Optional) Klicken Sie auf **[!UICONTROL HTML code]** , um den HTML-Code anzuzeigen, den Sie kopieren und in die Seiten Ihrer Website einfügen.
 
 ## Kopieren des HTML-Codes des Suchformulars in die Seiten Ihrer Website {#task_A3A01EA800F24C0AA33902387E0362C7}
 
-Je nach Konfiguration der CSS zum automatischen Ausfüllen und automatischen Ausfüllen können Sie eine Vorschau des Suchformulars anzeigen, wenn Sie den HTML-Code zu Ihrer Website hinzufügen möchten.
+Je nach Konfiguration der CSS zum automatischen Ausfüllen und automatischen Ausfüllen können Sie Vorschauen darüber vornehmen, wie das Suchformular angezeigt wird, wenn Sie den HTML-Code zu Ihrer Website hinzufügen möchten.
 
 <!-- 
 
