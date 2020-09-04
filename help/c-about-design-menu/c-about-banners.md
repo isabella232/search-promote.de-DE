@@ -7,7 +7,10 @@ title: Über Banner
 topic: Design,Site search and merchandising
 uuid: 653b567d-5cf3-41a0-a260-a6912d0fd20d
 translation-type: tm+mt
-source-git-commit: 7f1b5d94e8002992d62ec1e3dce11f9c5605fde8
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+workflow-type: tm+mt
+source-wordcount: '4810'
+ht-degree: 1%
 
 ---
 
@@ -26,19 +29,19 @@ c_about_banners.xml
 
 Es gibt zwei Methoden, mit denen Sie Ihrer Website Banneranzeigen hinzufügen können.
 
-Die erste Methode besteht darin, Banner über Target, Search&amp;Promote hinzuzufügen. Die Banner sind HTML-Code-Snippets, die angezeigt werden, wenn ein Kunde Ihre Website durchsucht. Ihr Banner kann Text oder ein Bild im GIF-, JPEG- oder PNG-Format oder in einer Kombination beider Formate enthalten. Sie können aus voreingestellten Größen auswählen oder eigene benutzerdefinierte Dimensionen definieren, um sie an Ihre Seite anzupassen. Der HTML-Code, den Sie zum Anzeigen des Banners verwenden, kann auch Elemente wie den zu verwendenden Schriftstil und den Rand angeben. Diese Methode zum Hinzufügen eines Banners bietet grundlegende Funktionen und erfordert keine zusätzliche Software.
+Die erste Methode besteht darin, Banner über Zielgruppe, Search&amp;Promote hinzuzufügen. Die Banner sind HTML-Code-Snippets, die angezeigt werden, wenn ein Kunde Ihre Website durchsucht. Ihr Banner kann Text oder ein Bild im GIF-, JPEG- oder PNG-Format oder in einer Kombination beider Formate enthalten. Sie können aus voreingestellten Größen auswählen oder eigene benutzerdefinierte Dimensionen definieren, um sie an Ihre Seite anzupassen. Der HTML-Code, den Sie zum Anzeigen des Banners verwenden, kann auch Elemente wie den zu verwendenden Schriftstil und den Rand angeben. Diese Methode zum Hinzufügen eines Banners bietet grundlegende Funktionen und erfordert keine zusätzliche Angebot.
 
-Die zweite Methode besteht in der Verwendung von Adobe Dynamic Media Classic, einem Dienst für dynamisches Medienmanagement und Veröffentlichungen. Mit einem gültigen Adobe Dynamic Media Classic-Konto können Sie Bannerinhalte mithilfe von Dynamic Media Classic direkt in Target, Search&amp;Promote, verwalten und bereitstellen. Bei der Site-Suche/beim Merchandising konfigurieren Sie den Zugriff auf Ihr Konto für Dynamic Media Classic. Öffnen Sie dann den Medienbrowser &quot;Dynamic Media Classic&quot;und wählen Sie ein dynamisches Medienelement aus, das Sie als Banner verwenden möchten.
+Die zweite Methode besteht in der Verwendung der Adobe Dynamic Media Classic, einem dynamischen Medienmanagement- und Veröffentlichungsdienst. Mit einem gültigen Adobe Dynamic Media Classic-Konto können Sie Bannerinhalte direkt über Dynamic Media Classic verwalten und für die Zielgruppe Search&amp;Promote bereitstellen. Bei der Site-Suche/beim Merchandising konfigurieren Sie den Zugriff auf Ihr Konto für Dynamic Media Classic. Öffnen Sie dann den Medienbrowser &quot;Dynamic Media Classic&quot;und wählen Sie ein dynamisches Medienelement aus, das Sie als Banner verwenden möchten.
 
 >[!NOTE]
 >
->Bevor Sie dynamische Medien-Assets als Banner bei der Site-Suche/beim Merchandising verwenden können, werden die Assets zunächst hochgeladen und für die Veröffentlichung im Scene7 Publishing System vorbereitet. Sie können Assets aus der Site-Suche/dem Merchandising hochladen und sie automatisch für die Veröffentlichung im Scene7 Publishing System vorbereiten. Oder Sie können Assets aus dem Scene7 Publishing System hochladen und veröffentlichen.
+>Bevor Sie dynamische Medienelemente als Banner bei der Site-Suche/beim Merchandising verwenden können, werden die Assets zunächst hochgeladen und für die Veröffentlichung im Scene7 Publishing System vorbereitet. Sie können Assets aus der Site-Suche/dem Merchandising hochladen und sie automatisch für die Veröffentlichung im Scene7 Publishing System vorbereiten. Oder Sie können Assets über das Scene7 Publishing System hochladen und veröffentlichen.
 
 ## Integration von Bannern mit dem Adobe Scene7 Publishing System {#section_D4D7ADEA6A6348E68EDA138E184FE579}
 
-Sie können die Asset-Typen von Dynamic Media Classic als Banner bei der Site-Suche/beim Merchandising verwenden, einschließlich Bildern, dynamischen Bannern und Vorlagen wie Bildvorlagen oder Flash-Vorlagen.
+Sie können die Asset-Typen von Dynamic Media Classic als Banner bei der Site-Suche/beim Merchandising verwenden, einschließlich Bildern, dynamischen Bannern und Vorlagen, wie Bildvorlagen oder Flash-Vorlagen.
 
-Vorlagen sind dynamisch erstellte und adressierbare Bilddateien mit mehreren Ebenen, wie beispielsweise Dateien mit mehreren Ebenen in Bildbearbeitungsanwendungen wie Adobe Fotoshop®. Im Gegensatz zu statischen Bilddateien kann eine Vorlage Parameter enthalten. Mithilfe von Parametern können Sie variable Bildeigenschaften und Bildinhalte anpassen.
+Vorlagen sind dynamisch erstellte und adressierbare Bilddateien mit mehreren Ebenen, z. B. in Bildbearbeitungsanwendungen wie Adobe Photoshop®. Im Gegensatz zu statischen Bilddateien kann eine Vorlage Parameter enthalten. Mithilfe von Parametern können Sie variable Bildeigenschaften und Bildinhalte anpassen.
 
 >[!NOTE]
 >
@@ -48,7 +51,7 @@ Siehe [Vorlagen für Veröffentlichungen](https://help.adobe.com/en_US/scene7/us
 
 Eine Vorlage kann eine beliebige Anzahl von Bildebenen und Textebenen enthalten. Sie können eine statische Datei, die Ebenen enthält, z. B. eine PSD-Datei mit Ebenen, in eine Vorlage konvertieren oder Vorlagen in Dynamic Media Classic erstellen. Sie können Textebenen in Vorlagen mit Schriftarten erstellen, die Sie in das Scene7 Publishing System hochgeladen haben. Nachdem Sie einer Vorlage Text hinzugefügt haben, können Sie ihn formatieren, indem Sie Ausrichtung, Schriftart, Schriftgröße und Farbe ändern.
 
-Im Anzeigebereich &quot;Parameter&quot;von Dynamic Media Classic können Sie beliebige Aspekte einer Vorlage in einen adressierbaren Parameter konvertieren. Auf diese Weise können Sie ändern, welches Bild mit Ebenen verwendet werden soll oder welcher Textwert in der Vorlage verwendet werden soll. Parameter werden mit der URL-Zeichenfolge übergeben, sodass Sie jeden Parameter ändern können, um das vom Image-Server generierte Antwortbild dynamisch anzupassen.
+Im Anzeigebereich &quot;Parameter&quot;von Dynamic Media Classic können Sie beliebige Aspekte einer Vorlage in einen adressierbaren Parameter konvertieren. Auf diese Weise können Sie ändern, welches Bild mit Ebenen verwendet werden soll oder welcher Textwert in der Vorlage verwendet werden soll. Parameter werden mit der URL-Zeichenfolge übergeben, sodass Sie alle Parameter ändern können, um das vom Image-Server generierte Antwortbild dynamisch anzupassen.
 
 Erfahren Sie mehr darüber, wie Sie mit Dynamic Media Classic Vorlagen erstellen und die Eigenschaften auf den Ebenen parametrisieren können, damit Sie sie in Bannern verwenden können.
 
@@ -64,7 +67,7 @@ Siehe [Hochladen und Veröffentlichen von Assets](https://help.adobe.com/en_US/s
 
 >[!NOTE]
 >
->Um die Upload-Funktion im Asset-Viewer von Dynamic Media Classic zu verwenden, stellen Sie sicher, dass für das von Ihnen verwendete Konto für dynamische Medien Classic die Rolle &quot;SPS-Unternehmensadministrator&quot;bereits festgelegt ist.
+>Um die Upload-Funktion im Asset-Viewer von Dynamic Media Classic zu verwenden, stellen Sie sicher, dass für das von Ihnen verwendete Konto &quot;Dynamischer Medienklassiker&quot;die Rolle &quot;SPS-Firma-Admin&quot;bereits festgelegt ist.
 
 Siehe [Administrationseinstellungen](https://help.adobe.com/en_US/scene7/using/WS662101DF-D697-47a7-A7D8-B52FD8E94438.html) im Benutzerhandbuch für Dynamic Media Classic (Scene7).
 
@@ -86,16 +89,16 @@ t_adding_a_new_banner.xml
 
  -->
 
-Wenn Sie über ein gültiges Adobe Dynamic Media Classic-Konto verfügen, können Sie Banneranzeigen über das Scene7 Publishing System hinzufügen.
+Wenn Sie über ein gültiges Konto für die Adobe Dynamic Media Classic verfügen, können Sie Banneranzeigen über das Scene7 Publishing System hinzufügen.
 
-Siehe [Hinzufügen eines Banners mit Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3).
+Siehe [Hinzufügen eines Banners mit der Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3).
 
 Siehe [Konfigurieren des Zugriffs auf Ihr Adobe Dynamic Media Classic-Konto](../c-about-settings-menu/c-about-account-options-menu.md#task_CEFF88C2033D41D0B2FE86C435EDAC6D).
 
 **So fügen Sie ein Banner hinzu**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Design]** > **[!UICONTROL Banners]**.
-1. Wählen Sie auf der [!DNL Banners] Seite in der **[!UICONTROL Add Banner]** Dropdownliste die Option **[!UICONTROL HTML code]**.
+1. Wählen Sie auf der [!DNL Banners] Seite in der **[!UICONTROL Add Banner]** Dropdown-Liste **[!UICONTROL HTML code]**.
 1. Legen Sie im [!DNL Add Banner] Dialogfeld die gewünschten Optionen fest.
 
    <table> 
@@ -112,15 +115,13 @@ Siehe [Konfigurieren des Zugriffs auf Ihr Adobe Dynamic Media Classic-Konto](../
       </tr> 
       <tr> 
       <td colname="col1"> <p>Banner-HTML </p> </td> 
-      <td colname="col2"> <p> Ermöglicht das Einfügen des HTML-Codes, der mit dem Banner verknüpft ist. </p> <p>Jeder HTML-Code ist zulässig, einschließlich CSS-Code, der von 
-        <userinput>
+      <td colname="col2"> <p> Ermöglicht das Einfügen des HTML-Codes, der mit dem Banner verknüpft ist. </p> <p>Jeder HTML-Code ist zulässig, einschließlich CSS-Code, der von <code>
           &lt;style&gt; 
-        </userinput> -Tags oder JavaScript-Code, der von 
-        <userinput>
+        </code> Tags umgeben ist, oder JavaScript-Code, der von <code>
           &lt;script&gt; 
-        </userinput> Tags. Der folgende Codeblock ist beispielsweise für ein Textbanner vom Typ "Horizontal oben": Im <code> &lt;div&nbsp;style="width:&nbsp;684px;&nbsp;background-image:&nbsp;url('https://www.brough.com/blackb.gif');&nbsp; 
+        </code> -Tags umgeben ist. Der folgende Codeblock ist beispielsweise für ein Textbanner vom Typ "Horizontal oben": <code> &lt;div&nbsp;style="width:&nbsp;684px;&nbsp;background-image:&nbsp;url('https://www.brough.com/blackb.gif');&nbsp; 
           padding-top:&nbsp;10px;&nbsp;padding-bottom:&nbsp;10px;&nbsp;color:&nbsp;white;&nbsp;font-family:&nbsp;verdana;&nbsp; 
-          text-align:&nbsp;center;&nbsp;font-size:&nbsp;20px;"&gt;&nbsp;Sound&nbsp;Study&nbsp;ships&nbsp;free!&nbsp;&lt;/div&gt; </code>folgenden Beispiel wird der Codeblock für ein vollständiges Splash-Bild verwendet: <code> &lt;img&amp;nbsp;src='https://geometrixx.com/images/GEOAds/geometrixx-beauty-home-01.jpg'&amp;nbsp;border="0"&amp;nbsp;/&gt; </code> </p> </td> 
+          text-align:&nbsp;center;&nbsp;font-size:&nbsp;20px;"&gt;&nbsp;Sound&nbsp;Study&nbsp;ships&nbsp;free!&nbsp;&lt;/div&gt; </code>Im folgenden Beispiel wird der Codeblock für ein vollständiges Splash-Bild verwendet: <code> &lt;img&amp;nbsp;src='https://geometrixx.com/images/GEOAds/geometrixx-beauty-home-01.jpg'&amp;nbsp;border="0"&amp;nbsp;/&gt; </code> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Typ  </p> </td> 
@@ -164,9 +165,9 @@ t_editing_a_banner.xml
 
  -->
 
-Wenn Sie ein Banner mit der Site-Suche/dem Merchandising hinzugefügt haben, bearbeiten Sie das Banner auch mit Adobe Dynamic Media Classic.
+Wenn Sie ein Banner mit der Site-Suche/dem Merchandising hinzugefügt haben, bearbeiten Sie das Banner auch mit der Adobe Dynamic Media Classic.
 
-Siehe auch [Bearbeiten von Bannern mit Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_C3E782477FBF428ABEA220751781ACA9).
+Siehe auch [Bearbeiten eines Banners mit der Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_C3E782477FBF428ABEA220751781ACA9).
 
 **So bearbeiten Sie ein Banner**
 
@@ -202,14 +203,14 @@ t_adding_a_banner_using_adobe_scene7.xml
 
  -->
 
-Um ein Banner mit Adobe Dynamic Media Classic hinzuzufügen, stellen Sie sicher, dass Sie den Zugriff auf Ihr gültiges Konto für Dynamic Media Classic konfiguriert haben.
+Um ein Banner mit der Adobe Dynamic Media Classic hinzuzufügen, stellen Sie sicher, dass Sie den Zugriff auf Ihr gültiges Konto für Dynamic Media Classic konfiguriert haben.
 
 Siehe [Konfigurieren des Zugriffs auf Ihr Adobe Dynamic Media Classic-Konto](../c-about-settings-menu/c-about-account-options-menu.md#task_CEFF88C2033D41D0B2FE86C435EDAC6D).
 
-**So fügen Sie ein Banner mit Adobe Dynamic Media Classic hinzu**
+**So fügen Sie ein Banner mit der Adobe Dynamic Media Classic hinzu**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Design]** > **[!UICONTROL Banners.]**
-1. Klicken Sie auf der [!DNL Banners] Seite in der **[!UICONTROL Add Banner]** Dropdownliste auf **[!UICONTROL Adobe Scene7]**.
+1. Klicken Sie auf der [!DNL Banners] Seite in der **[!UICONTROL Add Banner]** Dropdown-Liste auf **[!UICONTROL Adobe Scene7]**.
 1. Verwenden Sie im [!DNL Pick an Asset] Dialogfeld im linken Bereich die Navigationsoptionen in der Benutzeroberfläche, um den Ordner zu suchen, der das digitale Asset enthält, das Sie für ein Banner verwenden möchten.
 
    Mit Ausnahme der Navigationsoptionen für Assets sind alle anderen Optionen von dem digitalen Asset abhängig, das Sie zum Hinzufügen oder Bearbeiten ausgewählt haben.
@@ -220,7 +221,7 @@ Siehe [Konfigurieren des Zugriffs auf Ihr Adobe Dynamic Media Classic-Konto](../
    >
    >Die Navigationsoptionen für Assets werden nicht angezeigt, wenn Sie das Banner im [!DNL Change Parameters] Dialogfeld bearbeiten.
 
-   Siehe [Bearbeiten eines Banners mit Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_C3E782477FBF428ABEA220751781ACA9).
+   Siehe [Bearbeiten eines Banners mit der Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_C3E782477FBF428ABEA220751781ACA9).
 
    **Asset-Navigationsoptionen**
 
@@ -234,7 +235,7 @@ Siehe [Konfigurieren des Zugriffs auf Ihr Adobe Dynamic Media Classic-Konto](../
     <tbody> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/S7_folders.png"> </p> </td> 
-      <td colname="col2"> <p>Ermöglicht die Auswahl des Kontos "Dynamische Medien - Classic"für Ihr Unternehmen aus der Dropdownliste sowie die Navigation in den Ordnern für digitale Assets in diesem Konto. </p> <p>Wenn Sie einen Ordner auswählen, werden im rechten Bereich des Dialogfelds "Asset <span class="wintitle"> auswählen"alle verfügbaren digitalen Assets angezeigt, die in diesem Ordner enthalten sind </span> . </p> </td> 
+      <td colname="col2"> <p>Ermöglicht die Auswahl des Kontos "Dynamischer Medienklassiker"für Ihre jeweilige Firma aus der Dropdown-Liste sowie die Navigation in den Ordnern für digitale Assets in diesem Konto. </p> <p>Wenn Sie einen Ordner auswählen, werden im rechten Bereich des Dialogfelds "Asset <span class="wintitle"> auswählen"alle verfügbaren digitalen Assets angezeigt, die in diesem Ordner enthalten sind </span> . </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_folderhistory.png"> </p> </td> 
@@ -242,19 +243,19 @@ Siehe [Konfigurieren des Zugriffs auf Ihr Adobe Dynamic Media Classic-Konto](../
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_reloadfolder.png"> </p> </td> 
-      <td colname="col2"> <p>Aktualisiert die Liste der digitalen Assets, die für einen ausgewählten Ordner angezeigt werden. </p> <p>Möglicherweise müssen Sie auf dieses Steuerelement klicken, wenn Sie ein ausgewähltes Asset mithilfe der Dropdownliste <span class="uicontrol"> "Aktionen"verschieben, löschen oder umbenennen </span> . </p> </td> 
+      <td colname="col2"> <p>Aktualisiert die Liste der digitalen Assets, die für einen ausgewählten Ordner angezeigt werden. </p> <p>Möglicherweise müssen Sie auf dieses Steuerelement klicken, wenn Sie ein ausgewähltes Asset mithilfe der Dropdown-Liste " <span class="uicontrol"> Aktionen"verschieben, löschen oder umbenennen </span> . </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_list_or_grid.png"> </p> </td> 
-      <td colname="col2"> <p>Zeigt digitale Assets in einer Listenansicht an. In der Liste werden das zugehörige Symbol oder Miniaturbild, der Dateiname, der digitale Asset-Typ, die Dimensionen (sofern zutreffend) und das Datum der letzten Bearbeitung angezeigt. </p> <p>In der Rasteransicht werden digitale Assets im ausgewählten Ordner als Symbole, Miniaturansichten oder beides angezeigt. </p> </td> 
+      <td colname="col2"> <p>Zeigt digitale Assets in einer Liste-Ansicht an. In der Liste werden das zugehörige Symbol oder Miniaturbild, der Dateiname, der digitale Asset-Typ, die Dimensionen (sofern zutreffend) und das Datum der letzten Bearbeitung angezeigt. </p> <p>In der Raster-Ansicht werden digitale Assets im ausgewählten Ordner als Symbole, Miniaturansichten oder beides angezeigt. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_actionsdropdown.png"> </p> </td> 
-      <td colname="col2"> <p>In der Listenansicht können Sie ein ausgewähltes digitales Asset verschieben, löschen oder umbenennen. </p> <p>In der Rasteransicht können Sie ausgewählte digitale Assets verschieben oder löschen. </p> </td> 
+      <td colname="col2"> <p>In der Ansicht "Liste"können Sie ausgewählte digitale Assets verschieben, löschen oder umbenennen. </p> <p>In der Raster-Ansicht können Sie ausgewählte digitale Assets verschieben oder löschen. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_upload.png"> </p> </td> 
-      <td colname="col2"> <p>Öffnet das Dialogfeld " <span class="wintitle"> </span> Hochladen", in dem Sie ein ausgewähltes digitales Asset vom Desktop oder von einem externen Server hochladen können, damit Sie es als Banner verwenden können. </p> <p>Nach dem Hochladen des Assets wird automatisch ein Veröffentlichungsauftrag im Scene7 Publishing System für Sie geplant. </p> <p>Eine Tabelle mit Optionen finden Sie unter Hinzufügen eines Banners mit Adobe Dynamic Media Classic <a href="../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3" type="reference" format="dita" scope="local"> . </a> </p> <p>Weitere Informationen zum Hochladen und Veröffentlichen digitaler Assets mit dem Scene7 Publishing System. </p> <p>Siehe <a href="https://help.adobe.com/en_US/scene7/using/WS3673AD39-098B-4f08-8A24-CA51261B7366.html" scope="external" format="html"> Hochladen und Veröffentlichen von Assets </a> im Scene7 Publishing System-Benutzerhandbuch. </p> </td> 
+      <td colname="col2"> <p>Öffnet das Dialogfeld " <span class="wintitle"> </span> Hochladen", in dem Sie ein ausgewähltes digitales Asset vom Desktop oder von einem externen Server hochladen können, damit Sie es als Banner verwenden können. </p> <p>Nach dem Hochladen des Assets wird automatisch ein Veröffentlichungsauftrag im Scene7 Publishing System für Sie geplant. </p> <p>Eine Tabelle der Optionen finden Sie unter Hinzufügen eines Banners mit der Adobe Dynamic Media Classic <a href="../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3" type="reference" format="dita" scope="local"> . </a> </p> <p>Weitere Informationen zum Hochladen und Veröffentlichen digitaler Assets mit dem Scene7 Publishing System. </p> <p>Siehe <a href="https://help.adobe.com/en_US/scene7/using/WS3673AD39-098B-4f08-8A24-CA51261B7366.html" scope="external" format="html"> Hochladen und Veröffentlichen von Assets </a> im Scene7 Publishing System-Benutzerhandbuch. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_searchfield.png"> </p> </td> 
@@ -266,7 +267,7 @@ Siehe [Konfigurieren des Zugriffs auf Ihr Adobe Dynamic Media Classic-Konto](../
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_Kindfilter.png"> </p> </td> 
-      <td colname="col2"> <p>Verfeinern Sie die Liste der angezeigten digitalen Assets, sodass nur solche nach einem bestimmten Typ wie Flash, Bild, Vorlage oder Beliebig angezeigt werden. </p> <p>Klicken Sie auf , <img src="assets/s7_deletefilter.png"> um den Filter aus der Suche zu löschen. </p> </td> 
+      <td colname="col2"> <p>Verfeinern Sie die Liste der angezeigten digitalen Assets, sodass nur solche Elemente eines bestimmten Typs wie Flash, Bild, Vorlage oder Beliebig angezeigt werden. </p> <p>Klicken Sie auf , <img src="assets/s7_deletefilter.png"> um den Filter aus der Suche zu löschen. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_datefilter.png"> </p> </td> 
@@ -281,7 +282,7 @@ Siehe [Konfigurieren des Zugriffs auf Ihr Adobe Dynamic Media Classic-Konto](../
 
    **Eigenschaftenoptionen**
 
-   Die Eigenschaftenoptionen werden angezeigt, wenn Sie eine Flash-Vorlage, eine Bildvorlage oder ein Bild auswählen. Je nach ausgewähltem digitalen Asset stehen nicht alle Optionen zur Verfügung.
+   Die Eigenschaftenoptionen werden angezeigt, wenn Sie eine Bildvorlage, eine Bildvorlage oder ein Flash auswählen. Je nach ausgewähltem digitalen Asset stehen nicht alle Optionen zur Verfügung.
 
    <table> 
     <thead> 
@@ -308,7 +309,7 @@ Siehe [Konfigurieren des Zugriffs auf Ihr Adobe Dynamic Media Classic-Konto](../
       </tr> 
       <tr> 
       <td colname="col1"> <p>Qualität </p> </td> 
-      <td colname="col2"> <p>Steuert die Komprimierungsstufe von Bildern im JPEG- oder GIF-Format. Diese Einstellung wirkt sich sowohl auf die Dateigröße als auch auf die Bildqualität aus. Die Qualitätsskala ist 1-100. </p> <p>Wenn Sie den Schieberegler nach links oder rechts ziehen, wird das Bild im Vorschaufenster aktualisiert, um die Qualitätsänderung widerzuspiegeln. </p> <p>Diese Option gilt nicht für Flash-Vorlagen. </p> </td> 
+      <td colname="col2"> <p>Steuert die Komprimierungsstufe von Bildern im JPEG- oder GIF-Format. Diese Einstellung wirkt sich sowohl auf die Dateigröße als auch auf die Bildqualität aus. Die Qualitätsskala ist 1-100. </p> <p>Wenn Sie den Schieberegler nach links oder rechts ziehen, wird das Vorschau-Fenster entsprechend der Qualitätsänderung aktualisiert. </p> <p>Diese Option gilt nicht für Flash-Vorlagen. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Breite </p> </td> 
@@ -346,7 +347,7 @@ Siehe [Konfigurieren des Zugriffs auf Ihr Adobe Dynamic Media Classic-Konto](../
 
    **Option &quot;Links ändern&quot;**
 
-   Die Option &quot;Links ändern&quot;wird nur angezeigt, wenn Sie eine Flash-Vorlage für Ihr Banner ausgewählt haben.
+   Die Option &quot;Links ändern&quot;wird nur angezeigt, wenn Sie eine Vorlage für den Flash für das Banner ausgewählt haben.
 
    <table> 
     <thead> 
@@ -358,16 +359,16 @@ Siehe [Konfigurieren des Zugriffs auf Ihr Adobe Dynamic Media Classic-Konto](../
     <tbody> 
       <tr> 
       <td colname="col1"> <p> <img placement="inline" id="image_EBB8159690C74D4692B5DF945B045E0B" src="assets/icon_edit_16.gif" /> </p> </td> 
-      <td colname="col2"> <p>Ermöglicht die Bearbeitung des Felds "URL-Link", das in der Flash-Vorlage verwendet wird. </p> </td> 
+      <td colname="col2"> <p>Ermöglicht die Bearbeitung des Felds "URL-Link", das in der Vorlage "Flash"verwendet wird. </p> </td> 
       </tr> 
     </tbody> 
     </table>
 
    **Textoptionen ersetzen**
 
-   Die Optionen zum Ersetzen von Text werden nur angezeigt, wenn Sie für Ihr Banner eine Flash-Vorlage mit bearbeitbaren Textebenen wählen.
+   Die Optionen zum Ersetzen von Flashs werden nur angezeigt, wenn Sie für Ihr Banner eine Textvorlage mit bearbeitbaren Textebenen auswählen.
 
-   Änderungen, die Sie an Text in der Flash-Vorlage vornehmen, werden im Vorschaufenster angezeigt.
+   Alle Textänderungen, die Sie in der Textvorlage des Flashs vornehmen, werden im Fenster &quot;Vorschau&quot;angezeigt.
 
    >[!NOTE]
    >
@@ -391,18 +392,18 @@ Siehe [Konfigurieren des Zugriffs auf Ihr Adobe Dynamic Media Classic-Konto](../
       </tr> 
       <tr> 
       <td colname="col1"> <p>Suche  </p> </td> 
-      <td colname="col2"> <p>Ermöglicht die Eingabe eines Suchbegriffs für nicht verknüpften Text in den Ebenen der Flash-Vorlage. </p> </td> 
+      <td colname="col2"> <p>Ermöglicht die Eingabe eines Suchbegriffs für nicht verknüpften Flash in den Ebenen der Textvorlage. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Ersetzen Sie </p> </td> 
-      <td colname="col2"> <p>Hier können Sie den Text angeben, den Sie anstelle des gesuchten Textes einfügen möchten. </p> <p>Wenn Sie in diesem Feld die <span class="uicontrol"> </span> Eingabetaste drücken, wird das Vorschaufenster mit Ihrem Ersatztext aktualisiert. </p> </td> 
+      <td colname="col2"> <p>Hier können Sie den Text angeben, den Sie anstelle des gesuchten Textes einfügen möchten. </p> <p>Wenn Sie in diesem Feld die <span class="uicontrol"> Eingabetaste drücken, wird das Fenster "Vorschau"mit Ihrem Ersatztext aktualisiert </span> . </p> </td> 
       </tr> 
     </tbody> 
     </table>
 
    **Parameteroptionen**
 
-   Parameteroptionen werden nur angezeigt, wenn Sie eine Bildvorlage oder eine Flash-Vorlage für Ihr Banner auswählen. Die tatsächlichen Parameteroptionen variieren je nach Erstellung und Parametrisierung der Vorlage im Scene7 Publishing System. Ihre Vorlage kann beispielsweise parametrisierte Felder verwenden, mit denen Sie beispielsweise Text, Schriftschnitt, Preis, spezielle Codes für den kostenlosen Versand, die Größe des Bildes im Banner oder sogar ein anderes Bild für die Verwendung suchen können.
+   Die Parameteroptionen werden nur angezeigt, wenn Sie eine Bildvorlage oder eine Vorlage für den Flash für das Banner ausgewählt haben. Die tatsächlichen Parameteroptionen variieren je nach Erstellung und Parametrisierung der Vorlage im Scene7 Publishing System. Ihre Vorlage kann beispielsweise parametrisierte Felder verwenden, mit denen Sie beispielsweise Text, Schriftschnitt, Preis, spezielle Codes für den kostenlosen Versand, die Größe des Bildes im Banner oder sogar ein anderes Bild für die Verwendung suchen können.
 
    >[!NOTE]
    >
@@ -414,7 +415,7 @@ Siehe [Konfigurieren des Zugriffs auf Ihr Adobe Dynamic Media Classic-Konto](../
 
    **Optionen für die Ebenensichtbarkeit umschalten**
 
-   Die Option &quot;Ebenensichtbarkeit ein-/ausschalten&quot;gilt nur, wenn Sie eine Flash-Vorlage für Ihr Banner ausgewählt haben.
+   Die Option &quot;Ebenensichtbarkeit ein-/ausschalten&quot;gilt nur, wenn Sie eine Vorlage für den Flash für das Banner ausgewählt haben.
 
    <table> 
     <thead> 
@@ -426,7 +427,7 @@ Siehe [Konfigurieren des Zugriffs auf Ihr Adobe Dynamic Media Classic-Konto](../
     <tbody> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_togglelayervisibility.png"> </p> </td> 
-      <td colname="col2"> <p>Hiermit können Sie die Sichtbarkeit der verschiedenen Ebenen, aus denen die Flash-Vorlagendatei besteht, aktivieren oder deaktivieren. </p> <p>Jedes Mal, wenn Sie die Sichtbarkeit einer Ebene aktivieren oder deaktivieren, wird das Vorschaufenster aktualisiert, um die Anzeige zu aktualisieren. </p> </td> 
+      <td colname="col2"> <p>Hiermit können Sie die Sichtbarkeit der verschiedenen Ebenen, aus denen die Vorlagendatei des Flashs besteht, aktivieren oder deaktivieren. </p> <p>Jedes Mal, wenn Sie die Sichtbarkeit einer Ebene aktivieren oder deaktivieren, wird das Fenster "Vorschau"aktualisiert, um die Anzeige zu aktualisieren. </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -435,7 +436,7 @@ Siehe [Konfigurieren des Zugriffs auf Ihr Adobe Dynamic Media Classic-Konto](../
 
    >[!NOTE]
    >
-   >Wenn Sie die Upload-Funktion im Scene7-Asset-Viewer verwenden möchten, stellen Sie sicher, dass für das verwendete Scene7-Konto die Rolle &quot;SPS-Unternehmensadministrator&quot;bereits festgelegt ist.
+   >Wenn Sie die Upload-Funktion im Scene7 Asset Viewer verwenden möchten, stellen Sie sicher, dass für das von Ihnen verwendete Scene7-Konto die Rolle &quot;SPS Firma Admin&quot;bereits festgelegt ist.
 
    Siehe [Administrationseinstellungen](https://help.adobe.com/en_US/scene7/using/WS662101DF-D697-47a7-A7D8-B52FD8E94438.html) im Scene7 Publishing System-Benutzerhandbuch.
 
@@ -468,7 +469,7 @@ Siehe [Konfigurieren des Zugriffs auf Ihr Adobe Dynamic Media Classic-Konto](../
 
    Wenn Sie PostScript- (EPS-) oder Illustrator- (AI-) Bilddateien hochladen, können Sie diese auf verschiedene Weise formatieren. Sie können die Dateien rastern, sie für die Vorlagenveröffentlichung in FXG konvertieren, den transparenten Hintergrund beibehalten, eine Auflösung wählen und einen Farbraum wählen.
 
-   PSD (Fotoshop-Dokumentdateien) werden in Dynamic Media Classic am häufigsten zum Erstellen von Vorlagen verwendet. Wenn Sie eine PSD-Datei hochladen, können Sie aus der Datei automatisch eine dynamische Classic-Vorlage erstellen (wählen Sie die **[!UICONTROL Create Template]** Option aus).
+   PSD (Photoshop-Dokument-Dateien) werden meist in Dynamic Media Classic zum Erstellen von Vorlagen verwendet. Wenn Sie eine PSD-Datei hochladen, können Sie aus der Datei automatisch eine dynamische Classic-Vorlage erstellen (wählen Sie die **[!UICONTROL Create Template]** Option aus).
 
    Scene7 Publishing System erstellt mehrere Bilder aus einer PSD-Datei mit Ebenen, wenn Sie die Datei zum Erstellen einer Vorlage verwenden. Es wird für jede Ebene ein Bild erstellt.
 
@@ -482,8 +483,8 @@ Siehe [Konfigurieren des Zugriffs auf Ihr Adobe Dynamic Media Classic-Konto](../
     </thead>
     <tbody> 
       <tr> 
-      <td colname="col1"> <p>Farbprofiloptionen </p> </td> 
-      <td colname="col02"> <p>Farbprofil </p> </td> 
+      <td colname="col1"> <p>Profil-Farboptionen </p> </td> 
+      <td colname="col02"> <p>Color Profil </p> </td> 
       <td colname="col2"> <p> Hier können Sie aus den folgenden Optionen auswählen: </p> 
         <ul id="ul_6927BC08CA2647EDB2C85DAD2B82AE31"> 
         <li id="li_CA3F44FF9C0F4CE987DCB0AF9303C2E4"> <span class="uicontrol"> In SRGB konvertieren </span> <p>Konvertiert das Bild in SRGB (Standard Red Green Blue). SRGB ist der empfohlene Farbraum für die Anzeige von Bildern auf Webseiten. </p> </li> 
@@ -522,38 +523,38 @@ Siehe [Konfigurieren des Zugriffs auf Ihr Adobe Dynamic Media Classic-Konto](../
       <td colname="col2"> <p>Behält die Hintergrundtransparenz der Datei bei. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Fotoshop-Optionen </p> </td> 
+      <td colname="col1"> <p>Photoshop-Optionen </p> </td> 
       <td colname="col02"> <p> Ebenen beibehalten </p> </td> 
       <td colname="col2"> <p>Rippt die Ebenen in der PSD-Datei (sofern vorhanden) in einzelne Assets. Die Asset-Ebenen bleiben mit der PSD verknüpft. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p> Fotoshop-Optionen </p> </td> 
+      <td colname="col1"> <p> Photoshop-Optionen </p> </td> 
       <td colname="col02"> <p>Erstellen von Vorlagen </p> </td> 
       <td colname="col2"> <p> Erstellt eine Vorlage aus den Ebenen in der PSD-Datei. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p> Fotoshop-Optionen </p> </td> 
+      <td colname="col1"> <p> Photoshop-Optionen </p> </td> 
       <td colname="col02"> <p> Text extrahieren </p> </td> 
       <td colname="col2"> <p> Extrahiert den Text, damit Kunden in einem Banner nach Suchbegriffen suchen können. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Fotoshop-Optionen </p> </td> 
+      <td colname="col1"> <p>Photoshop-Optionen </p> </td> 
       <td colname="col02"> <p> Ebenen erweitern </p> </td> 
       <td colname="col2"> <p>Erweitert die Größe der gerippten Bildebenen auf die Größe der Hintergrundebene. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Fotoshop-Optionen </p> </td> 
+      <td colname="col1"> <p>Photoshop-Optionen </p> </td> 
       <td colname="col02"> <p> Name der Ebene </p> </td> 
       <td colname="col2"> <p>Ebenen in der PSD-Datei werden als separate Bilder hochgeladen. Sie können aus den folgenden Optionen auswählen, um zu entscheiden, wie Sie diese Bilder im Scene7 Publishing System benennen möchten: </p> 
         <ul id="ul_C2A25177A07740CA90B32C638304D39F"> 
-        <li id="li_477D5BFF7238454BBF0E04B22DE378F7"> <span class="uicontrol"> Ebenenname aus PSD-Datei verwenden </span> <p>Benennt die Bilder nach ihren Ebenennamen in der PSD-Datei. Beispielsweise wird eine Ebene mit dem Namen <span class="codeph"> "Preisschild" </span> in der ursprünglichen PSD-Datei zu einem Bild mit dem Namen " <span class="codeph"> Preisschild" </span>. Wenn es sich bei den Namen der Ebenen in der PSD-Datei jedoch um standardmäßige Fotoshop-Ebenennamen handelt (Hintergrund, Ebene 1, Ebene 2 usw.), werden die Bilder nach den Nummern der Ebenen in der PSD-Datei benannt, nicht nach den Standardnamen der Ebenen. </p> </li> 
-        <li id="li_EB4173B884FC41328CFBDE27DA6D43AA"> <span class="uicontrol"> Verwenden Sie den Namen der PSD-Datei und hängen Sie die Nummer an </span> <p>Benennt die Bilder nach den Nummern der Ebenen in der PSD-Datei, wobei die ursprünglichen Ebenennamen ignoriert werden. Die Bilder werden mit dem Fotoshop-Dateinamen und einer angehängten Nummer der Ebene benannt. Beispielsweise erhält die zweite Ebene der Datei " <span class="codeph"> Frühjahrsannonce.psd"den Namen " </span> Frühjahrsannonce_2", <span class="codeph"> </span> auch wenn sie in Fotoshop einen nicht standardmäßigen Namen hatte. </p> </li> 
-        <li id="li_10B2D2DE2FD24BD08DB56D1D95ABA53D"> <span class="uicontrol"> Name und Nummer der PSD-Datei verwenden </span> <p>Benennt die Bilder nach der PSD-Datei, gefolgt vom Namen der Ebene oder der Nummer der Ebene. Die Nummer der Ebene wird verwendet, wenn die Namen der Ebenen in der PSD-Datei Fotoshop-Standardebenennamen sind. Eine Ebene mit dem Namen <span class="codeph"> Price Tag </span> in einer PSD-Datei mit dem Namen <span class="codeph"> SpringAd </span> trägt den Namen <span class="codeph"> Spring Ad_Price Tag </span>. Eine Ebene mit dem Standardnamen <span class="codeph"> Ebene 2 </span> erhält den Namen <span class="codeph"> Frühjahrsannonce_2 </span>. </p> </li> 
+        <li id="li_477D5BFF7238454BBF0E04B22DE378F7"> <span class="uicontrol"> Ebenenname aus PSD-Datei verwenden </span> <p>Benennt die Bilder nach ihren Ebenennamen in der PSD-Datei. Beispielsweise wird eine Ebene mit dem Namen <span class="codeph"> "Preisschild" </span> in der ursprünglichen PSD-Datei zu einem Bild mit dem Namen " <span class="codeph"> Preisschild" </span>. Wenn es sich bei den Namen der Ebenen in der PSD-Datei jedoch um standardmäßige Photoshop-Ebenennamen handelt (Hintergrund, Ebene 1, Ebene 2 usw.), werden die Bilder nach den Nummern der Ebenen in der PSD-Datei und nicht nach den Standardnamen der Ebenen benannt. </p> </li> 
+        <li id="li_EB4173B884FC41328CFBDE27DA6D43AA"> <span class="uicontrol"> Verwenden Sie den Namen der PSD-Datei und hängen Sie die Nummer an </span> <p>Benennt die Bilder nach den Nummern der Ebenen in der PSD-Datei, wobei die ursprünglichen Ebenennamen ignoriert werden. Die Bilder werden mit dem Dateinamen und einer angehängten Nummer der Ebene benannt. Beispielsweise erhält die zweite Ebene der Datei " <span class="codeph"> Frühjahrsannonce.psd"den Namen " </span> Frühjahrsannonce_2", <span class="codeph"> </span> auch wenn sie in Photoshop über einen nicht standardmäßigen Namen verfügt. </p> </li> 
+        <li id="li_10B2D2DE2FD24BD08DB56D1D95ABA53D"> <span class="uicontrol"> Name und Nummer der PSD-Datei verwenden </span> <p>Benennt die Bilder nach der PSD-Datei, gefolgt vom Namen der Ebene oder der Nummer der Ebene. Die Nummer der Ebene wird verwendet, wenn die Ebenennamen in der PSD-Datei standardmäßige Photoshop-Ebenennamen sind. Eine Ebene mit dem Namen <span class="codeph"> Price Tag </span> in einer PSD-Datei mit dem Namen <span class="codeph"> SpringAd </span> trägt den Namen <span class="codeph"> Spring Ad_Price Tag </span>. Eine Ebene mit dem Standardnamen <span class="codeph"> Ebene 2 </span> erhält den Namen <span class="codeph"> Frühjahrsannonce_2 </span>. </p> </li> 
         <li id="li_5E57AC0719D4484B9C9BD14DB42B4455"> <span class="uicontrol"> Erstellen eines Ordners basierend auf dem PSD-Dateinamen </span> <p>Erstellt einen Ordner für die Ebenenbilder unter Verwendung des Dateinamens der PSD-Datei. </p> </li> 
         </ul> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Fotoshop-Optionen </p> </td> 
+      <td colname="col1"> <p>Photoshop-Optionen </p> </td> 
       <td colname="col02"> <p>Anker </p> </td> 
       <td colname="col2"> <p>Geben Sie an, wie Bilder in Vorlagen verankert werden, die aus der aus der PSD-Datei erzeugten Komposition mit Ebenen generiert werden. </p> <p>Standardmäßig ist der Anker in der Mitte. Mit einem mittleren Anker können Ersatzbilder unabhängig vom Seitenverhältnis des Ersatzbilds denselben Raum am besten füllen. Bilder mit einem anderen Aspekt, die dieses Bild ersetzen, nehmen beim Referenzieren der Vorlage und bei der Verwendung der Parameterersetzung effektiv denselben Platz ein. Wechseln Sie zu einer anderen Einstellung, wenn Ihre Anwendung die Ersatzbilder benötigt, um den zugewiesenen Raum in der Vorlage auszufüllen. </p> </td> 
       </tr> 
@@ -592,10 +593,10 @@ Siehe [Konfigurieren des Zugriffs auf Ihr Adobe Dynamic Media Classic-Konto](../
     </tbody> 
     </table>
 
-1. Klicken Sie im rechten Bereich auf das gewünschte Bild, die Vorlage oder die Flash-Datei.
+1. Klicken Sie im rechten Bereich auf die gewünschte Bild-, Vorlagen- oder Flash-Datei.
 
    Das [!DNL Pick An Asset] Popup-Fenster wird angezeigt.
-1. (Optional) Führen Sie im [!DNL Pick An Asset] Popupfenster in der [!DNL Actions] Dropdownliste einen der folgenden Schritte aus:
+1. (Optional) Führen Sie im [!DNL Pick An Asset] Popupfenster in der [!DNL Actions] Dropdown-Liste einen der folgenden Schritte aus:
 
    * Klicken **[!UICONTROL Move]**. Wählen Sie im [!DNL Select a folder to move to] Dialogfeld den Ordner aus, in den Sie das digitale Asset verschieben möchten. Klicken **[!UICONTROL Move]**.
 
@@ -625,7 +626,7 @@ Siehe [Konfigurieren des Zugriffs auf Ihr Adobe Dynamic Media Classic-Konto](../
 
 ## Bearbeiten eines Banners mit Adobe Dynamic Media Classic {#task_C3E782477FBF428ABEA220751781ACA9}
 
-Ändern Sie [!DNL Edit Banner] die Eigenschaften und Parameter eines Banners, das Sie mit Adobe Dynamic Media Classic hinzugefügt haben.
+Ändern Sie [!DNL Edit Banner] die Eigenschaften und Parameter eines Banners, das Sie mit der Adobe Dynamic Media Classic hinzugefügt haben.
 
 <!-- 
 
@@ -672,17 +673,17 @@ t_deleting_banners.xml
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Design]** > **[!UICONTROL Banners]**.
 1. (Optional) Führen Sie einen oder mehrere der folgenden Schritte aus:
 
-   * Wählen Sie auf der [!DNL Banners] Seite den Bannertyp aus der **[!UICONTROL Find banner of type]** Dropdownliste aus. Geben Sie bei Bedarf einen Tag-Namen im **[!UICONTROL with tag]** Textfeld oder einen Bannernamen im **[!UICONTROL with name]** Textfeld ein. Klicken **[!UICONTROL Find.]**
+   * Wählen Sie auf der [!DNL Banners] Seite den Bannertyp aus, den Sie in der **[!UICONTROL Find banner of type]** Dropdown-Liste finden möchten. Geben Sie bei Bedarf einen Tag-Namen im **[!UICONTROL with tag]** Textfeld oder einen Bannernamen im **[!UICONTROL with name]** Textfeld ein. Klicken **[!UICONTROL Find.]**
 
-   * Wählen Sie in der **[!UICONTROL Sort]** Dropdownliste aus, wie die Liste der Banner sortiert werden soll.
-   * Wählen Sie in der **[!UICONTROL Show]** Dropdownliste die Anzahl der Banner aus, die Sie auf die aktuelle Seite laden möchten, die Sie gerade anzeigen.
+   * Wählen Sie in der **[!UICONTROL Sort]** Dropdown-Liste aus, wie die Liste der Banner angeordnet werden soll.
+   * Wählen Sie in der **[!UICONTROL Show]** Dropdown-Liste die Anzahl der Banner aus, die Sie auf die aktuelle Seite laden möchten.
 
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Klicken Sie in der oberen linken Ecke eines Banners auf das Kontrollkästchen der Banner, die Sie löschen möchten.
    * Markieren Sie in der oberen Leiste der [!DNL Banners] Seite jedes Banner, das auf der aktuell angezeigten Seite geladen wird, **[!UICONTROL Select all]** und wählen Sie es aus.
 
-1. Klicken Sie in der **[!UICONTROL Bulk Actions]** Dropdownliste auf **[!UICONTROL Delete]**.
+1. Klicken Sie in der **[!UICONTROL Bulk Actions]** Dropdown-Liste auf **[!UICONTROL Delete]**.
 1. Klicken Sie im [!DNL Confirmation Action] Dialogfeld auf **[!UICONTROL OK]**.
 1. (Optional) Führen Sie einen der folgenden Schritte aus:
 
@@ -700,7 +701,7 @@ t_deleting_banners.xml
 
 ## Vorschau von Bannern {#task_6AB1F81A984A4DC2ACACD1FE030545E2}
 
-Sie können Banner durchsuchen, die Sie der [!DNL Banners] Seite hinzugefügt haben, um deren vollständige Größe anzuzeigen. Es wird kein CSS in der Vorlage angezeigt, das sich auf das Banner auswirkt.
+Sie können Banner durchsuchen, die Sie der [!DNL Banners] Seite hinzugefügt haben, um deren volle Ansicht zu erhalten. Es wird kein CSS in der Vorlage angezeigt, das sich auf das Banner auswirkt.
 
 <!-- 
 
@@ -708,21 +709,21 @@ t_previewing_banners.xml
 
  -->
 
-**So zeigen Sie eine Vorschau von Bannern an**
+**Vorschauen-Banner**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Design]** > **[!UICONTROL Banners]**.
 1. (Optional) Führen Sie einen oder mehrere der folgenden Schritte aus:
 
-   * Wählen Sie auf der [!DNL Banners] Seite den Bannertyp aus der **[!UICONTROL Find banner of type]** Dropdownliste aus. Geben Sie bei Bedarf einen Tag-Namen im **[!UICONTROL with tag]** Textfeld oder einen Bannernamen im **[!UICONTROL with name]** Textfeld ein. Klicken **[!UICONTROL Find.]**
+   * Wählen Sie auf der [!DNL Banners] Seite den Bannertyp aus, den Sie in der **[!UICONTROL Find banner of type]** Dropdown-Liste finden möchten. Geben Sie bei Bedarf einen Tag-Namen im **[!UICONTROL with tag]** Textfeld oder einen Bannernamen im **[!UICONTROL with name]** Textfeld ein. Klicken **[!UICONTROL Find.]**
 
-   * Wählen Sie in der **[!UICONTROL Sort]** Dropdownliste aus, wie die Liste der Banner sortiert werden soll.
-   * Wählen Sie in der **[!UICONTROL Show]** Dropdownliste die Anzahl der Banner aus, die Sie auf die aktuelle Seite laden möchten, die Sie gerade anzeigen.
+   * Wählen Sie in der **[!UICONTROL Sort]** Dropdown-Liste aus, wie die Liste der Banner angeordnet werden soll.
+   * Wählen Sie in der **[!UICONTROL Show]** Dropdown-Liste die Anzahl der Banner aus, die Sie auf die aktuelle Seite laden möchten.
 
-1. Klicken Sie auf der [!DNL Banners] Seite auf eine Bannerminiatur, um die vollständige Größe anzuzeigen.
+1. Klicken Sie auf der [!DNL Banners] Seite auf eine Bannerminiatur, um die vollständige Ansicht zu erhalten.
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Klicken Sie im Dialogfeld &quot;Bannervorschau&quot;auf den Nach-links- oder Nach-rechts-Pfeil, um zu den von Ihnen hinzugefügten Bannern in voller Größe zu navigieren und diese anzuzeigen.
-   * Klicken Sie auf die Schaltfläche &quot;Schließen&quot;, um das Dialogfeld für die Bannervorschau zu schließen und zur [!DNL Banners] Seite zurückzukehren.
+   * Klicken Sie im Dialogfeld &quot;Banner-Vorschau&quot;auf den Nach-links- oder Nach-rechts-Pfeil, um zu den von Ihnen hinzugefügten Bannern in voller Größe zu navigieren und diese Ansicht vorzunehmen.
+   * Klicken Sie auf die Schaltfläche &quot;Schließen&quot;, um das Dialogfeld &quot;Vorschau&quot;des Banners zu schließen und zur [!DNL Banners] Seite zurückzukehren.
 
 ## Banner live schalten {#task_161F4FEC8362474296A566E64BF05B97}
 
@@ -743,17 +744,17 @@ Siehe [Pushing-Einstellungen](../c-about-staging.md#task_44306783B4C0408AAA58B47
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Design]** > **[!UICONTROL Banners]**.
 1. (Optional) Führen Sie einen oder mehrere der folgenden Schritte aus:
 
-   * Wählen Sie auf der [!DNL Banners] Seite den Bannertyp aus der **[!UICONTROL Find banner of type]** Dropdownliste aus. Geben Sie bei Bedarf einen Tag-Namen im **[!UICONTROL with tag]** Textfeld oder einen Bannernamen im **[!UICONTROL with name]** Textfeld ein. Klicken **[!UICONTROL Find]**.
+   * Wählen Sie auf der [!DNL Banners] Seite den Bannertyp aus, den Sie in der **[!UICONTROL Find banner of type]** Dropdown-Liste finden möchten. Geben Sie bei Bedarf einen Tag-Namen im **[!UICONTROL with tag]** Textfeld oder einen Bannernamen im **[!UICONTROL with name]** Textfeld ein. Klicken **[!UICONTROL Find]**.
 
-   * Wählen Sie in der **[!UICONTROL Sort]** Dropdownliste aus, wie die Liste der Banner sortiert werden soll.
-   * Wählen Sie in der **[!UICONTROL Show]** Dropdownliste die Anzahl der Banner aus, die Sie auf die aktuelle Seite laden möchten, die Sie gerade anzeigen.
+   * Wählen Sie in der **[!UICONTROL Sort]** Dropdown-Liste aus, wie die Liste der Banner angeordnet werden soll.
+   * Wählen Sie in der **[!UICONTROL Show]** Dropdown-Liste die Anzahl der Banner aus, die Sie auf die aktuelle Seite laden möchten.
 
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Klicken Sie in der oberen linken Ecke eines Banners auf das Kontrollkästchen der Banner, die Sie löschen möchten.
    * Markieren Sie in der oberen Leiste der [!DNL Banner] Seite jedes Banner, das auf der aktuell angezeigten Seite geladen wird, **[!UICONTROL Select all]** und wählen Sie es aus.
 
-1. Klicken Sie in der **[!UICONTROL Bulk Actions]** Dropdownliste auf **[!UICONTROL Push live]**.
+1. Klicken Sie in der **[!UICONTROL Bulk Actions]** Dropdown-Liste auf **[!UICONTROL Push live]**.
 1. Klicken Sie im [!DNL Confirmation Action] Dialogfeld auf **[!UICONTROL OK]**.
 1. (Optional) Klicken Sie auf der [!DNL Banners] Seite auf , **[!UICONTROL History]** um alle vorgenommenen Änderungen wiederherzustellen.
 
