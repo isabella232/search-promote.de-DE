@@ -8,9 +8,9 @@ title: Menü "Crawling"
 topic: Settings,Site search and merchandising
 uuid: a58c03bf-90f7-4b5b-91ff-988b95c246b0
 translation-type: tm+mt
-source-git-commit: e080a61e24a3809beff7c212ff3d088b2a8ad3b6
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
 workflow-type: tm+mt
-source-wordcount: '11115'
+source-wordcount: '11033'
 ht-degree: 1%
 
 ---
@@ -52,45 +52,37 @@ Sie qualifizieren jeden Einstiegspunkt mit einem oder mehreren der folgenden dur
  <tbody> 
   <tr> 
    <td colname="col1"> <p>noindex </p> </td> 
-   <td colname="col2"> <p> Wenn Sie den Text nicht auf der Einstiegsseite indizieren möchten, aber den Links auf der Seite folgen möchten, fügen Sie 
-     <userinput>
+   <td colname="col2"> <p> Wenn Sie den Text nicht auf der Einstiegsseite indizieren möchten, aber den Links der Seite folgen möchten, fügen Sie ihn <code>
        noindex 
-     </userinput> nach dem Einstiegspunkt. </p> <p>Trennen Sie den Suchbegriff vom Einstiegspunkt durch ein Leerzeichen, wie im folgenden Beispiel dargestellt: </p> <p> <code> https://www.my-additional-domain.com/more_pages/main.html&amp;nbsp;noindex </code> </p> <p>Dieser Suchbegriff entspricht einem Roboter-Meta-Tag mit 
-     <userinput>
+     </code> nach dem Einstiegspunkt hinzu. </p> <p>Trennen Sie den Suchbegriff vom Einstiegspunkt durch ein Leerzeichen, wie im folgenden Beispiel dargestellt: </p> <p> <code> https://www.my-additional-domain.com/more_pages/main.html&amp;nbsp;noindex </code> </p> <p>Dieser Suchbegriff entspricht einem robots meta-Tag mit <code>
        content="noindex" 
-     </userinput>) zwischen den 
-     <userinput>
+     </code>) zwischen der <code>
        &lt;head&gt; 
-     </userinput>... 
-     <userinput>
+     </code>... 
+     <code>
        &lt;/head&gt; 
-     </userinput> -Tags der Einstiegsseite. </p> </td> 
+     </code> -Tags der Einstiegsseite. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>nofollow </p> </td> 
-   <td colname="col2"> <p> Wenn Sie den Text auf der Einstiegsseite indizieren möchten, aber keinem der Links auf der Seite folgen möchten, fügen Sie 
-     <userinput>
+   <td colname="col2"> <p> Wenn Sie den Text auf der Einstiegsseite indizieren möchten, aber keinem der Links auf der Seite folgen möchten, fügen Sie ihn <code>
        nofollow 
-     </userinput> nach dem Einstiegspunkt. </p> <p>Trennen Sie den Suchbegriff vom Einstiegspunkt durch ein Leerzeichen, wie im folgenden Beispiel dargestellt: </p> <p> <code> https://www.domain.com/not_linked/directory_listing&amp;nbsp;nofollow </code> </p> <p>Dieser Suchbegriff entspricht einem Roboter-Meta-Tag mit 
-     <userinput>
+     </code> nach dem Einstiegspunkt hinzu. </p> <p>Trennen Sie den Suchbegriff vom Einstiegspunkt durch ein Leerzeichen, wie im folgenden Beispiel dargestellt: </p> <p> <code> https://www.domain.com/not_linked/directory_listing&amp;nbsp;nofollow </code> </p> <p>Dieser Suchbegriff entspricht einem robots meta-Tag <code>
        content="nofollow" 
-     </userinput> zwischen 
-     <userinput>
+     </code> zwischen dem <code>
        &lt;head&gt; 
-     </userinput>... 
-     <userinput>
+     </code>... 
+     <code>
        &lt;/head&gt; 
-     </userinput> -Tag einer Einstiegsseite. </p> </td> 
+     </code> -Tag einer Einstiegsseite. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>form </p> </td> 
-   <td colname="col2"> <p> Wenn der Einstiegspunkt eine Anmeldeseite ist, 
-     <userinput>
+   <td colname="col2"> <p> Wenn der Einstiegspunkt eine Anmeldeseite ist, <code>
        form 
-     </userinput> wird normalerweise verwendet, damit der Suchroboter das Anmeldeformular senden und die entsprechenden Cookies empfangen kann, bevor er die Website durchsucht. Wenn das Schlüsselwort "form"verwendet wird, wird die Einstiegsseite nicht indiziert und der Suchroboter markiert die Einstiegsseite nicht als durchgekrackt. Verwenden Sie die   
-     <userinput>
+     </code> wird in der Regel verwendet, damit der Suchroboter das Anmeldeformular senden und die entsprechenden Cookies empfangen kann, bevor er die Website durchsucht. Wenn das Schlüsselwort "form"verwendet wird, wird die Einstiegsseite nicht indiziert und der Suchroboter markiert die Einstiegsseite nicht als durchgekrackt. Verwenden Sie diese Option, <code>
        nofollow 
-     </userinput> wenn Sie nicht möchten, dass der Suchroboter den Links der Seite folgt. </p> </td> 
+     </code> wenn der Suchroboter den Links der Seite nicht folgen soll. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -251,54 +243,42 @@ Ein Komma ist nicht als Trennzeichen zwischen der Maske und dem Schlüsselwort g
  <tbody> 
   <tr> 
    <td colname="col1"> <p>noindex </p> </td> 
-   <td colname="col2"> <p> Wenn Sie den Text nicht auf den Seiten indizieren möchten, die mit der URL-Maske übereinstimmen, aber die Links zu den entsprechenden Seiten befolgen möchten, fügen Sie 
-     <userinput>
+   <td colname="col2"> <p> Wenn Sie den Text nicht auf den Seiten indizieren möchten, die mit der URL-Maske übereinstimmen, aber die Links zu den entsprechenden Seiten befolgen möchten, fügen Sie ihn <code>
        noindex 
-     </userinput> nach der URL-Maske einschließen. Stellen Sie sicher, dass Sie den Suchbegriff von der Maske mit einem Leerzeichen trennen, wie im folgenden Beispiel gezeigt: </p> <p> <code> include&amp;nbsp;*.swf&amp;nbsp;noindex </code> </p> <p>Das obige Beispiel gibt an, dass der Suchroboter alle Links aus Dateien mit der Variablen 
-     <userinput>
+     </code> nach der Maske "URL einschließen"hinzu. Stellen Sie sicher, dass Sie den Suchbegriff von der Maske mit einem Leerzeichen trennen, wie im folgenden Beispiel gezeigt: </p> <p> <code> include&amp;nbsp;*.swf&amp;nbsp;noindex </code> </p> <p>Im obigen Beispiel wird angegeben, dass der Suchroboter alle Links von Dateien mit der <code>
        .swf 
-     </userinput> , deaktiviert jedoch die Indizierung des gesamten Textes, der in diesen Dateien enthalten ist. </p> <p>Die  
-     <userinput>
+     </code> Erweiterung befolgt, aber die Indexierung des gesamten Textes in diesen Dateien deaktiviert. </p> <p>Der <code>
        noindex 
-     </userinput> Suchbegriff entspricht einem Roboter-Meta-Tag mit 
-     <userinput>
+     </code> Suchbegriff entspricht einem Roboter-Meta-Tag <code>
        content="noindex" 
-     </userinput> zwischen 
-     <userinput>
+     </code> zwischen den <code>
        &lt;head&gt;...&lt;/head&gt; 
-     </userinput> -Tags von übereinstimmenden Seiten. </p> </td> 
+     </code> Tags der entsprechenden Seiten. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>nofollow </p> </td> 
-   <td colname="col2"> <p> Wenn Sie den Text auf den Seiten indizieren möchten, die mit der URL-Maske übereinstimmen, aber nicht den Links der entsprechenden Seite folgen möchten, fügen Sie 
-     <userinput>
+   <td colname="col2"> <p> Wenn Sie den Text auf den Seiten indizieren möchten, die mit der URL-Maske übereinstimmen, aber nicht den Links der entsprechenden Seite folgen möchten, fügen Sie ihn <code>
        nofollow 
-     </userinput> nach der URL-Maske einschließen. Stellen Sie sicher, dass Sie den Suchbegriff von der Maske mit einem Leerzeichen trennen, wie im folgenden Beispiel gezeigt: </p> <p> <code> include&amp;nbsp;https://www.mydomain.com/photos&amp;nbsp;nofollow </code> </p> <p>Die  
-     <userinput>
+     </code> nach der Maske "URL einschließen"hinzu. Stellen Sie sicher, dass Sie den Suchbegriff von der Maske mit einem Leerzeichen trennen, wie im folgenden Beispiel gezeigt: </p> <p> <code> include&amp;nbsp;https://www.mydomain.com/photos&amp;nbsp;nofollow </code> </p> <p>Der <code>
        nofollow 
-     </userinput> Suchbegriff entspricht einem Roboter-Meta-Tag mit 
-     <userinput>
+     </code> Suchbegriff entspricht einem Roboter-Meta-Tag <code>
        content="nofollow" 
-     </userinput> zwischen 
-     <userinput>
+     </code> zwischen den <code>
        &lt;head&gt;...&lt;/head&gt; 
-     </userinput> -Tags von übereinstimmenden Seiten. </p> </td> 
+     </code> Tags der entsprechenden Seiten. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>regexp </p> </td> 
-   <td colname="col2"> <p>Dient zum Einschließen und Ausschließen von Masken. </p> <p>Jede URL-Maske, der 
-     <userinput>
+   <td colname="col2"> <p>Dient zum Einschließen und Ausschließen von Masken. </p> <p>Jede mit vorangestellte URL-Maske <code>
        regexp 
-     </userinput> wird wie ein regulärer Ausdruck behandelt. Wenn der Suchroboter auf Dokumente trifft, die mit einer URL-Maske für reguläre Ausdruck übereinstimmen, werden diese Dokumente nicht indiziert. Wenn der Suchroboter auf Dokumente trifft, die mit einer URL-Maske für reguläre Ausdruck übereinstimmen, werden diese Dokumente indiziert. Angenommen, Sie haben die folgende URL-Maske: </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*/products/.*\.html$ </code> </p> <p>Der Suchroboter schließt übereinstimmende Dateien wie 
-     <userinput>
+     </code> wird als regulärer Ausdruck behandelt. Wenn der Suchroboter auf Dokumente trifft, die mit einer URL-Maske für reguläre Ausdruck übereinstimmen, werden diese Dokumente nicht indiziert. Wenn der Suchroboter auf Dokumente trifft, die mit einer URL-Maske für reguläre Ausdruck übereinstimmen, werden diese Dokumente indiziert. Angenommen, Sie haben die folgende URL-Maske: </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*/products/.*\.html$ </code> </p> <p>Der Suchroboter schließt übereinstimmende Dateien wie 
+     <code>
        https://www.mydomain.com/products/page1.html 
-     </userinput> </p> <p>Wenn Sie die folgende URL-Maske für regulären Ausdruck ausschließen hatten: </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*\?..*$ </code> </p> <p>Der Suchroboter enthält keine URL, die einen CGI-Parameter wie 
-     <userinput>
+     </code> </p> <p>Wenn Sie die folgende URL-Maske für regulären Ausdruck ausschließen hatten: </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*\?..*$ </code> </p> <p>Der Suchroboter darf keine URL mit einem CGI-Parameter wie <code>
        https://www.mydomain.com/cgi/prog/?arg1=val1&amp;arg2=val2 
-     </userinput>. </p> <p>Wenn Sie die folgende URL-Maske für regulären Ausdruck hatten: </p> <p> <code> include&amp;nbsp;regexp&amp;nbsp;^.*\.swf$&amp;nbsp;noindex </code> </p> <p>Der Suchroboter folgt allen Links von Dateien mit der Erweiterung ".swf". Die  
-     <userinput>
+     </code>. </p> <p>Wenn Sie die folgende URL-Maske für regulären Ausdruck hatten: </p> <p> <code> include&amp;nbsp;regexp&amp;nbsp;^.*\.swf$&amp;nbsp;noindex </code> </p> <p>Der Suchroboter folgt allen Links von Dateien mit der Erweiterung ".swf". Der <code>
        noindex 
-     </userinput> gibt auch an, dass der Text der übereinstimmenden Dateien nicht indiziert ist. </p> <p>Siehe <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguläre Ausdrücke </a>. </p> </td> 
+     </code> Suchbegriff gibt auch an, dass der Text der übereinstimmenden Dateien nicht indiziert ist. </p> <p>Siehe <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguläre Ausdrücke </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -473,49 +453,39 @@ Ein Komma ist nicht als Trennzeichen zwischen der Maske und dem Schlüsselwort g
  <tbody> 
   <tr> 
    <td colname="col1"> <p>noindex </p> </td> 
-   <td colname="col2"> <p> Wenn Sie den Text nicht auf den Seiten indizieren möchten, die am oder vor dem von der Include-Maske angegebenen Datum datiert sind, fügen Sie 
-     <userinput>
+   <td colname="col2"> <p> Wenn Sie den Text nicht auf den Seiten indizieren möchten, die am oder vor dem Datum datiert sind, das durch die Include-Maske angegeben wird, fügen Sie ihn nach der Maske für das Datum einschließen wie folgt hinzu: <code>
        noindex 
-     </userinput> nach der Datumsmaske zum Einschließen wie im Folgenden gezeigt: </p> <p> <code> include-days&amp;nbsp;10&amp;nbsp;*.swf&amp;nbsp;noindex </code> </p> <p>Achten Sie darauf, dass Sie den Suchbegriff von der Maske durch einen Leerzeichen trennen. </p> <p>Das obige Beispiel gibt an, dass der Suchroboter alle Links von Dateien mit der Erweiterung ".swf"befolgt, die mindestens 10 Tage alt sind. Sie deaktiviert jedoch die Indexierung des gesamten Textes, der in diesen Dateien enthalten ist. </p> <p>Sie sollten sicherstellen, dass der Text für ältere Dateien nicht indiziert ist, sondern trotzdem alle Links aus diesen Dateien befolgen. Verwenden Sie in solchen Fällen eine Datumsmaske zum Einschließen mit dem Schlüsselwort "noindex", anstatt eine Datumsmaske zum Ausschließen zu verwenden. </p> </td> 
+     </code> </p> <p> <code> include-days&amp;nbsp;10&amp;nbsp;*.swf&amp;nbsp;noindex </code> </p> <p>Achten Sie darauf, dass Sie den Suchbegriff von der Maske durch einen Leerzeichen trennen. </p> <p>Das obige Beispiel gibt an, dass der Suchroboter alle Links von Dateien mit der Erweiterung ".swf"befolgt, die mindestens 10 Tage alt sind. Sie deaktiviert jedoch die Indexierung des gesamten Textes, der in diesen Dateien enthalten ist. </p> <p>Sie sollten sicherstellen, dass der Text für ältere Dateien nicht indiziert ist, sondern trotzdem alle Links aus diesen Dateien befolgen. Verwenden Sie in solchen Fällen eine Datumsmaske zum Einschließen mit dem Schlüsselwort "noindex", anstatt eine Datumsmaske zum Ausschließen zu verwenden. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>nofollow </p> </td> 
-   <td colname="col2"> <p> Wenn Sie den Text auf den Seiten indizieren möchten, die am oder vor dem Datum datiert sind, das durch die Include-Maske angegeben wird, Sie aber nicht den Links der entsprechenden Seite folgen möchten, fügen Sie 
-     <userinput>
+   <td colname="col2"> <p> Wenn Sie den Text auf den Seiten indizieren möchten, die am oder vor dem von der Include-Maske angegebenen Datum datiert sind, aber nicht den Links der entsprechenden Seite folgen möchten, fügen Sie ihn nach der Maske zum Einschließen des Datums wie folgt hinzu: <code>
        nofollow 
-     </userinput> nach der Datumsmaske zum Einschließen wie im Folgenden gezeigt: </p> <p> <code> include-days&amp;nbsp;8&amp;nbsp;https://www.mydomain.com/photos&amp;nbsp;nofollow </code> </p> <p>Achten Sie darauf, dass Sie den Suchbegriff von der Maske durch einen Leerzeichen trennen. </p> <p>Die  
-     <userinput>
+     </code> </p> <p> <code> include-days&amp;nbsp;8&amp;nbsp;https://www.mydomain.com/photos&amp;nbsp;nofollow </code> </p> <p>Achten Sie darauf, dass Sie den Suchbegriff von der Maske durch einen Leerzeichen trennen. </p> <p>Der <code>
        nofollow 
-     </userinput> Suchbegriff entspricht einem Roboter-Meta-Tag mit 
-     <userinput>
+     </code> Suchbegriff entspricht einem Roboter-Meta-Tag <code>
        content="nofollow" 
-     </userinput> zwischen 
-     <userinput>
+     </code> zwischen dem <code>
        &lt;head&gt;...&lt;/head&gt; 
-     </userinput> Tag der übereinstimmenden Seiten. </p> </td> 
+     </code> Tag der entsprechenden Seiten. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>server-date </p> </td> 
-   <td colname="col2"> <p>Dient zum Einschließen und Ausschließen von Masken. </p> <p>Der Suchroboter lädt im Allgemeinen jede Datei herunter und analysiert sie, bevor er die Datumsmasken überprüft. Dieses Verhalten tritt auf, da einige Dateitypen ein Datum in der Datei selbst angeben können. Ein HTML-Dokument kann beispielsweise Meta-Tags enthalten, mit denen das Dateidatum festgelegt wird. </p> <p>Wenn Sie viele Dateien je nach Datum ausschließen und keine unnötige Belastung Ihrer Server verursachen möchten, können Sie 
-     <userinput>
+   <td colname="col2"> <p>Dient zum Einschließen und Ausschließen von Masken. </p> <p>Der Suchroboter lädt im Allgemeinen jede Datei herunter und analysiert sie, bevor er die Datumsmasken überprüft. Dieses Verhalten tritt auf, da einige Dateitypen ein Datum in der Datei selbst angeben können. Ein HTML-Dokument kann beispielsweise Meta-Tags enthalten, mit denen das Dateidatum festgelegt wird. </p> <p>Wenn Sie viele Dateien je nach Datum ausschließen möchten und keine unnötige Belastung Ihrer Server verursachen möchten, können Sie die URL in der Datumsmaske <code>
        server-date 
-     </userinput> nach der URL in der Datumsmaske. </p> <p>Dieser Suchbegriff weist den Suchroboter an, dem Datum der Datei, die von Ihrem Server zurückgegeben wird, zu vertrauen, anstatt jede Datei zu analysieren. Bei der folgenden Datumsmaske zum Ausschließen werden z. B. Seiten ignoriert, die mit der URL übereinstimmen, wenn die Dokumente 90 Tage oder älter sind, und zwar entsprechend dem vom Server in den HTTP-Kopfzeilen zurückgegebenen Datum: </p> <p> <code> exclude-days&amp;nbsp;90&amp;nbsp;https://www.mydomain.com/docs/archive&amp;nbsp;server-date </code> </p> <p> Wenn das vom Server zurückgegebene Datum 90 Tage oder länger zurückliegt, 
-     <userinput>
+     </code> nach der URL verwenden. </p> <p>Dieser Suchbegriff weist den Suchroboter an, dem Datum der Datei, die von Ihrem Server zurückgegeben wird, zu vertrauen, anstatt jede Datei zu analysieren. Bei der folgenden Datumsmaske zum Ausschließen werden z. B. Seiten ignoriert, die mit der URL übereinstimmen, wenn die Dokumente 90 Tage oder älter sind, und zwar entsprechend dem vom Server in den HTTP-Kopfzeilen zurückgegebenen Datum: </p> <p> <code> exclude-days&amp;nbsp;90&amp;nbsp;https://www.mydomain.com/docs/archive&amp;nbsp;server-date </code> </p> <p> Wenn das vom Server zurückgegebene Datum 90 Tage oder länger zurückliegt, <code>
        server-date 
-     </userinput> gibt an, dass die ausgeschlossenen Dokumente nicht von Ihrem Server heruntergeladen werden. Dies bedeutet eine schnellere Indexierung Ihrer Dokumente und eine geringere Belastung Ihrer Server. Wenn   
-     <userinput>
+     </code> gibt dies an, dass die ausgeschlossenen Dokumente nicht von Ihrem Server heruntergeladen werden. Dies bedeutet eine schnellere Indexierung Ihrer Dokumente und eine geringere Belastung Ihrer Server. Wenn <code>
        server-date 
-     </userinput> nicht angegeben ist, ignoriert der Suchroboter das Datum, das vom Server in den HTTP-Headern zurückgegeben wird. Stattdessen wird jede Datei heruntergeladen und überprüft, um zu sehen, ob das Datum angegeben ist. Wenn in der Datei kein Datum angegeben ist, verwendet der Suchroboter das vom Server zurückgegebene Datum. </p> <p>Sie sollten 
-     <userinput>
+     </code> keine Angabe gemacht wird, ignoriert der Suchroboter das vom Server in den HTTP-Headern zurückgegebene Datum. Stattdessen wird jede Datei heruntergeladen und überprüft, um zu sehen, ob das Datum angegeben ist. Wenn in der Datei kein Datum angegeben ist, verwendet der Suchroboter das vom Server zurückgegebene Datum. </p> <p>Verwenden Sie diese Option nicht, <code>
        server-date 
-     </userinput> wenn Ihre Dateien Befehle enthalten, die das Serverdatum außer Kraft setzen. </p> </td> 
+     </code> wenn Ihre Dateien Befehle enthalten, die das Serverdatum außer Kraft setzen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>regexp </p> </td> 
-   <td colname="col2"> <p> Verwenden Sie diese sowohl für ein- als auch für ausgeschlossene Masken. </p> <p>Jede Datumsmaske, der 
-     <userinput>
+   <td colname="col2"> <p> Verwenden Sie diese sowohl für ein- als auch für ausgeschlossene Masken. </p> <p>Jede Datumsmaske, der ein Ausdruck vorangeht, <code>
        regexp 
-     </userinput> wird wie ein regulärer Ausdruck behandelt. </p> <p>Wenn der Suchroboter auf Dateien trifft, die mit der Datumsmaske "Regulärer Ausdruck ausschließen"übereinstimmen, werden diese nicht indiziert. </p> <p>Wenn der Suchroboter auf Dateien trifft, die mit einer Datumsmaske mit regulärem Ausdruck übereinstimmen, werden diese Dokumente indiziert. </p> <p>Angenommen, Sie haben die folgende Datumsmaske: </p> <p> <code> exclude-days&amp;nbsp;180&amp;nbsp;regexp&amp;nbsp;.*archive.* </code> </p> <p>Die Maske weist den Suchroboter an, passende Dateien, die 180 Tage oder älter sind, auszuschließen. Das heißt, Dateien, die das Wort "Archiv"in ihrer URL enthalten. </p> <p>Siehe <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguläre Ausdrücke </a>. </p> </td> 
+     </code> wird wie ein regulärer Vorgang behandelt. </p> <p>Wenn der Suchroboter auf Dateien trifft, die mit der Datumsmaske "Regulärer Ausdruck ausschließen"übereinstimmen, werden diese nicht indiziert. </p> <p>Wenn der Suchroboter auf Dateien trifft, die mit einer Datumsmaske mit regulärem Ausdruck übereinstimmen, werden diese Dokumente indiziert. </p> <p>Angenommen, Sie haben die folgende Datumsmaske: </p> <p> <code> exclude-days&amp;nbsp;180&amp;nbsp;regexp&amp;nbsp;.*archive.* </code> </p> <p>Die Maske weist den Suchroboter an, passende Dateien, die 180 Tage oder älter sind, auszuschließen. Das heißt, Dateien, die das Wort "Archiv"in ihrer URL enthalten. </p> <p>Siehe <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguläre Ausdrücke </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -639,7 +609,7 @@ Siehe [Konfigurieren eines inkrementellen Indexes einer gestaffelten Website](..
 
 Sie können festlegen, welche Dateitypen für dieses Konto durchsucht und indexiert werden [!DNL Content Types] sollen.
 
-Zu den Inhaltstypen, die Sie durchsuchen und indizieren können, zählen PDF-Dokumente, Textzeichen, Adobe Flash-Dokumente, Dateien aus Microsoft Office-Anwendungen wie Word, Excel und Powerpoint sowie Text in MP3-Dateien. Der in den ausgewählten Inhaltstypen gefundene Text wird zusammen mit dem gesamten anderen Text auf Ihrer Website durchsucht.
+Zu den Inhaltstypen, die Sie durchsuchen und indizieren können, zählen PDF-Dokumente, Dokumente, Adobe Flash-Filme, Dateien aus Microsoft Office-Anwendungen wie Word, Excel und Powerpoint sowie Text in MP3-Dateien. Der in den ausgewählten Inhaltstypen gefundene Text wird zusammen mit dem gesamten anderen Text auf Ihrer Website durchsucht.
 
 Bevor die Auswirkungen der Einstellungen für Inhaltstypen für Kunden sichtbar sind, müssen Sie Ihren Site-Index neu erstellen.
 
@@ -674,7 +644,7 @@ Wenn Sie nur die Indizierung bestimmter MP3-Dateien auf Ihrer Website verhindern
 
 * Umschließen Sie die Anker-Tags, die mit den MP3-Dateien mit `<nofollow>` und `</nofollow>` -Tags verknüpft sind. Der Suchroboter folgt nicht den Verknüpfungen zwischen diesen Tags.
 
-* Hinzufügen die URLs der MP3-Dateien als Ausschlussmasken.
+* hinzufügen die URLs der MP3-Dateien als Ausschlussmasken.
 
    Siehe [URL-Masken](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164).
 
@@ -682,7 +652,7 @@ Wenn Sie nur die Indizierung bestimmter MP3-Dateien auf Ihrer Website verhindern
 
 Sie können festlegen, welche Dateitypen für dieses Konto durchsucht und indexiert werden [!DNL Content Types] sollen.
 
-Zu den Inhaltstypen, die Sie durchsuchen und indizieren können, zählen PDF-Dokumente, Textzeichen, Adobe Flash-Dokumente, Dateien aus Microsoft Office-Anwendungen wie Word, Excel und Powerpoint sowie Text in MP3-Dateien. Der in den ausgewählten Inhaltstypen gefundene Text wird zusammen mit dem gesamten anderen Text auf Ihrer Website durchsucht.
+Zu den Inhaltstypen, die Sie durchsuchen und indizieren können, zählen PDF-Dokumente, Dokumente, Adobe Flash-Filme, Dateien aus Microsoft Office-Anwendungen wie Word, Excel und Powerpoint sowie Text in MP3-Dateien. Der in den ausgewählten Inhaltstypen gefundene Text wird zusammen mit dem gesamten anderen Text auf Ihrer Website durchsucht.
 
 Bevor die Auswirkungen der Einstellungen für Inhaltstypen für Kunden sichtbar sind, müssen Sie Ihren Site-Index neu erstellen.
 
@@ -782,61 +752,49 @@ Siehe [Konfigurieren eines inkrementellen Indexes einer gestaffelten Website](..
       </tr> 
       <tr> 
       <td colname="col1"> <p>Seiten-URL-Maske </p> </td> 
-      <td colname="col2"> <p>Identifizieren Sie die Webseite oder Seiten, die das Formular enthalten. Um ein Formular zu identifizieren, das auf einer einzelnen Seite angezeigt wird, geben Sie die URL für diese Seite wie im folgenden Beispiel ein: </p> <p> <code> https://www.mydomain.com/login.html </code> </p> <p>Um Formulare zu identifizieren, die auf mehreren Seiten angezeigt werden, geben Sie eine URL-Maske an, die zur Beschreibung der Seiten Platzhalter verwendet. Zur Identifizierung von Formularen, die auf einer ASP-Seite gefunden werden, geben Sie <code> https://www.mydomain.com/register/ </code>beispielsweise Folgendes an: </p> <p> <code> https://www.mydomain.com/register/*.asp&amp;nbsp; </code> </p> <p>Sie können auch einen regulären Ausdruck verwenden, um mehrere Seiten zu identifizieren. Geben Sie einfach die 
-      <userinput>
+      <td colname="col2"> <p>Identifizieren Sie die Webseite oder Seiten, die das Formular enthalten. Um ein Formular zu identifizieren, das auf einer einzelnen Seite angezeigt wird, geben Sie die URL für diese Seite wie im folgenden Beispiel ein: </p> <p> <code> https://www.mydomain.com/login.html </code> </p> <p>Um Formulare zu identifizieren, die auf mehreren Seiten angezeigt werden, geben Sie eine URL-Maske an, die zur Beschreibung der Seiten Platzhalter verwendet. Zur Identifizierung von Formularen, die auf einer ASP-Seite gefunden werden, geben Sie <code> https://www.mydomain.com/register/ </code>beispielsweise Folgendes an: </p> <p> <code> https://www.mydomain.com/register/*.asp&amp;nbsp; </code> </p> <p>Sie können auch einen regulären Ausdruck verwenden, um mehrere Seiten zu identifizieren. Geben Sie einfach den <code>
         regexp 
-      </userinput> -Schlüsselwort vor der URL-Maske wie im folgenden Beispiel gezeigt: </p> <p> <code> regexp&amp;nbsp;^https://www\.mydomain\.com/.*/login\.html$ </code> </p> </td> 
+      </code> Suchbegriff vor der URL-Maske an, wie im folgenden Beispiel: </p> <p> <code> regexp&amp;nbsp;^https://www\.mydomain\.com/.*/login\.html$ </code> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>URL-Maske der Aktion </p> </td> 
-      <td colname="col2"> <p>Identifiziert das Aktionsattribut des 
-      <userinput>
+      <td colname="col2"> <p>Identifiziert das Aktionsattribut des <code>
         &lt;form&gt; 
-      </userinput> Tag Deklarationen folgen. </p> <p>Wie bei der URL-Maske der Seite kann die Maske der AktionsURL in Form einer einzelnen URL, einer URL mit Platzhaltern oder eines regulären Ausdrucks dargestellt werden. </p> <p>Bei der URL-Maske kann es sich um eine der folgenden Optionen handeln: 
+      </code> Tags. </p> <p>Wie bei der URL-Maske der Seite kann die Maske der AktionsURL in Form einer einzelnen URL, einer URL mit Platzhaltern oder eines regulären Ausdrucks dargestellt werden. </p> <p>Bei der URL-Maske kann es sich um eine der folgenden Optionen handeln: 
       <ul id="ul_EDFE7688D3DD4C0BBACCE5D4648D8E44"> 
       <li id="li_77550A448D954EF29FF33EE5E8B5E0F5"> Ein vollständiger Pfad, wie im Folgenden gezeigt: <code> https://www.mydomain.com/products.html </code> </li> 
       <li id="li_F84E25553BBA41419BE153DC0709E011"> Ein partieller Pfad wie im Folgenden: <code> https://www.mydomain.com/products </code> </li> 
       <li id="li_8DADA1C8604740FCACBA30B4AAADB2A1"> Eine URL, die Platzhalter wie folgt verwendet: <code> https://www.mydomain.com/*.html </code> </li> 
       <li id="li_1EF637B450654B509AA4B618F7FD3C2B"> Ein regulärer Ausdruck wie im Folgenden: <code> regexp&amp;nbsp^https://www\.mydomain\.com/.*/login\.html$ </code> </li> 
-      </ul> </p> <p>Wenn Sie den Text nicht auf Seiten indizieren möchten, die durch eine URL-Maske oder eine Action URL-Maske identifiziert werden, oder wenn auf diesen Seiten keine Links folgen sollen, können Sie die Variable 
-      <userinput>
+      </ul> </p> <p>Wenn Sie den Text nicht auf Seiten indizieren möchten, die durch eine URL-Maske oder eine Action-URL-Maske identifiziert werden, oder wenn Sie nicht möchten, dass auf diesen Seiten Links folgen, können Sie die <code>
         noindex 
-      </userinput> und 
-      <userinput>
+      </code> und die <code>
         nofollow 
-      </userinput> Keywords. Sie können diese Suchbegriffe mithilfe von URL-Masken oder Einstiegspunkten zu Ihren Masken hinzufügen. </p> <p>Siehe <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573" type="concept" format="dita" scope="local"> Informationen zu URL-Einträgen </a>. </p> <p>Siehe <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164" type="concept" format="dita" scope="local"> Informationen zu URL-Masken </a>. </p> </td> 
+      </code> Suchbegriffe verwenden. Sie können diese Suchbegriffe mithilfe von URL-Masken oder Einstiegspunkten zu Ihren Masken hinzufügen. </p> <p>Siehe <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573" type="concept" format="dita" scope="local"> Informationen zu URL-Einträgen </a>. </p> <p>Siehe <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164" type="concept" format="dita" scope="local"> Informationen zu URL-Masken </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Formularnamenmaske </p> </td> 
-      <td colname="col2"> <p>Identifiziert Formulare, wenn die Variable 
-      <userinput>
+      <td colname="col2"> <p>Identifiziert Formulare, wenn die <code>
         &lt;form&gt; 
-      </userinput> -Tags in Ihren Webseiten enthalten ein Namensattribut. </p> <p>Sie können einen einfachen Namen ( 
-      <userinput>
+      </code> Tags auf Ihren Webseiten ein Namensattribut enthalten. </p> <p>Sie können einen einfachen Namen ( <code>
         login_form 
-      </userinput>), einen Namen mit einem Platzhalter ( 
-      <userinput>
+      </code>), einen Namen mit einem Platzhalter ( <code>
         form* 
-      </userinput>) oder einem regulären Ausdruck ( 
-      <userinput>
-        regexp ^.*autorisieren.*$ 
-      </userinput>). </p> <p>Normalerweise können Sie dieses Feld leer lassen, da Formulare in der Regel kein Namensattribut aufweisen. </p> </td> 
+      </code>) oder einen regulären Ausdruck ( <code>
+        regexp ^.*authorize.*$ 
+      </code>) verwenden. </p> <p>Normalerweise können Sie dieses Feld leer lassen, da Formulare in der Regel kein Namensattribut aufweisen. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Formular-ID-Maske </p> </td> 
-      <td colname="col2"> <p>Identifiziert Formulare, wenn die Variable 
-      <userinput>
+      <td colname="col2"> <p>Identifiziert Formulare, wenn die <code>
         &lt;form&gt; 
-      </userinput> -Tags in Ihren Webseiten enthalten ein id-Attribut. </p> <p>Sie können einen einfachen Namen ( 
-      <userinput>
+      </code> Tags auf Ihren Webseiten ein id-Attribut enthalten. </p> <p>Sie können einen einfachen Namen ( <code>
         login_form 
-      </userinput>), einen Namen mit einem Platzhalter ( 
-      <userinput>
+      </code>), einen Namen mit einem Platzhalter ( <code>
         form* 
-      </userinput>) oder einem regulären Ausdruck ( 
-      <userinput>
-        regexp ^.*autorisieren.*$ 
-      </userinput>). </p> <p>Normalerweise können Sie dieses Feld leer lassen, da Formulare in der Regel kein Namensattribut aufweisen. </p> </td> 
+      </code>) oder einen regulären Ausdruck ( <code>
+        regexp ^.*authorize.*$ 
+      </code>) verwenden. </p> <p>Normalerweise können Sie dieses Feld leer lassen, da Formulare in der Regel kein Namensattribut aufweisen. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Parameter </p> </td> 
@@ -852,52 +810,43 @@ Siehe [Konfigurieren eines inkrementellen Indexes einer gestaffelten Website](..
       </tr> 
       <tr> 
       <td colname="col1"> <p>Methode überschreiben </p> </td> 
-      <td colname="col2"> <p>Geben Sie an, ob sich die Zielgruppe der Formularübermittlung von der im Aktionsattribut des Formulars verwendeten unterscheidet und wann das Senden-JavaScript die Methode geändert hat. </p> <p>Die Standardwerte für alle Formularparameter ( 
-      <userinput>
+      <td colname="col2"> <p>Geben Sie an, ob sich die Zielgruppe der Formularübermittlung von der im Aktionsattribut des Formulars verwendeten unterscheidet und wann das Senden-JavaScript die Methode geändert hat. </p> <p>Die Standardwerte für alle Formularparameter ( <code>
         &lt;input&gt; 
-      </userinput> Tags, einschließlich ausgeblendeter Felder), die Standardeinstellung 
-      <userinput>
+      </code> Tags, einschließlich ausgeblendeter Felder), die Standardwerte <code>
         &lt;option&gt; 
-      </userinput> von 
-      <userinput>
-        &lt;Auswahl&gt; 
-      </userinput> -Tag und der Standardtext zwischen 
-      <userinput>
+      </code> eines <code>
+        &lt;select&gt; 
+      </code> -Tags und der Standardtext zwischen <code>
         &lt;textarea&gt;...&lt;/textarea&gt; 
-      </userinput> -Tags) von der Webseite gelesen werden. Jeder Parameter, der im Abschnitt " <span class="wintitle"> Formularübermittlung" </span> im Feld " <span class="uicontrol"> </span> Parameter"aufgelistet ist, wird jedoch durch die Standardformulare ersetzt. </p> </td> 
+      </code> Tags) werden von der Webseite gelesen. Jeder Parameter, der im Abschnitt " <span class="wintitle"> Formularübermittlung" </span> im Feld " <span class="uicontrol"> </span> Parameter"aufgelistet ist, wird jedoch durch die Standardformulare ersetzt. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Parameter </p> </td> 
-      <td colname="col2"> <p>Sie können den Formularsendeparametern mit dem Präfix 
-      <userinput>
-        nicht 
-      </userinput> Suchbegriff. </p> <p>Beim Präfix eines Parameters mit 
-      <userinput>
-        nicht 
-      </userinput>, wird es nicht als Teil der Formularübermittlung gesendet. Dieses Verhalten ist nützlich für Kontrollkästchen, die deaktiviert gesendet werden sollen. </p> <p>Angenommen, Sie möchten die folgenden Parameter senden: </p> <p> 
+      <td colname="col2"> <p>Sie können Formularübermittlungsparameter mit dem <code>
+        not 
+      </code> Suchbegriff als Präfix voranstellen. </p> <p>Wenn Sie einem Parameter das Präfix voranstellen, <code>
+        not 
+      </code>wird er nicht als Teil der Formularübermittlung gesendet. Dieses Verhalten ist nützlich für Kontrollkästchen, die deaktiviert gesendet werden sollen. </p> <p>Angenommen, Sie möchten die folgenden Parameter senden: </p> <p> 
       <ul id="ul_962D12BACF464FF189DB12BFAFCC93A6"> 
       <li id="li_830C6C3EC8D2448388A453BB8EDE5940"> Der E-Mail-Parameter mit dem Wert 
-      <userinput>
+      <code>
         nobody@mydomain.com 
-      </userinput> </li> 
+      </code> </li> 
       <li id="li_905497E3FACE472DBDD49392D5B45E01"> Der Parameter password mit dem Wert 
-      <userinput>
+      <code>
         tryme 
-      </userinput> </li> 
+      </code> </li> 
       <li id="li_AAA411708ADC464793EADF0D821E282E"> Der Parameter "mycheckbox"ist deaktiviert. </li> 
-      <li id="li_0D3DDE641E2B4BEF9F570C03FDB40ED2"> <p>Alle weiteren 
-      <userinput>
+      <li id="li_0D3DDE641E2B4BEF9F570C03FDB40ED2"> <p>Alle anderen <code>
         &lt;form&gt; 
-      </userinput> Parameter als Standardwerte </p> </li> 
+      </code> Parameter als Standardwerte </p> </li> 
       </ul> </p> <p>Der Parameter für die Formularübermittlung würde wie folgt aussehen: </p> <p> <code> email=nobody@mydomain.com 
         password=tryme 
-        not&nbsp;mycheckbox </code> </p> <p>Das method-Attribut der 
-      <userinput>
+        not&nbsp;mycheckbox </code> </p> <p>Das Methodenattribut des <code>
         &lt;form&gt; 
-      </userinput> -Tag auf der Webseite verwendet wird, um zu entscheiden, ob die Daten mit der GET-Methode oder der POST-Methode an Ihren Server gesendet werden. </p> <p>Wenn die Variable     
-      <userinput>
+      </code> -Tags auf der Webseite wird verwendet, um zu entscheiden, ob die Daten mit der GET oder der POST an Ihren Server gesendet werden. </p> <p>Enthält das <code>
         &lt;form&gt; 
-      </userinput> -Tag kein Methodenattribut enthält, wird das Formular mit der GET-Methode gesendet. </p> </td> 
+      </code> -Tag kein Methodenattribut, wird das Formular mit der GET gesendet. </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -1044,7 +993,7 @@ Da die Dokumente für XML-Crawls bereits in einzelne Dateien aufgeteilt sind, ge
 <a href="index:<ic_config_name>?url="{url}">
 ```
 
-Wenn das Adobe-Setup beispielsweise die folgenden Links zurückgegeben hat:
+Wenn beispielsweise beim Setup der Adobe die folgenden Links zurückgegeben wurden:
 
 ```
 <a href="https://www.adobe.com/somepath/doc1.xml">doc 1</a> 
@@ -1156,10 +1105,9 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       <ul id="ul_1ADC3DFBC929467385F7465BE8E13635"> 
       <li id="li_64FCD749F55442BAB316BD474128D4F9"> <span class="uicontrol"> Text </span> <p>Einfache Dateien mit flachem Text, kommagetrennte, tabulatorgetrennte oder andere konsistent getrennte Formate. Jede durch Zeilenumbrüche getrennte Textzeile entspricht einem einzelnen Dokument und wird mit dem angegebenen Trennzeichen analysiert. </p> <p>Sie können jeden Wert oder jede Spalte einem Metadatenfeld zuordnen, auf das die Spaltennummer verweist, beginnend mit 1 (1). </p> </li> 
       <li id="li_2A4F16CE6DCE4114B7F8E4FE156252BB"> <span class="uicontrol"> Feed </span> <p>Lädt ein primäres XML-Dokument herunter, das mehrere "Zeilen"mit Informationen enthält. </p> </li> 
-      <li id="li_5A61C53522D74D4C9A5F65989604BDEF"> <span class="uicontrol"> XML </span> <p>Lädt ein primäres XML-Dokument herunter, das Links enthält ( 
-      <userinput>
+      <li id="li_5A61C53522D74D4C9A5F65989604BDEF"> <span class="uicontrol"> XML </span> <p>Lädt ein primäres XML-Dokument herunter, das Links ( <code>
         &lt;a&gt; 
-      </userinput>) zu einzelnen XML-Dokumenten. </p> </li> 
+      </code>) zu einzelnen XML-Dokumenten enthält. </p> </li> 
       </ul> </p> </td> 
       </tr> 
       <tr> 
@@ -1231,7 +1179,7 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       <ul id="ul_981AE2C6D30443BDBFC6575D413732A2"> 
       <li id="li_A42CB9DFFF8C45A7BAC2D471FE96CEBE"> <span class="uicontrol"> Spalte </span> <p> Gibt eine Spaltennummer an, wobei die erste Spalte 1 (1) ist. Um neue Zuordnungszeilen für jede Spalte hinzuzufügen, klicken Sie unter <span class="wintitle"> Aktion </span>auf <span class="uicontrol"> + </span>. </p> <p>Sie müssen nicht auf jede Spalte in der Datenquelle verweisen. Stattdessen können Sie Werte überspringen. </p> </li> 
       <li id="li_26E8C9554A5D4BC5A5073D6385E3626F"> <span class="uicontrol"> Feld </span> <p>Definiert den Wert des Namensattributs, der für jedes generierte &lt;meta&gt;-Tag verwendet wird. </p> </li> 
-      <li id="li_5DFA514B7F9549B98D6CBC095A66033C"> <span class="uicontrol"> Metadaten? </span> <p>Das <span class="uicontrol"> Feld wird </span> zu einer Dropdown-Liste, aus der Sie definierte Metadatenfelder für das aktuelle Konto auswählen können. </p> <p>Der <span class="uicontrol"> Feldwert </span> kann ein nicht definiertes Metadatenfeld sein, falls gewünscht. Ein nicht definiertes Metadatenfeld ist manchmal hilfreich, um Inhalte zu erstellen, die vom <span class="wintitle"> Filtern des Skripts verwendet werden </span>. </p> <p>Siehe <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Grundlagen zum Filtern von Skripten </a>. </p> <p>Wenn Index Connector XML-Dokumente mit mehreren Treffern in einem beliebigen Zuordnungsfeld verarbeitet, werden die Werte in einem zwischengespeicherten Dokument zu einem einzigen Wert verkettet. Standardmäßig werden diese Werte mit einem Komma-Trennzeichen kombiniert. Angenommen, der entsprechende <span class="wintitle"> Feldwert </span> ist ein definiertes Metadatenfeld. Darüber hinaus ist für dieses Feld das <span class="wintitle"> Zulassungsliste </span> -Attribut festgelegt. In diesem Fall wird der Liste-Trennzeichen-Wert des Felds, das erste definierte Trennzeichen, in der Verkettung verwendet. </p> </li> 
+      <li id="li_5DFA514B7F9549B98D6CBC095A66033C"> <span class="uicontrol"> Metadaten? </span> <p>Das <span class="uicontrol"> Feld wird </span> zu einer Dropdown-Liste, aus der Sie definierte Metadatenfelder für das aktuelle Konto auswählen können. </p> <p>Der <span class="uicontrol"> Feldwert </span> kann ein nicht definiertes Metadatenfeld sein, falls gewünscht. Ein nicht definiertes Metadatenfeld ist manchmal hilfreich, um Inhalte zu erstellen, die vom <span class="wintitle"> Filtern des Skripts verwendet werden </span>. </p> <p>Siehe <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Grundlagen zum Filtern von Skripten </a>. </p> <p>Wenn Index Connector XML-Dokumente mit mehreren Treffern in einem beliebigen Zuordnungsfeld verarbeitet, werden die Werte in einem zwischengespeicherten Dokument zu einem einzigen Wert verkettet. Standardmäßig werden diese Werte mit einem Komma-Trennzeichen kombiniert. Angenommen, der entsprechende <span class="wintitle"> Feldwert </span> ist ein definiertes Metadatenfeld. Darüber hinaus ist für dieses Feld das <span class="wintitle"> Zulassungslisten- </span> Attribut festgelegt. In diesem Fall wird der Liste-Trennzeichen-Wert des Felds, das erste definierte Trennzeichen, in der Verkettung verwendet. </p> </li> 
       <li id="li_80DB205525094CE1AA6762BFC7892C95"> <span class="uicontrol"> Primärschlüssel? </span> <p>Nur eine Kartendefinition wird als Primärschlüssel identifiziert. Dieses Feld wird zur eindeutigen Referenz, die angezeigt wird, wenn dieses Dokument zum Index hinzugefügt wird. Dieser Wert wird in der URL des Dokuments im Index verwendet. </p> <p>Die <span class="uicontrol"> Primär Key- </span> Werte müssen für alle Dokumente, die von der Index Connector-Konfiguration repräsentiert werden, eindeutig sein. Alle gefundenen Duplikat werden ignoriert. Wenn Ihre Quellwerte keinen eindeutigen Dokumente für die Verwendung als <span class="uicontrol"> Primär-Key enthalten </span>, aber zwei oder mehr zusammengeführte  <i>können</i> einen eindeutigen Bezeichner bilden, können Sie den <span class="uicontrol"> Primär-Schlüssel definieren, </span> indem Sie mehrere <span class="uicontrol"> </span> Spaltenwerte mit einem vertikalen Balken ("|"), der die Werte trennt, kombinieren. </p> </li> 
       <li id="li_80DB205525094CE1AA6762BFC7892D96"> <span class="uicontrol"> HTML entfernen? </span> <p>Wenn diese Option aktiviert ist, werden alle in den Daten dieses Felds gefundenen HTML-Tags entfernt. </p> </li> 
       <li id="li_359D2902859B4C5BADB0BA26F0BA4DC0"> <span class="uicontrol"> Aktion </span> <p>Hiermit können Sie Zeilen zur Map hinzufügen oder Zeilen aus der Map entfernen. Die Reihenfolge der Zeilen ist nicht wichtig. </p> </li> 
@@ -1278,7 +1226,7 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       </tr> 
       <tr> 
       <td colname="col1"> <p>itemTag </p> </td> 
-      <td colname="col2"> <p>Identifiziert das XML-Element, mit dem Sie einzelne XML-Zeilen in der angegebenen Datenquellendatei identifizieren können. </p> <p>Im folgenden Feed-Fragment eines Adobe XML-Dokuments lautet der itemTag-Wert beispielsweise <span class="codeph"> record </span>: </p> <p> <code> &lt;?xml&nbsp;version="1.0"&nbsp;encoding="utf-8"?&gt; 
+      <td colname="col2"> <p>Identifiziert das XML-Element, mit dem Sie einzelne XML-Zeilen in der angegebenen Datenquellendatei identifizieren können. </p> <p>Im folgenden Feed-Fragment eines XML-Dokuments der Adobe lautet der itemTag-Wert beispielsweise <span class="codeph"> record </span>: </p> <p> <code> &lt;?xml&nbsp;version="1.0"&nbsp;encoding="utf-8"?&gt; 
         &lt;!DOCTYPE&nbsp;gsafeed&nbsp;PUBLIC&nbsp;"-//Google//DTD&nbsp;GSA&nbsp;Feeds//EN"&nbsp;""&gt; &lt;gsafeed&gt; 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;header&gt; 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;datasource&gt;marketplace&lt;/datasource&gt; 
@@ -1319,7 +1267,7 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       <td colname="col1"> <p>Landkarte </p> </td> 
       <td colname="col2"> <p>Ermöglicht die Angabe von Zuordnungen von XML-Elementen zu Metadaten mithilfe von XPath-Ausdrücken. </p> <p> 
       <ul id="ul_604108C0277C4892AE8A40CA39889ABD"> 
-      <li id="li_0AF92270AE9F4BA8B2C7EE41FABC0F34"> <span class="uicontrol"> Tag </span> <p>Gibt eine XPath-Darstellung der analysierten XML-Daten an. Anhand des obigen Adobe XML-Dokuments unter der Option "itemTag"könnte es mit der folgenden Syntax zugeordnet werden: </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
+      <li id="li_0AF92270AE9F4BA8B2C7EE41FABC0F34"> <span class="uicontrol"> Tag </span> <p>Gibt eine XPath-Darstellung der analysierten XML-Daten an. Anhand des obigen XML-Dokuments für die Adobe könnte es unter der Option itemTag mithilfe der folgenden Syntax zugeordnet werden: </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
       /record/metadata/meta[@name='title']/@content&nbsp;-&gt;&nbsp;title 
       /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;desc 
       /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;body </code> </p> <p>Die obige Syntax übersetzt sich wie folgt: </p> <p> 
@@ -1330,7 +1278,7 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       <li id="li_E35EAE3D284D46D485D9064D7BB6AB13"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>Das <span class="codeph"> content- </span> Attribut eines <span class="codeph"> meta- </span> Elements, das in einem <span class="codeph"> metadata- </span> Element enthalten ist, das im record- <span class="codeph"> Element enthalten ist, dessen name-Attribut </span> <span class="codeph"> </span><span class="codeph"> </span>description ist, wird dem MetadatenfeldTextkörper zugeordnet. </p> </li> 
       </ul> </p> <p>XPath ist eine relativ komplizierte Notation. Weitere Informationen finden Sie unter: </p> <p>Siehe <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_8147075D7ACD4811A7ED335F23FE62A6"> <span class="uicontrol"> Feld </span> <p>Definiert den Wert des Namensattributs, der für jedes generierte <span class="codeph"> &lt;meta&gt;- </span> Tag verwendet wird. </p> </li> 
-      <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadaten? </span> <p>Das <span class="uicontrol"> Feld wird </span> zu einer Dropdown-Liste, aus der Sie definierte Metadatenfelder für das aktuelle Konto auswählen können. </p> <p>Der <span class="uicontrol"> Feldwert </span> kann ein nicht definiertes Metadatenfeld sein, falls gewünscht. Ein nicht definiertes Metadatenfeld ist manchmal hilfreich, um Inhalte zu erstellen, die vom <span class="wintitle"> Filtern des Skripts verwendet werden </span>. </p> <p>Siehe <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Grundlagen zum Filtern von Skripten </a>. </p> <p>Wenn Index Connector XML-Dokumente mit mehreren Treffern in einem beliebigen Zuordnungsfeld verarbeitet, werden die Werte in einem zwischengespeicherten Dokument zu einem einzigen Wert verkettet. Standardmäßig werden diese Werte mit einem Komma-Trennzeichen kombiniert. Angenommen, der entsprechende <span class="wintitle"> Feldwert </span> ist ein definiertes Metadatenfeld. Darüber hinaus ist für dieses Feld das <span class="wintitle"> Zulassungsliste </span> -Attribut festgelegt. In diesem Fall wird der Liste-Trennzeichen-Wert des Felds, das erste definierte Trennzeichen, in der Verkettung verwendet. </p> </li> 
+      <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadaten? </span> <p>Das <span class="uicontrol"> Feld wird </span> zu einer Dropdown-Liste, aus der Sie definierte Metadatenfelder für das aktuelle Konto auswählen können. </p> <p>Der <span class="uicontrol"> Feldwert </span> kann ein nicht definiertes Metadatenfeld sein, falls gewünscht. Ein nicht definiertes Metadatenfeld ist manchmal hilfreich, um Inhalte zu erstellen, die vom <span class="wintitle"> Filtern des Skripts verwendet werden </span>. </p> <p>Siehe <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Grundlagen zum Filtern von Skripten </a>. </p> <p>Wenn Index Connector XML-Dokumente mit mehreren Treffern in einem beliebigen Zuordnungsfeld verarbeitet, werden die Werte in einem zwischengespeicherten Dokument zu einem einzigen Wert verkettet. Standardmäßig werden diese Werte mit einem Komma-Trennzeichen kombiniert. Angenommen, der entsprechende <span class="wintitle"> Feldwert </span> ist ein definiertes Metadatenfeld. Darüber hinaus ist für dieses Feld das <span class="wintitle"> Zulassungslisten- </span> Attribut festgelegt. In diesem Fall wird der Liste-Trennzeichen-Wert des Felds, das erste definierte Trennzeichen, in der Verkettung verwendet. </p> </li> 
       <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> Primärschlüssel? </span> <p>Nur eine Kartendefinition wird als Primärschlüssel identifiziert. Dieses Feld wird zur eindeutigen Referenz, die angezeigt wird, wenn dieses Dokument zum Index hinzugefügt wird. Dieser Wert wird in der URL des Dokuments im Index verwendet. </p> <p>Die <span class="uicontrol"> Primär Key- </span> Werte müssen für alle Dokumente, die von der Index Connector-Konfiguration repräsentiert werden, eindeutig sein. Alle gefundenen Duplikat werden ignoriert. Wenn Ihre Quellwerte keinen eindeutigen Dokumente für die Verwendung als <span class="uicontrol"> Primär-Key enthalten </span>, aber zwei oder mehr zusammengeführte  <i>können</i> einen eindeutigen Bezeichner bilden, können Sie den <span class="uicontrol"> Primär-Schlüssel definieren, </span> indem Sie mehrere <span class="uicontrol"> Tag- </span> Definitionen mit einem vertikalen Balken ("|"), der die Werte trennt, kombinieren. </p> </li> 
       <li id="li_DEA24003E97E406DA2510C43CCFDC81F"> <span class="uicontrol"> HTML entfernen? </span> <p>Wenn diese Option aktiviert ist, werden alle in den Daten dieses Felds gefundenen HTML-Tags entfernt. </p> </li> 
       <li id="li_5E829D1D0DBD4BB7AAB5DB983053D248"> <span class="uicontrol"> Für Löschen verwenden? </span> <p>Wird nur bei Inkrementellen Indexvorgängen verwendet. Datensätze, die diesem XPath-Muster entsprechen, identifizieren Elemente zum Löschen. Der <span class="uicontrol"> Primär Key- </span> Wert für jeden dieser Datensätze wird verwendet, um "delete"-Anforderungen zu erstellen, wie beim Löschen des Dateipfads. </p> <p> <b>Hinweis</b>: Diese Funktion ist standardmäßig nicht aktiviert. Wenden Sie sich an den technischen Support, um die Funktion für Ihre Verwendung zu aktivieren. </p> </li> 
@@ -1351,10 +1299,9 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       </tr> 
       <tr> 
       <td colname="col1"> <p>Dateipfad </p> </td> 
-      <td colname="col2"> <p>Gibt den Pfad zum primären XML-Dokument an, das Links enthält ( 
-      <userinput>
+      <td colname="col2"> <p>Gibt den Pfad zum primären XML-Dokument an, das Links ( <code>
         &lt;a&gt; 
-      </userinput>) zu einzelnen XML-Dokumenten. </p> <p>Der Pfad ist relativ zum Stammverzeichnis der Hostadresse. </p> </td> 
+      </code>) zu einzelnen XML-Dokumenten enthält. </p> <p>Der Pfad ist relativ zum Stammverzeichnis der Hostadresse. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Protokoll </p> </td> 
@@ -1375,7 +1322,7 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       <td colname="col1"> <p>Landkarte </p> </td> 
       <td colname="col2"> <p>Hiermit können Sie Zuordnungen von Spalten zu Metadaten mithilfe von Spaltennummern festlegen. </p> <p> 
       <ul id="ul_06F50CBA0AA64C7CB1AFAE076E629A64"> 
-      <li id="li_0FA2502869BA40DC93D790B79E15A9D2"> <span class="uicontrol"> Tag </span> <p>Gibt eine XPath-Darstellung der analysierten XML-Daten an. Mit dem obigen Beispiel-Adobe XML-Dokument unter der Option "item-Tag"können Sie es mit der folgenden Syntax zuordnen: </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
+      <li id="li_0FA2502869BA40DC93D790B79E15A9D2"> <span class="uicontrol"> Tag </span> <p>Gibt eine XPath-Darstellung der analysierten XML-Daten an. Mithilfe des obigen XML-Dokuments für die Beispielsyntax unter der Option itemTag können Sie es mithilfe der folgenden Syntax zuordnen: </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
         /record/metadata/meta[@name='title']/@content&nbsp;-&gt;&nbsp;title 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;desc 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;body </code> </p> <p>Die obige Syntax übersetzt sich wie folgt: </p> <p> 
@@ -1386,7 +1333,7 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       <li id="li_7FA6A53DFD3D42A98B7BA17CC29DDB81"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>Das <span class="codeph"> content- </span> Attribut eines <span class="codeph"> meta- </span> Elements, das in einem <span class="codeph"> metadata- </span> Element enthalten ist, das im record- <span class="codeph"> Element enthalten ist, dessen name-Attribut </span> <span class="codeph"> </span><span class="codeph"> </span>description ist, wird dem MetadatenfeldTextkörper zugeordnet. </p> </li> 
       </ul> </p> <p>XPath ist eine relativ komplizierte Notation. Weitere Informationen finden Sie unter: </p> <p>Siehe <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_84999D07E0AE4265BC7928BBB49957B9"> <span class="uicontrol"> Feld </span> <p>Definiert den Wert des Namensattributs, der für jedes generierte &lt;meta&gt;-Tag verwendet wird. </p> </li> 
-      <li id="li_E125788D0F5242958BD790E26A675C20"> <span class="uicontrol"> Metadaten? </span> <p>Das <span class="uicontrol"> Feld wird </span> zu einer Dropdown-Liste, aus der Sie definierte Metadatenfelder für das aktuelle Konto auswählen können. </p> <p>Der <span class="uicontrol"> Feldwert </span> kann ein nicht definiertes Metadatenfeld sein, falls gewünscht. Ein nicht definiertes Metadatenfeld ist manchmal hilfreich, um Inhalte zu erstellen, die vom <span class="wintitle"> Filtern des Skripts verwendet werden </span>. </p> <p>Siehe <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Grundlagen zum Filtern von Skripten </a>. </p> <p>Wenn Index Connector XML-Dokumente mit mehreren Treffern in einem beliebigen Zuordnungsfeld verarbeitet, werden die Werte in einem zwischengespeicherten Dokument zu einem einzigen Wert verkettet. Standardmäßig werden diese Werte mit einem Komma-Trennzeichen kombiniert. Angenommen, der entsprechende <span class="wintitle"> Feldwert </span> ist ein definiertes Metadatenfeld. Darüber hinaus ist für dieses Feld das <span class="wintitle"> Zulassungsliste </span> -Attribut festgelegt. In diesem Fall wird der Liste-Trennzeichen-Wert des Felds, das erste definierte Trennzeichen, in der Verkettung verwendet. </p> </li> 
+      <li id="li_E125788D0F5242958BD790E26A675C20"> <span class="uicontrol"> Metadaten? </span> <p>Das <span class="uicontrol"> Feld wird </span> zu einer Dropdown-Liste, aus der Sie definierte Metadatenfelder für das aktuelle Konto auswählen können. </p> <p>Der <span class="uicontrol"> Feldwert </span> kann ein nicht definiertes Metadatenfeld sein, falls gewünscht. Ein nicht definiertes Metadatenfeld ist manchmal hilfreich, um Inhalte zu erstellen, die vom <span class="wintitle"> Filtern des Skripts verwendet werden </span>. </p> <p>Siehe <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Grundlagen zum Filtern von Skripten </a>. </p> <p>Wenn Index Connector XML-Dokumente mit mehreren Treffern in einem beliebigen Zuordnungsfeld verarbeitet, werden die Werte in einem zwischengespeicherten Dokument zu einem einzigen Wert verkettet. Standardmäßig werden diese Werte mit einem Komma-Trennzeichen kombiniert. Angenommen, der entsprechende <span class="wintitle"> Feldwert </span> ist ein definiertes Metadatenfeld. Darüber hinaus ist für dieses Feld das <span class="wintitle"> Zulassungslisten- </span> Attribut festgelegt. In diesem Fall wird der Liste-Trennzeichen-Wert des Felds, das erste definierte Trennzeichen, in der Verkettung verwendet. </p> </li> 
       <li id="li_9F435EFB3EC74B409EC82A851824609F"> <span class="uicontrol"> Primärschlüssel? </span> <p>Nur eine Kartendefinition wird als Primärschlüssel identifiziert. Dieses Feld wird zur eindeutigen Referenz, die angezeigt wird, wenn dieses Dokument zum Index hinzugefügt wird. Dieser Wert wird in der URL des Dokuments im Index verwendet. </p> <p>Die <span class="uicontrol"> Primär Key- </span> Werte müssen für alle Dokumente, die von der Index Connector-Konfiguration repräsentiert werden, eindeutig sein. Alle gefundenen Duplikat werden ignoriert. Wenn Ihre Quellwerte keinen eindeutigen Dokumente für die Verwendung als <span class="uicontrol"> Primär-Key enthalten </span>, aber zwei oder mehr zusammengeführte  <i>können</i> einen eindeutigen Bezeichner bilden, können Sie den <span class="uicontrol"> Primär-Schlüssel definieren, </span> indem Sie mehrere <span class="uicontrol"> Tag- </span> Definitionen mit einem vertikalen Balken ("|"), der die Werte trennt, kombinieren. </p> </li> 
       <li id="li_9F435EFB3EC74B409EC82A851824610G"> <span class="uicontrol"> HTML entfernen? </span> <p>Wenn diese Option aktiviert ist, werden alle in den Daten dieses Felds gefundenen HTML-Tags entfernt. </p> </li> 
       <li id="li_6302D18971AD439FBECE27742649C56B"> <span class="uicontrol"> Aktion </span> <p>Hiermit können Sie Zeilen zur Map hinzufügen oder Zeilen aus der Map entfernen. Die Reihenfolge der Zeilen ist nicht wichtig. </p> </li> 
