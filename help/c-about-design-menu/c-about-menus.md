@@ -8,7 +8,10 @@ title: Menüs
 topic: Design,Site search and merchandising
 uuid: 011050cd-21b6-4150-9503-18fa3f771626
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+workflow-type: tm+mt
+source-wordcount: '763'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ Sie können Menüs verwenden, um Ihre Präsentationsebene anzupassen.
 
 ## Menüs verwenden {#concept_68123CE5CF4447B59217B5D721424E32}
 
-Fügen Sie Menüs hinzu, die den Einstellungen in Ihrer Suche zugeordnet sind. Jedes Element in einem Menü gibt den Wert für die Einstellung des Menüs an. Sie können die Menübeschriftungen auch anpassen.
+hinzufügen Menüs, die den Einstellungen in Ihrer Suche zugeordnet sind. Jedes Element in einem Menü gibt den Wert für die Einstellung des Menüs an. Sie können die Menübeschriftungen auch anpassen.
 
 In Ihrer Präsentationsvorlage können Sie auf die definierten Menüs verweisen. Sie können sie dann in jede gewünschte HTML-Komponente einfügen, z. B. ein Select-Steuerelement. Diese Kombination ermöglicht es Benutzern, ihre Suchergebnisse anzupassen. Es werden drei Menütypen unterstützt: Sortieren, Zählen und Navigation.
 
@@ -70,12 +73,12 @@ t_adding_a_new_menu.xml
       <li id="li_D81876660A8B48AFB70D3317063FBF6F"> <span class="uicontrol"> Sortieren </span> <p>Organisiert die Suche nach einem der definierten Metadatentypen. </p> <p>Sie können beispielsweise ein Sortierungsmenü mit den folgenden Metadatentypen definieren: drei wichtige Punkte; ein benutzerdefiniertes Metadatenfeld, z. B. einen Verfügbarkeitscode; und Preis. Die drei Artikel können mit den Bezeichnungen "Sortieren nach Relevanz", "Sortieren nach Verfügbarkeit"und "Sortieren nach Preis"versehen werden. Wenn Sie dies in Ihre Präsentationsvorlage aufnehmen, kann der Kunde mit diesem Steuerelement seine Suchergebnisse sortieren. </p> </li> 
       <li id="li_63AE06B544B64DCAA8C55031B3DFFFF7"> <span class="uicontrol"> Anzahl </span> <p>Definiert die Anzahl der anzuzeigenden Suchergebnisse. Dieser Menütyp wird dem cgi-Parameter <span class="varname"> sp_c zugeordnet </span>. </p> <p>Siehe CGI-Parameter für die <a href="../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8" format="dita" scope="local"> Backend-Suche </a>. </p> </li> 
       <li id="li_EEC810D420FF41498ECE49EBAAB33BE5"> <span class="uicontrol"> Navigation </span> <p>Gibt einen Satz statischer URLs an, die mit Menüelementen verknüpft sind. Normalerweise wird ein Navigationsmenü verwendet, um eine Navigationsleiste auf der obersten Navigationsseite Ihrer Suchergebnisseite zu erstellen. </p> <p>Sie könnten beispielsweise ein Menü erstellen, das Frauen, Männer, Jungen und Mädchen umfasst, in dem die Menüelemente wie folgt lauten: 
-      <userinput>
+      <code>
         /?q1=womens;x1=gender 
-      </userinput>, 
-      <userinput>
+      </code>, 
+      <code>
         /?q1=mens;x1=gender 
-      </userinput> </p> </li> 
+      </code> </p> </li> 
       </ul> </p> </td> 
       </tr> 
       <tr> 
@@ -103,7 +106,7 @@ t_adding_a_new_menu.xml
       <td colname="col1"> <p>Elementbezeichnung </p> </td> 
       <td colname="col2"> <p>Die Elementbeschriftung hängt vom gewählten Menütyp ab. </p> 
         <ul id="ul_957BF01235F84748B5EB7062D6AEAC41"> 
-        <li id="li_03FB2E2C96134A2B8E08154F87F0CD55"> Sortierungsmenütyp <p>Identifiziert die benutzerdefinierte Beschriftung, die der Kunde sehen soll, wenn er dieses Element im Menü anzeigt. </p> </li> 
+        <li id="li_03FB2E2C96134A2B8E08154F87F0CD55"> Sortierungsmenütyp <p>Identifiziert die benutzerdefinierte Bezeichnung, die der Kunde bei der Ansicht dieses Menüpunkts sehen soll. </p> </li> 
         <li id="li_C9FE2BC46D9443FB85FEB837C7CA45E1"> Mengenmenütyp <p>Identifiziert die benutzerdefinierte Bezeichnung, die Sie für dieses Menüelement anzeigen möchten. </p> </li> 
         </ul> </td> 
       </tr> 
