@@ -13,7 +13,7 @@ ht-degree: 10%
 ---
 
 
-# Search & Promote-Handbuch {#using}
+# Search and Promote-Handbuch {#using}
 
 + [Übersicht über die Search&amp;Promote](sp-home.md)
 + Versionshinweise {#release-notes}
