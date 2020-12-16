@@ -8,11 +8,14 @@ topic: Release Notes,Site search and merchandising
 uuid: 4db10eb4-11bf-4483-a7f2-87981d9c7a50
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 74%
 
 ---
 
 
-# Search&amp;Promote 8.12.0 Release Notes (01/16/2014){#search-promote-release-notes}
+# Search&amp;Promote 8.12.0 Versionshinweise (16.01.2014){#search-promote-release-notes}
 
 <table> 
  <thead> 
@@ -34,7 +37,7 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
       <li id="li_96DDE1A196834845A0FA319903C5934B"> <p>Bericht „Begriffe“ </p> </li> 
       <li id="li_4F1A19DE98C84F8CAD963EEA2B38ED7A"> <p>Null-Suchbegriffbericht </p> </li> 
       <li id="li_A7716C62C4D44CD69D411C3FEE246D96"> <p>Suchanforderungsbericht </p> </li> 
-     </ul> </p> <p>Siehe Menü <a href="../c-about-reports-menu/c-about-reports-menu.md#concept_5F901459C7AB461BAB30B305957EB00C" format="dita" scope="local"> Berichte</a>. </p> </td> 
+     </ul> </p> <p>Siehe <a href="../c-about-reports-menu/c-about-reports-menu.md#concept_5F901459C7AB461BAB30B305957EB00C" format="dita" scope="local"> Info zum Menü Berichte</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Nicht zuordnen </p> </td> 
@@ -49,13 +52,13 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 * Es war nicht möglich, ergebnisbasierte Regeln für ein Konto zu speichern, bei dem eine Suche nur über HTTPS möglich war.
 * Es hat nicht funktioniert, eine Geschäftsregel für „ist kein Mobiltelefon“ einzurichten.
 
-   See [About Business Rules](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
+   Siehe [Geschäftsregeln](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
 
 * Bei einer Lagerbestands-Filtersuche wurden keine Ergebnisse ausgegeben.
 * Die Facettenreihenfolge von „Größe“ wurde nicht aktualisiert.
 * Option für eine benutzerdefinierte Regeldefinition wurde zur Seite „Anfragenbereinigung“ hinzugefügt.
 
-   Siehe [Info zu Regeln](../c-about-rules-menu/c-about-query-cleaning-rules.md#concept_17F3CDDC3C8A4128AF092A82B777B86C)für die Abfragebereinigung.
+   Siehe [Informationen zu Abfragen-Bereinigungsregeln](../c-about-rules-menu/c-about-query-cleaning-rules.md#concept_17F3CDDC3C8A4128AF092A82B777B86C).
 
 * Im Begriffsbericht wiederholten sich Einträge, wenn nicht genügend Daten zur Verfügung standen.
 
