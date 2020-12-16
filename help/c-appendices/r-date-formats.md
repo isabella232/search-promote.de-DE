@@ -8,6 +8,9 @@ topic: Appendices,Site search and merchandising
 uuid: 148914b5-33ef-41db-8404-67c03f6f0832
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '767'
+ht-degree: 3%
 
 ---
 
@@ -16,9 +19,9 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 
 Sie können die Datumsformate definieren, die beim Analysieren und Indizieren von Feldern mit dem Datentyp &quot;Datum&quot;verwendet werden.
 
-Das Format des Datums und der Uhrzeit wird mit einer Formatzeichenfolge angegeben. Die Formatzeichenfolge besteht aus null oder mehr Konvertierungsspezifikationen (eine Konvertierungsspezifikation besteht aus einem Prozentzeichen und einem anderen Zeichen) und einfachen Zeichen. Für jedes Datumsfeld wird eine Standardliste mit Datumsformat-Zeichenfolgen bereitgestellt.
+Das Format des Datums und der Uhrzeit wird mit einer Formatzeichenfolge angegeben. Die Formatzeichenfolge besteht aus null oder mehr Konvertierungsspezifikationen (eine Konvertierungsspezifikation besteht aus einem Prozentzeichen und einem anderen Zeichen) und einfachen Zeichen. Für jedes Datumsfeld wird eine standardmäßige Liste der Datumsformat-Zeichenfolgen bereitgestellt.
 
-Sie haben die vollständige Kontrolle über diese Liste und können diese je nach Bedarf Ihrer Site hinzufügen oder ändern. Die Zeichenfolge des obersten Formats hat Vorrang, und nachfolgende Formatzeichenfolgen werden nur verwendet, wenn beim Analysieren des Inhalts eines bestimmten Metadaten-Tags ein Fehler auftritt.
+Sie haben die vollständige Kontrolle über diese Liste und können sie entsprechend den Anforderungen Ihrer Site hinzufügen oder ändern. Die Zeichenfolge des obersten Formats hat Vorrang, und nachfolgende Formatzeichenfolgen werden nur verwendet, wenn beim Analysieren des Inhalts eines bestimmten Metadaten-Tags ein Fehler auftritt.
 
 Angenommen, Sie haben die folgenden Datumsformate angegeben:
 
@@ -151,7 +154,7 @@ Die folgende Tabelle beschreibt die verfügbaren Datumsformat-Zeichenfolgen:
 
 **Standardformatierungszeichenfolgen**
 
-Die folgenden Standardformat-Zeichenfolgen werden von Vorlagen verwendet. Sie können diese Liste nach Bedarf hinzufügen oder bearbeiten.
+Die folgenden Standardformat-Zeichenfolgen werden von Vorlagen verwendet. Sie können diese Liste nach Bedarf erweitern oder bearbeiten.
 
 <table> 
  <thead> 
