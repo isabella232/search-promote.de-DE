@@ -8,15 +8,18 @@ topic: Simulator,Site search and merchandising
 uuid: 7ec8f5b9-3ab3-4b9a-bf8a-65d0ca1dfddb
 translation-type: tm+mt
 source-git-commit: 91ddead9f73b73ea1a20e26582998966f801d6ff
+workflow-type: tm+mt
+source-wordcount: '398'
+ht-degree: 1%
 
 ---
 
 
-# Info zum Simulator{#about-simulator}
+# Info zu Simulator{#about-simulator}
 
 Verwenden Sie Simulator, um zu sehen, wie Ihre Suche aussehen würde, wenn Sie alles, was derzeit inszeniert ist, live übertragen würden.
 
-## Info zum Simulator {#concept_020AA6751E32421A96A3455508364C7E}
+## Info zu Simulator {#concept_020AA6751E32421A96A3455508364C7E}
 
 Verwenden Sie Simulator, um zu sehen, wie Ihre Suche aussehen würde, wenn Sie alles, was derzeit inszeniert ist, live übertragen würden.
 
@@ -33,7 +36,7 @@ Siehe [Hinzufügen einer neuen Geschäftsregel](c-about-rules-menu/c-about-busin
 **So verwenden Sie den Simulator**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Simulator]**.
-1. Wählen Sie in der **[!UICONTROL Options]** Dropdown-Liste die auszuführende Option aus.
+1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Options]** die auszuführende Option aus.
 
    <!-- 
    
