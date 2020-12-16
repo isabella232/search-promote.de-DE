@@ -20,15 +20,15 @@ ht-degree: 1%
 
 Mit einem skriptgesteuerten Index können Sie inkrementelle Indexierungsoptionen erstellen, aktualisieren und verwalten, ohne sich anmelden zu müssen. Der Suchroboter liest Anweisungen aus einer Textdatei, die auf Ihrem Server gehostet wird.
 
-## Skriptbasierter Index {#concept_34F58D551BC04BFB8ADC294B9DA9199D}
+## Skriptgesteuerter Index {#concept_34F58D551BC04BFB8ADC294B9DA9199D}
 
-## Grundlagen zum Konfigurieren der inkrementellen Skripterstellung {#section_161D254065E143F3A39F3FC09C400090}
+## Grundlagen zum Konfigurieren der inkrementellen Indexierung mit Skripten {#section_161D254065E143F3A39F3FC09C400090}
 
 Um skriptgesteuerten Index zu verwenden, geben Sie auf der Seite &quot;Konfiguration des inkrementellen Index&quot;die URL zu einer Skriptdatei (einer Textdatei) an, die sich auf Ihrem Server befindet. Zum Beispiel `https://www.mysite.com/indexlist.txt`. Wenn sich Ihre Site ändert, können Sie der Textdatei entweder manuell oder automatisch Befehlsblöcke hinzufügen (mit einem Skript, das durch die Eingabe von Informationen aus einem News-Feed, einem Stock-Ticker oder einer anderen geänderten Datei ausgelöst wird).
 
-Wenn der skriptgesteuerte inkrementelle Index beginnt, liest der Suchroboter die Textdatei und führt die neuen Befehle aus, die in dieser Datei gefunden werden. Standardmäßig verarbeitet der Suchroboter nur die neuen Befehle, die vom Dateidatum bestimmt werden. Sofern Sie **[!UICONTROL Clear Date]** zum Zeitpunkt der Konfiguration des skriptgesteuerten Indexes keine Prüfung vornehmen, &quot;speichert&quot;der Suchroboter den Datumsbezeichner des zuletzt verarbeiteten Blocks.
+Wenn der skriptgesteuerte inkrementelle Index beginnt, liest der Suchroboter die Textdatei und führt die neuen Befehle aus, die in dieser Datei gefunden werden. Standardmäßig verarbeitet der Suchroboter nur die neuen Befehle, die vom Dateidatum bestimmt werden. Sofern Sie zum Zeitpunkt der Konfiguration des skriptgesteuerten Index nicht **[!UICONTROL Clear Date]** aktivieren, &quot;speichert&quot;der Suchroboter den Datumsbezeichner des zuletzt verarbeiteten Blocks.
 
-## Grundlagen zur Skriptdatei {#section_B312E40539F44C6583B4F9637D428E19}
+## Informationen zur Skriptdatei {#section_B312E40539F44C6583B4F9637D428E19}
 
 Die Skriptdatei, die Sie in der URL angeben, ist eine Textdatei, die sich auf Ihrem Server befindet. Sie können Wagenrückgaben, Zeilenvorschub oder beides für die Endsequenz verwenden. Eine leere Zeile enthält null oder mehr Leerzeichen, gefolgt von einer Zeilenende-Sequenz. Bei allen Befehlen wird nicht zwischen Groß- und Kleinschreibung unterschieden.
 
@@ -51,15 +51,15 @@ Bei Verwendung des HTTP 1.1-Stils ist für alle Datumsangaben mit einer Länge u
    <td colname="col2"> <p>Die erste Zeile jedes Beginns mit einem von zwei Datumsbefehlen: </p> <p> 
      <ul id="ul_9C1B229B7F1846C490B853FC34989E77"> 
       <li id="li_31FEF1A7163842BDBB0ABE779D07045A"> <span class="codeph"> date </span> <p>Verwenden Sie den Befehl "Datum", um anzugeben, dass die Datums-/Zeitangabe aus einem Tag, einem Datum, einer Uhrzeit und einer Zeitzone besteht. </p> </li> 
-      <li id="li_0918D5B090014C1A852CB80BB7C2867C"> <span class="codeph"> Sekunden </span> <p>Verwenden Sie <span class="codeph"> Sekunden, </span> um anzugeben, dass der Datumsbezeichner aus einer Zeit in Sekunden besteht (z. B. 784111777). Stellen Sie bei Verwendung von <span class="codeph"> Sekunden sicher, </span>dass die Anzahl der Sekunden zwischen den Blöcken zunimmt. </p> </li> 
+      <li id="li_0918D5B090014C1A852CB80BB7C2867C"> <span class="codeph"> Sekunden </span> <p>Verwenden Sie <span class="codeph"> seconds </span>, um anzugeben, dass der Datums-Bezeichner aus einer Zeit in Sekunden besteht (z. B. 784111777). Stellen Sie bei Verwendung von <span class="codeph"> seconds </span> sicher, dass die Anzahl der Sekunden zwischen den Blöcken zunimmt. </p> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>date-specifier </p> </td> 
-   <td colname="col2"> <p>Der <span class="codeph"> Befehl "Date-Specifier" </span> zeichnet in der Regel entweder das normale Datum und die Uhrzeit (Befehl "Datum") oder die Zeit in Sekunden (Befehl "Sekunden") auf, zu der die Blockinformationen der Datei hinzugefügt wurden. Beispiel: </p> <p> <code> date&nbsp;Sun,&nbsp;06&nbsp;Nov&nbsp;1994&nbsp;08:49:37&nbsp;GMT&nbsp;(HTTP&nbsp;1.1&nbsp;style) 
+   <td colname="col2"> <p>Der Befehl <span class="codeph"> date-specifier </span> zeichnet in der Regel entweder das normale Datum und die Uhrzeit (Befehl "date") oder die Zeit in Sekunden (Befehl "seconds") auf, zu der die Blockinformationen der Datei hinzugefügt wurden. Beispiel: </p> <p> <code> date&nbsp;Sun,&nbsp;06&nbsp;Nov&nbsp;1994&nbsp;08:49:37&nbsp;GMT&nbsp;(HTTP&nbsp;1.1&nbsp;style) 
       date&nbsp;Sunday,&nbsp;06-Nov-94&nbsp;08:49:37&nbsp;GMT&nbsp;(HTTP&nbsp;1.0&nbsp;style) 
       date&nbsp;Sun&nbsp;Nov&nbsp;6&nbsp;08:49:37&nbsp;1994&nbsp;(Unix&nbsp;asctime()&nbsp;date&nbsp;style) 
-      seconds&nbsp;784111777&nbsp;(Unix&nbsp;epoch-seconds&nbsp;style) </code> </p> <p>Bei Verwendung des HTTP 1.1-Stils ist für alle Datumsangaben mit einer Länge unter dem 10. eine vorangestellte Null erforderlich. Der 6. November ist beispielsweise 06. November, nicht der 6. November. </p> <p>Der Suchroboter "erinnert"sich an den Datumsbezeichner des zuletzt verarbeiteten Blocks und indiziert nur Informationen, die er als "neuer"ansieht. (Echtzeit spielt für den Suchroboter keine Rolle. Stattdessen kommt es auf die Zeit im Verhältnis zu anderen zuvor verarbeiteten Zeiten an.) </p> <p>Nachdem der Suchroboter beispielsweise einen Block mit einer Datumsangabe von 22.00 Uhr gelesen hat, werden keine Blöcke gelesen, die vor 22.00 Uhr aufgezeichnet wurden, unabhängig davon, wann der Indexvorgang ausgeführt wird. Im schlimmsten Fall können Sie versehentlich das Jahr "2040"anstelle von "2004"in Ihrer Datumsangabe eingeben. In einem solchen Fall indiziert der Suchroboter den 2040-Block während des nächsten Indizierungsvorgangs und weigert sich dann, alle anderen Informationsblöcke zu lesen (es sei denn, dass ein solcher Zeitraum 2040 ist). Wenn dies der Fall sein sollte, entfernen Sie alle zuvor verarbeiteten Blöcke aus der Textdatei, klicken Sie auf "Datum <span class="uicontrol"> löschen" </span>, und veröffentlichen Sie es dann live. </p> </td> 
+      seconds&nbsp;784111777&nbsp;(Unix&nbsp;epoch-seconds&nbsp;style) </code> </p> <p>Bei Verwendung des HTTP 1.1-Stils ist für alle Datumsangaben mit einer Länge unter dem 10. eine vorangestellte Null erforderlich. Der 6. November ist beispielsweise 06. November, nicht der 6. November. </p> <p>Der Suchroboter "erinnert"sich an den Datumsbezeichner des zuletzt verarbeiteten Blocks und indiziert nur Informationen, die er als "neuer"ansieht. (Echtzeit spielt für den Suchroboter keine Rolle. Stattdessen kommt es auf die Zeit im Verhältnis zu anderen zuvor verarbeiteten Zeiten an.) </p> <p>Nachdem der Suchroboter beispielsweise einen Block mit einer Datumsangabe von 22.00 Uhr gelesen hat, werden keine Blöcke gelesen, die vor 22.00 Uhr aufgezeichnet wurden, unabhängig davon, wann der Indexvorgang ausgeführt wird. Im schlimmsten Fall können Sie versehentlich das Jahr "2040"anstelle von "2004"in Ihrer Datumsangabe eingeben. In einem solchen Fall indiziert der Suchroboter den 2040-Block während des nächsten Indizierungsvorgangs und weigert sich dann, alle anderen Informationsblöcke zu lesen (es sei denn, dass ein solcher Zeitraum 2040 ist). Wenn dies der Fall sein sollte, entfernen Sie alle zuvor verarbeiteten Blöcke aus der Textdatei, klicken Sie auf <span class="uicontrol"> Datum löschen </span> und veröffentlichen Sie es dann live. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Kommentarzeile </p> </td> 
@@ -73,19 +73,23 @@ Bei Verwendung des HTTP 1.1-Stils ist für alle Datumsangaben mit einer Länge u
       <li id="li_22181666628C48A28A6A0BA1F7CA8E77"> 
        <code>
          add 
-       </code> <p>Mit URL verwenden. Der Suchroboter indiziert nur die angegebenen URLs, die sich seit der letzten Indexierung geändert haben. Darüber hinaus folgt der Suchroboter Links, die in bestimmten Dokumenten enthalten sind, und indiziert nur die Dokumente, die sich geändert haben. </p> <p>Sie können der URL wie im folgenden Beispiel mit <code>
+       </code> <p>Mit URL verwenden. Der Suchroboter indiziert nur die angegebenen URLs, die sich seit der letzten Indexierung geändert haben. Darüber hinaus folgt der Suchroboter Links, die in bestimmten Dokumenten enthalten sind, und indiziert nur die Dokumente, die sich geändert haben. </p> <p>Sie können der URL mit 
+        <code>
           nofollow 
-        </code> oder <code>
+        </code> oder 
+        <code>
           noindex 
-        </code> Suchbegriffen folgen: </p> <p> <code> add&amp;nbsp;https://www.mydomain.com/&amp;nbsp;noindex </code> </p> </li> 
+        </code>-Schlüsselwörter wie im folgenden Beispiel: </p> <p> <code> add&amp;nbsp;https://www.mydomain.com/&amp;nbsp;noindex </code> </p> </li> 
       <li id="li_8E47BF07DB24417083883F5BF40D6B9E"> 
        <code>
          update 
-       </code> <p>Mit URL-Maske verwenden. Der Suchroboter findet und aktualisiert alle Dokumente, die der angegebenen URL-Maske entsprechen. </p> <p>Sie können der URL wie im folgenden Beispiel mit <code>
+       </code> <p>Mit URL-Maske verwenden. Der Suchroboter findet und aktualisiert alle Dokumente, die der angegebenen URL-Maske entsprechen. </p> <p>Sie können der URL mit 
+        <code>
           nofollow 
-        </code> oder <code>
+        </code> oder 
+        <code>
           noindex 
-        </code> Suchbegriffen folgen: </p> <p> <code> update&amp;nbsp;https://www.mydomain.com/products/ </code> </p> </li> 
+        </code>-Schlüsselwörter wie im folgenden Beispiel: </p> <p> <code> update&amp;nbsp;https://www.mydomain.com/products/ </code> </p> </li> 
       <li id="li_B3EC8B1670D54F66A1D8411A694EF7E4"> 
        <code>
          include 
@@ -104,33 +108,41 @@ Bei Verwendung des HTTP 1.1-Stils ist für alle Datumsangaben mit einer Länge u
          <li id="li_0C7051AC3B5A4C57A3E477F7B6246611"> 
           <code>
             include-days NNN 
-          </code> <p>Der Suchroboter indiziert alle Dokumente, die mit der angegebenen URL-Maske übereinstimmen und mindestens NN Tage alt sind. </p> <p>Sie können der URL-Maske die Suchbegriffe <code>
+          </code> <p>Der Suchroboter indiziert alle Dokumente, die mit der angegebenen URL-Maske übereinstimmen und mindestens NN Tage alt sind. </p> <p>Sie können der URL-Maske mit den Suchbegriffen folgen 
+           <code>
              nofollow 
-           </code>, <code>
+           </code>, 
+           <code>
              noindex 
-           </code>und/oder folgen <code>
+           </code> und/oder 
+           <code>
              server-date 
            </code>. </p> </li> 
          <li id="li_983A10E2ED5D434EA9031F32143F4EF4"> 
           <code>
             include-date YYYY-MM-DD 
-          </code> <p> Der Suchroboter indiziert alle Dokumente, die mit der angegebenen URL-Maske übereinstimmen und älter sind als das Datum JJJJ-MM-TT, wobei "JJJJ"das vierstellige Jahr, "MM"der ein- oder zweistellige Monat (1-12) und "TT"der ein- oder zweistellige Tag (1-31) ist. </p> <p>Sie können der URL-Maske die Suchbegriffe <code>
+          </code> <p> Der Suchroboter indiziert alle Dokumente, die mit der angegebenen URL-Maske übereinstimmen und älter sind als das Datum JJJJ-MM-TT, wobei "JJJJ"das vierstellige Jahr, "MM"der ein- oder zweistellige Monat (1-12) und "TT"der ein- oder zweistellige Tag (1-31) ist. </p> <p>Sie können der URL-Maske mit den Suchbegriffen folgen 
+           <code>
              nofollow 
-           </code>, <code>
+           </code>, 
+           <code>
              noindex 
-           </code>und/oder folgen <code>
+           </code> und/oder 
+           <code>
              server-date 
            </code>. </p> </li> 
          <li id="li_733CE1B748024CECA7FBE00D7BC7B88A"> 
           <code>
             exclude-days NNN 
-          </code> <p> Deaktiviert die Indizierung aller Dokumente, die der angegebenen URL-Maske entsprechen und mindestens NN Tage alt sind. </p> <p>Sie können der URL-Maske mit dem Suchbegriff folgen <code>
+          </code> <p> Deaktiviert die Indizierung aller Dokumente, die der angegebenen URL-Maske entsprechen und mindestens NN Tage alt sind. </p> <p>Sie können der URL-Maske mit dem Suchbegriff folgen 
+           <code>
              server-date 
            </code>. </p> </li> 
          <li id="li_90056A0B96CC4DA3854711860A15CE89"> 
           <code>
             exclude-date YYYY-MM-DD 
-          </code> <p>Deaktiviert die Indexierung aller Dokumente, die mit der angegebenen URL-Maske übereinstimmen und älter als das Datum JJJ-MM-TT sind. </p> <p>Sie können der URL-Maske mit dem Suchbegriff folgen <code>
+          </code> <p>Deaktiviert die Indexierung aller Dokumente, die mit der angegebenen URL-Maske übereinstimmen und älter als das Datum JJJ-MM-TT sind. </p> <p>Sie können der URL-Maske mit dem Suchbegriff folgen 
+           <code>
              server-date 
            </code>. </p> </li> 
         </ul> </p> </li> 
@@ -149,23 +161,23 @@ Bei Verwendung des HTTP 1.1-Stils ist für alle Datumsangaben mit einer Länge u
 
 Siehe auch [URL-Masken](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164).
 
-## Beispieldatei {#section_9F580F20E7214751B157A28B392BD64E}
+## Beispiel für eine Skriptdatei {#section_9F580F20E7214751B157A28B392BD64E}
 
 Im folgenden Beispielskript-Dateibeispiel verarbeitet der Suchroboter die Blöcke, sofern die Datumsangabe nach dem Datum der Datumsangabe des zuletzt verarbeiteten Blocks erfolgt. Ist dies der Fall, werden die folgenden Indexierungsvorgänge ausgeführt:
 
 * Löscht `y2k-problems.html` aus dem Index.
 * Fügt `no-y2k-problems.html` zum Suchindex hinzu und folgt keinem der Links für `no-y2k-problems.html`.
 
-* Schließen Sie beim Crawling URLs, die mit `housewares.htm` und `lightfixtures.htm`l übereinstimmen, aus dem Suchindex aus.
+* Schließen Sie beim Crawling URLs, die `housewares.htm` und `lightfixtures.htm`l entsprechen, aus dem Suchindex aus.
 
-* Schließen Sie alle anderen Ordner und Dokumente unter `www.mydomain.com`.
-* Aktualisieren Sie alle Dokumente innerhalb der Ordner `products` und `information` Ordner, indem Sie alle Links, die sich seit der letzten Indexierung geändert haben, durchsuchen und indizieren.
+* Schließen Sie alle anderen Ordner und Dokumente unter `www.mydomain.com` ein.
+* Aktualisieren Sie alle Dokumente in den Ordnern `products` und `information`, indem Sie alle Links, die sich seit dem letzten Indexierungsvorgang geändert haben, durchsuchen und indizieren.
 
-* Schließen Sie beim Crawling URLs im `archive` Abschnitt der Website aus, wenn sie am oder vor dem 1. Januar 1999 datiert sind.
-* Schließen Sie URLs aus, die mit dem Suchindex übereinstimmen `housewares.html` und `lightfixtures.html` diese enthalten.
+* Schließen Sie beim Crawling URLs im Abschnitt `archive` der Website aus, wenn sie am oder vor dem 1. Januar 1999 datiert sind.
+* Schließen Sie URLs, die `housewares.html` und `lightfixtures.html` entsprechen, aus dem Suchindex aus.
 
-* Indexdateien im `help` Verzeichnis, jedoch keine Links aus diesen Dateien durchsuchen oder indizieren.
-* Suchen und indizieren Sie alle anderen Dateien, die für `www.mydomain.com`gefunden wurden.
+* Indexdateien im Ordner `help`, jedoch keine Links aus diesen Dateien durchsuchen oder indizieren.
+* Suchen und indizieren Sie alle anderen Dateien, die für `www.mydomain.com` gefunden wurden.
 
 ```
 # Start of file. 
@@ -199,34 +211,34 @@ Sie können ein von Ihnen erstelltes Skript angeben, das einen inkrementellen In
 **So konfigurieren Sie einen skriptbasierten inkrementellen Index**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Index]** > **[!UICONTROL Scripted Index]** > **[!UICONTROL Configuration]**.
-1. Geben Sie auf der **[!UICONTROL Scripted Incremental Index Configuration]** Seite im Feld **[!UICONTROL Script File URL]** die URL zum Skript für die Textdatei ein, das sich auf Ihrem Server befindet.
+1. Geben Sie auf der Seite **[!UICONTROL Scripted Incremental Index Configuration]** in **[!UICONTROL Script File URL]** die URL zum Skript für die Textdatei ein, das sich auf Ihrem Server befindet.
 
-   Siehe [Grundlagen zu skriptgesteuerten Index](../c-about-index-menu/c-about-scripted-index.md#concept_34F58D551BC04BFB8ADC294B9DA9199D).
-1. (Optional) Überprüfen Sie, **[!UICONTROL Clear Date]** ob der Suchroboter nicht die Datumsangabe des zuletzt verarbeiteten Blocks &quot;merken&quot;soll.
+   Siehe [Über skriptgesteuerten Index](../c-about-index-menu/c-about-scripted-index.md#concept_34F58D551BC04BFB8ADC294B9DA9199D).
+1. (Optional) Markieren Sie **[!UICONTROL Clear Date]**, wenn Sie nicht möchten, dass der Suchroboter die Datumsangabe des zuletzt verarbeiteten Blocks &quot;speichert&quot;.
 
    Standardmäßig verarbeitet der Suchroboter nur neue Befehlsblöcke, die in der Textdatei enthalten sind, die vom Datum der Datei bestimmt wird. Wenn Sie die Standardeinstellung nicht wünschen, aktivieren Sie **[!UICONTROL Clear Date]**.
 1. Klicken **[!UICONTROL Save Changes]**.
 1. (Optional) Führen Sie einen der folgenden Schritte aus:
 
-   * Klicken Sie auf **[!UICONTROL History]** , um alle vorgenommenen Änderungen wiederherzustellen.
+   * Klicken Sie auf **[!UICONTROL History]**, um alle vorgenommenen Änderungen wiederherzustellen.
 
-      Siehe [Verwenden der Option](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Verlauf.
+      Siehe [Verwenden der Option Verlauf](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicken **[!UICONTROL Live]**.
 
-      Siehe [Live-Einstellungen](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)anzeigen.
+      Siehe [Live-Einstellungen anzeigen](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Klicken **[!UICONTROL Push Live]**.
 
-      Siehe [Pushing-Einstellungen](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Siehe [Pushing stage settings live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Einstellen des inkrementellen Index-Zeitplans für eine Live-Website {#task_B3A87AC4AC784507859C23B9062BA11C}
+## Einstellen des skriptgesteuerten inkrementellen Indexplans für eine Live-Website {#task_B3A87AC4AC784507859C23B9062BA11C}
 
 Sie können die skriptgesteuerte inkrementelle Indexierung planen, die in regelmäßigen Abständen am Tag erfolgt.
 
 Die gewählte Basiszeit ist lokal gemäß der Zeitzone, die in den Kontoeinstellungen konfiguriert ist.
 
-Siehe [Konfigurieren der Kontoeinstellungen](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9).
+Siehe [Konfigurieren Ihrer Kontoeinstellungen](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9).
 
 Webserver sollen oft mitten in der Nacht zur Wartung aussteigen. Wenn Ihr Server während einer geplanten Indexzeit ausfällt, schlägt der Indexierungsvorgang fehl. Stellen Sie sicher, dass Sie eine Tageszeit auswählen, zu der der Webserver verfügbar ist.
 
@@ -235,8 +247,8 @@ Der Index-Plan gilt nur für Ihren Live-Index. Sie können keine gestaffelten in
 **So legen Sie den Zeitplan für den inkrementellen Index für eine Live-Website fest**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Index]** > **[!UICONTROL Scripted Index]** > **[!UICONTROL Live Schedule]**.
-1. Wählen Sie auf der **[!UICONTROL Scripted Incremental Index Schedule]** Seite in der **[!UICONTROL Read the Scripted Incrementally Indexing File]** Dropdown-Liste die Häufigkeit aus, mit der die skriptbasierte inkrementelle Textdatei in Stunden oder Minuten ausgeführt werden soll.
-1. Wählen Sie in der **[!UICONTROL Base Time]** Dropdown-Liste die Startzeit aus, zu der Sie einen neuen skriptgesteuerten Inkrementalindex neu generieren möchten.
+1. Wählen Sie auf der Seite **[!UICONTROL Scripted Incremental Index Schedule]** in der Dropdown-Liste **[!UICONTROL Read the Scripted Incrementally Indexing File]** die Häufigkeit, mit der die skriptgesteuerte inkrementelle Indextextdatei ausgeführt werden soll, in Stunden oder Minuten.
+1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Base Time]** die Startzeit aus, zu der Sie einen neuen skriptgesteuerten Inkrementalindex neu generieren möchten.
 1. Klicken **[!UICONTROL Save Changes]**.
 
 ## Ausführen eines skriptbasierten inkrementellen Indexes einer Live- oder Staged-Website {#task_6E6FC76EE1E84A5FADB3B67AD7B1DACB}
@@ -255,7 +267,7 @@ Siehe [Konfigurieren eines skriptgesteuerten Inkrementalindex](../c-about-index-
    * Klicken Sie auf **[!UICONTROL Index]** > **[!UICONTROL Scripted Index]** > **[!UICONTROL Staged Index]**.
 
 1. Klicken **[!UICONTROL Scripted Index Now]**.
-1. (Optional) Wenn Indizierungsfehler aufgetreten sind, klicken Sie auf **[!UICONTROL View Errors]** , um das zugehörige Protokoll Ansicht.
+1. (Optional) Wenn Indexierungsfehler aufgetreten sind, klicken Sie auf **[!UICONTROL View Errors]**, um das zugehörige Protokoll Ansicht.
 
 ## Ansicht des skriptgesteuerten inkrementellen Indexprotokolls einer Live- oder Staged-Website {#task_CBFCE9B9A87B4DF7A2A35A6E83DE93D7}
 
@@ -273,7 +285,7 @@ Protokolle können weder exportiert noch gespeichert werden. Das Protokoll bleib
 
 1. Führen Sie auf der Protokollseite oben oder unten einen der folgenden Schritte aus:
 
-   * Verwenden Sie die Navigationsoptionen **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** oder **[!UICONTROL Go to line]** , um durch das Protokoll zu navigieren.
+   * Verwenden Sie die Navigationsoptionen **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** oder **[!UICONTROL Go to line]**, um durch das Protokoll zu navigieren.
 
-   * Verwenden Sie die Anzeigeoptionen **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** oder **[!UICONTROL Show]** , um Ihre Anzeige zu verfeinern.
+   * Verwenden Sie die Anzeigeoptionen **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** oder **[!UICONTROL Show]**, um Ihre Anzeige zu verfeinern.
 
