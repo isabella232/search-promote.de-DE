@@ -10,18 +10,18 @@ translation-type: tm+mt
 source-git-commit: dcbee1a3092f46db8f19e0b14f55cafac5fdbc13
 workflow-type: tm+mt
 source-wordcount: '157'
-ht-degree: 17%
+ht-degree: 20%
 
 ---
 
 
-# Adobe Search&amp;Promote Guide {#search-promote-documentation}
+# Adobe Search&amp;Promote-Anleitung {#search-promote-documentation}
 
-## News and announcements {#topic_02625547D07F411DBAC9593FCBD4741B}
+## Nachrichten und Mitteilungen {#topic_02625547D07F411DBAC9593FCBD4741B}
 
 * Adobe Marketing Cloud-Versionshinweise - Enthält neue Funktionen, Fehlerbehebungen und bekannte Probleme in allen Marketing Cloud-Lösungen. Funktions-Updates werden im Frühling und im Herbst veröffentlicht, Wartungs-Updates monatlich.
 
-   **Frühzeitiger Zugriff**: Melden Sie sich für das Produktupdate [mit Priorität für die](https://campaign.adobe.com/webApp/adbePriorityProductSubscribe) Adobe an, um eine Woche vor jeder Version Adobe Marketing Cloud-Versionshinweise zu erhalten.
+   **Frühzeitiger Zugriff**: Melden Sie sich für das Produkt  [mit Priorität für Adoben ](https://campaign.adobe.com/webApp/adbePriorityProductSubscribe) an, um eine Woche vor jeder Version Adobe Marketing Cloud-Versionshinweise zu erhalten.
 
 * Die neuesten Versionshinweise zur Search&amp;Promote der Adobe:
 
@@ -31,7 +31,7 @@ ht-degree: 17%
 
 [Einführung in das Entwerfen von Index Connector-Feeds in der Search&amp;Promote der Adobe](https://marketing.adobe.com/resources/help/en_US/snp/index_connector_feeds.pdf)
 
-## Other information {#topic_34A00195904D4AE7AE982D3746F693AA}
+## Weitere Informationen {#topic_34A00195904D4AE7AE982D3746F693AA}
 
 [Website der Adobe Search&amp;Promote](https://www.adobe.com/solutions/testing-targeting/search-driven-merchandising.html)
 
