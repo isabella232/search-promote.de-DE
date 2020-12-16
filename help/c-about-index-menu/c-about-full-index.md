@@ -9,17 +9,20 @@ topic: Index,Site search and merchandising
 uuid: dce1eafd-5aea-4945-8305-8f9e7dc392df
 translation-type: tm+mt
 source-git-commit: 7af85dd37f06fe506e5f57e28a25385ca7ab3db5
+workflow-type: tm+mt
+source-wordcount: '795'
+ht-degree: 1%
 
 ---
 
 
-# Info zu vollständigem Index{#about-full-index}
+# Über vollständigen Index{#about-full-index}
 
 Sie können den vollständigen Index verwenden, um alle Seiten Ihrer gestaffelten oder Live-Website zu indizieren. Die Indizierung hilft Ihren Kunden, leichter zu finden, was sie suchen oder was sie benötigen, wenn sie eine Suche durchführen.
 
 ## Vollständiger Index {#concept_C69BD21863FD4856B49326F35DB570D3}
 
-Wenn Sie einen vollständigen Index generieren, werden Statusinformationen wie Startzeit, verstrichene Zeit und Fehler während des Indizierungsprozesses angezeigt. Informationen zum Status des letzten Index werden ebenfalls angezeigt.
+Wenn Sie einen vollständigen Index generieren, werden Statusinformationen angezeigt, wie z. B. die Beginn- und die Verfallszeit sowie Fehler während des Indexvorgangs. Informationen zum Status des letzten Index werden ebenfalls angezeigt.
 
 Wenn Sie eine Kontoeinstellung geändert haben, für die eine Indexwiederherstellung erforderlich ist, lautet der Status möglicherweise &quot;Regenerierung&quot;. Während der Regenerierung werden Kontoeinstellungen angewendet, um einen aktualisierten Site-Index zu erstellen.
 
@@ -33,7 +36,7 @@ Sie können die Uhrzeit und die Tage angeben, an denen die Website durchsucht we
 
 Die von Ihnen ausgewählte Zeit ist lokal gemäß der Zeitzone, die in den Kontoeinstellungen konfiguriert ist.
 
-Siehe [Konfigurieren der Kontoeinstellungen](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9).
+Siehe [Konfigurieren Ihrer Kontoeinstellungen](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9).
 
 Webserver sollen oft mitten in der Nacht zur Wartung aussteigen. Wenn Ihr Server während einer geplanten Indexzeit ausfällt, schlägt der Indexierungsvorgang fehl. Stellen Sie sicher, dass Sie eine Tageszeit auswählen, zu der der Webserver verfügbar ist.
 
@@ -42,11 +45,11 @@ Der Index-Plan gilt nur für Ihren Live-Index. Sie können keine Stage-Indizes p
 **So legen Sie den vollständigen Indexzeitplan für eine Live-Website fest**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Index]** > **[!UICONTROL Full Index]** > **[!UICONTROL Live Schedule]**.
-1. Wählen Sie in der **[!UICONTROL Time]** Dropdownliste die Stunde aus, in der die vollständige Indexierung beginnen soll.
+1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Time]** die Stunde aus, in der die vollständige Indexierung an Beginn erfolgen soll.
 1. Wählen Sie einen oder mehrere Tage aus, an denen die vollständige Indexierung ausgeführt werden soll.
 1. Klicken **[!UICONTROL Save Changes]**.
 
-## Ausführen eines vollständigen Indexes einer Live- oder Stage-Website {#task_F7FE04D8A1654A7787FCCA31B45EB42D}
+## Ausführen eines vollständigen Indexes einer Live- oder Staged-Website {#task_F7FE04D8A1654A7787FCCA31B45EB42D}
 
 Sie können den vollständigen Index verwenden, um alle Seiten Ihrer gestaffelten oder Live-Website zu indizieren. Die Indizierung hilft Ihren Kunden, leichter zu finden, was sie suchen oder was sie benötigen, wenn sie eine Suche durchführen.
 
@@ -95,15 +98,15 @@ Sie können den vollständigen Index verwenden, um alle Seiten Ihrer gestaffelte
     </table>
 
 1. Klicken **[!UICONTROL Full Index Now]**.
-1. (Optional) Wenn Indexierungsfehler aufgetreten sind, klicken Sie auf **[!UICONTROL View Errors]** , um das zugehörige Protokoll anzuzeigen.
+1. (Optional) Wenn Indexierungsfehler aufgetreten sind, klicken Sie auf **[!UICONTROL View Errors]**, um das zugehörige Protokoll Ansicht.
 
 ## Anzeigen des vollständigen Indexprotokolls einer Live- oder Stage-Website {#task_02E5E944C56B4EB19CC1FF321F3221B8}
 
-Wenn ein vollständiger Index oder ein gestaffelter vollständiger Index abgeschlossen ist, können Sie das zugehörige Protokoll anzeigen, um Fehler zu beheben, die aufgetreten sind.
+Wenn ein vollständiger Index oder ein gestaffelter vollständiger Index abgeschlossen ist, können Sie das zugehörige Protokoll zur Fehlerbehebung für eingetretene Fehler Ansicht haben.
 
 Protokolle können weder exportiert noch gespeichert werden. Das Protokoll bleibt bis zum Auftreten des neuen Indexes zur Ansicht verfügbar.
 
-**So zeigen Sie das vollständige Indexprotokoll einer Live- oder Stage-Website an**
+**So erstellen Sie die Ansicht des vollständigen Indexprotokolls einer Live- oder einer Stage-Website**
 
 1. Führen Sie im Produktmenü einen der folgenden Schritte aus:
 
@@ -113,7 +116,7 @@ Protokolle können weder exportiert noch gespeichert werden. Das Protokoll bleib
 
 1. Führen Sie auf der Protokollseite oben oder unten einen der folgenden Schritte aus:
 
-   * Verwenden Sie die Navigationsoptionen **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** oder **[!UICONTROL Go to line]** , um durch das Protokoll zu navigieren.
+   * Verwenden Sie die Navigationsoptionen **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** oder **[!UICONTROL Go to line]**, um durch das Protokoll zu navigieren.
 
-   * Verwenden Sie die Anzeigeoptionen **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** oder **[!UICONTROL Show]** , um Ihre Anzeige zu verfeinern.
+   * Verwenden Sie die Anzeigeoptionen **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** oder **[!UICONTROL Show]**, um Ihre Anzeige zu verfeinern.
 
