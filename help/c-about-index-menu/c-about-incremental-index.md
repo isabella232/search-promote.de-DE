@@ -20,9 +20,9 @@ ht-degree: 1%
 
 Sie können Inkrementellen Index verwenden, um &quot;Teile&quot;Ihrer Live- oder Stage-Website zu indizieren, z. B. eine Sammlung häufig geänderter Seiten.
 
-## Inkrementellen Index verwenden {#concept_A7770F0552D14C47B3DDB65DB78FFFEE}
+## Inkrementeller Index {#concept_A7770F0552D14C47B3DDB65DB78FFFEE}
 
-Ein inkrementeller Index dauert nur wenige Sekunden und ist nützlich auf Websites mit großer Kapazität, die viele Stunden bis zur vollständigen Indexierung dauern können.
+Ein inkrementeller Index dauert nur wenige Sekunden und ist nützlich auf Websites mit großer Kapazität, die viele Stunden bis zum vollständigen Indexieren benötigen.
 
 Wenn Sie einen inkrementellen Index generieren, werden Statusinformationen angezeigt, wie z. B. die Beginn-, Verstrichzeit- und Fehlermeldungen während der Indexierung. Informationen zum Status des letzten Index werden ebenfalls angezeigt.
 
@@ -37,7 +37,7 @@ Sie können festlegen, welche Webseiten in den inkrementellen Index aufgenommen 
 **So konfigurieren Sie einen inkrementellen Index einer gestaffelten Website**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Index]** > **[!UICONTROL Incremental Index]** > **[!UICONTROL Configuration]**.
-1. Verwenden Sie auf der **[!UICONTROL Incremental Index Configuration]** Seite die verschiedenen Felder, um anzugeben, welche Seiten Sie indizieren möchten.
+1. Verwenden Sie auf der Seite **[!UICONTROL Incremental Index Configuration]** die verschiedenen Felder, um anzugeben, welche Seiten Sie indizieren möchten.
 
    <table> 
     <thead> 
@@ -57,25 +57,29 @@ Sie können festlegen, welche Webseiten in den inkrementellen Index aufgenommen 
           <li id="li_32C2B21DE75C4459908384CC44822F7D"> 
           <code>
             noindex 
-          </code> <p>Wenn Sie den Text auf der Seite, der mit einer angegebenen URL übereinstimmt, nicht indizieren möchten, aber die Links der Seite befolgen möchten, fügen Sie ihn <code>
+          </code> <p>Wenn Sie den Text auf der Seite, der mit einer angegebenen URL übereinstimmt, nicht indizieren möchten, aber die Links der Seite befolgen möchten, fügen Sie 
+            <code>
               noindex 
-            </code> nach der URL wie im folgenden Beispiel hinzu: </p> <p> 
+            </code> nach der URL wie im folgenden Beispiel: </p> <p> 
             <code>
               https://www.mydomain.com/products/new.html noindex 
-            </code> </p> <p>Achten Sie darauf, dass Sie <code>
+            </code> </p> <p>Stellen Sie sicher, dass Sie 
+            <code>
               noindex 
-            </code> von der URL mit einem Leerzeichen getrennt sind. Komma ist kein gültiges Trennzeichen. </p> </li> 
+            </code> aus der URL mit einem Leerzeichen; Komma ist kein gültiges Trennzeichen. </p> </li> 
           <li id="li_33AB62B669084BF7B976F4308715E435"> 
           <code>
             nofollow 
-          </code> <p>Wenn Sie den Text auf der Seite indizieren möchten, der mit der angegebenen URL übereinstimmt, aber nicht den Links der Seite folgen möchten, fügen Sie ihn <code>
+          </code> <p>Wenn Sie den Text auf der Seite indizieren möchten, der mit der angegebenen URL übereinstimmt, aber nicht den Links der Seite folgen möchten, fügen Sie 
+            <code>
               nofollow 
-            </code> nach der URL wie im folgenden Beispiel hinzu: </p> <p> 
+            </code> nach der URL wie im folgenden Beispiel: </p> <p> 
             <code>
               https://www.mydomain.com/products/new.html nofollow 
-            </code> </p> <p> Achten Sie darauf, dass Sie <code>
+            </code> </p> <p> Stellen Sie sicher, dass Sie 
+            <code>
               nofollow 
-            </code> von der URL mit einem Leerzeichen getrennt sind. Komma ist kein gültiges Trennzeichen. </p> </li> 
+            </code> aus der URL mit einem Leerzeichen; Komma ist kein gültiges Trennzeichen. </p> </li> 
         </ul> </p> </td> 
       </tr> 
       <tr> 
@@ -86,11 +90,13 @@ Sie können festlegen, welche Webseiten in den inkrementellen Index aufgenommen 
       </code> </p> <p>Sie können auch reguläre Ausdruck wie im folgenden Beispiel verwenden: </p> <p> 
       <code>
         regexp ^https://www\.mydomain\.com/products/household/.*\.html$ 
-      </code> </p> <p>Siehe <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguläre Ausdrücke</a>. </p> <p>Sie können auch die Suchbegriffe <code>
+      </code> </p> <p>Siehe <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguläre Ausdruck</a>. </p> <p>Sie können auch die Suchbegriffe verwenden 
+      <code>
         nofollow 
-      </code> und <code>
+      </code> und 
+      <code>
         noindex 
-      </code> wie in <span class="uicontrol"> Hinzufügen oder Aktualisieren von URLs </span> oben beschrieben verwenden. </p> </td> 
+      </code> wie oben unter <span class="uicontrol"> Hinzufügen oder Aktualisieren von URLs </span> beschrieben. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>URL-Masken einschließen und ausschließen </p> </td> 
@@ -100,15 +106,19 @@ Sie können festlegen, welche Webseiten in den inkrementellen Index aufgenommen 
       </code> </p> <p> 
       <code>
         exclude https://www.mydomain.com/products/ 
-      </code> </p> <p>indiziert die Seiten <code>
+      </code> </p> <p>indiziert die Seiten 
+      <code>
         lightbulbs1.html 
-      </code> und <code>
+      </code> und 
+      <code>
         lightbulbs2.html 
-      </code>. Es werden jedoch keine anderen Seiten indiziert, die im Produktverzeichnis aufgeführt sind. </p> <p>Eine zuerst angezeigte URL-Maske hat immer Vorrang vor einer URL, die später in der Liste angezeigt wird. Wenn der Suchroboter außerdem auf ein Dokument trifft, das sowohl einer Einschluss- als auch einer Ausschlussmaske entspricht, hat die zuerst aufgeführte Maske Vorrang. </p> <p>Sie können auch die Suchbegriffe <code>
+      </code>. Es werden jedoch keine anderen Seiten indiziert, die im Produktverzeichnis aufgeführt sind. </p> <p>Eine zuerst angezeigte URL-Maske hat immer Vorrang vor einer URL, die später in der Liste angezeigt wird. Wenn der Suchroboter außerdem auf ein Dokument trifft, das sowohl einer Einschluss- als auch einer Ausschlussmaske entspricht, hat die zuerst aufgeführte Maske Vorrang. </p> <p>Sie können auch die Suchbegriffe verwenden 
+      <code>
         nofollow 
-      </code> und <code>
+      </code> und 
+      <code>
         noindex 
-      </code> wie in <span class="uicontrol"> Hinzufügen oder Aktualisieren von URLs </span> oben beschrieben verwenden. </p> <p>Siehe <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164" type="concept" format="dita" scope="local"> Informationen zu URL-Masken</a>. </p> </td> 
+      </code> wie oben unter <span class="uicontrol"> Hinzufügen oder Aktualisieren von URLs </span> beschrieben. </p> <p>Siehe <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164" type="concept" format="dita" scope="local"> URL-Masken</a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Datumsmasken einschließen und ausschließen </p> </td> 
@@ -141,7 +151,8 @@ Sie können festlegen, welche Webseiten in den inkrementellen Index aufgenommen 
       <li id="li_172692DEDA8744B3AA492701D24C2D80"> 
       <code>
         exclude-days NNN 
-      </code> <p>Deaktivieren Sie die Indexierung aller Dokumente, die mit der angegebenen URL-Maske übereinstimmen und mindestens NN Tage alt sind. </p> <p>Optional können Sie der URL-Maske nach dem Suchbegriff folgen <code>
+      </code> <p>Deaktivieren Sie die Indexierung aller Dokumente, die mit der angegebenen URL-Maske übereinstimmen und mindestens NN Tage alt sind. </p> <p>Optional können Sie der URL-Maske nach dem Suchbegriff folgen 
+        <code>
           server-date 
         </code>. </p> <p>Im folgenden Maskenbeispiel werden alle PDF-Dateien ausgeschlossen, die mindestens 90 Tage alt sind: </p> <p> 
         <code>
@@ -150,7 +161,8 @@ Sie können festlegen, welche Webseiten in den inkrementellen Index aufgenommen 
       <li id="li_26078517744D4AECBE1351008926CBAE"> 
       <code>
         exclude-date YYYY-MM-DD 
-      </code> <p>Deaktivieren Sie die Indexierung aller Dokumente, die der angegebenen URL-Maske entsprechen und älter als das Datum JJJ-MM-TT sind. </p> <p>Optional können Sie der URL-Maske nach dem Suchbegriff folgen <code>
+      </code> <p>Deaktivieren Sie die Indexierung aller Dokumente, die der angegebenen URL-Maske entsprechen und älter als das Datum JJJ-MM-TT sind. </p> <p>Optional können Sie der URL-Maske nach dem Suchbegriff folgen 
+        <code>
           server-date 
         </code>. </p> <p>Im folgenden Maskenbeispiel werden alle Dokumente im Ordner /archive/ vom 23. April 2004 oder früher ausgeschlossen: </p> <p> 
         <code>
@@ -170,7 +182,7 @@ Sie können festlegen, welche Webseiten in den inkrementellen Index aufgenommen 
       </code> </p> <p>Sie können auch reguläre Ausdruck wie im folgenden Beispiel verwenden: </p> <p> 
       <code>
         regexp ^https://www\.mydomain\.com/products/199[567]/.*$ 
-      </code> </p> <p>Siehe <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguläre Ausdrücke</a>. </p> </td> 
+      </code> </p> <p>Siehe <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguläre Ausdruck</a>. </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -178,25 +190,25 @@ Sie können festlegen, welche Webseiten in den inkrementellen Index aufgenommen 
 1. Klicken **[!UICONTROL Save Changes]**.
 1. (Optional) Führen Sie einen der folgenden Schritte aus:
 
-   * Klicken Sie auf **[!UICONTROL History]** , um alle vorgenommenen Änderungen wiederherzustellen.
+   * Klicken Sie auf **[!UICONTROL History]**, um alle vorgenommenen Änderungen wiederherzustellen.
 
-      Siehe [Verwenden der Option](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Verlauf.
+      Siehe [Verwenden der Option Verlauf](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicken **[!UICONTROL Live]**.
 
-      Siehe [Live-Einstellungen](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)anzeigen.
+      Siehe [Live-Einstellungen anzeigen](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Klicken **[!UICONTROL Push Live]**.
 
-      Siehe [Pushing-Einstellungen](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Siehe [Pushing stage settings live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Einstellen des Zeitplans für den inkrementellen Index für eine Live-Website {#task_2A46BA189ECC4317A9D5C6E99A336F33}
+## Einstellen des inkrementellen Indexplans für eine Live-Website {#task_2A46BA189ECC4317A9D5C6E99A336F33}
 
 Sie können die Häufigkeit des inkrementellen Index und die Basiszeit auswählen, die zum Durchsuchen und Aktualisieren des inkrementellen Index verwendet wird.
 
 Die von Ihnen ausgewählte Zeit ist lokal gemäß der Zeitzone, die in den Kontoeinstellungen konfiguriert ist.
 
-Siehe [Konfigurieren der Kontoeinstellungen](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9).
+Siehe [Konfigurieren Ihrer Kontoeinstellungen](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9).
 
 Webserver sollen oft mitten in der Nacht zur Wartung aussteigen. Wenn Ihr Server während einer geplanten Indexzeit ausfällt, schlägt der Indexierungsvorgang fehl. Stellen Sie sicher, dass Sie eine Tageszeit auswählen, zu der der Webserver verfügbar ist.
 
@@ -205,8 +217,8 @@ Der Index-Plan gilt nur für Ihren Live-Index. Sie können keine Stage-Indizes p
 **So legen Sie den inkrementellen Indexzeitplan für eine Live-Website fest**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Index]** > **[!UICONTROL Incremental Index]** > **[!UICONTROL Live Schedule]**.
-1. Wählen Sie auf der **[!UICONTROL Incremental Index Schedule]** Seite &quot;In&quot;in der **[!UICONTROL Incrementally Index]** Dropdown-Liste die Indexierungsfrequenz in Stunden oder Minuten aus.
-1. Wählen Sie in der **[!UICONTROL Base Time]** Dropdown-Liste die Startzeit aus, zu der Sie einen neuen Inkrementalindex neu generieren möchten.
+1. Wählen Sie auf der Seite In die Dropdown-Liste **[!UICONTROL Incremental Index Schedule]** die Indexierungsfrequenz in Stunden oder Minuten aus.**[!UICONTROL Incrementally Index]**
+1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Base Time]** die Startzeit aus, zu der Sie einen neuen Inkrementalindex neu generieren möchten.
 1. Klicken **[!UICONTROL Save Changes]**.
 
 ## Ausführen eines inkrementellen Indexes einer Live- oder Staged-Website {#task_9BFB6157F3884B2FAECB7E0E9CA318CB}
@@ -222,7 +234,7 @@ Sie können Inkrementellen Index verwenden, um &quot;Teile&quot;Ihrer Live- oder
    * Klicken Sie auf **[!UICONTROL Index]** > **[!UICONTROL Incremental Index]** > **[!UICONTROL Staged Index]**.
 
 1. Klicken **[!UICONTROL Incremental Index Now]**.
-1. (Optional) Wenn Indizierungsfehler aufgetreten sind, klicken Sie auf **[!UICONTROL View Errors]** , um das zugehörige Protokoll Ansicht.
+1. (Optional) Wenn Indexierungsfehler aufgetreten sind, klicken Sie auf **[!UICONTROL View Errors]**, um das zugehörige Protokoll Ansicht.
 
 ## Anzeigen des inkrementellen Indexprotokolls einer Live- oder Stage-Website {#task_E668E1F1240C476DAA1CA783DC728232}
 
@@ -241,7 +253,7 @@ Protokolle können weder exportiert noch gespeichert werden. Das Protokoll bleib
 
 1. Führen Sie auf der Protokollseite oben oder unten einen der folgenden Schritte aus:
 
-   * Verwenden Sie die Navigationsoptionen **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** oder **[!UICONTROL Go to line]** , um durch das Protokoll zu navigieren.
+   * Verwenden Sie die Navigationsoptionen **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** oder **[!UICONTROL Go to line]**, um durch das Protokoll zu navigieren.
 
-   * Verwenden Sie die Anzeigeoptionen **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** oder **[!UICONTROL Show]** , um Ihre Anzeige zu verfeinern.
+   * Verwenden Sie die Anzeigeoptionen **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** oder **[!UICONTROL Show]**, um Ihre Anzeige zu verfeinern.
 
