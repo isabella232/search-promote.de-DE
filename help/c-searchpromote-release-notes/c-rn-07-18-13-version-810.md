@@ -8,11 +8,14 @@ topic: Release Notes,Site search and merchandising
 uuid: 161d678a-6393-4adb-a47a-e28e108acc31
 translation-type: tm+mt
 source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
+workflow-type: tm+mt
+source-wordcount: '180'
+ht-degree: 7%
 
 ---
 
 
-# Search&amp;Promote 8.10.1 Release Notes (07/18/2013){#search-promote-release-notes}
+# Search&amp;Promote 8.10.1 Versionshinweise (18.07.2013){#search-promote-release-notes}
 
 <table> 
  <thead> 
@@ -37,17 +40,17 @@ source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
 
 * **[!DNL Business Rules]** - Es wurde die Möglichkeit hinzugefügt, einer Geschäftsregel mehr als einen Zeitplan zuzuweisen.
 
-   See [About Business Rules](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
+   Siehe [Geschäftsregeln](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
 
 * **Geführte Suche** : Es wurde ein Problem behoben, bei dem das Zurückkehren zum XML-Parser deaktiviert wurde.
-* **Archivierte, komprimierte und unkomprimierte Dateien** - Es wurde die Möglichkeit hinzugefügt, Informationen aus den folgenden Archiv-, Komprimierungs- und unkomprimierten Dateitypen herunterzuladen und zu extrahieren: .zip/tar/tar.gz/tar.bz2/gzip/bzip2
-* **Indexierung** über Remote-Zugriff - Es wurde die Möglichkeit zur Remote-Steuerung von Indexierungsaktionen neu generiert.
+* **Archivierte, komprimierte und nicht komprimierte Dateien** : Es wurde die Möglichkeit zum Herunterladen und Extrahieren von Informationen aus den folgenden Archiv-, Komprimierungs- und unkomprimierten Dateitypen hinzugefügt: .zip/tar/tar.gz/tar.bz2/gzip/bzip2
+* **Indexierung**  über Remote-Zugriff: Es wurde die Möglichkeit zur Remote-Steuerung von Indexierungsaktionen neu generiert.
 
-   Siehe [Info zur Remote-Steuerung für die Indizierung](../c-about-index-menu/c-about-remote-control-for-indexing.md#concept_C79B322190E84106A434E5C6D4A4118F).
+   Siehe [Info zur Remote-Steuerung für Indizierung](../c-about-index-menu/c-about-remote-control-for-indexing.md#concept_C79B322190E84106A434E5C6D4A4118F).
 
-   Siehe auch [Info zum Regenerieren des Index](../c-about-index-menu/c-about-regenerate-index.md#concept_6CBE6B8D18EF47D293091CBA542245FA).
+   Siehe auch [Über Regenerationsindex](../c-about-index-menu/c-about-regenerate-index.md#concept_6CBE6B8D18EF47D293091CBA542245FA).
 
-* **Facet Rail** - Unterstützung für mehrere Facettenschienen hinzugefügt.
+* **Facet Rail** : Unterstützung für mehrere Facettenschienen hinzugefügt.
 
    Weitere Informationen finden Sie unter [Info zu Facet Rail](../c-about-design-menu/c-about-facet-rails.md#concept_1FDC8BCDFFC84A0889DA670F63D5F6DB).
 
