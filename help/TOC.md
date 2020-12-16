@@ -65,7 +65,7 @@ ht-degree: 10%
    + [Regeln nach der Suche](c-about-rules-menu/c-about-post-search-rules.md)
    + [Geschäftsregeln](c-about-rules-menu/c-about-business-rules.md)
    + [Rangregeln](c-about-rules-menu/c-about-ranking-rules.md)
-+ Verwendung der Suchlinguistik {#linguistics}
++ Suchlinguistik {#linguistics}
    + [Wörterbücher](c-about-linguistics-menu/c-about-dictionaries.md)
    + [Wörter und Sprache](c-about-linguistics-menu/c-about-words-and-language.md)
    + [„Meinten Sie“-](c-about-linguistics-menu/c-about-did-you-mean.md)
@@ -74,11 +74,11 @@ ht-degree: 10%
    + [Häufige Wortgruppen](c-about-linguistics-menu/c-about-common-phrases.md)
 + [Simulator](c-about-simulator.md)
 + [Staging](c-about-staging.md)
-+ Erstellen von Suchberichten {#reports}
++ Generieren von Suchberichten {#reports}
    + [Arbeiten mit Suchberichten](c-about-reports-menu/c-about-reports-menu.md)
-   + [Datenansichten](c-about-reports-menu/c-about-data-views.md)
+   + [Ansichten](c-about-reports-menu/c-about-data-views.md)
    + [Warnhinweise](c-about-reports-menu/c-about-alerts.md)
-+ Indizieren von Inhalten {#index}
++ Indizierung von Inhalten {#index}
    + [Vollständiger Index](c-about-index-menu/c-about-full-index.md)
    + [Inkrementeller Index](c-about-index-menu/c-about-incremental-index.md)
    + [Skriptindex](c-about-index-menu/c-about-scripted-index.md)
@@ -87,9 +87,9 @@ ht-degree: 10%
    + [Remote-Steuerung für Indizierung](c-about-index-menu/c-about-remote-control-for-indexing.md)
    + [Datenrücklauf für Indizes](c-about-index-menu/c-about-rollback-for-indexes.md)
    + [Vertikale Aktualisierung](c-about-index-menu/c-about-vertical-updates.md)
-+ Configuring settings {#settings}
++ Konfigurieren von Einstellungen {#settings}
    + [Crawling](c-about-settings-menu/c-about-crawling-menu.md)
-   + [Suchen](c-about-settings-menu/c-about-searching-menu.md)
+   + [Suche läuft](c-about-settings-menu/c-about-searching-menu.md)
    + [Metadaten](c-about-settings-menu/c-about-metadata-menu.md)
    + [Filtern](c-about-settings-menu/c-about-filtering-menu.md)
    + [Regeln neu schreiben](c-about-settings-menu/c-about-rewrite-rules-menu.md)
