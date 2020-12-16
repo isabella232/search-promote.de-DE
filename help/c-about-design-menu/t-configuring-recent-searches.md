@@ -9,11 +9,14 @@ topic: Design,Site search and merchandising
 uuid: 8ab1b35c-f953-4c26-921f-524af1fea4ef
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '204'
+ht-degree: 2%
 
 ---
 
 
-# Konfigurieren aktueller Suchen{#configuring-recent-searches}
+# Konfigurieren aktueller Suchvorgänge{#configuring-recent-searches}
 
 Die letzten Suchvorgänge sind ein Cookie-basiertes System, mit dem Sie eine Präsentationsvorlage verwenden können, um den neuesten Suchverlauf Ihres Kunden anzuzeigen.
 
@@ -21,12 +24,12 @@ Auf der Seite &quot;Zuletzt verwendete Suchen&quot;können Sie das Verhalten von
 
 Weitere Informationen zu den verschiedenen Tags, die Sie zur Anzeige der neuesten Suchvorgänge in Ihrer Präsentationsvorlage verwenden können, finden Sie im Thema zu den Tags der Präsentationsvorlage.
 
-Siehe [Presentation template-Tags](../c-appendices/c-templates.md#reference_F1BBF616BCEC4AD7B2548ECD3CA74C64).
+Siehe [Präsentationsvorlage-Tags](../c-appendices/c-templates.md#reference_F1BBF616BCEC4AD7B2548ECD3CA74C64).
 
 **So konfigurieren Sie kürzlich aufgerufene Suchen**
 
-1. Klicken Sie im Programmmenü auf **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Recent Searches]**.
-1. Legen Sie auf der [!DNL Recent Searches] Seite die gewünschten Optionen fest.
+1. Klicken Sie im Menü Programm auf **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Recent Searches]**.
+1. Legen Sie auf der Seite [!DNL Recent Searches] die gewünschten Optionen fest.
 
    <!-- 
    
@@ -59,15 +62,15 @@ Siehe [Presentation template-Tags](../c-appendices/c-templates.md#reference_F1BB
 
 1. (Optional) Führen Sie einen der folgenden Schritte aus:
 
-   * Klicken Sie auf **[!UICONTROL History]** , um alle vorgenommenen Änderungen wiederherzustellen.
+   * Klicken Sie auf **[!UICONTROL History]**, um alle vorgenommenen Änderungen wiederherzustellen.
 
-      Siehe [Verwenden der Option](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Verlauf.
+      Siehe [Verwenden der Option Verlauf](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicken **[!UICONTROL Live]**.
 
-      Siehe [Live-Einstellungen](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)anzeigen.
+      Siehe [Live-Einstellungen anzeigen](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Klicken **[!UICONTROL Push Live]**.
 
-      Siehe [Pushing-Einstellungen](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Siehe [Pushing stage settings live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
