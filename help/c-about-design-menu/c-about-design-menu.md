@@ -8,6 +8,9 @@ topic: Design,Site search and merchandising
 uuid: 61cb3ead-705e-45b7-a365-2c694d160d0a
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '69'
+ht-degree: 4%
 
 ---
 
