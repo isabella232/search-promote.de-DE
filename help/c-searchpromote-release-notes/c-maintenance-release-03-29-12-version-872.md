@@ -8,11 +8,14 @@ topic: Release Notes,Site search and merchandising
 uuid: e8454d47-6444-4136-92d7-35b90bfb12ca
 translation-type: tm+mt
 source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
+workflow-type: tm+mt
+source-wordcount: '117'
+ht-degree: 41%
 
 ---
 
 
-# Search&amp;Promote 8.7.2 Release Notes (03/29/2012){#search-promote-release-notes}
+# Search&amp;Promote 8.7.2 Versionshinweise (29.03.2012){#search-promote-release-notes}
 
 ## Produktkorrekturen und Erweiterungen {#section_6B3602709FB04B3C999C5DFE103CFF7D}
 
@@ -20,7 +23,7 @@ source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
 * Es wurde ein Problem mit ergebnisbasierten Aktionen behoben, die bei bestimmten gestaffelten Suchläufen nicht funktioniert hatten.
 * Es wurde ein Problem mit direkten Trefferdaten behoben, die auf Client- und Server-Seite doppelt kodiert waren.
 * Der Regelaufbau unterstützt nun in Internet Explorer 7 und 8 Facetten-Aktionen für bestimmte Kunden.
-* Fixed as issue with [!DNL Business Rules] keyword equality tests with pipe delimiter.
-* Es wurde ein Problem beim Bearbeiten der Bannerparameter für dynamische Medien Classic behoben.
-* Es wurde die Möglichkeit hinzugefügt, die Größe eines Banners für dynamische Medien-Classic unter Beibehaltung des Seitenverhältnisses zu ändern.
+* Es wurde ein Problem mit [!DNL Business Rules]-Suchbegriff-Gleichheitstests mit Pipe-Trennzeichen behoben.
+* Es wurde ein Problem beim Bearbeiten von Dynamic Media Classic-Bannerparametern behoben.
+* Es wurde die Möglichkeit hinzugefügt, die Größe eines Dynamic Media Classic-Banners unter Beibehaltung des Seitenverhältnisses zu ändern.
 
