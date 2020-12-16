@@ -1,6 +1,6 @@
 ---
-description: Sie können allgemeine Phrasen definieren, die auf Ihrer Website verwendet werden, damit ein Kunde, der eine Suchabfrage aufruft, keine Anführungszeichen zu den von Ihnen definierten Phrasen eingeben muss.
-seo-description: Sie können allgemeine Phrasen definieren, die auf Ihrer Website verwendet werden, damit ein Kunde, der eine Suchabfrage aufruft, keine Anführungszeichen zu den von Ihnen definierten Phrasen eingeben muss.
+description: Sie können allgemeine Wortgruppen definieren, die auf Ihrer Website verwendet werden, damit ein Kunde bei der Eingabe einer Suchbegriffs-Abfrage keine Anführungszeichen zu den von Ihnen definierten Wortgruppen eingeben muss.
+seo-description: Sie können allgemeine Wortgruppen definieren, die auf Ihrer Website verwendet werden, damit ein Kunde bei der Eingabe einer Suchbegriffs-Abfrage keine Anführungszeichen zu den von Ihnen definierten Wortgruppen eingeben muss.
 seo-title: Allgemeine Wortgruppen
 solution: Target
 title: Allgemeine Wortgruppen
@@ -8,51 +8,54 @@ topic: Linguistics,Site search and merchandising
 uuid: 0f980a22-d826-4476-97de-0e9c14549bc8
 translation-type: tm+mt
 source-git-commit: 8efa90ac2927b263b7d48ccbf25d4b0e917dac79
+workflow-type: tm+mt
+source-wordcount: '1216'
+ht-degree: 1%
 
 ---
 
 
-# Allgemeine Wortgruppen{#about-common-phrases}
+# Allgemeine Phrasen{#about-common-phrases}
 
-Sie können allgemeine Phrasen definieren, die auf Ihrer Website verwendet werden, damit ein Kunde, der eine Suchabfrage aufruft, keine Anführungszeichen zu den von Ihnen definierten Phrasen eingeben muss.
+Sie können allgemeine Wortgruppen definieren, die auf Ihrer Website verwendet werden, damit ein Kunde bei der Eingabe einer Suchbegriffs-Abfrage keine Anführungszeichen zu den von Ihnen definierten Wortgruppen eingeben muss.
 
-## Verwenden allgemeiner Begriffe {#concept_4946E53586DF492EAEB1B7F757FD440F}
+## Verwenden von allgemeinen Wortgruppen {#concept_4946E53586DF492EAEB1B7F757FD440F}
 
 >[!NOTE]
 >
 >Die Funktion &quot;Gemeinsame Wortgruppe&quot;wird in der Benutzeroberfläche nicht angezeigt, da sie nicht standardmäßig aktiviert ist. Wenden Sie sich an den technischen Support, um diese Funktion für Ihre Verwendung zu aktivieren.
 
-Häufige Wortgruppen sind eine Sammlung von Wortgruppen, die bei der Suche eines Kunden erkannt werden. Es behandelt die Ausdrücke als kombinierte Wortgruppe und nicht als einzelne Wörter. Wenn ein Kunde eine Suchabfrage auf Ihrer Website eingibt, kann er Wortgruppen durch doppelte Anführungszeichen wie &quot;Pazifischer Ozean&quot;identifizieren. Wenn Sie jedoch Gruppen allgemeiner Ausdrücke hinzufügen, werden die Anführungsschritte automatisch für den Kunden ausgeführt, da sie passende Ausdrücke in der Suchabfrage finden.
+Häufige Wortgruppen sind eine Sammlung von Wortgruppen, die bei der Suche eines Kunden erkannt werden. Es behandelt die Ausdrücke als kombinierte Wortgruppe und nicht als einzelne Wörter. Wenn ein Kunde eine Abfrage zur Suche auf Ihrer Website aufruft, kann er Sätze identifizieren, indem er die Begriffe mit Dubletten-Anführungszeichen wie &quot;Pazifischer Ozean&quot;umschließt. Wenn Sie jedoch Gruppen allgemeiner Ausdrücke hinzufügen, werden die Anführungsschritte automatisch für den Kunden ausgeführt, da passende Ausdrücke in der Abfrage gefunden werden.
 
-Angenommen, ein Kunde Ihrer Website gibt die folgende Suchabfrage ein:
+Angenommen, ein Kunde Ihrer Website gibt die folgende Abfrage ein:
 
 `hotels near the pacific ocean`
 
-Ohne die Hinzufügung von Anführungszeichen `pacific ocean`gibt die Suche des Kunden Ergebnisse für Hotels in der Nähe eines Ozeans auf der Welt zurück, was nicht dem Wunsch des Kunden entspricht.
+Ohne das Hinzufügen von Anführungszeichen um `pacific ocean` gibt die Suche des Kunden Ergebnisse für Hotels in der Nähe eines Ozeans auf der Welt zurück, was nicht dem Wunsch des Kunden entspricht.
 
-Wenn Sie jedoch den allgemeinen Begriff &quot;Pazifischer Ozean&quot;hinzufügen, wird ihre Suchabfrage automatisch in folgende Suchabfrage konvertiert:
+Wenn Sie jedoch den allgemeinen Begriff &quot;Pazifischer Ozean&quot;hinzufügen, wird die Abfrage der Suche automatisch in folgende Elemente konvertiert:
 
 `hotels near the "pacific ocean"`
 
-Die Verwendung von gemeinsamen Wortgruppen schließt nicht aus, dass Ihre Kunden Anführungszeichen um Wortgruppen setzen, sondern fügt einfach Anführungszeichen hinzu, wenn diese definierten Wortgruppen in ihrer Suchabfrage gefunden werden.
+Die Verwendung von gemeinsamen Wortgruppen schließt nicht aus, dass Ihre Kunden Anführungszeichen um Wortgruppen herum verwenden, sondern fügt einfach Anführungszeichen hinzu, wenn diese definierten Wortgruppen in ihrer Abfrage gefunden werden.
 
-Diese Erweiterung der Suchabfrage gilt für CGI-Parameter `sp_q` und - `sp_q_#`Parameter der Backend-Suche.
+Diese Erweiterung der Abfrage für die Suche nach Backend-CGI-Parametern `sp_q` und `sp_q_#`,
 
-Siehe Tabellenzeilen 25, 26 und 32 in CGI- [Suchparametern](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8)für die Backend-Suche.
+Siehe die Tabellenzeilen 25, 26 und 32 in [CGI-Parameter für die Backend-Suche](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8).
 
 ## Hinzufügen einer gemeinsamen Wortgruppe {#task_35C84FABCD9042C5B48C5C788B752871}
 
-Sie können &quot;Common Phrase Groups&quot;hinzufügen, um sicherzustellen, dass bei Suchabfragen Webseiten, die alle Wörter in exakter Reihenfolge und Nähe enthalten, die vom Kunden eingegeben wurden, korrekt zurückgegeben werden.
+Sie können gemeinsame Ausdrucksgruppen hinzufügen, um sicherzustellen, dass Suchabfragen Webseiten exakt zurückgeben, die alle Wörter in der exakten Reihenfolge und Nähe enthalten, die ein Kunde eingegeben hat.
 
-Wenn Sie Gruppen mit gemeinsamen Wortgruppen hinzufügen, können Sie die Funktion &quot;Suchen&quot;auf der Hauptseite der Gruppe mit gemeinsamen Wortgruppen verwenden. Mit der Funktion &quot;Suchen&quot;können Sie nach einem vorhandenen Satz suchen und herausfinden, in welcher Gruppe er sich befindet.
+Beim Hinzufügen von allgemeinen Ausdrucksgruppen können Sie die Funktion &quot;Suchen&quot;auf der Hauptseite der allgemeinen Ausdrucksgruppe verwenden. Mit der Suchfunktion können Sie nach einem vorhandenen Ausdruck suchen und herausfinden, in welcher Gruppe er sich befindet.
 
-Siehe [Suchen von Gruppen, die bestimmte Wörter in einer Wortgruppe](../c-about-linguistics-menu/c-about-common-phrases.md#task_20714969274740A7BB4DC71E705EA15E)enthalten.
+Siehe [Suchen von Gruppen, die bestimmte Wörter in einem Ausdruck enthalten](../c-about-linguistics-menu/c-about-common-phrases.md#task_20714969274740A7BB4DC71E705EA15E).
 
-**So fügen Sie eine Gruppe &quot;Common Phrases&quot;hinzu**
+**So fügen Sie eine Gruppe für allgemeine Ausdrücke hinzu**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Linguistics]** > **[!UICONTROL Common Phrases]**.
-1. Klicken Sie auf der [!DNL Common Phrases Groups] Seite auf **Wortgruppe** hinzufügen.
-1. Legen Sie auf der [!DNL Add Common Phrase Group] Seite die gewünschten Optionen fest und fügen Sie alle Wortgruppen hinzu, aus denen die Gruppe besteht.
+1. Klicken Sie auf der Seite [!DNL Common Phrases Groups] auf **Phrase-Gruppe hinzufügen**.
+1. Legen Sie auf der Seite [!DNL Add Common Phrase Group] die gewünschten Optionen fest und fügen Sie alle Sätze hinzu, aus denen die Gruppe besteht.
 
    <table> 
     <thead> 
@@ -64,15 +67,15 @@ Siehe [Suchen von Gruppen, die bestimmte Wörter in einer Wortgruppe](../c-about
     <tbody> 
       <tr> 
       <td colname="col1"> <p>Gruppenname </p> </td> 
-      <td colname="col2"> <p>Erforderlich. </p> <p>Der eindeutige Name der Gruppe mit gemeinsamen Phrasen. </p> <p>Wenn Sie später eine Gruppe mit gemeinsamen Wortgruppen bearbeiten, beachten Sie, dass Sie den Gruppennamen nicht ändern können. Um den Gruppennamen zu ändern, verwenden Sie die Funktion <span class="uicontrol"> Umbenennen</span> . </p> <p>Siehe <a href="../c-about-linguistics-menu/c-about-common-phrases.md#task_168E07C59C0F40989D43E7010EFF22EB" format="dita" scope="local"> Umbenennen einer gemeinsamen Wortgruppe</a>. </p> </td> 
+      <td colname="col2"> <p>Erforderlich. </p> <p>Eindeutiger Name der Gruppe der gemeinsamen Ausdrücke. </p> <p>Wenn Sie später eine Gruppe allgemeiner Ausdrücke bearbeiten, können Sie den Gruppennamen nicht ändern. Um den Gruppennamen zu ändern, verwenden Sie die Funktion <span class="uicontrol"> Umbenennen</span>. </p> <p>Siehe <a href="../c-about-linguistics-menu/c-about-common-phrases.md#task_168E07C59C0F40989D43E7010EFF22EB" format="dita" scope="local"> Umbenennen einer allgemeinen Ausdrucksgruppe</a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Hinweise </p> </td> 
-      <td colname="col2"> <p>Optional. </p> <p>Fügen Sie Informationen hinzu, die sich auf die Gruppe Gemeinsame Phrase beziehen. </p> </td> 
+      <td colname="col2"> <p>Optional. </p> <p>Fügen Sie Informationen hinzu, die sich auf die Gruppe "Gemeinsame Ausdrücke"beziehen. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Wortgruppen </p> </td> 
-      <td colname="col2"> <p>Erforderlich. </p> <p>Hier können Sie einen Satz mit maximal fünf Wörtern angeben. Wenden Sie sich an den technischen Support, um die maximale Worteinstellung anzupassen. </p> <p>Jeder Satz, den Sie eingeben, muss innerhalb einer Common Phrase Group eindeutig sein. </p> <p>Verwenden Sie die Plus- (+) und Minuszeichen (-) in der Spalte Aktion, um die eingegebene Wortgruppe hinzuzufügen oder eine Wortgruppe zu löschen. </p> </td> 
+      <td colname="col1"> <p>Ausdrücke </p> </td> 
+      <td colname="col2"> <p>Erforderlich. </p> <p>Ermöglicht die Angabe einer Wortgruppe mit maximal fünf Wörtern. Wenden Sie sich an den technischen Support, um die maximale Worteinstellung anzupassen. </p> <p>Jeder Ausdruck, den Sie eingeben, muss innerhalb einer gemeinsamen Ausdrucksgruppe eindeutig sein. </p> <p>Verwenden Sie die Plus-Symbole (+) und Minus-Symbole (-) in der Spalte "Aktion", um den eingegebenen Ausdruck hinzuzufügen oder einen Ausdruck zu löschen. </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -80,134 +83,134 @@ Siehe [Suchen von Gruppen, die bestimmte Wörter in einer Wortgruppe](../c-about
 1. Klicken Sie auf **Hinzufügen**.
 1. (Optional) Führen Sie einen der folgenden Schritte aus:
 
-   * Klicken Sie auf **[!UICONTROL History]** , um alle vorgenommenen Änderungen wiederherzustellen.
+   * Klicken Sie auf **[!UICONTROL History]**, um die vorgenommenen Änderungen wiederherzustellen.
 
-      Siehe [Verwenden der Option](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Verlauf.
+      Siehe [Verwenden der Option Verlauf](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicken **[!UICONTROL Live]**.
 
-      Siehe [Live-Einstellungen](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)anzeigen.
+      Siehe [Live-Einstellungen anzeigen](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Klicken **[!UICONTROL Push Live]**.
 
-      Siehe [Pushing-Einstellungen](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Siehe [Pushing stage settings live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Testen einer allgemeinen Wortgruppe {#task_A0C344E051CA45A9A0588242F9DA675D}
+## Testen eines allgemeinen Ausdrucks {#task_A0C344E051CA45A9A0588242F9DA675D}
 
-Wenn Sie Metadatenfelder ausgewählt haben, die mit einer Wortgruppe verknüpft werden sollen, können Sie die Erweiterung einer bestimmten Wortgruppe testen.
+Wenn Sie Metadatenfelder ausgewählt haben, die mit einer Ausdrucksgruppe verknüpft werden sollen, können Sie die Erweiterung eines bestimmten Ausdrucks testen.
 
-Wenn Sie die Erweiterung einer Wortgruppe testen, suchen Sie anhand der mit der Wortgruppe verknüpften Metadatenfelder nach einem genauen Satz. Die Wortgruppe wird durchsucht, als hätte sie Anführungszeichen. In allen anderen Metadatenfeldern werden nur die Wörter innerhalb der Wortgruppe ohne Anführungszeichen gesucht. Angenommen, Sie haben die Wortgruppe getestet `audi TT`. Die zurückgegebenen Ergebnisse könnten wie folgt aussehen:
+Wenn Sie die Erweiterung eines Ausdrucks testen, suchen Sie nach einem genauen Ausdruck für die Metadatenfelder, die Sie mit der Ausdrucksgruppe verknüpft haben. Der Ausdruck wird durchsucht, als ob er Anführungszeichen um ihn herum hätte. In allen anderen Metadatenfeldern werden nur die Wörter innerhalb des Ausdrucks ohne Anführungszeichen gesucht. Beispiel: Sie haben den Ausdruck `audi TT` getestet. Die zurückgegebenen Ergebnisse könnten wie folgt angezeigt werden:
 
 `title|body|field3:"Audi TT" url|desc|keys|target|alt:Audi TT`
 
-**So testen Sie einen gemeinsamen Satz**
+**So testen Sie einen allgemeinen Ausdruck**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Linguistics]** > **[!UICONTROL Common Phrases]**.
-1. Geben Sie auf der [!DNL Common Phrases Groups] Seite in den **Satz Test, der das Textfeld enthält** , die Wortgruppe ein, deren Metadatenerweiterung Sie testen möchten.
+1. Geben Sie auf der Seite [!DNL Common Phrases Groups] im Textfeld **Ausdruck testen, der** enthält, den Ausdruck ein, dessen Metadatenerweiterung Sie testen möchten.
 1. Klicken **[!UICONTROL Test]**.
 
    Die Erweiterungsergebnisse werden im Textfeld angezeigt.
 1. (Optional) Ziehen Sie die untere rechte Ecke des Textfelds, um den Anzeigebereich zu erweitern.
 
-## Suchen von Gruppen, die bestimmte Wörter in einer Wortgruppe enthalten {#task_20714969274740A7BB4DC71E705EA15E}
+## Suchen von Gruppen, die bestimmte Wörter in einem Ausdruck {#task_20714969274740A7BB4DC71E705EA15E} enthalten
 
-Sie können [!DNL Find] zur Suche nach bestimmten Wörtern in einem Satz unter allen vorhandenen Gruppen, die Sie hinzugefügt haben, verwendet werden.
+Sie können [!DNL Find] verwenden, um nach bestimmten Wörtern in einem Ausdruck unter allen vorhandenen Gruppen zu suchen, die Sie hinzugefügt haben.
 
 Wenn Sie &quot;Suchen&quot;verwenden, wird Folgendes gefunden:
 
 * Wo genau der gleiche Satz unter allen Gruppen gefunden wird.
-* Alle Wörter im Satz unter allen Gruppen, unabhängig von der Wortreihenfolge und der Wortnähe im Satz.
+* Alle Wörter in der Phrase unter allen Gruppen, unabhängig von der Wortfolge und der Nähe in der Phrase.
 
-Siehe auch [Bearbeiten einer gemeinsamen Wortgruppe](../c-about-linguistics-menu/c-about-common-phrases.md#task_5CAC3A133C5342EEAFE55A7EABCBCD61).
+Siehe auch [Bearbeiten einer allgemeinen Ausdrucksgruppe](../c-about-linguistics-menu/c-about-common-phrases.md#task_5CAC3A133C5342EEAFE55A7EABCBCD61).
 
-**So suchen Sie Gruppen, die bestimmte Wörter in einer Wortgruppe enthalten**
+**So suchen Sie nach Gruppen, die bestimmte Wörter in einem Ausdruck enthalten**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Linguistics]** > **[!UICONTROL Common Phrases]**.
-1. Geben Sie auf der [!DNL Common Phrases Groups] Seite im **[!UICONTROL Find groups with phrases that contain]** Textfeld eine Wortgruppe ein.
+1. Geben Sie auf der Seite [!DNL Common Phrases Groups] im Textfeld **[!UICONTROL Find groups with phrases that contain]** einen Ausdruck ein.
 1. Klicken **[!UICONTROL Find]**.
 
    Die Ergebnisse werden im Textfeld angezeigt.
 1. (Optional) Führen Sie einen oder mehrere der folgenden Schritte aus:
 
    * Ziehen Sie die untere rechte Ecke des Textfelds, um den Anzeigebereich zu erweitern.
-   * Klicken Sie im Ergebnisfenster auf eine verknüpfte Wortgruppe, um die Seite &quot;Gemeinsame Wortgruppe bearbeiten&quot;der zugehörigen Gruppe zu öffnen.
+   * Klicken Sie im Ergebnisfenster auf einen Hyperlink, um die Seite &quot;Allgemeine Phrase-Gruppe bearbeiten&quot;der zugeordneten Gruppe zu öffnen.
 
-## Bearbeiten einer gemeinsamen Wortgruppe {#task_5CAC3A133C5342EEAFE55A7EABCBCD61}
+## Bearbeiten einer gemeinsamen Ausdrucksgruppe {#task_5CAC3A133C5342EEAFE55A7EABCBCD61}
 
-Sie können die vorhandenen Felder, Hinweise und Wortgruppen einer von Ihnen hinzugefügten Wortgruppe bearbeiten. Um den Gruppennamen zu bearbeiten, müssen Sie jedoch die [!DNL Rename] Funktion verwenden.
+Sie können die vorhandenen Felder, Hinweise und Ausdrücke einer gemeinsamen Ausdrucksgruppe bearbeiten, die Sie hinzugefügt haben. Um jedoch den Gruppennamen zu bearbeiten, müssen Sie die [!DNL Rename]-Funktion verwenden.
 
-Siehe auch [Umbenennen einer Gruppe](../c-about-linguistics-menu/c-about-common-phrases.md#task_168E07C59C0F40989D43E7010EFF22EB)mit gemeinsamen Wortgruppen.
+Siehe auch [Umbenennen einer allgemeinen Ausdrucksgruppe](../c-about-linguistics-menu/c-about-common-phrases.md#task_168E07C59C0F40989D43E7010EFF22EB).
 
-**So bearbeiten Sie eine Gruppe mit gemeinsamen Wortgruppen**
+**Bearbeiten einer Gruppe allgemeiner Ausdrücke**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Linguistics]** > **[!UICONTROL Common Phrases]**.
-1. Klicken Sie auf der [!DNL Common Phrases Groups] Seite rechts neben dem Gruppennamen **[!UICONTROL Edit]** auf .
-1. Legen Sie auf der [!DNL Edit Common Phrase Group] Seite die gewünschten Optionen fest.
+1. Klicken Sie auf der Seite [!DNL Common Phrases Groups] auf **[!UICONTROL Edit]** ganz rechts neben einem Gruppennamen.
+1. Legen Sie auf der Seite [!DNL Edit Common Phrase Group] die gewünschten Optionen fest.
 
-   Siehe die Tabelle der Optionen unter [Hinzufügen einer gemeinsamen Wortgruppe](../c-about-linguistics-menu/c-about-common-phrases.md#task_35C84FABCD9042C5B48C5C788B752871).
+   Siehe die Tabelle der Optionen unter [Hinzufügen einer gemeinsamen Ausdrucksgruppe](../c-about-linguistics-menu/c-about-common-phrases.md#task_35C84FABCD9042C5B48C5C788B752871).
 1. Klicken Sie auf **Änderungen speichern**.
 1. (Optional) Führen Sie einen der folgenden Schritte aus:
 
-   * Klicken Sie auf **[!UICONTROL History]** , um alle vorgenommenen Änderungen wiederherzustellen.
+   * Klicken Sie auf **[!UICONTROL History]**, um die vorgenommenen Änderungen wiederherzustellen.
 
-      Siehe [Verwenden der Option](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Verlauf.
+      Siehe [Verwenden der Option Verlauf](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicken **[!UICONTROL Live]**.
 
-      Siehe [Live-Einstellungen](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)anzeigen.
+      Siehe [Live-Einstellungen anzeigen](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Klicken **[!UICONTROL Push Live]**.
 
-      Siehe [Pushing-Einstellungen](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Siehe [Pushing stage settings live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Umbenennen einer gemeinsamen Wortgruppe {#task_168E07C59C0F40989D43E7010EFF22EB}
+## Umbenennen einer gemeinsamen Ausdrucksgruppe {#task_168E07C59C0F40989D43E7010EFF22EB}
 
-Sie können den Namen einer bestehenden Gruppe mit gemeinsamen Phrasen ändern. Wenn Sie jedoch die vorhandenen Felder, Hinweise und Wortgruppen einer Gruppe allgemeiner Wortgruppen ändern möchten, müssen Sie die [!DNL Edit] Funktion verwenden.
+Sie können den Namen einer vorhandenen gemeinsamen Ausdrucksgruppe ändern. Wenn Sie jedoch die vorhandenen Felder, Hinweise und Ausdrücke einer gemeinsamen Ausdrucksgruppe ändern möchten, müssen Sie die [!DNL Edit]-Funktion verwenden.
 
-Siehe [Bearbeiten einer gemeinsamen Wortgruppe](../c-about-linguistics-menu/c-about-common-phrases.md#task_5CAC3A133C5342EEAFE55A7EABCBCD61) .
+Siehe [Bearbeiten einer gemeinsamen Ausdrucksgruppe](../c-about-linguistics-menu/c-about-common-phrases.md#task_5CAC3A133C5342EEAFE55A7EABCBCD61) .
 
-**So benennen Sie eine Gruppe mit allgemeinen Wortgruppen um**
+**Umbenennen einer Gruppe allgemeiner Ausdrücke**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Linguistics]** > **[!UICONTROL Common Phrases]**.
-1. Klicken Sie auf der [!DNL Common Phrases Groups] Seite rechts neben dem Gruppennamen **[!UICONTROL Rename]** auf .
-1. Geben Sie auf der [!DNL Rename Common Phrase Group] Seite im **[!UICONTROL Group Name]** Textfeld den neuen Namen der Gruppe ein.
+1. Klicken Sie auf der Seite [!DNL Common Phrases Groups] auf **[!UICONTROL Rename]** ganz rechts neben einem Gruppennamen.
+1. Geben Sie auf der Seite [!DNL Rename Common Phrase Group] im Textfeld **[!UICONTROL Group Name]** den neuen Namen der Gruppe ein.
 1. Klicken Sie auf **Umbenennen**.
 1. (Optional) Führen Sie einen der folgenden Schritte aus:
 
-   * Klicken Sie auf **[!UICONTROL History]** , um alle vorgenommenen Änderungen wiederherzustellen.
+   * Klicken Sie auf **[!UICONTROL History]**, um die vorgenommenen Änderungen wiederherzustellen.
 
-      Siehe [Verwenden der Option](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Verlauf.
+      Siehe [Verwenden der Option Verlauf](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicken **[!UICONTROL Live]**.
 
-      Siehe [Live-Einstellungen](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)anzeigen.
+      Siehe [Live-Einstellungen anzeigen](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Klicken **[!UICONTROL Push Live]**.
 
-      Siehe [Pushing-Einstellungen](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Siehe [Pushing stage settings live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Löschen einer gemeinsamen Wortgruppe {#task_4106D282A2ED4A27B09EE5A8CAAEDA36}
+## Löschen einer gemeinsamen Ausdrucksgruppe {#task_4106D282A2ED4A27B09EE5A8CAAEDA36}
 
-Sie können alle von Ihnen hinzugefügten Common Phrase-Gruppen löschen. Wenn Sie eine Gruppe versehentlich löschen, können Sie die Gruppe [!DNL History] wiederherstellen.
+Sie können alle von Ihnen hinzugefügten allgemeinen Phrase-Gruppen löschen. Wenn Sie eine Gruppe versehentlich löschen, können Sie [!DNL History] verwenden, um die Gruppe wiederherzustellen.
 
-Siehe [Verwenden der Option](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Verlauf.
+Siehe [Verwenden der Option Verlauf](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
-**So löschen Sie eine Gruppe mit häufigen Wortgruppen**
+**Löschen einer Gruppe allgemeiner Ausdrücke**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Linguistics]** > **[!UICONTROL Common Phrases]**.
-1. Klicken Sie auf der [!DNL Common Phrases Groups] Seite rechts neben dem Gruppennamen **[!UICONTROL Delete]** auf .
-1. Klicken Sie auf der [!DNL Delete Common Phrase Group] Seite auf **[!UICONTROL Delete]**.
+1. Klicken Sie auf der Seite [!DNL Common Phrases Groups] auf **[!UICONTROL Delete]** ganz rechts neben einem Gruppennamen.
+1. Klicken Sie auf der Seite [!DNL Delete Common Phrase Group] auf **[!UICONTROL Delete]**.
 1. (Optional) Führen Sie einen der folgenden Schritte aus:
 
-   * Klicken Sie auf **[!UICONTROL History]** , um alle vorgenommenen Änderungen wiederherzustellen.
+   * Klicken Sie auf **[!UICONTROL History]**, um die vorgenommenen Änderungen wiederherzustellen.
 
-      Siehe [Verwenden der Option](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Verlauf.
+      Siehe [Verwenden der Option Verlauf](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicken **[!UICONTROL Live]**.
 
-      Siehe [Live-Einstellungen](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)anzeigen.
+      Siehe [Live-Einstellungen anzeigen](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Klicken **[!UICONTROL Push Live]**.
 
-      Siehe [Pushing-Einstellungen](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Siehe [Pushing stage settings live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
