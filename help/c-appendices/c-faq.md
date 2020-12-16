@@ -8,6 +8,9 @@ topic: Appendices,Site search and merchandising
 uuid: 4ce454a4-e770-4587-91a0-a25491818ac6
 translation-type: tm+mt
 source-git-commit: 4270ea66ba645ad0f71c9c8b5c2a1fcc6eb02ad2
+workflow-type: tm+mt
+source-wordcount: '8639'
+ht-degree: 0%
 
 ---
 
@@ -41,19 +44,19 @@ Eine SWF-Datei wird durchsucht und indiziert, wenn sie in einem Einbettungs- ode
 </object> 
 ```
 
-Eine SWF-Datei wird auch erkannt, wenn Sie die Datei-URL als Einstiegspunkt angeben.
+Eine SWF-Datei wird auch erkannt, wenn Sie die Datei-URL als Einstiegspunkt Liste haben.
 
-Siehe [Hinzufügen mehrerer URL-Einstiegspunkte, die indiziert](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45)werden sollen.
+Siehe [Hinzufügen mehrerer URL-Einstiegspunkte, die indiziert werden sollen.](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45)
 
 ## Was muss ich tun, um eine SWF-Datei zu indizieren? {#section_0A6A52CC70D4495BBE14D91906318F95}
 
-Um SWF-Dateien zu durchsuchen und zu indizieren, wählen Sie den Inhaltstyp **[!UICONTROL Adobe Flash Movies]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**).
+Um SWF-Dateien zu suchen und zu indizieren, wählen Sie den Inhaltstyp **[!UICONTROL Adobe Flash Movies]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**).
 
-Solange auf Ihre Flash-Datei von einem `<embed>` -Tag oder einem `<object>` -Tag in einem HTML-Dokument verwiesen wird, wird der Text indiziert und alle in der Datei aufgelisteten URLs werden durchsucht.
+Solange auf Ihre Flash-Datei von einem `<embed>`-Tag oder einem `<object>`-Tag in einem HTML-Dokument verwiesen wird, wird der Text indiziert und alle in der Datei aufgelisteten URLs werden durchsucht.
 
-Wenn Ihre Datei weder von einem `<embed>` Tag noch von einem `<object>` -Tag aus referenziert wird, können Sie die SWF-Datei in einem `<a href=...>` -Tag in einem HTML-Dokument oder als URL-Einstiegspunkt auflisten.
+Wenn Ihre Datei nicht über ein `<embed>`-Tag oder ein `<object>`-Tag referenziert wird, können Sie die SWF-Datei in einem `<a href=...>`-Tag in einem HTML-Dokument oder als URL-Einstiegspunkt Liste werden.
 
-Siehe [Hinzufügen mehrerer URL-Einstiegspunkte, die indiziert](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45)werden sollen.
+Siehe [Hinzufügen mehrerer URL-Einstiegspunkte, die indiziert werden sollen.](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45)
 
 ## Wie werden SWF-Dateien erkannt? {#section_B36C0536AB544F509601DC6A11A8E656}
 
@@ -61,21 +64,21 @@ SWF-Dateien werden durch den folgenden MIME-Typ identifiziert:
 
 `application/x-shockwave-flash`
 
-SWF-Dateien werden auch mit `application/octet-stream`&quot;- oder `text/plain` MIME-Typen erkannt, vorausgesetzt, die Dateierweiterung lautet .swf.
+SWF-Dateien werden auch mit den MIME-Typen `application/octet-stream`&quot;oder `text/plain` erkannt, vorausgesetzt, die Dateierweiterung lautet .swf.
 
 Ein falsch konfigurierter Server verwendet möglicherweise einen anderen MIME-Typ für SWF-Dateien. Überprüfen Sie unbedingt die Serverkonfiguration, wenn beim Crawling und Indizieren von SWF-Dateien Probleme auftreten.
 
 ## Wie werden SWF-Dateien indiziert? {#section_36856058A4B54FA5ABF921344F50410C}
 
-In einer SWF-Datei enthaltener Text wird indiziert, als wäre er `<body>` Text auf der umschließenden HTML-Seite. Wenn ein Suchergebnis Text findet, der in einer eingebetteten SWF-Datei enthalten ist, wird das Ergebnis tatsächlich mit der einschließenden HTML-Seite und nicht mit der SWF-Datei verknüpft. Auf diese Weise wird die SWF-Datei im richtigen Kontext angezeigt.
+In einer SWF-Datei enthaltener Text wird indiziert, als wäre er `<body>`-Text auf der umschließenden HTML-Seite. Wenn ein Suchergebnis Text findet, der in einer eingebetteten SWF-Datei enthalten ist, wird das Ergebnis tatsächlich mit der einschließenden HTML-Seite und nicht mit der SWF-Datei verknüpft. Auf diese Weise wird die SWF-Datei im richtigen Kontext angezeigt.
 
 Wenn eine SWF-Datei eine URL als Aktion &quot;Film laden&quot;enthält, wird der Text in der referenzierten SWF-Datei als Teil der umschließenden HTML-Seite indiziert.
 
-Wenn eine SWF-Datei eine URL als Aktion &quot;URL abrufen&quot;enthält, wird die URL zu einem späteren Zeitpunkt durchsucht und indiziert, genau wie eine HTML- `<a href=...>` Referenz zu einem späteren Zeitpunkt durchsucht und indiziert wird.
+Wenn eine SWF-Datei eine URL als Aktion &quot;URL abrufen&quot;enthält, wird die URL zu einem späteren Zeitpunkt durchsucht und indiziert, genau wie eine HTML-Referenz `<a href=...>` durchsucht und später indiziert wird.
 
 Wenn eine SWF-Datei als URL-Einstiegspunkt aufgeführt wird, wird der Text der SWF-Datei als eine einzige Seite indiziert. Ein Suchergebnis, das Text von einer Einstiegs-SWF-Verknüpfung direkt zum Film findet, nicht zu einer umschließenden HTML-Seite.
 
-Siehe [Hinzufügen mehrerer URL-Einstiegspunkte, die indiziert](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45)werden sollen.
+Siehe [Hinzufügen mehrerer URL-Einstiegspunkte, die indiziert werden sollen.](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45)
 
 ## Zählt eine SWF-Datei als Seite? {#section_0158D6DE70BC40D78E2374787B9F58AB}
 
@@ -85,32 +88,32 @@ Wenn eine SWF-Datei als URL-Einstiegspunkt aufgeführt ist, werden diese SWF-Dat
 
 ## Wie kann ich die Indizierung einzelner SWF-Dateien verhindern? {#section_E38AD37989EF410B97AF5125057BFD22}
 
-Um die Indexierung einer SWF-Datei zu verhindern, können Sie dem umschließenden HTML-Dokument entweder ein Robots-Meta-Tag ( `<meta name="ROBOTS" content="NOINDEX">`) oder ein `<noindex>` -Tag hinzufügen. Das heißt, das Dokument, das das `<embed>` oder- `<object>` Tag enthält.
+Um die Indexierung einer SWF-Datei zu verhindern, können Sie dem umschließenden HTML-Dokument entweder ein robots-Meta-Tag ( `<meta name="ROBOTS" content="NOINDEX">`) oder ein `<noindex>`-Tag hinzufügen. Das heißt, das Dokument, das das `<embed>`- oder `<object>`-Tag enthält.
 
-Sie können auch das Meta-Tag &quot;robots&quot;( `<meta name="ROBOTS" content="NOFOLLOW">`) verwenden, um folgende URLs zu verhindern, die in der SWF-Datei enthalten sind. Wenn das einschließende HTML-Dokument deaktiviert ist, werden die URLs, die in der SWF-Datei als &quot;URL abrufen&quot;aufgeführt sind, nicht befolgt.
+Sie können auch das Meta-Tag &quot;robots&quot;( `<meta name="ROBOTS" content="NOFOLLOW">`) verwenden, um folgende URLs zu verhindern, die in der SWF-Datei enthalten sind. Wenn das einschließende HTML-Dokument die Option &quot;Folgende&quot;deaktiviert hat, werden die in der SWF-Datei als &quot;URL abrufen&quot;aufgelisteten URLs nicht befolgt.
 
 ## Wie kann ich verhindern, dass SWF-Dateien auf meiner Website indiziert werden? {#section_DF2606A50E9A44859CFA0D44D7C5F2E4}
 
 Um die SWF-Indexierung zu deaktivieren, deaktivieren Sie den Inhaltstyp **[!UICONTROL Adobe Flash Movies]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**).
 
-Sie können auch die Indexierung von SWF-Dateien deaktivieren [!DNL URL Masks] lassen.
+Sie können auch [!DNL URL Masks] verwenden, um die Indizierung von SWF-Dateien zu deaktivieren.
 
-Siehe [Hinzufügen von URL-Masken zum Indexieren von Teilen von...](../c-about-settings-menu/c-about-crawling-menu.md#task_E1AFC17C746048B8843013D979E082C1).
+Siehe [Hinzufügen von URL-Masken zum Index oder nicht zum Indexieren von Teilen von...](../c-about-settings-menu/c-about-crawling-menu.md#task_E1AFC17C746048B8843013D979E082C1).
 
 Um die SWF-Indexierung zu deaktivieren, geben Sie eine der folgenden URL-Masken ein:
 
 * `exclude *.swf` (wenn Sie keine regulären Ausdrücke verwenden)
 * `exclude regexp ^.*\.swf$` (wenn Sie reguläre Ausdrücke verwenden)
 
-Siehe [Reguläre Ausdrücke](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
+Siehe [Reguläre Ausdruck](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
 
 ## Wie kommt es, dass ich die chinesischen, japanischen oder koreanischen SWF-Dateien auf meiner Website nicht durchsuchen kann? {#section_EE1A3A705AE74148BD195A0CE513A5C4}
 
-Site-Suche/Merchandising ruft UTF-8 aus SWF-Dateien ab, die mit Adobe Flash erstellt wurden. Der UTF-8 enthält keine Angabe der Sprache. Wenn Sie den Inhaltstyp ausgewählt haben **[!UICONTROL Adobe Flash Movies]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), müssen Sie mithilfe der Metadaten-Injektionen die Sprache angeben, die von der SWF-Datei verwendet wird.
+Site-Suche/Merchandising ruft UTF-8 aus SWF-Dateien ab, die mit Adobe Flash erstellt wurden. Der UTF-8 enthält keine Angabe der Sprache. Wenn Sie den Inhaltstyp **[!UICONTROL Adobe Flash Movies]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**) ausgewählt haben, müssen Sie mithilfe der Metadaten-Injektionen die Sprache angeben, die von der SWF-Datei verwendet wird.
 
-Siehe [Hinzufügen von Felddefinitionen](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
+Siehe [Hinzufügen von Feldinjizierungsdefinitionen](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
 
-Ältere SWF-Dateien geben auch keinen Zeichensatz an. Wenn Sie den SWF-Inhaltstyp ausgewählt haben **[!UICONTROL Adobe Flash Movies]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), müssen Sie den in der SWF-Datei verwendeten Zeichensatz mithilfe von Metadaten-Injektionen angeben.
+Ältere SWF-Dateien geben auch keinen Zeichensatz an. Wenn Sie den SWF-Inhaltstyp **[!UICONTROL Adobe Flash Movies]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**) ausgewählt haben, müssen Sie mithilfe der Metadaten-Injektionen den Zeichensatz angeben, der in der SWF-Datei verwendet wird.
 
 ## Allgemeine Suche {#reference_E2C675162789452A9B99C6633B12CBEF}
 
@@ -121,7 +124,7 @@ Bei der allgemeinen Suche stellen sich folgende Fragen:
 * [Muss ich jede Software installieren, um die Site zu benutzen...](#section_02AB2AFF71984F9DAA3AF2B7C0847A22)
 * [Was passiert, wenn meine Site das Seitenlimit überschreitet?](#section_ECA5FA01032D4322BABA4E2C7FE498C1)
 * [Wie ändere ich die E-Mail-Adresse, an der die Woche...](#section_AE27F63DD13F425B940C8E7D9ED5C614)
-* [Wie sicher sind meine Kundeninformationen bei der Site-Suche/beim Merchandising?](#section_5484CB954167412BB7F0480CB0C504B8)
+* [Wie sicher sind meine Kundeninformationen bei der Suche/dem Merchandising auf der Site?](#section_5484CB954167412BB7F0480CB0C504B8)
 * [Was ist mit der Privatsphäre meiner Kundeninformationen?](#section_8FB493F15E51454BA92A0C83E14C0CC7)
 * [Kann ich meine eigenen Banneranzeigen auf der Suche zeigen...](#section_611EB8B32C16418386CB7DC7FB6954B8)
 
@@ -134,7 +137,7 @@ Im Folgenden werden häufig gestellte Fragen zu Suchfunktionen aufgeführt:
 * [Wie kann ich Synonyme verwenden, um die Suchergebnisse zu verbessern ...](#section_E6E36E12514F4D7BAB01F8D1AB61D57B)
 * [Haben Sie die Kontrolle über die Reihenfolge der Suchergebnisse...](#section_C6361048502745779D9749A842C4C370)
 * [Kann ich die Sprache der Suchergebnisseite ändern...](#section_6EE41DA8241247D48BBEB061A50599C5)
-* [Kann ich mehr als eine Site in Adobe haben?](#section_AFA8825182094660A71EEC84B8329D6D)
+* [Kann ich mehr als eine Site auf meiner Adobe haben?](#section_AFA8825182094660A71EEC84B8329D6D)
 * [Kann ich mehr als eine Domäne suchen?](#section_BFBB0E9861D942F095B56CF0A8F16596)
 * [Kann ich meine Site in separate Abschnitte unterteilen, damit...](#section_52153A9DE9F9493B967A70583848B2A4)
 * [Wie schließe ich Teile meiner Website von der...](#section_D452EDE153654EF398F4A87780C6D43B)
@@ -155,27 +158,27 @@ Nein. Dies ist der Hauptvorteil von Site-Suche/Merchandising. Die Engine ist ein
 
 Wir führen weiterhin Suchvorgänge durch, damit Ihre Besucher Ihre Website ohne Unterbrechung durchsuchen können. Überprüfen Sie Ihren vollständigen Indexstatus oder das Live-Protokoll, um festzustellen, ob Ihre Website die Seitenbegrenzung überschreitet.
 
-Siehe [Grundlagen zum vollständigen Index](../c-about-index-menu/c-about-full-index.md#concept_C69BD21863FD4856B49326F35DB570D3).
+Siehe [Über vollständigen Index](../c-about-index-menu/c-about-full-index.md#concept_C69BD21863FD4856B49326F35DB570D3).
 
 Siehe [Anzeigen des vollständigen Indexprotokolls einer Live- oder Stage...](../c-about-index-menu/c-about-full-index.md#task_02E5E944C56B4EB19CC1FF321F3221B8).
 
 ## Wie ändere ich die E-Mail-Adresse, an die die wöchentlichen Berichte gesendet werden? {#section_AE27F63DD13F425B940C8E7D9ED5C614}
 
-Wöchentliche Berichte werden an den Eigentümer jedes aktiven Kontos gesendet. Sie können die E-Mail-Adresse ändern, indem Sie auf **[!UICONTROL Settings]** > **[!UICONTROL My Profile]** > **[!UICONTROL Personal Information]**. Wenn Sie mehr als ein aktives Suchkonto haben, werden alle Newsletter an die neue Adresse gesendet.
+Wöchentliche Berichte werden an den Eigentümer jedes aktiven Kontos gesendet. Sie können die E-Mail-Adresse ändern, indem Sie auf **[!UICONTROL Settings]** > **[!UICONTROL My Profile]** > **[!UICONTROL Personal Information]** klicken. Wenn Sie mehr als ein aktives Suchkonto haben, werden alle Newsletter an die neue Adresse gesendet.
 
 Siehe [Konfigurieren Ihrer persönlichen Benutzerinformationen](../c-about-settings-menu/c-about-my-profile-menu.md#task_A11A3BE2527B4204B896E04303B04AA6).
 
-## Wie sicher sind meine Kundeninformationen bei der Site-Suche/beim Merchandising? {#section_5484CB954167412BB7F0480CB0C504B8}
+## Wie sicher sind meine Kundeninformationen bei der Suche/dem Merchandising auf der Site? {#section_5484CB954167412BB7F0480CB0C504B8}
 
 Site-Suche/Merchandising ist sicher, schnell, stabil und einfach zu verwenden. Sie sind nicht gezwungen, Cookies zu verwenden (wenn Sie möchten, können Sie dies aber tun), und vertrauliche Informationen wie Passwörter werden niemals auf einen URL-Link gesetzt, der später von Ihrem Browser abgerufen werden kann.
 
 ## Was ist mit der Privatsphäre meiner Kundeninformationen? {#section_8FB493F15E51454BA92A0C83E14C0CC7}
 
-Adobe achtet die Privatsphäre seiner Kunden und Besucher. Siehe Adobe [Privacy Center](https://www.adobe.com/privacy.html).
+Die Adobe setzt sich dafür ein, die Privatsphäre ihrer Kunden und Besucher zu wahren. Siehe Adobe [Datenschutzzentrum](https://www.adobe.com/privacy.html).
 
 ## Kann ich meine eigenen Banneranzeigen auf den Suchergebnisseiten anzeigen? {#section_611EB8B32C16418386CB7DC7FB6954B8}
 
-Ja. Sie steuern das Erscheinungsbild und den Inhalt der Suchergebnisse. In der Suchergebnisvorlage für Ihre Website können Sie Links zu Ihrem eigenen Banneraustauschnetzwerk wie LinkExchange oder SmartClicks erstellen. Alle Treffer Ihrer Besucher werden Ihrem Banneraustauschkonto gutgeschrieben.
+Ja. Sie steuern das Erscheinungsbild und den Inhalt der Suchergebnisse. In der Suchergebnisvorlage für Ihre Website können Sie Links zu Ihrem eigenen Banneraustauschnetzwerk wie LinkExchange oder SmartClicks erstellen. Alle Treffer Ihrer Besucher werden Ihrem Bannerbörsenkonto gutgeschrieben.
 
 ## Kann ich die Suchergebnisse für meine Site anpassen? {#section_A64B3A621B794DF78D35ED06D9C43D0B}
 
@@ -183,43 +186,43 @@ Ja. Dies ist eine exklusive Funktion der Site-Suche/des Merchandisings. Mit unse
 
 Siehe [Suchvorlagen-Tags](../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4).
 
-Der Übergang zwischen Ihren eigenen Servern und Site-Such-/Merchandising-Servern ist für Ihre Kunden völlig nahtlos und unsichtbar. Wenn Sie HTML nicht kennen oder keine Zeit haben, eine benutzerdefinierte Vorlage zu erstellen, können Sie aus einer Reihe attraktiver, gebrauchsfertiger Vorlagen auswählen, die von dem internen Team professioneller Webentwickler von Adobe erstellt werden.
+Die Transition zwischen Ihren eigenen Servern und den Site-Such-/Merchandising-Servern ist für Ihre Kunden völlig nahtlos und unsichtbar. Wenn Sie HTML nicht kennen oder keine Zeit haben, eine benutzerdefinierte Vorlage zu erstellen, können Sie aus einer Reihe von attraktiven, einsatzbereiten Vorlagen wählen, die von einem internen Team professioneller Webentwickler von der Adobe erstellt werden.
 
 ## Kann ich sehen, nach welchen Kunden auf meiner Site gesucht wird? {#section_73709E1B0E82478DA7B4D15B6C845F33}
 
-Ja. Wir führen Suchstatistiken über die Suchvorgänge der Besucher Ihrer Website in den letzten zwei Monaten. Sie können diese Statistiken jederzeit unter Berichte im Produktmenü überprüfen. Suchberichte geben Ihnen wichtige Informationen darüber, was Besucher auf Ihrer Website genau suchen. Mit diesen Informationen können Sie das Design verbessern oder die Suchmaschine/Merchandising der Site so einstellen, dass sie Ihren Besuchern besser hilft.
+Ja. Wir führen Suchstatistiken für Suchvorgänge durch, die von Besuchern auf Ihrer Website in den letzten zwei Monaten durchgeführt wurden. Sie können diese Statistiken jederzeit unter Berichte im Produktmenü überprüfen. Suchberichte geben Ihnen wichtige Informationen darüber, was Besucher auf Ihrer Website genau suchen. Sie können diese Informationen verwenden, um das Design zu verbessern oder die Site-Suchmaschine/Merchandising-Engine so einzustellen, dass sie Ihren Besuchern besser entspricht.
 
 ## Wie kann ich steuern, welche Inhaltstypen (PDF, Text, Flash, MP3 und Microsoft Office) indiziert und gesucht werden? {#section_0AB8CB4B6BFA4286AA082055FEBFBE1C}
 
-Sie können Konten ganz einfach so konfigurieren, dass die Indizierung und Suche von Text in PDF-Dokumenten, Normaltext-Dokumenten, Flash-Filmen, MP3-Dateien oder Microsoft Office-Dokumenten aktiviert oder deaktiviert wird.
+Sie können auf einfache Weise Konten konfigurieren, um die Indizierung und Suche von Text in PDF-Dokumenten, Dokumenten mit Normaltext, Flash-, MP3- oder Microsoft Office-Dokumenten zu aktivieren oder zu deaktivieren.
 
-Diese Einstellungen werden auf der [!DNL Staged Content Types] Seite gesteuert.
+Diese Einstellungen werden auf der Seite [!DNL Staged Content Types] gesteuert.
 
-Siehe [Informationen zu Inhaltstypen](../c-about-settings-menu/c-about-crawling-menu.md#concept_6FEA1355C0374500B4C53090C34A8A07).
+Siehe [Inhaltstypen](../c-about-settings-menu/c-about-crawling-menu.md#concept_6FEA1355C0374500B4C53090C34A8A07).
 
 ## Werden dynamisch generierte Webseiten mit ASP-, JSP-, PHP-, CFM- oder Perl-basierten Inhalten unterstützt? {#section_E279F004F1C542A2B9773B832E7B013F}
 
-Statische oder dynamisch generierte HTML-Webseiten werden indiziert, einschließlich Seiten, die aus Datenbanken erstellt wurden, oder jeder andere Back-End-Prozess. Da der HTML-Code, den ein Browser sieht, indiziert ist, können Sie Site-Suche/Merchandising auf Websites verwenden, solange diese Back-End-Architekturen HTML-Seiten ergeben.
+Statische oder dynamisch generierte HTML-Webseiten werden indiziert, einschließlich Seiten, die aus Datenbanken erstellt wurden, oder jedes andere Back-End-Verfahren. Da der HTML-Code, den ein Browser sieht, indiziert ist, können Sie Site-Suche/Merchandising auf Websites verwenden, solange diese Back-End-Architekturen HTML-Seiten ergeben.
 
-Der Suchroboter durchsucht Ihre Website, indem er mit der ersten Seite an der Adresse der Website beginnt, die in angegeben ist [!DNL Account Settings], und folgt Links von Seite zu Seite.
+Der Suchroboter durchsucht Ihre Website, indem er mit der ersten Seite an der in [!DNL Account Settings] angegebenen Website-Adresse beginnt und Links von Seite zu Seite verfolgt.
 
-Siehe [Konfigurieren der Kontoeinstellungen](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9).
+Siehe [Konfigurieren Ihrer Kontoeinstellungen](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9).
 
-Wenn der Suchroboter alle Seiten Ihrer Website durchsucht und indiziert, können Sie die Suchmaschine verwenden, um Ihre Site zu suchen. Mit anderen Worten, wenn dynamisch erstellte Dokumente mit Links von anderen Seiten in Ihre Website eingebunden werden, kann der Suchroboter trotzdem durchsuchen und den dynamischen Inhalt indizieren.
+Wenn der Suchroboter alle Seiten Ihrer Website durchsucht und indiziert, können Sie die Suchmaschine verwenden, um Ihre Site zu suchen. Mit anderen Worten, wenn dynamisch generierte Dokumente mit Links von anderen Seiten in Ihre Website eingebunden werden, kann der Suchroboter trotzdem durchsuchen und den dynamischen Inhalt indizieren.
 
 Nachdem der Inhalt Ihrer Website durchsucht und indexiert wurde, können Kunden Ihrer Website nach Informationen im indizierten Inhalt suchen.
 
 ## Wie kann ich Synonyme verwenden, um die Suchergebnisse für meine Site zu verbessern? {#section_E6E36E12514F4D7BAB01F8D1AB61D57B}
 
-Sie können Synonyme verwenden, wenn Sie möchten, dass Besucher Seiten finden, die mit ihrer Suchabfrage zusammenhängen.
+Sie können Synonyme verwenden, wenn Sie möchten, dass Besucher Seiten finden, die mit ihrer Abfrage in Verbindung stehen.
 
-Angenommen, Sie haben eine Seite mit einer Preisliste von Produkten, die auf Ihrer Site zum Verkauf angeboten werden. Nach der Prüfung der Suchberichte, die durch Site-Suche/Merchandising bereitgestellt werden, stellen Sie jedoch fest, dass Kunden bei ihren Suchvorgängen nach dem Wort &quot;Kosten&quot;, &quot;Kosten&quot;, &quot;Gebühr&quot;oder &quot;Gebühr&quot;suchen. Diese Wörter zeigen Ihre Preislistenseite nicht in den Suchergebnissen an. Mit der [!DNL Add Synonyms] [!DNL Dictionaries]Funktion in können Sie angeben, dass diese Wörter alle Synonyme sind, und Ihr Kunde kann Ihre Preisliste finden, unabhängig davon, welchen Suchbegriff er verwendet.
+Angenommen, Sie haben eine Seite, die eine Liste von Produkten enthält, die auf Ihrer Site zum Verkauf angeboten werden. Nach der Prüfung der Suchberichte, die durch Site-Suche/Merchandising bereitgestellt werden, stellen Sie jedoch fest, dass Kunden bei ihren Suchvorgängen nach dem Wort &quot;Kosten&quot;, &quot;Kosten&quot;, &quot;Gebühr&quot;oder &quot;Gebühr&quot;suchen. Diese Wörter zeigen Ihre Preisseite nicht in den Suchergebnissen an. Mit der Funktion [!DNL Add Synonyms] in [!DNL Dictionaries] können Sie angeben, dass diese Wörter alle Synonyme sind, und Ihr Kunde kann Ihre Liste finden, unabhängig davon, welchen Suchbegriff er verwendet.
 
 Siehe [Info zu Wörterbüchern](../c-about-linguistics-menu/c-about-dictionaries.md#concept_B8028B71EC8144669614C64578EDB034).
 
 ## Habe ich die Kontrolle über die Reihenfolge der Suchergebnisse? {#section_C6361048502745779D9749A842C4C370}
 
-Ja. Mithilfe der Benutzeroberfläche für erweiterte Relevanz können Sie steuern, welche Seiten für eine bestimmte Suchabfrage zurückgegeben werden. Diese Funktion ist nützlich, wenn Sie sicherstellen möchten, dass Kunden eine bestimmte Seite sehen, wenn sie nach bestimmten Wörtern suchen.
+Ja. Mithilfe der Benutzeroberfläche für erweiterte Relevanz können Sie steuern, welche Seiten für eine bestimmte Abfrage zurückgegeben werden. Diese Funktion ist nützlich, wenn Sie sicherstellen möchten, dass Kunden bei der Abfrage bestimmter Wörter eine bestimmte Seite sehen.
 
 Siehe [Hinzufügen eines neuen Meta-Tag-Felds](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5).
 
@@ -235,25 +238,25 @@ Wenn Sie die Sprache der Ergebnisse ändern möchten, können Sie den englischen
 
 Siehe [Bearbeiten einer Präsentation oder einer Transportvorlage](../c-about-design-menu/c-about-templates.md#task_800E0E2265C34C028C92FEB5A1243EC3).
 
-## Kann ich mehr als eine Site auf meiner Adobe-Kundenanmeldung verwenden? {#section_AFA8825182094660A71EEC84B8329D6D}
+## Kann ich mehr als eine Site auf meiner Adobe Kundenanmeldung haben? {#section_AFA8825182094660A71EEC84B8329D6D}
 
-Ja. Mit einer einzigen Adobe-Kundenanmeldung können Sie eine andere Suchmaschine für viele verschiedene Websites verwalten. Wählen Sie Konten unter &quot;Konten&quot;aus und verwalten Sie sie.
+Ja. Mit einer einzigen Adobe Kundenanmeldung können Sie eine andere Suchmaschine für viele verschiedene Websites verwalten. Wählen Sie Konten unter &quot;Konten&quot;aus und verwalten Sie sie.
 
-Siehe [Auswählen eines anderen Kontos](../c-about-accounts-menu.md#task_03C0FE918E2D44529CDC3B8DB75D1B26).
+Siehe [Auswahl eines anderen Kontos, das verwendet werden soll.](../c-about-accounts-menu.md#task_03C0FE918E2D44529CDC3B8DB75D1B26)
 
 ## Kann ich mehr als eine Domäne suchen? {#section_BFBB0E9861D942F095B56CF0A8F16596}
 
-Ja. Sie können den Zugriff auf mehrere Domänen mithilfe von [!DNL URL Entrypoints]konfigurieren. Geben Sie URL-Einstiegspunkte für zusätzliche Domänen an, deren Inhaber Sie sind. Denken Sie daran, dass Sie über die Berechtigung zum Indexieren von Domänen verfügen müssen, deren Inhaber Sie nicht sind.
+Ja. Sie können den Zugriff auf mehrere Domänen mithilfe von [!DNL URL Entrypoints] konfigurieren. Geben Sie URL-Einstiegspunkte für zusätzliche Domänen an, deren Inhaber Sie sind. Denken Sie daran, dass Sie über die Berechtigung zum Indexieren von Domänen verfügen müssen, deren Inhaber Sie nicht sind.
 
-Siehe [Informationen zu URL-Einträgen](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573).
+Siehe [Informationen zu URL-Einstiegspunkten](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573).
 
 ## Kann ich meine Site in separate Abschnitte unterteilen, damit Kunden diese Bereiche einzeln oder die gesamte Site durchsuchen können? {#section_52153A9DE9F9493B967A70583848B2A4}
 
 Ja. Eine Funktion &quot;Sammlungen&quot;ist enthalten, mit der Kunden bestimmte Bereiche Ihrer Website suchen können, um schnell das zu finden, wonach sie suchen.
 
-Siehe [Informationen zu Sammlungen](../c-about-settings-menu/c-about-searching-menu.md#concept_62E42ACE53D54EEE9273433B86259127).
+Siehe [Sammlungen](../c-about-settings-menu/c-about-searching-menu.md#concept_62E42ACE53D54EEE9273433B86259127).
 
-Kunden können beispielsweise eine Sammlung von URLs im Zusammenhang mit Produktverkaufsinformationen oder eine Sammlung von URLs im Zusammenhang mit Supportdiensten suchen. Sie können Sammlungen so einrichten, dass Ihren Kunden eine Dropdownliste mit Sammlungen oder eine Gruppe von Kontrollkästchen angezeigt wird.
+Kunden können beispielsweise eine Sammlung von URLs im Zusammenhang mit Produktverkaufsinformationen oder eine Sammlung von URLs im Zusammenhang mit Supportdiensten suchen. Sie können Sammlungen so einrichten, dass Ihren Kunden eine Dropdown-Liste mit Sammlungen oder eine Gruppe von Kontrollkästchen angezeigt wird.
 
 ## Wie kann ich Teile meiner Website von der Suche ausschließen? {#section_D452EDE153654EF398F4A87780C6D43B}
 
@@ -261,9 +264,9 @@ Ja. Geben Sie URL-Masken an, um festzulegen, welche Webseiten in die Indexierung
 
 Siehe [URL-Masken](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164).
 
-Siehe Skript [&quot;URL-Masken&quot;](../c-about-settings-menu/c-about-filtering-menu.md#concept_384F32EA18F84853A7BA99A04009330B).
+Siehe [Skript &quot;URL-Masken](../c-about-settings-menu/c-about-filtering-menu.md#concept_384F32EA18F84853A7BA99A04009330B)&quot;.
 
-Um zu verhindern, dass Teile einzelner Webseiten durchsucht werden, können Sie Teile einer Seite von der Indexierung ausschließen. Richten Sie den Text mit `<noindex>` und `</noindex>` -Tags ein. Diese Methode ist nützlich, wenn Sie Navigationstext von Suchvorgängen ausschließen möchten.
+Um zu verhindern, dass Teile einzelner Webseiten durchsucht werden, können Sie Teile einer Seite von der Indexierung ausschließen. Richten Sie den Text mit den Tags `<noindex>` und `</noindex>` ein. Diese Methode ist nützlich, wenn Sie Navigationstext von Suchvorgängen ausschließen möchten.
 
 ## Welche Zeichensätze werden unterstützt? {#section_A62A6F8F15804F968C77F2DEBDE8F8FD}
 
@@ -366,7 +369,7 @@ Siehe [Einstellen des inkrementellen Indexplans für eine Live-Website](../c-abo
 
 Wenn Sie die HTTP Basic-Authentifizierung zum Schutz bestimmter Bereiche Ihrer Website mit einem Kennwort verwenden, können Sie Bereiche und Kennwörter angeben, mit denen die Site-Suche/Merchandising Ihre Site indizieren kann.
 
-Siehe Passwörter [hinzufügen für den Zugriff auf Bereiche Ihrer Website, die erforderlich sind...](../c-about-settings-menu/c-about-crawling-menu.md#task_DED19D476FF04B48BB6456D5ECB8628A).
+Siehe [Passwörter für den Zugriff auf Bereiche Ihrer Website, die erforderlich sind, hinzufügen...](../c-about-settings-menu/c-about-crawling-menu.md#task_DED19D476FF04B48BB6456D5ECB8628A).
 
 ## Unterstützen Sie das Crawling und Indizieren von HTTPS oder sicheren Serverinhalten? {#section_D5BB8B8FBEA4405583E86B4AEC37151B}
 
@@ -392,7 +395,7 @@ Weitere Informationen zu Webrobotern und dem Roboter-Ausschlussprotokoll finden 
 
 ## Bestimmte Teile meiner Website müssen regelmäßig aktualisiert werden, damit meine Kunden die genauesten Suchergebnisse erhalten. Hilft die inkrementelle Indexierung bei diesem Problem? {#section_6D2FB1DE1B8A49729F9CCAE2A2770AB3}
 
-Ja. Dieses Szenario wurde mit der inkrementellen Indexierungsfunktion erstellt, um die Site-Suche/das Merchandising zu erleichtern. Der Hauptvorteil der inkrementellen Indexierung besteht darin, dass Unternehmen häufig dynamisch veränderte Teile ihrer Website indizieren können. Diese Funktion stellt sicher, dass Sie Suchergebnisse mit einer Genauigkeit von &quot;bis zur Minute&quot;anzeigen.
+Ja. Dieses Szenario wurde mit der inkrementellen Indexierungsfunktion erstellt, um die Site-Suche/das Merchandising zu erleichtern. Der Hauptvorteil der inkrementellen Indizierung besteht darin, dass Firmen häufig dynamisch verändernde Bereiche ihrer Website indizieren können. Diese Funktion stellt sicher, dass Sie Suchergebnisse mit einer Genauigkeit von &quot;bis zur Minute&quot;anzeigen.
 
 Siehe [Ausführen eines inkrementellen Indexes einer Live- oder Staged-Website...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
 
@@ -402,11 +405,11 @@ Siehe [Einstellen des inkrementellen Indexplans für eine Live-Website](../c-abo
 
 Statische oder dynamisch erstellte HTML-Webseiten, einschließlich Seiten, die aus Datenbanken erstellt wurden, oder andere Back-End-Prozesse werden indiziert. Da der von einem Browser angezeigte HTML-Code indiziert ist, können Sie die Site-Suche/das Merchandising auf Websites verwenden, solange die Back-End-Datenbankinformationen HTML-Seiten ergeben.
 
-Der Suchroboter durchsucht Ihre Website, indem er mit der ersten Seite an der Adresse der Website beginnt, die in angegeben ist [!DNL Account Settings], und folgt Links von Seite zu Seite.
+Der Suchroboter durchsucht Ihre Website, indem er mit der ersten Seite an der in [!DNL Account Settings] angegebenen Website-Adresse beginnt und Links von Seite zu Seite verfolgt.
 
-Siehe [Konfigurieren der Kontoeinstellungen](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9).
+Siehe [Konfigurieren Ihrer Kontoeinstellungen](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9).
 
-Wenn der Suchroboter alle Seiten Ihrer Website durchsucht und indiziert, können Sie die Suchmaschine verwenden, um Ihre Site zu suchen. Mit anderen Worten, wenn dynamisch erstellte Dokumente mit Links von anderen Seiten in Ihre Website eingebunden werden, kann der Suchroboter trotzdem den Inhalt der dynamischen Datenbank durchsuchen und indizieren.
+Wenn der Suchroboter alle Seiten Ihrer Website durchsucht und indiziert, können Sie die Suchmaschine verwenden, um Ihre Site zu suchen. Mit anderen Worten, wenn dynamisch generierte Dokumente mit Links von anderen Seiten in Ihre Website eingebunden werden, kann der Suchroboter weiterhin den dynamischen Datenbankinhalt durchsuchen und indizieren.
 
 Nachdem der Inhalt Ihrer Website durchsucht und indexiert wurde, können Kunden Ihrer Website nach Informationen im indizierten Inhalt suchen.
 
@@ -414,40 +417,40 @@ Sie können auf einfache Weise die Suche nach vollständigem Inhalt oder eine en
 
 Siehe [Hinzufügen eines neuen Meta-Tag-Felds](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5).
 
-## Kann ich Skripten oder Programme verwenden, um einen inkrementellen Index meiner Site auszulösen? {#section_0B6BB039557A42AA876D35D748E17DD0}
+## Kann ich Skripten oder Programme verwenden, um einen inkrementellen Index meiner Site zu initiieren? {#section_0B6BB039557A42AA876D35D748E17DD0}
 
-Ja. Sie können Skripten oder Programme verwenden, um einen inkrementellen Index Ihrer Website zu initiieren und um die Server zu pten, um die Site zu indizieren, sobald Inhalte geändert oder aktualisiert werden.
+Ja. Sie können Skripten oder Programm verwenden, um einen inkrementellen Index Ihrer Website zu initiieren und die Server zu pten, um die Site zu indizieren, sobald Inhalte geändert oder aktualisiert werden.
 
-Siehe [Grundlagen zu skriptgesteuerten Index](../c-about-index-menu/c-about-scripted-index.md#concept_34F58D551BC04BFB8ADC294B9DA9199D).
+Siehe [Über skriptgesteuerten Index](../c-about-index-menu/c-about-scripted-index.md#concept_34F58D551BC04BFB8ADC294B9DA9199D).
 
 ## Funktionsimplementierungen {#reference_2D0C4A80B8D64051BA9694D562DCE663}
 
-Eine Seite mit häufig gestellten Fragen, auf der verschiedene Funktionsimplementierungen in behandelt [!DNL Search&Promote]werden.
+Eine Seite mit häufig gestellten Fragen, die verschiedene Funktionsimplementierungen in [!DNL Search&Promote] erläutert.
 
-Im Folgenden werden häufig gestellte Fragen zu Funktionsimplementierungen auf [!DNL Search&Promote] einer Website behandelt:
+Die folgenden Fragen stellen sich häufig nach Funktionsimplementierungen in [!DNL Search&Promote] auf einer Website:
 
 * [Warum laufen meine Geschäftsregeln nicht?](#section_7FEB60383D8A4B11A60DFF9067274699)
 * [Warum habe ich Probleme bei der Planung der Indexierung, Fehler beim Starten der Indexierung und Probleme beim Starten der Indexierung?](#section_E05758193DF5436784B0145839989F75)
-* [Meine Indexgrößenbeschränkung überschreitet meine zulässige Grenze. Warum geschieht das und wie repariere ich es?](#section_12E7DA979C4C4B1D8A3A6415FC3DDA70)
+* [Meine Indexgrößenbeschränkung überschreitet meine zulässige Grenze. Warum geschieht dies und wie repariere ich es?](#section_12E7DA979C4C4B1D8A3A6415FC3DDA70)
 
 ## Warum laufen meine Geschäftsregeln nicht? {#section_7FEB60383D8A4B11A60DFF9067274699}
 
 Konfigurieren Sie Geschäftsregeln, wenn Banner angezeigt werden, oder entscheiden Sie, welche Ergebnisse in welcher Reihenfolge angezeigt werden. Sie können auch die Position eines Elements in Ihrer Facette und die Vorlage für eine bestimmte Suche konfigurieren.
 Ordnen Sie Geschäftsregeln neu an, um die Reihenfolge zu ändern, in der sie auf Präsentationsvorlagen ausgeführt werden. Geschäftsregeln werden in der Reihenfolge ausgeführt, in der sie festgelegt wurden. d. h. je höher die Ordnungsnummer einer Regel ist, desto später wird sie im Prozess ausgeführt, wodurch frühere Regeln übertroffen werden. Sie können Regeln neu anordnen, indem Sie auf der Seite &quot;Geschäftsregeln&quot;in die Spalte &quot;Reihenfolge&quot;der Tabelle eine neue Zahl eingeben.
 
-See [About Business Rules](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
+Siehe [Geschäftsregeln](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
 
 ## Warum habe ich Probleme bei der Planung der Indexierung, Fehler beim Starten der Indexierung und Probleme beim Starten der Indexierung? {#section_E05758193DF5436784B0145839989F75}
 
-Wenn Sie einen Index generieren, unabhängig davon, ob er vollständig oder inkrementell ist, werden die Informationen zum Index-Crawl-Status in Echtzeit angezeigt. Beispielsweise können Sie die Startzeit, die verstrichene Zeit und alle Fehler anzeigen, die während des Indexierungsvorgangs aufgetreten sind. Informationen zum Status des letzten Index werden ebenfalls angezeigt. Verwenden Sie diese Informationen, um etwaige Indexierungsfehler zu beheben.
+Wenn Sie einen Index generieren, unabhängig davon, ob er vollständig oder inkrementell ist, werden die Informationen zum Index-Crawl-Status in Echtzeit angezeigt. Sie können beispielsweise die Ansicht der Zeitdauer des Beginns, der Zeitdauer und alle während des Indexvorgangs aufgetretenen Fehler durchführen. Informationen zum Status des letzten Index werden ebenfalls angezeigt. Verwenden Sie diese Informationen, um etwaige Indexierungsfehler zu beheben.
 
-Informationen zum Planen eines Indexes finden Sie unter [Festlegen des vollständigen Indexplans für eine Live-Website](../c-about-index-menu/c-about-full-index.md#task_6760F3256D004A228B38968DF15421F0) und [Einstellen des Zeitplans für den inkrementellen Index für eine Live-Website](../c-about-index-menu/c-about-incremental-index.md#task_2A46BA189ECC4317A9D5C6E99A336F33).
+Informationen zum Planen eines Indexes finden Sie unter [Einstellen des vollständigen Indexplans für eine Live-Website](../c-about-index-menu/c-about-full-index.md#task_6760F3256D004A228B38968DF15421F0) und [Einstellen des inkrementellen Indexplans für eine Live-Website](../c-about-index-menu/c-about-incremental-index.md#task_2A46BA189ECC4317A9D5C6E99A336F33).
 
 Informationen zum Starten eines gestaffelten Indexes finden Sie unter [Ausführen eines vollständigen Indexes einer Live- oder Staged-Website...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D) oder [Ausführen eines inkrementellen Indexes einer Live- oder Staged-Website...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
 
-## Meine Indexgrößenbeschränkung überschreitet meine zulässige Grenze. Warum geschieht das und wie repariere ich es? {#section_12E7DA979C4C4B1D8A3A6415FC3DDA70}
+## Meine Indexgrößenbeschränkung überschreitet meine zulässige Grenze. Warum passiert das und wie repariere ich es? {#section_12E7DA979C4C4B1D8A3A6415FC3DDA70}
 
-Eine Website kann mit der Zeit wachsen und Search&amp;Promote &quot;entdeckt&quot; mehr Dokumente und Webseiten, die hinzugefügt wurden. Eventuell kann Ihr Konto Ihre Indexgrößenbeschränkung überschreiten. In solchen Fällen können Sie die Verwendung in Betracht ziehen **[!UICONTROL URL Mask]**. Diese Funktion blendet Dokumente und Webseiten bei Index-Crawling aus, die Sie nicht indizieren möchten oder nicht benötigen, und reduziert so Ihre Indexgröße. Eine andere Möglichkeit könnte darin bestehen, sich an den technischen Support zu wenden, um die Indexierungsgrößenbegrenzung in Ihrem Konto zu erhöhen.
+Eine Website kann tendenziell wachsen und im Laufe der Zeit Search&amp;Promote &quot;entdeckt&quot; mehr Dokumente und Webseiten hinzugefügt wurden. Eventuell überschreitet Ihr Konto möglicherweise Ihre Indexgrößenbeschränkung. In solchen Fällen können Sie **[!UICONTROL URL Mask]** verwenden. Diese Funktion blendet Dokumente und Webseiten bei Index-Crawling aus, die Sie nicht indizieren möchten oder nicht benötigen, und reduziert so Ihre Indexgröße. Eine andere Möglichkeit könnte darin bestehen, sich an den technischen Support zu wenden, um die Indexierungsgrößenbegrenzung in Ihrem Konto zu erhöhen.
 
 Siehe [URL-Masken](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164).
 
@@ -459,7 +462,7 @@ Eine Seite mit häufig gestellten Fragen, die die Unterstützung der Indizierung
 
 Im Folgenden werden häufig gestellte Fragen zu Sprachen und Zeichensätzen behandelt:
 
-* [Was steuert die Zeichensatzkodierung der Suchanfrage...](#section_DF2E8570AFC2480FA199FD26C941A22F)
+* [Was steuert die Zeichensatzkodierung der Abfrage...](#section_DF2E8570AFC2480FA199FD26C941A22F)
 * [Werden nur Seiten durchsucht, deren Kodierung mit der Kodierung von...](#section_9E544F3DB7DE41618DC1BC8224B32C5A)
 * [Welche Kodierung wird für die Suchergebnisseite verwendet?](#section_DA68670F35D54EAABF7DBB010F4409BF)
 * [Kann ich Site-Suche/Merchandising auf Unicode-, UTF-8-, kodierten Seiten verwenden?](#section_130997CB08934A13A5261D85CF88040C)
@@ -470,21 +473,21 @@ Im Folgenden werden häufig gestellte Fragen zu Sprachen und Zeichensätzen beha
 * [Muss ich etwas Besonderes tun, um das...](#section_A8BA6DDD3A6048319D3530BCFD6DA1A5)
 * [Wie kommt es, dass chinesische, japanische oder koreanische Schriftarten in den Suchergebnissen unter Netscape 4.7 und früher erscheinen?](#section_DF42567063304F918D406AC76529DFB7)
 
-## Was steuert die Zeichensatzkodierung der Suchabfrage? {#section_DF2E8570AFC2480FA199FD26C941A22F}
+## Was steuert die Zeichensatzkodierung der Abfrage? {#section_DF2E8570AFC2480FA199FD26C941A22F}
 
-Der Abschnitt &quot;Web-Formulare&quot;Ihres Suchkontos enthält Mustersuchformulare, mit denen Sie Ihrer Website Suchfunktionen hinzufügen. Wenn Sie diesen Suchformularcode betrachten, können Sie eine Zeile wie die folgende finden:
+Der Abschnitt &quot;Webformulare&quot;Ihres Suchkontos enthält Mustersuchformulare, die Sie verwenden, um Ihrer Website Suchfunktionen hinzuzufügen. Wenn Sie diesen Suchformularcode betrachten, können Sie eine Zeile wie die folgende finden:
 
 `<input type=hidden name="sp_f" value="iso-8859-1">`
 
-Diese Codezeile teilt der Suchmaschine mit, dass die eingehende Abfrage in iso-8859-1 kodiert ist, einer gängigen Kodierung für westeuropäische Sprachen. Sie können diese Einstellung ändern, indem Sie im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL My Profile]** > **[!UICONTROL Personal Information]**. Wählen Sie auf der [!DNL Personal Information] Seite in der **[!UICONTROL Character Encoding]** Dropdownliste eine neue Kodierung aus.
+Diese Codezeile teilt der Suchmaschine mit, dass die eingehende Abfrage in iso-8859-1 kodiert ist, einer gängigen Kodierung für westeuropäische Sprachen. Sie können diese Einstellung ändern, indem Sie im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL My Profile]** > **[!UICONTROL Personal Information]** klicken. Wählen Sie auf der Seite [!DNL Personal Information] in der Dropdown-Liste **[!UICONTROL Character Encoding]** eine neue Kodierung aus.
 
 Siehe [Konfigurieren Ihrer persönlichen Benutzerinformationen](../c-about-settings-menu/c-about-my-profile-menu.md#task_A11A3BE2527B4204B896E04303B04AA6).
 
-Sie können den Kodierungswert auf Ihren Webseiten auch manuell ändern, indem Sie die `sp_f` Zeile des Suchformulars bearbeiten. Denken Sie daran, dass der `sp_f` Wert des Suchformulars mit der Zeichensatzkodierung der Seite, auf der es angezeigt wird, übereinstimmen muss.
+Sie können den Kodierungswert auf Ihren Webseiten auch manuell ändern, indem Sie die Zeile `sp_f` des Suchformulars bearbeiten. Denken Sie daran, dass der Wert des Suchformulars mit der Zeichensatzkodierung der Seite, auf der es angezeigt wird, übereinstimmen muss.`sp_f`
 
-## Werden nur Seiten durchsucht, deren Kodierung mit der Kodierung der Suchanfrage übereinstimmt? {#section_9E544F3DB7DE41618DC1BC8224B32C5A}
+## Werden nur Seiten durchsucht, deren Kodierung mit der Kodierung der Abfrage übereinstimmt? {#section_9E544F3DB7DE41618DC1BC8224B32C5A}
 
-Standardmäßig ist &quot;Nein&quot; eingestellt. Solange die Seiten Ihrer Website die Zeichensatzkodierung richtig identifizieren, werden die erforderlichen Konvertierungen zwischen der Kodierung der Suchanfrage und der der Seiten vorgenommen, auch wenn Seiten mehrere Kodierungen verwenden.
+Standardmäßig ist &quot;Nein&quot; eingestellt. Solange Ihre Webseiten die Zeichensatzkodierung richtig identifizieren, werden die erforderlichen Konvertierungen zwischen der Kodierung der Abfrage und der der Seiten vorgenommen, auch wenn die Seiten mehrere Kodierungen verwenden.
 
 ## Welche Kodierung wird für die Suchergebnisseite verwendet? {#section_DA68670F35D54EAABF7DBB010F4409BF}
 
@@ -498,54 +501,54 @@ Siehe [Suchvorlagen-Tags](../c-appendices/c-templates.md#reference_F7AA3FF602314
 
 ## Kann ich Site-Suche/Merchandising auf Unicode-, UTF-8-, kodierten Seiten verwenden? {#section_130997CB08934A13A5261D85CF88040C}
 
-Ja. Unicode-Zeichensätze wie UTF-8 bieten jedoch nicht genügend Informationen, um die Sprache zu bestimmen, in der die Seiten geschrieben werden. Um diese Seiten korrekt zu durchsuchen, müssen Sie die Sprache angeben. Zur Bestimmung der Dokumentsprache werden die Informationen in der folgenden Reihenfolge verarbeitet:
+Ja. Unicode-Zeichensätze wie UTF-8 bieten jedoch nicht genügend Informationen, um die Sprache zu bestimmen, in der die Seiten geschrieben werden. Um diese Seiten korrekt zu durchsuchen, müssen Sie die Sprache angeben. Zur Bestimmung der Sprache des Dokuments werden die Informationen in der folgenden Reihenfolge verarbeitet:
 
-* Content-Language HTTP-Header, der von Ihrem Server für das Dokument bereitgestellt wird.
-* META-Elemente (z. B. `META HTTP-EQUIV="Content-Language" Content="ja_JP"`) im `<HEAD>` Abschnitt des Dokuments.
+* Content-Language HTTP-Header, der vom Server für das Dokument bereitgestellt wird.
+* META-Elemente (z. B. `META HTTP-EQUIV="Content-Language" Content="ja_JP"`) im Bereich `<HEAD>` des Dokuments.
 
-* LANG-Attribut des `<HTML>` Tags (z. B. `<HTML LANG="ja_JP">`).
+* LANG-Attribut des Tags `<HTML>` (z. B. `<HTML LANG="ja_JP">`).
 
-Wenn Ihr Server nicht für die Bereitstellung des Content-Language-HTTP-Headers konfiguriert ist und Ihre Dokumente weder das Sprach-META-Element noch das Sprachattribut für das `<HTML>` -Tag enthalten, können Sie Metadaten-Injektionen verwenden, um die entsprechende Sprache anzugeben.
+Wenn Ihr Server nicht für die Bereitstellung des Content-Language-HTTP-Headers konfiguriert ist und Ihre Dokumente weder das Sprach-META-Element noch das Sprachattribut für das `<HTML>`-Tag enthalten, können Sie Metadaten-Injektionen verwenden, um die entsprechende Sprache anzugeben.
 
-Siehe [Hinzufügen von Felddefinitionen](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
+Siehe [Hinzufügen von Feldinjizierungsdefinitionen](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
 
 ## Wie kommt es, dass ich die chinesischen, japanischen oder koreanischen PDF-Dateien auf meiner Website nicht durchsuchen kann? {#section_539AFF482F814D28B5929F683D2F2175}
 
-Site-Suche/Merchandising ruft UTF-8 aus Adobe PDF-Dateien ohne Angabe der Sprache ab. Wenn Sie **[!UICONTROL PDF Documents]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**) ausgewählt haben, müssen Sie mithilfe der Metadaten-Injektionen die Sprache angeben, die in der PDF-Datei verwendet wird.
+Site-Suche/Merchandising ruft UTF-8 aus Adobe PDF-Dateien ohne Angabe von Sprache ab. Wenn Sie **[!UICONTROL PDF Documents]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**) ausgewählt haben, müssen Sie mithilfe der Metadaten-Injektionen die Sprache angeben, die in der PDF-Datei verwendet wird.
 
-Siehe [Hinzufügen von Felddefinitionen](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
+Siehe [Hinzufügen von Feldinjizierungsdefinitionen](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
 
 ## Wie kommt es, dass ich die chinesischen, japanischen oder koreanischen SWF-Dateien auf meiner Website nicht durchsuchen kann? {#section_9C0849528AFF4C10AA97A2C912992638}
 
-Site-Suche/Merchandising ruft UTF-8 aus Adobe Flash-Filmdateien ab, die ohne Angabe der Sprache mit Adobe Flash erstellt wurden. Wenn Sie den Inhaltstyp ausgewählt haben **[!UICONTROL Adobe Flash Movies]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), müssen Sie mithilfe der Metadaten-Injektionen die Sprache angeben, die in der SWF-Datei verwendet wird.
+Site-Suche/Merchandising ruft UTF-8 aus Adobe-Flash-Filmdateien ab, die mit Adobe Flash ohne Angabe von Sprache erstellt wurden. Wenn Sie den Inhaltstyp **[!UICONTROL Adobe Flash Movies]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**) ausgewählt haben, müssen Sie mithilfe der Metadaten-Injektionen die Sprache angeben, die in der SWF-Datei verwendet wird.
 
-Bei Flash-Versionen 4 oder älteren Versionen von SWF-Dateien wird der Zeichensatz der Zeichen in der Datei nicht angegeben. Wenn Sie den Inhaltstyp ausgewählt haben **[!UICONTROL Adobe Flash Movies]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), müssen Sie den in der SWF-Datei verwendeten Zeichensatz mithilfe von Metadaten-Injektionen angeben.
+Bei SWF-Dateien der Flash-Version 4 oder älter wird der Zeichensatz der Zeichen in der Datei nicht angegeben. Wenn Sie den Inhaltstyp **[!UICONTROL Adobe Flash Movies]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**) ausgewählt haben, müssen Sie mithilfe von Metadaten-Injektionen den Zeichensatz angeben, der in der SWF-Datei verwendet wird.
 
-Siehe [Hinzufügen von Felddefinitionen](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
+Siehe [Hinzufügen von Feldinjizierungsdefinitionen](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
 
 ## Wie kommt es, dass ich die chinesischen, japanischen oder koreanischen Microsoft Office-Dateien auf meiner Website nicht durchsuchen kann? {#section_6764BA6863AF492EBA9BE5CCC12CDD1F}
 
-Bei der Site-Suche/beim Merchandising wird UTF-8 aus Microsoft Office-Dateien (Microsoft Word, Microsoft Excel und Microsoft PowerPoint) ohne Angabe der Sprache abgerufen. Wenn Sie den Inhaltstyp ausgewählt haben **[!UICONTROL Microsoft Office Files]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), müssen Sie mithilfe der Metadaten-Injektionen die Sprache angeben, die in den Microsoft Office-Dateien verwendet wird.
+Bei der Site-Suche/beim Merchandising wird UTF-8 aus Microsoft Office-Dateien (Microsoft Word, Microsoft Excel und Microsoft PowerPoint) ohne Angabe der Sprache abgerufen. Wenn Sie den Inhaltstyp **[!UICONTROL Microsoft Office Files]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**) ausgewählt haben, müssen Sie mithilfe der Metadaten-Injektionen die Sprache angeben, die in den Microsoft Office-Dateien verwendet wird.
 
-Siehe [Hinzufügen von Felddefinitionen](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
+Siehe [Hinzufügen von Feldinjizierungsdefinitionen](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
 
 ## Wie kommt es, dass ich die chinesischen, japanischen oder koreanischen MP3-Dateien auf meiner Website nicht durchsuchen kann? {#section_DB6D60CF46F94125BF4E54AF3036DBFC}
 
-Wenn Sie den Inhaltstyp auswählen **[!UICONTROL Text in MP3 Music Files]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), müssen Sie Metadaten-Injektionen verwenden, um den Zeichensatz anzugeben, mit dem die MP3-Dateien kodiert werden.
+Wenn Sie den Inhaltstyp **[!UICONTROL Text in MP3 Music Files]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**) auswählen, müssen Sie Metadaten-Injektionen verwenden, um den Zeichensatz anzugeben, der zum Kodieren der MP3-Dateien verwendet wird.
 
-Siehe [Hinzufügen von Felddefinitionen](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
+Siehe [Hinzufügen von Feldinjizierungsdefinitionen](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
 
 ## Muss ich etwas Besonderes tun, um die .txt-Dateien auf meiner Website korrekt zu indizieren? {#section_A8BA6DDD3A6048319D3530BCFD6DA1A5}
 
-Wenn Sie den Inhaltstyp ausgewählt haben **[!UICONTROL Text Documents]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), müssen Sie Metadaten-Injektionen verwenden, um den Zeichensatz anzugeben, mit dem die .txt-Dateien kodiert werden.
+Wenn Sie den Inhaltstyp **[!UICONTROL Text Documents]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**) ausgewählt haben, müssen Sie mithilfe von Metadaten-Injektionen den Zeichensatz angeben, der zum Kodieren der .txt-Dateien verwendet wird.
 
-Siehe [Hinzufügen von Felddefinitionen](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
+Siehe [Hinzufügen von Feldinjizierungsdefinitionen](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
 
 ## Wie kommt es, dass chinesische, japanische oder koreanische Schriftarten in den Suchergebnissen unter Netscape 4.7 und früher erscheinen? {#section_DF42567063304F918D406AC76529DFB7}
 
-Wenn Ihr Konto die Standardvorlage, eine der gebrauchsfertigen Vorlagen oder eine Vorlage verwendet, die auf einer dieser Vorlagen basiert, kann es Schriftart-Tags enthalten, die Arial oder Helvetica als Schriftart angeben. Zum Beispiel `<font face="arial, helvetica" size="+1">`. In Netscape 4.7 und früher werden keine chinesischen, japanischen oder koreanischen Zeichen angezeigt, wenn die Schriftart Arial oder Helvetica verwendet wird. Entfernen Sie das `face` Attribut oder ersetzen Sie die Schriftart durch eine, die für Chinesisch, Japanisch oder Koreanisch geeigneter ist.
+Wenn Ihr Konto die Standardvorlage, eine der gebrauchsfertigen Vorlagen oder eine Vorlage verwendet, die auf einer dieser Vorlagen basiert, kann es Schriftart-Tags enthalten, die Arial oder Helvetica als Schriftart angeben. Zum Beispiel `<font face="arial, helvetica" size="+1">`. In Netscape 4.7 und früher werden keine chinesischen, japanischen oder koreanischen Zeichen angezeigt, wenn die Schriftart Arial oder Helvetica verwendet wird. Entfernen Sie das Attribut `face` oder ersetzen Sie die Schriftart durch eine Schrift, die für Chinesisch, Japanisch oder Koreanisch geeigneter ist.
 
-## Niedrige Seitenanzahl {#reference_4344E3E3CB2948939860F8C078BD7773}
+## Niedrige Seitenzahl {#reference_4344E3E3CB2948939860F8C078BD7773}
 
 Eine Seite mit häufig gestellten Fragen, die häufig auftretende Probleme im Zusammenhang mit einer niedrigen Indexierung der Seite behandelt.
 
@@ -565,7 +568,7 @@ Im Folgenden werden häufig gestellte Fragen zu Seitenzahlen mit niedriger Index
 
 ## Haben Sie Ihr Indexprotokoll geprüft? {#section_D6626536DC3D40DDA4A1224F1CB276BF}
 
-Das Index-Protokoll enthält detaillierte Informationen, die der Site-Such-/Merchandising-Roboter beim Indizieren Ihrer Website erfasst. Das Protokoll enthält eine Liste mit durchgecrawenen Links und aufgetretenen Fehlern. Die Überprüfung des Index-Protokolls ist der beste Ausgangspunkt, um festzustellen, warum nicht alle Seiten auf Ihrer Website indiziert sind.
+Das Index-Protokoll enthält detaillierte Informationen, die der Site-Such-/Merchandising-Roboter beim Indizieren Ihrer Website erfasst. Das Protokoll enthält eine Liste von durchgekrackten Links und aufgetretenen Fehlern. Die Überprüfung des Indexprotokolls ist der beste Ort, um zu ermitteln, warum nicht alle Seiten auf Ihrer Website indiziert sind.
 
 Siehe [Anzeigen des vollständigen Indexprotokolls einer Live- oder Stage...](../c-about-index-menu/c-about-full-index.md#task_02E5E944C56B4EB19CC1FF321F3221B8).
 
@@ -575,7 +578,7 @@ Siehe [Anzeigen des inkrementellen Indexprotokolls einer Live- oder Stage...](..
 
 Wenn Sie längere URLs in HTML-Formulare eingeben, kann es zu einem oder mehreren Schreibfehlern kommen. Beachten Sie, dass URLs keine Leerzeichen enthalten dürfen. Beachten Sie außerdem, dass bei einigen Webservern die Groß- und Kleinschreibung bei URLs beachtet wird.
 
-Klicken Sie im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Entrypoints]**. Überprüfen Sie auf der [!DNL Staged URL Entrypoints] Seite Folgendes:
+Klicken Sie im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Entrypoints]**. Überprüfen Sie auf der Seite [!DNL Staged URL Entrypoints] Folgendes:
 
 * Sie haben keine typografischen Fehler in Ihren URLs.
 * Die Zeichen in den URLs verwenden alle das richtige Gehäuse.
@@ -583,37 +586,37 @@ Klicken Sie im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Crawli
 
 Um Ihre URL-Einstiegspunkte zu testen, kopieren Sie eine URL und fügen Sie sie in einen Webbrowser ein, um zu sehen, ob Ihre Website angezeigt wird. Wenn sie nicht angezeigt wird, überprüfen Sie erneut, um sicherzustellen, dass Sie keine Fehler im URL-Pfad gemacht haben.
 
-Siehe [Informationen zu URL-Einträgen](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573).
+Siehe [Informationen zu URL-Einstiegspunkten](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573).
 
 ## Verfügt die Einstiegspunkt-Webseite über Links zu anderen Seiten Ihrer Website? {#section_1C2D6ED54E7249268B555D9DC33352B3}
 
 Der Site-Such-/Merchandising-Roboter durchsucht Ihre Website genau wie Ihr Kunde. durch Befolgen von Links von Seite zu Seite. Links müssen auf der Einstiegsseite vorhanden sein, bevor der Suchroboter andere Seiten auf Ihrer Site finden und indizieren kann.
 
-Siehe [Hinzufügen mehrerer URL-Einstiegspunkte, die indiziert](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45)werden sollen.
+Siehe [Hinzufügen mehrerer URL-Einstiegspunkte, die indiziert werden sollen.](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45)
 
 ## Sind Links zu anderen Seiten Ihrer Website in JavaScript eingebettet? {#section_EE34A67D60A844EBB0921C03544FF63E}
 
 Sie können ausgefeilte Navigationstechniken auf Ihrer Website verwenden, z. B. Rollover-Aktionen und Menüs, bei denen JavaScript zur Verknüpfung mit anderen Seiten verwendet wird. Der Site-Such-/Merchandising-Roboter kann jedoch keine in JavaScript eingebetteten Links verfolgen.
 
-Eine Lösung, die Sie zur Behebung dieses Problems verwenden können, besteht darin, versteckte Links zu anderen Seiten im HTML-Code zu platzieren, die das JavaScript enthalten. Obwohl Kunden auf Ihrer Website diese Links nicht sehen, findet und durchsucht der Suchroboter sie immer noch. Sie können verborgene Tags am unteren Rand der Seite direkt vor dem `</body>` Tag platzieren. Sie können wie folgt aussehen:
+Eine Lösung, die Sie zur Behebung dieses Problems verwenden können, besteht darin, versteckte Links zu anderen Seiten im HTML-Code zu platzieren, die das JavaScript enthalten. Obwohl Kunden auf Ihrer Website diese Links nicht sehen, findet und durchsucht der Suchroboter sie immer noch. Sie können verborgene Tags am unteren Rand der Seite direkt vor dem `</body>`-Tag platzieren. Sie können wie folgt aussehen:
 
 ```
 <a href="/mydir/mypag1.html"></a> 
 <a href="/mydir/mypag2.html"></a>
 ```
 
-Eine andere Lösung besteht darin, die URLs der zusätzlichen Seiten auf Ihrer Website als Einstiegspunkte für Crawl und Index aufzulisten. Beginnen Sie mit den URLs, `https://` wie im Folgenden gezeigt:
+Eine andere Lösung besteht darin, die URLs der zusätzlichen Seiten auf Ihrer Website als Einstiegspunkte für Crawl und Index Liste. Beginnen Sie die URLs mit `https://`, wie im Folgenden gezeigt:
 
 ```
 https://www.mydomain.com/mydir/mypag1.html 
 https://www.mydomain.com/mydir/mypag2.html
 ```
 
-Siehe [Hinzufügen mehrerer URL-Einstiegspunkte, die indiziert](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45)werden sollen.
+Siehe [Hinzufügen mehrerer URL-Einstiegspunkte, die indiziert werden sollen.](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45)
 
 ## Sind die HTML-Tags auf Ihrer Webseite in einer ungültigen Reihenfolge? {#section_F31A2F5D2C284AC084158A5BD763DC5D}
 
-Die HTML-Spezifikation erfordert, dass die `<html>`-, `<head>`- und `<body>` -Tags einer bestimmten Sequenz in einem HTML-Dokument folgen. Tags auf allen Webseiten müssen die folgende Reihenfolge aufweisen:
+Die HTML-Spezifikation erfordert, dass die Tags `<html>`, `<head>` und `<body>` einer bestimmten Sequenz in einem HTML-Dokument folgen. Tags auf allen Webseiten müssen die folgende Reihenfolge aufweisen:
 
 ```
 <html> 
@@ -641,13 +644,13 @@ Wenn die HTML-Tags nicht in der richtigen Reihenfolge angeordnet sind, kann der 
 </body>
 ```
 
-In diesem Fall platzieren Sie die Tags `<html>`, `<head>`und `<body>` in der richtigen Reihenfolge auf Ihrer Webseite.
+In diesem Fall platzieren Sie die Tags `<html>`, `<head>` und `<body>` in der richtigen Reihenfolge auf Ihrer Webseite.
 
 ## Haben Sie auf Ihrer Webseite falsch formatierte HTML-Kommentar-Tags? {#section_D1C39D79341845CB9C38579AABDF3A24}
 
-Stellen Sie sicher, dass Sie ungültige HTML-Kommentare auf Ihren Webseiten sorgfältig überprüfen und korrigieren.
+Stellen Sie sicher, dass Sie ungültige HTML-Kommentare in Ihren Webseiten sorgfältig überprüfen und korrigieren.
 
-Die HTML-Spezifikation erfordert, dass ein HTML-Kommentar mit den Zeichen beginnt `<!--` und mit den Zeichen endet `-->`. Es ist einfach, falsch formatierte Kommentare zu übersehen, die dazu führen, dass der Site-Such-/Merchandising-Roboter die Tags auf Ihrer Webseite falsch analysiert. Ein falsch formatierter Kommentar kann dazu führen, dass der Site-Such-/Merchandising-Roboter andere wichtige Tags verpasst, die analysiert werden müssen. Achten Sie auf Kommentare kurz vor dem `<body>` Tag in Ihrer Webseite.
+Die HTML-Spezifikation verlangt, dass ein HTML-Kommentar mit den Zeichen `<!--` und mit den Zeichen `-->` beginnt. Es ist einfach, falsch formatierte Kommentare zu übersehen, die dazu führen, dass der Site-Such-/Merchandising-Roboter die Tags auf Ihrer Webseite falsch analysiert. Ein falsch formatierter Kommentar kann dazu führen, dass der Site-Such-/Merchandising-Roboter andere wichtige Tags verpasst, die analysiert werden müssen. Achten Sie auf Kommentare kurz vor dem `<body>`-Tag in Ihrer Webseite.
 
 Im Folgenden finden Sie ein Beispiel für einen ordnungsgemäß formatierten Kommentar:
 
@@ -672,7 +675,7 @@ Ihre Website kann auch Seiten in einer anderen Domäne wie der folgenden enthalt
 
 Standardmäßig folgen die Links des Site-Such-/Merchandising-Roboters nicht auf einer anderen Domäne als der Hauptdomäne. Indem Sie jedoch zusätzliche Einstiegspunkte für Ihr Suchkonto festlegen, können Sie problemlos mehrere Domänen indizieren.
 
-Klicken Sie im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Entrypoints]**. Fügen Sie die &quot;Haupt-Website-Einstiegspunkt&quot;-URL Ihrer Site hinzu. Fügen Sie dann weitere URL-Einstiegspunkte zu allen anderen Domänen hinzu, die Siteseiten enthalten. Sie würden z. B. Ihren URL-Haupteinstiegspunkt auf Folgendes setzen:
+Klicken Sie im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Entrypoints]**. hinzufügen der &quot;Haupt-Website-Einstiegspunkt&quot;-URL Ihrer Site. Fügen Sie dann weitere URL-Einstiegspunkte zu allen anderen Domänen hinzu, die Siteseiten enthalten. Sie würden z. B. Ihren URL-Haupteinstiegspunkt auf Folgendes setzen:
 
 `https://www.mydomain.com/`
 
@@ -696,7 +699,7 @@ oder
 
 Standardmäßig folgen die Links des Site-Such-/Merchandising-Roboters nicht auf einer anderen Domäne als der Hauptdomäne. Indem Sie jedoch zusätzliche Einstiegspunkte für Ihr Suchkonto festlegen, können Sie problemlos mehrere Domänen indizieren.
 
-Klicken Sie im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Entrypoints]**. Fügen Sie den &quot;Haupt-URL-Einstiegspunkt&quot;zum Namen der virtuellen Domäne Ihrer Site hinzu. Fügen Sie dann der Domäne, in der sich Ihre Website befindet, weitere Einstiegspunkte hinzu.
+Klicken Sie im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Entrypoints]**. hinzufügen der &quot;Haupt-Website-URL-Einstieg&quot; auf den virtuellen Domänennamen Ihrer Site. Fügen Sie dann der Domäne, in der sich Ihre Website befindet, weitere Einstiegspunkte hinzu.
 
 Sie würden z. B. den Haupteinstiegspunkt der URL auf Folgendes setzen:
 
@@ -708,17 +711,17 @@ Fügen Sie den folgenden zusätzlichen URL-Einstiegspunkt der Website hinzu:
 
 ## Verwendet Ihre Webseite ein Meta-Aktualisierungs-Tag? {#section_5A2F544C237C49B8B1A7FE0C45371C0D}
 
-Viele Websites haben eine Titelseite, die ein Meta-Aktualisierungs-Tag zwischen den `<head>...</head>` Tags enthält, ähnlich dem Folgenden:
+Viele Websites haben eine Titelseite, die ein Meta-Aktualisierungs-Tag zwischen den `<head>...</head>`-Tags enthält, ähnlich dem Folgenden:
 
 `<meta http-equiv="Refresh" content="0;URL=https://www.adomain.com/apath/afile.html">`
 
 Unter bestimmten Umständen ist der Site-Suchroboter/Merchandising nicht in der Lage, der Meta-Aktualisierungs-URL zu folgen, um den Inhalt Ihrer Website zu indizieren. Dieses Problem lässt sich einfach umgehen, indem Sie zusätzliche Einstiegspunkte festlegen.
 
-Klicken Sie im Produktmenü auf **[!UICONTROL Settings]** > Crawling > **[!UICONTROL URL Entrypoints]**. Fügen Sie der URL des Meta-Aktualisierungstag einen weiteren Einstiegspunkt hinzu.
+Klicken Sie im Produktmenü auf **[!UICONTROL Settings]** > Crawling > **[!UICONTROL URL Entrypoints]**. hinzufügen einen weiteren Einstiegspunkt zur URL des Meta-Aktualisierungs-Tags.
 
 ## Verwendet Ihre Webseite ein Meta-Roboter-Tag? {#section_36275A33DDFE4620BABA948F8A63DBD2}
 
-Manchmal verwenden Webseiten Meta-Robots-Tags, um Webroboter zu steuern, die regelmäßig versuchen, eine Website zu durchsuchen. Meta-Roboter-Tags erscheinen zwischen den `<head>...</head>` Tags einer Webseite und sehen ähnlich wie das folgende Tag aus:
+Manchmal verwenden Webseiten Meta-Robots-Tags, um Webroboter zu steuern, die regelmäßig versuchen, eine Website zu durchsuchen. Meta-Roboter-Tags werden zwischen den `<head>...</head>`-Tags einer Webseite angezeigt und sehen ähnlich wie das folgende Tag aus:
 
 `<meta name="robots" content="noindex, nofollow">`
 
@@ -761,7 +764,7 @@ Im Folgenden werden häufig gestellte Fragen zu Microsoft Office-Dateien aufgef�
 
 * [Was wird in einer Microsoft Office-Datei indiziert?](#section_8681DADFCFE24B7787B1FC08D431EE28)
 * [Was nicht in einer Microsoft Office-Datei indiziert wird...](#section_BD53BDABFDD94D7EB0E1F55EC18017BB)
-* [Wie werden Microsoft Office-Dateien anders indiziert als HTML-Seiten...](#section_C104B44684F340549A6B9EB8F39EDDBB)
+* [Wie unterscheiden sich Microsoft Office-Dateien von HTML-Seiten...](#section_C104B44684F340549A6B9EB8F39EDDBB)
 * [Wie kann ich verhindern, dass Microsoft Office-Dateien indiziert werden?](#section_FEBA71274CD14CB99731ADF982087F4C)
 
 ## Was wird in einer Microsoft Office-Datei indiziert? {#section_8681DADFCFE24B7787B1FC08D431EE28}
@@ -779,7 +782,7 @@ Die folgenden Teile einer Microsoft Word-Datei werden indexiert:
 Die folgenden Teile einer Microsoft Excel-Datei werden indexiert:
 
 * Titel
-* Keywords
+* Schlüsselwörter
 * Betreff (Beschreibung)
 * Text in Zellen
 * Werte aus numerischen Formeln in Zellen
@@ -787,7 +790,7 @@ Die folgenden Teile einer Microsoft Excel-Datei werden indexiert:
 Die folgenden Teile einer Microsoft PowerPoint-Datei werden indexiert:
 
 * Titel
-* Keywords
+* Schlüsselwörter
 * Betreff (Beschreibung)
 * Text auf jeder Folie
 
@@ -801,9 +804,9 @@ Der Unterschied zwischen der Indizierung von Microsoft Office- und HTML-Dateien 
 
 ## Wie kann ich verhindern, dass Microsoft Office-Dateien auf meiner Website indiziert werden? {#section_FEBA71274CD14CB99731ADF982087F4C}
 
-Wenn Sie nicht möchten, dass der Suchroboter Microsoft Office-Dateien durchsucht und indiziert, deaktivieren Sie die Auswahl des Inhaltstyps **[!UICONTROL Microsoft Office Files]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**).
+Wenn Sie nicht möchten, dass der Suchroboter Microsoft Office-Dateien durchsucht und indiziert, deaktivieren Sie den Inhaltstyp **[!UICONTROL Microsoft Office Files]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**).
 
-Sie können die Indizierung von Microsoft Office-Dateien auch deaktivieren [!DNL URL Masks] lassen.
+Sie können auch [!DNL URL Masks] verwenden, um die Indizierung von Microsoft Office-Dateien zu deaktivieren.
 
 Geben Sie die folgenden URL-Masken ein:
 
@@ -819,7 +822,7 @@ Geben Sie die folgenden URL-Masken ein:
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Wenn Sie reguläre Ausdrücke verwenden </p> </td> 
+   <td colname="col1"> <p>Wenn Sie reguläre Ausdruck verwenden </p> </td> 
    <td colname="col2"> 
     <ul id="ul_012A45C3EC04460EA09C0ECFB49A8FA9"> 
      <li id="li_0C239F0A536D465F85A98EBF7B6ADF27">exclude regexp ^.*\\.doc$ </li> 
@@ -830,9 +833,9 @@ Geben Sie die folgenden URL-Masken ein:
  </tbody> 
 </table>
 
-Siehe [Hinzufügen von URL-Masken zum Indexieren von Teilen von...](../c-about-settings-menu/c-about-crawling-menu.md#task_E1AFC17C746048B8843013D979E082C1).
+Siehe [Hinzufügen von URL-Masken zum Index oder nicht zum Indexieren von Teilen von...](../c-about-settings-menu/c-about-crawling-menu.md#task_E1AFC17C746048B8843013D979E082C1).
 
-Siehe [Reguläre Ausdrücke](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
+Siehe [Reguläre Ausdruck](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
 
 ## MP3 {#reference_7614250EE81C4EEFA43E57A6A74E83D7}
 
@@ -851,19 +854,19 @@ Im Folgenden finden Sie allgemeine Fragen zu MP3-Dateien.
 
 ## Wann wird eine MP3-Datei durchsucht und indiziert? {#section_538EA1682C9C47E3A62640BB25D84C36}
 
-MP3-Dateien werden auf zweierlei Weise durchsucht und indiziert. Am häufigsten erfolgt die Eingabe über ein Anker-href-Tag in einer HTML-Datei:
+MP3-Dateien werden auf zweierlei Weise durchsucht und indiziert. Am häufigsten stammt der Weg von einem Anker-href-Tag in einer HTML-Datei:
 
 `<a href="MP3-file-URL"></a>`
 
 Eine zweite Möglichkeit besteht darin, die URL der MP3-Datei als URL-Einstiegspunkt einzugeben.
 
-Siehe [Informationen zu URL-Einträgen](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573).
+Siehe [Informationen zu URL-Einstiegspunkten](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573).
 
 ## Was muss ich tun, um die MP3-Dateien auf meiner Site zu durchsuchen und zu indizieren? {#section_3CD794446E3545379C14E9F222118665}
 
-Klicken Sie zum Aktivieren des Crawling- und Indizierens von MP3 für Ihr Konto im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**. Wählen Sie auf der [!DNL Staged Content Types] Seite **[!UICONTROL Text in MP3 Music Files]**.
+Klicken Sie zum Aktivieren des Crawling und Indizierens von MP3 für Ihr Konto im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**. Wählen Sie auf der Seite [!DNL Staged Content Types] **[!UICONTROL Text in MP3 Music Files]** aus.
 
-Siehe [Informationen zu Inhaltstypen](../c-about-settings-menu/c-about-crawling-menu.md#concept_6FEA1355C0374500B4C53090C34A8A07).
+Siehe [Inhaltstypen](../c-about-settings-menu/c-about-crawling-menu.md#concept_6FEA1355C0374500B4C53090C34A8A07).
 
 ## Wie wird eine MP3-Datei erkannt? {#section_230E7336965A424F96C5CCF1D3C2D103}
 
@@ -876,7 +879,7 @@ MP3-Dateien speichern optional eine kleine Menge an Textinformationen. Diese Inf
 * Der Titel des Liedes wird wie der Titel einer HTML-Seite behandelt.
 * Der Kommentar wird wie eine für eine HTML-Seite definierte Beschreibung behandelt.
 * Das Genre wird wie ein für eine HTML-Seite definierter Suchbegriff behandelt.
-* Der Name des Künstlers, der Name des Albums und das Jahr der Veröffentlichung werden wie der Text eines HTML-Dokuments behandelt.
+* Der Künstlername, der Albumname und das Veröffentlichungsjahr werden wie der Hauptteil eines HTML-Dokuments behandelt.
 
 ## Zählt eine MP3-Datei als Seite? {#section_9910BEB6617D4D2090558CDF6C65D16B}
 
@@ -884,19 +887,19 @@ Ja, jede MP3-Datei, die auf Ihrer Website durchsucht und indiziert wird, wird al
 
 ## Wie kann ich die Indizierung einzelner MP3-Dateien verhindern? {#section_C989DC1D3D3841B38F683A462195DC05}
 
-Umschließen Sie die Anker-Tags, die mit den MP3-Dateien mit `<nofollow>` und `</nofollow>` -Tags verknüpft sind. Der Suchroboter folgt nicht den Verknüpfungen zwischen diesen Tags.
+Umschließen Sie die Anker-Tags, die mit den Tags `<nofollow>` und `</nofollow>` mit den MP3-Dateien verknüpft sind. Der Suchroboter folgt nicht den Verknüpfungen zwischen diesen Tags.
 
 Eine andere Methode besteht darin, die URLs der MP3-Dateien als Ausschlussmasken hinzuzufügen.
 
 Siehe [URL-Masken](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164).
 
-Siehe Skript [&quot;URL-Masken&quot;](../c-about-settings-menu/c-about-filtering-menu.md#concept_384F32EA18F84853A7BA99A04009330B).
+Siehe [Skript &quot;URL-Masken](../c-about-settings-menu/c-about-filtering-menu.md#concept_384F32EA18F84853A7BA99A04009330B)&quot;.
 
 ## Wie kann ich verhindern, dass MP3-Dateien indiziert werden? {#section_305D2B28D1124776B6DC0C62A17827C6}
 
-Die einfachste Möglichkeit, die MP3-Indizierung für Ihr Konto zu steuern, ist die Deaktivierung **[!UICONTROL Text in MP3 Music Files]** auf der [!DNL Staged Content Types] Seite.
+Die einfachste Möglichkeit, die MP3-Indexierung für Ihr Konto zu steuern, ist die Deaktivierung von **[!UICONTROL Text in MP3 Music Files]** auf der [!DNL Staged Content Types]-Seite.
 
-Siehe [Auswählen von Inhaltstypen zum Durchsuchen und Indexieren](../c-about-settings-menu/c-about-crawling-menu.md#task_CCAC5C67C8BF4AB7B79D34A1495D5EE8).
+Siehe [Auswählen von Inhaltstypen zum Crawl und Indexieren](../c-about-settings-menu/c-about-crawling-menu.md#task_CCAC5C67C8BF4AB7B79D34A1495D5EE8).
 
 Sie können auch die Funktion &quot;URL-Masken&quot;verwenden, um die MP3-Indexierung nach Dateierweiterung zu deaktivieren. Klicken Sie dazu im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Masks]**. Geben Sie eine der folgenden Masken ein:
 
@@ -909,23 +912,23 @@ Sie können auch die Funktion &quot;URL-Masken&quot;verwenden, um die MP3-Indexi
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Keine regulären Ausdrücke </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> exclude *.mp3 </span> </p> </td> 
+   <td colname="col1"> <p>Verwendet keine regulären Ausdruck </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> exclude *.mp3  </span> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Verwendet reguläre Ausdrücke </p> </td> 
+   <td colname="col1"> <p>Verwendet reguläre Ausdruck </p> </td> 
    <td colname="col2"> <p> <span class="codeph"> exclude regexp ^.*\.mp3$ </span> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Siehe [Reguläre Ausdrücke](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
+Siehe [Reguläre Ausdruck](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
 
 ## Warum kann ich die chinesischen, japanischen oder koreanischen MP3-Dateien auf meiner Site nicht durchsuchen? {#section_06A48DA3F9E742CC93CC8B5CCD7382FA}
 
 Um nach chinesischen, japanischen oder koreanischen MP3-Dateien zu suchen, klicken Sie im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]** > **[!UICONTROL Text in MP3 Music Files]**. Klicken Sie dann auf **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Injections]** und geben Sie den Zeichensatz an, der zum Kodieren der MP3-Dateien verwendet wird.
 
-Siehe [Auswählen von Inhaltstypen zum Durchsuchen und Indexieren](../c-about-settings-menu/c-about-crawling-menu.md#task_CCAC5C67C8BF4AB7B79D34A1495D5EE8).
+Siehe [Auswählen von Inhaltstypen zum Crawl und Indexieren](../c-about-settings-menu/c-about-crawling-menu.md#task_CCAC5C67C8BF4AB7B79D34A1495D5EE8).
 
 Siehe [Info zu Injektionen](../c-about-settings-menu/c-about-metadata-menu.md#concept_DA091920671948A0A893A26B3A2FAAE5).
 
@@ -948,7 +951,7 @@ Im Folgenden werden häufig gestellte Fragen zu PDF-Dateien behandelt:
 Der gesamte Inhalt von PDF-Dateien wird indiziert. Die folgenden Teile einer PDF-Datei werden indexiert:
 
 * Titel
-* Keywords
+* Schlüsselwörter
 * Betreff (Beschreibung)
 * Textbasierter Inhalt
 
@@ -962,7 +965,7 @@ Jede PDF-Datei, einschließlich PDF-Dateien mit mehreren Seiten, wird als ein ei
 
 ## Können die Suchergebnisse ein PDF-Symbol anzeigen? {#section_829CE82CC3544502A13D27C4DB820189}
 
-Ja. Verwenden Sie das `<search-if-link-extension>` -Tag in Ihrer Vorlage, um ein PDF-Symbol oder andere Grafiken oder Text in die Suchergebnisse einzuschließen:
+Ja. Verwenden Sie das `<search-if-link-extension>`-Tag in Ihrer Vorlage, um ein PDF-Symbol oder andere Grafiken oder Text in die Suchergebnisse einzuschließen:
 
 ```
 <search-results> 
@@ -980,34 +983,34 @@ PDF-Symbole helfen Ihren Kunden zu wissen, dass ein Suchergebnis mit einer PDF-D
 
 Ja. Mithilfe des Vorlagen-Tags für intelligente Links ( `<search-smart-link>...</search-smart-link>`) können Kunden auf die erste PDF-Seite klicken, die das Suchergebnis enthält.
 
-Um intelligente Links zu verwenden, ersetzen Sie die `<search-link>...</search-link>` Tags im Suchergebnisbereich Ihrer Vorlage durch `<search-smart-link>...</search-smart-link>` Tags. Wenn ein Kunde auf einen Link klickt, den die Smart-Link-Tags erzeugen, wird die erste PDF-Seite aufgerufen, die für die Suchanfrage relevant ist.
+Um intelligente Links zu verwenden, ersetzen Sie die Tags `<search-link>...</search-link>` im Suchergebnisbereich Ihrer Vorlage durch `<search-smart-link>...</search-smart-link>`-Tags. Wenn ein Kunde auf einen Link klickt, den die Smart-Link-Tags generieren, wird die erste PDF-Abfrage aufgerufen, die für die Suche relevant ist.
 
 >[!NOTE]
 >
->Um diese Funktion verwenden zu können, muss der Kunde eine aktuelle Version von Adobe Acrobat oder Adobe Acrobat Reader verwenden, die das Hervorhebungs-Plug-In und das externe Window Handler-Plug-In (EWH) enthalten muss. Darüber hinaus muss der Webbrowser das Adobe Acrobat-Plug-in für Netscape Navigator (Sie können jeden Browser verwenden, der dieses Netscape Navigator-Plug-In akzeptiert) oder das Acrobat ActiveX-Steuerelement für Internet Explorer 4.0 und höher verwenden.
+>Um diese Funktion nutzen zu können, muss der Kunde eine neuere Version des Adobe Acrobat- oder Adobe Acrobat-Readers verwenden, die das Hervorhebungs-Plug-in und das externe Window Handler (EWH)-Plug-In enthalten muss. Darüber hinaus muss der Webbrowser das Adobe Acrobat-Plugin für Netscape Navigator (Sie können jeden Browser verwenden, der dieses Netscape Navigator-Plug-In akzeptiert) oder das Acrobat ActiveX-Steuerelement für Internet Explorer 4.0 und höher verwenden.
 
 Siehe [Suchvorlagen-Tags](../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4).
 
 ## Wie kann ich verhindern, dass PDF-Dateien auf meiner Website indiziert werden? {#section_96671419A822486AAC654D8DAD819940}
 
-Wenn Sie nicht möchten, dass der Suchroboter PDF-Dateien durchsucht und indiziert, deaktivieren Sie die Auswahl des Inhaltstyps **[!UICONTROL PDF Documents]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**).
+Wenn Sie nicht möchten, dass der Suchroboter PDF-Dateien durchsucht und indiziert, deaktivieren Sie den Inhaltstyp **[!UICONTROL PDF Documents]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**).
 
-Sie können auch die PDF-Indexierung deaktivieren [!DNL URL Masks] lassen.
+Sie können auch [!DNL URL Masks] verwenden, um die PDF-Indexierung zu deaktivieren.
 
-Siehe [Hinzufügen von URL-Masken zum Indexieren von Teilen von...](../c-about-settings-menu/c-about-crawling-menu.md#task_E1AFC17C746048B8843013D979E082C1).
+Siehe [Hinzufügen von URL-Masken zum Index oder nicht zum Indexieren von Teilen von...](../c-about-settings-menu/c-about-crawling-menu.md#task_E1AFC17C746048B8843013D979E082C1).
 
 Um die PDF-Indexierung zu deaktivieren, geben Sie eine der folgenden URL-Masken ein:
 
 * `exclude *.pdf` (wenn Sie keine regulären Ausdrücke verwenden)
 * `exclude regexp ^.*\.pdf$` (wenn Sie reguläre Ausdrücke verwenden)
 
-Siehe [Reguläre Ausdrücke](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
+Siehe [Reguläre Ausdruck](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
 
 ## Wie kommt es, dass ich die chinesischen, japanischen oder koreanischen PDF-Dateien auf meiner Website nicht durchsuchen kann? {#section_D41CA8EFCA0242EA8CF5F8F1924E4CD8}
 
-Site-Suche/Merchandising ruft UTF-8 aus PDF-Dateien ohne Angabe der Sprache ab. Wenn Sie den Inhaltstyp ausgewählt haben **[!UICONTROL PDF Documents]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), müssen Sie mithilfe der Metadaten-Injektionen die Sprache angeben, die in der PDF-Datei verwendet wird.
+Site-Suche/Merchandising ruft UTF-8 aus PDF-Dateien ohne Angabe der Sprache ab. Wenn Sie den Inhaltstyp **[!UICONTROL PDF Documents]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**) ausgewählt haben, müssen Sie mithilfe von Metadaten-Injektionen die Sprache angeben, die in der PDF-Datei verwendet wird.
 
-Siehe [Hinzufügen von Felddefinitionen](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
+Siehe [Hinzufügen von Feldinjizierungsdefinitionen](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
 
 ## Zu viele Seiten {#reference_48A748BC1ED14844ACAC2735C8388E8A}
 
@@ -1016,7 +1019,7 @@ Auf der Seite mit häufig gestellten Fragen werden einige Gründe erläutert, wa
 Wenn Sie sicher sind, dass Ihre Website unter Ihrer Seitenbegrenzung liegt, der Indexer Ihnen jedoch mitteilt, dass die Grenze erreicht ist, sollten Sie diese allgemeinen Fragen und Antworten auf mögliche Lösungen überprüfen.
 
 * [Haben Sie Ihre verschiedenen Indexprotokolle geprüft?](#section_C929BF9FDA6B4C9A9078C45AFE80EFE8)
-* [Werden CGI-Programme auf Ihrer Website indiziert?](#section_86ED8A641B3841EC80153B4F107548FD)
+* [Werden CGI-Programm auf Ihrer Website indiziert?](#section_86ED8A641B3841EC80153B4F107548FD)
 * [Ist das Durchsuchen von Ordnern auf Ihrem Server aktiviert?](#section_073C88EEE74F4CA0AD2C7145D4810B22)
 * [Gibt es Foren oder Newsgruppen auf Ihrer Website?](#section_8DCB94F0850A41B9B2EA885F779E2F84)
 * [Sind PDF- oder Microsoft Office-Dateien auf Ihrer Website vorhanden...](#section_455FC5438DF74E68AB9A31D359EAD4D9)
@@ -1025,37 +1028,37 @@ Wenn Sie sicher sind, dass Ihre Website unter Ihrer Seitenbegrenzung liegt, der 
 
 ## Haben Sie Ihre verschiedenen Indexprotokolle geprüft? {#section_C929BF9FDA6B4C9A9078C45AFE80EFE8}
 
-Das Index-Protokoll enthält detaillierte Informationen, die vom Site-Such-/Merchandising-Roboter gesammelt wurden, während es Ihre Website indiziert. Das Protokoll enthält eine Liste aller gecrawlen Links und der aufgetretenen Fehler. Das Überprüfen des Indexprotokolls ist der beste Ausgangspunkt, wenn Sie ermitteln möchten, welche Seiten indiziert werden.
+Das Index-Protokoll enthält detaillierte Informationen, die vom Site-Such-/Merchandising-Roboter gesammelt wurden, während es Ihre Website indiziert. Das Protokoll enthält eine Liste aller durchgeknackten Links und enthält Fehler. Die Überprüfung des Indexprotokolls ist der beste Ort für Beginn, wenn Sie ermitteln möchten, welche Seiten indiziert werden.
 
 Siehe [Anzeigen des vollständigen Indexprotokolls einer Live- oder Stage...](../c-about-index-menu/c-about-full-index.md#task_02E5E944C56B4EB19CC1FF321F3221B8).
 
 Siehe [Anzeigen des inkrementellen Indexprotokolls einer Live- oder Stage...](../c-about-index-menu/c-about-incremental-index.md#task_E668E1F1240C476DAA1CA783DC728232).
 
-Siehe [Anzeigen des skriptgesteuerten inkrementellen Indexprotokolls einer Live- oder...](../c-about-index-menu/c-about-scripted-index.md#task_CBFCE9B9A87B4DF7A2A35A6E83DE93D7).
+Siehe [Ansicht des skriptgesteuerten inkrementellen Index-Protokolls einer Live- oder...](../c-about-index-menu/c-about-scripted-index.md#task_CBFCE9B9A87B4DF7A2A35A6E83DE93D7).
 
-Siehe [Anzeigen des neu erstellten Indexprotokolls einer Live- oder Stage...](../c-about-index-menu/c-about-regenerate-index.md#task_61CE8F9E7BF84BA89A8D482B2106BB15).
+Siehe [Anzeigen des neu generierten Indexprotokolls einer Live- oder Stage...](../c-about-index-menu/c-about-regenerate-index.md#task_61CE8F9E7BF84BA89A8D482B2106BB15).
 
 Siehe [Anzeigen des neu bewerteten Index-Protokolls einer Live- oder Staged-Website](../c-about-index-menu/c-about-re-rank-index.md#task_3C76107DFAC1495FACD3ABB0A688208D).
 
-## Werden CGI-Programme auf Ihrer Website indiziert? {#section_86ED8A641B3841EC80153B4F107548FD}
+## Werden CGI-Programm auf Ihrer Website indiziert? {#section_86ED8A641B3841EC80153B4F107548FD}
 
-CGI-Programme verwenden URL-Parameter, die manchmal dazu führen, dass der Indexer mehrere &quot;gefälschte&quot;URLs durchsucht. Wenn Site-Suche/Merchandising Ihre CGI-Programme liest und URLs mit CGI-Parametern folgt, gibt es wahrscheinlich mehrere Vielfache von Seiten, die durchsucht und indiziert werden, die für Ihren Suchindex nicht nützlich sind. Typische CGI-Parameter werden in URLs mit `?` oder `&` Zeichen angezeigt.
+CGI-Programm verwenden URL-Parameter, die manchmal dazu führen, dass der Indexer mehrere &quot;gefälschte&quot;URLs durchsucht. Wenn Site-Suche/Merchandising Ihre CGI-Programm liest und URLs mit CGI-Parametern folgt, werden wahrscheinlich mehrere Vielfache Seiten durchsucht und indiziert, die für Ihren Suchindex nicht nützlich sind. Typische CGI-Parameter werden in URLs mit `?`- oder `&`-Zeichen angezeigt.
 
-Mithilfe der Funktion &quot;URL-Masken&quot;können Sie die CGI-Programme vor der Indexierung maskieren. Sie können ein URL-Präfix maskieren oder reguläre Ausdrücke verwenden, um Ihre CGI-Skripte zu maskieren.
+Mithilfe der Funktion &quot;URL-Masken&quot;können Sie die CGI-Programm von der Indexierung ausschließen. Sie können ein URL-Präfix maskieren oder reguläre Ausdruck verwenden, um Ihre CGI-Skripte zu maskieren.
 
 Siehe [URL-Masken](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164).
 
-Siehe Skript [&quot;URL-Masken&quot;](../c-about-settings-menu/c-about-filtering-menu.md#concept_384F32EA18F84853A7BA99A04009330B).
+Siehe [Skript &quot;URL-Masken](../c-about-settings-menu/c-about-filtering-menu.md#concept_384F32EA18F84853A7BA99A04009330B)&quot;.
 
-Siehe [Reguläre Ausdrücke](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
+Siehe [Reguläre Ausdruck](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
 
 ## Ist das Durchsuchen von Ordnern auf Ihrem Server aktiviert? {#section_073C88EEE74F4CA0AD2C7145D4810B22}
 
-Wenn auf einem Webserver das Durchsuchen von Ordnern aktiviert ist und in einem bestimmten Verzeichnis keine Datei &quot;index.html&quot;vorhanden ist, kann ein Besuch dieses Ordners die Auflistung der Dateien in diesem Verzeichnis anzeigen. Normalerweise befinden sich Links am oberen Rand der Seite, mit denen Sie die Liste auf unterschiedliche Weise sortieren können, indem Sie einfach auf **[!UICONTROL Name]**, **[!UICONTROL Last modified]**, **[!UICONTROL Size]** usw. klicken. Normalerweise erscheinen diese im Site-Index-Protokoll für Suche/Merchandising als URLs mit Zeichen wie `?M=A` am Ende. Der Site-Such-/Merchandising-Impulszähler folgt diesen als Links, was dazu führen kann, dass mehrere &quot;gefälschte&quot;URLs indiziert werden.
+Wenn auf einem Webserver das Durchsuchen von Ordnern aktiviert ist und in einem bestimmten Verzeichnis keine Datei &quot;index.html&quot;vorhanden ist, kann ein Besuch dieses Ordners die Auflistung der Dateien in diesem Verzeichnis anzeigen. Normalerweise befinden sich Links am oberen Seitenrand, mit denen Sie die Liste auf unterschiedliche Weise sortieren können, indem Sie einfach auf **[!UICONTROL Name]**, **[!UICONTROL Last modified]**, **[!UICONTROL Size]** usw. klicken. Normalerweise erscheinen diese im Site-Index-Protokoll für Suche/Merchandising als URLs mit Zeichen wie `?M=A` am Ende. Der Site-Such-/Merchandising-Impulszähler folgt diesen als Links, was dazu führen kann, dass mehrere &quot;gefälschte&quot;URLs indiziert werden.
 
 Normalerweise enthält eine gut konzipierte Website entweder Indexdateien in jedem Verzeichnis, oder das Durchsuchen von Ordnern ist für Ordner ohne Indexdateien deaktiviert. Glücklicherweise gibt es eine einfache Möglichkeit, diese &quot;gefälschten&quot;URLs zu maskieren, wenn Sie Ihre Seiten nicht ändern oder Ordnerauflistungen auf der Serverseite deaktivieren können.
 
-Klicken Sie zum Ausführen dieser Aufgabe auf **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Masks]**. Fügen Sie eine Maske hinzu, um alle URLs zu maskieren, die das Zeichen enthalten `?`. Sie können diese Aufgabe ausführen, indem Sie die folgende Maske für reguläre Ausdrücke eingeben:
+Um diese Aufgabe durchzuführen, klicken Sie auf **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Masks]**. hinzufügen einer Maske, um jede URL zu maskieren, die das Zeichen `?` enthält. Sie können diese Aufgabe ausführen, indem Sie die folgende Maske für regulären Ausdruck eingeben:
 
 `exclude regexp ^.*\?.*$`
 
@@ -1069,11 +1072,11 @@ Siehe [Ausführen eines inkrementellen Indexes einer Live- oder Staged-Website..
 
 Wenn Foren oder Newsgruppen auf Ihrer Website durchsucht werden, können URLs für verschiedene Anzeigeoptionen oder Sortieroptionen folgen. Dieses Verhalten bedeutet, dass dieselbe Seite mehrmals indiziert wird.
 
-In der Regel verfügen Foren oder Newsgroups über eigene Suchmaschinen. In diesem Fall können Sie die Foren [!DNL URL Masks] von der Site-Suche/dem Merchandising maskieren.
+In der Regel verfügen Foren oder Newsgroups über eigene Suchmaschinen. In diesem Fall können Sie [!DNL URL Masks] verwenden, um die Foren von der Site-Suche/Merchandising zu maskieren.
 
-Klicken Sie im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Masks]**. Maskieren Sie Ihre Foren auf der [!DNL Staged URL Masks] Seite, indem Sie ihre URLs als URL-Masken ausschließen eingeben.
+Klicken Sie im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Masks]**. Maskieren Sie auf der Seite [!DNL Staged URL Masks] Ihre Foren, indem Sie ihre URLs als URL-Masken zum Ausschließen eingeben.
 
-Siehe [Hinzufügen von URL-Masken zum Indexieren von Teilen von...](../c-about-settings-menu/c-about-crawling-menu.md#task_E1AFC17C746048B8843013D979E082C1).
+Siehe [Hinzufügen von URL-Masken zum Index oder nicht zum Indexieren von Teilen von...](../c-about-settings-menu/c-about-crawling-menu.md#task_E1AFC17C746048B8843013D979E082C1).
 
 Nachdem Sie die Masken erstellt haben, stellen Sie sicher, dass Sie Ihre Website neu indizieren.
 
@@ -1083,19 +1086,19 @@ Siehe [Ausführen eines inkrementellen Indexes einer Live- oder Staged-Website..
 
 ## Gibt es PDF- oder Microsoft Office-Dateien auf Ihrer Website? {#section_455FC5438DF74E68AB9A31D359EAD4D9}
 
-Wenn sich auf Ihrer Website PDF-Dateien oder [!DNL Microsoft Office] -Dateien befinden, wird die Indexgröße von nur wenigen Dateien möglicherweise viele Seiten umfassen. Es werden mehr Seiten indiziert als Dokumente, weil jede Seite in einer PDF- oder Microsoft Office-Datei als separate Seite gezählt wird.
+Wenn Sie PDF-Dateien oder [!DNL Microsoft Office]-Dateien auf Ihrer Website haben, werden Sie möglicherweise feststellen, dass die Indexgröße von nur wenigen Dateien viele Seiten zählt. Der Grund dafür, dass mehr Seiten indiziert werden als Dokumente, ist, dass jede Seite in einer PDF- oder Microsoft Office-Datei als separate Seite gezählt wird.
 
-Klicken Sie im Produktmenü auf **[!UICONTROL Index]** > **[!UICONTROL Full Index]** > **[!UICONTROL Live Index]**. Wählen Sie auf der [!DNL Full Index] Seite **[!UICONTROL Count All Pages]** und klicken Sie dann auf **[!UICONTROL Full Index Now]** , um die Gesamtanzahl der Seiten anzuzeigen. Wenn PDF- oder Microsoft Office-Dateien nicht indiziert werden sollen, können Sie diesen Inhaltstyp unter **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**.
+Klicken Sie im Produktmenü auf **[!UICONTROL Index]** > **[!UICONTROL Full Index]** > **[!UICONTROL Live Index]**. Wählen Sie auf der Seite [!DNL Full Index] die Option **[!UICONTROL Count All Pages]** und klicken Sie dann auf **[!UICONTROL Full Index Now]**, um die Gesamtanzahl der Seiten anzuzeigen. Wenn PDF- oder Microsoft Office-Dateien nicht indiziert werden sollen, können Sie diesen Inhaltstyp unter **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]** deaktivieren.
 
 Siehe [Ausführen eines vollständigen Indexes einer Live- oder Staged-Website...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
-Siehe [Informationen zu Inhaltstypen](../c-about-settings-menu/c-about-crawling-menu.md#concept_6FEA1355C0374500B4C53090C34A8A07).
+Siehe [Inhaltstypen](../c-about-settings-menu/c-about-crawling-menu.md#concept_6FEA1355C0374500B4C53090C34A8A07).
 
 ## Haben Sie mehrere URL-Einstiegspunkte? {#section_8C54AFD7DF56472A9364D516482B534C}
 
 Der Site-Such-/Merchandising-Roboter beginnt mit dem Crawling an bestimmten URL-Einstiegspunkten und folgt allen gefundenen Links zu allen Inhalten in dieser bestimmten Domäne. Wenn Sie viele URL-Einstiegspunkte angegeben haben, wird möglicherweise eine erhebliche Anzahl von Seiten durchsucht.
 
-Verwenden Sie das `nofollow` Tag des Robots-Ausschlussprotokolls in den Kopfzeilen der Einstiegspunktdokumente auf den zusätzlichen Domänen wie folgt:
+Verwenden Sie das `nofollow`-Tag des Robots-Ausschlussprotokolls in den Kopfzeilen der Einstiegspunkte-Dokumente auf den zusätzlichen Domänen wie folgt:
 
 ```
 <html> 
@@ -1110,11 +1113,11 @@ Weitere Informationen zu Webrobotern und dem Roboter-Ausschlussprotokoll finden 
 
 [https://www.robotstxt.org/orig.html](https://www.robotstxt.org/orig.html)
 
-Wenn Sie keinen Zugriff auf die Quelle der Seiten auf zusätzlichen Domänen haben, können Sie die Einstiegspunkte für mehrere URLs entfernen. Auf diese Weise können Sie die Indexierungsaktivität nur auf die Domänen beschränken, deren Inhalt Sie von Kunden durchsuchen können möchten.
+Wenn Sie keinen Zugriff auf die Quelle der Seiten auf zusätzlichen Domänen haben, können Sie die Einstiegspunkte für mehrere URLs entfernen. Auf diese Weise können Sie die Indizierung der Aktivität nur auf Domänen beschränken, deren Inhalte Sie von Kunden durchsuchen können möchten.
 
-Siehe [Informationen zu URL-Einträgen](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573).
+Siehe [Informationen zu URL-Einstiegspunkten](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573).
 
-## Haben Sie die internen Bytes oder Zeitlimits für die Site-Suche/das Merchandising überschritten? {#section_AE1BE61A58864FFE81F0BCEED2EBB15D}
+## Haben Sie die internen Bytes oder die Zeitbeschränkungen der Site-Suche/Merchandising überschritten? {#section_AE1BE61A58864FFE81F0BCEED2EBB15D}
 
 Überprüfen Sie im Bildschirm &quot;Vollständiger Indexstatus&quot;, ob Ihr Konto seine Grenze erreicht hat. Wenn der Status meldet, dass Ihr Index größer als erlaubt ist oder dass es länger dauerte als erlaubt, wird Ihre Website nicht vollständig indiziert. Sie können diesen Fehler korrigieren, damit Sie eine angemessene Abdeckung und Anzahl der Webseiten erhalten.
 
