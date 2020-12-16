@@ -9,22 +9,25 @@ topic: Settings,Site search and merchandising
 uuid: 0f830033-de9e-4197-8d76-906c818662eb
 translation-type: tm+mt
 source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+workflow-type: tm+mt
+source-wordcount: '1684'
+ht-degree: 2%
 
 ---
 
 
 # Über das Menü &quot;Kontooptionen&quot;{#about-the-account-options-menu}
 
-Verwenden Sie das Menü &quot;Kontooptionen&quot;, um Ihre Kontoeinstellungen zu aktualisieren, Merchandising-Voreinstellungen festzulegen oder Ihr eigenes Search&amp;Promote-Konto zu entfernen.
+Über das Menü &quot;Kontooptionen&quot;können Sie Ihre Kontoeinstellungen aktualisieren, Merchandising-Voreinstellungen festlegen oder Ihr eigenes Search&amp;Promote entfernen.
 
-## Kontoeinstellungen konfigurieren {#task_80A38D0C8E4F453395BD67B81E4B45D9}
+## Konfigurieren der Kontoeinstellungen {#task_80A38D0C8E4F453395BD67B81E4B45D9}
 
-Verwalten Sie Kontoeinstellungen wie den Namen und die Adresse der Website, die Zeitzone und mehr. Oder zeigen Sie Ihre Kontonummer an.
+Verwalten Sie Kontoeinstellungen wie den Namen und die Adresse der Website, die Zeitzone und mehr. Oder Ansicht Ihrer Kontonummer.
 
 **So konfigurieren Sie Ihre Kontoeinstellungen**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Account Options]** > **[!UICONTROL Account Settings]**.
-1. Legen Sie auf der [!DNL Account Settings] Seite die gewünschten Optionen fest.
+1. Legen Sie auf der Seite [!DNL Account Settings] die gewünschten Optionen fest.
 
    <table> 
     <thead> 
@@ -48,11 +51,11 @@ Verwalten Sie Kontoeinstellungen wie den Namen und die Adresse der Website, die 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Vorlagen-Tag-Attribute beim Speichern überprüfen </p> </td> 
-      <td colname="col2"> <p>Prüft alle Attribute in <span class="codeph"> &lt;guided-*&gt; </span> und <span class="codeph"> &lt;search-*&gt; </span> , wenn Sie eine Vorlage im Editor für gestaffelte Vorlagen speichern. </p> <p>Siehe <a href="../c-about-design-menu/c-about-templates.md#task_800E0E2265C34C028C92FEB5A1243EC3" type="task" format="dita" scope="local"> Bearbeiten einer Präsentation oder einer Transportvorlage </a>. </p> </td> 
+      <td colname="col2"> <p>Prüft alle Attribute in <span class="codeph"> &lt;guided-*&gt; </span> und <span class="codeph"> &lt;search-*&gt; </span>, wenn Sie eine Vorlage im Staged Template Editor speichern. </p> <p>Siehe <a href="../c-about-design-menu/c-about-templates.md#task_800E0E2265C34C028C92FEB5A1243EC3" type="task" format="dita" scope="local"> Bearbeiten einer Präsentation oder einer Transportvorlage </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Überprüfen von Vorlagenverweisen auf GS-Objekte beim Speichern </p> </td> 
-      <td colname="col2"> <p> Überprüft die Existenz von Objekten der geführten Suche, z. B. Menüs, Facets, Breadcrumbs, benutzerdefinierte Vars und Vorlagen, auf die in den Tags <span class="codeph"> &lt;guided-*&gt; </span> verwiesen wird. </p> </td> 
+      <td colname="col2"> <p> Überprüft die Existenz von Objekten der geführten Suche, z. B. Menüs, Facets, Breadcrumbs, benutzerdefinierte Vars und Vorlagen, die in <span class="codeph"> &lt;guided-*&gt; </span>-Tags referenziert werden. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Strikte Vorlagensyntaxprüfung </p> </td> 
@@ -67,7 +70,7 @@ Verwalten Sie Kontoeinstellungen wie den Namen und die Adresse der Website, die 
 
 1. Klicken **[!UICONTROL Save Changes]**.
 
-## Integration mit Adobe CQ5 konfigurieren {#task_EA2FC2C24960498DAE01A1AB769D2F14}
+## Integration mit Adobe CQ5 {#task_EA2FC2C24960498DAE01A1AB769D2F14} konfigurieren
 
 Sie können die Integration von Site-Suche/Merchandising mit Adobe CQ5 konfigurieren.
 
@@ -78,9 +81,9 @@ Sie können die Integration von Site-Suche/Merchandising mit Adobe CQ5 konfiguri
    * Melden Sie sich bei Ihrem Site-Konto für Suche/Merchandising an.
    * Kopieren Sie im URL-Pfad die Mitglieds-ID und die Konto-ID.
 
-      Wenn beispielsweise der URL-Pfad zu Ihrem Konto `https://searchandpromote.mycompany.com/px/home/?sp_id=00123a4b-sp1234a5b6`lautet, wäre die Mitglieds-ID `00123a4b` und die Konto-ID `sp1234a5b6`.
+      Wenn beispielsweise der URL-Pfad zu Ihrem Konto `https://searchandpromote.mycompany.com/px/home/?sp_id=00123a4b-sp1234a5b6` lautet, lautet die Mitglieds-ID `00123a4b` und die Konto-ID `sp1234a5b6`.
 
-1. Verwenden Sie in Adobe CQ5 die Registerkarte &quot;Cloud-Dienste&quot;, um Ihre Konfiguration für die Site-Suche/das Merchandising zu erstellen.
+1. Verwenden Sie in Adobe CQ5 die Registerkarte &quot;Cloud Services&quot;, um Ihre Konfiguration für die Site-Suche/das Merchandising zu erstellen.
 
    Verwenden Sie die kopierte Mitglieds-ID und die Konto-ID für die entsprechenden Einstellungen.
 
@@ -91,7 +94,7 @@ Verwalten Sie Merchandising-Voreinstellungen wie den standardmäßigen Rule Buil
 **So konfigurieren Sie Merchandising-Voreinstellungen**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Account Options]** > **[!UICONTROL Merchandising Preferences]**.
-1. Legen Sie auf der [!DNL Merchandising Preferences] Seite die gewünschten Optionen fest.
+1. Legen Sie auf der Seite [!DNL Merchandising Preferences] die gewünschten Optionen fest.
 
    <table> 
     <thead> 
@@ -110,7 +113,7 @@ Verwalten Sie Merchandising-Voreinstellungen wie den standardmäßigen Rule Buil
       <td colname="col2"> <p>Die Anzahl der Ergebnisse in einer Gruppe für die Merchandising-Konsole. Der Höchstwert ist 50.000. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p> Feld "Merchandising Document ID"(MDI) </p> </td> 
+      <td colname="col1"> <p> Feld "Merchandising Dokument ID"(MDI) </p> </td> 
       <td colname="col2"> <p> Das von Ihnen angegebene Feld muss die Suchergebnisse, die Sie mithilfe von ergebnisbasierten Auslösern und Aktionen mit einem einzigen Ergebnis bearbeiten möchten, "eindeutig kennzeichnen". </p> <p>Die Verwendung des vordefinierten URL-Felds funktioniert in einigen Fällen, wird jedoch nicht empfohlen. Ein benutzerdefiniertes Metadatenfeld mit einer eindeutigen ID für jede Seite (z. B. SKU oder product_id) wäre viel effizienter als das URL-Feld. Wenn Sie "none"angeben, werden ergebnisbasierte Auslöser und Aktionen mit einem einzigen Ergebnis im Regelmanager deaktiviert. Eine Änderung dieser Option gilt nur für Regeln, die in Zukunft gespeichert werden. bestehende Regeln verwenden weiterhin das MDI, mit dem sie ursprünglich gespeichert wurden. </p> </td> 
       </tr> 
       <tr> 
@@ -130,18 +133,18 @@ Verwalten Sie Merchandising-Voreinstellungen wie den standardmäßigen Rule Buil
 
 1. Klicken **[!UICONTROL Save Changes]**.
 
-## Konfigurieren des Zugriffs auf Ihr Adobe Dynamic Media Classic-Konto {#task_CEFF88C2033D41D0B2FE86C435EDAC6D}
+## Zugriff auf Ihr Dynamic Media Classic-Konto für die Adobe {#task_CEFF88C2033D41D0B2FE86C435EDAC6D} konfigurieren
 
-Verknüpfen Sie Ihr Konto für die Site-Suche/das Merchandising mit Adobe Dynamic Media Classic, damit Sie mit hochgeladenen digitalen Assets aus Adobe Scene7 ganz einfach Banneranzeigen zu Ihrer Website hinzufügen können.
+Verknüpfen Sie Ihr Site-Such-/Merchandising-Konto mit der Adobe Dynamic Media Classic, damit Sie mit hochgeladenen digitalen Assets aus Adobe Scene7 einfach Banneranzeigen zu Ihrer Website hinzufügen können.
 
 Siehe [Info zu Bannern](../c-about-design-menu/c-about-banners.md#concept_5BBE01FEC6134393B43CC917C8CC64DA).
 
-Siehe [Hinzufügen eines Banners mit Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3).
+Siehe [Hinzufügen eines Banners mit der Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3).
 
 **So konfigurieren Sie den Zugriff auf Ihr Adobe Dynamic Media Classic-Konto**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Account Options]** > **[!UICONTROL Scene7 Configuration]**.
-1. Legen Sie auf der [!DNL Scene7 Configuration] Seite die gewünschten Optionen fest.
+1. Legen Sie auf der Seite [!DNL Scene7 Configuration] die gewünschten Optionen fest.
 
    <table> 
     <thead> 
@@ -153,11 +156,11 @@ Siehe [Hinzufügen eines Banners mit Adobe Dynamic Media Classic](../c-about-des
     <tbody> 
       <tr> 
       <td colname="col1"> <p>Region </p> </td> 
-      <td colname="col2"> <p>Erforderlich. Identifiziert die Region der Welt, in der Ihr Konto für dynamische Medien Classic auf die verschiedenen Dynamic Media Classic-Server zugreift. </p> </td> 
+      <td colname="col2"> <p>Erforderlich. Identifiziert die Region, in der Ihr Dynamic Media Classic-Konto auf die verschiedenen Dynamic Media Classic-Server zugreift. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Standardunternehmen </p> </td> 
-      <td colname="col2"> <p>Identifiziert den Namen des Unternehmens, das mit Ihrem Konto für Dynamic Media Classic verknüpft ist. </p> </td> 
+      <td colname="col1"> <p>Standardmäßige Firma </p> </td> 
+      <td colname="col2"> <p>Identifiziert den Namen der Firma, die mit Ihrem Dynamic Media Classic-Konto verknüpft ist. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> E-Mail </p> </td> 
@@ -165,30 +168,30 @@ Siehe [Hinzufügen eines Banners mit Adobe Dynamic Media Classic](../c-about-des
       </tr> 
       <tr> 
       <td colname="col1"> <p>Passwort </p> </td> 
-      <td colname="col2"> <p>Erforderlich. Ihr Kennwort für die Anmeldung bei Dynamic Media Classic. </p> </td> 
+      <td colname="col2"> <p>Erforderlich. Ihr Dynamic Media Classic-Anmeldekennwort. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Aktiviert </p> </td> 
-      <td colname="col2"> <p>Aktiviert alle dynamischen Medien-Classic-Steuerelemente innerhalb der Site-Suche/des Merchandising. </p> </td> 
+      <td colname="col2"> <p>Aktiviert alle Dynamic Media Classic-Steuerelemente in Site-Suche/Merchandising. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Test </p> </td> 
-      <td colname="col2"> <p>Vergewissert sich, dass der Name der Region, die E-Mail-Adresse und das Kennwort für Dynamic Media Classic korrekt sind. </p> </td> 
+      <td colname="col2"> <p>Vergewissert sich, dass der Name, die E-Mail-Adresse und das Kennwort für Ihre Dynamic Media Classic-Region korrekt sind. </p> </td> 
       </tr> 
     </tbody> 
     </table>
 
-1. (Optional) Klicken Sie **[!UICONTROL Test]** auf , um sicherzustellen, dass Ihr Name, Ihre E-Mail-Adresse und Ihr Passwort für die dynamische Medienklassifizierung korrekt sind.
+1. (Optional) Klicken Sie auf **[!UICONTROL Test]**, um sicherzustellen, dass Ihr Dynamic Media Classic-Regionenname, Ihre E-Mail-Adresse und Ihr Kennwort korrekt sind.
 1. Klicken **[!UICONTROL Save Changes]**.
 
 ## Adobe Analytics-Weiterleitung konfigurieren {#task_2C9DE333FD7246E4A460FC0F55204160}
 
-Wenn Sie [!DNL Adobe Analytics] zur Verfolgung von Site-Besuchern verwenden, können Sie [!DNL Adobe Analytics Redirector] in Site-Suche/Merchandising alle HTTP-Umleitungen verfolgen mit [!DNL Adobe Analytics].
+Wenn Sie [!DNL Adobe Analytics] zur Verfolgung von Site-Besuchern verwenden, können Sie [!DNL Adobe Analytics Redirector] in Site-Suche/Merchandising verwenden, um alle HTTP-Umleitungen mit [!DNL Adobe Analytics] zu verfolgen.
 
 **So konfigurieren Sie die Adobe Analytics-Weiterleitung**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Account Options]** > **[!UICONTROL Adobe Analytics Redirector]**.
-1. Legen Sie auf der [!DNL Adobe Analytics Redirector] Seite die gewünschten Optionen fest.
+1. Legen Sie auf der Seite [!DNL Adobe Analytics Redirector] die gewünschten Optionen fest.
 
    <table> 
     <thead> 
@@ -206,19 +209,19 @@ Wenn Sie [!DNL Adobe Analytics] zur Verfolgung von Site-Besuchern verwenden, kö
       <td colname="col1"> <p>Tracking-Server </p> </td> 
       <td colname="col2"> <p> Identifiziert den Namen Ihres Adobe Analytics-Tracking-Servers. </p> <p>Um den Namen des Tracking-Servers herauszufinden, </p> <p> 
       <ol id="ol_D17B77E81F8D40D0948415CD60839BE3"> 
-      <li id="li_BE58DBA104D44F0DB6C64AD3F12CEA97"> In Adobe Analytics, click <span class="uicontrol"> Admin </span> &gt; <span class="uicontrol"> Admin Console </span> &gt; <span class="uicontrol"> Code Manager </span>. </li> 
-      <li id="li_67A93D17C3A14874928C6DC4FF2D4784"> Wählen Sie im <span class="wintitle"> Gruppenfeld Optionen eine Report Suite aus der entsprechenden Dropdownliste </span> aus. </li> 
+      <li id="li_BE58DBA104D44F0DB6C64AD3F12CEA97"> Klicken Sie in Adobe Analytics auf <span class="uicontrol"> Admin </span> &gt; <span class="uicontrol"> Admin Console </span> &gt; <span class="uicontrol"> Code-Manager </span>. </li> 
+      <li id="li_67A93D17C3A14874928C6DC4FF2D4784"> Wählen Sie im Gruppenfeld <span class="wintitle"> Optionen </span> eine Report Suite aus der entsprechenden Dropdown-Liste aus. </li> 
       <li id="li_5AAB004AC58441DBB0F813BDE30EFFD4"> Klicken Sie auf <span class="uicontrol">„Code generieren“</span>.  </li> 
-      <li id="li_E80368993F4D4DD69E37509FF4348B36"> Klicken Sie auf der <span class="wintitle"> Seite "Code-Manager" </span> auf die Registerkarte " <span class="uicontrol"> Core-JavaScript-Datei" </span>. </li> 
-      <li id="li_991BDCDDA41A445F85CEEAAE9A46A304"> Suchen Sie im <span class="wintitle"> Konfigurationsabschnitt </span>die Zeile, die wie folgt aussieht: <p> <code> s.trackingServer="yourcompany.122.2o7.net" </code> </p> <p>Der Name des Tracking-Servers lautet in diesem Fall <span class="codeph"> "yourcompany.122.2o7.net" </span> </p> </li> 
+      <li id="li_E80368993F4D4DD69E37509FF4348B36"> Klicken Sie auf der Seite <span class="wintitle"> Code-Manager </span> auf die Registerkarte <span class="uicontrol"> Core-JavaScript-Datei </span>. </li> 
+      <li id="li_991BDCDDA41A445F85CEEAAE9A46A304"> Suchen Sie in <span class="wintitle"> Config Section </span> die Zeile, die wie folgt aussieht: <p> <code> s.trackingServer="yourcompany.122.2o7.net" </code> </p> <p>Der Name des Tracking-Servers lautet in diesem Fall <span class="codeph"> "yourcompany.122.2o7.net" </span> </p> </li> 
       </ol> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Report Suite-ID </p> </td> 
       <td colname="col2"> <p> Identifiziert Ihre Report Suite-ID. </p> <p>Um Ihre Report Suite-ID herauszufinden, </p> <p> 
       <ol id="ol_4FD7B2459358486DBDB130426131D16A"> 
-      <li id="li_9AF624CEB128453C808892EEE385D5D1"> In Adobe Analytics, click <span class="uicontrol"> Admin </span> &gt; <span class="uicontrol"> Admin Console </span> &gt; <span class="uicontrol"> Report Suites </span>. </li> 
-      <li id="li_AAC47EAA04144A67BDCB5C7B8D8098E9"> Die ID finden Sie in der Spalte <span class="wintitle"> Report Suite-ID </span> in der Tabelle. </li> 
+      <li id="li_9AF624CEB128453C808892EEE385D5D1"> Klicken Sie in Adobe Analytics auf <span class="uicontrol"> Admin </span> &gt; <span class="uicontrol"> Admin Console </span> &gt; <span class="uicontrol"> Report Suites </span>. </li> 
+      <li id="li_AAC47EAA04144A67BDCB5C7B8D8098E9"> Suchen Sie in der Tabelle nach der ID in der Spalte <span class="wintitle"> Report Suite-ID </span>. </li> 
       </ol> </p> </td> 
       </tr> 
       <tr> 
@@ -227,33 +230,33 @@ Wenn Sie [!DNL Adobe Analytics] zur Verfolgung von Site-Besuchern verwenden, kö
       </tr> 
       <tr> 
       <td colname="col1"> <p>Legen Sie die Groß-/Kleinschreibung für alle benutzerdefinierten Werte fest auf </p> </td> 
-      <td colname="col2"> <p>Ermöglicht die Standardisierung auf das Gehäuse, das für benutzerdefinierte Parameterwerte verwendet wird, die Sie oben angegeben haben. Bei Adobe Analytics wird die Groß-/Kleinschreibung beachtet, sodass es einen Grund gibt, die Groß-/Kleinschreibung von Werten zu vereinheitlichen. </p> </td> 
+      <td colname="col2"> <p>Ermöglicht die Standardisierung auf das Gehäuse, das für benutzerdefinierte Parameterwerte verwendet wird, die Sie oben angegeben haben. Adobe Analytics unterscheidet zwischen Groß- und Kleinschreibung, sodass es einen Grund gibt, die Groß- und Kleinschreibung von Werten zu vereinheitlichen. </p> </td> 
       </tr> 
     </tbody> 
     </table>
 
 1. Klicken **[!UICONTROL Save Changes]**.
-1. (Optional) Erstellen Sie Ihren Staged Site-Index neu, wenn Sie eine Vorschau der Ergebnisse anzeigen möchten.
+1. (Optional) Erstellen Sie Ihren Stage-Site-Index neu, wenn Sie die Vorschauen durchführen möchten.
 
    Siehe [Konfigurieren eines inkrementellen Indexes einer gestaffelten Website](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
-1. (Optional) Führen Sie auf der [!DNL Adobe Analytics Redirector] Seite einen der folgenden Schritte aus:
+1. (Optional) Führen Sie auf der Seite [!DNL Adobe Analytics Redirector] einen der folgenden Schritte aus:
 
    * Klicken **[!UICONTROL Live]**.
 
-      Siehe [Live-Einstellungen](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)anzeigen.
+      Siehe [Live-Einstellungen anzeigen](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Klicken **[!UICONTROL Push Live]**.
 
-      Siehe [Pushing-Einstellungen](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Siehe [Pushing stage settings live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Stammdateien konfigurieren {#task_5F175C8743FB49A2A003813CBF7C56BF}
+## Konfigurieren von Stammdateien {#task_5F175C8743FB49A2A003813CBF7C56BF}
 
 Verwalten Sie Stammdateien im Stammordner Ihrer Website.
 
 **So konfigurieren Sie Stammdateien**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Account Options]** > **[!UICONTROL Root Files]**.
-1. Navigieren Sie auf der [!DNL Root Files] Seite zu den Stammdateien, die Sie hochladen möchten.
+1. Navigieren Sie auf der Seite [!DNL Root Files] zu den Stammdateien, die Sie hochladen möchten.
 
    <table> 
     <thead> 
@@ -277,28 +280,28 @@ Verwalten Sie Stammdateien im Stammordner Ihrer Website.
     </tr> 
     <tr> 
       <td colname="col1"> <p>crossdomain.xml </p> </td> 
-      <td colname="col2"> <p>Ermöglicht oder deaktiviert Flash Player den domänenübergreifenden Zugriff auf Dateien. </p> </td> 
+      <td colname="col2"> <p>Ermöglicht oder deaktiviert Flash Playern den domänenübergreifenden Zugriff auf Dateien. </p> </td> 
     </tr> 
     </tbody> 
     </table>
 
 1. Klicken **[!UICONTROL Save Changes]**.
-1. (Optional) Erstellen Sie Ihren Staged Site-Index neu, wenn Sie eine Vorschau der Ergebnisse anzeigen möchten.
+1. (Optional) Erstellen Sie Ihren Stage-Site-Index neu, wenn Sie die Vorschauen durchführen möchten.
 
    Siehe [Konfigurieren eines inkrementellen Indexes einer gestaffelten Website](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
-1. (Optional) Führen Sie auf der [!DNL Root Files] Seite einen der folgenden Schritte aus:
+1. (Optional) Führen Sie auf der Seite [!DNL Root Files] einen der folgenden Schritte aus:
 
    * Klicken **[!UICONTROL Live]**.
 
-      Siehe [Live-Einstellungen](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)anzeigen.
+      Siehe [Live-Einstellungen anzeigen](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Klicken **[!UICONTROL Push Live]**.
 
-      Siehe [Pushing-Einstellungen](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Siehe [Pushing stage settings live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Übertragung des Kontoeigentums an einen anderen Kontobenutzer {#task_47E3C66CC6374274830DA10171E0CF17}
 
-Wenn Sie als Kontoinhaber Ihre Anmeldung stornieren möchten, müssen Sie zunächst das Eigentum an einen anderen aktiven Kontobenutzer übertragen. Sie können diese Aufgabe [!DNL Transfer Ownership] ausführen.
+Wenn Sie als Kontoinhaber Ihre Anmeldung stornieren möchten, müssen Sie zunächst das Eigentum an einen anderen aktiven Kontobenutzer übertragen. Sie können [!DNL Transfer Ownership] verwenden, um diese Aufgabe durchzuführen.
 
 Sie können die Eigentumsrechte an einem vorhandenen Site-Konto für Suche/Merchandising-Benutzer übertragen.
 
@@ -306,16 +309,16 @@ Nach Abschluss der Eigentumsübertragung erhält der neue Kontoinhaber eine E-Ma
 
 Es kann nur einen Inhaber pro Konto geben. Wenn Sie Ihr Eigentum an einen anderen Benutzer übertragen, haben Sie keine Eigentumsrechte mehr.
 
-Siehe [Abbrechen der Anmeldung](../c-about-settings-menu/c-about-my-profile-menu.md#task_D57701BB726243B08CEA14EEC86C3087).
+Siehe [Anmeldung abbrechen](../c-about-settings-menu/c-about-my-profile-menu.md#task_D57701BB726243B08CEA14EEC86C3087).
 
 Siehe [Entfernen eines Kontos](../c-about-settings-menu/c-about-account-options-menu.md#task_975178D5B9444BF8B52D72B897A49C32).
 
-Siehe [Entfernen von sich selbst aus einem Konto](../c-about-settings-menu/c-about-account-options-menu.md#task_C56F5AB87B664BAAAC2FD2F15003E73F).
+Siehe [Selbstentnahme aus einem Konto](../c-about-settings-menu/c-about-account-options-menu.md#task_C56F5AB87B664BAAAC2FD2F15003E73F).
 
 **So übertragen Sie das Kontoeigentum auf ein anderes Konto**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Account Options]** > **[!UICONTROL Transfer Ownership]**.
-1. Klicken Sie auf der [!DNL Transfer Ownership] Seite auf den Benutzer, für den Sie das Eigentum an Ihrem Konto übernehmen möchten.
+1. Klicken Sie auf der Seite [!DNL Transfer Ownership] auf den Benutzer, für den Sie das Eigentum an Ihrem Konto übernehmen möchten.
 1. Klicken **[!UICONTROL Transfer]**.
 
 ## Entfernen eines Kontos {#task_975178D5B9444BF8B52D72B897A49C32}
@@ -330,17 +333,17 @@ Siehe [Übertragen des Kontoeigentums an einen anderen Kontobenutzer](../c-about
 
 Wenn Sie andere Konten haben, werden Sie nach dem Entfernen des aktuellen Kontos zum ersten Konto geleitet, das in Ihrer Anmeldung aufgeführt ist.
 
-Siehe [Entfernen von sich selbst aus einem Konto](../c-about-settings-menu/c-about-account-options-menu.md#task_C56F5AB87B664BAAAC2FD2F15003E73F).
+Siehe [Selbstentnahme aus einem Konto](../c-about-settings-menu/c-about-account-options-menu.md#task_C56F5AB87B664BAAAC2FD2F15003E73F).
 
-Siehe [Abbrechen der Anmeldung](../c-about-settings-menu/c-about-my-profile-menu.md#task_D57701BB726243B08CEA14EEC86C3087).
+Siehe [Anmeldung abbrechen](../c-about-settings-menu/c-about-my-profile-menu.md#task_D57701BB726243B08CEA14EEC86C3087).
 
 **So entfernen Sie ein Konto**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Account Options]** > **[!UICONTROL Remove Account]**.
-1. (Optional) Geben Sie im [!DNL Reason for Removal] Feld einen Grund für die Kontoentfernung ein.
+1. (Optional) Geben Sie im Feld [!DNL Reason for Removal] einen Grund für die Kontoentfernung ein.
 1. Klicken **[!UICONTROL Remove Account]**.
 
-## Entfernen von sich selbst aus einem Konto {#task_C56F5AB87B664BAAAC2FD2F15003E73F}
+## Entfernen Sie sich selbst aus einem Konto {#task_C56F5AB87B664BAAAC2FD2F15003E73F}
 
 Sie können sich selbst aus einem Site-Such-/Merchandising-Konto entfernen.
 
@@ -348,7 +351,7 @@ Wenn Sie sich selbst aus einem Konto entfernen, können Sie nicht mehr darauf zu
 
 Um wieder Zugriff auf das Konto zu erhalten, bitten Sie einen aktuellen Kontobenutzer, Sie erneut zu installieren.
 
-Siehe [Abbrechen der Anmeldung](../c-about-settings-menu/c-about-my-profile-menu.md#task_D57701BB726243B08CEA14EEC86C3087).
+Siehe [Anmeldung abbrechen](../c-about-settings-menu/c-about-my-profile-menu.md#task_D57701BB726243B08CEA14EEC86C3087).
 
 Siehe [Entfernen eines Kontos](../c-about-settings-menu/c-about-account-options-menu.md#task_975178D5B9444BF8B52D72B897A49C32).
 
