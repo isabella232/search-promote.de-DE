@@ -1,15 +1,13 @@
 ---
 description: Sie können Geschäftsregeln verwenden, um Ihre Suche zu vermarkten.
-seo-description: Sie können Geschäftsregeln verwenden, um Ihre Suche zu vermarkten.
-seo-title: Geschäftsregeln
 solution: Target
 title: Geschäftsregeln
-topic: Rules,Site search and merchandising
+topic: Regeln, Site-Suche und Merchandising
 uuid: f2186f54-7a39-4f46-bb29-5115d5a17f07
 translation-type: tm+mt
-source-git-commit: fc1f0b15a15a9d0308494fc23c5b4258442c8aab
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '3127'
+source-wordcount: '3120'
 ht-degree: 1%
 
 ---
@@ -23,11 +21,11 @@ Sie können Geschäftsregeln verwenden, um Ihre Suche zu vermarkten.
 
 Sie können beispielsweise konfigurieren, wann Banner angezeigt werden, welche Ergebnisse angezeigt werden und in welcher Reihenfolge. Sie können auch die Position eines Elements in Ihrer Facette und die Vorlage für eine bestimmte Suche konfigurieren. Die Regeln werden in der Reihenfolge ausgeführt, in der sie festgelegt wurden. Je höher die Ordnungsnummer einer Regel ist, desto später wird sie im Prozess ausgeführt, wodurch frühere Regeln übertroffen werden. Sie können die Regeln per Drag &amp; Drop verschieben, um ihre Reihenfolge zu ändern, oder Sie können sie neu anordnen, indem Sie eine neue Nummer in das Textfeld für die Regelreihenfolge eingeben.
 
-Jede Geschäftsregel besteht aus Auslösern und Aktionen.
+Jede Geschäftsregel besteht aus Triggern und Aktionen.
 
-Der Auslöser definiert, wann die Regel ausgeführt wird. Wenn der Begriff &quot;Abfrage&quot;beispielsweise &quot;Männer&quot;lautet oder die Ergebnisse überwiegend &quot;Hüte&quot;sind. Der Auslöser besteht aus mehreren Bedingungen, die entweder alle sein müssen oder die wahr sein müssen, damit der gesamte Auslöser wahr ist. Sie können die Priorität angeben, indem Sie den Auslöser-Operator ändern.
+Der Trigger definiert, wann die Regel ausgeführt wird. Wenn der Begriff &quot;Abfrage&quot;beispielsweise &quot;Männer&quot;lautet oder die Ergebnisse überwiegend &quot;Hüte&quot;sind. Der Trigger besteht aus mehreren Bedingungen, die entweder alle oder alle erfüllt sein müssen, damit der gesamte Trigger wahr ist. Sie können die Priorität angeben, indem Sie den Trigger-Operator ändern.
 
-Die Aktion definiert, was passiert, wenn die Auslöserbedingung erfüllt ist. Sie können beispielsweise festlegen, dass das Banner ein bestimmtes Ergebnis an Position 1 anzeigt oder verschiebt. Die Regeltabelle enthält zusammenfassende Informationen zur Regel. Sie können auf einen Regelnamen klicken, um ihn zu öffnen und weitere Informationen anzuzeigen.
+Die Aktion definiert, was passiert, wenn die Bedingung des Triggers erfüllt ist. Sie können beispielsweise festlegen, dass das Banner ein bestimmtes Ergebnis an Position 1 anzeigt oder verschiebt. Die Regeltabelle enthält zusammenfassende Informationen zur Regel. Sie können auf einen Regelnamen klicken, um ihn zu öffnen und weitere Informationen anzuzeigen.
 
 Die Regeltabelle zeigt eine Liste aller Geschäftsregeln. Die Tabelle zeigt standardmäßig die letzten zehn hinzugefügten Regeln in absteigender Reihenfolge an. Sie können auf die Spaltenüberschriften in der Tabelle klicken, um die Regeln in auf- oder absteigender Reihenfolge zu sortieren.
 
@@ -58,9 +56,9 @@ Geschäftsregeln können aus drei Staaten bestehen: Genehmigt, Ausgesetzt oder W
 
 Sie genehmigen Geschäftsregeln und veröffentlichen sie live, damit sie in Ihrer Live-Umgebung ausgeführt werden. Derzeit können Sie nur *alle*-Regeln live übertragen. Sie können jedoch den Status einer Regel ändern, um zu steuern, welche Regeln ausgeführt werden und nicht in Ihrer Live-Umgebung ausgeführt werden.
 
-Standardmäßig werden Regeln immer dann ausgeführt, wenn die zugehörigen Auslöser erfüllt sind. Sie können jedoch optional planen, dass eine Regel für ein bestimmtes Datum und einen bestimmten Zeitraum ausgeführt wird.
+Standardmäßig werden Regeln immer dann ausgeführt, wenn die zugehörigen Trigger erfüllt sind. Sie können jedoch optional planen, dass eine Regel für ein bestimmtes Datum und einen bestimmten Zeitraum ausgeführt wird.
 
-Darüber hinaus werden Regeln standardmäßig ausgeführt, wenn die zugehörigen Auslöser für alle Stores erfüllt sind. Wenn die Regel nur für bestimmte Stores gelten soll, können Sie im Bedienfeld &quot;Stores&quot;einen oder mehrere Stores auswählen, auf die die Regel angewendet wird.
+Außerdem werden Regeln standardmäßig ausgeführt, wenn die zugehörigen Trigger für alle Stores erfüllt sind. Wenn die Regel nur für bestimmte Stores gelten soll, können Sie im Bedienfeld &quot;Stores&quot;einen oder mehrere Stores auswählen, auf die die Regel angewendet wird.
 
 ## Hinzufügen einer neuen Geschäftsregel {#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7}
 
@@ -85,21 +83,21 @@ Bei den folgenden Schritten wird davon ausgegangen, dass Sie den Visual Rule Bui
    Klicken Sie noch nicht auf **[!UICONTROL Save Rule]**.
 1. (Optional) Wenn Sie eine große Anzahl von Geschäftsregeln verwalten, können Sie Geschäftsregeln mit bestimmten Beschriftungen versehen. Geben Sie im Feld **[!UICONTROL Tags]** eine oder mehrere Tag-Beschriftungen ein, verwenden Sie ein Komma, eine Registerkarte oder die Eingabetaste als Trennzeichen.
 
-   Verwenden Sie auf der Seite [!DNL Business Rules] die Funktion **[!UICONTROL Filter by tag]**, um nach Regeln zu filtern, die einer angegebenen Bezeichnung entsprechen. 1. Stellen Sie auf der Seite [!DNL Business Rule Builder] die Auslöser und Aktionen ein, die Sie verwenden möchten.
+   Verwenden Sie auf der Seite [!DNL Business Rules] die Funktion **[!UICONTROL Filter by tag]**, um nach Regeln zu filtern, die einer angegebenen Bezeichnung entsprechen. 1. Legen Sie auf der Seite [!DNL Business Rule Builder] die Trigger und Aktionen fest, die Sie verwenden möchten.
 
-   **Auslöseroptionen**
+   **Optionen für Trigger**
 
-   Auslöser sind die Bedingungen, die erfüllt sein müssen, damit eine Geschäftsregel ausgeführt werden kann. Wenn eine Geschäftsregel über mehrere Auslöser verfügt, können Sie konfigurieren, wie Auslöser mit einer der folgenden drei Methoden reagieren:
+   Trigger sind die Bedingungen, die erfüllt sein müssen, damit eine Geschäftsregel ausgeführt werden kann. Wenn eine Geschäftsregel mehrere Trigger hat, können Sie die Reaktion von Triggern mit einer der folgenden drei Methoden konfigurieren:
 
-   * Eine Antwort, bei der alle Auslöser wie im folgenden Beispiel true (Standardeinstellung) sein müssen:
+   * Eine Antwort, bei der alle Trigger wie im folgenden Beispiel true (Standardeinstellung) sein müssen:
 
       `if a AND b AND c then ...`
 
-   * Eine Antwort, bei der einer der Auslöser wie im folgenden Beispiel wahr sein muss:
+   * Eine Antwort, bei der einer der Trigger wie im folgenden Beispiel wahr sein muss:
 
       `if a OR b OR c then ...`
 
-   * Eine Antwort, bei der eine benutzerdefinierte Kombination von Auslösern angegeben wurde. Das heißt, Sie kombinieren einzelne Auslöser oder &quot;Bedingungen&quot; mit den Operatoren `AND` und `OR`.
+   * Eine Antwort, bei der eine benutzerspezifische Kombination von Triggern angegeben wird. Das heißt, Sie kombinieren einzelne Trigger oder &quot;Bedingungen&quot; mit den Operatoren `AND` und `OR`.
 
       Sie können die Priorität der Bewertung auch ändern, indem Sie Kombinationen aus Links- und Rechtsklammern hinzufügen, wie im folgenden Beispiel dargestellt:
 
@@ -107,44 +105,44 @@ Bei den folgenden Schritten wird davon ausgegangen, dass Sie den Visual Rule Bui
 
       >[!NOTE]
       >
-      >Wenn Sie die Operatoren `AND` mit den Operatoren `OR` in einem benutzerspezifischen Geschäftsregelsatz kombinieren, stellen Sie sicher, dass Sie die Klammern entsprechend angeben, um sicherzustellen, dass die Auslöser in der richtigen Reihenfolge ausgewertet werden.
+      >Wenn Sie die Operatoren `AND` mit den Operatoren `OR` in einem benutzerspezifischen Geschäftsregelsatz kombinieren, stellen Sie sicher, dass Sie die Klammern entsprechend angeben, um sicherzustellen, dass die Trigger in der richtigen Reihenfolge ausgewertet werden.
 
-      Diese spezielle Funktion zum Anpassen einer Kombination von Auslösern ist nicht standardmäßig aktiviert. Wenden Sie sich an den technischen Support, um diese Funktion für Ihre Verwendung zu aktivieren.
+      Diese spezielle Funktion zum Anpassen einer Kombination von Triggern ist nicht standardmäßig aktiviert. Wenden Sie sich an den technischen Support, um diese Funktion für Ihre Verwendung zu aktivieren.
    <table> 
       <thead> 
       <tr> 
-      <th colname="col1" class="entry"> <p>Auslöser, Option </p> </th> 
+      <th colname="col1" class="entry"> <p>Trigger, Option </p> </th> 
       <th colname="col2" class="entry"> <p>Beschreibung </p> </th> 
       </tr> 
     </thead>
     <tbody> 
       <tr> 
       <td colname="col1"> <p>Suchbegriffsübereinstimmungen </p> </td> 
-      <td colname="col2"> <p>Der Auslöser ist "true", wenn der Suchbegriff mit dem angegebenen, Groß-/Kleinschreibung berücksichtigenden Suchbegriff übereinstimmt. Der Auslöser gilt sowohl für den Suchbegriff als auch für alle seine Synonyme, wie im Linguistik-Wörterbuch definiert. </p> </td> 
+      <td colname="col2"> <p>Trigger ist "true", wenn der Suchbegriff mit dem angegebenen, in der Groß- und Kleinschreibung unterschieden wird. Der Trigger gilt sowohl für den Suchbegriff als auch für alle seine Synonyme, wie im Linguistik-Wörterbuch definiert. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> Abfrage stimmt überein </p> </td> 
-      <td colname="col2"> <p> Auslöser ist "true", wenn alle Suchparameter übereinstimmen. </p> </td> 
+      <td colname="col2"> <p> Trigger ist "true", wenn alle Suchparameter übereinstimmen. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> Ergebnisgruppe ist Dominant </p> </td> 
-      <td colname="col2"> <p> Auslöser ist "true", wenn die durch die angegebene Suche definierte Ergebnisgruppe die Ergebnismenge dominiert. </p> <p>Standardmäßig ist die Dominanz auf 50 % festgelegt. Diese Einstellung ist eine Merchandising-Voreinstellung, die Sie festlegen können. </p> <p> 
-        <!--See <xref href="t_Configuring_Merchandising_preferences.xml#task_7AC7B9F5D9F44E10AB5BC0B8CB31C37A" type="task" format="dita" scope="local">Configuring Merchandising preferences</xref>. --> </p> <p>Die gesamte Gruppe muss innerhalb des Ergebnissatzes vorhanden sein, damit dieser Auslöser wahr ist. Die Ergebnisgruppe ist dynamisch. Sie können sich nach Indexvorgängen ändern, je nachdem, welche Ergebnisse mit den ursprünglichen Suchkriterien übereinstimmen. </p> </td> 
+      <td colname="col2"> <p> Trigger ist "true", wenn die durch die jeweilige Suche definierte Ergebnisgruppe die Ergebnismenge dominiert. </p> <p>Standardmäßig ist die Dominanz auf 50 % festgelegt. Diese Einstellung ist eine Merchandising-Voreinstellung, die Sie festlegen können. </p> <p> 
+        <!--See <xref href="t_Configuring_Merchandising_preferences.xml#task_7AC7B9F5D9F44E10AB5BC0B8CB31C37A" type="task" format="dita" scope="local">Configuring Merchandising preferences</xref>. --> </p> <p>Die gesamte Gruppe muss innerhalb des Ergebnissatzes vorhanden sein, damit dieser Trigger true (wahr) ist. Die Ergebnisgruppe ist dynamisch. Sie können sich nach Indexvorgängen ändern, je nachdem, welche Ergebnisse mit den ursprünglichen Suchkriterien übereinstimmen. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Ergebnisgruppe vorhanden </p> </td> 
-      <td colname="col2"> <p> Auslöser ist "true", wenn die durch die angegebene Suche definierte Ergebnisgruppe in der Ergebnismenge vorhanden ist. Die gesamte Gruppe muss innerhalb des Ergebnissatzes vorhanden sein, damit dieser Auslöser erfüllt werden kann (die Ergebnisse können auf jeder Seite angezeigt werden). Die Ergebnisgruppe ist dynamisch und kann sich nach Indexvorgängen ändern, je nachdem, welche Ergebnisse mit den ursprünglichen Suchkriterien übereinstimmen. </p> </td> 
+      <td colname="col2"> <p> Trigger ist "true", wenn die durch die jeweilige Suche definierte Ergebnisgruppe in der Ergebnismenge vorhanden ist. Die gesamte Gruppe muss innerhalb des Ergebnissatzes vorhanden sein, damit dieser Trigger erfüllt werden kann (die Ergebnisse können auf jeder Seite angezeigt werden). Die Ergebnisgruppe ist dynamisch und kann sich nach Indexvorgängen ändern, je nachdem, welche Ergebnisse mit den ursprünglichen Suchkriterien übereinstimmen. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> Vorgegebenes Ergebnis </p> </td> 
-      <td colname="col2"> <p> Auslöser ist "true", wenn das einzelne Ergebnis innerhalb der Ergebnismenge gefunden wird. Das Ergebnis kann sich an einer beliebigen Stelle im Ergebnissatz befinden, muss sich nicht auf der Seite befinden, die der Benutzer derzeit anzeigt. </p> </td> 
+      <td colname="col2"> <p> Trigger ist "true", wenn das einzelne Ergebnis innerhalb der Ergebnismenge gefunden wird. Das Ergebnis kann sich an einer beliebigen Stelle im Ergebnissatz befinden, muss sich nicht auf der Seite befinden, die der Benutzer derzeit anzeigt. </p> </td> 
       </tr> 
     </tbody> 
     </table>
 
    **Aktionsoptionen**
 
-   Wenn die Auslöser einer Geschäftsregel erfüllt sind, werden die mit der Regel verknüpften Aktionen ausgeführt. Während Sie mit dem visuellen Regelaufbau die folgenden Aktionen erstellen können, können Sie mit dem erweiterten Regelaufbau weitere Aktionstypen erstellen.
+   Wenn die Trigger einer Geschäftsregel erfüllt sind, werden die mit der Regel verknüpften Aktionen ausgeführt. Während Sie mit dem visuellen Regelaufbau die folgenden Aktionen erstellen können, können Sie mit dem erweiterten Regelaufbau weitere Aktionstypen erstellen.
 
    Die Aktionen &quot;Facet-Element entfernen&quot;, &quot;Facet-Element einblenden&quot;, &quot;Facette einblenden&quot;, &quot;Facette entfernen&quot;, &quot;Facet-Element pushen&quot;in der folgenden Tabelle erfordern eine Facette. Die Oberfläche zur Auswahl einer Facette hängt von der Konfiguration Ihres Kontos ab. Ein Normalkonto verwendet beispielsweise eine Dropdown-Liste zur Auswahl von Facetten. Wenn Ihr Konto jedoch Facetten mit Zuschnitten aufweist, wird ein Textfeld mit automatischer Vervollständigung angezeigt, in das Sie den Namen einer beliebigen Facette eingeben können. Die automatische Vervollständigung schlägt Facetten in einer Dropdown-Liste vor, während Sie den Namen der Facette eingeben. Die Vorschläge enthalten derzeit definierte Facetten. Wenn Ihr Konto über eine Steckplatzzuordnung verfügt, werden auch formatierte Facetten vorgeschlagen.
 
@@ -228,11 +226,11 @@ Bei den folgenden Schritten wird davon ausgegangen, dass Sie den Visual Rule Bui
     </tbody> 
     </table>
 
-   Je nach dem aktiven (entfalteten) Regelaufbau-Bedienfeld können Sie auch die folgenden Schritte ausführen, um Auslöser und Aktionen festzulegen.
+   Je nach aktivem (nicht gefaltetem) Regelaufbau-Bedienfeld können Sie auch die folgenden Schritte ausführen, um Trigger und Aktionen festzulegen.
 
    * Wenn das Bedienfeld **[!UICONTROL Triggers]** entfaltet wird - Klicken Sie im Bereich &quot;Präsentationsvorlage&quot;der Seite &quot;Business Rule Builder&quot;mit der rechten Maustaste auf ein beliebiges Suchergebnis oder eine Suchfacette und klicken Sie dann auf **[!UICONTROL Add "result present" trigger]**.
 
-      Klicken Sie im Auslösebedienfeld auf das X links neben einem Auslöser, um ihn aus der Liste der Auslöser zu entfernen.
+      Klicken Sie im Bedienfeld &quot;Trigger&quot;auf das X links neben einem Trigger, um ihn aus der Liste der Trigger zu entfernen.
 
    * Wenn das Bedienfeld **[!UICONTROL Actions]** ausgeklappt ist - Klicken Sie im Bereich &quot;Präsentationsvorlage&quot;der Seite &quot;Business Rule Builder&quot;mit der rechten Maustaste auf ein Suchergebnis. Klicken Sie auf **[!UICONTROL Add Result]**, **[!UICONTROL Remove Result]**, **[!UICONTROL Push to bottom]** oder **[!UICONTROL Push to #`<n>`]** (wobei `<n>` eine Ziffer ist).
 
@@ -257,8 +255,8 @@ Bei den folgenden Schritten wird davon ausgegangen, dass Sie den Visual Rule Bui
 
 1. (Optional) Führen Sie im Bedienfeld **[!UICONTROL Schedule]** einen der folgenden Schritte aus:
 
-   * Klicken Sie auf **[!UICONTROL Run Indefinitely]**, damit die Regel ausgeführt wird, sobald die zugehörigen Auslöser erfüllt sind. Diese Option ist die Standardeinstellung.
-   * Klicken Sie auf **[!UICONTROL Fixed Schedule]** und geben Sie dann das Datum und die Uhrzeit des Beginns sowie das Enddatum und die Uhrzeit an, zu der die Regel ausgeführt werden soll, wenn der zugehörige Auslöser erfüllt ist.
+   * Klicken Sie auf **[!UICONTROL Run Indefinitely]**, damit die Regel ausgeführt wird, sobald die zugehörigen Trigger erfüllt sind. Diese Option ist die Standardeinstellung.
+   * Klicken Sie auf **[!UICONTROL Fixed Schedule]** und geben Sie das Datum und die Uhrzeit des Beginns sowie das Enddatum und die Uhrzeit für die Ausführung der Regel an, sobald der zugehörige Trigger erfüllt ist.
 
 1. Klicken **[!UICONTROL Save Rule]**.
 1. (Optional) Führen Sie auf der Seite [!DNL Business Rules] einen der folgenden Schritte aus:
@@ -292,7 +290,7 @@ Sie können den Visual Rule Builder oder den erweiterten Regelaufbau verwenden, 
 
 1. Geben Sie im Textfeld [!DNL Name] den neuen Namen der Geschäftsregel ein.
 
-   Klicken Sie noch nicht auf **[!UICONTROL Save Rule]**. 1. Stellen Sie auf der Seite [!DNL Business Rule Builder] die Auslöser und Aktionen ein, die Sie verwenden möchten.
+   Klicken Sie noch nicht auf **[!UICONTROL Save Rule]**. 1. Legen Sie auf der Seite [!DNL Business Rule Builder] die Trigger und Aktionen fest, die Sie verwenden möchten.
 
    Siehe die Tabelle der Optionen unter [Hinzufügen einer neuen Geschäftsregel](../c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7).
 1. (Optional) Führen Sie in einem beliebigen **[!UICONTROL Business Rule Builder]**-Bedienfeld ( [!DNL Triggers], [!DNL Actions] oder [!DNL Schedule]) einen der folgenden Schritte aus:
@@ -315,8 +313,8 @@ Sie können den Visual Rule Builder oder den erweiterten Regelaufbau verwenden, 
 
 1. (Optional) Führen Sie im Bedienfeld [!DNL Schedule] einen der folgenden Schritte aus:
 
-   * Klicken Sie auf **[!UICONTROL Run Indefinitely]**, damit die Regel ausgeführt wird, sobald die zugehörigen Auslöser erfüllt sind. Diese Option ist die Standardeinstellung.
-   * Klicken Sie auf **[!UICONTROL Fixed Schedule]** und geben Sie dann das Datum und die Uhrzeit des Beginns sowie das Enddatum und die Uhrzeit an, zu der die Regel ausgeführt werden soll, wenn der zugehörige Auslöser erfüllt ist.
+   * Klicken Sie auf **[!UICONTROL Run Indefinitely]**, damit die Regel ausgeführt wird, sobald die zugehörigen Trigger erfüllt sind. Diese Option ist die Standardeinstellung.
+   * Klicken Sie auf **[!UICONTROL Fixed Schedule]** und geben Sie dann das Datum und die Uhrzeit des Beginns sowie das Enddatum und die Uhrzeit für die Ausführung der Regel an, sobald der zugehörige Trigger erfüllt ist.
 
 1. Klicken **[!UICONTROL Save Rule]**.
 
@@ -425,7 +423,7 @@ Sie können Geschäftsregeln fortsetzen, um eine ausgesetzte Regel erneut zu akt
 
 Sie können Geschäftsregeln neu anordnen, um die Reihenfolge zu ändern, in der sie auf Präsentationsvorlagen ausgeführt werden.
 
-Geschäftsregeln werden in der Reihenfolge ausgeführt, in der sie festgelegt wurden. Je höher die Ordnungsnummer einer Regel ist, desto später wird sie im Prozess ausgeführt, wodurch frühere Regeln übertroffen werden. Sie können Regeln neu anordnen, indem Sie auf der Seite [!DNL Business Rules] in die Spalte Reihenfolge der Tabelle eine neue Zahl eingeben. Sie können auch per Drag &amp; Drop Regeln verwenden, um ihre Ausführungsreihenfolge zu ändern.
+Geschäftsregeln werden in der Reihenfolge ausgeführt, in der sie festgelegt wurden. Je höher die Ordnungsnummer einer Regel ist, desto später wird sie im Prozess ausgeführt, wodurch frühere Regeln übertroffen werden. Sie können Regeln neu anordnen, indem Sie auf der Seite [!DNL Business Rules] in die Spalte Reihenfolge der Tabelle eine neue Zahl eingeben. Sie können die Ausführungsreihenfolge auch per Drag &amp; Drop ändern.
 
 **So ändern Sie die Reihenfolge, in der Geschäftsregeln ausgeführt werden**
 
