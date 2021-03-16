@@ -1,16 +1,14 @@
 ---
 description: Verwenden Sie dynamische Facets, um beim Suchen automatisch neue Bereichsauswahlen zu erstellen. Sie können optional jedes dynamische Facettenfeld mit bis zu einem Tabellennamen in Ihrer Adobe Search&amp;Promote-Konto verknüpfen. Sie wenden diese Tabellenbeziehungen zur Suchzeit auf alle dynamischen Facettenfelder an, die an der Suche beteiligt sind.
-seo-description: Verwenden Sie dynamische Facets, um beim Suchen automatisch neue Bereichsauswahlen zu erstellen. Sie können optional jedes dynamische Facettenfeld mit bis zu einem Tabellennamen in Ihrer Adobe Search&amp;Promote-Konto verknüpfen. Sie wenden diese Tabellenbeziehungen zur Suchzeit auf alle dynamischen Facettenfelder an, die an der Suche beteiligt sind.
-seo-title: Dynamische Facets
 solution: Target
 subtopic: Navigation
 title: Dynamische Facets
-topic: Design,Site search and merchandising
+topic: Design, Site-Suche und Merchandising
 uuid: 1ea91c22-dcc2-4173-aa50-ce618ad0a99c
 translation-type: tm+mt
-source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1062'
 ht-degree: 0%
 
 ---
@@ -34,7 +32,7 @@ Bei Verwendung von &quot;Dynamic Faceting&quot;wird jedoch die Anzahl der Facett
 
 Facets, die dünn gefüllt sind und nur für eine Untergruppe von Suchvorgängen angezeigt werden, sind gute Kandidaten, um dynamisch zu sein. Beispielsweise kann eine Facette mit dem Namen &quot;forefoot width&quot;nur gefüllt werden, wenn nach Schuhen oder Stiefeln gesucht wird. Während eine andere Facette mit dem Namen &quot;Gesichts-Zahlenstil&quot;mit möglichen Werten von &quot;Roman&quot;und &quot;Arabisch&quot;nur bei der Suche nach Uhren oder Uhren erscheint.
 
-Wenn Ihr Konto eine große Anzahl solcher Facetten hat, verbessert es die Suchleistung, sodass dynamische Facetten verwendet werden, anstatt immer den gesamten Satz möglicher Facetten für jede Suche auszuwählen. Generische Facetten wie &quot;SKU&quot;oder &quot;Marke&quot;, die normalerweise mit den Ergebnissen jeder Suche angezeigt werden, sind normalerweise nicht als dynamische Facetten geeignet.
+Wenn Ihr Konto eine große Anzahl solcher Facetten aufweist, verbessert dies die Suchleistung, sodass dynamische Facetten verwendet werden, anstatt immer den gesamten Satz möglicher Facetten für jede Suche auszuwählen. Generische Facetten wie &quot;SKU&quot;oder &quot;Marke&quot;, die normalerweise mit den Ergebnissen jeder Suche angezeigt werden, sind normalerweise nicht als dynamische Facetten geeignet.
 
 ## Beziehung zwischen Facetten und Meta-Tag-Feldern {#section_2869E5FCDA8B431A87BC6E5573F2B0A0}
 
