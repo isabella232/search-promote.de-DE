@@ -1,16 +1,14 @@
 ---
 description: Sie können Facets verwenden, um Ihre Präsentationsebene anzupassen und Ihren Benutzern eine geführte Suche bereitzustellen, mit der sie einen Drilldown in ihre Suchergebnisse durchführen können.
-seo-description: Sie können Facets verwenden, um Ihre Präsentationsebene anzupassen und Ihren Benutzern eine geführte Suche bereitzustellen, mit der sie einen Drilldown in ihre Suchergebnisse durchführen können.
-seo-title: Info zu Facets
 solution: Target
 subtopic: Navigation
 title: Info zu Facets
-topic: Design,Site search and merchandising
+topic: Design, Site-Suche und Merchandising
 uuid: 28bc4d4d-a84c-4a77-befb-b0fb3bbdb966
 translation-type: tm+mt
-source-git-commit: 52c8d7985e7cb0aa35be1deabeb7cb92a55f07c2
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '3855'
+source-wordcount: '3832'
 ht-degree: 1%
 
 ---
@@ -46,7 +44,7 @@ MM/TT/JJJJ
 
 Es sind vierstellige Jahre erforderlich. Es muss mindestens ein Beginn- oder Enddatum geben, beides ist jedoch nicht erforderlich. Beispiel: &quot;12.1.2007 BTW1/4/2009&quot;bedeutet alle Daten zwischen dem 1. Dezember 2007 und dem 4. Januar 2009. &quot;1-1-2005BTW&quot;bedeutet jedoch alle Daten seit dem 1. Januar 2005.
 
-Sie können das Präsentationsvorlagen-Tag `<guided-facet-value/>` verwenden, um wie eine normale Facette den Wert einer Datumsbereich-Facette abzurufen. Derzeit ist JavaScript erforderlich, damit Benutzer Datumsbereiche eingeben können, nach denen gesucht werden soll. Beispielsweise können Sie die Eingabe aus zwei Eingabefeldern für das Beginns- und Enddatum übernehmen. Anschließend können Sie die Eingabe validieren und den Wert der neuen Facette (aus den beiden Eingabefeldern erstellt) und den Facettennamen an die vorhandene URL anhängen.
+Sie können das Präsentationsvorlagen-Tag `<guided-facet-value/>` verwenden, um wie eine normale Facette den Wert einer Datumsbereich-Facette abzurufen. Derzeit ist JavaScript erforderlich, damit Benutzer Datumsbereiche eingeben können, nach denen gesucht werden soll. Beispielsweise können Sie die Eingabe aus zwei Eingabefeldern für das Beginns- und Enddatum nehmen. Anschließend können Sie die Eingabe validieren und den Wert der neuen Facette (aus den beiden Eingabefeldern erstellt) und den Facettennamen an die vorhandene URL anhängen.
 
 Siehe [Präsentationsvorlage-Tags](../c-appendices/c-templates.md#reference_F1BBF616BCEC4AD7B2548ECD3CA74C64).
 
@@ -230,7 +228,7 @@ Siehe [Hinzufügen von Feldinjizierungsdefinitionen](../c-about-settings-menu/c-
       </tr> 
       <tr> 
       <td colname="col1"> <p>Eltern von Facets </p> </td> 
-      <td colname="col2"> <p>Diese Option ist nur verfügbar, wenn Sie in der Dropdown-Liste </span> die Option <span class="uicontrol"> Kategorie </span> oder &lt;a2/&gt; Kategorie Multi-Select <span class="uicontrol"> ausgewählt haben.<span class="uicontrol"></span> </span></p> <p>Gibt an, was die Eltern der Facette sind. Die ausgewählten Elemente in den übergeordneten Facetten der Kategorien werden verwendet, um die Auswahlmöglichkeiten einzuschränken, die in der Facette der aktuellen Kategorie verfügbar sind. Übergeordnete Facetten werden nicht deaktiviert, wenn ein Kunde mit der Facette "Kategorie"interagiert. Sie können mehrere durch Kommas getrennte Übergeordnete Elemente angeben. </p> </td> 
+      <td colname="col2"> <p>Diese Option ist nur verfügbar, wenn Sie in der Dropdown-Liste <span class="uicontrol"> die Option </span> Kategorie <span class="uicontrol"> oder <span class="uicontrol"> Kategorie Multi-Select </span> ausgewählt haben.</span> </span></p> <p>Gibt an, was die Eltern der Facette sind. Die ausgewählten Elemente in den übergeordneten Facetten der Kategorien werden verwendet, um die Auswahlmöglichkeiten einzuschränken, die in der Facette der aktuellen Kategorie verfügbar sind. Übergeordnete Facetten werden nicht deaktiviert, wenn ein Kunde mit der Facette "Kategorie"interagiert. Sie können mehrere durch Kommas getrennte Übergeordnete Elemente angeben. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Fixierbare Tiefe </p> </td> 
@@ -262,9 +260,9 @@ Siehe [Hinzufügen von Feldinjizierungsdefinitionen](../c-about-settings-menu/c-
       <ul id="ul_12987F4DC7B34C63ABC906B59688A174"> 
       <li id="li_3206C96013DF431D90119F594D93D85D"> <span class="uicontrol"> alpha  </span> <p>Sortiert die Werte alphabetisch (0-9, A-Z), einschließlich Interpunktionszeichen. </p> </li> 
       <li id="li_304E4A518FBE48D18D9E9EA7339A3481"> <span class="uicontrol"> alpha (nur alphanumerisch)  </span> <p>Sortiert die Werte alphabetisch (0-9, A-Z), wobei Interpunktionszeichen ignoriert werden. </p> </li> 
-      <li id="li_CADB888CC514455F9CA379C8EEE490AA"> <span class="uicontrol"> alpha (nicht zwischen Groß- und Kleinschreibung unterscheiden)  </span> <p>Sortiert die Werte alphabetisch (0-9, A-Z), wobei die Groß-/Kleinschreibung von Buchstaben ignoriert wird und Interpunktionszeichen eingeschlossen sind. </p> </li> 
+      <li id="li_CADB888CC514455F9CA379C8EEE490AA"> <span class="uicontrol"> alpha (nicht zwischen Groß- und Kleinschreibung unterscheiden)  </span> <p>Sortiert die Werte alphabetisch (0-9, A-Z), wobei die Groß-/Kleinschreibung von Buchstaben ignoriert wird, einschließlich Interpunktionszeichen. </p> </li> 
       <li id="li_F61122E79AB5413792DA31F8AB1414BD"> <span class="uicontrol"> alpha (nicht zwischen Groß- und Kleinschreibung unterscheiden, nur alphanumerisch)  </span> <p>Sortiert die Werte alphabetisch (0-9, A-Z), ignoriert die Groß-/Kleinschreibung von Buchstaben und ignoriert Interpunktionszeichen. </p> </li> 
-      <li id="li_F50CC298ABF046D0A39D5AE5B1261823"> <span class="uicontrol"> count  </span> <p>Sortiert nach Anzahl der Ergebnisse, die mit jedem Facettenwert übereinstimmen, vom Größten bis zum Wenigsten. </p> </li> 
+      <li id="li_F50CC298ABF046D0A39D5AE5B1261823"> <span class="uicontrol"> count </span> <p>Sortiert nach Anzahl der Ergebnisse, die mit jedem Facettenwert übereinstimmen, vom Größten bis zum Wenigsten. </p> </li> 
       <li id="li_32B6AF39E9534762B39B15181DC5AD01"> <span class="uicontrol"> numerisch  </span> <p>Sortiert die Werte numerisch. Beim Sortieren von Zahlen ist diese Option einer Alpha-Sortierung überlegen, da bei einer Alpha-Sortierung 10 vor 2 angezeigt werden. </p> </li> 
       <li id="li_CF8E76A7B1184E0C8DCC11B53E31A1DC"> <span class="uicontrol"> split </span> <p>Unterteilt die Liste in zwei separate Listen nach Zählerschwellenwert. Facet-Werte über dem Schwellenwert werden an den Anfang verschoben. Facet-Werte mit Zahlen unter dem Schwellenwert werden nach unten verschoben. Ein Bruchschwellenwert ist erforderlich, wenn Werte eines bestimmten Bereichs immer oben stehen sollen. </p> </li> 
       <li id="li_4AB8276577384B1099CBA895898205AD"> <span class="uicontrol"> break  </span> <p>Erzwingt bestimmte Werte am Anfang oder am Ende der Liste. So können Sie z. B. immer den Begriff "Sonstige"unten in der Liste verwenden. Bei der Verwendung einer Umbruchsortierung zur Identifizierung der expliziten Werte am Anfang oder am Ende der Sortierung sind entweder die oberen oder unteren Werte erforderlich. </p> </li> 
@@ -309,7 +307,7 @@ Siehe [Hinzufügen von Feldinjizierungsdefinitionen](../c-about-settings-menu/c-
       </tr> 
       <tr> 
       <td colname="col1"> <p>Trennschwellenwert </p> </td> 
-      <td colname="col2"> <p>Diese Option ist nur verfügbar, wenn Sie <span class="uicontrol"> </span> in der Dropdown-Liste <span class="uicontrol"> Sortieren </span> die Option &lt;a1/&gt; teilen ausgewählt haben. </p> <p>Bei der Verwendung der Sortierung "Teilen"definiert der Spaltschwellenwert die Anzahl, bei der die Facette in zwei separate Listen aufgeteilt werden soll. Werte, deren Werte größer als oder gleich dem Schwellenwert sind, bleiben oben, Werte unter dem Schwellenwert werden nach unten verschoben. </p> </td> 
+      <td colname="col2"> <p>Diese Option ist nur verfügbar, wenn Sie <span class="uicontrol"> </span> in der Dropdown-Liste <span class="uicontrol"> Sortieren </span> die Option  teilen ausgewählt haben. </p> <p>Bei der Verwendung der Sortierung "Teilen"definiert der Spaltschwellenwert die Anzahl, bei der die Facette in zwei separate Listen aufgeteilt werden soll. Werte, deren Werte größer als oder gleich dem Schwellenwert sind, bleiben oben, während Werte unterhalb des Schwellenwerts nach unten verschoben werden. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Höchstwerte </p> </td> 
