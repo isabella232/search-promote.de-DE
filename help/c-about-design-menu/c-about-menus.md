@@ -1,16 +1,14 @@
 ---
 description: Sie können Menüs verwenden, um Ihre Präsentationsebene anzupassen.
-seo-description: Sie können Menüs verwenden, um Ihre Präsentationsebene anzupassen.
-seo-title: Menüs
 solution: Target
 subtopic: Navigation
 title: Menüs
-topic: Design,Site search and merchandising
+topic: Design, Site-Suche und Merchandising
 uuid: 011050cd-21b6-4150-9503-18fa3f771626
 translation-type: tm+mt
-source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '757'
 ht-degree: 1%
 
 ---
