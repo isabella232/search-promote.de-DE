@@ -1,16 +1,14 @@
 ---
 description: Sie können verschiedene Bereiche von "Autom. ausfüllen"konfigurieren, um die Erstellung des für die automatische Vervollständigung aktivierten Suchformulars und der Datei "autocomplete_data.js"zu steuern, die als Teil des für die automatische Vervollständigung aktivierten Suchformulars enthalten ist.
-seo-description: Sie können verschiedene Bereiche von "Autom. ausfüllen"konfigurieren, um die Erstellung des für die automatische Vervollständigung aktivierten Suchformulars und der Datei "autocomplete_data.js"zu steuern, die als Teil des für die automatische Vervollständigung aktivierten Suchformulars enthalten ist.
-seo-title: Info zur automatischen Vervollständigung
 solution: Target
 subtopic: Auto-Complete
 title: Info zur automatischen Vervollständigung
-topic: Design,Site search and merchandising
+topic: Design, Site-Suche und Merchandising
 uuid: 3dfdd14d-2044-4f01-a5bc-fcb2eb0d5068
 translation-type: tm+mt
-source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1499'
 ht-degree: 1%
 
 ---
