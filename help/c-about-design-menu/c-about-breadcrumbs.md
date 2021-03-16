@@ -1,16 +1,14 @@
 ---
 description: Breadcrumbs sind eine Navigationssteuerung, die Sie Ihrer Website hinzufügen können. Der Breadcrumb gibt Kunden Rückmeldungen darüber, wo sie sich in einem Suchergebnissatz befinden. Es hilft ihnen auch, schnell zu einem vorherigen Schritt zurückzukehren.
-seo-description: Breadcrumbs sind eine Navigationssteuerung, die Sie Ihrer Website hinzufügen können. Der Breadcrumb gibt Kunden Rückmeldungen darüber, wo sie sich in einem Suchergebnissatz befinden. Es hilft ihnen auch, schnell zu einem vorherigen Schritt zurückzukehren.
-seo-title: Info zu Breadcrumbs
 solution: Target
 subtopic: Navigation
 title: Info zu Breadcrumbs
-topic: Design,Site search and merchandising
+topic: Design, Site-Suche und Merchandising
 uuid: 3e630a72-a631-4f4f-8aa5-adf2882cdf1c
 translation-type: tm+mt
-source-git-commit: 7f1b5d94e8002992d62ec1e3dce11f9c5605fde8
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '755'
 ht-degree: 1%
 
 ---
@@ -79,7 +77,7 @@ t_adding_a_new_breadcrumb.xml
       <ul id="ul_96FCD8E4C3704B45B59BC18A7A1AC52A"> 
         <li id="li_B880037088DF426F880788EAA3072180">Zu - 1 &gt; 2 </li> 
         <li id="li_D0F07A15DCD043EFA4563632ED33A9E2">Entfernen - 1 &gt; 3 &gt; 4 </li> 
-        <li id="li_D848ED44B4E44538AA92010F9F186224"> Drop - Der gesamte Breadcrumb wird entfernt, wodurch der Kunde zum Punkt zurückkehrt, bevor er mit dem Drilldown begonnen hat. </li> 
+        <li id="li_D848ED44B4E44538AA92010F9F186224"> Drop - Der gesamte Breadcrumb wird entfernt, sodass der Kunde zum Punkt zurückkehrt, bevor er mit dem Drilldown begonnen hat. </li> 
       </ul> </p> </td> 
       </tr> 
       <tr> 
