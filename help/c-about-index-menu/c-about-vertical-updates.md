@@ -1,16 +1,14 @@
 ---
 description: Mit Vertikaler Aktualisierung können Sie Teile Ihres Indexes schnell aktualisieren, ohne große Datenmengen verarbeiten zu müssen.
-seo-description: Mit Vertikaler Aktualisierung können Sie Teile Ihres Indexes schnell aktualisieren, ohne große Datenmengen verarbeiten zu müssen.
-seo-title: Vertikale Aktualisierung
 solution: Target
 subtopic: Vertical Update
 title: Vertikale Aktualisierung
-topic: Index,Site search and merchandising
+topic: Index, Site-Suche und Merchandising
 uuid: ded09e89-5a52-4e8c-a6f7-3e25b4191183
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '757'
 ht-degree: 0%
 
 ---
