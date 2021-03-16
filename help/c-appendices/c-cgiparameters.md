@@ -1,15 +1,13 @@
 ---
-description: 'null '
-seo-description: 'null '
-seo-title: CGI-Parameter
+description: Erfahren Sie, wie Sie verschiedene CGI-Parameter verwenden.
 solution: Target
 title: CGI-Parameter
-topic: Appendices,Site search and merchandising
+topic: Anlagen, Site-Suche und Merchandising
 uuid: a5f43547-bc15-44aa-ba23-6b8b573e09d2
 translation-type: tm+mt
-source-git-commit: 930ceebc6c35006c6b8bc96bc799b3242b6818e1
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1934'
+source-wordcount: '1943'
 ht-degree: 1%
 
 ---
@@ -107,7 +105,7 @@ Sie können CGI-Parameter für die Backend-Suche in der folgenden Tabelle auswä
    <td colname="col2"> <p>sp_d </p> </td> 
    <td colname="col03"> <p> </p> </td> 
    <td colname="col3"> <p> <code>sp_d= type </code> </p> </td> 
-   <td colname="col4"> <p>Gibt den Typ der zu durchsuchenden Datumsbereiche an. Mögliche Werte für den Typ sind beliebige, d. h. keine Suche nach Datumsbereichen, benutzerspezifisch. Dies bedeutet, dass der Wert von <code>sp_date_range </code> zur Bestimmung der zu suchenden Daten und spezifisch verwendet werden sollte. Dies bedeutet, dass die Werte in <code>sp_start_day </code>, <code>sp_start_month </code>, <code>sp_start_year </code>, <code>sp_end_day </code>, <code>sp_end_month </code> und <code>sp_end_year </code> zur Bestimmung des zu suchenden Datumsbereichs verwendet werden. <code>sp_d </code> ist nur erforderlich, wenn Ihr Suchformular die Option zur Suche entweder nach einem benutzerdefinierten Bereich (als  <code>sp_date_range </code>benutzerspezifischen Bereich) oder nach einem bestimmten Beginn- und Enddatumsbereich enthält. </p> </td> 
+   <td colname="col4"> <p>Gibt den Typ der zu durchsuchenden Datumsbereiche an. Mögliche Werte für den Typ sind vorhanden, d. h., keine Suche nach Datumsbereichen, benutzerspezifisch. Dies bedeutet, dass der Wert von <code>sp_date_range </code> zur Bestimmung der zu suchenden Daten und spezifisch verwendet werden sollte. Dies bedeutet, dass die Werte in <code>sp_start_day </code>, <code>sp_start_month </code>, <code>sp_start_year </code>, <code>sp_end_day </code>, <code>sp_end_month </code> und <code>sp_end_year </code> zur Bestimmung des zu suchenden Datumsbereichs verwendet werden. <code>sp_d </code> ist nur erforderlich, wenn Ihr Suchformular die Option zur Suche entweder nach einem benutzerdefinierten Bereich (als  <code>sp_date_range </code>benutzerspezifischen Bereich) oder nach einem bestimmten Beginn- und Enddatumsbereich enthält. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>6 </p> </td> 
