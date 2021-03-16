@@ -1,15 +1,13 @@
 ---
 description: Sie können "Meinten Sie" so konfigurieren, dass Kunden Vorschläge für gültige Suchbegriffe gegeben werden, wenn sie fehlgeschlagene Suchen ausprobiert haben. Vorschläge werden erstellt, indem nach Rechtschreibkorrekturen gesucht und die Suchbegriffe eingegeben werden, die zu einer gültigen Suche führen.
-seo-description: Sie können "Meinten Sie" so konfigurieren, dass Kunden Vorschläge für gültige Suchbegriffe gegeben werden, wenn sie fehlgeschlagene Suchen ausprobiert haben. Vorschläge werden erstellt, indem nach Rechtschreibkorrekturen gesucht und die Suchbegriffe eingegeben werden, die zu einer gültigen Suche führen.
-seo-title: Meinten Sie
 solution: Target
 title: Meinten Sie
-topic: Linguistics,Site search and merchandising
+topic: Linguistik, Site-Suche und Merchandising
 uuid: c5973541-3d6b-4fc9-bad4-66d4d3559fe8
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '733'
 ht-degree: 2%
 
 ---
