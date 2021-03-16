@@ -1,16 +1,14 @@
 ---
 description: Mit der Facet Rail können Sie Gruppen von Facetten auf einer Webseite neu anordnen.
-seo-description: Mit der Facet Rail können Sie Gruppen von Facetten auf einer Webseite neu anordnen.
-seo-title: Über Facet-Leiste
 solution: Target
 subtopic: Navigation
 title: Über Facet-Leiste
-topic: Design,Site search and merchandising
+topic: Design, Site-Suche und Merchandising
 uuid: 6da2bd67-8c20-4955-9836-bc8ba88546c5
 translation-type: tm+mt
-source-git-commit: 6b3aa733b0dfaace956f0ffc25f433fefd21e15f
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '781'
 ht-degree: 1%
 
 ---
