@@ -1,16 +1,14 @@
 ---
-description: 'null '
-seo-description: 'null '
-seo-title: Search&amp;Promote 8.9 Versionshinweise (19.07.2012)
+description: Search&amp;Promote 8.9 Versionshinweise.
 solution: Target
 title: Search&amp;Promote 8.9 Versionshinweise (19.07.2012)
-topic: Release Notes,Site search and merchandising
+topic: Versionshinweise, Site-Suche und Merchandising
 uuid: 3853c75d-19ed-4e36-9e81-dcbffe5f5b0c
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 67%
+source-wordcount: '287'
+ht-degree: 65%
 
 ---
 
