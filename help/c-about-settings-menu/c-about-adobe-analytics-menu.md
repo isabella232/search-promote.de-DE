@@ -1,16 +1,14 @@
 ---
 description: Verwenden Sie das Adobe Analytics-Menü, um die Authentifizierung von Adobe Analytics-Metriken einzurichten, Adobe Analytics-Metriken einer Report Suite zu verwalten oder mithilfe von SAINT Adobe Analytics-Berichten durch Akzeptanz tabellarischer Daten aus externen Quellen zu verbessern.
-seo-description: Verwenden Sie das Adobe Analytics-Menü, um die Authentifizierung von Adobe Analytics-Metriken einzurichten, Adobe Analytics-Metriken einer Report Suite zu verwalten oder mithilfe von SAINT Adobe Analytics-Berichten durch Akzeptanz tabellarischer Daten aus externen Quellen zu verbessern.
-seo-title: Das Menü "Adobe Analytics"
 solution: Target
 subtopic: Adobe Analytics
 title: Das Menü "Adobe Analytics"
-topic: Settings,Site search and merchandising
+topic: Einstellungen, Site-Suche und Merchandising
 uuid: 5536edf1-d3a4-47af-a307-6e46f385f738
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '3448'
+source-wordcount: '3412'
 ht-degree: 1%
 
 ---
