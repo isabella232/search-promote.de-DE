@@ -1,15 +1,13 @@
 ---
 description: Verwenden Sie im Produktmenü Konten, um ein Konto auszuwählen, auf das Sie zugreifen und es verwenden möchten.
-seo-description: Verwenden Sie im Produktmenü Konten, um ein Konto auszuwählen, auf das Sie zugreifen und es verwenden möchten.
-seo-title: Das Menü "Konten"
 solution: Target
 title: Das Menü "Konten"
-topic: Settings,Site search and merchandising
+topic: Einstellungen, Site-Suche und Merchandising
 uuid: 7cfc1b68-5126-484a-8a1d-54995a8fd19b
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '172'
 ht-degree: 2%
 
 ---
