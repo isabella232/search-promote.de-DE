@@ -1,15 +1,13 @@
 ---
 description: Mit der Nahtesuche können Sie eine eindeutige Position mit einer beliebigen Seite Ihrer Website verbinden und dann die Ergebnisse nach Entfernung (Entfernung) zu einer bestimmten Position suchen und sortieren.
-seo-description: Mit der Nahtesuche können Sie eine eindeutige Position mit einer beliebigen Seite Ihrer Website verbinden und dann die Ergebnisse nach Entfernung (Entfernung) zu einer bestimmten Position suchen und sortieren.
-seo-title: Info zur Bereichssuche
 solution: Target
 title: Info zur Bereichssuche
-topic: Appendices,Site search and merchandising
+topic: Anlagen, Site-Suche und Merchandising
 uuid: 24fc9265-3400-46a7-b6e0-4de5b049a39a
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
