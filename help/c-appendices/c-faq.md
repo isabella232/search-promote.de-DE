@@ -1,15 +1,13 @@
 ---
-description: 'null '
-seo-description: 'null '
-seo-title: Häufig gestellte Fragen
+description: Lesen Sie häufig gestellte Fragen zu Search&amp;Promote
 solution: Target
 title: Häufig gestellte Fragen
-topic: Appendices,Site search and merchandising
+topic: Anlagen, Site-Suche und Merchandising
 uuid: 4ce454a4-e770-4587-91a0-a25491818ac6
 translation-type: tm+mt
-source-git-commit: 4270ea66ba645ad0f71c9c8b5c2a1fcc6eb02ad2
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '8639'
+source-wordcount: '8648'
 ht-degree: 0%
 
 ---
@@ -648,7 +646,7 @@ In diesem Fall platzieren Sie die Tags `<html>`, `<head>` und `<body>` in der ri
 
 ## Haben Sie auf Ihrer Webseite falsch formatierte HTML-Kommentar-Tags? {#section_D1C39D79341845CB9C38579AABDF3A24}
 
-Stellen Sie sicher, dass Sie ungültige HTML-Kommentare in Ihren Webseiten sorgfältig überprüfen und korrigieren.
+Stellen Sie sicher, dass Sie ungültige HTML-Kommentare auf Ihren Webseiten sorgfältig überprüfen und korrigieren.
 
 Die HTML-Spezifikation verlangt, dass ein HTML-Kommentar mit den Zeichen `<!--` und mit den Zeichen `-->` beginnt. Es ist einfach, falsch formatierte Kommentare zu übersehen, die dazu führen, dass der Site-Such-/Merchandising-Roboter die Tags auf Ihrer Webseite falsch analysiert. Ein falsch formatierter Kommentar kann dazu führen, dass der Site-Such-/Merchandising-Roboter andere wichtige Tags verpasst, die analysiert werden müssen. Achten Sie auf Kommentare kurz vor dem `<body>`-Tag in Ihrer Webseite.
 
@@ -854,7 +852,7 @@ Im Folgenden finden Sie allgemeine Fragen zu MP3-Dateien.
 
 ## Wann wird eine MP3-Datei durchsucht und indiziert? {#section_538EA1682C9C47E3A62640BB25D84C36}
 
-MP3-Dateien werden auf zweierlei Weise durchsucht und indiziert. Am häufigsten stammt der Weg von einem Anker-href-Tag in einer HTML-Datei:
+MP3-Dateien werden auf zweierlei Weise durchsucht und indiziert. Am häufigsten erfolgt die Eingabe über ein Anker-href-Tag in einer HTML-Datei:
 
 `<a href="MP3-file-URL"></a>`
 
