@@ -1,16 +1,14 @@
 ---
-description: 'null '
-seo-description: 'null '
-seo-title: Search&amp;Promote 8.13.0 Versionshinweise (16.04.2014)
+description: Search&amp;Promote 8.13.0 Versionshinweise.
 solution: Target
 title: Search&amp;Promote 8.13.0 Versionshinweise (16.04.2014)
-topic: Release Notes,Site search and merchandising
+topic: Versionshinweise, Site-Suche und Merchandising
 uuid: b3524992-ff00-4a7c-a404-078242456734
 translation-type: tm+mt
-source-git-commit: 9d5ac055d665b39d09b28063179d74a389d7f830
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 57%
+source-wordcount: '330'
+ht-degree: 56%
 
 ---
 
