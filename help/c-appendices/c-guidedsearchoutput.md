@@ -1,15 +1,13 @@
 ---
-description: Sie können die Ausgabe in einem beliebigen textbasierten Format, einschließlich XML oder JSON, anpassen.
-seo-description: Sie können die Ausgabe in einem beliebigen textbasierten Format, einschließlich XML oder JSON, anpassen.
-seo-title: Ausgabe der geführten Suche
+description: Erfahren Sie, wie Sie die Ausgabe in einem beliebigen textbasierten Format, einschließlich XML oder JSON, anpassen.
 solution: Target
 title: Ausgabe der geführten Suche
-topic: Appendices,Site search and merchandising
+topic: Anlagen, Site-Suche und Merchandising
 uuid: 234fd563-f249-42b0-88ca-c89b44f8df77
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '6298'
+source-wordcount: '6289'
 ht-degree: 2%
 
 ---
@@ -96,7 +94,7 @@ In der folgenden Tabelle werden die standardmäßigen &quot;Out-of-the-Box&quot;
    <td colname="col3"> <p> Gibt die für die Suche zu verwendende Sammlung an. Dieser Parameter wird dem Backend-Suchparameter <span class="codeph"> sp_k </span> zugeordnet. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> count  </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> count </span> </p> </td> 
    <td colname="col2"> <p> <span class="codeph"> count= Zahl  </span> </p> </td> 
    <td colname="col3"> <p> Gibt die Gesamtanzahl der angezeigten Ergebnisse an. Die Standardeinstellung ist unter <span class="uicontrol"> Einstellungen </span> &gt; <span class="uicontrol"> Suchen </span> &gt; <span class="uicontrol"> Suchen </span> definiert. Dieser Parameter wird dem Backend-Suchparameter <span class="codeph"> sp_c </span> zugeordnet. </p> </td> 
   </tr> 
@@ -2066,22 +2064,22 @@ Beispielknoten Abfrage:
   </tr> 
   <tr> 
    <td colname="col1"> <p>user-Abfrage </p> </td> 
-   <td colname="col2"> <p>abfrage </p> </td> 
+   <td colname="col2"> <p>Abfrage </p> </td> 
    <td colname="col3"> <p> Der gesuchte Suchbegriff. Wenn <span class="uicontrol"> Haben Sie </span> aufgrund des ursprünglichen Begriffs automatisch nach einem vorgeschlagenen Begriff gesucht haben, ohne Ergebnisse zu erzielen, wird dieser in dem neuen Suchbegriff übernommen, der gesucht wurde (siehe Knoten "Vorschläge", um den ursprünglichen Suchbegriff abzurufen). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>niedrigere Ergebnisse </p> </td> 
-   <td colname="col2"> <p>abfrage </p> </td> 
+   <td colname="col2"> <p>Abfrage </p> </td> 
    <td colname="col3"> <p> Die Elementnummer des ersten Ergebnisses auf dieser Seite. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>obere Ergebnisse </p> </td> 
-   <td colname="col2"> <p>abfrage </p> </td> 
+   <td colname="col2"> <p>Abfrage </p> </td> 
    <td colname="col3"> <p> Die Elementnummer des letzten Ergebnisses auf dieser Seite. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>total-results </p> </td> 
-   <td colname="col2"> <p>abfrage </p> </td> 
+   <td colname="col2"> <p>Abfrage </p> </td> 
    <td colname="col3"> <p> Die Gesamtanzahl der Ergebnisse, die mit der Abfrage des Benutzers übereinstimmen. </p> </td> 
   </tr> 
  </tbody> 
