@@ -1,15 +1,13 @@
 ---
 description: Verwenden Sie die Abfrage-Bereinigungsregeln, um die eingehende Abfrage zu analysieren und zu ändern.
-seo-description: Verwenden Sie die Abfrage-Bereinigungsregeln, um die eingehende Abfrage zu analysieren und zu ändern.
-seo-title: Grundlagen zu Abfragen-Bereinigungsregeln
 solution: Target
 title: Grundlagen zu Abfragen-Bereinigungsregeln
-topic: Rules,Site search and merchandising
+topic: Regeln, Site-Suche und Merchandising
 uuid: 683af81f-f7c0-45f8-9212-e5e7cb82ccca
 translation-type: tm+mt
-source-git-commit: d07cdc2c88f93eed4cecb0ee8818f7fdea06ee9d
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1611'
+source-wordcount: '1601'
 ht-degree: 1%
 
 ---
@@ -33,7 +31,7 @@ Bedingungen sind optional. Wenn Sie entscheiden, dass Aktionen für jede Abfrage
 
 ## Informationen zu Abfragen-Bereinigungsaktionen {#section_78F74A9B48DE484191CDA95F5B4E7154}
 
-Alle Aktionen innerhalb einer Abfrage-Bereinigungsregel, für die entsprechende Bedingungen gelten, werden ausgeführt. Aktionen bestehen in der Regel aus einem Vorgang, den Daten, an denen der Vorgang durchgeführt werden soll, und dem zu verwendenden Wert.
+Alle Aktionen innerhalb einer Abfrage-Bereinigungsregel, für die entsprechende Bedingungen gelten, werden ausgeführt. Aktionen bestehen in der Regel aus einem Vorgang, den Daten, auf denen der Vorgang ausgeführt werden soll, und dem zu verwendenden Wert.
 
 Siehe die Tabelle der Optionen unter [Hinzufügen einer Abfrage-Reinigungsregel](../c-about-rules-menu/c-about-query-cleaning-rules.md#task_47F43988D3D9485F8AE1DFDA7E00BF54).
 
@@ -217,7 +215,7 @@ Wenn Sie eine Regel löschen, wird die Reihenfolge, in der die verbleibenden Reg
 
 Sie können die Abfragen-Reinigungsregeln neu anordnen, um die Reihenfolge zu ändern, in der sie in Präsentationsvorlagen ausgeführt werden.
 
-Abfragen-Reinigungsregeln werden in der Reihenfolge ausgeführt, in der sie definiert wurden. Je höher die Ordnungsnummer einer Regel ist, desto später wird sie im Prozess ausgeführt, wodurch frühere Regeln übertroffen werden. Sie können Regeln neu anordnen, indem Sie auf der Seite [!DNL Query Cleaning Rules] in die Spalte Reihenfolge der Tabelle eine neue Zahl eingeben. Sie können auch per Drag &amp; Drop Regeln verwenden, um ihre Ausführungsreihenfolge zu ändern.
+Abfragen-Reinigungsregeln werden in der Reihenfolge ausgeführt, in der sie definiert wurden. Je höher die Ordnungsnummer einer Regel ist, desto später wird sie im Prozess ausgeführt, wodurch frühere Regeln übertroffen werden. Sie können Regeln neu anordnen, indem Sie auf der Seite [!DNL Query Cleaning Rules] in die Spalte Reihenfolge der Tabelle eine neue Zahl eingeben. Sie können die Ausführungsreihenfolge auch per Drag &amp; Drop ändern.
 
 **So ändern Sie die Reihenfolge, in der Abfrage-Reinigungsregeln ausgeführt werden**
 
