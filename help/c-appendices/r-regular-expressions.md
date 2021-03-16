@@ -1,15 +1,13 @@
 ---
 description: Ein Auffrischungsbericht zur Syntax und den Regeln für das Erstellen von regulären Ausdrücken.
-seo-description: Ein Auffrischungsbericht zur Syntax und den Regeln für das Erstellen von regulären Ausdrücken.
-seo-title: Reguläre Ausdrücke
 solution: Target
 title: Reguläre Ausdrücke
-topic: Appendices,Site search and merchandising
+topic: Anlagen, Site-Suche und Merchandising
 uuid: 369b54f6-372a-41de-bb5d-3ae0bd640199
 translation-type: tm+mt
-source-git-commit: 7b883870bb16284d8070a21547cdb62cc79d7632
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1050'
 ht-degree: 1%
 
 ---
@@ -214,7 +212,7 @@ Zwei Klassennamen mit Sonderzeichen entsprechen dem Leerzeichen am Beginn und am
  <tbody> 
   <tr> 
    <td colname="col1"> <p> [[:&lt;:]] </p> </td> 
-   <td colname="col2"> <p> beginn eines Wortes </p> </td> 
+   <td colname="col2"> <p> Beginn eines Wortes </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> [[:&gt;:]] </p> </td> 
