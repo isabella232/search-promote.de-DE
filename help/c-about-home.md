@@ -1,15 +1,13 @@
 ---
 description: Mit der Option "Home"können Sie eine Reihe von Bericht-Widgets Ansicht, die Ihnen einen schnellen Überblick über Ihr Search&amp;Promote-Konto verschaffen.
-seo-description: Mit der Option "Home"können Sie eine Reihe von Bericht-Widgets Ansicht, die Ihnen einen schnellen Überblick über Ihr Search&amp;Promote-Konto verschaffen.
-seo-title: Info
 solution: Target
 title: Info
-topic: Home,Site search and merchandising
+topic: Home, Site-Suche und Merchandising
 uuid: 5d4dbf5e-954d-46ae-a822-18a58af60de6
 translation-type: tm+mt
-source-git-commit: 91ddead9f73b73ea1a20e26582998966f801d6ff
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '449'
 ht-degree: 1%
 
 ---
@@ -33,7 +31,7 @@ In der folgenden Tabelle sind die Bericht-Widgets beschrieben, die in Home verf�
  <tbody> 
   <tr> 
    <td colname="col1"> <p><span class="uicontrol">Warnhinweise</span> </p> </td> 
-   <td colname="col2"> <p> Zeigt die letzten drei Warnungen an, die an Ihr Konto gesendet wurden. </p> <p>Zeigt die letzten drei Warnungen an, die an Ihr Konto gesendet wurden. </p> <p>Sie können auf eine Warnung klicken, um weitere Details anzuzeigen. Dieses Widget kann Ihnen Zeit ersparen, verpasste Warnungen im <span class="uicontrol">-Bericht Warnungen</span> im <span class="uicontrol">-Produktmenü </span> Berichte&lt;a3/&gt; zu überprüfen. </p> </td> 
+   <td colname="col2"> <p> Zeigt die letzten drei Warnungen an, die an Ihr Konto gesendet wurden. </p> <p>Zeigt die letzten drei Warnungen an, die an Ihr Konto gesendet wurden. </p> <p>Sie können auf eine Warnung klicken, um weitere Details anzuzeigen. Dieses Widget kann Ihnen Zeit ersparen, verpasste Warnungen im <span class="uicontrol">-Bericht Warnungen</span> im <span class="uicontrol">-Produktmenü </span> Berichte zu überprüfen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="uicontrol">Crawl-Leistung (heruntergeladene Byte)</span> </p> </td> 
