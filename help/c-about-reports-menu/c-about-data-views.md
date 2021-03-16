@@ -1,15 +1,13 @@
 ---
 description: Die Ansichten der Daten zeigen die Suchergebnisse mit den Metadatenfeldern an. Jede Spalte ist ein Metadatenfeld und jede Zeile wird aus einer Abfrage der Suche generiert. Passen Sie die Ansichten an, indem Sie Spalten auswählen und neu anordnen. Data Ansichten können auch benutzerdefinierte Titel und Beschreibungen haben.
-seo-description: Die Ansichten der Daten zeigen die Suchergebnisse mit den Metadatenfeldern an. Jede Spalte ist ein Metadatenfeld und jede Zeile wird aus einer Abfrage der Suche generiert. Passen Sie die Ansichten an, indem Sie Spalten auswählen und neu anordnen. Data Ansichten können auch benutzerdefinierte Titel und Beschreibungen haben.
-seo-title: Info zu Ansichten
 solution: Target
 title: Info zu Ansichten
-topic: Reports,Site search and merchandising
+topic: Berichte, Site-Suche und Merchandising
 uuid: 18930551-960d-40c2-b5b7-0807a2e11134
 translation-type: tm+mt
-source-git-commit: 7af85dd37f06fe506e5f57e28a25385ca7ab3db5
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1023'
 ht-degree: 1%
 
 ---
