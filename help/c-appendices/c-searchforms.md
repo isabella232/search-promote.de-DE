@@ -1,15 +1,13 @@
 ---
-description: 'null '
-seo-description: 'null '
-seo-title: Suchformulare
+description: Weitere Informationen zu Suchformularen in Search&amp;Promote
 solution: Target
 title: Suchformulare
-topic: Appendices,Site search and merchandising
+topic: Anlagen, Site-Suche und Merchandising
 uuid: 91153e3a-c437-47f3-8c2a-d9ac02965b8c
 translation-type: tm+mt
-source-git-commit: 4542702e1d2ba04c70d9f6b24bfa32e1f1c6acb5
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '2921'
+source-wordcount: '2931'
 ht-degree: 0%
 
 ---
@@ -367,7 +365,7 @@ Siehe [Kopieren des HTML-Codes des Suchformulars in die...](../c-about-auto-comp
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col2"> <p>Datumsbereich-Übereinstimmung: beginn </p> </td> 
+   <td colname="col2"> <p>Datumsbereich-Übereinstimmung: Beginn </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> sp_Beginn_day, sp_Beginn_month, sp_Beginn_year  </span> </p> <p> </p> </td> 
    <td colname="col3"> </td> 
    <td colname="col4"> <p>Dieses Dreieck mit numerischen Werten gibt das Datum des Beginns eines bestimmten zu suchenden Datumsbereichs an. Achten Sie darauf, alle drei Werte anzugeben, da ein teilweise angegebenes Datum ignoriert wird. </p> <p>Es ist zulässig, nur das Datum des Beginns, nur das Enddatum oder sowohl das Datum des Beginns als auch das Enddatum anzugeben. Wenn nur das Datum des Beginns angegeben ist, enthält die Suche passende Dokumente, die am oder nach dem Datum des Beginns datiert sind. Wenn nur das Enddatum angegeben ist, enthält die Suche passende Dokumente am oder vor dem Enddatum. Wenn sowohl das Beginns- als auch das Enddatum angegeben sind, enthält die Suche passende Dokumente vom Beginn bis zum Enddatum. </p> <p>Alle Datumsangaben werden relativ zur Greenwich Mean Time durchsucht. </p> </td> 
