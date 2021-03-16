@@ -1,15 +1,13 @@
 ---
 description: Sie können Regeln nach der Suche verwenden, um die Ergebnisse einer Suche zu untersuchen und festzustellen, wie sich die Suche auf den angezeigten Inhalt auswirkt.
-seo-description: Sie können Regeln nach der Suche verwenden, um die Ergebnisse einer Suche zu untersuchen und festzustellen, wie sich die Suche auf den angezeigten Inhalt auswirkt.
-seo-title: Über Regeln nach der Suche
 solution: Target
 title: Über Regeln nach der Suche
-topic: Rules,Site search and merchandising
+topic: Regeln, Site-Suche und Merchandising
 uuid: 312d1e4a-f5b6-4629-8645-17e6f6c09fc4
 translation-type: tm+mt
-source-git-commit: d07cdc2c88f93eed4cecb0ee8818f7fdea06ee9d
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '2121'
+source-wordcount: '2102'
 ht-degree: 1%
 
 ---
@@ -85,7 +83,7 @@ Perform the following actions:
 
 ## Best Practices {#section_1BF7DE1BD5664B3BAEC26AA829FDB0BA}
 
-* Alle Regelsätze, die eine neue Suchrunde auslösen, sollten immer über eine bedingte Klausel verfügen, um zu überprüfen, ob dies nicht der letzte Durchgang durch das Modul ist. Wenn Sie bereits die maximale Anzahl von Suchvorgängen durchgeführt haben, können Sie keine Suchvorgänge wiederholen.
+* Alle Regelsätze, die eine neue Suchrunde Trigger haben, sollten immer über eine bedingte Klausel verfügen, um zu überprüfen, ob dies nicht der letzte Durchlauf des Moduls ist. Wenn Sie bereits die maximale Anzahl von Suchvorgängen durchgeführt haben, können Sie keine Suchvorgänge wiederholen.
 * Wenn Sie das Modul zuletzt durchlaufen und die Ergebnisse immer noch schlecht sind, können Sie zu einer Vorlage &quot;Keine Ergebnisse&quot;wechseln.
 * Sie sollten die Änderung einer Präsentationsvorlage auf Grundlage des Ergebnisses einer Suche mit möglicherweise anderen Parametern vornehmen. Wenn Sie eine Vorlage auswählen möchten, die nur auf der eingehenden Abfrage basiert, ist eine Vorsuchregel effizienter.
 * Die Datenerfassung der Abfrage erfolgt im Abfrage-Reinigungsmodul. Sie können in der Nachsuchverarbeitung auf die benutzerspezifischen Variablen verweisen.
@@ -234,7 +232,7 @@ Wenn Sie eine Regel löschen, wird die Reihenfolge, in der die verbleibenden Reg
 
 Sie können Regeln nach der Suche neu anordnen, um die Reihenfolge zu ändern, in der sie in Präsentationsvorlagen ausgeführt werden.
 
-Regeln nach der Suche werden in der Reihenfolge ausgeführt, in der sie definiert wurden. Je höher die Ordnungsnummer einer Regel ist, desto später wird sie im Prozess ausgeführt, wodurch frühere Regeln übertroffen werden. Sie können Regeln neu anordnen, indem Sie auf der Seite [!DNL Post-Search Rules] in die Spalte Reihenfolge der Tabelle eine neue Zahl eingeben. Sie können auch per Drag &amp; Drop Regeln verwenden, um ihre Ausführungsreihenfolge zu ändern.
+Regeln nach der Suche werden in der Reihenfolge ausgeführt, in der sie definiert wurden. Je höher die Ordnungsnummer einer Regel ist, desto später wird sie im Prozess ausgeführt, wodurch frühere Regeln übertroffen werden. Sie können Regeln neu anordnen, indem Sie auf der Seite [!DNL Post-Search Rules] in die Spalte Reihenfolge der Tabelle eine neue Zahl eingeben. Sie können die Ausführungsreihenfolge auch per Drag &amp; Drop ändern.
 
 **So ändern Sie die Reihenfolge, in der Regeln nach der Suche ausgeführt werden**
 
