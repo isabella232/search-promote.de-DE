@@ -1,16 +1,14 @@
 ---
 description: Verwenden Sie das Menü "Crawling"(Crawling-Menü) mit Datums- und URL-Masken, Kennwörtern, Inhaltstypen, Verbindungen, Formulardefinitionen und URL-Einstiegspunkten.
-seo-description: Verwenden Sie das Menü "Crawling"(Crawling-Menü) mit Datums- und URL-Masken, Kennwörtern, Inhaltstypen, Verbindungen, Formulardefinitionen und URL-Einstiegspunkten.
-seo-title: Menü "Crawling"
 solution: Target
 subtopic: Crawling
 title: Menü "Crawling"
-topic: Settings,Site search and merchandising
+topic: Einstellungen, Site-Suche und Merchandising
 uuid: a58c03bf-90f7-4b5b-91ff-988b95c246b0
 translation-type: tm+mt
-source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '11033'
+source-wordcount: '11016'
 ht-degree: 1%
 
 ---
@@ -189,7 +187,7 @@ Eine einfache URL-Maske zum Einschließen lautet wie folgt:
 include https://www.mydomain.com/news/
 ```
 
-Es werden nur Dokumente indiziert, die über eine Reihe von Links von einem URL-Einstiegspunkt aus verknüpft sind oder die selbst als URL-Einstiegspunkt verwendet werden. Die bloße Auflistung der URL eines Dokuments als URL-Maske zum Einschließen führt nicht zu einer Indexierung eines nicht verknüpften Dokuments. Um Ihrem Index nicht verknüpfte Dokumente hinzuzufügen, können Sie die Funktion &quot;URL-Einstiegspunkte&quot;verwenden.
+Es werden nur Dokumente indiziert, die über eine Reihe von Links von einem URL-Einstiegspunkt aus verknüpft sind oder die selbst als URL-Einstiegspunkt verwendet werden. Die bloße Auflistung der URL eines Dokuments als URL-Maske zum Einschließen von Elementen indiziert kein nicht verknüpftes Dokument. Um Ihrem Index nicht verknüpfte Dokumente hinzuzufügen, können Sie die Funktion &quot;URL-Einstiegspunkte&quot;verwenden.
 
 Siehe [Informationen zu URL-Einstiegspunkten](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573).
 
@@ -688,7 +686,7 @@ Bevor die Auswirkungen der Einstellungen für Inhaltstypen für Kunden sichtbar 
 
 Siehe [Konfigurieren eines inkrementellen Indexes einer gestaffelten Website](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
 
-Gehen Sie wie folgt vor, um chinesische, japanische oder koreanische MP3-Dateien zu crawlen und zu indizieren. Geben Sie dann unter **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Injections]** den Zeichensatz für die Kodierung der MP3-Dateien an.
+Gehen Sie wie folgt vor, um chinesische, japanische oder koreanische MP3-Dateien zu crawlen und zu indizieren. Geben Sie dann unter **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Injections]** den Zeichensatz an, der zum Kodieren der MP3-Dateien verwendet wird.
 
 Siehe [Info zu Injektionen](../c-about-settings-menu/c-about-metadata-menu.md#concept_DA091920671948A0A893A26B3A2FAAE5).
 
@@ -1029,7 +1027,7 @@ Siehe auch [Info zu Index Connector](../c-about-settings-menu/c-about-crawling-m
   <tr> 
    <td colname="col1"> <p>4 </p> </td> 
    <td colname="col2"> <p>Verarbeiten Sie jedes Dokument. </p> </td> 
-   <td colname="col3"> <p>Der Schlüsselwert jedes Links entspricht einem Eintrag im Cache, sodass beim Durchsuchen der einzelnen Links die Daten des Dokuments aus dem Cache abgerufen werden. Es wird dann zu einem HTML-Bild "zusammengestellt", das verarbeitet und dem Index hinzugefügt wird. </p> </td> 
+   <td colname="col3"> <p>Der Schlüsselwert jedes Links entspricht einem Eintrag im Cache, sodass beim Durchsuchen der einzelnen Links die Daten dieses Dokuments aus dem Cache abgerufen werden. Es wird dann zu einem HTML-Bild "zusammengestellt", das verarbeitet und dem Index hinzugefügt wird. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1326,7 +1324,7 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       <ul id="ul_6400EBD08D424EADA1612FE4F7EFB640"> 
       <li id="li_9958F9B40D42434195597DBA9F2AF28F"> <code> /record/@displayurl&amp;nbsp;-&gt;&amp;nbsp;page-url </code> <p>Das <span class="codeph"> displayURL </span>-Attribut des <span class="codeph"> record </span>-Elements ordnet dem Metadatenfeld <span class="codeph"> page-url </span> zu. </p> </li> 
       <li id="li_759013EA02CD48BE971A55B0A6A11424"> <code> /record/metadata/meta[@name='title']/@content&amp;nbsp;-&gt;&amp;nbsp;title </code> <p>Das <span class="codeph"> content </span>-Attribut eines <span class="codeph">-Metaelements </span>, das in einem <span class="codeph">-Metadatenelement </span> enthalten ist, das in einem <span class="codeph">-Record </span>-Element enthalten ist, dessen Namensattribut <span class="codeph"> title </span> lautet, wird dem Metadatenfeld <span class="codeph"> title zugeordnet./&gt;.</span> </p> </li> 
-      <li id="li_E741CA59197D462EB2946EDE874AFDC8"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;desc </code> <p>Das <span class="codeph"> content </span>-Attribut eines <span class="codeph">-Meta </span>-Elements, das in einem <span class="codeph">-Metadatenelement </span> enthalten ist, das im <span class="codeph">-record </span>-Element enthalten ist, dessen Namensattribut <span class="codeph"> description </span> lautet, wird dem Metadatenfeld <span class="codeph"> desc &lt;a111/&gt; zugeordnet 1/&gt;.</span> </p> </li> 
+      <li id="li_E741CA59197D462EB2946EDE874AFDC8"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;desc </code> <p>Das <span class="codeph"> content </span>-Attribut eines <span class="codeph">-Meta </span>-Elements, das in einem <span class="codeph">-Metadatenelement </span> enthalten ist, das im <span class="codeph">-record </span>-Element enthalten ist, dessen Namensattribut <span class="codeph"> description </span> lautet, wird dem Metadatenfeld <span class="codeph"> desc </span> zugeordnet 1/&gt;. </p> </li> 
       <li id="li_E35EAE3D284D46D485D9064D7BB6AB13"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>Das <span class="codeph"> content </span>-Attribut eines <span class="codeph">-Meta </span>-Elements, das in einem <span class="codeph">-Metadatenelement </span> enthalten ist, das im <span class="codeph">-record </span>-Element enthalten ist, dessen Namensattribut <span class="codeph"> description </span> lautet, wird dem Metadatenfeld <span class="codeph"> body &lt;a111111 zugeordnet/&gt;.</span> </p> </li> 
       </ul> </p> <p>XPath ist eine relativ komplizierte Notation. Weitere Informationen finden Sie unter: </p> <p>Siehe <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_8147075D7ACD4811A7ED335F23FE62A6"> <span class="uicontrol"> Feld </span> <p>Definiert den Wert des Namensattributs, der für jedes generierte <span class="codeph"> &lt;meta&gt; </span>-Tag verwendet wird. </p> </li> 
@@ -1382,7 +1380,7 @@ Bevor die Auswirkungen der neuen und aktivierten Definition für Kunden sichtbar
       <ul id="ul_F8C536E6E54546D9AA5B22B879C0AF39"> 
       <li id="li_78A35DFFF1B4496CAC6EDC7B1E991F29"> <code> /record/@displayurl&amp;nbsp;-&gt;&amp;nbsp;page-url </code> <p>Das <span class="codeph"> displayURL </span>-Attribut des <span class="codeph"> record </span>-Elements ordnet dem Metadatenfeld <span class="codeph"> page-url </span> zu. </p> </li> 
       <li id="li_FA7DF3D1942248B98660F3D0C82F4563"> <code> /record/metadata/meta[@name='title']/@content&amp;nbsp;-&gt;&amp;nbsp;title </code> <p>Das <span class="codeph"> content </span>-Attribut eines <span class="codeph">-Metaelements </span>, das in einem <span class="codeph">-Metadatenelement </span> enthalten ist, das in einem <span class="codeph">-Record </span>-Element enthalten ist, dessen Namensattribut <span class="codeph"> title </span> lautet, wird dem Metadatenfeld <span class="codeph"> title zugeordnet./&gt;.</span> </p> </li> 
-      <li id="li_D8000A116FF84DE59ED19C656DDD3BC1"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;desc </code> <p>Das <span class="codeph"> content </span>-Attribut eines <span class="codeph">-Meta </span>-Elements, das in einem <span class="codeph">-Metadatenelement </span> enthalten ist, das im <span class="codeph">-record </span>-Element enthalten ist, dessen Namensattribut <span class="codeph"> description </span> lautet, wird dem Metadatenfeld <span class="codeph"> desc &lt;a111/&gt; zugeordnet 1/&gt;.</span> </p> </li> 
+      <li id="li_D8000A116FF84DE59ED19C656DDD3BC1"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;desc </code> <p>Das <span class="codeph"> content </span>-Attribut eines <span class="codeph">-Meta </span>-Elements, das in einem <span class="codeph">-Metadatenelement </span> enthalten ist, das im <span class="codeph">-record </span>-Element enthalten ist, dessen Namensattribut <span class="codeph"> description </span> lautet, wird dem Metadatenfeld <span class="codeph"> desc </span> zugeordnet 1/&gt;. </p> </li> 
       <li id="li_7FA6A53DFD3D42A98B7BA17CC29DDB81"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>Das <span class="codeph"> content </span>-Attribut eines <span class="codeph">-Meta </span>-Elements, das in einem <span class="codeph">-Metadatenelement </span> enthalten ist, das im <span class="codeph">-record </span>-Element enthalten ist, dessen Namensattribut <span class="codeph"> description </span> lautet, wird dem Metadatenfeld <span class="codeph"> body &lt;a111111 zugeordnet/&gt;.</span> </p> </li> 
       </ul> </p> <p>XPath ist eine relativ komplizierte Notation. Weitere Informationen finden Sie unter: </p> <p>Siehe <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_84999D07E0AE4265BC7928BBB49957B9"> <span class="uicontrol"> Feld </span> <p>Definiert den Wert des Namensattributs, der für jedes generierte &lt;meta&gt;-Tag verwendet wird. </p> </li> 
