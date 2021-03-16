@@ -1,31 +1,27 @@
 ---
 title: Adobe Search&amp;Fördern der technischen Dokumentation
-seo-title: Adobe Search&amp;Fördern Sie die technische Dokumentation und die Selbsthilfe
 description: Technische Dokumentation und Selbsthilfematerialien für die Adobe Search&amp;Promote
-seo-description: Technische Dokumentation, Versionshinweise und Selbsthilfe-Materialien für die Adobe Search&amp;Promote
 solution: Target
 topic: Site-Suche und Merchandising
 uuid: bb1c49be-7cfd-485a-a848-c5dc8733b009
 translation-type: tm+mt
-source-git-commit: ce3b55f0265c52670a81a17b9eff79309ff32bc0
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 19%
+source-wordcount: '145'
+ht-degree: 22%
 
 ---
 
 
 # Adobe Search&amp;Promote-Anleitung {#search-promote-documentation}
 
-<!-- ## [Option 1: Lorem Ipsum FAQ announcement](#lorem-ipsum) -->
-
 ## Nachrichten und Mitteilungen {#topic_02625547D07F411DBAC9593FCBD4741B}
 
-<!-- * [Option 2: Lorem ipsum FAQ announcement](anchor) -->
+* **Achtung:** [Adobe-Search&amp;Promote-End-of-Service-Mitteilung](/help/sp-eol.md).
 
 * Adobe Marketing Cloud-Versionshinweise - Enthält neue Funktionen, Fehlerbehebungen und bekannte Probleme in allen Marketing Cloud-Lösungen. Funktions-Updates werden im Frühling und im Herbst veröffentlicht, Wartungs-Updates monatlich.
 
-   **Frühzeitiger Zugriff**: Melden Sie sich für das Produkt  [mit Priorität für Adoben ](https://campaign.adobe.com/webApp/adbePriorityProductSubscribe) an, um eine Woche vor jeder Version Adobe Marketing Cloud-Versionshinweise zu erhalten.
+   Frühzeitiger Zugriff: Registrieren Sie sich für das [Adobe Priority Product Update](https://campaign.adobe.com/webApp/adbePriorityProductSubscribe), um eine Woche vor jeder Version die Adobe Marketing Cloud Versionshinweise zu erhalten.
 
 * Die neuesten Versionshinweise zur Search&amp;Promote der Adobe:
 
