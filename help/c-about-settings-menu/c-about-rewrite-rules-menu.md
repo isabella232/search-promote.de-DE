@@ -1,16 +1,14 @@
 ---
 description: Verwenden Sie das Menü Regeln umschreiben, um Crawl- und Such-URL- und Titelregeln festzulegen.
-seo-description: Verwenden Sie das Menü Regeln umschreiben, um Crawl- und Such-URL- und Titelregeln festzulegen.
-seo-title: Menü "Regeln neu schreiben"
 solution: Target
 subtopic: Rewrite Rules
 title: Menü "Regeln neu schreiben"
-topic: Settings,Site search and merchandising
+topic: Einstellungen, Site-Suche und Merchandising
 uuid: 77ee84dd-fdba-4d34-ae8e-2fe786599800
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '10216'
+source-wordcount: '10202'
 ht-degree: 0%
 
 ---
