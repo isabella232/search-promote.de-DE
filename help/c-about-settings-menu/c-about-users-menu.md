@@ -1,16 +1,14 @@
 ---
 description: Verwenden Sie das Menü "Benutzer", um Benutzer Ansicht, Ansichten hinzuzufügen und Rollen hinzuzufügen oder die Rollenmitgliedschaft zu ändern. Sie müssen über Administratorrechte verfügen, um eine der Aufgaben im Menü "Benutzer"ausführen zu können.
-seo-description: Verwenden Sie das Menü "Benutzer", um Benutzer Ansicht, Ansichten hinzuzufügen und Rollen hinzuzufügen oder die Rollenmitgliedschaft zu ändern. Sie müssen über Administratorrechte verfügen, um eine der Aufgaben im Menü "Benutzer"ausführen zu können.
-seo-title: Über das Menü "Benutzer"
 solution: Target
 subtopic: Users
 title: Über das Menü "Benutzer"
-topic: Settings,Site search and merchandising
+topic: Einstellungen, Site-Suche und Merchandising
 uuid: 6242b73c-5e8a-44b7-9942-0684530940bc
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1487'
+source-wordcount: '1450'
 ht-degree: 0%
 
 ---
