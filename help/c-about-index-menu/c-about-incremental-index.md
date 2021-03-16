@@ -1,16 +1,14 @@
 ---
 description: Sie können Inkrementellen Index verwenden, um "Teile"Ihrer Live- oder Stage-Website zu indizieren, z. B. eine Sammlung häufig geänderter Seiten.
-seo-description: Sie können Inkrementellen Index verwenden, um "Teile"Ihrer Live- oder Stage-Website zu indizieren, z. B. eine Sammlung häufig geänderter Seiten.
-seo-title: Info zu Inkrementalindex
 solution: Target
 subtopic: Incremental Index
 title: Info zu Inkrementalindex
-topic: Index,Site search and merchandising
+topic: Index, Site-Suche und Merchandising
 uuid: b1ee9b08-dcbe-4ffe-b0b4-d379daaac9b5
 translation-type: tm+mt
-source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1377'
+source-wordcount: '1357'
 ht-degree: 1%
 
 ---
@@ -22,7 +20,7 @@ Sie können Inkrementellen Index verwenden, um &quot;Teile&quot;Ihrer Live- oder
 
 ## Inkrementeller Index {#concept_A7770F0552D14C47B3DDB65DB78FFFEE}
 
-Ein inkrementeller Index dauert nur wenige Sekunden und ist nützlich auf Websites mit großer Kapazität, die viele Stunden bis zum vollständigen Indexieren benötigen.
+Ein inkrementeller Index dauert nur wenige Sekunden und ist nützlich auf Websites mit großer Kapazität, die viele Stunden bis zur vollständigen Indexierung dauern können.
 
 Wenn Sie einen inkrementellen Index generieren, werden Statusinformationen angezeigt, wie z. B. die Beginn-, Verstrichzeit- und Fehlermeldungen während der Indexierung. Informationen zum Status des letzten Index werden ebenfalls angezeigt.
 
