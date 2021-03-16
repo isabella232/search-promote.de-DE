@@ -1,15 +1,13 @@
 ---
 description: Verwenden Sie das Menü "Berichte", um Berichte zu den Abfragen der Kundensuche Ansicht oder zurückzusetzen.
-seo-description: Verwenden Sie das Menü "Berichte", um Berichte zu den Abfragen der Kundensuche Ansicht oder zurückzusetzen.
-seo-title: Das Menü "Berichte"
 solution: Target
 title: Das Menü "Berichte"
-topic: Reports,Site search and merchandising
+topic: Berichte, Site-Suche und Merchandising
 uuid: 3ea856d7-dc07-455f-8dc7-c7f7f56355d7
 translation-type: tm+mt
-source-git-commit: 7af85dd37f06fe506e5f57e28a25385ca7ab3db5
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1257'
+source-wordcount: '1245'
 ht-degree: 2%
 
 ---
