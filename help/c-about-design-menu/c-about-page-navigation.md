@@ -1,16 +1,14 @@
 ---
 description: Mit der Seitennavigation können Sie die Seitennavigationssteuerung Ihrer Suchpräsentationsebene anpassen.
-seo-description: Mit der Seitennavigation können Sie die Seitennavigationssteuerung Ihrer Suchpräsentationsebene anpassen.
-seo-title: Seitennavigation
 solution: Target
 subtopic: Navigation
 title: Seitennavigation
-topic: Design,Site search and merchandising
+topic: Design, Site-Suche und Merchandising
 uuid: fb17a99e-d7b4-415e-ba1b-ca194fe41a5d
 translation-type: tm+mt
-source-git-commit: 7f1b5d94e8002992d62ec1e3dce11f9c5605fde8
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '405'
 ht-degree: 2%
 
 ---
