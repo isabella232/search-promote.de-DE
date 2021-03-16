@@ -1,16 +1,14 @@
 ---
 description: Sie können SEO (Search Engine Optimization) Meta-Tags verwenden, um bestimmte Elemente Ihrer Seiten anzupassen und dadurch die Platzierung der Suchmaschine zu verbessern.
-seo-description: Sie können SEO (Search Engine Optimization) Meta-Tags verwenden, um bestimmte Elemente Ihrer Seiten anzupassen und dadurch die Platzierung der Suchmaschine zu verbessern.
-seo-title: Info zu SEO
 solution: Target
 subtopic: SEO
 title: Info zu SEO
-topic: Settings,Site search and merchandising
+topic: Einstellungen, Site-Suche und Merchandising
 uuid: 5c5d64f5-fe79-4489-85c6-399d1437f2c4
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1206'
 ht-degree: 1%
 
 ---
