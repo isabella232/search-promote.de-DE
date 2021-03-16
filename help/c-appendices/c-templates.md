@@ -1,16 +1,14 @@
 ---
-description: 'null '
-seo-description: 'null '
-seo-title: Vorlagen
+description: Erfahren Sie mehr über die Verwendung von Präsentations- und Vorlagen-Tags in Search&amp;Promote.
 solution: Target
 title: Vorlagen
-topic: Appendices,Site search and merchandising
+topic: Anlagen, Site-Suche und Merchandising
 uuid: 78299032-dc23-4dfe-b68f-cd57b2b6d7d8
 translation-type: tm+mt
-source-git-commit: ca4156f80d7dbb85d2d56b6caf7c0f560299d86e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '15139'
-ht-degree: 3%
+source-wordcount: '15153'
+ht-degree: 2%
 
 ---
 
@@ -269,7 +267,7 @@ Siehe [Dynamische Facets](../c-about-design-menu/c-about-dynamic-facets.md#conce
    <td colname="col2"> <p>Gibt die Anzeigenbezeichnung der Facette zurück. </p> <p>Wenn die Facette das <span class="codeph"> &lt;display-name&gt; </span>-Tag in der Transportvorlage verwendet, wird der Inhalt dieses Tags zur Beschriftung. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> 
      <!--In search-eng version 1/31/13--> <span class="codeph"> &lt;guided-facet-rail&gt;&lt;/guided-facet-rail&gt; </span> </p> </td> 
    <td colname="col2"> <p> Definiert einen Abschnitt in der Präsentationsvorlage, der als sich wiederholendes Muster für jede Facette in der Facettenleiste verwendet wird. </p> <p> Jede Facette, die zur Facettenleiste gehört, verwendet diesen Abschnitt, um ihre Ausgabe zu bewerten. </p> <p>Das folgende Beispiel zeigt eine Facettenleiste: </p> <p> <code class="syntax html"> &lt;guided-facet-rail&gt; 
@@ -678,7 +676,7 @@ Siehe [Menüs](../c-about-design-menu/c-about-menus.md#concept_68123CE5CF4447B59
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> 
      <!--Matched search-eng version, 2/1/2013--> <span class="codeph"> &lt;guided-menu gsname="menuname"&gt;&lt;/guided-menu&gt; </span> </p> </td> 
    <td colname="col2"> <p>Dies ist das Menü-Wert-Schleifeniterator-Tag. Verwenden Sie das Attribut <span class="codeph"> gsname </span>, um herauszufinden, welcher Satz von Menüelementen angezeigt wird. </p> </td> 
@@ -690,7 +688,7 @@ Siehe [Menüs](../c-about-design-menu/c-about-menus.md#concept_68123CE5CF4447B59
    <td colname="col2"> <p>Gibt Ihnen die URL zum Verfeinern der aktuellen Suche nach dem Menüelement. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> 
      <!--Matched search-eng version, 2/1/2013--> <span class="codeph"> &lt;guided-menu-item-option&gt; </span> </p> </td> 
    <td colname="col2"> <p>Normalerweise wird ein Menü in einem Auswahlsteuerelement auf einer Vorlage angezeigt. Dieses Tag erleichtert die Erstellung des Select-Steuerelements, da es den HTML-Code zur Generierung der Option für das select-Steuerelement generiert. </p> <p>Beispielsweise der folgende Codeblock: </p> <p> <code class="syntax html"> &lt;select&nbsp;name="sort"&nbsp;onchange="gcGo(this);"&gt; 
@@ -707,7 +705,7 @@ Siehe [Menüs](../c-about-design-menu/c-about-menus.md#concept_68123CE5CF4447B59
    <td colname="col01"> <p>4 </p> </td> 
    <td colname="col1"> <p> 
      <!--Matched search-eng version, 2/1/2013--> <span class="codeph"> &lt;guided-menu-item-value /&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Gibt die Zeichenfolge des mit dem Menü verknüpften Werts zurück. </p> </td> 
+   <td colname="col2"> <p>Gibt die Zeichenfolge des Werts zurück, der mit dem Menü verknüpft ist. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>5 </p> </td> 
@@ -968,7 +966,7 @@ Siehe [Info zu „Meinten Sie“](../c-about-linguistics-menu/c-about-did-you-me
    <td colname="col2"> <p>Erstellt einen Link zu der angegebenen Empfehlung. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> 
      <!--Newly added from search-eng version, 2/1/2013--> <span class="codeph"> &lt;guided-suggestion-value /&gt; </span> </p> </td> 
    <td colname="col2"> </td> 
@@ -1042,7 +1040,7 @@ Siehe [Info zum automatischen Ausfüllen](../c-about-auto-complete.md#concept_09
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;guided-if-autocomplete&gt; &lt;guided-else-autocomplete&gt; &lt;/guided-if-autocomplete&gt; </span> </p> </td> 
    <td colname="col2"> <p>Erkennt, ob die Funktion zum automatischen Ausfüllen aktiviert ist. Sie können die Tags verwenden, um optional den Kopf- und Formularinhalt aufzunehmen, der für das automatische Ausfüllen erforderlich ist. Auf diese Weise können Sie die Funktion aktivieren und deaktivieren und müssen Ihre Präsentationsvorlagen nicht ändern. </p> </td> 
   </tr> 
@@ -1078,7 +1076,7 @@ Verwenden Sie die folgenden Tags, um den Store, in dem sich ein Benutzer befinde
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;guided-store /&gt; </span> </p> </td> 
    <td colname="col2"> <p>Gibt den aktuellen Store aus. </p> </td> 
   </tr> 
@@ -1139,7 +1137,7 @@ Sie können die folgenden Loopindikatoren in einem dieser Loopblöcke verwenden:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> 
      <!--Updated to match search-eng version, 2/1/2013--> <code> &lt;guided-if[-not]-first&gt;&lt;guided-else[-not]-first&gt; 
       &lt;/guided-if[-not]-first&gt; </code> </p> </td> 
@@ -1153,7 +1151,7 @@ Sie können die folgenden Loopindikatoren in einem dieser Loopblöcke verwenden:
    <td colname="col2"> <p>Diese Bedingung ist wahr, wenn die aktuelle Iteration die letzte Iteration der Schleife ist. Das bedeutet nicht unbedingt das letzte Ergebnis oder die letzte Seite, sondern das letzte Ergebnis im aktuellen Kontext (Seite). Wenn sich der Site-Besucher auf Seite 1 eines Ergebnissatzes befindet, der 200 Ergebnisse enthält, aber nur 10 Ergebnisse pro Seite hat, lautet die letzte Iteration result 10 anstelle von result 200. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> 
      <!--Updated to match search-eng version, 2/1/2013--> <code> &lt;guided-if[-not]-odd&gt;&lt;guided-else[-not]-odd&gt; 
       &lt;/guided-if[-not]-odd&gt; </code> </p> </td> 
@@ -1210,7 +1208,7 @@ Die folgenden Tags stehen zur Verfügung, damit Sie mit Ihrer Vorlage komplexere
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> 
      <!--Updated to match search-eng, 2/1/2013--> <span class="codeph"> &lt;guided-current-path&gt; </span> </p> </td> 
    <td colname="col2"> <p>Gibt Ihnen den aktuellen Pfad an, der verwendet wird. Normalerweise wird er verwendet, um einen Link zu erstellen, der einen neuen Parameter zur vorhandenen Suche hinzufügt. Standardmäßig ist der Pfad mit URL-Escape-Zeichen versehen. Mit dem Parameter escape können Sie angeben, welcher Escape-Modus verwendet werden soll. </p> <p>Beispiel: </p> <p> <code class="syntax html"> &lt;a&nbsp;href="&lt;guided-current-path&nbsp;/&gt;&amp;lang=fr"&gt; 
@@ -1237,9 +1235,9 @@ Die folgenden Tags stehen zur Verfügung, damit Sie mit Ihrer Vorlage komplexere
     &amp;nbsp;
     
     gibt&amp;nbsp;g;g;g;g;g;g;g;g&amp;nbsp;g;g;g;g;g;gsname=&quot;g;g;g;g;g;g;g;g;g;g;g&amp;nbsp;g&amp;nbsp;g&amp;nbsp;g;g&amp;nbsp;g;g;g;g;g;g;g;g;g;g;g;g;g;g;g;g;g;g;g;g;g;g;
-    nbsp;g;g;g;g;g;g;g;g;g you&amp;nbsp;the&amp;nbsp;value&amp;nbsp;en
-    &amp;lt;guided-Abfrage-param&amp;nbsp;gsname=&quot;test&quot;&amp;nbsp;/&amp;gt;
-    gibts&amp;nbsp;you&amp;nbsp;an&amp;nbsp;empty&amp;nbsp;string&amp;nbsp;&amp;nbsp;&amp;nbsp; p;&amp;nbsp;&amp;nbsp;&amp;nbsp;   &lt;/p>  &lt;/td>
+    nbsp;g;g;g;g;g;g;g;g;
+     you&amp;nbsp;the&amp;nbsp;value&amp;nbsp;en
+    &amp;lt;guided-Abfrage-param&amp;nbsp;gsname=&quot;test&quot;&amp;nbsp;/&amp;gt;gibts&amp;nbsp;you&amp;nbsp;an&amp;nbsp;empty&amp;nbsp;string&amp;nbsp;&amp;nbsp;&amp;nbsp; p;&amp;nbsp;&amp;nbsp;&amp;nbsp;   &lt;/p>  &lt;/td>
 </tr> 
   <tr> 
    <td colname="col01"> <p>4 </p> </td> 
@@ -1588,7 +1586,7 @@ Siehe [Informationen zu den Tags der Ergebnisschleife](../c-appendices/c-templat
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-index&gt; </span> </p> </td> 
    <td colname="col2"> <p>Gibt den numerischen Index des aktuellen Ergebnisses zurück. </p> </td> 
   </tr> 
@@ -1598,7 +1596,7 @@ Siehe [Informationen zu den Tags der Ergebnisschleife](../c-appendices/c-templat
    <td colname="col2"> <p>Gibt den Seitentitel des aktuellen Ergebnisses zurück. Das optionale Attribut length wird verwendet, um die Länge der angezeigten Zeichenfolgen zu begrenzen, wobei der Standardwert 80 Zeichen ist. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-bodytext length="XX" encoding="html/javascript/json/perl/url/none"&gt; </span> </p> </td> 
    <td colname="col2"> <p>Gibt den Texttext ab dem Anfang der Seite zurück. Relevante Begriffe werden fett dargestellt. Das optionale Attribut length wird verwendet, um die Länge der angezeigten Zeichenfolgen zu begrenzen, wobei der Standardwert 80 Zeichen ist. Das Attribut "encoding"ist optional und kann Ausgabezeichen mit HTML-Kodierung (Standard), JavaScript-Kodierung, Perl-Kodierung oder ohne Kodierung kodieren. </p> </td> 
   </tr> 
@@ -1650,7 +1648,7 @@ Siehe [Informationen zu den Tags der Ergebnisschleife](../c-appendices/c-templat
   <tr> 
    <td colname="col01"> <p>13 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-display-field-value date-format="date-format-string" gmt="yes/no" language="0/language-id" encoding="html/javascript/json/perl/url/none"&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Dieses Tag gibt den Metadatenfeldwert ( url, title, desc, keys, Zielgruppe, body, alt, date, charset und language oder die unter <span class="uicontrol"> Options </span> &gt; <span class="uicontrol"> Metadata </span> &gt; <span class="uicontrol"> Definitions </span> definierten Felder) für die aktuelle <span class="codeph"> &lt;search-display-field-values&gt;-Schleife aus. </span> Dieses Tag ist nur innerhalb einer <span class="codeph"> &lt;search-display-field-values&gt; </span>-Schleife gültig. Die Attribute <span class="codeph"> des Datumsformats </span>, <span class="codeph"> gmt </span> und <span class="codeph"> und </span> sind nur relevant, wenn der Inhaltstyp des im umschließenden <span class="codeph"> </span> &lt;a7/&gt;-Tag &lt;a7/&gt; angegebenen Feldnamens </span> datums &lt;a9/&gt; ist. <span class="codeph"> Das <span class="codeph">-Datumsformat </span> nimmt eine Datumsformat-Zeichenfolge im UNIX-Stil wie <span class="codeph"> "%A </span>, <span class="codeph"> %B </span> <span class="codeph"> %d </span>, <span class="codeph"> %Y </span>"(für "Montag, 25. Juli 2016"). Das Attribut <span class="codeph"> gmt </span> ist standardmäßig auf <span class="codeph"> yes </span> festgelegt und steuert, ob der Zeitabschnitt der Datums-Zeichenfolge in GMT ( <span class="codeph"> yes </span>) oder in der Zeitzone des Kontos ( <span class="codeph"> no </span>) ausgegeben wird. </span></p> <p>Das <span class="codeph">-Attribut language </span> steuert die Konventionen für Sprache und Gebietsschema der Ausgabedatumszeichenfolge. <span class="codeph"> 0  </span> (Standard) bedeutet "Kontosprache verwenden". Jeder andere <span class="codeph">-Wert </span> wird als spezifischer Sprachbezeichner interpretiert, z. B. <span class="codeph"> en_US </span> bedeutet "Englisch (USA)". </p> <p>Das optionale Attribut <span class="codeph"> encoding </span> bestimmt, ob die Ausgabe HTML-kodiert, JavaScript-kodiert, Perl-kodiert, URL-kodiert oder nicht kodiert ist, für die Ausgabe auf der Ergebnisseite. Der Standardwert von <span class="codeph"> encoding </span> ist <span class="codeph"> html </span>. Normalerweise müssen Sie das Kodierungsattribut nicht angeben. </p> </td> 
+   <td colname="col2"> <p>Dieses Tag gibt den Metadatenfeldwert ( url, title, desc, keys, Zielgruppe, body, alt, date, charset und language oder die unter <span class="uicontrol"> Options </span> &gt; <span class="uicontrol"> Metadata </span> &gt; <span class="uicontrol"> Definitions </span> definierten Felder) für die aktuelle <span class="codeph"> &lt;search-display-field-values&gt;-Schleife aus. </span> Dieses Tag ist nur innerhalb einer <span class="codeph"> &lt;search-display-field-values&gt; </span>-Schleife gültig. Die Attribute <span class="codeph"> des Datumsformats </span>, <span class="codeph"> gmt </span> und <span class="codeph"> und </span> sind nur relevant, wenn der Inhaltstyp des im umschließenden <span class="codeph"> </span> <span class="codeph">-Tag  angegebenen Feldnamens </span> datums  ist. Das <span class="codeph">-Datumsformat </span> nimmt eine Datumsformat-Zeichenfolge im UNIX-Stil wie <span class="codeph"> "%A </span>, <span class="codeph"> %B </span> <span class="codeph"> %d </span>, <span class="codeph"> %Y </span>"(für "Montag, 25. Juli 2016"). Das Attribut <span class="codeph"> gmt </span> ist standardmäßig auf <span class="codeph"> yes </span> festgelegt und steuert, ob der Zeitabschnitt der Datums-Zeichenfolge in GMT ( <span class="codeph"> yes </span>) oder in der Zeitzone des Kontos ( <span class="codeph"> no </span>) ausgegeben wird. </p> <p>Das <span class="codeph">-Attribut language </span> steuert die Konventionen für Sprache und Gebietsschema der Ausgabedatumszeichenfolge. <span class="codeph"> 0  </span> (Standard) bedeutet "Kontosprache verwenden". Jeder andere <span class="codeph">-Wert </span> wird als spezifischer Sprachbezeichner interpretiert, z. B. <span class="codeph"> en_US </span> bedeutet "Englisch (USA)". </p> <p>Das optionale Attribut <span class="codeph"> encoding </span> bestimmt, ob die Ausgabe HTML-kodiert, JavaScript-kodiert, Perl-kodiert, URL-kodiert oder nicht kodiert ist, für die Ausgabe auf der Ergebnisseite. Der Standardwert von <span class="codeph"> encoding </span> ist <span class="codeph"> html </span>. Normalerweise müssen Sie das Kodierungsattribut nicht angeben. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>14 </p> </td> 
@@ -1707,7 +1705,7 @@ Siehe [Informationen zu den Tags der Ergebnisschleife](../c-appendices/c-templat
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-if-title&gt; ...  &lt;/search-if-title&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-not-title&gt; ...  &lt;/search-if-not-title&gt; </span> </p> </td> 
    <td colname="col2"> <p>Diese Tags enthalten den HTML-Code zwischen ihnen, wenn beim nächsten Aufruf von <span class="codeph"> &lt;search-title&gt; </span> der Dokument-Titel den Text zurückgibt (oder nicht zurückgibt). </p> </td> 
   </tr> 
@@ -1717,7 +1715,7 @@ Siehe [Informationen zu den Tags der Ergebnisschleife](../c-appendices/c-templat
    <td colname="col2"> <p> Diese Tags enthalten den HTML-Code zwischen ihnen, wenn beim nächsten Aufruf von <span class="codeph"> &lt;search-description&gt; </span> der Dokument aus der Beschreibung zurückgegeben wird (oder nicht zurückgegeben wird). </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-if-bodytext&gt; ...  &lt;/search-if-bodytext&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-not-bodytext&gt; ...  &lt;/search-if-not-bodytext&gt; </span> </p> </td> 
    <td colname="col2"> <p>Diese Tags enthalten den HTML-Code zwischen ihnen, wenn beim nächsten Aufruf von <span class="codeph"> &lt;search-body-text&gt; </span> der Dokument-Textkörper zurückgegeben wird (oder nicht zurückgegeben wird). </p> </td> 
   </tr> 
@@ -1793,12 +1791,12 @@ Siehe [Informationen zu den Tags der Ergebnisschleife](../c-appendices/c-templat
   <tr> 
    <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-if-first&gt; ...  &lt;/search-if-first&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-not-first&gt; ...  &lt;/search-if-not-first&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Diese Tags enthalten den Text zwischen ihnen, wenn das aktuelle Ergebnis das erste Ergebnis auf der Seite ist (oder nicht) (wenn es innerhalb von <span class="codeph"> </span> &lt;a1/&gt; verwendet wird) oder der erste Feldwert (wenn es innerhalb von <span class="codeph"> </span> &lt;a3/&gt; verwendet wird). </p> </td> 
+   <td colname="col2"> <p>Diese Tags enthalten den Text zwischen ihnen, wenn das aktuelle Ergebnis das erste Ergebnis auf der Seite ist (oder nicht) (wenn es innerhalb von <span class="codeph"> </span>  verwendet wird) oder der erste Feldwert (wenn es innerhalb von <span class="codeph"> </span>  verwendet wird). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>2 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-if-last&gt; ...  &lt;/search-if-last&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-not-last&gt; ...  &lt;/search-if-not-last&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Diese Tags enthalten den Text zwischen ihnen, wenn das aktuelle Ergebnis das letzte Ergebnis auf der Seite ist (oder nicht) (wenn es innerhalb von <span class="codeph"> </span> &lt;a1/&gt; verwendet wird) oder der letzte Feldwert (wenn es innerhalb von <span class="codeph"> </span> &lt;a3/&gt; verwendet wird). Dieses Tag kann verwendet werden, um eine Trennlinie zwischen den Ergebnissen einzufügen. Dadurch wird beispielsweise ein <span class="codeph"> &lt;hr&gt; </span>-Tag zwischen den Ergebnissen eingefügt: </p> <p> <code class="syntax html"> &lt;search-results&gt; 
+   <td colname="col2"> <p>Diese Tags enthalten den Text zwischen ihnen, wenn das aktuelle Ergebnis das letzte Ergebnis auf der Seite ist (oder nicht) (wenn es innerhalb von <span class="codeph"> </span>  verwendet wird) oder der letzte Feldwert (wenn es innerhalb von <span class="codeph"> </span>  verwendet wird). Dieses Tag kann verwendet werden, um eine Trennlinie zwischen den Ergebnissen einzufügen. Dadurch wird beispielsweise ein <span class="codeph"> &lt;hr&gt; </span>-Tag zwischen den Ergebnissen eingefügt: </p> <p> <code class="syntax html"> &lt;search-results&gt; 
       &nbsp;&nbsp;&nbsp;&lt;search-lt&gt;tr&lt;search-if-alt&gt;&nbsp;class="alt"&lt;/search-if-alt&gt;&lt;search-gt&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;search-url&gt;&lt;/td&gt; 
       &nbsp;&nbsp;&nbsp;&lt;/tr&gt; 
@@ -1807,12 +1805,12 @@ Siehe [Informationen zu den Tags der Ergebnisschleife](../c-appendices/c-templat
   <tr> 
    <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-if-inner&gt; ...  &lt;/search-if-inner&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-not-inner&gt; ...  &lt;/search-if-not-inner&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Diese Tags enthalten den Text zwischen ihnen, wenn das aktuelle Ergebnis weder das erste noch das letzte Ergebnis auf der Seite ist (wenn es innerhalb von <span class="codeph"> </span> &lt;a1/&gt; verwendet wird) oder nicht der erste oder letzte Feldwert ist (wenn es innerhalb von <span class="codeph"> </span> &lt;a3/&gt; verwendet wird). Die Nicht-Version des Tags prüft, ob das Ergebnis das erste oder das letzte ist. </p> </td> 
+   <td colname="col2"> <p>Diese Tags enthalten den Text zwischen ihnen, wenn das aktuelle Ergebnis weder das erste noch das letzte Ergebnis auf der Seite ist (wenn es innerhalb von <span class="codeph"> </span>  verwendet wird) oder nicht der erste oder letzte Feldwert ist (wenn es innerhalb von <span class="codeph"> </span>  verwendet wird). Die Nicht-Version des Tags prüft, ob das Ergebnis das erste oder das letzte ist. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>4 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-if-alt&gt; ...  &lt;/search-if-alt&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-not-alt&gt; ...  &lt;/search-if-not-alt&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Diese Tags beinhalten den Text zwischen ihnen, wenn das aktuelle Ergebnis ein alternatives Ergebnis auf der Seite ist (oder nicht) (wenn es innerhalb von <span class="codeph"> </span> &lt;a1/&gt; verwendet wird) oder ein alternativer Feldwert (wenn es innerhalb von <span class="codeph"> </span> &lt;a3/&gt; verwendet wird). Die "alternativen"Ergebnisse sind das zweite, vierte, sechste usw. auf der Seite. In diesem Beispiel wird eine andere Klasse auf alternative Tabellenzeilen angewendet. Beachten Sie die Verwendung von <span class="codeph"> &lt;search-lt&gt; </span> und <span class="codeph"> &lt;search-gt&gt; </span>, damit das <span class="codeph"> &lt;search-if-alt&gt; </span>-Tag "innerhalb" des <span class="codeph"> &lt;tr&gt; </span>-Tags platziert werden kann. </p> <p> <code class="syntax html"> &nbsp;&nbsp;&nbsp;&nbsp;&lt;search-results&gt; 
+   <td colname="col2"> <p>Diese Tags beinhalten den Text zwischen ihnen, wenn das aktuelle Ergebnis ein alternatives Ergebnis auf der Seite ist (oder nicht) (wenn es innerhalb von <span class="codeph"> </span>  verwendet wird) oder ein alternativer Feldwert (wenn es innerhalb von <span class="codeph"> </span>  verwendet wird). Die "alternativen"Ergebnisse sind das zweite, vierte, sechste usw. auf der Seite. In diesem Beispiel wird eine andere Klasse auf alternative Tabellenzeilen angewendet. Beachten Sie die Verwendung von <span class="codeph"> &lt;search-lt&gt; </span> und <span class="codeph"> &lt;search-gt&gt; </span>, damit das <span class="codeph"> &lt;search-if-alt&gt; </span>-Tag "innerhalb" des <span class="codeph"> &lt;tr&gt; </span>-Tags platziert werden kann. </p> <p> <code class="syntax html"> &nbsp;&nbsp;&nbsp;&nbsp;&lt;search-results&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;search-lt&gt;tr&lt;search-if-alt&gt;&nbsp;class="alt"&lt;/search-if-alt&gt;&lt;search-gt&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;search-url&gt;&lt;/td&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt; 
@@ -1821,7 +1819,7 @@ Siehe [Informationen zu den Tags der Ergebnisschleife](../c-appendices/c-templat
   <tr> 
    <td colname="col01"> <p>5 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-if-even&gt; ...  &lt;/search-if-even&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-not-even&gt; ...  &lt;/search-if-not-even&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Diese Tags beinhalten den Text zwischen ihnen, wenn das aktuelle Ergebnis ein geraden Ergebnis ist (oder nicht) (wenn es innerhalb von <span class="codeph"> </span> verwendet wird) oder ein gerader Feldwert (wenn es innerhalb von <span class="codeph"> </span> &lt;a3/&gt; verwendet wird). Ein Suchergebnis wird geradezu nummeriert, wenn der <span class="codeph"> &lt;search-index&gt; </span>-Wert gleich ist. Mit anderen Worten, wenn ihre Position innerhalb der gesamten Ergebnismenge gleich ist. Dies kann sich von <span class="codeph"> &lt;search-if-alt&gt; </span> unterscheiden, das die Position eines Ergebnisses auf der Seite testet, nicht innerhalb der gesamten Ergebnismenge. Die folgenden beiden Tabellen illustrieren den Unterschied: </p> </td> 
+   <td colname="col2"> <p>Diese Tags beinhalten den Text zwischen ihnen, wenn das aktuelle Ergebnis ein geraden Ergebnis ist (oder nicht) (wenn es innerhalb von <span class="codeph"> </span> verwendet wird) oder ein gerader Feldwert (wenn es innerhalb von <span class="codeph"> </span>  verwendet wird). Ein Suchergebnis wird geradezu nummeriert, wenn der <span class="codeph"> &lt;search-index&gt; </span>-Wert gleich ist. Mit anderen Worten, wenn ihre Position innerhalb der gesamten Ergebnismenge gleich ist. Dies kann sich von <span class="codeph"> &lt;search-if-alt&gt; </span> unterscheiden, das die Position eines Ergebnisses auf der Seite testet, nicht innerhalb der gesamten Ergebnismenge. Die folgenden beiden Tabellen illustrieren den Unterschied: </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1839,7 +1837,7 @@ Siehe [Informationen zu den Tags der Ergebnisschleife](../c-appendices/c-templat
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>3 </p> </td> 
+   <td colname="col1"> <p>1 </p> </td> 
    <td colname="col2"> <p>Erstes Ergebnis </p> </td> 
    <td colname="col3"> <p>Nein </p> </td> 
    <td colname="col4"> <p>Nein </p> </td> 
@@ -1932,7 +1930,7 @@ Die folgenden erweiterten Tags geben Feldwerte und zugehörige Daten aus dem ges
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-field-value-list name="field-name" quotes="yes/no" commas="yes/no" data="values/counts/results" separator="X" sortby="none/values/counts/results" max-items="XX" date-format="date-format-string" gmt="yes/no" language="0/language-id" encoding="html/javascript/json/perl/url/none"&gt; </span> </p> </td> 
    <td colname="col2"> <p>Dieses Tag zeigt eine Liste mit eindeutigen Feldwerten, Wertzählungen oder Ergebniszahlen innerhalb des gesamten Ergebnissatzes an. </p> <p>Dieses Tag liefert nur die Ausgabe für Felder, die von den CGI-Parametern <span class="codeph"> sp_sfvl_field </span> in der Abfrage "Suchen"angegeben werden. Das optionale Attribut "Anführungszeichen"steuert, ob die einzelnen Elemente von Anführungszeichen (oder von einfachen Anführungszeichen, wenn encoding=perl) umgeben sind. Der Standardwert von "Anführungszeichen"ist "Ja". Das optionale Attribut "Kommas"steuert, ob die einzelnen Elemente durch Kommas getrennt werden. Der Standardwert von "commas"ist "yes". Das optionale Attribut "data"steuert, ob jeder eindeutige Feldwert ausgegeben wird (data="values"), die Gesamtanzahl der einzelnen eindeutigen Feldwerte ausgegeben wird (data="counts") oder die Anzahl der Ergebnisse, die jeden eindeutigen Wert enthalten (data="results"), ausgegeben wird. Der Standardwert von "data"ist "values". Bei Feldern ohne Liste sind data="counts" und data="results" identisch. Das Attribut "separator"definiert das einzelne Zeichen oder Trennzeichen, das zwischen den Werten der Ausgabe eingefügt werden soll. Das optionale Attribut "sortby" steuert die Reihenfolge der Ausgabe; sortby="none" bedeutet keine bestimmte Reihenfolge, sortby="values" bedeutet Sortierung nach Feldwerten (in aufsteigender oder absteigender Reihenfolge entsprechend der Sorting-Eigenschaft des Felds), sortby="counts" bedeutet Sortierung in absteigender Reihenfolge der Feldwerte und sortby="results" bedeutet Sortierung in absteigender Reihenfolge der Anzahl der Ergebnisse, die jeden Wert enthalten. </p> <p>Beachten Sie, dass sortby="counts" und sortby="results" für Felder ohne Liste gleichwertig sind. Das optionale Attribut "max-items"begrenzt die Anzahl der auszugebenden Elemente. Der Standardwert von "max-items"ist -1, d. h. "output all items". </p> <p>Es gibt eine absolute Grenze von 100 für max. Elemente. Die Attribute "date-format", "gmt"und "language"sind nur relevant, wenn der Inhaltstyp des angegebenen Felds "date"ist. Das Attribut "date-format"nimmt eine Datumsformat-Zeichenfolge im UNIX-Stil wie "%A", %B %d, %Y"(für "Montag, 25. Juli 2016"). "gmt"ist standardmäßig "yes"und steuert, ob der Zeitabschnitt der Datums-Zeichenfolge in GMT ("yes") oder in der Zeitzone des Kontos ("no") ausgegeben werden soll. </p> <p>Siehe <a href="../c-appendices/c-templates.md#section_4BBDBBEF2B96414497617CD4B52D96E4" type="section" format="dita" scope="local"> Datumsformat-Zeichenfolgen</a>. </p> <p>Das Attribut "language"steuert die Konventionen für Sprache und Gebietsschema der Ausgabedatumszeichenfolge. "0" (Standard) bedeutet "Kontosprache verwenden". Jeder andere "language"-Wert wird als spezifischer Sprachbezeichner interpretiert, z. B. bedeutet "en_US" "Englisch (USA)". Das optionale Attribut "encoding"steuert, ob die Zeichen der Ausgabestrategie HTML-kodiert, JavaScript-kodiert, Perl-kodiert, URL-kodiert oder nicht kodiert sind, für die Ausgabe auf der Ergebnisseite. Der Standardwert von "encoding"ist "html". </p> <p>Siehe <a href="../c-appendices/c-templates.md#section_0490DECC00E34691ADE5A9ED90A6D911" type="section" format="dita" scope="local"> Sprachkennungen</a>. </p> </td> 
   </tr> 
@@ -1942,7 +1940,7 @@ Die folgenden erweiterten Tags geben Feldwerte und zugehörige Daten aus dem ges
    <td colname="col2"> <p>Dieses Tag zeigt die Zählungsinformationen für eine bestimmte Liste des Suchfelds an. Es gibt drei unterschiedliche Verwendungen für dieses Tag. Wenn nur das Attribut "name"angegeben ist, gibt dieses Tag die Anzahl der eindeutigen Werte für das benannte Feld innerhalb des gesamten Ergebnissatzes aus. Wenn beide Attribute "name"und "value"angegeben werden, gibt dieses Tag entweder die Gesamtanzahl des angegebenen Werts innerhalb des gesamten Ergebnissatzes (für results="no") oder die Gesamtanzahl der Ergebnisse mit dem angegebenen Wert im gesamten Ergebnissatz (für results="yes") aus. Der Standardwert von "results"ist "no". Hinweis: Bei Feldern ohne Liste sind results="yes" und results="no" gleichwertig. Der Wert von "results"wird ignoriert, wenn das Attribut "value"nicht angegeben wird. Dieses Tag liefert nur die Ausgabe für Felder, die von den CGI-Parametern <span class="codeph"> sp-sfvl-field </span> in der Abfrage "Suchen"angegeben werden. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-if-field-value-list-count name="field-name" value="field-value"&gt; ...  &lt;/search-if-field-value-list-count&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-not-field-value-list-count name="field-name" value="field-value"&gt; ...  &lt;/search-if-not-field-value-list-count&gt; </span> </p> </td> 
    <td colname="col2"> <p>Diese Tags zeigen den HTML-Code zwischen ihnen an, wenn der äquivalente Aufruf von <span class="codeph"> &lt;search-field-value-Liste-count name="field-name" value="field-value"&gt; </span> mit den angegebenen Attributen einen Wert größer als null zurückgibt (oder nicht). </p> </td> 
   </tr> 
@@ -1968,7 +1966,7 @@ Die folgenden erweiterten Tags zählen Feldwerte und zugehörige Daten aus dem g
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-field-values name="field-name" sortby="none/values/counts/results" max-items="XX"&gt; ...  &lt;/search-field-values&gt; </span> </p> </td> 
    <td colname="col2"> <p>Dieses Tag erstellt eine Schleife zum Aufzählen von Feldwerten und zugehörigen Daten für ein bestimmtes Feld innerhalb des gesamten Ergebnissatzes. Verschachteln Sie dieses Tag nicht in einem anderen <span class="codeph"> &lt;search-field-values&gt; </span>-Tag. Das Attribut "name"gibt den Namen des Felds an, das die aufzuzählenden Werte enthält. Das optionale Attribut "sortby"steuert die Reihenfolge der Auflistungen: "none"bedeutet keine bestimmte Reihenfolge, "werte"die Sortierung nach Feldwerten (in auf- oder absteigender Reihenfolge gemäß der Sorting-Eigenschaft des Felds), sortby="counts" die Sortierung in absteigender Reihenfolge der Feldwerte und sortby="results" die Sortierung in absteigender Reihenfolge der Anzahl der Ergebnisse, die jeden Wert enthalten. </p> <p>Beachten Sie, dass sortby="counts" und sortby="results" für Felder ohne Liste gleichwertig sind. . Das optionale Attribut "max-items"begrenzt die Anzahl der Iterationen auf den angegebenen Wert. Der Standardwert für "max-items"ist -1, d. h. "enumerate all values". </p> </td> 
   </tr> 
@@ -2018,7 +2016,7 @@ Suggest bietet einen benutzerfreundlichen &quot;Meinten Sie?&quot; Dienst zum Vo
    <td colname="col2"> <p>Dieses Tag generiert die "Suggest"-Schleife, die eine Liste von vorgeschlagenen Suchbegriffen enthält (z. B. "beabsichtigen", "beabsichtigen" und "beabsichtigt" für eine Abfrage, die ursprünglich als "beabsichtigte" eingegeben wurde). Bei der Generierung der Liste von Begriffen wiederholt die Suchmaschine verschachtelte HTML- und/oder Vorlagen-Tags bis zum Fünffachen, was der maximalen Anzahl von Vorschlägen entspricht. Verwenden Sie das Attribut count, um die Anzahl der generierten Vorschläge anzugeben (zwischen 0 und 5). </p> <p>Das <span class="codeph"> &lt;search-recommendations&gt; </span>-Tag kann mehrmals auf der Seite angezeigt werden, um die Liste der Vorschläge zu wiederholen. Mehrere Vorschläge werden nach der Anzahl der Ergebnisse sortiert, die die einzelnen Erträge erbringen. </p> <p>Verschachteln Sie das <span class="codeph"> &lt;search-recommendations&gt; </span>-Tag zwischen open und close <span class="codeph"> &lt;search-if-recommendations&gt; </span>-Tags. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-suggestion-link&gt; ...  &lt;/search-suggestion-link&gt; </span> </p> </td> 
    <td colname="col2"> <p>Dieses Tag generiert eine Verknüpfung zur ursprünglichen Suchbegriff-Abfrage, wobei der ausgewählte vorgeschlagene Suchbegriff anstelle des ursprünglichen Begriffs verwendet wird. Das Tag akzeptiert und druckt einfach jedes beliebige HTML-Attribut wie Klasse, Zielgruppe und Stil aus. Das Tag kann auch ein URL-Attribut akzeptieren, dessen Wert als Basis-URL für den generierten Link verwendet wird. Die Tags können nur innerhalb der <span class="codeph"> &lt;search-recommendations&gt; </span>-Schleife angezeigt werden. </p> </td> 
   </tr> 
@@ -2074,7 +2072,7 @@ Die folgenden Tags geben an diesem Punkt in der Vorlage eine Zeichenfolge in den
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-body&gt; </span> </p> </td> 
    <td colname="col2"> <p>Das HTML-Body-Tag mit allen Einstellungen für die Farbe des Suchlinks, die vom Abschnitt "Grundlegendes Aussehen"unter dem Link "Vorlage"festgelegt werden. hinzufügen Sie diesem Tag ein Hintergrundattribut, um Hintergrundbilder auf der Ergebnisseite anzuzeigen. Alle diesem Tag hinzugefügten Farbattribute setzen die Einstellungen für die Farbe des Suchlinks außer Kraft, die im Abschnitt "Grundlegender Look"festgelegt werden. </p> </td> 
   </tr> 
@@ -2084,7 +2082,7 @@ Die folgenden Tags geben an diesem Punkt in der Vorlage eine Zeichenfolge in den
    <td colname="col2"> <p>Der HTML-Code für die Kopfzeile der Suchergebnisse, wie im Abschnitt "Grundlegender Look"unter dem Link "Vorlage"festgelegt. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-cdata&gt; ...  &lt;/search-cdata&gt; </span> </p> </td> 
    <td colname="col2"> <p>Die Tags search-data werden durch ihre XML-Entsprechungen ersetzt: <span class="codeph"> &lt;search-cdata&gt; </span> wird durch <span class="codeph"> &lt;![CDATA[" und das &lt;/search-data&gt; </span>-Tag werden durch " <span class="codeph"> ]]&gt; </span>"ersetzt. Ein XML-Parser analysiert keine Informationen zwischen dem open- und close-Tag. </p> </td> 
   </tr> 
@@ -2202,7 +2200,7 @@ Die folgenden Tags führen dazu, dass ein Ankerlink den HTML-Code zwischen beide
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-next URL="https://search.yourdomain.com/search/"&gt; ...  &lt;/search-next&gt; </span> </p> <p> <span class="codeph"> &lt;search-prev URL="https://search.yourdomain.com/search/"&gt; ...  &lt;/search-prev&gt; </span> </p> </td> 
    <td colname="col2"> <p>Zeigt die nächste oder vorherige Seite der Ergebnisse an. </p> </td> 
   </tr> 
@@ -2212,7 +2210,7 @@ Die folgenden Tags führen dazu, dass ein Ankerlink den HTML-Code zwischen beide
    <td colname="col2"> <p>Sortiert die Ergebnisse nach Datum oder Relevanz. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-show-summaries URL="https://search.yourdomain.com/search/"&gt; ...  &lt;/search-show-summaries&gt; </span> </p> <p> <span class="codeph"> &lt;search-hide-summaries URL="https://search.yourdomain.com/search/"&gt; ...  &lt;/search-hide-summaries&gt; </span> </p> </td> 
    <td colname="col2"> <p>Blendet die Zusammenfassungen ein oder aus. </p> </td> 
   </tr> 
@@ -2233,7 +2231,7 @@ Tags, die es Ihnen ermöglichen, HTML zwischen ihnen bedingt einzuschließen.
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-if-results&gt; ...  &lt;/search-if-results&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-not-results&gt; ...&lt;/search-if-not-results&gt; </span> </p> </td> 
    <td colname="col2"> <p>Diese Tags enthalten HTML, wenn die aktuelle Seite Suchergebnisse enthält (oder keine). </p> </td> 
   </tr> 
@@ -2294,14 +2292,14 @@ Tags, mit denen Sie den Standardauswahlstatus für Kontrollkästchen, Optionsfel
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-input&gt; </span> </p> </td> 
    <td colname="col2"> <p>Wird in einer Vorlage anstelle eines <span class="codeph"> &lt;input&gt; </span>-Tags verwendet. Wenn das Tag in den Browser geschrieben wird, ersetzt das Wort <span class="codeph"> input </span> <span class="codeph"> search-input </span> und alle anderen Informationen im Tag werden unverändert ausgegeben. Wenn außerdem der im Tag angegebene Name <span class="codeph"> als CGI-Parameter aufgelistet ist und der im Tag angegebene <span class="codeph">-Wert </span> den Wert für diesen CGI-Parameter darstellt, wird am Ende des Tags das Wort <span class="codeph">, das </span> markiert ist, hinzugefügt. </span> Auf diese Weise können Sie automatisch den Standard-Optionsfeld- oder Kontrollkästchen-Status in Ihrem Suchergebnis mit der aktuellen Abfrage identisch machen. </p> <p>Der HTML-Code für ein Kontrollkästchen könnte z. B. wie folgt aussehen: </p> <p> <span class="codeph"> &lt;input type="checkbox" name="sp_w" value="exact"&gt;Keine Übereinstimmung mit Geräuschen  </span> </p> <p>Der entsprechende Vorlagencode für dieses Kontrollkästchen lautet wie folgt: </p> <p> <span class="codeph"> &lt;search-input type="checkbox" name="sp_w" value="exact"&gt;Keine Übereinstimmung mit Geräuschen  </span> </p> <p>Wenn die CGI-Parameterzeichenfolge für die Abfrage <span class="codeph"> sp_w=exact </span> enthält, sieht das in den Browser mit den Suchergebnissen geschriebene Tag wie folgt aus (am Ende des Tags wird das Wort <span class="codeph"> markiert </span> eingefügt): </p> <p> <span class="codeph"> &lt;input type="checkbox" name="sp_w" value="exact" checked=""&gt;Keine Übereinstimmung mit Geräuschen  </span> </p> <p>Wenn die CGI-Parameterzeichenfolge für die Abfrage nicht <span class="codeph"> sp_w=exact </span> enthält, sieht das in den Browser mit den Suchergebnissen geschriebene Tag wie folgt aus (das Wort <span class="codeph">, das </span> markiert ist, wird im Tag nicht aufgelistet): </p> <p> <span class="codeph"> &lt;input type="checkbox" name="sp_w" value="exact"&gt;Keine Übereinstimmung mit Geräuschen  </span> </p> <p>Das <span class="codeph"> &lt;search-input&gt; </span>-Tag ist hilfreich, um Kontrollkästchen und Optionsfelder in Ihre Suchvorlage einzufügen. Wenn Sie Kontrollkästchen oder Optionsfelder haben, die Sie der <span class="codeph"> &lt;form&gt; </span> in Ihrer Suchvorlage hinzufügen möchten, verwenden Sie <span class="codeph"> &lt;search-input...&gt; </span> anstelle von <span class="codeph"> &lt;input...&gt; </span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>2 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-select&gt; ...  &lt;/search-select&gt; </span> </p> <p> <span class="codeph"> &lt;search-option&gt; ...  &lt;/search-option&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Dropdown-Listen in einem <span class="codeph"> &lt;form&gt; </span>-Tag werden mit einem <span class="codeph"> &lt;select&gt; </span>-Tag gestartet und mit einem <span class="codeph"> &lt;/select&gt; </span>-Tag beendet. Der <span class="codeph">-Name </span> für den verknüpften CGI-Parameter wird im <span class="codeph"> </span>-Tag aufgelistet. Nach dem <span class="codeph"> </span>-Tag ist eine Liste von <span class="codeph"> </span>-Tags, die die Werte angeben, die im Feld "Liste"angezeigt werden sollen. </p> <p>Die Tags <span class="codeph"> &lt;search-select&gt; </span>, <span class="codeph"> &lt;/search-select&gt; </span>, <span class="codeph"> &lt;search-option&gt; und </span> &lt;/search-option&gt; </span> bieten eine ähnliche Funktionalität wie das <span class="codeph"> &lt;search-input&gt; </span>-Tag. <span class="codeph"> Das heißt, das Wort <span class="codeph"> ausgewählt </span> wird automatisch am Ende des <span class="codeph"> </span>-Tags hinzugefügt, das an den Browser gesendet wird, wenn der <span class="codeph">-Name </span> im <span class="codeph"> &lt;search-select&gt; </span>-Tag als CGI-Parameter aufgelistet ist und der <span class="codeph">-Wert </span> des CGI-Parameters angegeben ist. als <span class="codeph"> Wert </span> in einem bestimmten <span class="codeph"> &lt;search-option&gt; </span>-Tag aufgeführt. Auf diese Weise können Sie die standardmäßige Liste in Ihrem Suchergebnis automatisch mit der aktuellen Abfrage identisch machen. </span></p> <p>Ein typisches Feld für die Liste sieht beispielsweise wie folgt aus: </p> <p> <code class="syntax html"> &lt;select&nbsp;name="sp_x"&nbsp;size=1&gt; 
+   <td colname="col2"> <p>Dropdown-Listen in einem <span class="codeph"> &lt;form&gt; </span>-Tag werden mit einem <span class="codeph"> &lt;select&gt; </span>-Tag gestartet und mit einem <span class="codeph"> &lt;/select&gt; </span>-Tag beendet. Der <span class="codeph">-Name </span> für den verknüpften CGI-Parameter wird im <span class="codeph"> </span>-Tag aufgelistet. Nach dem <span class="codeph"> </span>-Tag ist eine Liste von <span class="codeph"> </span>-Tags, die die im Feld "Liste"anzuzeigenden Werte angeben. </p> <p>Die Tags <span class="codeph"> &lt;search-select&gt; </span>, <span class="codeph"> &lt;/search-select&gt; </span>, <span class="codeph"> &lt;search-option&gt; und </span> &lt;/search-option&gt; </span> bieten eine ähnliche Funktionalität wie das <span class="codeph"> &lt;search-input&gt; </span>-Tag. <span class="codeph"> Das heißt, das Wort <span class="codeph"> ausgewählt </span> wird automatisch am Ende des <span class="codeph"> </span>-Tags hinzugefügt, das an den Browser gesendet wird, wenn der <span class="codeph">-Name </span> im <span class="codeph"> &lt;search-select&gt; </span>-Tag als CGI-Parameter aufgelistet ist und der <span class="codeph">-Wert </span> des CGI-Parameters angegeben ist. als <span class="codeph"> Wert </span> in einem bestimmten <span class="codeph"> &lt;search-option&gt; </span>-Tag aufgeführt. Auf diese Weise können Sie die standardmäßige Liste in Ihrem Suchergebnis automatisch mit der aktuellen Abfrage identisch machen. </span></p> <p>Ein typisches Feld für die Liste sieht beispielsweise wie folgt aus: </p> <p> <code class="syntax html"> &lt;select&nbsp;name="sp_x"&nbsp;size=1&gt; 
       &lt;option&nbsp;value="any"&nbsp;selected&gt;Anywhere&lt;/option&gt; 
       &lt;option&nbsp;value="title"&gt;Title&lt;/option&gt; 
       &lt;option&nbsp;value="desc"&gt;Description&lt;/option&gt; 
@@ -2319,7 +2317,7 @@ Tags, mit denen Sie den Standardauswahlstatus für Kontrollkästchen, Optionsfel
       &lt;search-option&nbsp;value="alt"&gt;Alternate&nbsp;text&lt;/search-option&gt; 
       &lt;search-option&nbsp;value="url"&gt;URL&lt;/search-option&gt; 
       &lt;search-option&nbsp;value="target"&gt;Target&lt;/search-option&gt; 
-      &lt;/search-select&gt; </code> </p> <p>Wenn Sie Listen-Felder haben, die Sie der <span class="codeph"> &lt;form&gt; </span> in Ihrer Suchvorlage hinzufügen möchten, verwenden Sie <span class="codeph"> &lt;search-select...&gt; </span> anstelle von <span class="codeph"> </span>, <span class="codeph"> &lt;/search-select&gt; </span> &lt;a7/&gt; &lt;/select&gt; &lt;a7/&gt;.9/&gt;, <span class="codeph"> &lt;search-option...&gt; </span> anstelle von <span class="codeph"> &lt;option...&gt; </span> und <span class="codeph"> &lt;/search-option&gt; </span> anstelle von <span class="codeph"> &lt;/option&gt; </span>.</span><span class="codeph"> </span></p> </td> 
+      &lt;/search-select&gt; </code> </p> <p>Wenn Sie Listen-Felder haben, die Sie der <span class="codeph"> &lt;form&gt; </span> in Ihrer Suchvorlage hinzufügen möchten, verwenden Sie <span class="codeph"> &lt;search-select...&gt; </span> anstelle von <span class="codeph"> </span>, <span class="codeph"> &lt;/search-select&gt; </span> <span class="codeph"> &lt;/select&gt; </span>.9/&gt;, <span class="codeph"> &lt;search-option...&gt; </span> anstelle von <span class="codeph"> &lt;option...&gt; </span> und <span class="codeph"> &lt;/search-option&gt; </span> anstelle von <span class="codeph"> &lt;/option&gt; </span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>1 </p> </td> 
@@ -2627,7 +2625,7 @@ Wenn Sie das Attribut `content` nicht angeben, wird für den Wert von `MIME-type
 
 Wenn Sie das Attribut `charset` nicht angeben, wird kein `charset`-Wert in die `content-type`-Kopfzeile geschrieben.
 
-Wenn Sie `charset="1"` angeben, ist der tatsächliche Wert für `charset-name` der Wert des `sp_f`-CGI-Parameters. Wenn bei der Suche kein `sp_f`-CGI-Parameter gesendet wird, wird der tatsächliche Wert für `charset-name` aus Ihren Kontoeinstellungen gelesen. Sie können den mit Ihrem Konto verknüpften Zeichensatz unter **[!UICONTROL Settings]** > **[!UICONTROL My Profile]** > **[!UICONTROL Personal Information]** > **[!UICONTROL Character Encoding]** > &lt;a3/> Ansicht oder ändern.
+Wenn Sie `charset="1"` angeben, ist der tatsächliche Wert für `charset-name` der Wert des `sp_f`-CGI-Parameters. Wenn bei der Suche kein `sp_f`-CGI-Parameter gesendet wird, wird der tatsächliche Wert für `charset-name` aus Ihren Kontoeinstellungen gelesen. Sie können den mit Ihrem Konto verknüpften Zeichensatz unter **[!UICONTROL Settings]** > **[!UICONTROL My Profile]** > **[!UICONTROL Personal Information]** > **[!UICONTROL Character Encoding]** >  Ansicht oder ändern.
 
 Siehe [Konfigurieren Ihrer persönlichen Benutzerinformationen](../c-about-settings-menu/c-about-my-profile-menu.md#task_A11A3BE2527B4204B896E04303B04AA6).
 
@@ -2647,7 +2645,7 @@ Die Attribute für Inhalt und Zeichensatz sind optional. Dieses Tag muss im HTML
 
 Wenn Sie das Inhaltsattribut nicht angeben, wird der tatsächliche Wert von `MIME-type` standardmäßig auf einen von zwei Werten gesetzt. Wenn das `<search-content-type-header>`-Tag ein `content`-Attribut angegeben hat, wird dieser Wert verwendet. Andernfalls wird der Wert verwendet, der auf der Registerkarte **[!UICONTROL Templates]** > **[!UICONTROL Settings]** > **[!UICONTROL Content Type]** festgelegt wurde.
 
-Wenn Sie das Attribut `charset` nicht angeben, wird als tatsächlicher Wert von `charset-name` standardmäßig einer von zwei Werten verwendet. Wenn das `<search-content-type-header>`-Tag ein `charset`-Attribut angegeben hat, wird dieser Wert verwendet. Andernfalls wird der tatsächliche Wert für `charset-name` aus Ihren Kontoeinstellungen gelesen. Sie können den mit Ihrem Konto verknüpften Zeichensatz unter **[!UICONTROL Settings]** > **[!UICONTROL My Profile]** > **[!UICONTROL Personal Information]** > **[!UICONTROL Character Encoding]** > &lt;a3/> Ansicht oder ändern.
+Wenn Sie das Attribut `charset` nicht angeben, wird als tatsächlicher Wert von `charset-name` standardmäßig einer von zwei Werten verwendet. Wenn das `<search-content-type-header>`-Tag ein `charset`-Attribut angegeben hat, wird dieser Wert verwendet. Andernfalls wird der tatsächliche Wert für `charset-name` aus Ihren Kontoeinstellungen gelesen. Sie können den mit Ihrem Konto verknüpften Zeichensatz unter **[!UICONTROL Settings]** > **[!UICONTROL My Profile]** > **[!UICONTROL Personal Information]** > **[!UICONTROL Character Encoding]** >  Ansicht oder ändern.
 
 Siehe [Konfigurieren Ihrer persönlichen Benutzerinformationen](../c-about-settings-menu/c-about-my-profile-menu.md#task_A11A3BE2527B4204B896E04303B04AA6).
 
@@ -2667,7 +2665,7 @@ Das Attribut `charset` ist optional. Dieses Tag muss oben in der Vorlage, aber n
 
 `<?xml version="1.0" encoding="charset-name" standalone="yes" ?>`
 
-Wenn Sie nicht `charset` angeben, wird der tatsächliche Wert von `charset-name` standardmäßig auf einen von zwei Werten gesetzt. Wenn `<search-content-type-header>` ein `charset`-Attribut angegeben hat, wird dieser Wert verwendet. Andernfalls wird der tatsächliche Wert für `charset-name` aus Ihren Kontoeinstellungen gelesen. Sie können den mit Ihrem Konto verknüpften Zeichensatz unter **[!UICONTROL Settings]** > **[!UICONTROL My Profile]** > **[!UICONTROL Personal Information]** > **[!UICONTROL Character Encoding]** > &lt;a3/> Ansicht oder ändern.
+Wenn Sie nicht `charset` angeben, wird der tatsächliche Wert von `charset-name` standardmäßig auf einen von zwei Werten gesetzt. Wenn `<search-content-type-header>` ein `charset`-Attribut angegeben hat, wird dieser Wert verwendet. Andernfalls wird der tatsächliche Wert für `charset-name` aus Ihren Kontoeinstellungen gelesen. Sie können den mit Ihrem Konto verknüpften Zeichensatz unter **[!UICONTROL Settings]** > **[!UICONTROL My Profile]** > **[!UICONTROL Personal Information]** > **[!UICONTROL Character Encoding]** >  Ansicht oder ändern.
 
 Siehe [Konfigurieren Ihrer persönlichen Benutzerinformationen](../c-about-settings-menu/c-about-my-profile-menu.md#task_A11A3BE2527B4204B896E04303B04AA6).
 
