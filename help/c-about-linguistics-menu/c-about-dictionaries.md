@@ -1,15 +1,13 @@
 ---
 description: Sie können Wörterbücher verwenden, um eine Sammlung von Wörterbüchern und deren zugehörige Synonyme und Hyponyme zu verwalten.
-seo-description: Sie können Wörterbücher verwenden, um eine Sammlung von Wörterbüchern und deren zugehörige Synonyme und Hyponyme zu verwalten.
-seo-title: Wörterbücher
 solution: Target
 title: Wörterbücher
-topic: Linguistics,Site search and merchandising
+topic: Linguistik, Site-Suche und Merchandising
 uuid: d4463896-30fe-4385-a283-c930c8264a02
 translation-type: tm+mt
-source-git-commit: 4531970404c189ffa1d4359d1431c97df893ba35
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '2475'
+source-wordcount: '2462'
 ht-degree: 1%
 
 ---
