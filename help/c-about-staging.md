@@ -1,15 +1,13 @@
 ---
 description: Mit Staging können Sie Änderungen an Ihren Einstellungen und Konfigurationen testen und Vorschauen durchführen, ohne dass sich dies auf Ihren Liveindex auswirkt.
-seo-description: Mit Staging können Sie Änderungen an Ihren Einstellungen und Konfigurationen testen und Vorschauen durchführen, ohne dass sich dies auf Ihren Liveindex auswirkt.
-seo-title: Staging
 solution: Target
 title: Staging
-topic: Staging,Site search and merchandising
+topic: Staging, Site-Suche und Merchandising
 uuid: 2e5889a6-2e9c-4ac7-9d6e-d35e7cafda5b
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '964'
 ht-degree: 0%
 
 ---
@@ -94,7 +92,7 @@ Wenn die Option **[!UICONTROL Push Live]** auf einer Seite aktiviert (nicht abge
    * Klicken Sie auf einer Seite, für die &quot;Staged&quot;als Ansicht ausgewählt wurde, auf **[!UICONTROL Push Live]**.
    * Klicken Sie im Produktmenü auf **[!UICONTROL Staging]**. Führen Sie auf der Seite **[!UICONTROL Manage Stage-Live Settings]** einen der folgenden Schritte aus:
 
-   * Verwenden Sie die Einstellungsstruktur, um nur die Einstellungen zu prüfen, die Sie live übertragen möchten, und klicken Sie dann auf **[!UICONTROL Push Selected Live]**.
+   * Verwenden Sie die Einstellungsstruktur, um nur die Einstellungen zu überprüfen, die Sie live übertragen möchten, und klicken Sie dann auf **[!UICONTROL Push Selected Live]**.
    * Klicken **[!UICONTROL Push All Live]**.
 
 ## Löschen von stage-live-Einstellungen von einem zentralen Speicherort {#task_B72BEA9269704B1399600A9CA273369B}
