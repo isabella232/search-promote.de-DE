@@ -1,15 +1,13 @@
 ---
 description: Sie können die Datumsformate definieren, die beim Analysieren und Indizieren von Feldern mit dem Datentyp "Datum"verwendet werden.
-seo-description: Sie können die Datumsformate definieren, die beim Analysieren und Indizieren von Feldern mit dem Datentyp "Datum"verwendet werden.
-seo-title: Datumsformate
 solution: Target
 title: Datumsformate
-topic: Appendices,Site search and merchandising
+topic: Anlagen, Site-Suche und Merchandising
 uuid: 148914b5-33ef-41db-8404-67c03f6f0832
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '749'
 ht-degree: 3%
 
 ---
