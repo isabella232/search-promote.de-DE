@@ -1,16 +1,14 @@
 ---
 description: Die letzten Suchvorgänge sind ein Cookie-basiertes System, mit dem Sie eine Präsentationsvorlage verwenden können, um den neuesten Suchverlauf Ihres Kunden anzuzeigen.
-seo-description: Die letzten Suchvorgänge sind ein Cookie-basiertes System, mit dem Sie eine Präsentationsvorlage verwenden können, um den neuesten Suchverlauf Ihres Kunden anzuzeigen.
-seo-title: Konfigurieren aktueller Suchen
 solution: Target
 subtopic: Navigation
 title: Konfigurieren aktueller Suchen
-topic: Design,Site search and merchandising
+topic: Design, Site-Suche und Merchandising
 uuid: 8ab1b35c-f953-4c26-921f-524af1fea4ef
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '186'
 ht-degree: 2%
 
 ---
