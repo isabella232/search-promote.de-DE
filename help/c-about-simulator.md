@@ -1,15 +1,13 @@
 ---
 description: Verwenden Sie Simulator, um zu sehen, wie Ihre Suche aussehen würde, wenn Sie alles, was derzeit inszeniert ist, live übertragen würden.
-seo-description: Verwenden Sie Simulator, um zu sehen, wie Ihre Suche aussehen würde, wenn Sie alles, was derzeit inszeniert ist, live übertragen würden.
-seo-title: Info zum Simulator
 solution: Target
 title: Info zum Simulator
-topic: Simulator,Site search and merchandising
+topic: Simulator, Site-Suche und Merchandising
 uuid: 7ec8f5b9-3ab3-4b9a-bf8a-65d0ca1dfddb
 translation-type: tm+mt
-source-git-commit: 91ddead9f73b73ea1a20e26582998966f801d6ff
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '380'
 ht-degree: 1%
 
 ---
