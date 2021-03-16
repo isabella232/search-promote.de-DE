@@ -1,15 +1,13 @@
 ---
 description: Wenn Sie neu bei der Search&Promote- und dynamischen Navigation sind, Beginn hier, um sich mit Ihrem Konto zu starten. Unter anderem erfahren Sie, wie Sie Ihre Website indizieren und das Erscheinungsbild Ihrer Suchergebnisse anpassen.
-seo-description: Wenn Sie neu bei der Search&Promote- und dynamischen Navigation sind, Beginn hier, um sich mit Ihrem Konto zu starten. Unter anderem erfahren Sie, wie Sie Ihre Website indizieren und das Erscheinungsbild Ihrer Suchergebnisse anpassen.
-seo-title: Erste Schritte
 solution: Target
 title: Erste Schritte
-topic: Getting Started,Site search and merchandising
+topic: Erste Schritte, Site-Suche und Merchandising
 uuid: 816ad003-15c9-4e44-b09d-cab284518634
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1028'
 ht-degree: 0%
 
 ---
@@ -91,7 +89,7 @@ Siehe [Konfigurieren der Remote-Steuerung für die Indizierung](c-about-index-me
 
 ## Anzeigen von Suchbegriffberichten {#section_1F4A7F57B9C64FBDA5E3E592621BF6F4}
 
-Die Abfragen zur Suche der Besucher werden protokolliert und für Sie nach Tag, Woche und Monat erstellt. Anhand dieser Abfragen können Sie erkennen, wonach Ihre Kunden suchen, wie oft sie Erfolg haben und wo die Navigation Ihrer Website unterbricht.
+Die Abfragen zur Suche der Besucher werden protokolliert und für Sie nach Tag, Woche und Monat erstellt. Anhand dieser Abfragen können Sie erkennen, wonach Ihre Kunden suchen, wie oft sie Erfolg haben und wo die Navigation Ihrer Website ausfällt.
 
 Siehe [Anzeigen des Berichts &quot;Begriffe&quot;oder des Berichts &quot;Null-Suchbegriffe&quot;...](c-about-reports-menu/c-about-reports-menu.md#task_53B7ED1582DD4B0E8376546A7AFC789A).
 
