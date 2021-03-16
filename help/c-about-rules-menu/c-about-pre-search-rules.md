@@ -1,15 +1,13 @@
 ---
 description: Verwenden Sie Vorab-Suchregeln, um die eingehende Abfrage zu analysieren und zu bestimmen, welche Präsentationsvorlage verwendet werden soll. Vorsuchregeln werden für jede Abfrage nacheinander ausgeführt. Um die Reihenfolge der Regeln zu ändern, können Sie per Drag & Drop die Regeln verschieben. Die tatsächliche Reihenfolge wird erst nach dem Speichern geändert.
-seo-description: Verwenden Sie Vorab-Suchregeln, um die eingehende Abfrage zu analysieren und zu bestimmen, welche Präsentationsvorlage verwendet werden soll. Vorsuchregeln werden für jede Abfrage nacheinander ausgeführt. Um die Reihenfolge der Regeln zu ändern, können Sie per Drag & Drop die Regeln verschieben. Die tatsächliche Reihenfolge wird erst nach dem Speichern geändert.
-seo-title: Vorab-Suchregeln
 solution: Target
 title: Vorab-Suchregeln
-topic: Rules,Site search and merchandising
+topic: Regeln, Site-Suche und Merchandising
 uuid: e75f9d9e-e8ca-4184-bf79-b1fdadb5c0fe
 translation-type: tm+mt
-source-git-commit: d07cdc2c88f93eed4cecb0ee8818f7fdea06ee9d
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1709'
+source-wordcount: '1666'
 ht-degree: 1%
 
 ---
@@ -211,7 +209,7 @@ Wenn Sie eine Regel löschen, wird die Reihenfolge, in der die verbleibenden Reg
 
 Sie können die Vorsuchregeln neu anordnen, um die Reihenfolge zu ändern, in der sie in Präsentationsvorlagen ausgeführt werden.
 
-Vorsuchregeln werden in der Reihenfolge ausgeführt, in der sie definiert wurden. Je höher die Ordnungsnummer einer Regel ist, desto später wird sie im Prozess ausgeführt, wodurch frühere Regeln übertroffen werden. Sie können Regeln neu anordnen, indem Sie auf der Seite [!DNL Pre-Search Rules] in die Spalte Reihenfolge der Tabelle eine neue Zahl eingeben. Sie können auch per Drag &amp; Drop Regeln verwenden, um ihre Ausführungsreihenfolge zu ändern.
+Vorsuchregeln werden in der Reihenfolge ausgeführt, in der sie definiert wurden. Je höher die Ordnungsnummer einer Regel ist, desto später wird sie im Prozess ausgeführt, wodurch frühere Regeln übertroffen werden. Sie können Regeln neu anordnen, indem Sie auf der Seite [!DNL Pre-Search Rules] in die Spalte Reihenfolge der Tabelle eine neue Zahl eingeben. Sie können die Ausführungsreihenfolge auch per Drag &amp; Drop ändern.
 
 **So ändern Sie die Reihenfolge, in der Vorsuchregeln ausgeführt werden**
 
