@@ -1,16 +1,14 @@
 ---
 description: Verwenden Sie das Menü "Kontooptionen", um Ihre Kontoeinstellungen zu aktualisieren, Merchandising-Voreinstellungen festzulegen oder Ihr eigenes Search&amp;Promote-Konto zu entfernen.
-seo-description: Verwenden Sie das Menü "Kontooptionen", um Ihre Kontoeinstellungen zu aktualisieren, Merchandising-Voreinstellungen festzulegen oder Ihr eigenes Search&amp;Promote-Konto zu entfernen.
-seo-title: Über das Menü "Kontooptionen"
 solution: Target
 subtopic: Account Options
 title: Über das Menü "Kontooptionen"
-topic: Settings,Site search and merchandising
+topic: Einstellungen, Site-Suche und Merchandising
 uuid: 0f830033-de9e-4197-8d76-906c818662eb
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1684'
+source-wordcount: '1662'
 ht-degree: 2%
 
 ---
@@ -55,7 +53,7 @@ Verwalten Sie Kontoeinstellungen wie den Namen und die Adresse der Website, die 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Überprüfen von Vorlagenverweisen auf GS-Objekte beim Speichern </p> </td> 
-      <td colname="col2"> <p> Überprüft die Existenz von Objekten der geführten Suche, z. B. Menüs, Facets, Breadcrumbs, benutzerdefinierte Vars und Vorlagen, die in <span class="codeph"> &lt;guided-*&gt; </span>-Tags referenziert werden. </p> </td> 
+      <td colname="col2"> <p> Überprüft die Existenz von Guided Search-Objekten wie Menüs, Facets, Breadcrumbs, benutzerdefinierten Vars und Vorlagen, die in <span class="codeph"> &lt;guided-*&gt; </span>-Tags referenziert werden. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Strikte Vorlagensyntaxprüfung </p> </td> 
@@ -105,8 +103,8 @@ Verwalten Sie Merchandising-Voreinstellungen wie den standardmäßigen Rule Buil
     </thead>
     <tbody> 
       <tr> 
-      <td colname="col1"> <p>Dominanz-Schwellenwert für Auslösergruppe </p> </td> 
-      <td colname="col2"> <p> Der Schwellenwert-Prozentsatz, der auf ergebnisbasierte Auslöser angewendet werden soll, die "Konto-Standard verwenden"angeben. </p> <p>Eine Änderung dieser Einstellung kann sofort Auswirkungen auf Live-Suchen haben, daher ist Vorsicht geboten. </p> </td> 
+      <td colname="col1"> <p>Dominanter Schwellenwert für Trigger </p> </td> 
+      <td colname="col2"> <p> Der Schwellenwert-Prozentwert, der auf ergebnisbasierte Trigger angewendet wird, die "Kontostandard verwenden"angeben. </p> <p>Eine Änderung dieser Einstellung kann sofort Auswirkungen auf Live-Suchen haben, daher ist Vorsicht geboten. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Gruppendefinition </p> </td> 
@@ -114,7 +112,7 @@ Verwalten Sie Merchandising-Voreinstellungen wie den standardmäßigen Rule Buil
       </tr> 
       <tr> 
       <td colname="col1"> <p> Feld "Merchandising Dokument ID"(MDI) </p> </td> 
-      <td colname="col2"> <p> Das von Ihnen angegebene Feld muss die Suchergebnisse, die Sie mithilfe von ergebnisbasierten Auslösern und Aktionen mit einem einzigen Ergebnis bearbeiten möchten, "eindeutig kennzeichnen". </p> <p>Die Verwendung des vordefinierten URL-Felds funktioniert in einigen Fällen, wird jedoch nicht empfohlen. Ein benutzerdefiniertes Metadatenfeld mit einer eindeutigen ID für jede Seite (z. B. SKU oder product_id) wäre viel effizienter als das URL-Feld. Wenn Sie "none"angeben, werden ergebnisbasierte Auslöser und Aktionen mit einem einzigen Ergebnis im Regelmanager deaktiviert. Eine Änderung dieser Option gilt nur für Regeln, die in Zukunft gespeichert werden. bestehende Regeln verwenden weiterhin das MDI, mit dem sie ursprünglich gespeichert wurden. </p> </td> 
+      <td colname="col2"> <p> Das von Ihnen angegebene Feld muss die Suchergebnisse, die Sie mithilfe von ergebnisbasierten Triggern und Aktionen mit einem einzigen Ergebnis bearbeiten möchten, "eindeutig kennzeichnen". </p> <p>Die Verwendung des vordefinierten URL-Felds funktioniert in einigen Fällen, wird jedoch nicht empfohlen. Ein benutzerdefiniertes Metadatenfeld mit einer eindeutigen ID für jede Seite (z. B. SKU oder product_id) wäre viel effizienter als das URL-Feld. Wenn Sie "none"angeben, werden ergebnisbasierte Trigger und Aktionen mit einem einzigen Ergebnis im Regelmanager deaktiviert. Eine Änderung dieser Option gilt nur für Regeln, die in Zukunft gespeichert werden. bestehende Regeln verwenden weiterhin das MDI, mit dem sie ursprünglich gespeichert wurden. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Standard-VRB (Visual Rule Builder)-Suchbegriff </p> </td> 
@@ -122,7 +120,7 @@ Verwalten Sie Merchandising-Voreinstellungen wie den standardmäßigen Rule Buil
       </tr> 
       <tr> 
       <td colname="col1"> <p>VRB-Standardsuche </p> </td> 
-      <td colname="col2"> <p>Mit dieser Einstellung können Sie festlegen, welche Standardsuche zunächst in Visual Rule Builder ausgewählt wird. </p> <p> Diese Einstellung ist nur für die Implementierung mit mehreren Suchvorgängen relevant. Mit dem VRB können Sie auswählen, für welche Suche der Auslöser oder die Aktion die definierte Gruppe gilt. </p> </td> 
+      <td colname="col2"> <p>Mit dieser Einstellung können Sie festlegen, welche Standardsuche zunächst in Visual Rule Builder ausgewählt wird. </p> <p> Diese Einstellung ist nur für die Implementierung mit mehreren Suchvorgängen relevant. Mit dem VRB können Sie auswählen, für welche Suche der Trigger oder die Aktion, für die die definierte Gruppe gilt, ausgeführt wird. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>VRB/Simulator-Timeout </p> </td> 
