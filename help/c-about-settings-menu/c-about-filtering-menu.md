@@ -1,16 +1,14 @@
 ---
 description: Verwenden Sie das Menü "Filtern", um Skripten zu verwenden, die den Inhalt eines Web-Dokuments ändern, bevor es indiziert wird.
-seo-description: Verwenden Sie das Menü "Filtern", um Skripten zu verwenden, die den Inhalt eines Web-Dokuments ändern, bevor es indiziert wird.
-seo-title: Über das Menü "Filtern"
 solution: Target
 subtopic: Filtering
 title: Über das Menü "Filtern"
-topic: Settings,Site search and merchandising
+topic: Einstellungen, Site-Suche und Merchandising
 uuid: ebb08fa8-4e17-417d-868b-11fc2af9f284
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '4026'
+source-wordcount: '4008'
 ht-degree: 1%
 
 ---
@@ -26,7 +24,7 @@ Sie können [!DNL Filtering Script] verwenden, um den Inhalt eines Web-Dokuments
 
 Sie können HTML-Tags einfügen, irrelevante Inhalte entfernen und sogar neue HTML-Metadaten erstellen, die auf der URL, dem MIME-Typ und bestehenden Inhalten eines Dokuments basieren. Das Filterskript ist ein Perl-Skript, das eine leistungsstarke Zeichenfolgenbearbeitung und die Flexibilität bei der regelmäßigen Ausdruck-Übereinstimmung bietet. Sie verwenden das Filterskript mit einem Initialisierungsskript, einem Terminierungsskript, einem URL-Masken-Skript und einer Test-URL.
 
-Das Filterskript wird jedes Mal ausgeführt, wenn ein Dokument von Ihrer Website gelesen wird. Das Skript läuft als Standardfilter, d. h. liest Daten aus STDIN, transformiert diese Daten in irgendeiner Weise und schreibt die Ergebnisse in STDOUT. Sie können das Filterskript verwenden, um Statusmeldungen vom Filterskript zum Indexprotokoll zu drucken. Sie drucken die Nachrichten entweder an STDERR oder über die UnterRoutine `_search_debug_log()`.
+Das Filterskript wird jedes Mal ausgeführt, wenn ein Dokument von Ihrer Website gelesen wird. Das Skript läuft als Standardfilter, d. h. liest Daten aus STDIN, transformiert diese Daten in irgendeiner Weise und schreibt die Ergebnisse in STDOUT. Sie können das Filterskript verwenden, um Statusmeldungen vom Filterskript zum Indexprotokoll zu drucken. Sie drucken die Nachrichten entweder an STDERR oder über die `_search_debug_log()` UnterRoutine.
 
 Einige GNU-Diff-Optionen, die Sie im **[!UICONTROL Expert (diff)]**-Modus auf der Seite &quot;Staged Filtering Script&quot;verwenden können, beinhalten Folgendes:
 
@@ -125,7 +123,7 @@ Sie können die folgenden Variablen in jedem Filterskript verwenden:
 
 | Variable | Beschreibung |
 |--- |--- |
-| `$main::search_crawl_type` | Der Wert von `$main::search_crawl_type` gibt den Typ des laufenden Indexvorgangs an.  Veraltetes Formular: `$main::ws_crawl_type` Die Indexvorgänge und die zugehörigen Werte umfassen Folgendes: <ul><li>Vollständiger Index: Manuell - `manual`</li><li>Vollständiger Index: Geplant - `auto`</li><li>Vollständiger Index: Remote Control - `CGI`</li><li>Inkrementeller Index: Manuell - `manual-incremental`</li><li>Inkrementeller Index: Geplant - `auto-incremental` </li><li>Inkrementeller Index: Remote Control - `CGI-incremental`</li><li>Skriptindex: Manuell - `manual-indexlist.txt` </li><li>Skriptindex: Geplant - `auto-indexlist.txt`</li><li>Skriptindex: Remote Control - `CGI-indexlist.txt`</li><li>Regenerieren - `manual-upgrade`</li></ul> |
+| `$main::search_crawl_type` | Der Wert von `$main::search_crawl_type` gibt den Typ des laufenden Indexvorgangs an.  Veraltetes Formular: `$main::ws_crawl_type` Die Indexvorgänge und die zugehörigen Werte umfassen Folgendes: <ul><li>Vollständiger Index: Manuell - `manual`</li><li>Vollständiger Index: Geplant - `auto`</li><li>Vollständiger Index: Remote Control - `CGI`</li><li>Inkrementeller Index: Manuell - `manual-incremental`</li><li>Inkrementeller Index: Geplant - `auto-incremental` </li><li>Inkrementeller Index: Remote Control - `CGI-incremental`</li><li>Skriptindex: Manuell - `manual-indexlist.txt` </li><li>Skriptindex: Geplant - `auto-indexlist.txt`</li><li>Skriptindex: Remote Control - `CGI-indexlist.txt`</li><li>Erneut erzeugen - `manual-upgrade`</li></ul> |
 | `$main::search_clear_cache` | Der Wert gibt an, ob die Indexierungsoption &quot;Index-Cache leeren&quot;für den aktuellen Indexvorgang angefordert wurde. Wenn &quot;Index-Cache leeren&quot;angefordert wurde, lautet der Wert von `$main::search_clear_cache` &quot;`1`&quot;.  Veraltete Form: `$main::ws_clear_cache` |
 | `$main::search_fields` | Der Wert enthält eine tabulatorgetrennte Liste der Metadatenfelder, die im Konto definiert sind. Standardmäßig lautet der Wert:   `url title desc keys target body alt date charset language` Veraltetes Formular: `$main::ws_fields` |
 | `$main::search_collections` | Der Wert enthält eine tabulatorgetrennte Liste der im Konto definierten Sammlungen.  Veraltete Form: `$main::ws_collections` |
