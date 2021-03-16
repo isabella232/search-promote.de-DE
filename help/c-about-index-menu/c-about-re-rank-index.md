@@ -1,16 +1,14 @@
 ---
 description: Mit Re-Rank-Index können Sie die Ranginformationen Ihrer Site aktualisieren, ohne dass Sie Ihre Site neu aufrufen müssen.
-seo-description: Mit Re-Rank-Index können Sie die Ranginformationen Ihrer Site aktualisieren, ohne dass Sie Ihre Site neu aufrufen müssen.
-seo-title: Info zu Index für Neubewertung
 solution: Target
 subtopic: Re-Rank Index
 title: Info zu Index für Neubewertung
-topic: Index,Site search and merchandising
+topic: Index, Site-Suche und Merchandising
 uuid: 5c2a4c12-5e06-4fcc-897c-c12fcc5d7aa8
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '348'
 ht-degree: 1%
 
 ---
