@@ -1,16 +1,14 @@
 ---
 description: Mithilfe von Ranking Rules können Sie die relative Positionierung oder Rangfolge der Suchergebnisse eines Kunden auf Basis von enthaltenen Meta-Tag-Inhalten und zugehörigen Adobe Analytics-Metriken steuern.
-seo-description: Mithilfe von Ranking Rules können Sie die relative Positionierung oder Rangfolge der Suchergebnisse eines Kunden auf Basis von enthaltenen Meta-Tag-Inhalten und zugehörigen Adobe Analytics-Metriken steuern.
-seo-title: Info zu Ranking Rules
 solution: Target
 subtopic: Ranking Rules
 title: Info zu Ranking Rules
-topic: Rules,Site search and merchandising
+topic: Regeln, Site-Suche und Merchandising
 uuid: 21962f9a-1d9c-442f-a6c4-5f452436c640
 translation-type: tm+mt
-source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '4647'
+source-wordcount: '4621'
 ht-degree: 0%
 
 ---
@@ -239,7 +237,7 @@ Siehe [Konfigurieren von Ranking](../c-about-rules-menu/c-about-ranking-rules.md
       </tr> 
       <tr> 
       <td colname="col1"> <p>Gewichtungen/Bedingungen </p> </td> 
-      <td colname="col2"> <p>Enthält entweder eine einfache Gewichtung mit einer einzelnen Regel oder eine paarweise Liste von Regeln, Gewichtungen und Testbedingungen. </p> <p>Eine Regelnummer ist ein Gewichtung von 1 bis 10, der angibt, wie wichtig diese Rangregel im Verhältnis zu den anderen Rangregeln für die Bestimmung des Gesamtrangs eines Dokuments ist. Eine höhere Gewichtung von Regeln weist auf eine höhere Wichtigkeit hin. Bei einer Gewichtung von null (0) wird die Regel ignoriert. </p> <p>Wählen Sie <span class="uicontrol"> Benutzerdefiniert </span> aus der Dropdown-Liste aus, um die Gewichtung der Regel für verschiedene Seiten anzupassen, indem Sie eine Liste von Paaren für Gewichtungen-/Testbedingungen definieren. Testbedingungen sind Fragmente von Perl, die zum Testen von Datenquellenwerten verwendet werden, oder globale Ansichten, die in Ihrem benutzerdefinierten Filterskript definiert sind (z. B. Preis, Marke, Jahreszeit oder Seitenvariablen, wie im folgenden Beispiel). Wenn eine Testbedingung den Wert "true"ergibt, wird der zugehörige Regelwert auf die Gewichtung angewendet. Wenn eine Testbedingung "false"ergibt, wird die nächste Bedingung in der Liste ausgewertet. <code> 0&nbsp;({price}&nbsp;&gt;&nbsp;50.00)&nbsp;&amp;&amp;&nbsp;({brand}=~/Kuhl/)5&nbsp;{season}&nbsp;=~&nbsp;/Fall/10&nbsp;{pageviews}&nbsp;&gt;&nbsp;1000005 </code>Im oben gezeigten Beispiel für eine benutzerspezifische Gewichtung/Bedingung wird die Gewichtung 0 der Regel angewendet, wenn die erste Testbedingung "true"ergibt. Das heißt, der Preis enthält einen Wert über 50 und die Marke enthält "Kuhl"). Wenn die erste Testbedingung "false"ergibt, wird die nächste Bedingung ausgewertet. Wenn keine der vorherigen Bedingungen erfüllt ist, wird die Regel Gewichtung 5 zugewiesen. </p> <p>Sie sollten am Ende der Liste immer eine Gewichtung ohne Bedingung bereitstellen. Wenn Sie dies nicht tun, erhält die Regel die Gewichtung 0, wenn keiner der Bedingungstests "true"ergibt. </p> </td> 
+      <td colname="col2"> <p>Enthält entweder eine einfache Gewichtung mit einer einzelnen Regel oder eine paarweise Liste von Regeln, Gewichtungen und Testbedingungen. </p> <p>Eine Regelnummer ist ein Gewichtung von 1 bis 10, der angibt, wie wichtig diese Rangregel im Verhältnis zu den anderen Rangregeln für die Bestimmung des Gesamtrangs eines Dokuments ist. Eine höhere Gewichtung von Regeln weist auf eine höhere Wichtigkeit hin. Bei einer Gewichtung von null (0) wird die Regel ignoriert. </p> <p>Wählen Sie <span class="uicontrol"> Benutzerdefiniert </span> aus der Dropdown-Liste aus, um die Gewichtung der Regel für verschiedene Seiten anzupassen, indem Sie eine Liste der Paare für Gewichtungen-/Testbedingungen definieren. Testbedingungen sind Fragmente von Perl, die zum Testen von Datenquellenwerten verwendet werden, oder globale Ansichten, die in Ihrem benutzerdefinierten Filterskript definiert sind (z. B. Preis, Marke, Jahreszeit oder Seitenvariablen, wie im folgenden Beispiel). Wenn eine Testbedingung den Wert "true"ergibt, wird der zugehörige Regelwert auf die Gewichtung angewendet. Wenn eine Testbedingung "false"ergibt, wird die nächste Bedingung in der Liste ausgewertet. <code> 0&nbsp;({price}&nbsp;&gt;&nbsp;50.00)&nbsp;&amp;&amp;&nbsp;({brand}=~/Kuhl/)5&nbsp;{season}&nbsp;=~&nbsp;/Fall/10&nbsp;{pageviews}&nbsp;&gt;&nbsp;1000005 </code>Im oben gezeigten Beispiel für eine benutzerspezifische Gewichtung/Bedingung wird die Gewichtung 0 der Regel angewendet, wenn die erste Testbedingung "true"ergibt. Das heißt, der Preis enthält einen Wert über 50 und die Marke enthält "Kuhl"). Wenn die erste Testbedingung "false"ergibt, wird die nächste Bedingung ausgewertet. Wenn keine der vorherigen Bedingungen erfüllt ist, wird die Regel Gewichtung 5 zugewiesen. </p> <p>Sie sollten am Ende der Liste immer eine Gewichtung ohne Bedingung bereitstellen. Wenn Sie dies nicht tun, erhält die Regel die Gewichtung 0, wenn keiner der Bedingungstests "true"ergibt. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Werte/Ränge </p> </td> 
