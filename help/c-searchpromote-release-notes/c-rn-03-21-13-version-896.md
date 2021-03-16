@@ -1,16 +1,14 @@
 ---
-description: 'null '
-seo-description: 'null '
-seo-title: Search&amp;Promote 8.9.6 Versionshinweise (21.03.2013)
+description: Search&amp;Promote 8.9.6 Versionshinweise.
 solution: Target
 title: Search&amp;Promote 8.9.6 Versionshinweise (21.03.2013)
-topic: Release Notes,Site search and merchandising
+topic: Versionshinweise, Site-Suche und Merchandising
 uuid: f0f32eba-35c1-4666-a0b8-ec8adc4a832f
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '65'
-ht-degree: 20%
+source-wordcount: '69'
+ht-degree: 15%
 
 ---
 
