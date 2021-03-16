@@ -1,15 +1,13 @@
 ---
 description: Sie können Banner verwenden, um die Banneranzeigen auf Ihrer Website zu verwalten.
-seo-description: Sie können Banner verwenden, um die Banneranzeigen auf Ihrer Website zu verwalten.
-seo-title: Über Banner
 solution: Target
 title: Über Banner
-topic: Design,Site search and merchandising
+topic: Design, Site-Suche und Merchandising
 uuid: 653b567d-5cf3-41a0-a260-a6912d0fd20d
 translation-type: tm+mt
-source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '4810'
+source-wordcount: '4801'
 ht-degree: 1%
 
 ---
@@ -51,7 +49,7 @@ Siehe [Vorlagen für Veröffentlichungen](https://help.adobe.com/en_US/scene7/us
 
 Eine Vorlage kann eine beliebige Anzahl von Bildebenen und Textebenen enthalten. Sie können eine statische Datei, die Ebenen enthält, z. B. eine PSD-Datei mit Ebenen, in eine Vorlage konvertieren oder in Dynamic Media Classic Vorlagen erstellen. Sie können Textebenen in Vorlagen mit Schriftarten erstellen, die Sie in das Scene7 Publishing System hochgeladen haben. Nachdem Sie einer Vorlage Text hinzugefügt haben, können Sie ihn formatieren, indem Sie Ausrichtung, Schriftart, Schriftgröße und Farbe ändern.
 
-Im Anzeigebereich &quot;Parameter&quot;von Dynamic Media Classic können Sie beliebige Aspekte einer Vorlage in einen adressierbaren Parameter konvertieren. Auf diese Weise können Sie ändern, welches Bild mit Ebenen verwendet werden soll oder welcher Textwert in der Vorlage verwendet werden soll. Parameter werden mit der URL-Zeichenfolge übergeben, sodass Sie alle Parameter ändern können, um das vom Image-Server generierte Antwortbild dynamisch anzupassen.
+Im Anzeigebereich &quot;Parameter&quot;von Dynamic Media Classic können Sie beliebige Aspekte einer Vorlage in einen adressierbaren Parameter konvertieren. Auf diese Weise können Sie ändern, welches Bild mit Ebenen verwendet werden soll oder welcher Textwert in der Vorlage verwendet werden soll. Parameter werden mit der URL-Zeichenfolge übergeben, sodass Sie jeden Parameter ändern können, um das vom Image-Server generierte Antwortbild dynamisch anzupassen.
 
 Erfahren Sie mehr darüber, wie Sie mit Dynamic Media Classic Vorlagen erstellen und die Eigenschaften auf den Ebenen parametrisieren können, damit Sie sie in Bannern verwenden können.
 
