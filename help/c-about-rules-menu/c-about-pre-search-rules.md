@@ -2,7 +2,7 @@
 description: Verwenden Sie Vorab-Suchregeln, um die eingehende Abfrage zu analysieren und zu bestimmen, welche Präsentationsvorlage verwendet werden soll. Vorsuchregeln werden für jede Abfrage nacheinander ausgeführt. Um die Reihenfolge der Regeln zu ändern, können Sie per Drag & Drop die Regeln verschieben. Die tatsächliche Reihenfolge wird erst nach dem Speichern geändert.
 solution: Target
 title: Vorab-Suchregeln
-topic: Regeln, Site-Suche und Merchandising
+topic: Rules,Site search and merchandising
 uuid: e75f9d9e-e8ca-4184-bf79-b1fdadb5c0fe
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

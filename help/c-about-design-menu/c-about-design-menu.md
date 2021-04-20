@@ -2,7 +2,7 @@
 description: Verwenden Sie das Menü "Design", um die Präsentation für Ihre Suchergebnisseite zu erstellen.
 solution: Target
 title: Entwerfen der Suchergebnisseite
-topic: Design, Site-Suche und Merchandising
+topic: Design,Site search and merchandising
 uuid: 61cb3ead-705e-45b7-a365-2c694d160d0a
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

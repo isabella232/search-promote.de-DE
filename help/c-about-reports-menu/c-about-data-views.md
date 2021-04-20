@@ -2,7 +2,7 @@
 description: Die Ansichten der Daten zeigen die Suchergebnisse mit den Metadatenfeldern an. Jede Spalte ist ein Metadatenfeld und jede Zeile wird aus einer Abfrage der Suche generiert. Passen Sie die Ansichten an, indem Sie Spalten auswählen und neu anordnen. Data Ansichten können auch benutzerdefinierte Titel und Beschreibungen haben.
 solution: Target
 title: Info zu Ansichten
-topic: Berichte, Site-Suche und Merchandising
+topic: Reports,Site search and merchandising
 uuid: 18930551-960d-40c2-b5b7-0807a2e11134
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

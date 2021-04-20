@@ -3,7 +3,7 @@ description: Verwenden Sie das Menü "Filtern", um Skripten zu verwenden, die de
 solution: Target
 subtopic: Filtering
 title: Über das Menü "Filtern"
-topic: Einstellungen, Site-Suche und Merchandising
+topic: Settings,Site search and merchandising
 uuid: ebb08fa8-4e17-417d-868b-11fc2af9f284
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

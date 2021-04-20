@@ -2,7 +2,7 @@
 description: Sie können Vorlagen verwenden, um Ihre Präsentationsvorlagen und Transportvorlagen zu verwalten.
 solution: Target
 title: Vorlagen
-topic: Design, Site-Suche und Merchandising
+topic: Design,Site search and merchandising
 uuid: f5805d3e-43bf-4e13-95df-b6bd6b762d11
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

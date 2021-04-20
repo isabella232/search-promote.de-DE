@@ -2,7 +2,7 @@
 description: Search&amp;Promote 8.9.1 Versionshinweise.
 solution: Target
 title: Search&amp;Promote 8.9.1 - Versionshinweise (16.08.2012)
-topic: Versionshinweise, Site-Suche und Merchandising
+topic: Release Notes,Site search and merchandising
 uuid: 6f3284ed-660f-477f-a863-b961b185eaf3
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

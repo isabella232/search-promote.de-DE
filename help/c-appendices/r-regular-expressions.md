@@ -2,7 +2,7 @@
 description: Ein Auffrischungsbericht zur Syntax und den Regeln für das Erstellen von regulären Ausdrücken.
 solution: Target
 title: Reguläre Ausdrücke
-topic: Anlagen, Site-Suche und Merchandising
+topic: Appendices,Site search and merchandising
 uuid: 369b54f6-372a-41de-bb5d-3ae0bd640199
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

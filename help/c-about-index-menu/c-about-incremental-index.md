@@ -3,7 +3,7 @@ description: Sie können Inkrementellen Index verwenden, um "Teile"Ihrer Live- o
 solution: Target
 subtopic: Incremental Index
 title: Info zu Inkrementalindex
-topic: Index, Site-Suche und Merchandising
+topic: Index,Site search and merchandising
 uuid: b1ee9b08-dcbe-4ffe-b0b4-d379daaac9b5
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

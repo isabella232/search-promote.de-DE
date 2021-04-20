@@ -2,7 +2,7 @@
 description: Mit Staging können Sie Änderungen an Ihren Einstellungen und Konfigurationen testen und Vorschauen durchführen, ohne dass sich dies auf Ihren Liveindex auswirkt.
 solution: Target
 title: Staging
-topic: Staging, Site-Suche und Merchandising
+topic: Staging,Site search and merchandising
 uuid: 2e5889a6-2e9c-4ac7-9d6e-d35e7cafda5b
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

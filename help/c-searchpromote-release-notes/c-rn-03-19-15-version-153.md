@@ -2,7 +2,7 @@
 description: Search&amp;Promote 15.3.1 Versionshinweise.
 solution: Target
 title: Search&amp;Promote 15.3.1 Versionshinweise (24.03.2015)
-topic: Versionshinweise, Site-Suche und Merchandising
+topic: Release Notes,Site search and merchandising
 uuid: f02da5a4-2207-4603-aa05-5cff7be16dd5
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

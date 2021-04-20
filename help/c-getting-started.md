@@ -2,7 +2,7 @@
 description: Wenn Sie neu bei der Search&Promote- und dynamischen Navigation sind, Beginn hier, um sich mit Ihrem Konto zu starten. Unter anderem erfahren Sie, wie Sie Ihre Website indizieren und das Erscheinungsbild Ihrer Suchergebnisse anpassen.
 solution: Target
 title: Erste Schritte
-topic: Erste Schritte, Site-Suche und Merchandising
+topic: Getting Started,Site search and merchandising
 uuid: 816ad003-15c9-4e44-b09d-cab284518634
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

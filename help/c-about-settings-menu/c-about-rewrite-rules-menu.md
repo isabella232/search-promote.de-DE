@@ -3,7 +3,7 @@ description: Verwenden Sie das Menü Regeln umschreiben, um Crawl- und Such-URL-
 solution: Target
 subtopic: Rewrite Rules
 title: Menü "Regeln neu schreiben"
-topic: Einstellungen, Site-Suche und Merchandising
+topic: Settings,Site search and merchandising
 uuid: 77ee84dd-fdba-4d34-ae8e-2fe786599800
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

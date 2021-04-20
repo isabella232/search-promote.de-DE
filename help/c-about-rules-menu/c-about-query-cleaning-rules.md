@@ -2,7 +2,7 @@
 description: Verwenden Sie die Abfrage-Bereinigungsregeln, um die eingehende Abfrage zu analysieren und zu ändern.
 solution: Target
 title: Grundlagen zu Abfragen-Bereinigungsregeln
-topic: Regeln, Site-Suche und Merchandising
+topic: Rules,Site search and merchandising
 uuid: 683af81f-f7c0-45f8-9212-e5e7cb82ccca
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

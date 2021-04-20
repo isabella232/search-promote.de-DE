@@ -2,7 +2,7 @@
 description: Mit Ausgeschlossenen Wörtern können Sie häufig verwendete Ausdrücke und häufig verwendete Wörter wie "a"und "the"angeben, die Sie aus den Suchergebnissen auslassen möchten.
 solution: Target
 title: Info zu ausgeschlossenen Wörtern
-topic: Linguistik, Site-Suche und Merchandising
+topic: Linguistics,Site search and merchandising
 uuid: 1c879462-1b19-44f6-a3b2-20aa786b3221
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

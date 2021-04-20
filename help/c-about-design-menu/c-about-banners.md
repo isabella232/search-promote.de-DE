@@ -2,7 +2,7 @@
 description: Sie können Banner verwenden, um die Banneranzeigen auf Ihrer Website zu verwalten.
 solution: Target
 title: Über Banner
-topic: Design, Site-Suche und Merchandising
+topic: Design,Site search and merchandising
 uuid: 653b567d-5cf3-41a0-a260-a6912d0fd20d
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

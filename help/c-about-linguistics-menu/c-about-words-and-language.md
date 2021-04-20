@@ -2,7 +2,7 @@
 description: Sie können mithilfe von Wörtern und Sprache bestimmen, wie Suchbegriffe mit dem Inhalt Ihrer Webseiten übereinstimmen.
 solution: Target
 title: Wörter und Sprache
-topic: Linguistik, Site-Suche und Merchandising
+topic: Linguistics,Site search and merchandising
 uuid: 793d7a40-4609-44b8-a170-536eb1434537
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

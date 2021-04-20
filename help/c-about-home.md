@@ -2,7 +2,7 @@
 description: Mit der Option "Home"können Sie eine Reihe von Bericht-Widgets Ansicht, die Ihnen einen schnellen Überblick über Ihr Search&amp;Promote-Konto verschaffen.
 solution: Target
 title: Info
-topic: Home, Site-Suche und Merchandising
+topic: Home,Site search and merchandising
 uuid: 5d4dbf5e-954d-46ae-a822-18a58af60de6
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

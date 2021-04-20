@@ -2,7 +2,7 @@
 description: Sie können die Datumsformate definieren, die beim Analysieren und Indizieren von Feldern mit dem Datentyp "Datum"verwendet werden.
 solution: Target
 title: Datumsformate
-topic: Anlagen, Site-Suche und Merchandising
+topic: Appendices,Site search and merchandising
 uuid: 148914b5-33ef-41db-8404-67c03f6f0832
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

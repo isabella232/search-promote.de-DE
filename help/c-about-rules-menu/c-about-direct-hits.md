@@ -2,7 +2,7 @@
 description: Mit direkten Treffern können Sie einen Kunden zu einer angegebenen URL umleiten, wenn der Kunde nach einem übereinstimmenden Begriff sucht. Mit dieser Funktion können Sie die Navigation der Suche auf Ihrer Website verbessern.
 solution: Target
 title: Info zu direkten Treffern
-topic: Regeln, Site-Suche und Merchandising
+topic: Rules,Site search and merchandising
 uuid: 374d63c8-2b82-4165-b543-05b587757baa
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

@@ -2,7 +2,7 @@
 description: Erfahren Sie, wie Sie die Ausgabe in einem beliebigen textbasierten Format, einschließlich XML oder JSON, anpassen.
 solution: Target
 title: Ausgabe der geführten Suche
-topic: Anlagen, Site-Suche und Merchandising
+topic: Appendices,Site search and merchandising
 uuid: 234fd563-f249-42b0-88ca-c89b44f8df77
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

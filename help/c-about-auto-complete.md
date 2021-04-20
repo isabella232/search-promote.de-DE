@@ -3,7 +3,7 @@ description: Sie können verschiedene Bereiche von "Autom. ausfüllen"konfigurie
 solution: Target
 subtopic: Auto-Complete
 title: Info zur automatischen Vervollständigung
-topic: Design, Site-Suche und Merchandising
+topic: Design,Site search and merchandising
 uuid: 3dfdd14d-2044-4f01-a5bc-fcb2eb0d5068
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

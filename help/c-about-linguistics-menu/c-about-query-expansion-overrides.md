@@ -2,7 +2,7 @@
 description: Sie können die Erweiterung der Suchergebnisse für die Abfrage überschreiben.
 solution: Target
 title: Außerkraftsetzungen der Abfrage-Erweiterung
-topic: Linguistik, Site-Suche und Merchandising
+topic: Linguistics,Site search and merchandising
 uuid: dfe18004-b8fd-4889-b01c-72a3b0c82b9c
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

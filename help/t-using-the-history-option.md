@@ -2,7 +2,7 @@
 description: Sie können den Verlauf verwenden, um eine Liste aller Änderungen zu überprüfen, die an einer implementierten Funktion vorgenommen wurden, z. B. einer Facette, einem Breadcrumb, einem Banner oder einer Vorlage, um einige zu nennen.
 solution: Target
 title: Verwenden der Option "Verlauf"
-topic: Verwenden von Verlauf, Site-Suche und Merchandising
+topic: Using History,Site search and merchandising
 uuid: 48b9ee9d-cd61-41e7-b8c3-5f1665b9a9cb
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

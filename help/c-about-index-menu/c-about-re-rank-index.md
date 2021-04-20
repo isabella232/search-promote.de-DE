@@ -3,7 +3,7 @@ description: Mit Re-Rank-Index können Sie die Ranginformationen Ihrer Site aktu
 solution: Target
 subtopic: Re-Rank Index
 title: Info zu Index für Neubewertung
-topic: Index, Site-Suche und Merchandising
+topic: Index,Site search and merchandising
 uuid: 5c2a4c12-5e06-4fcc-897c-c12fcc5d7aa8
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

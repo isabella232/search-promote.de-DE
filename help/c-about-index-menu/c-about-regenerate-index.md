@@ -3,7 +3,7 @@ description: Mit Regenerate Index können Sie den Index Ihrer Website aktualisie
 solution: Target
 subtopic: Regenerate Index
 title: Info zum Regenerationsindex
-topic: Index, Site-Suche und Merchandising
+topic: Index,Site search and merchandising
 uuid: 9d1f1d88-0453-4422-a625-a348febbf224
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

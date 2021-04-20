@@ -2,7 +2,7 @@
 description: Search&amp;Promote 8.15.0 Versionshinweise.
 solution: Target
 title: Search&amp;Promote 8.15.0 Versionshinweise (19.06.2014)
-topic: Versionshinweise, Site-Suche und Merchandising
+topic: Release Notes,Site search and merchandising
 uuid: bb250450-48b4-4563-84b9-66f2c3dc063a
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

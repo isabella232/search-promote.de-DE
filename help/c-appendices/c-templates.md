@@ -2,7 +2,7 @@
 description: Erfahren Sie mehr über die Verwendung von Präsentations- und Vorlagen-Tags in Search&amp;Promote.
 solution: Target
 title: Vorlagen
-topic: Anlagen, Site-Suche und Merchandising
+topic: Appendices,Site search and merchandising
 uuid: 78299032-dc23-4dfe-b68f-cd57b2b6d7d8
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

@@ -2,7 +2,7 @@
 description: Sie können allgemeine Wortgruppen definieren, die auf Ihrer Website verwendet werden, damit ein Kunde bei der Eingabe einer Suchbegriffs-Abfrage keine Anführungszeichen zu den von Ihnen definierten Wortgruppen eingeben muss.
 solution: Target
 title: Allgemeine Wortgruppen
-topic: Linguistik, Site-Suche und Merchandising
+topic: Linguistics,Site search and merchandising
 uuid: 0f980a22-d826-4476-97de-0e9c14549bc8
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

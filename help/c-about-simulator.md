@@ -2,7 +2,7 @@
 description: Verwenden Sie Simulator, um zu sehen, wie Ihre Suche aussehen würde, wenn Sie alles, was derzeit inszeniert ist, live übertragen würden.
 solution: Target
 title: Info zum Simulator
-topic: Simulator, Site-Suche und Merchandising
+topic: Simulator,Site search and merchandising
 uuid: 7ec8f5b9-3ab3-4b9a-bf8a-65d0ca1dfddb
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

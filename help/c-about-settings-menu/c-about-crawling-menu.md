@@ -3,7 +3,7 @@ description: Verwenden Sie das Menü "Crawling"(Crawling-Menü) mit Datums- und 
 solution: Target
 subtopic: Crawling
 title: Menü "Crawling"
-topic: Einstellungen, Site-Suche und Merchandising
+topic: Settings,Site search and merchandising
 uuid: a58c03bf-90f7-4b5b-91ff-988b95c246b0
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

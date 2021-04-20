@@ -2,7 +2,7 @@
 description: Verwenden Sie im Produktmenü Konten, um ein Konto auszuwählen, auf das Sie zugreifen und es verwenden möchten.
 solution: Target
 title: Das Menü "Konten"
-topic: Einstellungen, Site-Suche und Merchandising
+topic: Settings,Site search and merchandising
 uuid: 7cfc1b68-5126-484a-8a1d-54995a8fd19b
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
