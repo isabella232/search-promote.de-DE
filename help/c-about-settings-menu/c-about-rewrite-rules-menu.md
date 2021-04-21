@@ -3,16 +3,16 @@ description: Verwenden Sie das Menü Regeln umschreiben, um Crawl- und Such-URL-
 solution: Target
 subtopic: Rewrite Rules
 title: Menü "Regeln neu schreiben"
-topic: Settings,Site search and merchandising
+topic-legacy: Settings,Site search and merchandising
 uuid: 77ee84dd-fdba-4d34-ae8e-2fe786599800
+exl-id: cff17ead-6997-4ff6-a995-7ca020b06d50
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '10202'
+source-wordcount: '10197'
 ht-degree: 0%
 
 ---
-
 
 # Über das Menü Regeln neu schreiben {#about-the-rewrite-rules-menu}
 
@@ -1123,7 +1123,7 @@ RewriteRule
 
 Wenn ein Titel gefunden wird, versucht Site-Suche/Merchandising, ihn dem Muster jeder Crawl-Regel zuzuordnen. Wenn das Muster übereinstimmt, sucht die Rewrite-Engine nach entsprechenden RewriteCond-Anweisungen. Wenn keine Bedingungen vorhanden sind, wird der Titel durch einen neuen Wert ersetzt, der aus der Ersetzungszeichenfolge erstellt wurde, und mit der nächsten Regel im Regelsatz fortgesetzt. Wenn Bedingungen vorhanden sind, werden sie in der Reihenfolge verarbeitet, in der sie aufgelistet sind. Die rewrite-Engine versucht, ein Bedingungsmuster (CondPattern) mit einer Testzeichenfolge (TestString) abzugleichen. Wenn beide übereinstimmen, wird die nächste Bedingung verarbeitet, bis keine weiteren Bedingungen verfügbar sind. Wenn alle Bedingungen übereinstimmen, wird die URL durch die in der Regel angegebene Substitution ersetzt. Wenn die Bedingung nicht erfüllt ist, schlagen die vollständigen Bedingungen und die entsprechende Regel fehl.
 
-## RewriteRule-Direktive {#section_3BF2B0FF89F74A26AE79D68FA3184B9B}
+## RewriteRule Directive {#section_3BF2B0FF89F74A26AE79D68FA3184B9B}
 
 Jede RewriteRule-Direktive definiert eine Rewrite-Regel. Regeln werden in der Reihenfolge angewendet, in der sie aufgeführt sind. Eine Regel zum Umschreiben nimmt die folgende Form an:
 
@@ -1333,4 +1333,3 @@ t_adding_search_title_rules.xml
    * Klicken **[!UICONTROL Push Live]**.
 
       Siehe [Pushing stage settings live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
-
