@@ -2,16 +2,16 @@
 description: Search&amp;Promote 8.15.0 Versionshinweise.
 solution: Target
 title: Search&amp;Promote 8.15.0 Versionshinweise (19.06.2014)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: bb250450-48b4-4563-84b9-66f2c3dc063a
+exl-id: 57476f25-903c-4452-a3e9-adffd229ba5e
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 54%
+source-wordcount: '106'
+ht-degree: 57%
 
 ---
-
 
 # Search&amp;Promote 8.15.0 Versionshinweise (19.06.2014){#search-promote-release-notes}
 
@@ -27,4 +27,3 @@ ht-degree: 54%
 * Der Attribute-Lader gab einen 404-Fehler zurück.
 * Wenn SPIN versuchte, eine zu große Vorlage zu generieren, wurde einer Warnhinweis angezeigt.
 * Es wurden Aktualisierungen an der chinesischen, koreanischen und japanischen morphologischen Analyse vorgenommen.
-
