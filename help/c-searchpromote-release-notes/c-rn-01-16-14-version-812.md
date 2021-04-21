@@ -2,16 +2,16 @@
 description: Search&amp;Promote 8.12.0 Versionshinweise.
 solution: Target
 title: Search&amp;Promote 8.12.0 Versionshinweise (16.01.2014)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: 4db10eb4-11bf-4483-a7f2-87981d9c7a50
+exl-id: 8ea76d7e-6675-4ba3-8f93-1895476f7017
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 72%
+source-wordcount: '251'
+ht-degree: 74%
 
 ---
-
 
 # Search&amp;Promote 8.12.0 Versionshinweise (16.01.2014){#search-promote-release-notes}
 
@@ -66,4 +66,3 @@ ht-degree: 72%
 * Änderungen an Ein- und Ausschlusslisten anhand der automatischen Vervollständigung wurden nicht im Verlauf gespeichert und konnten daher nicht rückgängig gemacht werden.
 
    Siehe [Info zum automatischen Ausfüllen](../c-about-auto-complete.md#concept_093A9CD754864BA79B456FE4BEB64578).
-
