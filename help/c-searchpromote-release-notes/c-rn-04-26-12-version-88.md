@@ -2,16 +2,16 @@
 description: Search&amp;Promote 8.8 Versionshinweise.
 solution: Target
 title: Search&amp;Promote 8.8 Versionshinweise (26.04.2012)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: ddb9f1af-92a4-4f85-be8f-a36f34d31add
+exl-id: 3bd9b6af-99a2-4631-b7a7-0a792122c157
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 68%
+source-wordcount: '322'
+ht-degree: 70%
 
 ---
-
 
 # Search&amp;Promote 8.8 Versionshinweise (26.04.2012){#search-promote-release-notes}
 
@@ -46,4 +46,3 @@ ht-degree: 68%
 * Es können nun kürzere Geschäftsregelbeschreibungen genutzt werden (z. B., dass field_table nicht im Manager angezeigt wird).
 * Das Navigationsmenü zur Geführten Suche umfasste maximal neun Elemente. Jetzt liegt die Obergrenze bei 20.
 * An Index Connector wurden Leistungsverbesserungen vorgenommen.
-
