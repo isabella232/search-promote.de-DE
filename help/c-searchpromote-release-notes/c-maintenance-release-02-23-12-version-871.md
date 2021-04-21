@@ -2,16 +2,16 @@
 description: Search&amp;Promote 8.7.1 Versionshinweise.
 solution: Target
 title: Search&amp;Promote 8.7.1 Versionshinweise (23.02.2012)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: 3fabf7b2-4a27-4f0a-862a-52f701a0631d
+exl-id: b10f0081-ed69-4c6b-86c9-816326b647f0
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 32%
+source-wordcount: '173'
+ht-degree: 33%
 
 ---
-
 
 # Search&amp;Promote 8.7.1 Versionshinweise (23.02.2012){#search-promote-release-notes}
 
@@ -38,4 +38,3 @@ Verbesserung der Suchgeschwindigkeit durch die neue Möglichkeit zum Zwischenspe
 * Beibehalten von Zeitstempeln, damit Vorlagen-Caches nicht ungültig werden.
 * Einige Felder mit Änderungsparametern wurden abgeschnitten, wenn die Bildlaufleiste im Dialogfeld &quot;Dynamic Media Classic-Banner&quot;angezeigt wurde.
 * Alle Änderungen an Geschäftsregeln, die Sie an den Bannerparametern von Dynamic Media Classic vorgenommen haben, funktionierten im Staging-Bereich, traten aber nicht bei der Live-Übertragung in Kraft.
-
