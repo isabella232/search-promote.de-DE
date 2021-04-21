@@ -3,16 +3,16 @@ description: Verwenden Sie das Adobe Analytics-Menü, um die Authentifizierung v
 solution: Target
 subtopic: Adobe Analytics
 title: Das Menü "Adobe Analytics"
-topic: Settings,Site search and merchandising
+topic-legacy: Settings,Site search and merchandising
 uuid: 5536edf1-d3a4-47af-a307-6e46f385f738
+exl-id: e1f7b8f0-45d4-457a-a9d3-a8cb4b785059
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '3412'
+source-wordcount: '3407'
 ht-degree: 1%
 
 ---
-
 
 # Info zum Adobe Analytics-Menü{#about-the-adobe-analytics-menu}
 
@@ -132,7 +132,7 @@ Siehe [Erweiterte Adobe Analytics-Optionen konfigurieren](../c-about-settings-me
       </tr> 
       <tr> 
       <td colname="col1"> <p>Suchbegriffbericht </p> </td> 
-      <td colname="col2"> <p>Ermöglicht Ihnen Zugriff auf die Erstellung von Geschäftsregeln und die Simulation von Suchbegriffen auf der Vorschau <b>Adobe Analytics Data Data </b> der Stufe. </p> <p>Siehe <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_735CDCC1D8174B7B9F5B8E0AFA5F0CA0" type="task" format="dita" scope="local">Anzeigen einer Vorschau von Adobe Analytics-Daten</a>. </p> <p>Auf jeder Zeile mit zwei Optionen wird ein Pulldown-Menü angezeigt: <b>Suchbegriff simulieren</b> und <b>Neue Geschäftsregel erstellen</b>. </p> <p>Beide Optionen verwenden Daten aus dem Berichtstyp als Suchbegriffe. Daher ist diese Funktion nur sinnvoll, wenn der Berichtstyp Suchbegriffe darstellt. </p> </td> 
+      <td colname="col2"> <p>Ermöglicht Ihnen den Zugriff auf die Erstellung von Geschäftsregeln und die Simulation von Suchbegriffen auf der Vorschau <b>Adobe Analytics-Daten der Stufe</b>. </p> <p>Siehe <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_735CDCC1D8174B7B9F5B8E0AFA5F0CA0" type="task" format="dita" scope="local">Anzeigen einer Vorschau von Adobe Analytics-Daten</a>. </p> <p>Auf jeder Zeile mit zwei Optionen wird ein Pulldown-Menü angezeigt: <b>Suchbegriff simulieren</b> und <b>Neue Geschäftsregel erstellen</b>. </p> <p>Beide Optionen verwenden Daten aus dem Berichtstyp als Suchbegriffe. Daher ist diese Funktion nur sinnvoll, wenn der Berichtstyp Suchbegriffe darstellt. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Metriken </p> </td> 
