@@ -2,16 +2,16 @@
 description: Sie können allgemeine Wortgruppen definieren, die auf Ihrer Website verwendet werden, damit ein Kunde bei der Eingabe einer Suchbegriffs-Abfrage keine Anführungszeichen zu den von Ihnen definierten Wortgruppen eingeben muss.
 solution: Target
 title: Allgemeine Wortgruppen
-topic: Linguistics,Site search and merchandising
+topic-legacy: Linguistics,Site search and merchandising
 uuid: 0f980a22-d826-4476-97de-0e9c14549bc8
+exl-id: 72305fcd-8f9a-4ce2-b416-aa1b58486312
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1178'
 ht-degree: 1%
 
 ---
-
 
 # Allgemeine Phrasen{#about-common-phrases}
 
@@ -211,4 +211,3 @@ Siehe [Verwenden der Option Verlauf](../t-using-the-history-option.md#task_70DD3
    * Klicken **[!UICONTROL Push Live]**.
 
       Siehe [Pushing stage settings live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
-
