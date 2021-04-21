@@ -3,16 +3,16 @@ description: Verwenden Sie das Menü "Suchen", um ausgeschlossene Wörter, Samml
 solution: Target
 subtopic: Searching
 title: Das Menü "Suchen"
-topic: Settings,Site search and merchandising
+topic-legacy: Settings,Site search and merchandising
 uuid: 072111fc-a32b-4acb-8337-cb21bcdb5542
+exl-id: 4cb70240-051b-4bf3-ae2a-b151acc7cba1
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '11170'
+source-wordcount: '11165'
 ht-degree: 1%
 
 ---
-
 
 # Über das Suchmenü{#about-the-searching-menu}
 
@@ -1157,7 +1157,7 @@ t_creating_a_feed.xml
         </ul> <p>Generische Feeds benötigen einen speziellen CGI-Parameter, der angegeben wird. Um die mit diesem Feed verknüpfte spezielle Vorlage zu binden, definieren Sie den Parameter <span class="codeph"> sp_t </span>. Legen Sie den Wert von <span class="codeph"> sp_t </span> auf den Namen der Transportvorlagendatei fest. Wenn Sie beispielsweise eine Transportvorlagendatei mit dem Namen <span class="codeph"> super_feed.tpl </span> hinzugefügt haben, erstellen Sie einen benutzerdefinierten CGI-Suchparameter als <span class="codeph"> sp_t=super_feed </span>. Das Textfeld für die Eingabe von <span class="codeph"> sp_t </span> wird erst angezeigt, wenn Sie <span class="uicontrol"> Free Form </span> aus der Dropdown-Liste <span class="wintitle"> Meta Field </span> auswählen. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>3 </p> </td> 
+      <td colname="col1"> <p>1 </p> </td> 
       <td colname="col2"> <p>Dateiübermittlung </p> </td> 
       <td colname="col3"> <p>Hiermit können Sie den Zeitplan für das Senden der Feed-Dateien konfigurieren und die Methode festlegen, die Sie zum Hochladen der Dateien verwenden möchten. </p> 
         <ul id="ul_30E830C41F6A4526822AF1FD3083075A"> 
@@ -1199,7 +1199,7 @@ t_creating_a_feed.xml
     </thead>
     <tbody> 
       <tr> 
-      <td colname="col1"> <p>3 </p> </td> 
+      <td colname="col1"> <p>1 </p> </td> 
       <td colname="col2"> <p>Feed-Name </p> </td> 
       <td colname="col3"> <p>Gibt den Namen des Feeds an. </p> </td> 
       </tr> 
@@ -1274,7 +1274,7 @@ t_creating_a_feed.xml
       <td colname="col3"> <p>Ermöglicht die Zuordnung herstellerspezifischer Feed-Felder zu Metadatenfeldern für die Site-Suche/das Merchandising. Dieser Zuordnungsschritt im Assistenten ist wichtig, da Feeds die Informationen zwischen den Feldern im Index und den Feldern in den Feed-Daten korrelieren können. In den meisten Fällen werden die Korrelationen mit Ausnahme von <span class="wintitle"> "Generische Feeds </span> in einer dynamisch erstellten Suchvorlage gespeichert. </p> <p>Jede Zeile in der Tabelle "Feldzuordnungen"stellt eine Feldzuordnung dar. Klicken Sie in der Spalte Hinzufügen/Entfernen auf <span class="uicontrol"> + </span>, um eine neue Zeile für die Feldzuordnung hinzuzufügen. Klicken Sie auf <span class="uicontrol"> - </span>, um die derzeit ausgewählte Feldzuordnungszeile aus der Tabelle zu löschen. Um ein Feed-Feld mit einem Metadatenfeld zu verknüpfen, wählen Sie die gewünschten Felder mit den entsprechenden Dropdown-Listen aus. </p> <p> <b>Erweiterte Nutzung</b> </p> <p>Sie können eigene benutzerdefinierte Felder erstellen. Klicken Sie in der Dropdown-Liste <span class="wintitle"> Feed-Felder </span> auf <span class="uicontrol"> Benutzerdefiniert </span>. Geben Sie in das entsprechende Textfeld einen benutzerdefinierten Tag-Namen für dieses Feld ein. Diese benutzerdefinierte Option ist nützlich, wenn ein Feed spezielle herstellerspezifische Felder benötigt. </p> <p>Sie können auch ein benutzerdefiniertes Metadatenfeld erstellen. Klicken Sie in der Dropdown-Liste </span> "Metadatenfelder"auf <span class="uicontrol"> Benutzerdefiniert </span>. <span class="wintitle"> Geben Sie in das zugehörige Textfeld einen Wert für ein benutzerdefiniertes Metadatenfeld ein. Der Wert wird in die vorab generierte Vorlage eingefügt und kann auch verwendet werden, um benutzerdefinierte Suchvorlagen-Tags einzufügen. </span></p> <p>Siehe <a href="../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4" type="reference" format="dita" scope="local"> Suchvorlagen-Tags </a>. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>3 </p> </td> 
+      <td colname="col1"> <p>1 </p> </td> 
       <td colname="col2"> <p>Suchkriterien </p> </td> 
       <td colname="col3"> <p>Wenn die Feed-Dateien generiert werden, werden die Daten mit einer Suchdatei gefiltert. Sie definieren die Filter, die für die Abfrage der Suche in diesem Bedienfeld verwendet werden. </p> 
         <ul id="ul_994585E89A044BD3A89A99D30F277432"> 
