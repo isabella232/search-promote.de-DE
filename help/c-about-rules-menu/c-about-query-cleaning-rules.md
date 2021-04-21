@@ -2,16 +2,16 @@
 description: Verwenden Sie die Abfrage-Bereinigungsregeln, um die eingehende Abfrage zu analysieren und zu ändern.
 solution: Target
 title: Grundlagen zu Abfragen-Bereinigungsregeln
-topic: Rules,Site search and merchandising
+topic-legacy: Rules,Site search and merchandising
 uuid: 683af81f-f7c0-45f8-9212-e5e7cb82ccca
+exl-id: 22ebca58-7687-4c8c-9ac1-bacb321065f3
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1596'
 ht-degree: 1%
 
 ---
-
 
 # Info zu Abfragen-Bereinigungsregeln{#about-query-cleaning-rules}
 
@@ -240,4 +240,3 @@ Abfragen-Reinigungsregeln werden in der Reihenfolge ausgeführt, in der sie defi
    * Klicken **[!UICONTROL Push Live]**.
 
       Siehe [Pushing stage settings live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
-
