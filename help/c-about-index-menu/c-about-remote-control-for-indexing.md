@@ -2,16 +2,16 @@
 description: Bei jeder Änderung Ihrer Website können Sie ein Skript oder Programm ausführen, das anfordert, dass der Suchroboter einen Index mit Remote Control ausführt.
 solution: Target
 title: Info zur Remote-Steuerung für die Indizierung
-topic: Index,Site search and merchandising
+topic-legacy: Index,Site search and merchandising
 uuid: 20e230c6-5c1a-4bf4-bff3-b8236d14ab21
+exl-id: 1a7689f9-1e3f-48c8-a5f1-abe0efdb7768
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1037'
 ht-degree: 1%
 
 ---
-
 
 # Info zur Remote-Steuerung für die Indizierung{#about-remote-control-for-indexing}
 
