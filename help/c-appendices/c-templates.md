@@ -2,16 +2,16 @@
 description: Erfahren Sie mehr über die Verwendung von Präsentations- und Vorlagen-Tags in Search&amp;Promote.
 solution: Target
 title: Vorlagen
-topic: Appendices,Site search and merchandising
+topic-legacy: Appendices,Site search and merchandising
 uuid: 78299032-dc23-4dfe-b68f-cd57b2b6d7d8
+exl-id: f8cc4b5c-4e75-426b-8234-76af8bb0f4c5
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '15153'
+source-wordcount: '15148'
 ht-degree: 2%
 
 ---
-
 
 # Vorlagen{#templates}
 
@@ -80,7 +80,7 @@ Deklarationen sind spezielle Tags mit geführter Deklaration, die Sie oben in ei
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> 
      <!--In search-eng 1/31/13--> <span class="codeph"> &lt;guided-results&gt;&lt;/guided-results&gt; </span> </p> </td> 
    <td colname="col2"> <p>Das Tag mit geführten Ergebnissen definiert die Grenzen einer Ergebnisschleife. Auf alle Ergebnisse kann zugegriffen werden, indem ein <span class="codeph"> gsname </span>-Attribut angegeben wird. Wenn kein <span class="codeph"> gsname </span> angegeben ist, werden die Standardsuchergebnisse angezeigt. </p> </td> 
@@ -520,7 +520,7 @@ Siehe [Dynamische Facets](../c-about-design-menu/c-about-dynamic-facets.md#conce
   <tr> 
    <td colname="col01"> <p>25 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;guided-facet-value-children&gt;&lt;/guided-facet-value-children&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Während <span class="codeph"> &lt;guided-facet-values&gt; </span> durch jeden Facettenwert iteriert wird, durchläuft dieses Tag alle untergeordneten Werte einer verschachtelten Facette. Verwenden Sie in diesem Tag die typischen facettierten Tags, um Links zu erstellen, Links rückgängig zu machen und Facettenwerte anzuzeigen. Dieses Tag muss sich innerhalb von <span class="codeph"> &lt;guided-facet-values&gt; </span> befinden, da es verschachtelte Schleifen ausführt. </p> <p>Ein Beispiel für die Verwendung dieses Tags ist Folgendes: </p> <p> <code class="syntax html"> &lt;guided-facet-values&gt; 
+   <td colname="col2"> <p>Wenn <span class="codeph"> &lt;guided-facet-values&gt; </span> durch jeden Facettenwert iteriert wird, durchläuft dieses Tag alle untergeordneten Werte einer verschachtelten Facette. Verwenden Sie in diesem Tag die typischen facettierten Tags, um Links zu erstellen, Links rückgängig zu machen und Facettenwerte anzuzeigen. Dieses Tag muss sich innerhalb von <span class="codeph"> &lt;guided-facet-values&gt; </span> befinden, da es verschachtelte Schleifen ausführt. </p> <p>Ein Beispiel für die Verwendung dieses Tags ist Folgendes: </p> <p> <code class="syntax html"> &lt;guided-facet-values&gt; 
       &nbsp;&nbsp;&lt;guided-facet-link&nbsp;title='&lt;guided-facet-value&nbsp;/&gt;'&gt;&lt;guided-facet-value&nbsp;/&gt;&nbsp;(&lt;guided-facet-count&nbsp;/&gt;)&lt;/guided-facet-link&gt; 
       &nbsp;&nbsp;&lt;guided-if-facet-value-has-children&gt; 
       &nbsp;&nbsp;&nbsp;&lt;guided-facet-value-children&gt; 
@@ -605,7 +605,7 @@ Siehe [Info zu Breadcrumbs](../c-about-design-menu/c-about-breadcrumbs.md#concep
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;guided-breadcrumb&gt; breadcrumbname  </span>"]&gt;&lt;/guided-breadcrumb&gt; </span><span class="varname"> </span></p> </td> 
    <td colname="col2"> <p>Das Schleife-Tag für den Breadcrumb. Alle zwischen öffnenden und schließenden Tags liegenden Inhalte werden für jede Abfrage des aktuellen Status iteriert. </p> <p>Wenn <span class="codeph"> <span class="varname"> gsname </span> </span> weggelassen wird, wird die Breadcrumb namens "default"verwendet. </p> </td> 
   </tr> 
@@ -620,7 +620,7 @@ Siehe [Info zu Breadcrumbs](../c-about-design-menu/c-about-breadcrumbs.md#concep
       &lt;/guided-breadcrumb&gt; </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> 
      <!--Updated to search-eng version, 2/1/2013--> <span class="codeph"> &lt;guided-breadcrumb-value /&gt; </span> </p> </td> 
    <td colname="col2"> <p>Der Wert-Tag gibt den transformierten Wert der aktuellen Breadcrumb-Iteration aus. Sie wird nur im Kontext eines <span class="codeph"> guided-breadcrumb </span>-Blocks verwendet. </p> <p> <code class="syntax html"> &lt;guided-breadcrumb&gt; 
@@ -676,7 +676,7 @@ Siehe [Menüs](../c-about-design-menu/c-about-menus.md#concept_68123CE5CF4447B59
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> 
      <!--Matched search-eng version, 2/1/2013--> <span class="codeph"> &lt;guided-menu gsname="menuname"&gt;&lt;/guided-menu&gt; </span> </p> </td> 
    <td colname="col2"> <p>Dies ist das Menü-Wert-Schleifeniterator-Tag. Verwenden Sie das Attribut <span class="codeph"> gsname </span>, um herauszufinden, welcher Satz von Menüelementen angezeigt wird. </p> </td> 
@@ -688,7 +688,7 @@ Siehe [Menüs](../c-about-design-menu/c-about-menus.md#concept_68123CE5CF4447B59
    <td colname="col2"> <p>Gibt Ihnen die URL zum Verfeinern der aktuellen Suche nach dem Menüelement. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> 
      <!--Matched search-eng version, 2/1/2013--> <span class="codeph"> &lt;guided-menu-item-option&gt; </span> </p> </td> 
    <td colname="col2"> <p>Normalerweise wird ein Menü in einem Auswahlsteuerelement auf einer Vorlage angezeigt. Dieses Tag erleichtert die Erstellung des Select-Steuerelements, da es den HTML-Code zur Generierung der Option für das select-Steuerelement generiert. </p> <p>Beispielsweise der folgende Codeblock: </p> <p> <code class="syntax html"> &lt;select&nbsp;name="sort"&nbsp;onchange="gcGo(this);"&gt; 
@@ -966,7 +966,7 @@ Siehe [Info zu „Meinten Sie“](../c-about-linguistics-menu/c-about-did-you-me
    <td colname="col2"> <p>Erstellt einen Link zu der angegebenen Empfehlung. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> 
      <!--Newly added from search-eng version, 2/1/2013--> <span class="codeph"> &lt;guided-suggestion-value /&gt; </span> </p> </td> 
    <td colname="col2"> </td> 
@@ -1040,7 +1040,7 @@ Siehe [Info zum automatischen Ausfüllen](../c-about-auto-complete.md#concept_09
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;guided-if-autocomplete&gt; &lt;guided-else-autocomplete&gt; &lt;/guided-if-autocomplete&gt; </span> </p> </td> 
    <td colname="col2"> <p>Erkennt, ob die Funktion zum automatischen Ausfüllen aktiviert ist. Sie können die Tags verwenden, um optional den Kopf- und Formularinhalt aufzunehmen, der für das automatische Ausfüllen erforderlich ist. Auf diese Weise können Sie die Funktion aktivieren und deaktivieren und müssen Ihre Präsentationsvorlagen nicht ändern. </p> </td> 
   </tr> 
@@ -1050,7 +1050,7 @@ Siehe [Info zum automatischen Ausfüllen](../c-about-auto-complete.md#concept_09
    <td colname="col2"> <p>Wird im Kopf der Präsentationsvorlage verwendet und durch das entsprechende CSS-Skript ersetzt, das automatisch ausgefüllt wird. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;guided-ac-form-content /&gt; </span> </p> </td> 
    <td colname="col2"> <p>Wird im Suchformular (zwischen den Tags <span class="codeph"> &lt;form&gt; </span> und <span class="codeph"> &lt;/form&gt; </span>) der Präsentationsvorlage verwendet, anstatt die automatisch ausgefüllten Tags im Formular fest zu kodieren. Die Tags werden durch den entsprechenden HTML-Code ersetzt, der erforderlich ist, damit die automatische Vervollständigung funktioniert. </p> </td> 
   </tr> 
@@ -1076,7 +1076,7 @@ Verwenden Sie die folgenden Tags, um den Store, in dem sich ein Benutzer befinde
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;guided-store /&gt; </span> </p> </td> 
    <td colname="col2"> <p>Gibt den aktuellen Store aus. </p> </td> 
   </tr> 
@@ -1151,7 +1151,7 @@ Sie können die folgenden Loopindikatoren in einem dieser Loopblöcke verwenden:
    <td colname="col2"> <p>Diese Bedingung ist wahr, wenn die aktuelle Iteration die letzte Iteration der Schleife ist. Das bedeutet nicht unbedingt das letzte Ergebnis oder die letzte Seite, sondern das letzte Ergebnis im aktuellen Kontext (Seite). Wenn sich der Site-Besucher auf Seite 1 eines Ergebnissatzes befindet, der 200 Ergebnisse enthält, aber nur 10 Ergebnisse pro Seite hat, lautet die letzte Iteration result 10 anstelle von result 200. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> 
      <!--Updated to match search-eng version, 2/1/2013--> <code> &lt;guided-if[-not]-odd&gt;&lt;guided-else[-not]-odd&gt; 
       &lt;/guided-if[-not]-odd&gt; </code> </p> </td> 
@@ -1803,7 +1803,7 @@ Siehe [Informationen zu den Tags der Ergebnisschleife](../c-appendices/c-templat
       &lt;/search-results&gt; </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-if-inner&gt; ...  &lt;/search-if-inner&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-not-inner&gt; ...  &lt;/search-if-not-inner&gt; </span> </p> </td> 
    <td colname="col2"> <p>Diese Tags enthalten den Text zwischen ihnen, wenn das aktuelle Ergebnis weder das erste noch das letzte Ergebnis auf der Seite ist (wenn es innerhalb von <span class="codeph"> </span>  verwendet wird) oder nicht der erste oder letzte Feldwert ist (wenn es innerhalb von <span class="codeph"> </span>  verwendet wird). Die Nicht-Version des Tags prüft, ob das Ergebnis das erste oder das letzte ist. </p> </td> 
   </tr> 
@@ -1940,7 +1940,7 @@ Die folgenden erweiterten Tags geben Feldwerte und zugehörige Daten aus dem ges
    <td colname="col2"> <p>Dieses Tag zeigt die Zählungsinformationen für eine bestimmte Liste des Suchfelds an. Es gibt drei unterschiedliche Verwendungen für dieses Tag. Wenn nur das Attribut "name"angegeben ist, gibt dieses Tag die Anzahl der eindeutigen Werte für das benannte Feld innerhalb des gesamten Ergebnissatzes aus. Wenn beide Attribute "name"und "value"angegeben werden, gibt dieses Tag entweder die Gesamtanzahl des angegebenen Werts innerhalb des gesamten Ergebnissatzes (für results="no") oder die Gesamtanzahl der Ergebnisse mit dem angegebenen Wert im gesamten Ergebnissatz (für results="yes") aus. Der Standardwert von "results"ist "no". Hinweis: Bei Feldern ohne Liste sind results="yes" und results="no" gleichwertig. Der Wert von "results"wird ignoriert, wenn das Attribut "value"nicht angegeben wird. Dieses Tag liefert nur die Ausgabe für Felder, die von den CGI-Parametern <span class="codeph"> sp-sfvl-field </span> in der Abfrage "Suchen"angegeben werden. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-if-field-value-list-count name="field-name" value="field-value"&gt; ...  &lt;/search-if-field-value-list-count&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-not-field-value-list-count name="field-name" value="field-value"&gt; ...  &lt;/search-if-not-field-value-list-count&gt; </span> </p> </td> 
    <td colname="col2"> <p>Diese Tags zeigen den HTML-Code zwischen ihnen an, wenn der äquivalente Aufruf von <span class="codeph"> &lt;search-field-value-Liste-count name="field-name" value="field-value"&gt; </span> mit den angegebenen Attributen einen Wert größer als null zurückgibt (oder nicht). </p> </td> 
   </tr> 
@@ -1966,7 +1966,7 @@ Die folgenden erweiterten Tags zählen Feldwerte und zugehörige Daten aus dem g
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-field-values name="field-name" sortby="none/values/counts/results" max-items="XX"&gt; ...  &lt;/search-field-values&gt; </span> </p> </td> 
    <td colname="col2"> <p>Dieses Tag erstellt eine Schleife zum Aufzählen von Feldwerten und zugehörigen Daten für ein bestimmtes Feld innerhalb des gesamten Ergebnissatzes. Verschachteln Sie dieses Tag nicht in einem anderen <span class="codeph"> &lt;search-field-values&gt; </span>-Tag. Das Attribut "name"gibt den Namen des Felds an, das die aufzuzählenden Werte enthält. Das optionale Attribut "sortby"steuert die Reihenfolge der Auflistungen: "none"bedeutet keine bestimmte Reihenfolge, "werte"die Sortierung nach Feldwerten (in auf- oder absteigender Reihenfolge gemäß der Sorting-Eigenschaft des Felds), sortby="counts" die Sortierung in absteigender Reihenfolge der Feldwerte und sortby="results" die Sortierung in absteigender Reihenfolge der Anzahl der Ergebnisse, die jeden Wert enthalten. </p> <p>Beachten Sie, dass sortby="counts" und sortby="results" für Felder ohne Liste gleichwertig sind. . Das optionale Attribut "max-items"begrenzt die Anzahl der Iterationen auf den angegebenen Wert. Der Standardwert für "max-items"ist -1, d. h. "enumerate all values". </p> </td> 
   </tr> 
@@ -1976,7 +1976,7 @@ Die folgenden erweiterten Tags zählen Feldwerte und zugehörige Daten aus dem g
    <td colname="col2"> <p>Dieses Tag gibt den Feldwert für die aktuelle &lt;search-field-values&gt; Schleifeniteration aus. Dieses Tag ist nur innerhalb einer <span class="codeph"> &lt;search-field-values&gt; </span>-Schleife gültig. Die Attribute "date-format", "gmt"und "language"sind nur relevant, wenn der Inhaltstyp des im umschließenden &lt;search-field-values&gt;-Tag angegebenen Feldnamens "date"ist. Das Attribut "date-format"nimmt eine Datumsformat-Zeichenfolge im UNIX-Stil wie "%A", %B %d, %Y"(für "Montag, 25. Juli 2020"). </p> <p>Siehe <a href="../c-appendices/c-templates.md#section_4BBDBBEF2B96414497617CD4B52D96E4" type="section" format="dita" scope="local"> Datumsformat-Zeichenfolgen</a>. </p> <p>Das optionale Attribut "encoding"steuert, ob die Zeichen der Ausgabestrategie HTML-kodiert, JavaScript-kodiert, Perl-kodiert, URL-kodiert oder nicht kodiert sind, für die Ausgabe auf der Ergebnisseite. Der Standardwert von "encoding"ist "none". Normalerweise müssen Sie das Kodierungsattribut nicht angeben. "gmt"ist standardmäßig "yes"und steuert, ob der Zeitabschnitt der Datums-Zeichenfolge in GMT ("yes") oder in der Zeitzone des Kontos ("no") ausgegeben werden soll. Das Attribut "language"steuert die Konventionen für Sprache und Gebietsschema der Ausgabedatumszeichenfolge. "0" (Standard) bedeutet "Kontosprache verwenden". Jeder andere "language"-Wert wird als spezifischer Sprachbezeichner interpretiert, z. B. bedeutet "en_US" "Englisch (USA)". </p> <p>Siehe <a href="../c-appendices/c-templates.md#section_0490DECC00E34691ADE5A9ED90A6D911" type="section" format="dita" scope="local"> Sprachkennungen</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-field-value-count results="yes/no"&gt; </span> </p> </td> 
    <td colname="col2"> <p>Dieses Tag gibt die mit der aktuellen <span class="codeph"> &lt;search-field-values&gt; </span>-Schleifenitation verknüpfte Anzahl aus. Die Ausgabenanzahl ist entweder die Anzahl der Ergebnisse im gesamten Ergebnissatz, der den Feldwert enthält (results="yes"), oder die Gesamtanzahl für den Feldwert im gesamten Ergebnissatz. Der Standardwert von "results"ist "no". </p> <p>Bei Feldern ohne Liste sind results="yes" und results="no" gleichwertig. Dieses Tag ist nur innerhalb einer <span class="codeph"> &lt;search-field-values&gt; </span>-Schleife gültig. </p> </td> 
   </tr> 
@@ -2006,7 +2006,7 @@ Suggest bietet einen benutzerfreundlichen &quot;Meinten Sie?&quot; Dienst zum Vo
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-if-suggestions&gt; ...  &lt;/search-if-suggestions&gt; </span> </p> </td> 
    <td colname="col2"> <p>Umschließen Sie diese Tags mit beliebigen Vorlagen-Tags vom Typ "Vorschlagen", wie <span class="codeph"> &lt;search-recommendations&gt; </span>, <span class="codeph"> &lt;search-recommendations-link&gt; </span> usw. Wenn die Suche Vorschläge generiert, gibt die Suchmaschine alles zwischen dem Tag open und close aus und verarbeitet alles. Wenn die Suche keine Vorschläge generiert, wird keiner der verschachtelten Inhalte ausgegeben. </p> </td> 
   </tr> 
@@ -2241,7 +2241,7 @@ Tags, die es Ihnen ermöglichen, HTML zwischen ihnen bedingt einzuschließen.
    <td colname="col2"> <p>Diese Tags enthalten HTML, wenn der vorherigen oder der nächsten Seite irgendein (oder keines) Ergebnis zugeordnet ist. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-if-sort-by-score&gt; ...  &lt;/search-if-sort-by-score&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-not-sort-by-score&gt; ...  &lt;/search-if-not-sort-by-score&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-sort-by-date&gt; ...  &lt;/search-if-sort-by-date&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-not-sort-by-date&gt; ...  &lt;/search-if-not-sort-by-date&gt; </span> </p> </td> 
    <td colname="col2"> <p>Diese Tags enthalten HTML, wenn die aktuelle Seite nach Relevanz oder Datum sortiert ist oder nicht. </p> </td> 
   </tr> 
