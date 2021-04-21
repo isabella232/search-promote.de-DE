@@ -2,16 +2,16 @@
 description: Die Seite "Warnungen"bietet eine zentrale Stelle für die Ansicht und Verwaltung aller Warnungen, die mit Ihrem Konto zu tun haben.
 solution: Target
 title: Informationen zu Warnungen
-topic: Reports,Site search and merchandising
+topic-legacy: Reports,Site search and merchandising
 uuid: 94524563-f9a6-40cf-89f3-e80b1d0113c7
+exl-id: b6d637c9-2a2c-49b3-828b-3ae272bf28aa
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
-
 
 # Warnungen{#about-alerts}
 
@@ -50,4 +50,3 @@ Die Seite &quot;Warnungen&quot;bietet eine zentrale Stelle für die Ansicht und 
    * Um alle angezeigten Warnungen auszuwählen, aktivieren Sie das Kontrollkästchen oben in der linken Spalte.
 
       Wenn Sie alle übereinstimmenden Warnhinweise anstelle einer Einzelseite auswählen möchten, wählen Sie in der Dropdown-Liste auf der rechten Seite **[!UICONTROL All Alerts]** und aktivieren Sie dann das Kontrollkästchen oben in der Spalte.
-
