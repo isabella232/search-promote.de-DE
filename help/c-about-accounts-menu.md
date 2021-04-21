@@ -2,16 +2,16 @@
 description: Verwenden Sie im Produktmenü Konten, um ein Konto auszuwählen, auf das Sie zugreifen und es verwenden möchten.
 solution: Target
 title: Das Menü "Konten"
-topic: Settings,Site search and merchandising
+topic-legacy: Settings,Site search and merchandising
 uuid: 7cfc1b68-5126-484a-8a1d-54995a8fd19b
+exl-id: f3f43b71-cbcb-4325-88de-72db1c049700
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '167'
 ht-degree: 2%
 
 ---
-
 
 # Das Menü &quot;Konten&quot;{#about-the-accounts-menu}
 
@@ -40,4 +40,3 @@ Nachdem Sie ein Konto ausgewählt haben, wird die Site-Suche/Merchandising-Start
 
    * Klicken Sie in der Tabelle unter der Spaltenüberschrift [!DNL Name] auf einen Kontonamen, den Sie verwenden und verwalten möchten.
    * Klicken Sie in der Tabelle unter der Spaltenüberschrift [!DNL Number] auf eine Kontonummer, die Sie verwenden und verwalten möchten.
-
