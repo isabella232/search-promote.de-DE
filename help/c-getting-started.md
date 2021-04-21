@@ -2,16 +2,16 @@
 description: Wenn Sie neu bei der Search&Promote- und dynamischen Navigation sind, Beginn hier, um sich mit Ihrem Konto zu starten. Unter anderem erfahren Sie, wie Sie Ihre Website indizieren und das Erscheinungsbild Ihrer Suchergebnisse anpassen.
 solution: Target
 title: Erste Schritte
-topic: Getting Started,Site search and merchandising
+topic-legacy: Getting Started,Site search and merchandising
 uuid: 816ad003-15c9-4e44-b09d-cab284518634
+exl-id: f2772d7a-b558-403e-9e77-8c87302e2b02
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1022'
 ht-degree: 0%
 
 ---
-
 
 # Erste Schritte{#getting-started}
 
@@ -142,4 +142,3 @@ Es gibt viele weitere Optionen, mit denen Sie die Sucherfahrung Ihres Kunden vol
 * Konfigurieren Sie Wörterbücher, damit Sie Gruppen verwandter Wörter angeben können (z. B. Einkauf, Kauf und Beschaffung). Diese verwandten Begriffe helfen, relevante Ergebnisse zurückzugeben, selbst wenn die Suchbegriffe eines Kunden nicht exakt mit der auf Ihren Webseiten verwendeten Abfrage übereinstimmen. Mit dem im obigen Beispiel verwendeten Synonym gibt die Abfrage &quot;Kauf&quot;eines Kunden Seiten zurück, die das Wort &quot;Kauf&quot;enthalten.
 
    Siehe [Info zu Wörterbüchern](c-about-linguistics-menu/c-about-dictionaries.md#concept_B8028B71EC8144669614C64578EDB034).
-
