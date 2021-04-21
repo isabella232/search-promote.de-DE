@@ -3,16 +3,16 @@ description: Verwenden Sie das Menü "Crawling"(Crawling-Menü) mit Datums- und 
 solution: Target
 subtopic: Crawling
 title: Menü "Crawling"
-topic: Settings,Site search and merchandising
+topic-legacy: Settings,Site search and merchandising
 uuid: a58c03bf-90f7-4b5b-91ff-988b95c246b0
+exl-id: 22dbbc30-bf1c-4d51-8fb0-708115ba844b
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '11016'
+source-wordcount: '11011'
 ht-degree: 1%
 
 ---
-
 
 # Über das Crawling-Menü{#about-the-crawling-menu}
 
@@ -974,7 +974,7 @@ Sie können eine Data Feed-Eingabequelle verwenden, um auf Inhalte zuzugreifen, 
 
 Eine XML-Datenquelle besteht aus XML-Stanza oder -Datensätzen, die Informationen enthalten, die den einzelnen Dokumenten entsprechen. Diese Dokumente werden dem Index hinzugefügt. Ein Textdaten-Feed enthält einzelne, durch Zeilenumbrüche getrennte Datensätze, die den einzelnen Dokumenten entsprechen. Diese einzelnen Dokumente werden ebenfalls dem Index hinzugefügt. In beiden Fällen beschreibt eine Indexverbindungskonfiguration die Interpretation des Feeds. Jede Konfiguration beschreibt, wo sich die Datei befindet und wie die Server darauf zugreifen. Die Konfiguration beschreibt auch &quot;Zuordnungsinformationen&quot;. Das heißt, wie die Elemente der einzelnen Datensätze zum Füllen der Metadatenfelder im resultierenden Index verwendet werden.
 
-Nachdem Sie der Seite [!DNL Staged Index Connector Definitions] eine Index-Connector-Definition hinzugefügt haben, können Sie alle Konfigurationseinstellungen *außer* für die Werte &quot;Name&quot;oder &quot;Typ&quot;ändern.
+Nachdem Sie der Seite [!DNL Staged Index Connector Definitions] eine Index Connector-Definition hinzugefügt haben, können Sie alle Konfigurationseinstellungen *außer* für die Werte &quot;Name&quot;oder &quot;Typ&quot;ändern.
 
 Die Seite [!DNL Index Connector] enthält die folgenden Informationen:
 
