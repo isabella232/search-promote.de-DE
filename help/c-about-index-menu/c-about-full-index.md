@@ -3,16 +3,16 @@ description: Sie können den vollständigen Index verwenden, um alle Seiten Ihre
 solution: Target
 subtopic: Full Index
 title: Info zu vollständigem Index
-topic: Index,Site search and merchandising
+topic-legacy: Index,Site search and merchandising
 uuid: dce1eafd-5aea-4945-8305-8f9e7dc392df
+exl-id: cb702bd6-8702-469b-8ce9-0368ccdd55d9
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '755'
 ht-degree: 1%
 
 ---
-
 
 # Über vollständigen Index{#about-full-index}
 
@@ -117,4 +117,3 @@ Protokolle können weder exportiert noch gespeichert werden. Das Protokoll bleib
    * Verwenden Sie die Navigationsoptionen **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** oder **[!UICONTROL Go to line]**, um durch das Protokoll zu navigieren.
 
    * Verwenden Sie die Anzeigeoptionen **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** oder **[!UICONTROL Show]**, um Ihre Anzeige zu verfeinern.
-
