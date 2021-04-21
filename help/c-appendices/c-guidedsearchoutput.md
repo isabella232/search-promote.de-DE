@@ -2,16 +2,16 @@
 description: Erfahren Sie, wie Sie die Ausgabe in einem beliebigen textbasierten Format, einschließlich XML oder JSON, anpassen.
 solution: Target
 title: Ausgabe der geführten Suche
-topic: Appendices,Site search and merchandising
+topic-legacy: Appendices,Site search and merchandising
 uuid: 234fd563-f249-42b0-88ca-c89b44f8df77
+exl-id: 5e36b30f-defb-4a28-8516-53cea81d44c2
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '6289'
+source-wordcount: '6284'
 ht-degree: 2%
 
 ---
-
 
 # Ausgabe der geführten Suche{#guided-search-output}
 
@@ -3005,4 +3005,3 @@ Im Folgenden finden Sie ein Beispiel für eine Präsentationsvorlage, mit der di
  
 </customer-results> 
 ```
-
