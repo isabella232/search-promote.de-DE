@@ -3,16 +3,16 @@ description: Mit einem skriptgesteuerten Index können Sie inkrementelle Indexie
 solution: Target
 subtopic: Scripted Index
 title: Über skriptgesteuerten Index
-topic: Index,Site search and merchandising
+topic-legacy: Index,Site search and merchandising
 uuid: 51e726ad-414b-4cbd-8a68-fefc3cf9b565
+exl-id: e1d14cd5-4885-4e3a-bc5f-fe0b6a4df15e
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1730'
+source-wordcount: '1725'
 ht-degree: 1%
 
 ---
-
 
 # Über skriptgesteuerten Index{#about-scripted-index}
 
@@ -286,4 +286,3 @@ Protokolle können weder exportiert noch gespeichert werden. Das Protokoll bleib
    * Verwenden Sie die Navigationsoptionen **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** oder **[!UICONTROL Go to line]**, um durch das Protokoll zu navigieren.
 
    * Verwenden Sie die Anzeigeoptionen **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** oder **[!UICONTROL Show]**, um Ihre Anzeige zu verfeinern.
-
