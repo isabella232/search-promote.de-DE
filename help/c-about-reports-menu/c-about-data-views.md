@@ -2,16 +2,16 @@
 description: Die Ansichten der Daten zeigen die Suchergebnisse mit den Metadatenfeldern an. Jede Spalte ist ein Metadatenfeld und jede Zeile wird aus einer Abfrage der Suche generiert. Passen Sie die Ansichten an, indem Sie Spalten auswählen und neu anordnen. Data Ansichten können auch benutzerdefinierte Titel und Beschreibungen haben.
 solution: Target
 title: Info zu Ansichten
-topic: Reports,Site search and merchandising
+topic-legacy: Reports,Site search and merchandising
 uuid: 18930551-960d-40c2-b5b7-0807a2e11134
+exl-id: 9ef5eaef-85d6-41e9-af44-b4775755e5bf
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1018'
 ht-degree: 1%
 
 ---
-
 
 # Info zu Data Ansichten{#about-data-views}
 
@@ -185,4 +185,3 @@ Die ausgewählte Ansicht wird in einem separaten Browserfenster geöffnet.
    * Klicken Sie auf der Seite [!DNL Data Views] in der Tabellenspalte [!DNL Title] auf den Namen der Ansicht, die Sie öffnen möchten.
 
    * Klicken Sie auf der Seite [!DNL Data Views] in der Tabellenspalte [!DNL Actions] in der Zeile mit der zu öffnenden Ansicht auf **[!UICONTROL View]**.
-
