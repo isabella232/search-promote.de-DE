@@ -5,14 +5,14 @@ feature: null
 role: Administrator,Business Practitioner,Data Engineer,Developer
 hide: true
 hidefromtoc: true
+exl-id: 1e062554-090b-4275-8595-8ae4233c58d7
 translation-type: tm+mt
-source-git-commit: 681e3e6768f214759598482526ce7ffba27e860e
+source-git-commit: 1562d46d096206f21228cb8ca9cbd8cec406e8dc
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
-
 
 # Ankündigung zum Ende der Adobe-Search&amp;Promote
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ### **_Zu welchem Zeitpunkt wird die Search&amp;Promote ihre Tätigkeit einstellen?_**
 
-Das Ende des Dienstes für Search&amp;Promote ist für den 1. August 2022 geplant. Ab diesem Datum ist die Benutzeroberfläche für die Verwaltung der Search&amp;Promote nicht mehr verfügbar, und Anforderungen an Search&amp;Promote-APIs liefern keine Ergebnisse mehr. Vor diesem Datum wird der Dienst vollständig verfügbar und funktionsfähig sein.
+Das Ende des Diensts für Search&amp;Promote ist für den 1. September 2022 **geplant.** Ab diesem Datum ist die Benutzeroberfläche für die Verwaltung der Search&amp;Promote nicht mehr verfügbar, und Anforderungen an Search&amp;Promote-APIs liefern keine Ergebnisse mehr. Vor diesem Datum wird der Dienst vollständig verfügbar und funktionsfähig sein.
 
 ### **_Was passiert, wenn eine Suche oder eine andere API-Anfrage an Search&amp;Promote gesendet wird?_**
 
@@ -42,4 +42,4 @@ Wenden Sie sich bei Fragen an Ihren Customer Success Manager (CSM) oder wenden S
 
 ### **_Kann ich meine entsprechende Search&amp;Promote noch vor dem Ende meines Dienstes verlängern?_**
 
-Ja. Wenden Sie sich an Ihren Kundenbetreuer, um Ihre Adobe bis spätestens 1. August 2022 zu verlängern.
+Ja. Wenden Sie sich an Ihren Kundenbetreuer, um Ihre Adobe bis spätestens zum 1. September 2022 **mit einem Enddatum zu verlängern.**
