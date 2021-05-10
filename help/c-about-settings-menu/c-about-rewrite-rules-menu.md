@@ -7,9 +7,9 @@ topic-legacy: Settings,Site search and merchandising
 uuid: 77ee84dd-fdba-4d34-ae8e-2fe786599800
 exl-id: cff17ead-6997-4ff6-a995-7ca020b06d50
 translation-type: tm+mt
-source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
+source-git-commit: aa095add9eb656913792b3f14001dda66cdd7d67
 workflow-type: tm+mt
-source-wordcount: '10197'
+source-wordcount: '10178'
 ht-degree: 0%
 
 ---
@@ -281,14 +281,14 @@ t_adding_a_crawl_list_store_url_rule.xml
 
  -->
 
-**So fügen Sie Crawl Liste Store-URL-Regeln hinzu**
+**So fügen Sie Crawl Liste Store URL-Regeln hinzu:**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl List Store URL Rules]**.
 1. Geben Sie im Feld [!DNL Crawl List Store URL Rules] die gewünschten Regeln ein.
 
    Leere Zeilen und Kommentarzeilen, die mit einem &quot;#&quot;(Hash) beginnen, sind zulässig.
-1. (Optional) Geben Sie auf der Seite [!DNL Crawl List Store URL Rules] im Feld [!DNL Test Crawl List Store URL Rules] eine Test-URL ein, deren Crawl-Regeln Sie testen möchten, und klicken Sie dann auf **Test**.
-1. Klicken Sie auf **Änderungen speichern**.
+1. (Optional) Geben Sie auf der Seite [!DNL Crawl List Store URL Rules] im Feld [!DNL Test Crawl List Store URL Rules] eine Test-URL ein, deren Crawl-Regeln Sie testen möchten, und klicken Sie dann auf **[!UICONTROL Test]**.
+1. Klicken **[!UICONTROL Save Changes]**.
 1. (Optional) Erstellen Sie Ihren Stage-Site-Index neu, wenn Sie die Vorschauen durchführen möchten.
 
    Siehe [Konfigurieren eines inkrementellen Indexes einer gestaffelten Website](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
@@ -566,14 +566,14 @@ t_adding_crawl_list_retrieve_url_rules.xml
 
  -->
 
-**So fügen Sie Crawl-Listen Abrufen von URL-Regeln hinzu**
+**So fügen Sie Crawl-Listen URL-Regeln ab:**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl List Retrieve URL Rules]**.
 1. Geben Sie im Feld [!DNL Crawl List Retrieve URL Rules] die gewünschten Regeln ein.
 
    Leere Zeilen und Kommentarzeilen, die mit einem &quot;#&quot;(Hash) beginnen, sind zulässig.
-1. (Optional) Geben Sie auf der Seite [!DNL Crawl List Retrieve URL Rules] im Feld [!DNL Test Crawl List Retrieve URL Rules] eine Test-URL ein, deren Crawl-Regeln Sie testen möchten, und klicken Sie dann auf **Test**.
-1. Klicken Sie auf **Änderungen speichern**.
+1. (Optional) Geben Sie auf der Seite [!DNL Crawl List Retrieve URL Rules] im Feld [!DNL Test Crawl List Retrieve URL Rules] eine Test-URL ein, deren Crawl-Regeln Sie testen möchten, und klicken Sie dann auf **[!UICONTROL Test]**.
+1. Klicken **[!UICONTROL Save Changes]**.
 1. (Optional) Erstellen Sie Ihren Stage-Site-Index neu, wenn Sie die Vorschauen durchführen möchten.
 
    Siehe [Konfigurieren eines inkrementellen Indexes einer gestaffelten Website](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
@@ -625,7 +625,7 @@ Wenn ein Titel gefunden wird, versucht der Suchroboter, den Titel dem Muster jed
 
 Geben Sie die Crawl URL-Regeln in das Textfeld ein und klicken Sie dann auf Änderungen speichern. Leere Zeilen und Kommentarzeilen, die mit einem &quot;#&quot;(Hash) beginnen, sind zulässig. Um die Suchregeln zu testen, können Sie eine Test-URL in das Textfeld &quot;Test Rewrite Rules&quot;eingeben und dann auf Test klicken.
 
-## RewriteRule-Direktive {#section_669445C505754E838E14029D6583D9B6}
+## RewriteRule Directive {#section_669445C505754E838E14029D6583D9B6}
 
 Jede RewriteRule-Direktive definiert eine Rewrite-Regel. Regeln werden in der Reihenfolge angewendet, in der sie aufgeführt sind. Eine Regel zum Umschreiben nimmt die folgende Form an:
 
@@ -637,22 +637,21 @@ RewriteRule Pattern Substitution [Flags]
 
 Siehe [Reguläre Ausdruck](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
 
-Sie können das Zeichen &quot;not&quot;(&#39;!&#39;) verwenden. , um dem Muster ein Präfix zu geben. Mit dem Zeichen &quot;nicht&quot;können Sie ein Muster umkehren, d. h. nur dann wahr sein, wenn der aktuelle Titel NICHT mit dem Muster übereinstimmt. Das Zeichen &quot;nicht&quot;kann verwendet werden, wenn es besser ist, einem negativen Muster zu entsprechen, oder als endgültige Standardregel. Hinweis: Sie können nicht sowohl das Zeichen &quot;nicht&quot;als auch die gruppierten Platzhalter in einem Muster verwenden. Außerdem können Sie kein negatives Muster verwenden, wenn die Ersatzzeichenfolge $N enthält.
+Sie können das Zeichen &quot;not&quot;(&#39;!&#39;) verwenden. , um dem Muster ein Präfix zu geben. Mit dem Zeichen &quot;nicht&quot;können Sie ein Muster umkehren, d. h. nur dann wahr sein, wenn der aktuelle Titel NICHT mit dem Muster übereinstimmt. Das Zeichen &quot;nicht&quot;kann verwendet werden, wenn es besser ist, einem negativen Muster zu entsprechen, oder als endgültige Standardregel. Hinweis: Sie können nicht sowohl das Zeichen &quot;nicht&quot;als auch die gruppierten Platzhalter in einem Muster verwenden. Außerdem können Sie kein negatives Muster verwenden, wenn die Ersatzzeichenfolge `$N` enthält.
 
 Sie können Klammern verwenden, um einen Rückverweis zu erstellen, auf den durch Substitution und CondPattern verwiesen werden kann.
 
-**** SubstitutionDer Titel wird durch die Ersatzzeichenfolge ersetzt. Die Zeichenfolge kann Folgendes enthalten:
+Substitution - Der Titel wird durch die Ersatzzeichenfolge ersetzt. Die Zeichenfolge kann Folgendes enthalten:
 
 Text - Text, der unverändert übergeben wird.
 
 Rückverweise bieten Zugriff auf die gruppierten Teile (in Klammern) des Musters oder des CondPatters. Es gibt zwei Typen von Rückverweisen:
 
-* RewriteRule-Rückverweise
+* RewriteRule-Rückverweise - Diese Übereinstimmungen entsprechen Rückverweisen im entsprechenden RewriteRule-Muster und verwenden das Formular $N (0 &lt;= N &lt;= 9).
 
-   Diese entsprechen Rückverweisen im entsprechenden RewriteRule-Muster und nehmen das Format $N (0 &lt;= N &lt;= 9) an. Beispiel, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
-* RewriteCond-Rückverweise
+   Beispiel, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
 
-   Diese entsprechen Rückverweisen im letzten übereinstimmenden RewriteCond CondPattern und haben das Format %N (0 &lt;= N &lt;= 9).
+* RewriteCond-Rückverweise - Diese Übereinstimmungen entsprechen Rückverweisen im letzten übereinstimmenden RewriteCond-CondPattern und nehmen die Form %N (0 &lt;= N &lt;= 9) an.
 
 Variablen Dies sind Variablen des Formulars %{NAME_OF_VARIABLE}, wobei NAME_OF_VARIABLE eine Zeichenfolge für den Namen einer definierten Variablen sein kann. Weitere Informationen zum Festlegen von Umgebung finden Sie unter `[E]`-Flag.
 
@@ -720,8 +719,11 @@ Text - Text, der unverändert übergeben wird.
 
 Rückverweise bieten Zugriff auf die gruppierten Teile (in Klammern) des Musters oder des CondPatters. Es gibt zwei Arten von Rückverweisen:
 
-* RewriteRule-Rückverweise Diese Übereinstimmungen entsprechen Rückverweisen im entsprechenden RewriteRule-Muster und verwenden das Formular $N (0 &lt;= N &lt;= 9). Beispiel, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
-* RewriteCond-Rückverweise Diese Übereinstimmungen entsprechen Rückverweisen im letzten übereinstimmenden RewriteCond CondPattern und nehmen die Form %N (0 &lt;= N &lt;= 9) an.
+* RewriteRule-Rückverweise - Diese Übereinstimmungen entsprechen Rückverweisen im entsprechenden RewriteRule-Muster und verwenden das Formular $N (0 &lt;= N &lt;= 9).
+
+   Beispiel, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+
+* RewriteCond-Rückverweise - Diese Übereinstimmungen entsprechen Rückverweisen im letzten übereinstimmenden RewriteCond-CondPattern und nehmen die Form %N (0 &lt;= N &lt;= 9) an.
 
 Variablen Dies sind Variablen des Formulars %{NAME_OF_VARIABLE}, wobei NAME_OF_VARIABLE eine Zeichenfolge für den Namen einer definierten Variablen sein kann. Weitere Informationen zum Festlegen von Umgebung finden Sie unter `[E]`-Flag.
 
@@ -797,7 +799,15 @@ RewriteRule  ^My[[:blank:]]Company[[:blank:]]-[[:blank:]]
 <b>$1</b>}
 ```
 
-Das Regelmuster `(^My[[:blank:]]Company[[:blank:]]-[[:blank:]] (.*))` enthält einen Rückverweis `(.*)`, der dem Titelinhalt entspricht, der auf &quot;Meine Firma-&quot;folgt. Denken Sie daran, dass ein Teil eines Musters mit Klammern ( ) einen Rückverweis erstellt, auf den durch die Substitution verwiesen werden kann. In diesem Beispiel schreibt die Substitution (${toupper:**$1**}) diesen Rückverweis (**$1**) mithilfe der Toupper-Funktion erneut.
+Das Regelmuster
+
+`(^My[[:blank:]]Company[[:blank:]]-[[:blank:]] (.*))`
+
+enthält einen Rückverweis `(.*)`, der dem Titelinhalt entspricht, der auf &quot;Meine Firma-&quot;folgt. Denken Sie daran, dass ein Teil eines Musters mit Klammern ( ) einen Rückverweis erstellt, auf den durch die Substitution verwiesen werden kann. In diesem Beispiel wird die
+
+`(${toupper:**$1**})`
+
+überschreibt diesen Rückverweis (`**$1**`) mit der Toupper-Funktion.
 
 So wird der Titel des Formulars &quot;Meine Firma - Willkommen&quot; in &quot;WICOME&quot; umgeschrieben.
 
@@ -815,14 +825,14 @@ t_adding_crawl_title_rules.xml
 
  -->
 
-**So fügen Sie Crawl-Titelregeln hinzu**
+**So fügen Sie Crawl-Titelregeln hinzu:**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl Title Rules]**.
 1. Geben Sie im Feld [!DNL Crawl Title Rules] die gewünschten Regeln ein.
 
    Leere Zeilen und Kommentarzeilen, die mit einem &quot;#&quot;(Hash) beginnen, sind zulässig.
-1. (Optional) Geben Sie auf der Seite [!DNL Crawl Title Rules] im Feld [!DNL Test Crawl Title Rules] eine Test-URL ein, deren Suchregeln Sie testen möchten, und klicken Sie dann auf **Test**.
-1. Klicken Sie auf **Änderungen speichern**.
+1. (Optional) Geben Sie auf der Seite [!DNL Crawl Title Rules] im Feld [!DNL Test Crawl Title Rules] eine Test-URL ein, deren Suchregeln Sie testen möchten, und klicken Sie dann auf **[!UICONTROL Test]**.
+1. Klicken **[!UICONTROL Save Changes]**.
 1. (Optional) Erstellen Sie Ihren Stage-Site-Index neu, wenn Sie die Vorschauen durchführen möchten.
 
    Siehe [Konfigurieren eines inkrementellen Indexes einer gestaffelten Website](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
@@ -983,9 +993,11 @@ Text: Text, der unverändert weitergegeben wird.
 
 Rückverweise bieten Zugriff auf die gruppierten Teile (in Klammern) des Musters oder des CondPatters. Es gibt zwei Arten von Rückverweisen:
 
-* ** RewriteRule-Rückverweise** Diese Übereinstimmungen entsprechen Rückverweisen im entsprechenden RewriteRule-Muster und verwenden das Formular $N (0 &lt;= N &lt;= 9). Beispiel, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+* RewriteRule-Rückverweise - Diese Übereinstimmungen entsprechen Rückverweisen im entsprechenden RewriteRule-Muster und verwenden das Formular $N (0 &lt;= N &lt;= 9).
 
-* **RewriteCond-** RückverweiseDiese Übereinstimmungsrückverweise im zuletzt übereinstimmenden RewriteCond-CondPattern und in der Form %N (0  &lt;>
+   Beispiel, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+
+* RewriteCond-Rückverweise - Diese Übereinstimmungen entsprechen Rückverweisen im letzten übereinstimmenden RewriteCond-CondPattern und nehmen die Form %N (0 &lt;= N &lt;= 9) an.
 
 Variablen Dies sind Variablen des Formulars %{NAME_OF_VARIABLE}, wobei NAME_OF_VARIABLE eine Zeichenfolge für den Namen einer definierten Variablen sein kann. Weitere Informationen zum Festlegen von Variablen finden Sie im Flag RewriteRule *`[E]`*.
 
@@ -1070,14 +1082,15 @@ t_adding_search_url_rules.xml
 
  -->
 
-**So fügen Sie URL-Regeln zur Suche hinzu**
+**So fügen Sie URL-Regeln für die Suche hinzu:**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Search URL Rules]**.
 1. Geben Sie im Feld [!DNL Search URL Rules] die gewünschten Regeln ein.
 
    Leere Zeilen und Kommentarzeilen, die mit einem &quot;#&quot;(Hash) beginnen, sind zulässig.
-1. (Optional) Geben Sie auf der Seite [!DNL Search URL Rules] im Feld [!DNL Test Search URL Rules] eine Test-URL ein, deren Crawl-Regeln Sie testen möchten, und klicken Sie dann auf **Test**.
-1. Klicken Sie auf **Änderungen speichern**.
+
+1. (Optional) Geben Sie auf der Seite [!DNL Search URL Rules] im Feld [!DNL Test Search URL Rules] eine Test-URL ein, deren Crawl-Regeln Sie testen möchten, und klicken Sie dann auf **[!UICONTROL Test]**.
+1. Klicken **[!UICONTROL Save Changes]**.
 1. (Optional) Erstellen Sie Ihren Stage-Site-Index neu, wenn Sie die Vorschauen durchführen möchten.
 
    Siehe [Konfigurieren eines inkrementellen Indexes einer gestaffelten Website](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
@@ -1143,9 +1156,11 @@ Sie können Klammern verwenden, um einen Rückverweis zu erstellen, auf den durc
 
 Text - Text, der unverändert übergeben wird.
 
-**** RückverweiseGewähren Sie Zugriff auf die gruppierten Teile (in Klammern) des Musters oder des CondPatters. Es gibt zwei Typen von Rückverweisen:
+* Rückverweise - Gewähren Sie Zugriff auf die gruppierten Teile (in Klammern) des Musters oder des CondPatters. Es gibt zwei Typen von Rückverweisen:
 
-* **RewriteRule** BackreferencesDiese Match-Rückverweise im entsprechenden RewriteRule-Muster und verwenden das Formular $N (0)  &lt;> Beispiel, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+* RewriteRule-Rückverweise - Diese Übereinstimmungen entsprechen Rückverweisen im entsprechenden RewriteRule-Muster und verwenden das Formular $N (0 &lt;= N &lt;= 9).
+
+   Beispiel, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
 
 * ** RewriteCond-Rückverweise** Diese Übereinstimmungsrückverweise im letzten übereinstimmenden RewriteCond-Muster und verwenden das Formular %N (0 &lt;= N &lt;= 9).
 
@@ -1213,9 +1228,11 @@ Text - Text, der unverändert übergeben wird.
 
 Rückverweise bieten Zugriff auf die gruppierten Teile (in Klammern) des Musters oder des CondPatters. Es gibt zwei Arten von Rückverweisen:
 
-* **RewriteRule** BackreferencesDiese Match-Rückverweise im entsprechenden RewriteRule-Muster und verwenden das Formular $N (0)  &lt;> Beispiel, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+* RewriteRule-Rückverweise - Diese Übereinstimmungen entsprechen Rückverweisen im entsprechenden RewriteRule-Muster und verwenden das Formular $N (0 &lt;= N &lt;= 9).
 
-* **RewriteCond-** RückverweiseDiese Übereinstimmungsrückverweise im zuletzt übereinstimmenden RewriteCond-CondPattern und in der Form %N (0  &lt;>
+   Beispiel, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+
+* RewriteCond-Rückverweise - Diese Übereinstimmungen entsprechen Rückverweisen im letzten übereinstimmenden RewriteCond-CondPattern und nehmen die Form %N (0 &lt;= N &lt;= 9) an.
 
 **** VariablenDies sind Variablen des Formulars %{NAME_OF_VARIABLE}, wobei NAME_OF_VARIABLE eine Zeichenfolge für den Namen einer definierten Variablen sein kann. Weitere Informationen zum Festlegen von Umgebung finden Sie unter `[E]`-Flag. Variablen können auch im Suchformular definiert werden, das die Suchergebnisse generiert hat.
 
@@ -1291,7 +1308,11 @@ RewriteRule  ^My[[:blank:]]Company[[:blank:]]-[[:blank:]]
 <b>$1</b>} 
 ```
 
-Das Regelmuster `(^My[[:blank:]]Company[[:blank:]]-[[:blank:]] (.*))` enthält einen Rückverweis **`(.*)`**, der dem Titelinhalt entspricht, der auf &quot;Meine Firma-&quot;folgt. Denken Sie daran, dass ein Teil eines Musters mit Klammern ( ) einen Rückverweis erstellt, auf den durch die Substitution verwiesen werden kann. In diesem Beispiel schreibt die Substitution (${toupper:**$1**}) diesen Rückverweis (**$1**) mithilfe der Toupper-Funktion erneut.
+Das Regelmuster `(^My[[:blank:]]Company[[:blank:]]-[[:blank:]] (.*))` enthält einen Rückverweis **`(.*)`**, der dem Titelinhalt entspricht, der auf &quot;Meine Firma-&quot;folgt. Denken Sie daran, dass ein Teil eines Musters mit Klammern ( ) einen Rückverweis erstellt, auf den durch die Substitution verwiesen werden kann. In diesem Beispiel wird die
+
+`(${toupper:**$1**})`
+
+überschreibt diesen Rückverweis (**$1**) mit der Toupper-Funktion.
 
 So wird der Titel des Formulars &quot;Meine Firma - Willkommen&quot; in &quot;WICOME&quot; umgeschrieben.
 
@@ -1309,14 +1330,14 @@ t_adding_search_title_rules.xml
 
  -->
 
-**So fügen Sie Suchtitelregeln hinzu**
+**So fügen Sie Suchtitelregeln hinzu:**
 
 1. Klicken Sie im Produktmenü auf **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Search Title Rules]**.
 1. Geben Sie im Feld [!DNL Search Title Rules] die gewünschten Regeln ein.
 
    Leere Zeilen und Kommentarzeilen, die mit einem &quot;#&quot;(Hash) beginnen, sind zulässig.
-1. (Optional) Geben Sie auf der Seite [!DNL Search Title Rules] im Feld [!DNL Test Search Title Rules] einen Testtitel ein und klicken Sie dann auf **Test**.
-1. Klicken Sie auf **Änderungen speichern**.
+1. (Optional) Geben Sie auf der Seite [!DNL Search Title Rules] im Feld [!DNL Test Search Title Rules] einen Testtitel ein und klicken Sie dann auf **[!UICONTROL Test]**.
+1. Klicken **[!UICONTROL Save Changes]**.
 1. (Optional) Erstellen Sie Ihren Stage-Site-Index neu, wenn Sie die Vorschauen durchführen möchten.
 
    Siehe [Konfigurieren eines inkrementellen Indexes einer gestaffelten Website](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
