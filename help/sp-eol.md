@@ -1,43 +1,42 @@
 ---
 title: Ankündigung zum Ende der Adobe-Search&Promote
-description: Erfahren Sie mehr über die Ankündigung von Adobe Search&Promote, das Ende des Dienstes zu beenden.
+description: Erfahren Sie mehr über die Mitteilung zum Ende des Diensts von Adobe Search&Promote.
 feature: null
 role: Administrator,Business Practitioner,Data Engineer,Developer
 exl-id: 1e062554-090b-4275-8595-8ae4233c58d7
-translation-type: tm+mt
-source-git-commit: 99d23647ba5d30ed90d9e8ac377d627f6266c618
+source-git-commit: 27dca9caf3e59d5ed20fdea3d5ef279bd5aac097
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
 
 # Ankündigung zum Ende der Adobe-Search&amp;Promote
 
-## Häufig gestellte Fragen zum Ende des Dienstes für Search&amp;Promote
+## Häufig gestellte Fragen zum Ende des Diensts für Search&amp;Promote
 
-### **_Zu welchem Zeitpunkt wird die Search&amp;Promote ihre Tätigkeit einstellen?_**
+### **_Ab welchem Datum wird die Search&amp;Promote ihre Tätigkeit einstellen?_**
 
-Das Ende des Diensts für die Search&amp;Promote der Adobe ist für den 1. September 2022 **geplant.** Ab diesem Datum ist die Benutzeroberfläche für die Verwaltung der Search&amp;Promote nicht mehr verfügbar, und Anforderungen an Search&amp;Promote-APIs liefern keine Ergebnisse mehr. Vor diesem Datum wird der Dienst vollständig verfügbar und funktionsfähig sein.
+Das Ende des Dienstes für die Search&amp;Promote der Adobe ist für **1. September 2022** geplant. Ab diesem Datum ist die Benutzeroberfläche der Search&amp;Promote-Verwaltung nicht mehr verfügbar und Anfragen an Search&amp;Promote-APIs liefern keine Ergebnisse mehr. Vor diesem Datum ist der Dienst vollständig verfügbar und funktionsfähig. Bis zum 1. September 2022 sind vertragliche Ansprüche auf Search&amp;Promote ab dem 31. August 2022 nicht mehr zulässig.
 
-### **_Was passiert, wenn eine Suche oder eine andere API-Anfrage an Search&amp;Promote gesendet wird?_**
+### **_Was geschieht, wenn eine Suche oder eine andere API-Anfrage an Search&amp;Promote gesendet wird?_**
 
-Suchvorgänge und andere API-Anfragen an Search&amp;Promote werden nicht mehr zurückgegeben. Anforderungen können zu einem Fehler &quot;Host nicht gefunden&quot;, einer HTTP-Umleitung mit 3 x oder einem HTTP-Fehler wie 404, 408 oder einem anderen HTTP-Fehlercode führen.
+Suchen und andere API-Anfragen an Search&amp;Promote geben keine Ergebnisse mehr zurück. Anfragen können zu einem Fehler vom Typ &quot;Host nicht gefunden&quot;, einer 3xx-HTTP-Umleitung oder einem HTTP-Fehler wie 404, 408 oder einem anderen HTTP-Fehlercode führen.
 
-### **_Bietet Adobe andere Optionen für die Site-Suche und die Commerce-Suche?_**
+### **_Verfügt Adobe über alternative Optionen für die Site-Suche und die Commerce-Suche?_**
 
-Ja. Bei der Produkt- und Commerce-Suche ist [Live Search von Magento Commerce](https://blog.adobe.com/en/publish/2020/11/23/new-ai-capabilities-for-magento-commerce-improve-retail.html) die Suchanwendung der Adobe für die Zukunft. Die Live-Suche von Magento Commerce soll im ersten Halbjahr 2021 gestartet werden.
+Ja. Bei der Produkt- und Commerce-Suche ist [Live Search von Magento Commerce](https://blog.adobe.com/en/publish/2020/11/23/new-ai-capabilities-for-magento-commerce-improve-retail.html) die Suchanwendung der Adobe. Die Live-Suche aus Magento Commerce soll im ersten Halbjahr 2021 gestartet werden.
 
-### **_Kann Adobe Frameworks oder Plattformen empfehlen, die Angebot ähnliche Funktionen wie Search&amp;Promote haben?_**
+### **_Kann Adobe Frameworks oder Plattformen empfehlen, die ähnliche Funktionen wie Search&amp;Promote bieten?_**
 
-Ja. Wenn die Search&amp;Promote für Ihre Marketingstrategie entscheidend ist, sollten Sie die vielen Open-Source-Frameworks berücksichtigen, die für die Suche vorhanden sind, einschließlich [Apache Solr](https://solr.apache.org/) und [Elastic Free und Open](https://www.elastic.co/about/free-and-open).
+Ja. Wenn die Search&amp;Promote-Funktion für Ihre Marketingstrategie von entscheidender Bedeutung ist, sollten Sie die vielen Open-Source-Frameworks berücksichtigen, die für die Suche vorhanden sind, einschließlich [Apache Solr](https://solr.apache.org/) und [Elastic Free und Open](https://www.elastic.co/about/free-and-open).
 
-Darüber hinaus bieten sowohl [AWS](https://aws.amazon.com/cloudsearch/) als auch [Microsoft® AWS](https://azure.microsoft.com/en-us/services/search/) Cloud-native Suchfunktionen auf den jeweiligen Cloud-Plattformen. Sie können beide Optionen in Adobe Experience Manager Sites integrieren, um die Site-Suche und mehr zu ermöglichen.
+Außerdem bieten sowohl [AWS](https://aws.amazon.com/cloudsearch/) als auch [Microsoft® Azure](https://azure.microsoft.com/en-us/services/search/) Cloud-native Suchfunktionen auf ihren jeweiligen Cloud-Plattformen. Sie können beide Optionen in Adobe Experience Manager Sites integrieren, um die Site-Suche und mehr zu unterstützen.
 
 ### **_An wen kann ich mich wenden, um mehr zu erfahren?_**
 
-Wenden Sie sich bei Fragen an Ihren Customer Success Manager (CSM) oder wenden Sie sich an das Adobe-Team unter [searchquestions@adobe.com](mailto:searchquestions@adobe.com).
+Wenden Sie sich bei Fragen an Ihren Customer Success Manager (CSM) oder kontaktieren Sie das Adobe-Team unter [searchquestions@adobe.com](mailto:searchquestions@adobe.com).
 
-### **_Kann ich meine entsprechende Search&amp;Promote noch vor dem Ende meines Dienstes verlängern?_**
+### **_Kann ich meine geltende Search&amp;Promote noch vor deren Ende verlängern?_**
 
-Ja. Wenden Sie sich an Ihren Kundenbetreuer, um Ihre Adobe bis spätestens zum 1. September 2022 **mit einem Enddatum zu verlängern.**
+Ja. Wenden Sie sich an Ihren Adobe-Support-Mitarbeiter, um Ihre Lizenz mit einem Enddatum bis spätestens **1. September 2022** zu erneuern.
