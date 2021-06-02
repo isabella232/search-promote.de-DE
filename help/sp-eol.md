@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Mitteilung zum Ende des Diensts von Ado
 feature: null
 role: Administrator,Business Practitioner,Data Engineer,Developer
 exl-id: 1e062554-090b-4275-8595-8ae4233c58d7
-source-git-commit: 27dca9caf3e59d5ed20fdea3d5ef279bd5aac097
+source-git-commit: cffbd6a62e1ffe1f5fe1f2f6123e8bc5199b55dc
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%
@@ -39,4 +39,4 @@ Wenden Sie sich bei Fragen an Ihren Customer Success Manager (CSM) oder kontakti
 
 ### **_Kann ich meine geltende Search&amp;Promote noch vor deren Ende verlängern?_**
 
-Ja. Wenden Sie sich an Ihren Adobe-Support-Mitarbeiter, um Ihre Lizenz mit einem Enddatum bis spätestens **1. September 2022** zu erneuern.
+Ja. Wenden Sie sich an Ihren Kundenbetreuer, um Ihre Adobe mit einem Vertragsende spätestens am **31. August 2022** zu erneuern.
