@@ -3,9 +3,9 @@ title: Ankündigung zum Ende der Adobe-Search&Promote
 description: Erfahren Sie mehr über die Mitteilung zum Ende des Diensts von Adobe Search&Promote.
 role: Admin,User,Data Engineer,Developer
 exl-id: 1e062554-090b-4275-8595-8ae4233c58d7
-source-git-commit: bbd1877e3f3942097c2f9348204279aec992ed5a
+source-git-commit: 47092ce7c0839090789d43d63d2144128868088d
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ### **_Ab welchem Datum wird die Search&amp;Promote ihre Tätigkeit einstellen?_**
 
-Das Ende des Dienstes für die Search&amp;Promote der Adobe ist für **1. September 2022** geplant. Ab diesem Datum ist die Benutzeroberfläche der Search&amp;Promote-Verwaltung nicht mehr verfügbar und Anfragen an Search&amp;Promote-APIs liefern keine Ergebnisse mehr. Vor diesem Datum ist der Dienst vollständig verfügbar und funktionsfähig. Bis zum 1. September 2022 sind vertragliche Ansprüche auf Search&amp;Promote ab dem 31. August 2022 nicht mehr zulässig.
+Das Ende des Diensts für die Search&amp;Promote der Adobe ist für **1. September 2022**. Ab diesem Datum ist die Benutzeroberfläche der Search&amp;Promote-Verwaltung nicht mehr verfügbar und Anfragen an Search&amp;Promote-APIs liefern keine Ergebnisse mehr. Vor diesem Datum ist der Dienst vollständig verfügbar und funktionsfähig. Bis zum 1. September 2022 sind vertragliche Ansprüche auf Search&amp;Promote ab dem 31. August 2022 nicht mehr zulässig.
 
 ### **_Was geschieht, wenn eine Suche oder eine andere API-Anfrage an Search&amp;Promote gesendet wird?_**
 
@@ -24,7 +24,7 @@ Suchen und andere API-Anfragen an Search&amp;Promote geben keine Ergebnisse mehr
 
 ### **_Verfügt Adobe über alternative Optionen für die Site-Suche und die Commerce-Suche?_**
 
-Ja. Bei der Produkt- und Commerce-Suche ist [Live Search von Magento Commerce](https://blog.adobe.com/en/publish/2020/11/23/new-ai-capabilities-for-magento-commerce-improve-retail.html) die Suchanwendung der Adobe. Die Live-Suche aus Magento Commerce soll im ersten Halbjahr 2021 gestartet werden.
+Ja. Für Produkt- und Commerce-Suche: [Live-Suche über Magento Commerce](https://devdocs.magento.com/live-search/overview.html) ist die Suchanwendung der Adobe für die Zukunft.
 
 <!-- ### **_Can Adobe recommend any frameworks or platforms that offer features similar to Search&Promote?_**
 
@@ -38,4 +38,4 @@ Wenden Sie sich bei Fragen an Ihren Customer Success Manager (CSM) oder kontakti
 
 ### **_Kann ich meine geltende Search&amp;Promote noch vor deren Ende verlängern?_**
 
-Ja. Wenden Sie sich an Ihren Kundenbetreuer, um Ihre Adobe mit einem Vertragsende spätestens am **31. August 2022** zu erneuern.
+Ja. Wenden Sie sich an Ihren Adobe-Support-Mitarbeiter, um Ihre Lizenz mit einem Enddatum für den Vertrag spätestens **31. August 2022**.
