@@ -2,8 +2,7 @@
 title: Ankündigung zum Ende der Adobe-Search&Promote
 description: Erfahren Sie mehr über die Mitteilung zum Ende des Diensts von Adobe Search&Promote.
 role: Admin,User,Data Engineer,Developer
-exl-id: 1e062554-090b-4275-8595-8ae4233c58d7
-source-git-commit: 47092ce7c0839090789d43d63d2144128868088d
+source-git-commit: 8884e7d100e6a9feddcd8e205f5f3652d79e152c
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
@@ -30,7 +29,7 @@ Ja. Für Produkt- und Commerce-Suche: [Live-Suche über Magento Commerce](https:
 
   Yes. If the Search&Promote feature is critical to your marketing strategy, consider the many open-source frameworks that exist to power search, including [Apache Solr](https://solr.apache.org/) and [Elastic Free and Open](https://www.elastic.co/about/free-and-open).  
 
-  Also, both [AWS](https://aws.amazon.com/cloudsearch/) and [Microsoft® Azure](https://azure.microsoft.com/en-us/services/search/) provide cloud-native search capabilities on their respective cloud platforms. You can integrate both options into Adobe Experience Manager Sites to power site search and more. -->
+  Also, both [AWS](https://aws.amazon.com/cloudsearch/) and [Microsoft&reg; Azure](https://azure.microsoft.com/en-us/services/search/) provide cloud-native search capabilities on their respective cloud platforms. You can integrate both options into Adobe Experience Manager Sites to power site search and more. -->
 
 ### **_An wen kann ich mich wenden, um mehr zu erfahren?_**
 
